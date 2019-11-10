@@ -1,0 +1,11 @@
+[OrdnanceClass]
+classLabel="lockdown_a"
+
+ammoCost=2    // *3 {VSR-162}
+lifeSpan=0.6  // *0.45 {VSR-160}
+shotSpeed=150 // *100 {VSR-161}
+
+// New 1.3 feature:
+[LockShellClass]
+// How long the target is in lockdown after a hit, in seconds.
+LifeSpan=0.3 // *0.1 {VSR-163}

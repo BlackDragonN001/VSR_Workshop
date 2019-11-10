@@ -1,0 +1,38 @@
+// =========
+// TORNADO HIT
+// =========
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 1
+particleClass1 = "xtornhit.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+explSound = NULL
+damageRadius = 15.0
+damageValue(N) = 10
+damageValue(L) = 10
+damageValue(H) = 10
+damageValue(S) = 8
+damageValue(D) = 4
+damageValue(A) = 10
+
+kickRadius = 20.0
+kickVeloc = 2
+kickOmega = 0.5
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "0 127 255 127"
+finishColor = "255 0 0 0"
+startRadius = 1.0
+finishRadius = 10.0
+animateTime = 0.5
+maxCount = 512
+

@@ -1,0 +1,14 @@
+ODF values NOT inherited:
+-	[MorphTankClass]
+	-	(EVERYTHING)
+-	[CraftClass]
+	-	damageEffect1
+	-	damageEffect2
+	-	damageEffect3
+	-	damageEffect4
+
+Values that ARE inherited (tested):
+-	[GameObjectClass]
+	- clearBuildZone
+	- basename
+	- mass

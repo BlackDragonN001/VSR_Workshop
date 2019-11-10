@@ -1,0 +1,29 @@
+[GameObjectClass]
+clearBuildZone=0 // {VSR-005}
+classLabel="ivmisl"
+weaponName1="gtaggunvsr_c"
+weaponName2="gtaggunvsr_c"
+weaponName3="gproxminvsr"
+
+[CraftClass]
+// VSR Physics {VSR-000}
+GROUND_ELASTICITY=-0.2
+
+[HoverCraftClass]
+// {VSR-037}
+velocReverse=13.0 // *12.0
+velocStrafe=19.5  // *18.5
+accelThrust=22.5  // *19.0
+
+// VSR Physics {VSR-000}
+MoreLike12Physics=true
+OverWaterVelocFrontMult=1.0
+OverWaterVelocSideMult=1.0
+OverWaterThrottleMult=0.8
+airborneVelocFrontMult=1.0
+airborneVelocSideMult=1.0
+airborneThrottleMult=1.2
+airborneMinHeightRatio=1.6
+airborneMaxHeightRatio=4.0
+LIFT_SPRING=6
+LIFT_DAMP=0.1

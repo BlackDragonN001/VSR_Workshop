@@ -1,0 +1,32 @@
+[ExplosionClass]
+classLabel="explosion"
+explSound="wlcan.wav"
+damageRadius=0.0
+damageValue(N)=0
+damageValue(L)=0
+damageValue(H)=0
+damageValue(S)=0
+damageValue(D)=0
+damageValue(A)=0
+kickRadius=10.0
+kickOmega=2.0
+kickVeloc=1.0
+particleTypes=2
+particleClass1="xebazgnd_vsr_c.flame"
+particleCount1=2
+particleVeloc1="72.0 72.0 72.0"
+particleClass2="xebazhit_vsr_a.splat"
+particleCount2=1
+particleVeloc2="0.0 0.0 0.0"
+
+[Splat]
+simulateBase="sim_null"
+lifeTime=0.25
+renderBase="draw_sprite"
+textureName="ring.tga"
+textureBlend="one one modulate"
+startColor="255 200 80 255"
+finishColor="255 0 0 255"
+startRadius=2.0
+finishRadius=0.0
+animateTime=0.25

@@ -1,0 +1,14 @@
+[OrdnanceClass]
+classLabel="plasma_a"
+//renderName="plasmavsr_a.render" // {VSR-131}		Commented out to remove error in VSR BZCC Release 40
+
+
+//Commented out to remove error in VSR BZCC Release 40 - Plasma will now use the BZCC stock plasma graphics
+//// Restored 1.2 light effects {VSR-131}
+//[Render]
+//renderBase="draw_multi"
+//renderCount=4
+//renderName4="plasma_a.light"
+//renderName1="plasma_a.flame"
+//renderName2="plasma_a.smoke"
+//renderName3="plasma_a.trail"

@@ -1,0 +1,15 @@
+[GameObjectClass]
+TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZCC
+baseName="ibcbun"
+classLabel="ibcbun"
+
+provideCount=4
+provideName1="ibcbun"
+provideName2="ibcbun_vsr"
+provideName3="VIRTUAL_CLASS_COMMBUNKER"
+provideName4="base"
+
+//[CommBunkerClass]		originally not commented out
+// {VSR-011}
+//minViewDist=100.0
+//maxViewDist=200.0

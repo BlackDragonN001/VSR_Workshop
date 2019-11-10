@@ -1,0 +1,54 @@
+// ===================
+// BULLET BUILDING HIT
+// ===================
+
+[ExplosionClass]
+classLabel = "xbulbld"
+
+particleTypes = 4
+particleClass1 = "xionbldfvsr.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xioncarfvsr.light"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+particleBias2 = "0.0 0.0 0.0"
+
+particleClass3 = "xioncarfvsr.trail"
+particleCount3 = 1
+particleVeloc3 = "12.0 12.0 12.0"
+particleBias3 = "0.0 1.0 0.0"
+
+particleClass4 = "xionbldfvsr.puff"
+particleCount4 = 4
+particleVeloc4 = "50.0 50.0 50.0"
+particleBias4 = "0.0 0.0 0.0"
+
+explSound = "wmgr1.wav"
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.4
+renderBase = "draw_twirl"
+textureName = "blast.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 0 127"
+finishColor = "255 255 0 0"
+startRadius = 0.1
+finishRadius = 1.0
+animateTime = 0.4
+BottomInteractsWithTerrain = false
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 0.4
+renderBase = "draw_twirl"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 0 127"
+finishColor = "255 255 0 0"
+startRadius = 0.15
+finishRadius = 0.1
+animateTime = 0.4
+BottomInteractsWithTerrain = false

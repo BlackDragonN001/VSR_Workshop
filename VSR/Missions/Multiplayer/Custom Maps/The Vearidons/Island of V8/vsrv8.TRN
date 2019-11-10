@@ -1,0 +1,20 @@
+[Texture]
+TileTexture0="vsr_t36.tga" //"trnq_dune_vsr.tga"
+TileTexture1="vsr_t75.tga" //"trnq_rock_vsr.tga"
+TileTexture7="vsr_rock1.tga" //"trnq_brick_vsr.tga"
+TileTexture2="grass.tga"
+TileTexture3="dune3.tga"
+
+
+[NormalView]
+DiffuseColor="255 255 255"
+SpecularColor="15 15 10"
+SpecularPower=100
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap1"
+CaptureTarget2 = "VSRcap2"
+CaptureTarget3 = "VSRcap4"
+CaptureTarget4 = "VSRcap5"
+CaptureTarget5 = "VSRcap5"

@@ -1,0 +1,61 @@
+// (c) BZ2CP unit "Xypos"
+// Created by Slaor and Pastell
+
+[GameObjectClass]
+classLabel="evscout_vsr"
+baseName="evscout"
+scrapValue=25
+scrapCost=50
+customCost=50
+maxHealth=2200 //1800
+maxAmmo=1700
+addAmmo=5 // 1 - HM
+unitName="Xypos SX"
+armorClass=L
+requireCount=1
+requireName1="ebarmo"
+requireText1="Build Arsenal" // weapons vat Reference removed - HM
+
+weaponMask=00011
+weaponHard1="HP_GUN_1"
+weaponName1="gslicer_c"
+weaponAssault1=0
+weaponHard2="HP_GUN_2"
+weaponName2="gslicer_c"
+weaponAssault2=0
+weaponHard3="HP_SPECIAL_1"
+weaponName3="gmflamemin"
+weaponAssault3=0
+
+infoName="evscout_vsr.inf"
+
+[CraftClass]
+// VSR Physics {VSR-000}
+MIN_BOUNCE_VEL=1.8
+OBJECT_ELASTICITY=0.025
+GROUND_ELASTICITY=-0.2
+DAMAGE_SCALE=0.02
+
+[HoverCraftClass]
+// VSR Physics {VSR-000}
+omegaTurnAttenuation=8.5
+MoreLike12Physics=true
+OverWaterVelocFrontMult=1.0
+OverWaterVelocSideMult=1.0
+OverWaterThrottleMult=0.8
+airborneVelocFrontMult=1.01
+airborneVelocSideMult=1.05
+airborneThrottleMult=1.2
+airborneMinHeightRatio=1.6
+airborneMaxHeightRatio=4.0
+LIFT_SPRING=16
+LIFT_DAMP=2
+
+//LOD models commented out for BZCC
+//[Lod1]
+//geometryName="evscoutL1.xsi"
+//distance=50
+//
+//[Lod2]
+//geometryName="evscoutL2.xsi"
+//distance=130

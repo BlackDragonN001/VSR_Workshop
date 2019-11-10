@@ -1,0 +1,30 @@
+[Size]
+MetersPerGrid = 8.0
+HeightGranularity = 0.1
+MinX=-2048
+MinZ=-2048
+Width=4096
+Depth=4096
+Height=100
+Tile = 1
+color=149 123 87 255
+
+[NormalView]
+DiffuseColor = "255 255 255 255"
+
+[Texture] 
+TileTexture1 = "mars1.tga"
+TileTexture2 = "mars2.tga"
+TileTexture3 = "mars3.tga"
+TileTexture4 = "mars4.tga"
+TileTexture5 = "mars5.tga"
+TileTexture6 = "mars6.tga"
+TileTexture7 = "mars7.tga"
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap1"
+CaptureTarget2 = "VSRcap2"
+CaptureTarget3 = "VSRcap4"
+CaptureTarget4 = "VSRcap5"
+CaptureTarget5 = "VSRcap5"

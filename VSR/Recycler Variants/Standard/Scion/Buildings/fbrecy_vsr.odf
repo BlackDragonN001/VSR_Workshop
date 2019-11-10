@@ -1,0 +1,33 @@
+[GameObjectClass]
+TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZCC
+//buildTime=30.0
+scrapReturn=0
+baseName="fbrecy"
+classLabel="fbrecy"
+
+provideCount=6
+provideName1="fbrecy"
+provideName2="fbrecyvsr"
+provideName3="VIRTUAL_CLASS_RECYCLER"
+provideNeme4="VIRTUAL_CLASS_THUG_RECYCLER"
+provideName5="VIRTUAL_CLASS_RECYCLERBUILDING"
+provideName6="VIRTUAL_CLASS_THUG_RECYCLERBUILDING"
+
+// DLL
+startingVariant="_vsr"
+pilotRespawnWithSniper="fsuser" 
+pilotRespawnWithOutSniper="fsuser_m"
+
+[FactoryClass]
+weaponConfig="fweapon_vsr.odf"
+buildItem1="fvscav_vsr"
+buildItem2="fvscout_vsr"
+buildItem3="fvturr_vsr"
+buildItem4="fvtug"
+buildItem5="fvcons_vsr"
+buildItem6="fvserv_vsr"
+buildItem7="apserv_vsr"
+buildItem8="fvscoutm_vsr"
+buildEmptyItem=8
+
+[RecyclerClass]

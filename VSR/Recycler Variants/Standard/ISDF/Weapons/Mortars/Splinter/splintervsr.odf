@@ -1,0 +1,13 @@
+[OrdnanceClass]
+classLabel="splinter"
+xplGround="xsplngndvsr" // *new {VSR-304}
+xplVehicle="xsplncarvsr" // *new {VSR-305}
+
+ammoCost=1.3 // *1.0 {VSR-302}
+
+// {VSR-303}
+damageValue(N)= 8 // *15
+damageValue(L)= 6 // *9
+damageValue(H)= 2 // *3
+damageValue(S)= 6 // *9
+damageValue(A)=10 // *15

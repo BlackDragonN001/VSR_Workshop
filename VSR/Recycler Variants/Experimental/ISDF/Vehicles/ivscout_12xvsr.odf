@@ -1,0 +1,27 @@
+[GameObjectClass]
+classLabel="ivscout_vsr"
+weaponName1="gminigun_c"	//weaponName1="gminigunfvsr_c"
+weaponName2="gminigun_c"	//weaponName2="gminigunfvsr_c"
+weaponName3="gfafmslfvsr_c"
+
+[CraftClass]
+// VSR Physics {VSR-000}
+MIN_BOUNCE_VEL=0.1
+MAX_BOUNCE_VEL=0.8
+OBJECT_ELASTICITY=0.025
+GROUND_ELASTICITY=-0.2
+DAMAGE_SCALE=0.01
+
+[HoverCraftClass]
+// VSR Physics {VSR-000}
+MoreLike12Physics=true
+OverWaterVelocFrontMult=1.01
+OverWaterVelocSideMult=1.0
+OverWaterThrottleMult=0.8
+airborneVelocFrontMult=1.01
+airborneVelocSideMult=1.05
+airborneThrottleMult=1.2
+airborneMinHeightRatio=1.6
+airborneMaxHeightRatio=4.0
+LIFT_SPRING=16
+LIFT_DAMP=2

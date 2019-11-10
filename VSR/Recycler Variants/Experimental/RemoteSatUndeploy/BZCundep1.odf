@@ -1,0 +1,26 @@
+[GameObjectClass]
+geometryName = "BZCNullCube.xsi"
+classLabel = "i76sign" //"wpnpower"
+scrapCost = 0
+scrapValue = 0
+buildTime = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "Undeploy"
+aiName = "PowerUpProcess"
+lifeSpan = 0.5
+explosionName = ""
+isSingle = 1
+LeaveExplodeScorch = false
+canInteract = false
+
+[PowerUpClass]
+soundPickup = "pickup01.wav"
+soundReject = "reject.wav"
+
+PowerupClassMask = 9001
+PowerupClassMatch = 9001
+PowerupClassProvides = 9001
+
+[WeaponPowerupClass]
+weaponName = NULL //"gBZCundep"

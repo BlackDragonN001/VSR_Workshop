@@ -1,0 +1,14 @@
+[ExplosionClass]
+classLabel="xminxpl"
+
+// {VSR-156}
+damageValue(N)=550 // *600
+damageValue(L)=450 // *400
+damageValue(S)=450 // *400
+damageValue(D)=200 // *200
+damageValue(A)=600 // *600
+
+// {VSR-155}
+kickRadius=50   // *0.0
+kickOmega=18.0  // *0.0
+kickVeloc=-20.0 // *0.0

@@ -1,0 +1,39 @@
+[Size]
+MetersPerGrid = 8.0
+HeightGranularity = 0.1
+MinX=-2048
+MinZ=-2048
+Width=4096
+Depth=4096
+Height=100
+Tile = 1
+color=149 123 87 255
+
+[NormalView]
+SpecularPower = 1024
+DiffuseColor = "230 230 190 255"
+
+
+[World]
+MusicTrack1=9
+MusicTrack2=3
+MusicTrack3=4
+
+[Texture] 
+TileTexture0 = ""
+TileTexture1 = "" 
+TileTexture2 = "mars7.tga" //Gravel
+TileTexture3 = "mars5.tga" //Rock
+TileTexture4 = "mars1.tga" //Added: Mars pool rock
+TileTexture5 = "" 
+
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap1"
+CaptureTarget2 = "VSRcap2"
+CaptureTarget3 = "VSRcap3"
+CaptureTarget4 = "VSRcap4"
+CaptureTarget5 = "VSRcap5"
+CaptureTarget6 = "VSRcap5"
+

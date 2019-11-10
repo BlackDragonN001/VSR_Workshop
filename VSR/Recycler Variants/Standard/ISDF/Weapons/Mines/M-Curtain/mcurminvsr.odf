@@ -1,0 +1,35 @@
+// VSR M-Curtain
+// Redesigned to be more like the 1.2 M-curtain (in feel)
+// Values are different because changes to magnet mine physics in 1.3
+// especially in regards to how mine stacking is implemented (its too strong)
+
+[GameObjectClass]
+classLabel="mcurmin"
+maxAmmo=45 // *50 {VSR-147}
+isAssault=0 // Mines should not make Scion AI morph {VSR-009}
+
+[MineClass]
+lifeSpan=25.0 // *30.0 {VSR-146}
+
+[MagnetMineClass]
+// {VSR-148}
+// ___________  New    // Stock
+objPushCenter=  -7.0   // *10.0
+objPushEdge=    17.0   // *25.0
+objDragCenter=  0.4    // *0.2
+objDragEdge=    0.7    // *0.5
+ordPushCenter=  -50.0  // *100.0
+ordPushEdge=    500.0  // *250
+ordDragCenter=  1.0    // *2.0
+ordDragEdge=    1.5    // *5.0
+
+// Original 1.2 Settings
+// [MagnetMineClass]
+// triggerDelay=1.0
+// fieldRadius=20.0
+// objPushCenter=-10.0
+// objPushEdge=20.0
+// objDrag=0.5
+// ordPushCenter=200.0
+// ordPushEdge=500.0
+// ordDrag=1.5

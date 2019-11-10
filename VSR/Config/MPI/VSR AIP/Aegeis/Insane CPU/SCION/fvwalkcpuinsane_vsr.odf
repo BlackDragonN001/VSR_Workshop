@@ -1,0 +1,17 @@
+[GameObjectClass]
+clearBuildZone=0 // {VSR-005}
+classLabel="fvwalk_vsr"
+baseName="fvwalk"
+scrapCost = 20
+buildTime = 3.0
+requireCount=0
+
+provideCount=4
+provideName1="fvwalkcpuinsane_vsr"
+provideName2="VIRTUAL_CLASS_WALKER"
+provideName3="assault"
+provideName4="DefendUnit"
+
+[CraftClass]
+topSpeed=50 // {VSR-105}
+avoidSpeed=25 // {VSR-UNDOC}

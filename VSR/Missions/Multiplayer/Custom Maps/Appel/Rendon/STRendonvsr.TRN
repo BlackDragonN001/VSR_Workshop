@@ -1,0 +1,24 @@
+[Texture]
+TileTexture1="rend.tga"
+TileTexture2="rend2.tga"
+TileTexture3="rend3.tga"
+TileTexture4="rend4.tga"
+TileTexture5="rend5.tga"
+TileTexture6="rend6.tga"
+TileTexture7="rend7.tga"
+TileTexture8="rend8.tga"
+TileTexture9="rend9.tga"
+TileTexture10="rend10.tga"
+
+
+[NormalView]
+SpecularPower = 1024
+DiffuseColor = "235 235 235 255"
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap1"
+CaptureTarget2 = "VSRcap2"
+CaptureTarget3 = "VSRcap4"
+CaptureTarget4 = "VSRcap5"
+CaptureTarget5 = "VSRcap5"

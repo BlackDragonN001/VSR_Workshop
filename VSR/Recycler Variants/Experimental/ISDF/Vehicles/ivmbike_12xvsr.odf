@@ -1,0 +1,11 @@
+[GameObjectClass]
+classLabel="ivmbike_vsr"
+
+weaponName1="gmortarfvsr"
+
+[CraftClass]
+blastDist=160 // {VSR-024}
+// GROUND_ELASTICITY=-0.2 // *[1]
+
+[HoverCraftClass]
+LIFT_DAMP=5.125   // {VSR-UNDOC}

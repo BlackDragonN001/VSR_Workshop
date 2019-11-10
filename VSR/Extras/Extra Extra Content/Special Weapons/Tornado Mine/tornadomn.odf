@@ -1,0 +1,73 @@
+[GameObjectClass]
+geometryName = "sggasvsr00.xsi" // "igtorn00.xsi"
+classLabel = "flare"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 700
+maxAmmo = 200
+armorClass = L
+unitName = "Tornado Controller"
+heatSignature = -60.0
+isAssault = 0
+
+effectHard1 = "hp_emit_1"
+effectName1 = "tornadomn.chargeemit"
+effectHard2 = "hp_emit_1"
+effectName2 = "tornadomn.groundwave"
+
+[MineClass]
+lifeSpan = 30.0
+
+[FlareMineClass]
+payloadName = "tgale"
+fireSound = "turbo1b.wav"
+triggerDelay = 4.5
+shotDelay = 0.03
+shotVariance = 1.0
+damageRadius = 20.0
+damageValue(N) = 70 // none
+damageValue(L) = 40 // light
+damageValue(H) = 5 // heavy
+damageValue(S) = 40 // standard
+damageValue(D) = 20 // deflection
+damageValue(A) = 35 // absorbtion
+kickRadius = 80.0
+kickVeloc = 1.2
+kickOmega = 0.5
+
+
+[chargeemit]
+simulateBase = "sim_null"
+lifeTime = 10
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "0 40 135 0" // "0 60 155 0" 
+finishColor = "255 255 255 70" 
+startRadius = 170
+finishRadius = 0.5
+animateTime = 2
+latitudeBands = 8
+longitudeSegments = 16
+
+[groundwave]
+simulateBase = "sim_null"
+lifeTime = 2
+renderBase = "draw_emit"
+emitName = "tornadomn.groundwaveemit"
+emitDelay = 2
+emitVelocity = "0 0 60"
+emitVariance = "0 0 0"
+
+[groundwaveemit]
+simulateBase = "sim_null"
+lifeTime = 2.0
+renderBase = "draw_planar"
+textureName = "wasplat.tga"
+textureBlend = "one one modulate"
+finishColor = "255 245 225 0"
+startColor = "100 100 100 140"
+finishRadius = 120
+startRadius = 0
+animateTime = 2.0
+rotateTime = 1.0

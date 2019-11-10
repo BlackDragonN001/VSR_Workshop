@@ -1,0 +1,16 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gpcann_a"
+ordName = "pcann_c"
+wpnName = "Ion Salvo"
+fireSound = "gmagg04.wav"
+wpnReticle = "gsalvo"
+wpnCategory = "CANN"
+aiRange = 175
+isAssault = 0
+
+[CannonClass]
+shotDelay = 2.5
+salvoCount = 11
+salvoDelay = 0.12
+shotVariance = 0.06

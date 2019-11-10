@@ -1,0 +1,12 @@
+// Destroyed, faield to hit target
+
+[ExplosionClass]
+classLabel="xcomxpl" // damageRadius 50 from xcomxpl vs xpwrxpl 10 // {VSR-269}
+
+// {VSR-268}
+damageValue(N)=800 // *20
+damageValue(L)=700 // *20
+damageValue(H)=500 // *20
+damageValue(S)=800 // *20
+damageValue(D)=500 // *20
+damageValue(A)=800 // *20

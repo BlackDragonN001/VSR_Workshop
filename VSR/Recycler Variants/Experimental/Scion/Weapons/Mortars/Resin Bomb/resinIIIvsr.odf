@@ -1,0 +1,22 @@
+[OrdnanceClass]
+classLabel = "spraybomb"
+shotRadius = 5.0
+
+
+ammoCost = 500
+lifeSpan = 180
+shotSpeed = 1.0
+
+damageValue(N) = 0 // none
+damageValue(L) = 0 // light
+damageValue(H) = 0 // heavy
+
+damageValue(S) = 0 // standard
+damageValue(D) = 0 // deflection
+damageValue(A) = 0 // absorbtion
+
+[SprayBombClass]
+payloadName = "resinIVvsr"
+bounceRatio = 0.0
+BuildSprayOnHit = true
+HitExplodeTypes = 23

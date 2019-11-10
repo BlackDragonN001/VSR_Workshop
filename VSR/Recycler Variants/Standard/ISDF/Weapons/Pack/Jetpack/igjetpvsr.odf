@@ -1,0 +1,71 @@
+[WeaponClass]
+basename = "igjetpvsr"
+classLabel = "jetpack"
+geometryName = "igjetpvsr00.fbx"
+animCount = 1
+animName1 = "launch"
+animFile1 = "igjetpvsr00.fbx"
+animRate = 3  //2
+ordName = NULL
+wpnName = "Booster"
+wpnIcon = "wire_igjetp%d.tga"
+fireSound = "whcan.wav"
+flashName = "igjetpvsr.render"
+wpnReticle = "gphantom.0"
+wpnPriority = 0
+wpnCategory = "PACK"
+localAmmo = 1
+//addLocalAmmo = 0.02
+canSelect = 0
+MinOwnerLifetimeSeconds = 0.5 // If >= 0, used as a minimum time for weapon triggering
+
+[JetPackClass]
+ammoCost = 1
+burnTime = 3.0
+accelThrust = 30.0
+activeSound = "jpack01.wav"
+expireSound = "jpack02.wav"
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "igjetpvsr.flare"
+renderName2 = "igjetpvsr.smoke"
+renderName3 = "igjetpvsr.flame"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 2.0
+finishRadius = 2.0
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "153 153 153 63"
+finishColor = "31 31 31 0"
+startRadius = 0.5
+finishRadius = 5.0
+animateTime = 2.0
+emitDelay = 0.005
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 3.0"
+emitLife = 2.0
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 0.3
+finishRadius = 0.03
+animateTime = 0.1
+emitDelay = 0.002
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 3.0"
+emitLife = 0.1

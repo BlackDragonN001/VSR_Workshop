@@ -1,0 +1,26 @@
+[Size]
+MetersPerGrid=8.0
+HeightGranularity=0.1
+MinX=-2048.0
+MinZ=-2048.0
+Width=4096.0
+Depth=4096.0
+Height=100
+Tile=1
+Color="170 150 120 255"
+
+[Texture]
+TileTexture0="mire.tga" // 55, 106, 14B
+TileTexture1="mire5.tga" // 73, 41, 0
+TileTexture2="mire4.tga" // 103, 103, 0
+TileTexture3="mire2.tga" // 240, 240, 240
+
+[NormalView]
+SpecularPower = 1024
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap4"
+CaptureTarget2 = "VSRcap4"
+CaptureTarget3 = "VSRcap1"
+CaptureTarget4 = "VSRcap1"

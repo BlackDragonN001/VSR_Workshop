@@ -1,0 +1,10 @@
+[GameObjectClass]
+classLabel="mitsmin1"
+isAssault=0 // Mines should not make Scion AI morph {VSR-009}
+
+[MineClass]
+lifeSpan=40 // *30 {VSR-149}
+
+[TripMineClass]
+triggerRadius=15 // *10 {VSR-150}
+payloadName="mitsmin2vsr"

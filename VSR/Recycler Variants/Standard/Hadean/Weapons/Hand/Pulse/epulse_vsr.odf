@@ -1,0 +1,66 @@
+[OrdnanceClass]
+classLabel="bullet"
+shotGeometry=NULL
+xplGround="xbulgnd"
+xplVehicle="xbulcar"
+xplBuilding="xbulbld"
+renderName="epulse_vsr.render"
+ammoCost=2
+lifeSpan=1.0
+shotSpeed=200.0
+damageValue(N)=5
+damageValue(L)=3
+damageValue(H)=0
+damageValue(S)=3
+damageValue(D)=5
+damageValue(A)=3
+
+[Render]
+renderBase="draw_multi"
+renderCount=2
+renderName1="epulse_vsr.core"
+renderName2="epulse_vsr.trail"
+
+[Core]
+renderBase="draw_twirl"
+textureName="lightflare.tga"
+textureBlend="one one modulate"
+startColor="255 255 255 255"
+finishColor="255 255 255 0"
+startRadius=0.7
+finishRadius=0.7
+
+[Trail]
+renderBase="draw_trail"
+textureBlend="one one modulate"
+startColor="150 85 50 60"
+finishColor="100 100 100 0"
+startRadius=0.10
+finishRadius=0.07
+segmentTime=0.1
+
+[XRender]
+renderBase="draw_multi"
+renderCount=1 // 2
+renderName1="hpulsevsr.flare"
+//renderName2="hpulse.dull"
+
+[XFlare]
+renderBase="draw_trail"
+textureBlend="one one modulate"
+textureName="trail.tga"
+startColor="155 100 0 155"
+finishColor="100 100 100 0"  // "255 0 0 0"
+startRadius=0.02
+finishRadius=0.05
+segmentTime=0.09
+
+[XDull]
+renderBase="draw_trail"
+textureBlend="srcalpha invsrcalpha modulatealpha"
+textureName="trail.tga"
+startColor="0 0 0 0"
+finishColor="10 10 10 255"
+startRadius=0.02
+finishRadius=0.05
+segmentTime=0.09

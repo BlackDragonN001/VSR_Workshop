@@ -1,0 +1,21 @@
+[GameObjectClass]
+classLabel="evrecy_vsr"
+scrapReturn=0
+
+requireCount=2
+requireName1="ebcbun"
+requireText1="Pack Up requires Eyes of Xyr"
+requireName2="ebfact"
+requireText2="Pack Up requires Xenomator"
+
+// DLL
+startingVariant="_vsr"
+
+[CraftClass]
+damageEffect1="dmgvhcl1_hadean"
+damageEffect2="dmgvhcl2_hadean"
+damageEffect3="dmgvhcl3_hadean"
+damageEffect4="dmgvhcl4_hadean"
+
+[DeployBuildingClass]
+deployName="ebrecy_12svsr"

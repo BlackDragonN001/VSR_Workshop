@@ -1,0 +1,18 @@
+[WeaponClass]
+classLabel="gminigun_a"
+altName="gminigunfvsr_c"
+ordName="minigunfvsr_a"
+fireSound="gmini01.wav"
+flashName="gminigunfvsr_a.flash"
+
+[Flash]
+renderBase="draw_geom"
+textureName="sflash.tga"
+textureBlend="one one modulate"
+startColor="0 127 255 255"
+finishColor="0 0 255 255"
+startRadius=7.5
+finishRadius=2.0
+animateTime=0.1
+geomName="g_sflash.xsi"
+

@@ -1,0 +1,15 @@
+[GameObjectClass]
+TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZCC
+classLabel="ebrecy_vsr"
+upgradeName="evrecy_12svsr"
+
+provideCount=5
+provideName1="ebrecy_m"
+provideName2="ebrecy"
+provideName3="VIRTUAL_CLASS_RECYCLER"
+provideName4="VIRTUAL_CLASS_RECYCLERBUILDING"
+provideName5="base"
+
+[FactoryClass]
+buildItem2="evscout_12svsr" // Smart scout
+buildItem9="evscoutu_12svsr" // Smart scout

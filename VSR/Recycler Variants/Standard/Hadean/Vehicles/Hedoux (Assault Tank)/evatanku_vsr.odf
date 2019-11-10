@@ -1,0 +1,53 @@
+// (c) BZ2CP unit "Hedoux"
+// Created by Slaor and Pastell
+// Vehicle V/O's - Zeeder  
+// Voice effects, vehicle sounds - Chipotle
+
+[GameObjectClass]
+baseName="evatanku"
+classLabel="evatank_vsr"
+scrapValue=40
+scrapCost=75
+customCost=80
+buildTime=20.0
+maxHealth=5500
+maxAmmo=4000
+addAmmo=8
+unitName="Hedoux"
+
+requireCount=3
+requireName1="ebfact2"
+requireText1="Build Mega Xenomator"
+requireName2="ebcbun"
+requireText2="Build Eyes of Xyr"
+requireName3="ebsbay"
+requireText3="Build Repair Vat"
+
+weaponName1="gdragb_a"
+weaponName2="gshellgun"
+weaponName3="gshellgun"
+
+infoName="evatanku_vsr.inf"
+
+[CraftClass]
+damageEffect1="dmgvhcl1_hadean"
+damageEffect2="dmgvhcl2_hadean"
+damageEffect3="dmgvhcl3_hadean"
+damageEffect4="dmgvhcl4_hadean"
+
+engageRange=250 // 210 - AI errors
+
+[TrackedVehicleClass]
+velocForward=18.0
+velocReverse=10.0
+accelThrust=8.0
+
+
+[AssaultTankClass]
+pitchMax=0.99
+
+[Lod1]
+geometryName="evatankL1.xsi"
+
+[Lod2]
+geometryName="evatankL2.xsi"

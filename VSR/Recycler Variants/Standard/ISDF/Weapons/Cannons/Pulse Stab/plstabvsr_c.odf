@@ -1,0 +1,20 @@
+[OrdnanceClass]
+classLabel="plstab_c"
+
+shotRadius=-1.0 // *1.0 {VSR-180}
+
+lifeSpan=1.5 // *1.429 {VSR-184}
+shotSpeed=80.0 // *70.0 {VSR-181}
+
+// {VSR-185}
+damageValue(N)=240 // *220
+damageValue(L)=230 // *210
+damageValue(H)=210 // *190
+damageValue(S)=210 // *210
+damageValue(D)=180 // *190
+damageValue(A)=240 // *220
+
+[PulseShellClass]
+pulseDelay=0.4 // *0.3 {VSR-182}
+pulsePeriod=0.25 // *0.3 {VSR-183}
+xplPulse="xpulemit_c"

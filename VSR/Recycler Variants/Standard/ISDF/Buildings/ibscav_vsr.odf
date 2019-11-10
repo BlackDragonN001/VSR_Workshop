@@ -1,0 +1,13 @@
+[GameObjectClass]
+TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZCC
+classLabel="ibscav"
+upgradeName="ibscup_vsr"
+
+provideCount=4
+provideName1="ibscav"
+provideName2="VIRTUAL_CLASS_EXTRACTOR"
+provideName3="VIRTUAL_CLASS_STORAGE"
+provideName4="extract"
+
+[ExtractorClass]
+initDelay=0.0 // *12.0 {VSR-017}

@@ -1,0 +1,41 @@
+[Size]
+MetersPerGrid = 8.0
+HeightGranularity = 0.1
+MinX=-1000
+MinZ=-1000
+Width=1000
+Depth=1000
+Height=100
+Tile = 1
+color=149 123 87 255
+
+[NormalView]
+DiffuseColor = "255 255 255 255"
+
+[Texture] 
+TileTexture1 = "mossyrock01.dds" 
+TileTexture2 = "mire.tga"
+TileTexture3 = "mire2.tga"
+TileTexture4 = "mire6.tga"
+TileTexture5 = "dune1.tga"
+TileTexture6 = "dune2.tga"
+TileTexture7 = "dune5.tga"
+TileTexture8 = "titan3.tga"
+TileTexture9 = "mars4"
+TileTexture10 = "dune8.tga"
+TileTexture11 = "deadleaves01.dds"
+TileTexture12 = "pluto.tga"
+TileTexture13 = "mossyjagged01.dds"
+TileTexture14 = "brick01.dds"
+TileTexture15 = "titan.tga"
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap4"
+CaptureTarget2 = "VSRcap4"
+CaptureTarget3 = "VSRcap1"
+CaptureTarget4 = "VSRcap2"
+CaptureTarget5 = "VSRcap3"
+CaptureTarget6 = "VSRcap1"
+CaptureTarget7 = "VSRcap5"
+CaptureTarget8 = "VSRcap5"

@@ -1,0 +1,36 @@
+// HEADQUARTERS BUILDING
+// VSR Development only - Provides all techs
+
+[GameObjectClass]
+classLabel = "fbover"
+
+scrapCost = 80
+scrapValue = 30
+maxHealth = 8000
+maxAmmo = 0
+powerCost = 0
+unitName = "Headquarters"
+
+requireCount = 0
+
+provideCount = 9
+provideName1 = "fbantm"
+provideName2 = "fbover"
+provideName3 = "fbdowe"
+provideName4 = "fbstro"
+provideName5 = "fbkiln"
+provideName6 = "fbforg"
+provideName7 = "VIRTUAL_CLASS_OVERSEER_ARRAY"
+provideName8 = "VIRTUAL_CLASS_TECHCENTER"
+provideName9 = "base"
+
+
+[PoweredBuildingClass]
+powerName = "fblung_vsr"
+
+[CommBunkerClass]
+
+[BuildingClass]
+
+[Lod1]
+

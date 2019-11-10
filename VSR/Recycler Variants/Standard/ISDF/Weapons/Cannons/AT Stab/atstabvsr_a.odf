@@ -1,0 +1,14 @@
+[OrdnanceClass]
+classLabel="atstab_a"
+shotRadius=2.0 // *new {VSR-128}
+
+lifeSpan=0.667 // *1.5 (to maintain range)
+shotSpeed=225 // *100 {VSR-129}
+
+// {VSR-130}
+damageValue(N)=260 // *150
+damageValue(L)=200 // *137.5
+damageValue(H)=125 // *125
+damageValue(S)=190 // *137.5
+damageValue(D)=120 // *125
+damageValue(A)=245 // *150

@@ -1,0 +1,33 @@
+[WeaponClass]
+classLabel = "cannon"
+
+// don't need any geometry
+// (sgbzka_c already has it)
+
+ordName = "szbazooka_a"
+wpnName = "Bazooka"
+fireSound = "gchain01.wav" //"shotgun1.wav"
+wpnReticle = "gshotgun"
+wpnCategory = "HAND"
+isAssault = 1
+isFlying = 1
+altName = "sgzbzka_c"
+flashName = "sgzbzka_a.flash"
+aiRange = 190
+
+[CannonClass]
+shotDelay = 0.2
+salvoCount = 1
+salvoDelay = 0.0
+shotVariance = 0.03
+
+[Flash]
+renderBase = "draw_geom"
+textureName = "sflash.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 255 175"
+finishColor = "0 0 255 0"
+startRadius = 5.0
+finishRadius = 1.0
+animateTime = 0.1
+geomName = "g_sflash.xsi"

@@ -1,0 +1,31 @@
+// (c) BZ2CP unit "Atlas"
+// Created by Slaor and Pastell
+//v/o, voice effects, vehicle sounds by Chipotle
+
+[GameObjectClass]
+classLabel="evartl_vsr"
+scrapValue=40
+scrapCost=80
+maxHealth=2500
+addAmmo=5
+	
+requireCount=1
+requireName1="ebfact2"
+requireText1="Upgrade Mega Xenomator"
+
+weaponHard1="HP_SPECIAL_1"
+weaponName1="gpoptag"
+weaponAssault1=1
+weaponHard2="HP_MORTAR_1"
+weaponName2="ghmortar"
+weaponAssault2=0
+
+infoName="evartl_vsr.inf"
+
+[CraftClass]
+damageEffect1="dmgvhcl1_hadean"
+damageEffect2="dmgvhcl2_hadean"
+damageEffect3="dmgvhcl3_hadean"
+damageEffect4="dmgvhcl4_hadean"
+
+UseAssaultSpecials=true // needs to be true for evartl2.odf

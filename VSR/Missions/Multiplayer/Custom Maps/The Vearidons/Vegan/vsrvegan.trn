@@ -1,0 +1,17 @@
+[Texture]
+TileTexture0="mire4.tga"
+TileTexture1="mire5.tga"
+TileTexture2="mire2.tga"
+TileTexture3="mire.tga"
+
+[NormalView]
+DiffuseColor = "178.5 178.5 178.5"
+SpecularColor = "10 10 10"
+SpecularPower = 1024.0
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap1"
+CaptureTarget2 = "VSRcap2"
+CaptureTarget3 = "VSRcap5"
+CaptureTarget4 = "VSRcap5"

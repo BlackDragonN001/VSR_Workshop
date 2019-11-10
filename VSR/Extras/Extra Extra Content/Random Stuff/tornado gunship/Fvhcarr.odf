@@ -1,0 +1,141 @@
+// Tornado Carrier, Troop Transport
+// Carrier Class Helicopter
+
+[GameObjectClass]
+baseName = "fvhcarr"
+geometryName = "fvhcarr00.xsi"
+// Based on DeviLfreak's Echo 1 XSI
+geometryscale = 2.8
+classLabel = "apc"
+collisionRadius = 7.0
+scrapValue = 35
+scrapCost = 90
+customCost = 90
+buildTime = 20.0
+customTime = 20.0
+maxHealth = 2200
+addhealth = 2
+maxAmmo = 2200
+addAmmo = 10
+unitName = "Tornado Gunship"
+aiName = "MorphTankFriend"
+aiName2 = "MorphTankEnemy"
+pilotName = "fselite"
+// APCProcess - Does not use weapons
+// SentryProcess - Terrible Accuracy, likes to deploy randomly along path.
+// MorphTank - Good AI, uses weaponmask!
+// TurretTank - Attacks units only within weapon range, will not move to attack units unless told to.
+// GechProcess - Decent AI, ignores weaponsmask
+heatSignature = 5.0
+imageSignature = 0.5
+radarSignature = 0.0
+isAssault = 1
+canSelect = 0
+isStealth = 1
+
+canSnipe = 0
+
+armorClass = H
+
+requireCount = 2
+requireName1 = "ibfact"
+requireText1 = "Build Special Ops"
+requireName2 = "ibccent"
+requireText2 = "Build Command Nexus"
+
+boxCollide = 1
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue2"
+lightHard2 = "hp_light_2"
+lightName2 =  
+
+/////// weapons //////////////////
+
+weaponMask = 00011
+weaponHard1 = "HP_GUN_1"
+weaponName1 = "glmg_a"
+weaponAssault1 = 0
+weaponHard2 = "HP_GUN_2"
+weaponName2 = "glmg_a"
+weaponAssault2 = 0
+weaponHard3 = "HP_SPECIAL_1"
+weaponName3 = "gredfld"
+weaponAssault3 = 0
+
+//////////////////////////////////
+
+[CraftClass]
+
+rangeScan = 230.0
+periodScan = 2.0
+velocJam = 5.0
+EngageRange = 200
+canRescue = 1
+subAttackClass = "ADS"
+
+braccelFactor = 0.05f;
+strafeFactor = 0.1f;
+steerFactor = 1.0f;
+omegaFactor = 0.2f;
+velFactor = 0.2f;
+
+avoidSpeed = 17;
+topSpeed =20;
+
+selectWaitMsg = "avapcva.wav"
+selectDropoffMsg = "avapcvf.wav"
+selectPickupMsg = "avapcvg.wav"
+selectOtherMsg = "avapcvj.wav"
+
+goMsg = "avapcv0.wav"
+attackMsg = "avapcv9.wav"
+followMsg = "avapcvh.wav"
+followMeMsg = "avapcv3.wav"
+repairMsg = "avapcv4.wav"
+recycleMsg = "avapcv6.wav"
+rescueMsg = "avapcv5.wav"
+otherMsg = "avapcvh.wav"
+
+deployedMsg = "avapcv2.wav"
+diedMsg = "abetty3.wav"
+
+[HoverCraftClass]
+setAltitude = 1.5
+accelDragStop = 4.0
+accelDragFull = 1.0
+alphaTrack = 10.0
+alphaDamp = 3.0
+pitchPitch = 0.5
+pitchThrust = 0.1
+rollStrafe = 0.1
+rollSteer = 0.1
+
+velocForward = 30.0
+velocReverse = 15.0
+velocStrafe = 15.0
+accelThrust = 50.0
+accelBrake = 50.0
+omegaSpin = 2.0
+omegaTurn = 1.0
+alphaSteer = 5.0
+accelJump = 150.0
+
+soundThrust = "ap_rotor1.wav"
+soundSteer = "avapce5.wav"
+soundDeploy = "iapc04.wav"
+soundUndeploy = "avapc30.wav"
+
+[DeployableClass]
+isStealthDeployed = 1
+
+[APCClass]
+soldierType = "fselite"
+soldierCount = 4
+soldierDelay = 0.0
+timeDeploy = 2.0
+flightAltitude = 55.0
+SoldierAltitude = 35.0
+InternalSoldiersAreAmmo = false // if true, ammo meter shows the % of soldiers in the APC. (updated occasionally)
+
+

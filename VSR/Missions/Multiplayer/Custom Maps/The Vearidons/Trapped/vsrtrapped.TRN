@@ -1,0 +1,35 @@
+[Size]
+MetersPerGrid=8.0
+HeightGranularity=0.1
+MinX=-2048.0
+MinZ=-2048.0
+Width=4096.0
+Depth=4096.0
+Height=0
+Tile=0
+Color="255 255 255 255"
+
+[NormalView] 
+DiffuseColor="204 204 204"
+SpecularColor="10 10 10"
+SpecularPower=1024.0
+
+[World]
+MusicTrack1=2
+MusicTrack2=3
+MusicTrack3=4
+
+[Texture]
+TileTexture0="bane2.tga"
+TileTexture1="bane5.tga"
+TileTexture2="bane.tga"
+TileTexture3="bane3.tga"
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap1"
+CaptureTarget2 = "VSRcap2"
+CaptureTarget3 = "VSRcap3"
+CaptureTarget4 = "VSRcap4"
+CaptureTarget5 = "VSRcap5"
+CaptureTarget6 = "VSRcap5"

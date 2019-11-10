@@ -1,0 +1,22 @@
+[WeaponClass]
+classLabel="igjetp"
+geometryName="egjetp_vsr.xsi" // {VSR-007}
+//geometryScale=0.10		//Commented out GeometryScale for BZCC
+animCount=1
+animName1="launch"
+animFile1="egjetp_vsr.xsi"
+ordName=NULL
+wpnName="Jetpack"
+wpnIcon="wire_egjetp_vsr%d.tga"
+flashName="igjetp.render"
+wpnReticle="gphantom.0"
+localAmmo=1
+canSelect=false
+MinOwnerLifetimeSeconds=1.5 // {VSR-008}
+
+[JetPackClass]
+ammoCost=1
+burnTime=3.0
+accelThrust=30.0
+activeSound="jpack01.wav"
+expireSound="jpack02.wav"

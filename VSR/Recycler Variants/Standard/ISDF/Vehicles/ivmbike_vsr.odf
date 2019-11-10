@@ -1,0 +1,32 @@
+[GameObjectClass]
+clearBuildZone=0 // {VSR-005}
+//geometryName="ivmbikvsr00.xsi"
+geometryScale=1.10 // *1.00 {VSR-025}
+classLabel="ivmbike"
+
+[CraftClass]
+blastDist=160 // {VSR-024}
+// GROUND_ELASTICITY=-0.2 // *[1]
+
+[HoverCraftClass]
+velocForward=32.0 // *35 {VSR-026}
+setAltitude=0.8   // *1.5 {VSR-027}
+LIFT_DAMP=5.125   // {VSR-UNDOC}
+
+// *[1]
+// MoreLike12Physics=true
+// OverWaterVelocFrontMult=1.0
+// OverWaterVelocSideMult=1.0
+// OverWaterThrottleMult=0.8
+// airborneVelocFrontMult=1.0
+// airborneVelocSideMult=1.0
+// airborneThrottleMult=0.1
+// airborneMinHeightRatio=45.0
+// airborneMaxHeightRatio=90.0
+// 
+// LIFT_SPRING=16
+// LIFT_DAMP=2.1
+
+
+// [1] Note: {VSR-028}
+// VSR hover physics exlcuded to prevent hover bombing

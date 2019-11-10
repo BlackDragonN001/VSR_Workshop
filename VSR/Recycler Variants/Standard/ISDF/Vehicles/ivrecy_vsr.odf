@@ -1,0 +1,19 @@
+[GameObjectClass]
+scrapReturn=0
+classLabel="ivrecy"
+mass=500000
+
+provideCount=5
+provideName1="ivrecy"
+provideName2="ivrecyvsr"
+provideName3="VIRTUAL_CLASS_RECYCLER"
+provideName4="VIRTUAL_CLASS_RECYCLERVEHICLE"
+provideName5="base"
+
+// DLL
+startingVariant="_vsr"
+pilotRespawnWithSniper="isuser" 
+pilotRespawnWithOutSniper="isuser_m"
+
+[DeployBuildingClass]
+deployName="ibrecy_vsr"

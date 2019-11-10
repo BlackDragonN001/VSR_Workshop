@@ -1,0 +1,24 @@
+[GameObjectClass]
+classLabel="evscav_vsr"
+StayWithOwner = true
+
+[CraftClass]
+damageEffect1="dmgvhcl1_hadean"
+damageEffect2="dmgvhcl2_hadean"
+damageEffect3="dmgvhcl3_hadean"
+damageEffect4="dmgvhcl4_hadean"
+
+[TrackedVehicleClass]
+
+[TrackedDeployableClass]
+
+
+[DeployBuildingClass]
+DoExtraBuildzoneCheck=false
+
+[ScavengerClass]
+StayWithOwner=true
+
+[Lod1]
+
+[Lod2]

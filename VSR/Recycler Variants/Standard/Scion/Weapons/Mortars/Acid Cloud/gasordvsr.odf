@@ -1,0 +1,24 @@
+// =============
+// VSR Project
+// Dummy ordnance for Damage over time effect
+// =============
+[OrdnanceClass]
+classLabel="bullet"
+shotGeometry=NULL
+xplGround="gasordxplvsr"
+xplVehicle="gasordxplvsr"
+xplBuilding="gasordxplvsr"
+xplExpire="gasordxplvsr"
+shotRadius=-2.5
+
+ammoCost=0
+lifeSpan=0.1
+shotSpeed=0.1
+
+// {VSR-278}
+damageValue(N)=92
+damageValue(L)=52
+damageValue(H)=12
+damageValue(S)=12
+damageValue(D)=92
+damageValue(A)=92

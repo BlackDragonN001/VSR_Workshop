@@ -1,0 +1,9 @@
+[OrdnanceClass]
+classLabel="popshell"
+
+// {VSR-222}
+leadPositionMinTime=0.6 // *new
+leadPositionMaxTime=2.0 // *new
+
+[RadarPopperClass]
+launchOrd="poprocvsr"

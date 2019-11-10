@@ -1,0 +1,21 @@
+[Texture]
+TileTexture1="mars1.tga"
+TileTexture2="mars2.tga"
+TileTexture3="mars3.tga"
+TileTexture4="mars6.tga"	//"mars4.tga"
+TileTexture5="mars5.tga"
+TileTexture6="mars6.tga"
+TileTexture7="mars7.tga"
+TileTexture9="dark3.tga"
+TileTexture10="dark6.tga"
+
+[NormalView]
+DiffuseColor = "255 255 255 255"
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap1"
+CaptureTarget2 = "VSRcap3"
+CaptureTarget3 = "VSRcap4"
+CaptureTarget4 = "VSRcap5"
+CaptureTarget5 = "VSRcap5"

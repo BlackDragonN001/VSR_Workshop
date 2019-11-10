@@ -1,0 +1,26 @@
+[Texture]
+TileTexture1="dune1.tga"
+TileTexture2="dune7.tga"	//swapped with 7
+TileTexture3="dune3.tga"
+TileTexture4="dune4.tga"
+TileTexture5="dune5.tga"
+TileTexture6="dune6.tga"
+TileTexture7="dune2.tga"	//swapped with 2
+TileTexture8="wasteland1.tga"	//TileTexture8="dune8.tga"
+TileTexture9="dune9.tga"
+TileTexture10="mars2.tga"
+TileTexture11="sculptedrock01.dds"
+TileTexture12="mars7.tga"	//TileTexture12="mars3.tga"
+TileTexture13="brick01.dds"
+TileTexture14="mars6.tga"	//mars4.tga
+
+[NormalView]
+SpecularPower = 0
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap4"
+CaptureTarget2 = "VSRcap1"
+CaptureTarget3 = "VSRcap2"
+CaptureTarget4 = "VSRcap5"
+CaptureTarget5 = "VSRcap5"

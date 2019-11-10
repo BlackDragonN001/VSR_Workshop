@@ -1,0 +1,31 @@
+[OrdnanceClass]
+classLabel = "splintbm"
+
+shotSound = "crckt02.wav"
+xplGround = "xgasmxpl"
+xplVehicle = "xgasmxpl"
+xplBuilding = "xgasmxpl"
+
+rendername = "gasbombinsane_vsr.render"
+
+ammoCost = 200
+lifeSpan = 1e30
+shotSpeed = 67.0 // 356 m
+
+[SprayBombClass]
+payloadName = "gasbomb2insane_vsr"
+
+[Render]
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "196 255 128 32"
+finishColor = "255 128 128 0"
+startRadius = 0.5
+finishRadius = 10.0
+rotationRate = 5.0
+animateTime = 2.0
+emitDelay = 0.01
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.0 1.0 1.0"
+emitLife = 4.0

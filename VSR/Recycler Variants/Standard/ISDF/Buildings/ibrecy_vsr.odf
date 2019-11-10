@@ -1,0 +1,55 @@
+[GameObjectClass]
+TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZCC
+//buildTime=30.0
+scrapReturn=0
+baseName="ibrecy"
+classLabel="ibrecy"
+
+provideCount=4
+provideName1="ibrecy"
+provideName2="VIRTUAL_CLASS_RECYCLER"
+provideName3="VIRTUAL_CLASS_RECYCLERBUILDING"
+provideName4="base"
+
+// DLL
+startingVariant="_vsr"
+pilotRespawnWithSniper="isuser"
+pilotRespawnWithOutSniper="isuser_m"
+
+[BuildingClass]
+// {VSR-021}
+tunnelCount=4
+tunnel01X0=3
+tunnel01Z0=3
+tunnel01DX=2
+tunnel01DZ=2
+tunnel01Edge="wwfw" // Rec Pad - Ramp Area
+tunnel02X0=1
+tunnel02Z0=5
+tunnel02DX=6
+tunnel02DZ=2
+tunnel02Edge="fttt" // Rec Pad - Wide Open Front
+tunnel03X0=1
+tunnel03Z0=3
+tunnel03DX=2
+tunnel03DZ=2
+tunnel03Edge="wwft" // Rec Pad - Left Nook
+tunnel04X0=5
+tunnel04Z0=3
+tunnel04DX=2
+tunnel04DZ=2
+tunnel04Edge="wtfw" // Rec Pad - Right Nook
+
+[FactoryClass]
+weaponConfig="iweapon_vsr.odf"
+buildItem1="ivscav_vsr"
+buildItem2="ivscout_vsr"
+buildItem3="ivturr_vsr"
+buildItem4="ivtug"
+buildItem5="ivcons_vsr"
+buildItem6="ivserv_vsr"
+buildItem7="apserv_vsr"
+buildItem8="ivscoutm_vsr"
+buildEmptyItem=8
+
+[RecyclerClass]

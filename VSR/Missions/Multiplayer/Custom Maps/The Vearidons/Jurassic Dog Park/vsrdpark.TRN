@@ -1,0 +1,17 @@
+[Texture]
+TileTexture0="dune2.tga" // Main Texture, Paths, etc (191, 147, 106)
+TileTexture1="titan.tga" // Mountain texture, various patches around area. (79, 65, 55), (210, 160, 55)
+TileTexture2="dune6.tga" // Varying dirt. (191, 147, 106)
+TileTexture3="dune9.tga" // Varying dirt. (194, 149, 108)
+
+[NormalView]
+DiffuseColor="229 201 184"
+SpecularColor="25 15 10"
+SpecularPower=512
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap1"
+CaptureTarget2 = "VSRcap3"
+CaptureTarget3 = "VSRcap5"
+CaptureTarget4 = "VSRcap5"

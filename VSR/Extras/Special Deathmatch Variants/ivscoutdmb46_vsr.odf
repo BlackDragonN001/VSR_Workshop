@@ -1,0 +1,58 @@
+// VSR PROJECT
+// Smart Scout 1.2 Variant
+// AI is aggressive, links weapons, and has a large engageRange
+
+[GameObjectClass]
+classLabel="ivscout_vsr"
+baseName="ivscout"
+// pilotConfig="ispilo_vsr" // If blank, uses [if]spilo/[if]suser. Otherwise, pilot for craft
+
+aiName="MorphTankFriend" 
+aiName2="RocketTankEnemy" 
+
+
+/////// PROVIDES ///////////////////
+
+provideCount=4
+provideName2="ivscout12"
+provideName3="VIRTUAL_CLASS_SCOUT"
+provideName4="DefendUnit"
+
+////////////////////////////////////
+
+weaponMask=00111 // Enable weapon linking, first 3 weapon hardpoints
+
+[CraftClass]
+/////// AI SETTINGS /////////////////
+//craftTeamIsPilotTeam=true // AI will attack this ship immediately if occupied by an enemy
+engageRange=185 // 175
+attackTaskBlastDist=40
+blastDist=40  // Gets in close
+
+canHunt=1
+
+// retargetOnStrafe=true // *false
+healthChangeLevelDelta=0.08 // *0.1 // valid values are 0..1
+
+attackTask="ArcherAttack"
+subAttackTask="ArcherSubAttack"
+// waitTask="CircleTask"
+subAttackClass="ANN" // AA Ability
+
+brAccelFactor=0.05f; // 0.9f // .85f; // Acceleration Level of target for AI to begin strafing maneuvers
+strafeFactor=0.85f; // % of time that unit will strafe
+steerFactor=0.85f; // 1.6f; // 1.05f; // Low values=slow AI steer
+omegaFactor=0.75f; // Amount of 'give' for target lead (changed for 1.3)
+velFactor=0.4f; // Thruster burst length [in % of desired velocity]
+
+alphaScale=0.55 // +0.6 // Overcompensate left/right aim (0.3 is default?)
+omegaScale=0.8  // Accuracy for opponent strafing in single direction (~0.75 is perfect?)
+
+steerScatter=0.5 // 0.3 // Allowed steer inaccuracy
+pitchScatter=0.1 // Allowed pitch inaccuracy
+
+TopSpeed=50 // Set this over actual top speed for more aggressive forward AI movement
+avoidSpeed=32
+
+[HoverCraftClass]
+aiAccelDrag=16 // Seems to affect AI strafing

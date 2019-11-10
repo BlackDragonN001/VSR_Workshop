@@ -1,0 +1,41 @@
+[GameObjectClass]
+geometryName = "pbatun05.xsi"
+classLabel = "shieldtower"
+scrapCost = 8
+scrapValue = 3
+maxHealth = 0
+maxAmmo = 10000
+unitName = "Expressway"
+heatSignature = 0.8
+imageSignature = 8.0
+radarSignature = 1.0
+collisionRadius = 5.0
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+powerCost = 0
+
+ownsTerrain = 1
+
+[ShieldTowerClass]
+triggerDelay = 0.0
+objPush = 5000.0
+objDrag = 10.0
+ordPush = 0.0
+ordDrag = 0.0
+shieldMaxZ = 16
+shieldMinZ = -16
+shieldMaxY = -1
+shieldMinY = -15
+shieldMaxX = 8
+shieldMinX = -8
+
+[BuildingClass]
+tunnelCount = 1
+
+tunnel01X0 = 1
+tunnel01Z0 = 0
+tunnel01DX = 2
+tunnel01DZ = 4
+tunnel01Edge = "fwfw"
+

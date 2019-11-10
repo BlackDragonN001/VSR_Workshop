@@ -1,0 +1,23 @@
+// NOTE:
+// BOTH explosions occur upon impact, that is
+// xwaspdesvsr and xwaspxplvsr both occur on success.
+
+[GameObjectClass]
+classLabel="waspmsl"
+maxHealth=220 // *400 {VSR-254}
+maxAmmo=200 [250] // *750 [250] {VSR-249} // What the fuck is the [250]??
+imageSignature=0.5 // *1.0 {VSR-250}
+heatSignature=0.5 // *1.0 {VSR-250}
+
+explosionName="xwaspdesvsr" // {VSR-257} {VSR-259}
+
+[TorpedoClass]
+xplBlast="xwaspxplvsr" // {VSR-256} {VSR-258}
+
+velocForward=37.0 // *30.0 {VSR-252}
+omegaTurn=3.0 // 2.0 {VSR-253}
+
+// {VSR-251}
+LIFT_SPRING=25.0 // 30.0 // *40.0
+LIFT_DAMP=4.0 // 5.0 // *15.0
+alphaDamp=3.0 // *5.0

@@ -1,0 +1,106 @@
+// =================
+// BULLET GROUND HIT
+// =================
+
+[ExplosionClass]
+classLabel = "xiongnd"
+
+particleTypes = 6
+particleClass1 = "xiongndfvsr.sand"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleClass2 = "xiongndfvsr.light"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+particleClass3 = "xiongndfvsr.sand2"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+particleClass4 = "xiongndfvsr.char"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+particleClass5 = "xiongndfvsr.flash"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.0 0.0"
+particleClass6 = "xiongndfvsr.flash2"
+particleCount6 = 1
+particleVeloc6 = "0.0 0.0 0.0"
+
+explSound = "wmgr2.wav"
+
+[sand]
+simulateBase = "sim_null"
+lifeTime = 0.6
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 1.0
+textureName = "bulsand.tga"
+textureBlend = "srcalpha incalpha modulatealpha"
+startColor = "10 130 0 230" // "0 150 0 230"
+finishColor = "80 80 80 0" // "80 80 30 0" // "150 150 0 0"
+startRadius = 0.4
+finishRadius = 1.4
+animateTime = 0.6
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.4
+renderBase = "draw_light"
+startColor = "0 255 0 255"
+finishColor = "255 255 0 0"
+startRadius = 20.0
+finishRadius = 20.0
+animateTime = 0.4
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[sand2]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 1.0
+textureName = "bulsand2.tga"
+textureBlend = "srcalpha incalpha modulatealpha"
+startColor = "30 220 0 255" // "0 255 0 255"
+finishColor = "215 215 90 0" // "255 255 0 0"
+startRadius = 0.2
+finishRadius = 0.7
+animateTime = 0.5
+
+[Char]
+simulateBase = "sim_null"
+lifeTime = 10.0 // 24
+renderBase = "draw_planar"
+textureName = "crater3bvsr.tga"//"grndchar.tga"
+textureBlend = "srcalpha incalpha modulatealpha"
+startColor = "20 30 20 150" // "10 30 10 200"
+finishColor = "20 20 20 0" //  "10 30 10 0"
+startRadius = 0.2
+finishRadius = 0.2
+animateTime = 10.0 // 24
+
+[Flash]
+simulateBase = "sim_null"
+lifeTime = 0.4 // 1.0d
+renderBase = "draw_planar"
+textureName = "blast.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 0 170"//66
+finishColor = "127 127 0 0"
+startRadius = 0.3
+finishRadius = 1.5
+animateTime = 0.4 // 1.0
+
+
+[Flash2]
+simulateBase = "sim_null"
+lifeTime = 0.6 // 1.0
+renderBase = "draw_planar"
+textureName = "blast.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 0 40"//66
+finishColor = "127 127 0 0"
+startRadius = 1.0
+finishRadius = 1.5
+animateTime = 0.6 // 1.0 // 1.0

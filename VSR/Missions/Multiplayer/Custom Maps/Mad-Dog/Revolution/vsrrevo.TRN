@@ -1,0 +1,28 @@
+[Size]
+MetersPerGrid = 8.0
+HeightGranularity = 0.1
+MinX=-2048
+MinZ=-2048
+Width=1024
+Depth=1024
+Height=100
+Tile = 1
+color=149 123 87 255
+
+[NormalView]
+SpecularPower = 1024
+DiffuseColor = "200 200 200 255"
+
+[Texture] 
+TileTexture1 = "rend4.tga"
+TileTexture2 = "rend6.tga"
+TileTexture3 = "wasteland6.tga"
+TileTexture5 = "wasteland4.tga"
+TileTexture6 = "pluto.tga"
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap4"
+CaptureTarget2 = "VSRcap4"
+CaptureTarget3 = "VSRcap4"
+CaptureTarget4 = "VSRcap4"

@@ -1,0 +1,17 @@
+[Texture]
+TileTexture0="bane4.bmp"
+TileTexture1="bane5.bmp"
+TileTexture2="pluto.bmp"
+TileTexture3="bane3.bmp"
+
+[NormalView]
+DiffuseColor = "255 255 255"
+SpecularColor = "10 10 10"
+SpecularPower = 1024.0
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap2"
+CaptureTarget2 = "VSRcap2"
+CaptureTarget3 = "VSRcap5"
+CaptureTarget4 = "VSRcap5"

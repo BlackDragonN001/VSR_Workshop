@@ -1,0 +1,20 @@
+[GameObjectClass]
+clearBuildZone=0 // {VSR-005}
+baseName="fvserv"
+classLabel="fvserv"
+
+requireCount = 1	//Changed in VSR BZCC Release 53 - No more KILN requirement for healer
+//requireName1 = "fbkiln"
+//requireText1 = "Build Kiln"
+requireName1 = "fbdowe"
+requireText1 = "Build Dower"
+
+mass=3200 // {VSR-012} 5214=stock ivserv mass // 2213.16=mort ivserv equal to fvserv_vsr, testing dmg by emp
+
+[CraftClass]
+engageRange=40 // *30 {VSR-015}
+canRescue=0 // No deal.
+canSnipe=0
+
+[ServiceTruck]
+serviceBuildings=1 // *0 {VSR-016}

@@ -1,0 +1,14 @@
+[GameObjectClass]
+clearBuildZone=0 // {VSR-005}
+classLabel="ivwalk"
+scrapCost = 40
+buildTime = 5.0
+requireCount = 0
+
+weaponName3="glaservsr_a"
+weaponName4="glaservsr_a"
+
+mass=242503 // ISDF walker mass {VSR-012}
+
+[CraftClass]
+engageRange=220 // *150 {VSR-042}

@@ -1,0 +1,30 @@
+[GameObjectClass]
+geometryName = "soundcube.xsi"
+classLabel = "commtower"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "Aids"
+heatSignature=0.0
+imageSignature=0.0
+radarSignature=0.0
+ScanTeamLimit=2
+canDetect=0
+canInteract=0
+collisionRadius = 0.0
+canSelect=0
+powerCost=0
+BaseSlot=0
+canCollide=0
+
+[BuildingClass]
+
+[PoweredBuildingClass]
+powerTap1 = "soundcube"
+powerName1 = "apvsrbldg"
+detectRange = 0
+
+[CommBunkerClass]
+rangeScan = 0
+periodScan = 0.0

@@ -1,0 +1,27 @@
+[GameObjectClass]
+TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZCC
+baseName="fbover"
+classLabel="fbover"
+
+provideCount=11
+provideName1="fbantm"
+provideName2="fbantm_vsr"
+provideName3="fbover"
+provideName4="fbover_vsr"
+provideName5="VIRTUAL_CLASS_COMMBUNKER"
+provideName6="VIRTUAL_CLASS_COMMTOWER"
+provideName7="VIRTUAL_CLASS_COMMBUNKER_U"
+provideName8="VIRTUAL_CLASS_COMMTOWER_U"
+provideName9="VIRTUAL_CLASS_OVERSEER_ARRAY"
+provideName10="VIRTUAL_CLASS_TECHCENTER"
+provideName11="base"
+
+[PoweredBuildingClass]
+powerTap1="HP_TAP_1"
+powerTap2="HP_TAP_2"
+powerName="fblung_vsr"
+
+//[CommBunkerClass] This caused the pulsating in multiworld in BZCC - commented out.
+// {VSR-011}
+//minViewDist=100.0
+//maxViewDist=200.0

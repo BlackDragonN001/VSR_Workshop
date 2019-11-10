@@ -1,0 +1,22 @@
+[WeaponClass]
+classLabel = "machinegun"
+
+// Doesnt need any geometry 
+// (glmg_c already has it)
+
+ordName = "hmg"
+wpnName = "Assault Rifle"
+fireSound = "hmg.wav"
+wpnReticle = "gminigun"
+wpnCategory = "HAND"
+isAssault = 1
+needLOS = 1
+altName = "glmg_c"
+flashName = "glmg_c.flash"
+flashTime = 0.06
+aiRange = 180
+
+[CannonClass]
+shotDelay = 0.13
+shotAlternate = 1
+shotVariance = 0.02

@@ -1,0 +1,16 @@
+[GameObjectClass]
+classLabel="seeker_f" //ORIGINALLY: classLabel="seeker1"
+//geometryName="sgseekfix.xsi" // sgseek00.xsi - SEE GBD FOR EXPLANATION
+isAssault=0 // Mines should not make Scion AI morph {VSR-009}
+explosionName="xseekvsrxpl" // {VSR-212} {VSR-211}
+infoName="apseekvsr.inf"
+
+[MineClass]
+lifeSpan=25 // *20 {VSR-208}
+xplBlast="xseekvsrxpl" // *"xseekxpl" {VSR-211}
+
+[SeekerClass]
+searchRange=70.0 // *50 {VSR-209}
+floatVeloc=30.0 // *10 {VSR-210}
+
+//This file was modified to inherit the stock seeker model in BZCC rather than the seekerfix model from 1.3, I can't find seekerfix :(

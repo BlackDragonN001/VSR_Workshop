@@ -1,0 +1,28 @@
+[GameObjectClass]
+//geometryName="ivmbikvsr00.xsi"
+//geometryScale=1.1 // *1.0
+classLabel="ivmbikedm"
+imageSignature=3.0
+
+// DM starting weps
+weaponName1="gmdmgun"
+weaponName2="gmitsminvsr"
+
+[CraftClass]
+GROUND_ELASTICITY=-0.2 // *[1]
+
+[HoverCraftClass]
+velocForward=32.0 // *35
+setAltitude=0.8 // *1.5
+
+MoreLike12Physics=true
+OverWaterVelocFrontMult=1.0
+OverWaterVelocSideMult=1.0
+OverWaterThrottleMult=0.8
+airborneVelocFrontMult=1.0
+airborneVelocSideMult=1.0
+airborneThrottleMult=0.1
+airborneMinHeightRatio=45.0
+airborneMaxHeightRatio=90.0
+LIFT_SPRING=16
+LIFT_DAMP=2.1

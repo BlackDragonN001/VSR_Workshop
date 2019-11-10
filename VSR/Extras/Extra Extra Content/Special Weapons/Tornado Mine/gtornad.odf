@@ -1,0 +1,13 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Tornado"
+fireSound = "mmine01.wav"
+aiRange = 40
+wpnReticle = "gflare"
+wpnPriority = 1
+wpnCategory = "SPEC"
+localAmmo = 400 // 250
+
+[DispenserClass]
+shotDelay = 3.5
+objectClass = "tornadomn"

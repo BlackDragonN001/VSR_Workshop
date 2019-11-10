@@ -1,0 +1,32 @@
+[Texture]
+tileTexture0="bane4.tga"
+tileTexture1="mire5.tga"
+tileTexture2="vsr_indus5.tga"
+tileTexture3="vsr_indus5.tga"
+
+
+tileTexture4="rend5.tga"
+
+[Size]
+MetersPerGrid=8.0
+HeightGranularity=0.1
+MinX=-2048.0
+MinZ=-2048.0
+Width=4096.0
+Depth=4096.0
+Height=300
+Tile=1
+Color="125 27 27 255"
+
+[NormalView]
+DiffuseColor="178.5 178.5 178.5"
+SpecularColor="15 10 10"
+SpecularPower=256
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap1"
+CaptureTarget2 = "VSRcap2"
+CaptureTarget3 = "VSRcap4"
+CaptureTarget4 = "VSRcap5"
+CaptureTarget5 = "VSRcap5"

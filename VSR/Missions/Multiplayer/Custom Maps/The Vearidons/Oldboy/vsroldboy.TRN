@@ -1,0 +1,29 @@
+[Size]
+MetersPerGrid = 8.0
+HeightGranularity = 0.1
+MinX=-1024
+MinZ=-1024
+Width=2560
+Depth=2560
+Height = 229.5
+Tile = 1
+color = "255 255 255 255"
+
+[NormalView]
+DiffuseColor = "255 255 255"
+SpecularColor = "10 10 10"
+SpecularPower = 1024.0
+
+[Texture]
+TileTexture0="mars1.tga"
+TileTexture1="mars5.tga" // Mountains.
+TileTexture2="mars7.tga" // Light-Colored patches around the map.
+TileTexture3="mars6.tga" // About 1/4th transparent grains scattered around.
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap1"
+CaptureTarget2 = "VSRcap2"
+CaptureTarget3 = "VSRcap4"
+CaptureTarget4 = "VSRcap3"
+CaptureTarget5 = "VSRcap3"

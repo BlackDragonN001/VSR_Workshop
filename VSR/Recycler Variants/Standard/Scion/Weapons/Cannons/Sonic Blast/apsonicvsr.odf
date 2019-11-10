@@ -1,0 +1,11 @@
+[GameObjectClass]
+classLabel="apsonic"
+scrapCost=20 // *30 {VSR-164}
+
+// {VSR-402} *Used to require overseer
+requireCount=1
+requireName1="fbstro"
+requireText1="Build Stronghold"
+
+[WeaponPowerupClass]
+weaponName="gsonicvsr_c"

@@ -1,0 +1,20 @@
+[GameObjectClass]
+clearBuildZone=0 // {VSR-005}
+classLabel="ivatank"
+
+// weaponMask=00001 // No effect.
+weaponName1="gplasmavsr_a"
+
+mass=34316.1 // ISDF ass. tank {VSR-012}
+
+[CraftClass]
+// I tested this, it  does not work.
+// useSelectWeapon=0 // If false, force craft to use weaponmask
+
+// After a strenuos battery of tests,
+// this seems to have zero effect
+// on assault tanks.
+// https://www.youtube.com/watch?v=ODQtFnVTmRc
+// MIN_BOUNCE_VEL=10.5
+// OBJECT_ELASTICITY=0.0125
+// GROUND_ELASTICITY=0.002

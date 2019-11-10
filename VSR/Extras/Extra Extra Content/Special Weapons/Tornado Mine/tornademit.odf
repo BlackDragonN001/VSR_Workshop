@@ -1,0 +1,21 @@
+// ========================
+// TORNADO PULSE EMIT
+// ========================
+
+[ExplosionClass]
+classLabel = "explosion"
+explSound = "vswindstorm.wav" // "silence.wav" // "turbo1b.wav"
+
+damageRadius = 15.0
+
+damageValue(N) = 12
+damageValue(L) = 10
+damageValue(H) = 3
+
+damageValue(S) = 9
+damageValue(D) = 5
+damageValue(A) = 12
+
+kickRadius = 95.0
+kickVeloc = -0.25
+kickOmega = 0.4

@@ -1,0 +1,24 @@
+[GameObjectClass]
+geometryName="vsrf12c_tun02.xsi"
+classLabel="i76building"
+maxHealth=0
+maxAmmo=0
+unitName=""
+heatSignature=0.0
+imageSignature=0.0
+radarSignature=0.0
+collisionRadius=1.0
+canDetect=0
+canInteract=0
+canSnipe=0
+ownsTerrain=1
+
+[BuildingClass]
+tunnelCount=1
+
+tunnel01X0=0
+tunnel01Z0=0
+tunnel01DX=4
+tunnel01DZ=4
+//            NESW
+tunnel01Edge="wwfw"

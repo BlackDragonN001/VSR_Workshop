@@ -1,0 +1,17 @@
+[Texture]
+TileTexture1="mossyrock01.tga"	//TileTexture1="stbowl01.tga"
+TileTexture2="mossyjagged01.tga"	//TileTexture2="stbowl02.tga"
+TileTexture3="mossyjagged02.tga"	//TileTexture3="stbowl03.tga"
+TileTexture10="sharprocks01.tga"	//TileTexture10="STHaven04.tga"
+
+[NormalView]
+SpecularPower = 1024
+
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap1"
+CaptureTarget2 = "VSRcap2"
+CaptureTarget3 = "VSRcap3"
+CaptureTarget4 = "VSRcap5"
+CaptureTarget5 = "VSRcap5"

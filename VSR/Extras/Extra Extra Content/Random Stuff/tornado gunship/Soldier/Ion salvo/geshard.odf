@@ -1,0 +1,16 @@
+[WeaponClass]
+classLabel = "cannon"
+//altName = "sgzbzka_c"
+ordName = "eshard"
+wpnName = "Energy Shard"
+fireSound = "gmagg04.wav"
+wpnReticle = "gsalvo"
+wpnCategory = "HAND"
+aiRange = 175
+isAssault = 1
+
+[CannonClass]
+shotDelay = 1.5
+salvoCount = 6
+salvoDelay = 0.05
+shotVariance = 0.07

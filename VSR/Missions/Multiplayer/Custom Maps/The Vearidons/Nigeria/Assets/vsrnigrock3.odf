@@ -1,0 +1,19 @@
+[GameObjectClass]
+geometryName="vsrnigrock02.xsi"
+classLabel="plant"
+unitName="TINY Rock"
+canDetect=0
+canInteract=0
+lightingtype=0
+explosionName="xplnxpl"
+maxHealth=400
+scrapvalue=1
+[PlantClass]
+standUp=0
+typeOfDeath=1
+hitRadius=1.5
+deadTime=40
+growTime=4
+hitGroundName="xplnxpl"
+hitByCarName="xplnxpl"
+hitByBulletName="xplnxpl"

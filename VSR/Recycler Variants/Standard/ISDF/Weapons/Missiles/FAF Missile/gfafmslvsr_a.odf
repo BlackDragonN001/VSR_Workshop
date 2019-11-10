@@ -1,0 +1,12 @@
+[WeaponClass]
+classLabel="gfafmsl_a"
+altName="gfafmslvsr_c"
+ordName="fafmslvsr_a"
+
+[LauncherClass]
+// Stock values (NOT INHERITED)
+lockRange=250.0
+shotDelay=1.0
+lockDelay=2.0
+coneAngle=0.075
+TeamFilter = 3 //Added in VSR BZCC Release 68 to prevent AI from locking onto friendlies attempting to kill enemies

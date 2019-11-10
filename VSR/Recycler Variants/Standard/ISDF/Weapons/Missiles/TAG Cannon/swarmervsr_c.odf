@@ -1,0 +1,19 @@
+[OrdnanceClass]
+classLabel="swarmer_c"
+
+ammoCost=8 // *10 {VSR-230}
+
+// {VSR-235}
+damageValue(L)=60 // *50
+damageValue(H)=54 // *40
+
+[MissileClass]
+omegaTurn=2.9 // *2.2 {VSR-232}
+
+// {VSR-233}
+velocForward=135.0
+accelThrust=40.0
+
+// {VSR-234}
+avoidRange=20.0 // *new terrain obstacle-avoidance range
+avoidStrength=1.0 // *new

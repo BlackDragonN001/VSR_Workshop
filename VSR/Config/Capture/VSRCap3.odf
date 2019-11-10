@@ -1,0 +1,40 @@
+// Capture target 3: Rock of Knowledge.
+[GameObjectClass]
+geometryName = "ropilr02.fbx"
+classLabel = "sensor"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "Rock of Knowledge"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+collisionRadius = 5.0
+canDetect = true
+canInteract = true
+ownsTerrain = true
+isSingle = false
+CategoryTypeOverride = 22
+
+[BuildingClass]
+
+
+[MotionSensorClass]
+rangeScan = 1e6
+searchFilter = 215 //-1
+//	Search Filter options:
+//    1 = Hovercraft.
+//    2 = TrackedVehicle / Walker.
+//    4 = Torpedo.
+//    8 = Powerup.
+//    16 = Person.
+//    32 = LandCreature.
+//    64 = Building (i76building, Cnozzle)
+//    128 = PoweredBuilding
+//    256 = Sign (i76sign, Mine)
+//    512 = Scrap
+//    1024 = Deposit
+//    2048 = Beacon
+//    4096 = Plant/Bush
+//    8192 = Terrain

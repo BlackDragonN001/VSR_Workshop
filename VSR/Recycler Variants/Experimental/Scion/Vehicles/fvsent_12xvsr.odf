@@ -1,0 +1,144 @@
+// VSR Project
+// Sentry - 1.2 Variant
+// 'Smart' sentry sub-variant (incomplete)
+
+[GameObjectClass]
+classLabel="fvsent_vsr"
+baseName="fvsent"
+weaponName1="giongnfvsr_c"
+weaponName2="giongnfvsr_c"
+// pilotConfig="fspilo_vsr" // If blank, uses [if]spilo/[if]suser. Otherwise, pilot for craft
+
+Mass=4600 // If <= 0, uses default of Sphere(Width*Height*Breadth) * 800.0
+
+/////// PROVIDES ///////////////////
+
+provideCount=4
+provideName2="fvsent12"
+provideName3="VIRTUAL_CLASS_SENTRY"
+provideName4="DefendUnit"
+
+////////////////////////////////////
+
+/////// weapons ////////////////////
+
+
+////////////////////////////////////
+
+
+[CraftClass]
+// elasticity
+MIN_BOUNCE_VEL=0.8 // *0.5
+// OBJECT_ELASTICITY=0.0125
+GROUND_ELASTICITY=-0.92 // -0.7 // -0.2
+DAMAGE_SCALE=0.02 // Scale in turning velocity into damage, on craft:ground or craft:building collisions
+
+
+attackTask="ArcherAttack"
+subAttackTask="ArcherSubAttack"
+waitTask="CircleTask"
+subAttackClass="ANN" // AA Ability
+
+brAccelFactor=0.45f; // 0.85f; // Determines velocity of strafe (enemy) before AI begins counter strafing maneuvers
+strafeFactor=1.4f; // 0.9f; // length of time that unit will strafe in a given direction
+steerFactor=1.05f;  // How much steer to use when trying to acquire targets
+omegaFactor=0.5f; // Affects size of firing cone relative to target
+velFactor=0.3f; // Thruster burst length [in % of desired velocity]
+
+alphaScale=0.6 // Overcompensate left/right aim (0.3 is default?)
+omegaScale=0.8  // Accuracy for opponent strafing in single direction (~0.75 is perfect?). 
+
+
+steerScatter=0.35 // Allowed steer inaccuracy
+pitchScatter=0.1 // Allowed pitch inaccuracy
+
+// COMBAT MODE /////////////////////
+
+[HoverCraftClass]
+setAltitude=1.2 // *1.0
+MoreLike12Physics=true
+
+accelThrust=27.0 // *25 acceleration 
+accelJump=15.0 // 15.0
+aiVelocStrafe=55.0
+aiAccelDragStop=15.0
+aiAccelDrag=20
+aiAccelThrust=20.0
+
+OverWaterVelocFrontMult=1.0 // *.75
+OverWaterVelocSideMult=1.0 // *.75
+OverWaterThrottleMult=0.8
+airborneVelocFrontMult=1.03 // *1.0
+airborneVelocSideMult=1.2 // *1.0
+airborneThrottleMult=1.3 // *1.0
+airborneMinHeightRatio=1.3 // *2.0
+airborneMaxHeightRatio=4.0 // *5.0
+
+// Beta 4 Pre 11 settings
+// LIFT_SPRING=12 // 14
+// LIFT_DAMP=3 // 5.125 // *6.25
+
+LIFT_SPRING=14 // 6.0 // *25.0 Increases 
+LIFT_DAMP=2 // 0.1 // 5.75 // *6.25
+
+// ASSAULT MODE ////////////////////
+
+[MorphTankClass]
+switchMask=00011 // *new
+maxHealth=2000 // *1500
+addhealth=5.0
+
+maxAmmo=2500
+addAmmo=0.0
+
+engageRange=100
+isAssault=0
+
+unitName="Sentry"
+
+rangeScan=250.0f
+periodScan=5.0f
+velocJam=5.0f
+
+velocForward=25.0 // *25
+velocReverse=10.0
+velocStrafe=25.0
+accelThrust=15.0 //acceleration
+accelDragStop=10.0 //how fast it stops once hands are off controls
+accelJump=15.0
+
+setAltitude=1.0 // how high off the ground
+
+alphaTrack=23.0 // *23 springs speed it rights itself 
+alphaDamp=8 // 9.0 // shocks 
+
+pitchPitch=0.2 //nose up 
+pitchThrust=0.1 //nose down 
+
+rollStrafe=0.14 //rolls while strafing
+omegaSpin=4.8 //spinning in place speed
+omegaTurn=3.3 //turning while moving speed
+alphaSteer=5 //how fast it responds to steering
+rollSteer=0.03 //rolls while steering
+
+MoreLike12Physics=true
+
+OverWaterVelocFrontMult=1.0 // *.75
+OverWaterVelocSideMult=1.0 // *.75
+OverWaterThrottleMult=0.8
+airborneVelocFrontMult=1.1 // *1.0
+airborneVelocSideMult=1.1 // *1.0
+airborneThrottleMult=1.5 // *1.0
+airborneMinHeightRatio=1.3 // *2.0
+airborneMaxHeightRatio=5.0 // *5.0
+
+// Beta 4 Pre 11 settings
+// LIFT_SPRING=12 // 14
+// LIFT_DAMP=3 // 5.125 // *6.25
+
+// Beta 4 Settings
+LIFT_SPRING=14
+LIFT_DAMP=2
+
+soundThrust="ssent01c.wav"
+[DeployableClass]

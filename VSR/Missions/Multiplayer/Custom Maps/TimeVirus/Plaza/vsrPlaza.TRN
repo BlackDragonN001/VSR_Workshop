@@ -1,0 +1,27 @@
+[Texture]
+TileTexture1=""
+TileTexture2="copper04.tga"	//TileTexture2="STPlaza01.tga"
+TileTexture3="brick01clas.png"	//TileTexture3="STPlaza02.tga"
+//TileTexture4="STPlaza03.tga"
+//TileTexture5="STPlaza04.tga"
+//TileTexture6="STPlaza05.tga"
+//TileTexture7="STPlaza06.tga"
+//TileTexture8="STPlaza07.tga"
+//TileTexture9="STPlaza08.tga"
+//TileTexture10="STPlaza09.tga"
+//TileTexture11="STPlaza10.tga"
+//TileTexture12="STPlaza11.tga"
+
+[NormalView]
+DiffuseColor = "255 255 255 255"
+SpecularColor = "10 10 10"
+SpecularPower = 5.0
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap1"
+CaptureTarget2 = "VSRcap2"
+CaptureTarget3 = "VSRcap3"
+CaptureTarget4 = "VSRcap4"
+CaptureTarget5 = "VSRcap5"
+CaptureTarget6 = "VSRcap5"

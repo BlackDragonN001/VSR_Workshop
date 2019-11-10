@@ -1,0 +1,7 @@
+Use the following prefixes to classify what your map can do:
+
+ST: (Svar7 = VSRst) Stock map, but has the same capabilities as "VSR:"
+VSR: (Svar7 = VSRst) Team Strat AND MPI-capable AND ST Capture-capable
+VSR FFA: (Svar7 = VSRffa) FFA strat and FFA MPI (with teams enabled)
+VSR ST: (Svar7 = st) Team strat only (with default strat settings) <- use this if you don't have path points on your map to spawn AI enemies for MPI
+VSR DM: (Svar7 = dm) Deathmatch that allows for VSR bots and VSR vehicle selection

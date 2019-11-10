@@ -1,0 +1,23 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = "sgshard01.xsi"
+shotScale = 0.15
+shotSound = "igtow04.wav"
+xplGround = "xpcanngnd_c"
+xplVehicle = "xstabcar_c"
+xplBuilding = "xmslbld"
+
+renderName = "pcann_c.render"
+
+ammoCost = 4
+lifeSpan = 0.55
+shotSpeed = 285.0
+
+damageValue(N) = 60 // none ((6/1.5)*50) 240 dmg/s 
+damageValue(L) = 40 // light 160 dmg/s
+damageValue(H) = 20 // heavy 80 dmg/s
+
+damageValue(S) = 40 // standard
+damageValue(D) = 60 // deflection
+damageValue(A) = 20 // absorbtion

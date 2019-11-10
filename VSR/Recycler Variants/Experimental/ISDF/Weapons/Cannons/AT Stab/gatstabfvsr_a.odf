@@ -1,0 +1,17 @@
+[WeaponClass]
+classLabel="gatstabvsr_a"
+altName="gatstabfvsr_c"
+ordName="atstabfvsr_a"
+flashName="gatstabfvsr_a.flash"
+
+[Flash]
+renderBase="draw_geom"
+textureName="sflash.tga"
+textureBlend="one one modulate"
+startColor="0 0 255 255"
+finishColor="55 155 255 255"
+startRadius=15.0
+finishRadius=2
+animateTime=0.1
+geomName="g_sflash.xsi"
+

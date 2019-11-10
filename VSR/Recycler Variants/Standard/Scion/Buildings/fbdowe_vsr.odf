@@ -1,0 +1,34 @@
+[GameObjectClass]
+TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZCC
+baseName="fbdowe"
+classLabel="fbdowe"
+
+provideCount=5
+provideName1="fbdowe"
+provideName2="fbdowe_vsr"
+providename3="VIRTUAL_CLASS_SUPPLYDEPOT"
+provideName4="VIRTUAL_CLASS_DOWER"
+provideName5="base"
+
+[BuildingClass]
+// {VSR-075}
+tunnelCount=3
+tunnel01X0=3
+tunnel01Z0=1
+tunnel01Dx=4
+tunnel01Dz=4
+tunnel01Edge="ttff"
+tunnel02X0=1
+tunnel02Z0=1
+tunnel02Dx=2
+tunnel02Dz=2
+tunnel02Edge="tfwt"
+tunnel03X0=5
+tunnel03Z0=5
+tunnel03Dx=2
+tunnel03Dz=2
+tunnel03Edge="fttw"
+
+[PoweredBuildingClass]
+powerTap1="HP_TAP_1"
+powerName="fblung_vsr"

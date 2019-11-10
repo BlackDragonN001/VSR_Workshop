@@ -1,0 +1,16 @@
+[GameObjectClass]
+baseName = "ivbomb"
+classLabel = "ivbomb"
+geometryName = "ivbomb00.fbx" // Version with deploy animations.
+animCount = 1
+animName1 = "deploy"
+animFile1 = "ivbomb00.fbx"
+canSnipe = 0
+
+[CraftClass]
+TeamTransferrable = true // *false
+
+[HoverCraftClass]
+//setAltitude = 6.0 // For deploying model.
+
+[BomberClass]

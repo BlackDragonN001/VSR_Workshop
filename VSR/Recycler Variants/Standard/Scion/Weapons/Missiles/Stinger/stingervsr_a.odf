@@ -1,0 +1,7 @@
+[OrdnanceClass]
+classLabel="stinger_a"
+
+[MissileClass]
+omegaTurn=1.2 // *1.0 {VSR-197}
+avoidRange=40.0 // *new {VSR-196} terrain obstacle-avoidance range
+avoidStrength=1.0 // *new {VSR-196}

@@ -1,0 +1,36 @@
+[OrdnanceClass]
+classLabel = "bouncebomb"
+shotGeometry = NULL
+
+xplGround = "xplasgnd_c"
+xplVehicle = "xplascar_c"
+xplBuilding = "xplascar_c"
+xplExpire = "xplascar_c"
+
+renderName = "jax.render"
+
+ammoCost = 5
+lifeSpan = 3.0
+shotSpeed = 20.0
+
+damageValue(N) = 100
+damageValue(L) = 75
+damageValue(H) = 50
+damageValue(S) = 75
+damageValue(D) = 100
+damageValue(A) = 50
+
+[BounceBombClass]
+bounceRatio = 0.9
+bounceSound = "jax02b.wav"
+
+[Render]
+renderBase = "draw_twirl"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "127 255 0 255"
+finishColor = "127 255 0 255"
+startRadius = 0.5
+finishRadius = 0.5
+animateTime = 3.0
+rotationRate = 2.0

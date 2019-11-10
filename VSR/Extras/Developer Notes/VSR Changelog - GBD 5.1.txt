@@ -1,0 +1,364 @@
+- Changelog from VSR 4.2 to present, additions/edits by General BlackDragon.
+
+
+Fixed "papool01.odf" render name in ST:Dusk. Was pointing to "mepool01.render", 
+possibly pointing to another map pack, or map that came in the same pack 
+as ST:Dusk? -[GBD]
+
+Fixed missing texture on papool01, it was looking for "t89.bmp", found 
+"xt89.dxtbz2" in the map's folder, Since it was used in a ZST map pack, 
+renamed it to "V89.dxtbz2". -[GBD]
+
+Added build sparker config lines to ebrecy.odf and ebfact.odf. Copied from 
+evcons. -[GBD]
+
+Made Hadean Recycler Turrets not require power. -[GBD]
+
+Changed Hadean walker odf name from "ivewalk" to "evwalk". No need for it 
+to be different. This negates the need for "pilotConfig" in the odf. -[GBD]
+
+In evatank odfs, moved 'recoilName1 = "recoil_1"' from [AssaultTankClass] 
+to [GameObjectClass], near the weapons. This makes the recoil actualy work. 
+This might have been broken in FE forever. -[GBD]
+
+Found that evwalk's head tilted sideways wierdly, added Walker12Type = 0 
+to it, this seems to fix the issue. -[GBD]
+
+Added "_12xvsr" variant, "Experimental Variant". BZ1 Style Comm Bunkers, 
+Portals, and DLL driven Recycler Undeploying. -[GBD]
+
+Gave the ISDF Hammer a cockpit. -[GBD]
+
+Fixed ivmbike_vsr not having animations. -[GBD]
+
+Fixed evscout00.xsi Crashing multiplayer. The eyepoint was misnamed as 
+"hp_eyepoin", added the missing t on the end. -[GBD]
+
+Created new FFA/ST pages. To use them, in your map .inf file for svar7 put 
+"VSRst" or "VSRffa". -[GBD]
+
+Added missing inf files for MP Vehicle lists. -[GBD]
+
+Changed ebrecy to @brecy, and dbrecy to $brecy, for consistancy with new 
+DLL code. -[GBD]
+- Redacted, now properly uses e* and d* for race letters now that 1.3 allows 
+it to work properly without causing bad assets. -[GBD]
+
+Changed fvarch_vsr to fvmisl_vsr. Added default "fvmisl". *vmisl can now 
+be used in the starting vehicle list. Also easier to use in AIPs. -[GBD]
+
+Tweaked Animation on jo42_entr_4way_dcor00.xsi. It now plays smoothly. -[GBD]
+
+Created cockpit for Scion Brawler, fvrbomb. Modified fvtug_cockpit. -[GBD]
+
+Added strafing animations to Brawler. -[GBD]
+
+Made Tugs and Service Trucks drivable, but not snipable. Very Wary of this 
+change, but lets see what happens. -[GBD]
+
+Fixed height on ST:Curiosity, ST:Magma, FFA:Scrap Pit Ex, ST: Canyons, 
+ST:Chasm, ST:Dusk, ST:Golden Sun, ST:Revolution, and DM:Sniper Forest. 
+The recy's would float in the air while deploying. It's bad to have any 
+terrain that is below 0 height. -[GBD]
+
+Added Satellite Icon made by Nielk1, concept by me. -[GBD]
+
+Made BaseSlot4 button behind armory button. Fits nicely :) -[GBD]
+
+Fixed Towers on ST:Royal. Corrected collision mesh, made them own terrain 
+so they collide. Removed dummy collision object. They should no longer appear 
+pure white with lights off. -[GBD]
+
+
+DLL things:
+
+Added FFA Alliance code. Code also properly handles Thug scavs/pilots. 
+Scavs's scrap/extractors will go to the last Commander they belonged to. 
+Pilots will go to the first commander on the team after 15 seconds. -[GBD]
+
+Tweaked player spawn code to set your starting pilot your race in both 
+Strategy and Deathmatch. -[GBD]
+
+Added new ODF Parameter to Recycler ODFs (vehicle and building form), under 
+[GameObjectClass]::PilotRespawnWithSniper = "blah" and PilotRespawnWithOutSniper 
+= "blah". These are the specified odfs for respawning pilot with and without 
+sniper rifle respawn. i.e. PilotRespawnWithSniper = "ispilo", as usual, don't 
+include .odf in the name. PilotRespawnCode now looks for this first, falls 
+back to old code if not present. -[GBD]
+
+Tweaked Pilot GetInitialPilot code to give redundancy. Now, if a race is 
+missing *suser_m or *spilo, it will give them the ISDF version. This should 
+help prevent the game from ending or bugging out when Vlad adds cerberi 
+races without csuser_m.odfs. The above mentioned Recycler settings override 
+this behavior. -[GBD]
+
+Added variables for base#hull. Exported them to shell.dll.base#hull vars, 
+1-9. This allows the use of a Hull Gauge on the BasePanels. -[GBD]
+
+Tweaked DM respawn and Empty vehicle code to A: Spawn you as the correct 
+pilot if that is your next vehicle. This properly handles pilot odf's in 
+the vehicle list that are NOT *spilo or *spilo_m. Part B handles empty 
+vehicles, If you would have gotten a pilot as your next vehicle, it now 
+doesn't spawn it when you land on the ground. -[GBD]
+
+Fixed a rare case where starting units would spawn inside of a cliff and 
+fall through ground forever. Tries to spawn them on terrain height + 5m. -[GBD]
+
+Added Remote Satellite Code. This looks for any object with BZCClasslabel = 
+"comm" in it's odf. If present, it considers this a remote selectable comm.
+When you select your comm tower, and select Activate,it will enter satellite 
+mode like in BZ1. It supports looping animation while on. Animation name 
+"BZCloop" is the loop anim, and "BZCoff" is the off state. It must have both 
+of these for the anim to stop when it's not powered. -[GBD]
+Added Satellite Enabled/Disabled to CommTower code. It looks for your 
+Recycler's Race's *event.odf, and pulls EVEN_SOUND_13/16 from that. If 
+your race doesn't have an event ODF, it uses aevent.odf. -[GBD]
+
+Added my favorite code, Portal Code. Any object with BZCClasslabel "portal" 
+in it's ODF will be considered a portal. This functions like TRO's chinese 
+portals. These use two optional taps. The first tap designates the position 
+where things exit the portal. The 2nd tap acts like a "goto" dropoff where 
+units that exit the portal go to. Portal link based on closest portal to 
+them, and if your team only has one, it will lock onto any allied portals, 
+which includes team 0. Added new odf parameter under [TeleportalClass], 
+'PortalEffectIn = "blah"' This file is a dummybuilding that spawns to 
+create the render effect of the portal when something enters it. 
+'PortalEffectOut = "blah"' This file is a dummybuilding that spawns to 
+create the render effect of the portal when something exits it. 
+'PortalEffectVehicle = "blah"' This file is a dummybuilding that spawns to 
+create the render effect of the ship when it enters this portal. -[GBD]
+- 4/11/12 Added "TeleporterChannel = 0", "CanEnter = true/false", 
+"CanExit = true/false", "RandomDestination = true/false", 
+"RandomUsesChannels = true/false", "ExitVelocity = 0", "PortalTargetRange = 10", 
+Teleporter Channel is a channel control. If not present, it assumes channel 0. 
+Otherwise, uses the specified channel #. This is a way to make teleporters 
+only go to certian other teleporters. 
+The CanEnter flag makes the teleporter not accept Entrances, but can still 
+be used as a destination. CanExit flag works in the opposite way.
+If RandomDestination is set to true, it'll pick a random teleporter to go to. 
+RandomUsesChannels is a flag to control if Random is bound to teleporters on 
+the same channel. If false, it can go to any teleporter. 
+ExitVelocity is a mult on the speed that units exit the teleporter. 
+WARNING: Setting this too high will cause the exiting crafts to explode.
+PortalTargetRange is the distance a unit has to be from the teleporter to be 
+teleported.
+All checks still look for same team first, then if there are none, 
+allied teams. -[GBD]
+- 4/24/12 Added a check on the portals ammo. It will only teleport if the 
+Portal's ammo is full. When it teleports something, ammo is set to 0. This 
+will allow the use of maxAmmo/AddAmmo to create a portal delay. -[GBD]
+- 4/26/12 Added "TeleportFilter = 3". This is a bitmask for what type of 
+object is conisdered for teleport. 1 = Ships only, 2 = Pilots only, 3 = 
+both. Default is 3 if not specified. -[GBD]
+-1/10/13 Added ODF parameter "ExitForwardOnly = false/true". This acts as 
+a flag to control how ExitVelocity is applied. If it is false (default) then 
+the ExitVelocity acts as a Multiplier on the craft's exit velocity. If 
+ExitForwardOnly is set to true, then ExitVelocity is the physical speed at 
+which the ship exits the portal, in the direction the portal is facing. 
+This is a way to force a portal to exit things forward only. -[GBD]
+-1/25/13 Added new BZCClasslabel = "portswitch". This object will switch 
+the nearest portal's channel to the value of new ODF Parameter under 
+[TeleportalClass], "PortalChannel = #". Default is 0. If the portal object 
+is a "turret" classlabel, the user could log in and fire a dispenser that 
+dispenses these portswitch objects to change the portal's channel. -[GBD]
+-1/29/13 Added ODF parameter "ShowChannel = true/false". If this is true, 
+then it will flash the channel number to allied teams every 3 seconds. If 
+it is false, it won't show the channel number. Default is true. -[GBD]
+-3/5/13 Added new ODF Parameter under [GameObjectClass], "CanTeleport = 
+true/false". If this is false, it won't be able to teleport. This only 
+applies to vehicles and torpedos/seekers. -[GBD]
+-6/8/13 Added the ability for a portal class to inherit it's channel from 
+it's label name. If the portal is labeled "channel_#" it will use that 
+channel number. -[GBD]
+-10/12/13 Added new ODF Parameter under [TeleporterClass], "ExitUsesCenter = 
+true/false". If this is false, the objects exit relative to the position 
+they entered, if true, they come out at the center of the portal. Default 
+is true. -[GBD]
+-6/26/14 Added new ODF Parameter under [TeleporterClass, "ExitKickAI = 
+false/true". If true, then it forces AI ships out a little bit forward, 
+regaurdless of ExitVelocity setting. -[GBD]
+
+Added my code for Vehicle Taps. These work on any ODF, it's just an 
+added ODF lines under [GameObjectClass]: AttachedObject1 = "blah" - 
+AttachedObject8 = "blah". This is an object that is attached to this 
+odf's root. It should be non collidable and passive ish. Also added 
+odf line: AttachedIndependent1 = true/false - AttachedIndependant8 = 
+true/false. This is a flag if the attached object can act on it's own. 
+Also made attached objects attempt to engage the host's targeted object, 
+if present. Otherwise, they'll engage on their own if independant is 
+true. -[GBD]
+-10/10/13 Added floating point offsets to the positions of Attacher code objects. 
+They no longer have to be in the center of the object. Added new ODF Parameters 
+under [GameObjectClass]::AttachedOffset# = "0.0 0.0 0.0". Default positions are 
+still 0,0,0, center of the object. -[GBD]
+-6/25/14 Added floating point rotation offsets to the positions of attacher 
+code objects. Added new ODF Parameter under 
+[GameObjectClass]::AttachedRotation# = "0.0 0.0 0.0". These take degrees, so 
+AttachedRotationX1 = 90.0 would be 90 degrees. -[GBD]
+-8/2/14 Added new ODF Parameter under [GameObjectClass]::AttachedCoordinateFire# 
+= false. If this is false (default), then multiple taps on the object will 
+attempt to fire at different targets, if more then one is within range. If 
+the host vehicle "T" Targets something, then all taps will fire on that 
+target. Also added new ODF Parameter under [GameObjectClass]::AttachedDeployState# 
+= -1. This is a flag to if the object is active while the unit is deployed 
+or not. -1 means always there, 0 means when not deployed only, 1 means when 
+deployed only. -[GBD]
+
+Added support for Minelayers/Patrols for Teams. Any unit with BZCClasslabel 
+"DLLPatrolship" or "DLLMinelayer" then these units will be sent randomly 
+to pathpoints "#Patrol#" or "#MLay#" respectively. The first # is the team 
+number of the unit, the 2nd is a numerical designation. Map Makers should 
+place these paths in numerical order, starting at 1. -[GBD]
+
+Added ODF Variable "HeightOffset = #" under [GameObjectClass]. If this is 
+not 0, then the object will be moved vertically by that amount on mission 
+start. This is a float, so values as low as 0.000001 will work. -[GBD]
+- HeightOffset Feature removed. Not used, and not MP/SaveGame friendly.
+Not worth the hassle of making it so, as it's not ever used. -[GBD]
+
+Added new ODF Parameter under [GameObjectClass]: "PerceivedTeam = #". This 
+is the objects starting out percieved team. Valid values are 0 - 15. Default 
+is unchanged. -[GBD]
+
+Made Starting Vehicles spawn inherit the Recycler Variant type in the ODF 
+name from the Recycler ODF. If you start with *vrecy_vsr, it will try to 
+add _vsr to the end of the odf names of the units it spawns in ST/MPI. 
+If the odf specified doesn't exist, it uses stock behavior and spawns whats 
+listed in the startingvehicles.txt. -[GBD]
+-2/5/13 Added new ODF Parameter under [GameObjectClass]: startingVariant = ""
+If this is present in the vehicle recycler, then the game will try to spawn 
+odfs that append that string to the end of the file names. I.E. ivrecy_12svsr 
+with startingVariant = "_vsr" will point to spawn ivtank_vsr, and if that 
+doesn't exist, it will spawn the default ivtank odf. If the startingVariant 
+is missing, or empty, it will then use the above method and look for a file 
+matching the end of the recy's file name, falling back to stock if it doesn't 
+exist. -[GBD]
+
+Added support for Recycler Undeploying. If the object "BZCundepl1" is built, 
+the Recycler will play an undeploy animation, if the building form has the 
+"deploy" animation. Then after the vehicle's "timeUndeploy" has passed, or 
+if it has no deploy animation, it will become it's vehicle form. Note: This 
+will work for any base# slot, if BZCundepl[Base#] is built. -[GBD]
+
+Added DLL Driven Anchor round class, under [OrdinanceClass], BZCClasslabel = 
+"DLLAnchor", will read in the normal anchor round's [LeaderRoundClass]::StickTime 
+and [AnchorRocketClass]::accelDrag values. This means that any ordinance can 
+now act as an anchor. -[GBD]
+7/16/14 - Added new ODF Parameter under [AnchorRocketClass]::TeamFilter = 4, 
+Works like a normal team filter. -[GBD]
+
+Added new ODF Parameters under [GameObjectClass]: 'ReplaceOnDeath = "blah" 
+and 'ReplaceTeam = #'. When an object dies, if it has the line ReplaceOnDeath, 
+then it places that ODF where the object was. If the ReplaceTeam is specified, 
+it sets the new object to that team, otherwise defaults to the dead object's 
+team if blank. Also won't do anything if the ODF doesn't exist. -[GBD]
+-10/23/12 - Added parameter "ReplaceHeight = #", this is a variable that 
+sets a height differance between the old object that died, and what it's 
+replaced with. -[GBD]
+-11/14/12 - Added parameter "ReplaceExplode = false/true", this tells if 
+it replaces the object before it can explode, or if it waits until the 
+object generates it's explosion/scrap. Default is false. -[GBD]
+
+Added new method for randomizing weapons of AI units on various difficulties. 
+Added new parameter to AIP files under [Start]::Difficulty = 0. Valid values are 
+0 = none, 1 = Easy, 2 = Medium, 3 = Hard, 4 = Extreme. If it is higher then 0, 
+then the Units on a team that is running an AIP attempt to have their weapons 
+and weaponMasks set to random. It will look for the ODFName/Basename matching 
+odf with _config after it. If the ODFName is missing, it looks for an inherited 
+ODFName version. If thats not present, it looks for baseName. If baseName is not 
+specified, it attemps to use that odf name. For instance, ivtank_vsr will look for 
+ivtank_vsr_config, if not present, it will look for its classlabel's name _config, 
+if thats not present, if it, or the odf it is inherited from has baseName = "ivtank", 
+it will attempt to find and look inside basename_config, for instance ivtank_config.odf 
+for variables. -[GBD]
+
+Created new ODF files for AIP Difficulty Weapon randomization. For any root 
+ODF, an ODF named of same file name with _config on the end, should contain 
+the following items: [EasyWeaponSlot1] - [EasyWeaponSlot5], [MediumWeaponSlot1] - 
+[MediumWeaponSlot5], [HardWeaponSlot1] - [HardWeaponSlot5], [ExtremeWeaponSlot1] - 
+[ExtremeWeaponSlot5]. For each of these categories, there are 16 supported weapon 
+names. WeaponName1 - 16 = "blah", don't add .odf, it is implied. These use the 
+weapon's powerup files, traditionally named as apWEAPONNAME.odf. 
+Also added WeaponMask1 - 16 = #. This is a bitmask for the a randomly selected 
+weaponmask setting. This can be under any of each difficultie's hardpoints, 
+but only the first one is read. This can be any setting you want.
+Also added MinWeaponMask = 1, this can be under any of each difficultie's 
+hardpoints, but only the first one is read. This is a bitmask for the minimum 
+weapon mask used for this difficulty. Traditional values are: 1, 3, 7, 15, 31. 
+This overrides the random choice, and can be any number. -[GBD]
+
+Added Pilot Invulnerability to ST mode. If ivar120 is > 0, respawning pilots 
+are made invulnerable for that many seconds. If you hop into a ship or fire 
+your weapon, the invulnerability stops. Also made invulnerability effect 
+Empty ships added to the world, until someone gets into them. -[GBD]
+
+Added code to support Deploy animations on Aircraft, APCs, and Bombers. :)
+
+Added DLL code that functions as an idle dispatcher for turrets. This 
+mimics BZ1's turret movement behavior in SP. It will randomly choose to 
+have the turret either defend the base, go to a scrap field, or go near 
+an enemy's base. -[GBD]
+
+Added Hunt code, new BZCClasslabel = "DLLHuntUnit", if this is placed, it will 
+randomly hunt around the map, just like in BZ1. This object uses a Hunt code 
+section in the BZC Dispatch code. Hunting units goto random scrap pieces, or 
+random objects if there is no scrap. -[GBD]
+
+Added a new AIP Paramter under [Start]::UnitsService = false/true. 
+If this is set to true, units will automatically go to the nearest place to 
+repair or reload when their health/ammo is low. Added new ODF Parameters 
+under [GameObjectClass], "CanAIReload = true/false", "CanAIRepair = true/false", 
+and "AIRepairHealthRatio = 0.15f". If CanAIReload and/or CanAIRepair are 
+set to false, then they override the AIPs UnitsService setting. If it is 
+true, then when this unit is too low on ammo to fire, or it's health is less 
+then AIRepairHealthRatio %, the unit will look for a place to go rearm or 
+repair. Default is true. -[GBD]
+
+Added new ODF Parameters to the unit _config.ODF files, under each 
+of the difficulty settings, (doesn't matter which hardpoint, first one found 
+is used) "AIServiceChance = 0.0", "AIPatrolChance = 0.0", and "AIHuntChance = 0.0". 
+AIServiceChance is the % chance (0.0 - 1.0) every 10 seconds that the unit 
+will get service if the AIP running has UnitsService = true, or if the DLL 
+passed the unit to AddToDispatch with the CanService flag set to true. 
+AIPatrolChance, AIHuntChance, and AIEscortChance are the % chance that an 
+Offensive unit built from this AIP will Patrol/Hunt in IA/MPI. BZCClasslabel 
+"DLLPatrolship" and "DLLHuntunit" will always patrol/hunt. The unit will always 
+Hunt if the DLL passed the unit to AddToDispatch with the Hunt flag set 
+to true. -[GBD]
+
+Added new AIP Parameters under [IdleDispatcher], "MaxPatrolUnits = 0", 
+and "MaxHuntUnits = 0" amd "MaxEscortUnits = 0". These define the max number of 
+Patrol/Hunt ships the AI will try to have out at a time. When a unit is built 
+that is a valid class for Dispatching, the Patrol/Hunt Chance is used as the % 
+chance that unit will be sent to Patrol/Hunt, until the number of patrollers / 
+hunters / escrots reaches the max. -[GBD]
+
+Created code to restore the player's ship on join. This has two different 
+modes, Name, and Slot. This code saves the players ship and all related 
+information, and restores it when they rejoin. If it is set to Name, then it 
+restores the player with the same name when they enter a game. If it is set 
+to Slot, then it will give whoever enters in a previously owned Team slot the 
+previous owner's ship. -[GBD]
+
+Upped max AI in MPI to 10. Now starts first AI on team 6 and goes up from there. 
+FFA maps can now have lots more lag! :) -[GBD]
+
+Made DLL not keep track of ALL objects on the map, omitted scrap since 1.3 PB7 
+can now properly use the Hunt command, no more need for DLL driven version. 
+Hopefully this will cut down the lag in late-game IA/MPI somewhat. -[GBD]
+
+Fixed ISDF not being able to upgrade their Extractor. Typo from the new ODF 
+inheritence. -[GBD]
+
+Fixed ST Rejoin Pilot Invulnerability timer continuing to count down even if the 
+player was no longer in game. -[GBD]
+
+
+To do list: 
+
+- Smart AI, geos for powerups, ammo/health when needed. Usable weapons, 
+and "retreats" from engagement when needing to repair. 
+
+- Fix up INFs.
+
+- Add maps!

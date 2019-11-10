@@ -1,0 +1,249 @@
+_  ______  ____      ___  
+\\ ||\\    \\  \\    \\_>>   _  _  __     _   __ \\
+ \\|| \===\ \\-\\     \\  \\/  || \ \\  ||_\ || ==\\==     
+  \_|  ___\\ \\  \\    \\  \\  \\_/  \\ \\__ \\__  ||     RELEASE 4.4 Pre2 DEV
+                                     //
+=======\\ DEVELOPMENT NOTES \\==================================================================\
+
+
+-------------------------------------------------------------------------------------------------
+   A       =RELEASE BLOCKERS=
+  / \    
+ / ! \     UNKNOWN
+/_____\    
+ ALERT       
+-------------------------------------------------------------------------------------------------
+
+
+_____________________
+ >> RECENT CHANGES   \___________________________________________________________________________
+
+
+August 25, 2013
+- Fixed Unit Icon on starting vehicle version of the Brawler
+- Lowered HP of the starting (DM) version of the Zeus from 3000 to 2700
+- Resin Bomb effect radius lowered from 100 to 70m.
+- Re-added guardian AA capability due to lack of satisfaction with popper
+    as an anti-bomber weapon.
+
+August 24, 2013
+- Removed 'jump' from sundae bomber as it was preventing AI sundae bombers from 
+    traversing hills.
+- Some tweaking done to ISDF scavengers (dynamicFrictionCoeff) to reduce oversteering
+    which contributed to pathing difficulties
+ 
+August 17, 2013
+- Fixes done to corrupt effects on some pool ODFs from 1.3SMP map import.
+
+August 16, 2013
+- Fixed maps defaulting to friendly fire OFF which has had its behavior changed in 6.4m
+- Fixed Hadean pilots regaining sniper rifle when going into sat mode (experimental variant)
+- Re-added Icecream INFs to asset tree (they may need updating)
+
+August 9, 2013
+- Moved various weapons (assualt rifle, hoverpacks, resin bomb) from plus variant armory to
+  experimental version armory.
+- Updated iweaponvsr and fweaponvsr to reflect changes
+
+August 8, 2013
+- Rearranged some options on vsrST EO page.
+- Vearie's Map Selector hooked up to vsrST EO page.
+- Added a help button on vsrST EO page. Explains what the buttons do.
+- DLL Updates by General Blackdragon.
+- Hadean MSH's rebuilt. Various fixes such as hp_smoke added. Contributed by Ponies.
+
+August 3, 2013
+- All 1.3 Strategy Map Pack (1.3SMP) Maps converted to use the VSR DLL and defaults. Contributed by Vearie.
+- Visual Map Selector added to assets. Contributed by Vearie.
+- Configswitcher bat scripts improved greatly. Now switches out vehicle lists instead of map INFs and
+  shell cfgs.
+- All Vehicle Lists now use the ODF file extension. Pre 1.3.6.4 files also now use the ODF extension
+    even though internally they use the old-style format. Thanks Vearie for the suggestion.
+- Icecream Pilot glitching fixed by repairing weapon model. Contributed by GBD.
+
+
+June - August 2, 2013
+- Hadean Flame Mine HP reduced from 0 (invincible) to 250
+- Lancer acceleration reduced.
+- Acid Cloud damage profile changed. Now does less damage in its outer radius, but slightly 
+    increased damage in the inner radius. Done by overlapping damage fields and lowering the damage 
+    of the outer field.
+- Popper. Velocforward reduced (less accurate against moving targets at long range). Seeking capability 
+  vs moving targets reduced. Attempts to get it to consistently hit bomber more often attempted. Will
+  no longer fly so incredibly far.  Needs more work.
+- Multilock Missile. Turning speed lowered from 1.8 to 1.5 (stock).
+- Blink. Reduced shotdelay (cooldown) from 2.5 seconds to 2.0 seconds
+- Guardian Turrets. AA Capability removed.
+- Scion Empty Scouts. Found an ODF entry which gives them a strafing speed of 20 (over the fullscout's 
+  15). This is a carry-over from stock 1.3, but may be attributed to the Scion's ability to easily overpower
+  minigun scouts and go toe-to-toe with laser scouts. Lowered to 16.5.
+
+
+== Pre 1 Released ==
+
+June 11, 2013
+
+- Integrated DLL versions into the configswitcher bat scripts
+- Update to InnoSetup file to do version detection
+- Compiled VSR prerelease 1.
+
+June 10, 2013
+
+- DLL Updates from General Blackdragon added. Including <6.4 and >=6.4 versions.
+	- 6.4 versions now have the ability to set portal channel based on label, only requiring one ODF.
+
+June 9, 2013
+
+- Forked legacy and modern versions of shell cfgs which call vehicle lists
+- Wrote scripts which switch between legacy and modern versions
+
+June 8, 2013
+
+- Created vehicle lists for 1.3.6.4+ (thanks vearie for the script to convert legacy vehicle lists to the new spec)
+
+June 6, 2013
+
+- Major IC update package from Vearie (see document "IC Changes VSR 4.4.txt" for full list)
+- dbtcen_vsr now provides itself, dbpowe_tcen_vsr now provides itself
+- All IC objects which previously required dbtcen_vsr now require dbpowe_tcen
+- All buildings and building variants now have provides equal to their own ODF names (needed for AIP compatibility)
+
+
+June 4, 2013
+
+- Added Hadean and Anti-Hadean AIP set based on 1.2 FE's AIP set and using VSR units.
+- Hadeans now selectable as a CPU race in MPI
+
+
+June 2, 2013
+
+- Added VSR-compatible standard AIPs, based on Wug Difficult AIP set using VSR Units
+
+
+Changes done earlier than June 2, 2013
+
+- Updated ST/FFA DLL by General Blackdragon
+	- Recycler pack-up will now require a free F group
+	- Resolved any issues with pilots losing or regaining weapons when satellite view is entered
+	- Teleporters will not lose power when other buildings lose their lungs
+- Portals now require only 65 scrap (from 80), have 6000HP (from 5000), and require a service 
+	bay and commbunker instead of a tech center.
+- Fixed 'missing files' problem when a player starts as IC in the experimental variant.
+- Empty Xypos Flame Mine bug fixed.
+
+
+
+
+_____________________
+ >> PENDING TASKS    \___________________________________________________________________________
+
+
+TODO [important]
+	Identify pilot resync bug and fix if possible.
+
+TODO [important]
+	Tweak popper some more. Make it an ideal bomber killer.
+
+TODO [moderate]
+	Test and tweak all existing AIP sets where needed
+	Note, additional attack plans can be added to substitute redundant plans in some of the Hadean AIPs.
+
+TODO [moderate]
+	Write AIPs for IC
+
+TODO [optional]
+	More 'human like' AIP simulation. Reduce amount of smart scouts overall but build a few smart
+	scouts which target combat craft (like the player).
+
+TODO [optional]
+	Increased variety of pilot weapons. Soldier DM Mode.
+
+TODO [optional]
+	Shim to allow use of ZEMod soldiers in regular VSR DM if ZE is installed
+
+TODO [optional]
+	Further Map Imports for FFA mode
+
+TODO [optional]
+	FFA: VSR: Scrap Pit Extreme -- fix terrain near base so it's level with base pool.
+
+TODO [optional]
+	Rebuild bazooka external geometry, attempt to solve glitching problem
+
+TODO [optional]
+	Sniper Forest: Redo cabin fire effect, make it an emit so it works w/o headlights
+	   Increase cabin HP, make trees indestructable, give boids a blood explosion
+
+
+_____________________
+ >> NOTES            \___________________________________________________________________________
+
+
+
+
+_______________________
+ >> TEST MODE SECTION  \_________________________________________________________________________
+
+
+= RECYCLER TESTS: =
+
+Test these things:
+- MP Spawn test (recycler and pilot)
+- Build Tree Test
+- Armory Test
+- Rec/Fac weapon modification test
+
+
+VSR CLASSIC (*vrecy_vsr)
+
+ISDF		N
+Scion		N
+Hadean		N
+IC		N
+
+VSR PLUS (*vrecy_12svsr)
+
+ISDF		OK
+Scion		OK
+Hadean		N
+IC		N
+
+VSR EXPERIMENTAL (*vrecy12xvsr)
+
+ISDF		OK
+Scion		OK
+Hadean		OK
+IC		OK
+
+
+= COMPAT TESTS: =
+
+ASSET COMPAT:	OK
+MP BURN-IN TEST:N/A
+
+
+= BUILD TESTS: =
+
+BUILD TEST	Pending
+
+= INSTALL TESTS: =
+
+INSTALL TEST	Pending
+POST COMPAT 	Pending
+
+= RELEASE =
+
+UPLOAD:		Pending
+ANNOUNCEMENT:	Pending
+
+
+_______________________
+ >> DEFERRED TARGETS   \_________________________________________________________________________
+
+
+These items will be deferred for a future VSR Release
+
+* Convert IC and Hadeans to use @ and $ exclusively
+* Improve Instant Action Support
+* Create a VSR MPI mode
+* Tweaks to Scion AA

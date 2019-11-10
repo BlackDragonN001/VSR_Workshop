@@ -1,0 +1,16 @@
+[GameObjectClass]
+classLabel="comet"
+maxHealth=900 // *600 {VSR-261}
+maxAmmo=700 // *1000 {VSR-262}
+armorClass=H // *N {VSR-263}
+explosionName="xtordesxplvsr" // {VSR-268} {VSR-269}
+
+[TorpedoClass]
+setAltitude=1.0 // *2.0 {VSR-}
+velocForward=25.0 // *15 {VSR-264}
+lifeSpan=14.0 // *20.0 {VSR-266}
+xplBlast="xtorxplvsr" // {VSR-267}
+
+// {VSR-265}
+LIFT_SPRING=35.0 // *new
+LIFT_DAMP=10.0 // *new

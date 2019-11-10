@@ -1,0 +1,95 @@
+//(c)BZ2CP
+// Created by Pastell
+// FE Remastered Model and Texture: Jayden Hopkins
+
+[GameObjectClass]
+TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZCC
+geometryName = "ebfact03.fbx"
+
+//Animation added by Jayden for BZCC
+animCount = 3
+animName1 = "deploy"
+animFile1 = "ebfact03_deploy.fbx"
+animName2 = "loop"
+animFile2 = "ebfact03.fbx"
+RunAnimation = "loop"
+RunAnimIsLooped = true
+
+classLabel = "factory"
+scrapCost = 10
+scrapValue = 30
+maxHealth = 6500
+maxAmmo = 0
+unitName = "Xenomator"
+aiName = "BuildingProcess"
+aiName2 = "BuildingProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+
+armorClass = H
+
+requireCount = 0
+
+provideCount = 6
+provideName1 = "ebfact"
+provideName2 = "ebfact_vsr"
+provideName3 = "ebfact2"
+provideName4 = "ebfact3"
+provideName5 = "VIRTUAL_CLASS_FACTORY"
+provideName6 = "base"
+
+
+collisionRadius = 4.0
+
+upgradeName = "ebfact4_vsr"
+
+lightHard1 = "hp_light_1"
+lightName1 = "omnipurple"
+lightHard2 = "hp_light_2"
+lightName2 = "omniyohad"
+lightHard3 = "hp_light_3"
+lightName3 = "omniyohad"
+lightHard4 = "hp_light_4"
+lightName4 = "omniyohad"
+
+[PoweredBuildingClass]
+detectRange = 200
+
+[BuildingClass]
+tunnelCount = 1
+
+tunnel01X0 = 1
+tunnel01Z0 = 4
+tunnel01DX = 6
+tunnel01DZ = 3
+tunnel01Edge = "wttt"
+
+soundAmbient = "ibfact00.wav"
+
+// play ambient sound
+
+[FactoryClass]
+soundBuild = "ibrecy02.wav"
+soundFinish = "iapc04.wav"
+reloadMsg = "evrecy12.wav"
+rescueMsg = "evrecy13.wav"
+
+buildItem1 = "evmort_vsr"
+buildItem2 = "evmisl_vsr"
+buildItem3 = "evtank_vsr"
+buildItem4 = "evtanks_vsr"
+buildItem5 = "evatank_vsr"
+buildItem6 = "evatankl_vsr"
+buildItem7 = "evartl_vsr"
+
+BeamColor = "204 153 101 31"
+BuildSparkConfig = "sparker_hadean"
+LineFinishColor = "255 255 255 0"
+LineStartColor = "204 153 101 255"
+
+//[Lod1]
+//geometryName = "ebfactL1.xsi" ;geometry for lod1
+//distance = 80
+//dontShiftLOD = 1

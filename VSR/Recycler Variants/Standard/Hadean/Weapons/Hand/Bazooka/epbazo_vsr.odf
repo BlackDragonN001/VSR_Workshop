@@ -1,0 +1,24 @@
+[GameObjectClass]
+geometryName="aphand00.xsi"
+classLabel="wpnpower"
+scrapCost=10
+scrapValue=0
+maxHealth=150
+maxAmmo=0
+heatSignature=0
+imageSignature=0
+radarSignature=0
+unitName="Hadean Rocket"
+aiName="PowerUpProcess"
+requireCount=1
+requireName1="ebtrain"
+requireText1="Believers Vat"
+lightHard1="hp_light_1"
+lightName1="omnipur-pil"
+
+[PowerUpClass]
+soundPickup="pickup01.wav"
+soundReject="reject.wav"
+
+[WeaponPowerupClass]
+weaponName="egbzka_vsr_c"

@@ -1,0 +1,9 @@
+[GameObjectClass]
+classLabel="mitsmin2"
+isAssault=0 // Mines should not make Scion AI morph {VSR-009}
+
+[MagnetMineClass]
+// {VSR-151}
+// __________  New    // Stock
+objDrag=       2.0    // Center: *4.0 Edge: *0.4
+ordDrag=       5.0    // Center: *10.0 Edge: *1.0

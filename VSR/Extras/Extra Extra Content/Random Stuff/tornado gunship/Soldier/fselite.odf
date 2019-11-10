@@ -1,0 +1,180 @@
+[GameObjectClass]
+clearBuildZone=0
+
+
+baseName = "fselite"
+classLabel = "person"
+geometryName = "fselite_skel.xsi"
+//GeometryScale = 0.08 // 0.1 - original scale2
+collisionRadius = 1.8
+
+animCount = 14
+
+// empty-handed animations
+animName1 = "stand"
+animFile1 = "sspilo_rifle_skel.xsi"
+animName2 = "walk"
+animFile2 = "sspilo_rifle_run.xsi"
+animName3 = "crouch"
+animFile3 = "sspilo_rifle_crouch.xsi"
+animName4 = "jump"
+animFile4 = "sspilo_rifle_jump.xsi"
+
+// combat mode animations
+animName5 = "standC"
+animFile5 = "sspilo_rifle_skel.xsi"
+animName6 = "walkC"
+animFile6 = "sspilo_rifle_run.xsi"
+animName7 = "crouchC"
+animFile7 = "sspilo_rifle_crouch.xsi"
+animName8 = "jumpC"
+animFile8 = "sspilo_rifle_jump.xsi"
+
+// assault mode animations
+animName9 = "standA"
+animFile9 = "sspilo_bazooka_skel.xsi"
+animName10 = "walkA"
+animFile10 = "sspilo_bazooka_run.xsi"
+animName11 = "crouchA"
+animFile11 = "sspilo_bazooka_crouch.xsi"
+animName12 = "jumpA"
+animFile12 = "sspilo_bazooka_jump.xsi"
+
+// Death animations
+animName13 = "DeathA"
+animFile13 = "sspilo_rifle_death01.xsi"
+animName14 = "DeathC"
+animFile14 = "sspilo_bazooka_death01.xsi"
+
+
+scrapCost = 25
+scrapValue = 15
+pilotCost = 1
+maxHealth = 350 // 450
+addHealth = 5
+maxAmmo = 200
+addAmmo = 15
+armorClass = L
+unitName = "Paladin"
+aiName = "MorphTankFriend"
+aiName2 = "MorphTankEnemy"
+heatSignature = 0.2
+imageSignature = 0.2
+radarSignature = 0.1
+isStealth = 1
+
+canInteract = 1 // can interact using the reticle
+isGrouped = 1   // add to a command group
+needGroup = 1   // need free group to build
+isLimited = 1   // add to the limit count
+needLimit = 1   // need free limit to build
+canDetect = 1   // can attack other pilots through attack command
+
+weaponMask = 00111
+weaponHard1 = "HP_HAND_1"
+visualHard1 = "HP_DOCK_H"
+weaponAssault1 = 0
+weaponName1 = "sgzbzka_c"
+
+weaponHard2 = "HP_HAND_1"
+visualHard2 = "HP_DOCK_H"
+weaponAssault2 = 1
+weaponName2 = "geshard" 
+
+weaponHard3 = "HP_PACK_1"
+visualHard3 = "HP_DOCK_P"
+weaponAssault3 = 0
+weaponName3 = "sgelitejp"
+
+turretCount = 6
+turretName1 = "torso"
+turretName2 = "head"
+turretName3 = "larm"
+turretName4 = "rarm"
+turretName5 = "eyebone"
+turretName6 = "hp_eyepoint_1"
+
+[CraftClass]
+attackTask = "MorphTankAttack"
+subAttackTask = "ArcherSubAttack"
+subAttackClass = "ANN"
+steerFactor = 1.1
+omegaScale = 0.74
+alphaScale = 0.05
+omegaScaleTurret = 1.1
+engageRange = 200
+
+[PersonClass]
+
+// crawling mode
+alphaDampCrawl    = 5.0
+alphaTrackCrawl   = 10.0
+pitchPitchCrawl   = 0.0
+pitchThrustCrawl  = 0.0
+rollStrafeCrawl   = 0.0
+velocForwardCrawl = 7.0
+velocReverseCrawl = 4.0
+velocStrafeCrawl  = 5.0
+accelThrustCrawl  = 40.0
+omegaSpinCrawl    = 1.0 // .5
+omegaTurnCrawl    = 1.0 // .5
+alphaSteerCrawl   = 11.0 // 5.0
+velocJumpCrawl    = 0.0
+pitchScaleCrawl   = 0.5
+
+// running mode
+alphaDampRun     = 8.0
+alphaTrackRun    = 15.0
+pitchPitchRun    = 0.0
+pitchThrustRun   = 0.0
+rollStrafeRun    = 0.0
+velocForwardRun  = 18.0
+velocReverseRun  = 3.0
+velocStrafeRun   = 9.0
+accelThrustRun   = 25.0
+omegaSpinRun     = 3.0
+omegaTurnRun     = 2.0
+alphaSteerRun    = 15.0
+velocJumpRun     = 16.0
+pitchScaleRun    = 1.2
+
+// flying mode
+alphaDampFly      = 2.0
+alphaTrackFly     = 5.0
+pitchPitchFly     = 0.35
+pitchThrustFly    = 0.15
+rollStrafeFly     = 0.15
+velocForwardFly   = 23.0
+velocReverseFly   = 10.0
+velocStrafeFly    = 12.0
+accelThrustFly    = 25.0
+omegaSpinFly      = 2.5
+omegaTurnFly      = 1.6
+alphaSteerFly     = 2.0
+velocJumpFly      = 12.0
+pitchScaleFly     = 0.9
+
+// sound effects
+painSound1 = "fpain01.wav";
+painSound2 = "fpain03.wav";
+painSound3 = "fpain04.wav";
+painSound4 = "fpain04.wav";
+painSound5 = "fpain03.wav";
+painSound6 = "fpain02.wav";
+burnSound1 = "fburn01.wav";
+burnSound2 = "fburn01.wav";
+dieSound1  = "fdeath01.wav";
+dieSound2  = "fdeath02.wav";
+dieSound3  = "fdeath03.wav";
+dieSound4  = "fdeath04.wav";
+dieSound5  = "fdeath01.wav";
+crushSound = "fsquis01.wav";
+jumpSound  = "jetboot.wav";
+landSound  = "fland01.wav";
+stepSound  = "running2.wav"
+
+// animation rate
+animRate = 8.0
+
+[DeployableClass]
+isStealthDeployed = 1

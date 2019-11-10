@@ -1,0 +1,14 @@
+[GameObjectClass]
+geometryName="vsr_fac_pylon.xsi"
+classLabel="plant"
+unitName="Pylon"
+noShadow=1
+
+[PlantClass]
+standUp=1
+typeOfDeath=2
+hitRadius=2
+deadTime=280
+growTime=1
+burnTime=20
+fallTime=4

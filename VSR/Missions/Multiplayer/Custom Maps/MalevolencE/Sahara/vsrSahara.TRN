@@ -1,0 +1,34 @@
+[Texture]
+TileTexture1="mars1.tga"		//TileTexture1="lm01.bmp"
+TileTexture2="mire5.tga"		//TileTexture2="STSahara01.bmp"
+//TileTexture3="STSahara02.bmp"
+//TileTexture4="STSahara03.bmp"
+//TileTexture5="STSahara04.bmp"
+TileTexture6="mars1.tga"	//TileTexture1="mars04.bmp"
+TileTexture7="mire5.tga"	//TileTexture2="STMojave01.bmp"
+TileTexture8="mars7.tga"	//TileTexture4="STMojave02.bmp"
+TileTexture9="street_2.tga"
+TileTexture10="dune3.tga"	//TileTexture10="STMojave03.bmp"
+TileTexture11="street_1.tga"
+//TileTexture6="dune2.tga"
+//TileTexture7="street_4.tga"
+//TileTexture8="street_5.tga"
+//TileTexture9="dune3.tga"
+//TileTexture10="dune5.tga"
+//TileTexture11="mbextf02.tga"
+//TileTexture12="titan3.tga"
+//TileTexture13="dune8.tga"
+//TileTexture14="pluto.tga"
+//TileTexture15="titan.tga"
+
+[NormalView]
+diffusecolor = "225 225 225 255"
+specularpower = "1024"
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap1"
+CaptureTarget2 = "VSRcap2"
+CaptureTarget3 = "VSRcap4"
+CaptureTarget4 = "VSRcap5"
+CaptureTarget5 = "VSRcap5"

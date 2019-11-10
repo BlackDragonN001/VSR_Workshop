@@ -1,0 +1,104 @@
+[GameObjectClass]
+clearBuildZone=0 // {VSR-005}
+classLabel="fvarch_vsr"
+baseName="fvarch"
+scrapCost=20 // {VSR-365}
+buildTime = 2.0
+maxHealth=2300 // *2500 {VSR-093}
+imageSignature=1.0 // *0.75 {VSR-094}
+requireCount=0
+
+provideCount=5
+provideName1="fvarchcpuinsane_vsr"
+provideName2="VIRTUAL_CLASS_MORPHTANK"
+provideName3="VIRTUAL_CLASS_LANCER"
+provideName4="VIRTUAL_CLASS_MISSILESCOUT"
+provideName5="DefendUnit"
+
+weaponName1="gfrbombvsr_c"
+weaponName2="gseekervsr"
+weaponName3="gshield"
+
+[CraftClass]
+// VSR Physics {VSR-000}
+GROUND_ELASTICITY=-0.2
+
+// Custom AI restored to stock behaviour. Reason: https://www.youtube.com/watch?v=IJZYGvhnGvw
+// AI
+// fireWhenCanHitFriends=false
+// gotoTaskHasLeader=false // if true, gotos will be done in a leader/follower model
+// doWeaponCanHitCheck=true // if false, AI may try to use weapon on targets it cant lock onto
+// attackTaskUsesGroups=false // false
+// skipSitIfCanHit=true
+// doBlastUsesFields=true // Skip some object interaction checks if true. If false, check if can hit.
+// 
+// OffensiveProcessIsDistractable=true
+// OffensiveProcessIsDistractableAITeam=true
+// OffensiveProcessIsTenacious=false
+// OffensiveProcessMadTime=5.0
+
+// The 'GoodEyes' flag is used within the GetClosestEnemyWithin()
+// code. If true, that function will allow units behind them to be
+// considered, else only those in front of them. All three flags compile,
+// but are untested. [NM]
+// ClosestEnemyGoodEyes=true // but defaults true for CLASS_TURRETTANK items
+
+// Why? This is probably default for all lancer weapons anyway...
+// AITargetLocation=0 // -1=default, or 0=center, 1=high, 2=low, 3=left, 4=right
+
+// Why should the lancer have this but other AI not?
+//IgnoreDestroyedTargets=true
+
+// attackTask="ArcherAttack"
+// subAttackTask="ArcherSubAttack"
+// waitTask="CircleTask"
+// holdTask="CircleTask"
+
+[HoverCraftClass]
+velocForward= 35.0 // *31.0 {VSR-095}
+accelThrust=  18.0 // *22.5 {VSR-096}
+accelDragStop= 5.0 // *12.0 {VSR-097}
+
+// VSR Physics {VSR-000}
+MoreLike12Physics=true
+OverWaterVelocFrontMult=1.0
+OverWaterVelocSideMult=1.0
+OverWaterThrottleMult=0.8
+airborneVelocFrontMult=1.0
+airborneVelocSideMult=1.0
+airborneThrottleMult=1.2
+airborneMinHeightRatio=1.6
+airborneMaxHeightRatio=4.0
+LIFT_SPRING=8
+LIFT_DAMP=3
+
+[MorphTankClass]
+switchMask=00001 // *new {VSR-UNDOC}
+velocStrafe=18.0 // *16 {VSR-098}
+accelThrust=18 // *25 {VSR-099}
+omegaSpin=1.5 // *4.0 {VSR-100}
+omegaTurn=0.8 // *0.5 {VSR-100}
+
+// Stock values must be repasted, BZ2 does not inherit from [MorphTankClass].
+maxHealth=2000
+maxAmmo=3000
+addAmmo=0.0
+addHealth=9.0
+engageRange=150
+isAssault=0
+unitName="Lancer"
+periodScan=5.0f
+velocJam=5.0f
+velocForward=28.0
+velocReverse=10.0
+accelDragStop=8.0
+accelJump=8.0
+setAltitude=1.0
+alphaTrack=21.0
+alphaDamp=8.0
+pitchPitch=0.25
+pitchThrust=0.1
+rollStrafe=0.08
+alphaSteer=3.0
+rollSteer=0.08
+soundThrust="ssent01k.wav"

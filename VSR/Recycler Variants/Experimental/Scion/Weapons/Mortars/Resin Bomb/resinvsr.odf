@@ -1,0 +1,61 @@
+[OrdnanceClass]
+classLabel = "spraybomb"
+shotSound = "rmort01.wav"
+xplGround = "xgasmxpl"
+xplVehicle = "xgasmxpl"
+xplBuilding = "xgasmxpl"
+
+rendername = "resinvsr.render"
+
+ammoCost = 200
+lifeSpan = 180
+shotSpeed = 67.0
+
+damageValue(N) = 0 // none
+damageValue(L) = 0 // light
+damageValue(H) = 0 // heavy
+
+damageValue(S) = 0 // standard
+damageValue(D) = 0 // deflection
+damageValue(A) = 0 // absorbtion
+
+[SprayBombClass]
+payloadName = "resinIIvsr"
+bounceRatio = 0.0
+BuildSprayOnHit = true
+HitExplodeTypes = 23
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "resinvsr.gunkball"
+renderName2 = "resinvsr.gunkemitter"
+
+[Gunkball]
+renderBase = "draw_sprite"
+textureName = "gunk.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "120 255 0 255"
+finishColor = "120 255 0 255"
+startRadius = 2.0
+finishRadius = 2.0
+
+[Gunkemitter]
+renderBase = "draw_emit"
+emitName = "resinvsr.gunk"
+emitDelay = 0.08
+emitVelocity = "0.0 0.0 30.0"
+emitVariance = "15.0 15.0 10.0"
+
+[Gunk]
+simulateBase = "sim_ember"
+renderBase = "draw_twirl"
+textureName = "gunk.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "120 255 0 255"
+finishColor = "120 255 0 0"
+startRadius = 0.75
+finishRadius = 0.5
+animateTime = 1.5
+rotationRate = 5.0
+lifeTime = 1.5

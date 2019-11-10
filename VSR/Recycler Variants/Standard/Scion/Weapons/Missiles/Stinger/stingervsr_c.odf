@@ -1,0 +1,16 @@
+[OrdnanceClass]
+classLabel="stinger_c"
+
+lifeSpan=2.666 // *4.0 (to maintain range)
+shotSpeed=75.0 // *50 {VSR-191}
+
+// {VSR-195}
+damageValue(H)=20 // *10
+damageValue(D)=20 // *10
+
+[MissileClass]
+TeamFilter=3 // *new {VSR-194} 0=targets all teams, 1=targets same team only, 2=targets only allies, 3=targets only enemies, 4=targets not same team
+omegaTurn=1.8 // 1.5 {VSR-193}
+
+[ThermalMissileClass]
+coneAngle=0.2 // *0.3 {VSR-192}

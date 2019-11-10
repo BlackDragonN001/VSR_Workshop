@@ -1,0 +1,133 @@
+[GameObjectClass]
+baseName = "ivmine"
+geometryName = "ivmine00_vsr.xsi"
+//geometryScale = 0.65
+cockpitName= "ivcons_cockpit.xsi"
+classLabel = "minelayer"
+BZCClassLabel = "DLLMinelayer"
+animCount = 3
+animName1 = "forward"
+animFile1 = "IvMine00SF.xsi"
+animName2 = "neutral"
+animFile2 = "IvMine00SN.xsi"
+animName3 = "reverse"
+animFile3 = "IvMine00SR.xsi"
+scrapValue = 20
+scrapReturn = 30
+scrapCost = 45
+customCost = 45
+buildTime = 10.0
+customTime = 10.0
+maxHealth = 2500
+maxAmmo = 3000
+unitName = "Minelayer"
+aiName = "MineLayerFriend"
+aiName2 = "MineLayerEnemy"
+heatSignature = 0.1
+imageSignature = 2.0
+radarSignature = 2.0
+needPilot = 1
+canSnipe = 1
+
+isAssault = 1
+
+armorClass = L
+
+requireCount = 1
+requireName1 = "ibarmo"
+requireText1 = "Build Armoury"
+
+provideCount = 4
+provideName1 = "ivmine"
+provideName2 = "minea"
+provideName3 = "defense"
+provideName4 = "DLLMinelayer"
+
+/////// weapons ///////////////////
+
+weaponMask = 00001
+
+weaponHard1 = "HP_SPECIAL_1"
+weaponName1 = "gproxminvsrM"
+weaponAssault1 = 1
+
+////////////////////////////////////
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotorange"
+lightHard2 = "hp_light_2"
+lightName2 = "spotorange"
+
+
+[CraftClass]
+rangeScan = 300.0f
+periodScan = 5.0f
+velocJam = 5.0f
+
+CanAIPForceIdle = false
+DoIdleDispatch = false
+
+braccelFactor = 0.05f;
+strafeFactor = 0.1f;
+steerFactor = 1.0f;
+omegaFactor = 0.3f;
+velFactor = 0.2f;
+
+avoidSpeed = 20;
+topSpeed = 30;
+
+canRescue = 1
+
+selectWaitMsg = "avminev9.wav"
+selectAttackMsg = "avminevb.wav"
+selectFollowMsg = "avminevf.wav"
+selectGoMsg = "avmineve.wav"
+selectOtherMsg = "avminevg.wav"
+
+goMsg = "avminevf.wav"
+attackMsg = "avminevc.wav"
+followMsg = "avminevf.wav"
+followMeMsg = "avminev2.wav"
+repairMsg = "avminev3.wav"
+reloadMsg = "avminev4.wav"
+rescueMsg = "avminev5.wav"
+recycleMsg = "avminev6.wav"
+otherMsg = "avminevf.wav"
+holdMsg = "avminevf.wav"
+user1Msg = "avminev0.wav"
+
+killedMsg = "ivtank07.wav"
+diedMsg = ""
+
+[HoverCraftClass]
+setAltitude = 2.0
+accelDragStop = 20.0
+accelDragFull = 1.0
+alphaTrack = 20.0
+alphaDamp = 5.0
+pitchPitch = 0.25
+pitchThrust = 0.1
+rollStrafe = 0.1
+rollSteer = 0.1
+
+velocForward = 10.0
+velocReverse = 10.0
+velocStrafe = 10.0
+accelThrust = 20.0
+accelBrake = 75.0
+omegaSpin = 3.5
+omegaTurn = 1.5
+alphaSteer = 5.0
+accelJump = 20.0
+
+soundThrust = "iengf.wav"
+soundTurbo = "avrckte1.wav"
+
+[MineLayerClass]
+mineCount = 15 //3 // # of mines to drop. // BZ1.5 values.
+radius = 100.0 //10.0f //48.0f //60.0f // Initial radius 
+radiusInc = 100.0 //10.0f //48.0f //60.0f // Amount radius grows by each drop 
+angleInc = 72.0 //90.0f //72.0f //72.0f*radiusInc/radius // Initial angle increment per drop (in DEGREES) 
+angleDec = 0.0 //4.0f //0.0f // Amount angle increment decreases by each drop (in DEGREES) 
+timeout = 15.0f // Timeout (seconds) in getting to next drop point. Will give up if exceeded. 
+ringPattern = true // If false, does normal spiral pattern, if true, does the bz1.5/98r ring pattern.

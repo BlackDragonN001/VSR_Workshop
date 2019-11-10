@@ -1,0 +1,51 @@
+
+
+
+
+
+[GameObjectClass]
+baseName="evatanku"
+classLabel="evatank_vsr"
+scrapValue=40
+scrapCost=85
+customCost=85
+buildTime=25.0
+customTime=25.0
+maxHealth=5500
+maxAmmo=4000
+addAmmo=8
+unitName="Hedoux FBS"
+
+requireName1="ebtcen"
+requireText1="Build Xyr Tower"
+
+weaponMask=00001
+weaponName1="gfbgun_a"
+weaponName2="gslicer"
+weaponName3="gslicer"
+
+infoName="evatanku_vsr.inf"
+
+[CraftClass]
+damageEffect1="dmgvhcl1_hadean"
+damageEffect2="dmgvhcl2_hadean"
+damageEffect3="dmgvhcl3_hadean"
+damageEffect4="dmgvhcl4_hadean"
+
+engageRange=250
+
+UseSelectWeapon=0
+
+[TrackedVehicleClass]
+velocForward=18.0
+velocReverse=10.0
+accelThrust=8.0
+
+[AssaultTankClass]
+pitchMax=0.99
+
+[Lod1]
+geometryName="evatankL1.xsi" ;geometry for lod1
+
+[Lod2]
+geometryName="evatankL2.xsi" ;geometry for lod2

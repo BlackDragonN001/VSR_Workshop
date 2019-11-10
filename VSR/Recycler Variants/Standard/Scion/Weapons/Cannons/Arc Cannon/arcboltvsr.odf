@@ -1,0 +1,14 @@
+[OrdnanceClass]
+classLabel="arcbolt"
+
+xplGround="xarcgnd_a"
+xplVehicle="xarccarvsr_a" // {VSR-167}
+xplBuilding="xarccarvsr_a" // {VSR-167}
+
+// {VSR-168}
+damageValue(N)=110 // *100
+damageValue(L)=110 // *100
+damageValue(H)=85  // *75
+damageValue(S)=85  // *75
+damageValue(D)=110 // *100
+damageValue(A)=60  // *50

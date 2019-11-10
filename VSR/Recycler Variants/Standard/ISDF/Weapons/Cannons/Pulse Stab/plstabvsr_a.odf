@@ -1,0 +1,16 @@
+[OrdnanceClass]
+classLabel="plstab_a"
+
+// {VSR-187}
+damageValue(N)=300 // *210
+damageValue(L)=280 // *200
+damageValue(H)=210 // *190
+damageValue(S)=170 // *200
+damageValue(D)=230 // *190
+damageValue(A)=300 // *210
+
+// Yes, the PL-Stab shell actually does least damage vs Stasis. Due to the fact that the shell is both solid and energy.
+
+[PulseShellClass]
+pulseDelay=0.45 // *0.3 {VSR-186}
+xplPulse="xpulemit_a"

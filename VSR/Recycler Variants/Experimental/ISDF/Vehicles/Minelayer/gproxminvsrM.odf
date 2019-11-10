@@ -1,0 +1,11 @@
+[WeaponClass] // Special Minelayer version, 
+classLabel = "dispenser"
+wpnName = "Prox Mine"
+fireSound = "mmine01.wav"
+wpnReticle = "gproxmin"
+wpnCategory = "SPEC"
+AllowOffmapFiring = true
+
+[DispenserClass]
+shotDelay = 4.0
+objectClass = "proxminevsrM"

@@ -1,0 +1,16 @@
+[GameObjectClass]
+classLabel="apblnk"
+
+// {VSR-401} *Used to only require stronghold.
+requireCount=4
+requireName1="fbstro"
+requireText1="Build Stronghold"
+requireName2="fbdowe"
+requireText2="Build Dower"
+requireName3="fbantm"
+requireText3="Build Antenna Mound"
+requireName4="fbover"
+requireText4="Upgrade Antenna Mound"
+
+[WeaponPowerupClass]
+weaponName="gblinkvsr"

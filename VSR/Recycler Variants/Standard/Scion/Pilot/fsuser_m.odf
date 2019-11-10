@@ -1,0 +1,16 @@
+[GameObjectClass]
+clearBuildZone=0 		//{VSR-005}
+baseName="fsuser_m"
+classLabel="fspilo"
+
+maxHealth=100 			//*250 {VSR-020}  <-- Made this change to match VSR IDF Pilot
+
+weaponName1="fgsnipx_c"
+weaponName2=""
+//weaponName3="fgjetpvsr"
+
+
+//This file used to be called fsuserm_vsr.odf; that was removed to replace the stock pilot with the VSR pilot
+//since VSR is currently using the stock strategy LUA that spawns fsuser.odf; this wont affect stock since, in
+//BZCC, the mod has to be "on" in order for this change to take affect. When the mod is "off," this change does
+//nothing.

@@ -1,0 +1,175 @@
+[WeaponClass]
+classLabel = "cannon"
+
+// external geometry
+geometryName = "igsnipa2_skel.xsi"
+geometryScale = 0.2 // 0.25
+animCount = 4
+animName1 = "stand"
+animFile1 = "igsnipa2_stand.xsi"
+animName2 = "walk"
+animFile2 = "igsnipa2_stand.xsi"
+animName3 = "crouch"
+animFile3 = "igsnipa2_deploy.xsi"
+animName4 = "jump"
+animFile4 = "igsnipa2_stand.xsi"
+
+// cockpit geometry
+cockpitName = "iwrifl_cockpit_skel.fbx"
+//cockpitScale = 0.8
+animCountCockpit = 4
+animNameCockpit1 = "stand"
+animFileCockpit1 = "iwrifl_cockpit_skel.fbx"
+animNameCockpit2 = "walk"
+animFileCockpit2 = "iwrifl_cockpit_run.fbx"
+animNameCockpit3 = "crouch"
+animFileCockpit3 = "iwrifl_cockpit_sniper.fbx"
+animNameCockpit4 = "jump"
+animFileCockpit4 = "iwrifl_cockpit_skel.fbx"
+
+altName = "glmg_a"
+ordName = "lmg"
+wpnName = "9mm Machinegun"
+fireSound = "lmg.wav"
+wpnReticle = "gminigun"
+wpnCategory = "HAND"
+isAssault = 0
+
+flashName = "gxlmg_c.flash"
+aiRange = 140
+
+[CannonClass]
+shotDelay = .7
+salvoCount = 6
+salvoDelay = 0.09
+shotVariance = 0.005
+
+[flash]
+renderBase = "draw_multi"
+renderCount = 8
+renderName1 = "gxlmg_c.e1"
+renderName2 = "gxlmg_c.e2"
+renderName3 = "gxlmg_c.e3"
+renderName4 = "gxlmg_c.e4"
+renderName5 = "gxlmg_c.e5"
+renderName6 = "gxlmg_c.e6"
+renderName7 = "gxlmg_c.e7"
+renderName8 = "gxlmg_c.e8"
+
+[e1]
+renderBase = "draw_geom"
+textureName = "muz2.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 120 0 100"
+startRadius = .5
+finishRadius = 1.0
+animateTime = 0.1
+geomName = "g_fflash.xsi"//sflash
+
+[e2]
+renderBase = "draw_geom"
+textureName = "muz2.tga"
+textureBlend = "one one modulate"
+startColor = "255 150 100 255"
+finishColor = "255 150 0 255"
+startRadius = 1.0
+finishRadius = 1.3
+animateTime = 0.13
+geomName = "g_fflash.xsi"//sflash
+
+[e3]
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_emit"
+emitName = "gxlmg_c.shell"
+emitDelay = 0.1
+emitVelocity = "2.0 3.0 0.0"//.4 0 0
+emitVariance = "1.0 1.0 0.0"// .5 .5 .5
+
+[shell]
+simulateBase = "sim_ember"
+lifeTime = 2.5
+renderBase = "draw_twirl"
+textureName = "shell.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 0.06
+finishRadius = 0.06
+animateTime = 2.5
+rotationRate = 0.1
+
+[e4]
+simulateBase = "sim_dust"
+lifeTime = 0.5
+renderBase = "draw_emit"
+emitName = "gxlmg_c.smoke"
+emitDelay = 0.5
+emitVelocity = "0.0 1.0 0.0"
+emitVariance = "0.1 1.0 0.1"
+[smoke]
+simulateBase = "sim_smoke"
+lifeTime = 2.0
+renderBase = "draw_twirl"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "50 50 50 250"
+finishColor = "60 60 60 0"
+startRadius = 0.1
+finishRadius = 0.3 //
+animateTime = 2.0
+
+[e5]
+simulateBase = "sim_dust"
+lifeTime = 0.5
+renderBase = "draw_emit"
+emitName = "gxlmg_c.spark"
+emitDelay = 0.01
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "10.0 10.0 2.0"
+[spark]
+simulateBase = "sim_smoke"
+lifeTime = 0.4
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 50"
+startRadius = 0.05
+finishRadius = 0.005
+animateTime = 0.4
+
+[e6]
+renderBase = "draw_geom"
+textureName = "muzfir.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 150 0 100"
+startRadius = 1.0
+finishRadius = 1.3
+animateTime = 0.1
+geomName = "g_sflash.xsi"//sflash
+
+[e7]
+renderBase = "draw_geom"
+textureName = "muzfir.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 155 255"
+finishColor = "255 0 0 100"
+startRadius = 1.5
+finishRadius = 2.0
+animateTime = 0.11
+geomName = "g_sflash.xsi"//sflash
+
+[e8]
+simulateBase = "sim_null"
+lifeTime = 0.9
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"//lightflare.tga
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 150 0 100"
+startRadius = 0.05
+finishRadius = 0.01
+animateTime = 0.9

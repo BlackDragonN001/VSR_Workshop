@@ -1,0 +1,93 @@
+[OrdnanceClass]
+classLabel = "grenade" // experimental physics
+shotGeometry = NULL
+shotSound = "hmgordvsr.wav"
+
+xplGround = "xlmgvsr_g"
+xplVehicle = "xlmgvsr_v"
+xplBuilding = "xlmgvsr_b"
+
+renderName = "hmgvsr.render"
+
+ammoCost = 3.5 // 2.5
+lifeSpan = 0.4 // Range: 248 meters
+shotSpeed = 620.0 // Muzzle veloc: 620 m/sec; 2232 km/h
+
+damageValue(N) = 15 // none  115/s
+damageValue(L) = 11 // light 85/s
+damageValue(H) = 4 // heavy 30/s
+
+damageValue(S) = 11 // standard 
+damageValue(D) = 4 // deflection 
+damageValue(A) = 15 // absorbtion 
+
+[SniperShellClass]
+killRadius = 0.08 // 0.5 stock
+killLength = 4.0 // 15.0 stock 
+
+[render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "hmgvsr.e1"
+renderName2 = "hmgvsr.e2"
+renderName3 = "hmgvsr.e3"
+renderName4 = "hmgvsr.e4"
+
+[e1]
+simulateBase = "sim_null"
+lifeTime = 0.1 //.1
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+textureName = "trail.tga"
+startColor = "255 120 0 250"
+finishColor = "200 100 0 80"
+startRadius = 0.04 //.05
+finishRadius = 0.02 // .05
+segmentTime = 0.03 //.1
+animateTime = 0.6 //.1 
+
+[e2]
+simulateBase = "sim_null"
+lifeTime = 1.2
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"//lightflare.tga
+textureBlend = "one one modulate"
+startColor = "255 130 0 255"
+finishColor = "255 130 0 255"
+startRadius = 0.06
+finishRadius = 0.06
+
+[e3]
+simulateBase = "sim_smoke"
+lifeTime = 0.6
+renderBase = "draw_emit"
+emitName = "hmgvsr.trail2"
+emitDelay = 0.003
+emitVelocity = "1.0 1.0 1.0"//.4 0 0
+emitVariance = "0.0 0.0 0.0"// .5 .5 .5
+
+[trail2]
+simulateBase = "sim_null"//dust
+lifeTime = 1.0 //2.5
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.5
+startColor = "255 140 0 255"
+finishColor = "255 60 0 0"
+startRadius = 0.05
+finishRadius = 0.5
+segmentTime = 0.7
+animateTime = 1.0
+
+[e4]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.06
+startColor = "255 160 0 10"
+finishColor = "255 255 255 0"
+startRadius = 0.1
+finishRadius = 0.3
+segmentTime = 0.5//3.0
+animateTime = 0.007

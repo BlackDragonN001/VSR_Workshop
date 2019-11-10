@@ -1,0 +1,167 @@
+_  ______  ____      ___  
+\\ ||\\    \\  \\    \\_>>   _  _  __     _   __ \\
+ \\|| \===\ \\-\\     \\  \\/  || \ \\  ||_\ || ==\\==     
+  \_|  ___\\ \\  \\    \\  \\  \\_/  \\ \\__ \\__  ||     RELEASE 4.3 DEV
+                                     //
+=======\\ DEVELOPMENT NOTES \\==================================================================\
+
+
+-------------------------------------------------------------------------------------------------
+   A       =RELEASE BLOCKERS=
+  / \    
+ / ! \     NONE
+/_____\    
+ ALERT       
+-------------------------------------------------------------------------------------------------
+
+_____________________
+ >> RECENT CHANGES   \___________________________________________________________________________
+
+(NOTE: changes before this date are not logged)
+
+Feb 26, 2013
+
+- Created satellite view icon [/VSR/Extras/SatelliteView/icon_bzcsat64.dxtbz2] and applied it
+   to ivsatview_vsr.odf [ZA]
+- Found icecream starting units not correctly spawning. Created $v[unitname] files which were 
+    missing [ZA]
+- Found a water height bug on ST:VSR:Magma. Assuming height bug is on all VSR maps which had
+    height changes done to them. Deferring fix to GBD [ZA]
+- Modified icecream recycler engine sound. Now uses standard sound mixed with icecream jingle [ZA]
+
+
+Feb 27, 2013
+
+- Adjustments done to water height for all changed height maps [GBD]
+- Missing assets imported for ST:VSR:Goldensun [GBD]
+- Vannihilator: MaxHealth 6000->7500, AddHealth 0->4 [ZA]
+- Created Tunnel Definitions for K-Barters tunnel deathmatch ODFs [ZA]
+- VSR DM DLL edited to properly spawn non (spilo) personClass units. [GBD]
+- Further edit to satellite icon to make it fit better with other icons [ZA]
+- Import on Commando Unit done (iscomm_vsr) [ZA]
+- Scion Soldier ODF created (fssold_vsr) [ZA]
+- Game preset created (vsrdm-soldiertest.cfg) to test soldier/unit/pilot spawning [ZA]
+- Did an hour of testing on soldier/unit spawning in DM (tests OK so far) [ZA]
+
+Feb 28, 2013
+- Duplicated @vmisl_vsr as @vmisldm_vsr [ZA]
+- Edited @vmisl_vsr, downgraded stats to Zeus MC stats. This should allow the Zeus
+    that is spawned in with starting forces not to be hideously OP compared to the other
+    missle scouts. [ZA]
+- Vehicle list Zeus now points to @vmisldm_vsr which was the previous starting Zeus [ZA]
+- Fixed icecream rifle external geometry, set IC sniper to now use the fixed external geom [ZA]
+- Resolved problems on the ISDF Commando including non-working grenade launcher and glitching [ZA]
+- Scion Commando glitching workaround by having it use rifle for external weapon geom [ZA]
+
+Mar 1, 2013
+- Update to Sniper Forest [ZA]
+- Added Vearie's BZ2 Launcher to VSR Project [ZA]
+
+Mar 2, 2013
+- Improvements done to Hadean teamcolors [ZA]
+- Created satellite icon for commbunker view in experimental rec [ZA]
+- Fixed recycler undeploy health exploit (experimental rec) [GBD]
+- Fixed issue recycler variant buttons not working properly in 1.3.6.3 [ZA]
+
+Mar 3, 2013
+- Satellite Bunker Base Icon from Nielk1 added [ZA]
+- bzgame_base.cfg added to project to allow for a 4th base building icon [GBD]
+- Fixed various issues with portals and commbunkers [ZA/GBD]
+
+
+_____________________
+ >> PENDING TASKS    \___________________________________________________________________________
+
+
+TODO [optional]
+	Further Map Imports for FFA mode
+
+TODO [optional]
+	FFA: VSR: Scrap Pit Extreme -- fix terrain near base so it's level with base pool.
+
+TODO [optional]
+	Improve the way that Hadeans are teamcolored
+
+TODO [optional]
+	Rebuild bazooka external geometry, attempt to solve glitching problem
+
+TODO [optional]
+	Sniper Forest: Redo cabin fire effect, make it an emit so it works w/o headlights
+	   Increase cabin HP, make trees indestructable, give boids a blood explosion
+
+
+_____________________
+ >> NOTES            \___________________________________________________________________________
+
+
+- Set installer to use Maps13
+
+
+_______________________
+ >> TEST MODE SECTION  \_________________________________________________________________________
+
+
+= RECYCLER TESTS: =
+
+Test these things:
+- MP Spawn test (recycler and pilot)
+- Build Tree Test
+- Armory Test
+- Rec/Fac weapon modification test
+
+
+VSR CLASSIC (*vrecy_vsr)
+
+ISDF		OK ALL
+Scion		OK ALL
+Hadean		OK ALL
+IC		OK ALL
+
+VSR PLUS (*vrecy_12svsr)
+
+ISDF		OK ALL
+Scion		OK ALL
+Hadean		OK ALL
+IC		OK ALL
+
+VSR EXPERIMENTAL (*vrecy12xvsr)
+
+ISDF		OK ALL
+Scion		OK ALL
+Hadean		OK ALL
+IC		OK ALL
+
+
+= COMPAT TESTS: =
+
+ASSET COMPAT:	OK (so far)
+MP BURN-IN TEST:Inconclusive (more needed)
+
+
+= BUILD TESTS: =
+
+BUILD TEST	Pending
+
+= INSTALL TESTS: =
+
+INSTALL TEST	Pending
+POST COMPAT 	Pending
+
+= RELEASE =
+
+UPLOAD:		Pending
+ANNOUNCEMENT:	Pending
+
+
+_______________________
+ >> DEFERRED TARGETS   \_________________________________________________________________________
+
+
+These items will be deferred for VSR 4.4 Release
+
+* Convert IC and Hadeans to use @ and $ exclusively
+* Write basic AIPs for Hadeans and IC
+* Add Hadean and IC to MPI race selection
+* MPI Recycler Variant (MSB and other experimental features)
+* Increased variety of pilot weapons. Soldier DM mode.
+* Shim to allow use of ZEMod soldiers in regular VSR DM if ZE is installed

@@ -1,0 +1,15 @@
+[GameObjectClass]
+classLabel="ivrecy_vsr"
+scrapReturn=0
+
+requireCount=2
+requireName1="ibcbun"
+requireText1="Pack Up Requires Relay Bunk."
+requireName2="ibfact"
+requireText2="Pack Up Requires Factory"
+
+// DLL
+startingVariant="_vsr"
+
+[DeployBuildingClass]
+deployName="ibrecy_12svsr"

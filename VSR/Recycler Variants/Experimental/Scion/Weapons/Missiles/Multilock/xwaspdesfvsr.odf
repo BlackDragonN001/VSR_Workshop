@@ -1,0 +1,109 @@
+// =================
+// WASP TORPEDO DESTROYED EXPLOSION
+// =================
+[ExplosionClass]
+classLabel = "xwaspdesvsr"
+
+particleTypes = 5
+particleClass1 = "xwaspdesfvsr.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 10.0 0.0"
+particleClass2 = "xwaspdesfvsr.shock"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+particleClass3 = "xwaspdesfvsr.puffR"
+particleCount3 = 4
+particleVeloc3 = "12.0 16.0 12.0"
+particleBias3 = "0.0 8.0 0.0"
+particleClass4 = "xwaspdesfvsr.puffs"
+particleCount4 = 3
+particleVeloc4 = "14.0 16.0 14.0"
+particleBias4 = "0.0 4.0 0.0"
+particleClass5 = "xwaspdesfvsr.blast"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.0 0.0"
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 2.0
+renderBase = "draw_twirl"
+textureName = "blast.dxtbz2"
+textureBlend = "one one modulate"
+startColor = "0 128 255 255"
+finishColor = "255 128 0 0"
+startRadius = 1.0
+finishRadius = 30.0
+animateTime = 2.0
+BottomInteractsWithTerrain = false
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.8
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "63 255 255 192"
+finishColor = "0 0 255 0"
+startRadius = 1.0
+finishRaius = 30.0
+animateTime = 0.8
+
+[blast]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_sprite"
+textureName = "blast.dxtbz2"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255" 
+finishColor = "0 64 255 0"
+startRadius = 1.0
+finishRadius = 30.0
+animateTime = 1.0
+
+[PuffR]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_emit"
+emitName = "xwaspdesfvsr.puffremit"
+emitDelay = 0.3
+emitDelayVar = 0.25
+emitVelocity = "0.0 3.0 0.0"
+emitVariance = "3.0 1.5 3.0"
+
+[puffremit]
+simulateBase = "sim_smoke"
+lifeTime = 2.5
+renderBase = "draw_twirl"
+textureName = "smoke.dxtbz2"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 200"
+finishColor = "20 20 20 0"
+startRadius = 0.25
+finishRadius = 8.0
+animateTime = 2.5
+rotationRate = 6.0
+
+[Puffs]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_emit"
+emitName = "xwaspdesfvsr.puffsemit"
+emitDelay = 0.2
+emitDelayVar = 0.1
+emitVelocity = "0.0 3.0 0.0"
+emitVariance = "5.0 1.5 3.0"
+
+[puffsemit]
+simulateBase = "sim_smoke"
+lifeTime = 2.0
+renderBase = "draw_twirl"
+textureName = "flame.dxtbz2"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 128 0 0"
+startRadius = 1.0
+finishRadius = 7.0
+animateTime = 2.0
+rotationRate = 10.0
+
+

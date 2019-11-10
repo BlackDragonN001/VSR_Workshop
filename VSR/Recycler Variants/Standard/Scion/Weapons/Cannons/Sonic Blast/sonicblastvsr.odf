@@ -1,0 +1,18 @@
+[OrdnanceClass]
+classLabel="sonicblast"
+
+xplGround="xsonicgndvsr_c" // {VSR-350}
+xplVehicle="xsoniccarvsr_c" // {VSR-350}
+xplBuilding="xsoniccarvsr_c" // {VSR-350}
+
+// {VSR-364}
+lifeSpan=1.333 // *1.6 To maintain range
+shotSpeed=120.0 // *100 {VSR-390}
+
+// {VSR-165}
+damageValue(N)=320 // *400
+damageValue(L)=216 // *270
+damageValue(H)= 80 // *100
+damageValue(S)=216 // *270
+damageValue(D)=136 // *400
+damageValue(A)=320 // *170

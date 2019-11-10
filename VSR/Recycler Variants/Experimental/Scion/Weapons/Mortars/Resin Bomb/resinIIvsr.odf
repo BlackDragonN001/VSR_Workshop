@@ -1,0 +1,14 @@
+[GameObjectClass]
+classLabel = "spraymine"
+maxHealth = 0
+maxAmmo = 500
+unitName = "Resin"
+explosionName = "xresinburstvsr"
+canDetect = 0
+CanInteract = 0
+LeaveExplodeScorch = false 
+
+[SprayBuildingClass]
+payloadName = "resinIIIvsr"
+triggerDelay = 0.001
+setAltitude = 0.2

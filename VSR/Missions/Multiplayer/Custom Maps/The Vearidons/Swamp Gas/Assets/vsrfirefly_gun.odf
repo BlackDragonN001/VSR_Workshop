@@ -1,0 +1,49 @@
+[WeaponClass]
+classLabel="magnetgun"
+altName=NULL
+ordName=NULL
+wpnName=""
+fireSound=NULL
+wpnReticle="gminigun"
+wpnCategory="GUN"
+isAssault=0
+flashName="vsrfirefly_gun.render"
+aiRange=300
+flashTime=0.375
+
+[MagnetGunClass]
+ammoCost=0
+activeSound=NULL
+coneAngle=0
+fieldRadius=0
+objPushCenter=0
+objPushEdge=0
+objDragCenter=0
+objDragEdge=0
+ordPushCenter=0
+ordPushEdge=0
+ordDragCenter=0
+ordDragEdge=0
+
+[Render]
+simulateBase="sim_dust"
+lifeTime=0.5
+renderBase="draw_emit"
+emitName="vsrfirefly_gun.Firefly"
+emitDelay=0.5
+emitVelocity="5.0 5.0 5.0"
+emitVariance="15.0 15.0 15.0"
+emitInherit="0.01 0.01 0.01"
+
+[Firefly]
+simulateBase="sim_ember"
+lifeTime=0.5
+animateTime=0.5
+renderBase="draw_sprite"
+renderBase="draw_twirl"
+textureName="particle.tga"
+textureBlend="one one modulate"
+startColor="255 255 0 232"
+finishColor="255 255 127 0"
+startRadius=0.7
+finishRadius=0.1

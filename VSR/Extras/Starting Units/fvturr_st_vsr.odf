@@ -1,0 +1,18 @@
+[GameObjectClass]
+classLabel="fvturr_vsr"
+scrapValue=20
+pilotConfig="fspilo"
+unitName="Guardian (st)"
+
+provideCount=3
+provideName2="fvturr_st"
+provideName3="VIRTUAL_CLASS_TURRET"
+
+[HoverCraftClass]
+velocForward=8.0
+velocReverse=8.0
+velocStrafe=8.0
+
+[DeployableClass]
+timeDeploy=12.0
+timeUndeploy=4.0

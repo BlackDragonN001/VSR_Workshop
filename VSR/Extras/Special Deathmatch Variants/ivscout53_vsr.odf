@@ -1,0 +1,58 @@
+[GameObjectClass]
+classLabel="ivscout_vsr"
+baseName="ivscout"
+// pilotConfig="ispilo_vsr" // If blank, uses [if]spilo/[if]suser. Otherwise, pilot for craft
+
+Mass=3600 // If <= 0, uses default of Sphere(Width*Height*Breadth) * 800.0
+
+/////// PROVIDES ///////////////////
+
+provideCount=4
+provideName2="ivscout12"
+provideName3="VIRTUAL_CLASS_SCOUT"
+provideName4="DefendUnit"
+
+////////////////////////////////////
+
+[CraftClass]
+// elasticity
+MIN_BOUNCE_VEL=7.0
+OBJECT_ELASTICITY=0.05
+GROUND_ELASTICITY=0.002
+// spin rates for collision
+X_SPIN_RATE=1.5707963267948966 //=0.5f * PI;
+Y_SPIN_RATE=3.1415926535897932 //=PI;
+Z_SPIN_RATE=0.7853981633974483 //=0.25f * PI;
+// Other constants
+DAMAGE_SCALE=0.04 // Scale in turning velocity into damage, on craft:ground or craft:building collisions
+
+
+[HoverCraftClass]
+MoreLike12Physics=true
+
+pitchPitch=0.4 // nose up 
+pitchThrust=0.07 // nose down 
+
+accelJump=20
+
+rollStrafe=0.2
+
+omegaSpin=5
+omegaTurn=4
+alphaSteer=11.5
+
+OverWaterVelocFrontMult=1.0 // *.75
+OverWaterVelocSideMult=1.0 // *.75
+OverWaterThrottleMult=0.8
+airborneVelocFrontMult=1.02 // *1.0
+airborneVelocSideMult=1.15 // *1.0
+airborneThrottleMult=1.2 // *1.0
+airborneMinHeightRatio=1.6 // *2.0
+airborneMaxHeightRatio=4.0 // *5.0
+
+LIFT_SPRING=13.5 // *25.0
+LIFT_DAMP=1.5 // *6.25
+
+[Lod1]
+
+[Lod2]

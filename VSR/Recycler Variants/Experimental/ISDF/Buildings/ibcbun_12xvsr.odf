@@ -1,0 +1,18 @@
+// Test CommBunker
+// Activates satellite mode when selected with the 4 key
+
+[GameObjectClass]
+baseName = "ibcbun"
+classLabel = "ibcbun"
+
+// canSelect = 1
+categoryTypeOverride = 4
+
+[BuildingClass]
+
+[CommBunkerClass]
+
+[PoweredBuildingClass]
+panelIcon = "icon_base_sat.tga"
+
+[Lod1]

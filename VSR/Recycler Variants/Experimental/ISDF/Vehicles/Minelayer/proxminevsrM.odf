@@ -1,0 +1,17 @@
+[GameObjectClass]
+baseName = "proxmine"
+geometryName = "igprox00.xsi"
+classLabel = "proximity"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 150
+maxAmmo = 200
+unitName = "Prox Mine"
+
+[MineClass]
+lifeSpan = 300 // 5 minutes for minelayers
+xplBlast = "xminxpl"
+
+[ProximityMineClass]
+triggerRadius = 20.0
+suppressRadius = 40.0

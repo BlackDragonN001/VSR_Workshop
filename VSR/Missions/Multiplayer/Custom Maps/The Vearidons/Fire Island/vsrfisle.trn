@@ -1,0 +1,31 @@
+[Size]
+MetersPerGrid = 8.0
+HeightGranularity = 0.1
+MinX = 2048.0
+MinZ = 2048.0
+Width = 4096.0
+Depth = 4096.0
+Height = 100.0
+Tile = 1
+Color = "255 255 255 255"
+
+[NormalView]
+DiffuseColor = "255 255 255"
+SpecularColor = "10 10 10"
+SpecularPower = 1024.0
+
+[Texture]
+TileTexture0="rend.tga"
+TileTexture1="rend6.tga"
+TileTexture2="rend3.tga"
+TileTexture3="rendlava.tga"
+TileTexture5="rend7.tga"
+TileTexture6="rend8.tga"
+TileTexture7="rend9.tga"
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap2"
+CaptureTarget2 = "VSRcap2"
+CaptureTarget3 = "VSRcap3"
+CaptureTarget4 = "VSRcap3"

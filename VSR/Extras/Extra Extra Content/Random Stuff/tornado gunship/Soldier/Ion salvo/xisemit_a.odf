@@ -1,0 +1,19 @@
+// ========================
+// ION SALVO PULSE EMIT
+// Designed to damage objects when grazing them (pilots)
+// ========================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = ""
+
+damageRadius = 10.0
+
+damageValue(N) = 25
+damageValue(L) = 15
+damageValue(H) = 10
+
+damageValue(S) = 15
+damageValue(D) = 25
+damageValue(A) = 5

@@ -1,0 +1,104 @@
+//(c)BZ2CP
+// Created by Pastell
+// FE Remastered Model and Texture: Jayden Hopkins
+
+[GameObjectClass]
+TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZCC
+geometryName = "ebfact02.fbx"
+
+//Animation added by Jayden for BZCC
+animCount = 3
+animName1 = "deploy"
+animFile1 = "ebfact02_deploy.fbx"
+animName2 = "loop"
+animFile2 = "ebfact02.fbx"
+RunAnimation = "loop"
+RunAnimIsLooped = true
+
+classLabel = "factory"
+scrapCost = 80
+scrapValue = 40
+maxHealth = 8000
+maxAmmo = 0
+unitName = "Mega Xenomator"
+aiName = "BuildingProcess"
+aiName2 = "BuildingProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+
+armorClass = H
+
+requireCount = 2
+requireName1 = "ebarmo"
+requireText1 = "Build Arsenal"
+requireName2 = "ebcbun"
+requireText2 = "Build Eyes of Xyr"
+
+provideCount = 6
+provideName1 = "ebfact"
+provideName2 = "ebfact_vsr"
+provideName3 = "ebfact2"
+provideName4 = "VIRTUAL_CLASS_FACTORY"
+provideName5 = "VIRTUAL_CLASS_FACTORY_U"
+provideName6 = "base"
+
+collisionRadius = 4.0
+UseCollisionMeshForPathing = 1
+
+upgradeName = "ebfact3_vsr"
+
+lightHard1 = "hp_light_1"
+lightName1 = "omnipurple"
+lightHard2 = "hp_light_2"
+lightName2 = "omniyohad"
+lightHard3 = "hp_light_3"
+lightName3 = "omniyohad"
+lightHard4 = "hp_light_4"
+lightName4 = "omniyohad"
+
+[PoweredBuildingClass]
+detectRange = 200
+
+[BuildingClass]
+tunnelCount = 1
+
+tunnel01X0 = 1
+tunnel01Z0 = 4
+tunnel01DX = 6
+tunnel01DZ = 3
+tunnel01Edge = "wttt"
+
+soundAmbient = "ibfact00.wav"
+
+// play ambient sound
+
+[FactoryClass]
+soundBuild = "ibrecy02.wav"
+soundFinish = "iapc04.wav"
+reloadMsg = "evrecy12.wav"
+rescueMsg = "evrecy13.wav"
+
+buildItem1 = "evmort_vsr"
+buildItem2 = "evtanku_vsr"
+buildItem3 = "evtankf_vsr"
+buildItem4 = "evmislu_vsr"
+buildItem5 = "evmislw_vsr"
+buildItem6 = "evatanku_vsr"
+builditem7 = "evatanks_vsr"
+buildItem8 = "evkami_vsr"
+buildItem9 = "evartl2_vsr"
+buildItem10 = "evwalk_vsr"
+
+BeamColor = "204 153 101 31"
+BuildSparkConfig = "sparker_hadean"
+LineFinishColor = "255 255 255 0"
+LineStartColor = "204 153 101 255"
+
+//Commented out LOD for BZCC (VSR Release 64)
+//[Lod1]
+//geometryName = "ebfactL2.xsi" ;geometry for lod1
+//distance = 70              ;bsphere under 200 pixel => switch to lod1
+//dontShiftLOD = 1
+

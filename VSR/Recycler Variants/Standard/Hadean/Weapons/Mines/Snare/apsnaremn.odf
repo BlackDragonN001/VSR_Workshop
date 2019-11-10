@@ -1,0 +1,31 @@
+[GameObjectClass]
+geometryName = "apspec00.xsi"
+classLabel = "wpnpower"
+scrapCost = 20
+scrapValue = 0
+maxHealth = 150
+maxAmmo = 0
+
+heatSignature = 0
+imageSignature = 0
+radarSignature = 0
+
+unitName = "Snare Mine"
+aiName = "PowerUpProcess"
+
+requireCount = 2
+requireName1 = "ebfact"
+requireText1 = "Build Xenomator"
+requireName2 = "ebcbun"
+requireText2 = "Build Eyes of Xyr"
+
+
+lightHard1 = "hp_light_1"
+lightName1 = "omnired-ap"
+
+[PowerUpClass]
+soundPickup = "pickup01.wav"
+soundReject = "reject.wav"
+
+[WeaponPowerupClass]
+weaponName = "gsnare"

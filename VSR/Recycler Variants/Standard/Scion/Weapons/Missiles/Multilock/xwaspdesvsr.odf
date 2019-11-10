@@ -1,0 +1,19 @@
+// Expired or destroyed WASP
+
+[ExplosionClass]
+classLabel="xpwrxpl"
+
+// Double kick from 2 explosions at once seems to cause a bit of lag
+// kickRadius=35.0
+// kickOmega=1.0
+// kickVeloc=2.0
+
+damageRadius=35.0 // *10 {VSR-259}
+
+// {VSR-257}
+damageValue(N)=200 // *20
+damageValue(L)=200 // *20
+damageValue(H)=175 // *20
+damageValue(A)=200 // *20
+damageValue(D)=100 // *20
+damageValue(S)=160 // *20

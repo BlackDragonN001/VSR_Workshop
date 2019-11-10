@@ -1,0 +1,26 @@
+[GameObjectClass]
+classLabel="fvartl"
+maxHealth=1500 // *1400 {VSR-107}
+maxAmmo=1750   // *2000 {VSR-108}
+addAmmo=4.0    // *0.0  {VSR-109}
+
+canSnipe=0 // {VSR-106}
+
+provideCount=4
+provideName1="fvartl"
+provideName2="VIRTUAL_CLASS_ARTILLERY"
+provideName3="flier"
+provideName4="AntiAir"
+
+[CraftClass]
+canRescue=0 // {VSR-106}
+
+[HoverCraftClass]
+velocForward=21.37 // *15.0 {VSR-110}
+velocReverse=15.37 // *15.0 {VSR-110}
+velocStrafe=14.63  // *15.0 {VSR-110}
+
+[ArtilleryClass]
+// alphaTurret=16.0 // removed; https://www.youtube.com/watch?v=l68atln_WwY&feature=youtu.be
+timeDeploy=12.0  // *5.0 {VSR-111}
+timeUndeploy=1.5 // *7.5 {VSR-112}

@@ -1,0 +1,19 @@
+// WASP impact explosion
+
+[ExplosionClass]
+classLabel="xtorxpl"
+
+// {VSR-255}
+kickRadius=40.0
+kickOmega=2.0
+kickVeloc=4.0
+
+damageRadius=40.0 // *60 {VSR-258}
+
+// {VSR-256}
+damageValue(N)=400 // *1500
+damageValue(L)=400 // *1100
+damageValue(H)=400 // *800
+damageValue(A)=400 // *1500
+damageValue(D)=250 // *800
+damageValue(S)=320 // *1100

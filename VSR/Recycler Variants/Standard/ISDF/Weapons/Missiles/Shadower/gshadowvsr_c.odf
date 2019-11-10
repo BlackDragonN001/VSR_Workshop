@@ -1,0 +1,12 @@
+[WeaponClass]
+classLabel="gshadow_c"
+altName="gshadowvsr_a"
+ordName="shadowvsr_c"
+
+[LauncherClass]
+// Stock values (NOT INHERITED)
+lockRange=200.0
+shotDelay=1.0
+lockDelay=1.5
+coneAngle=0.05
+TeamFilter = 3 //Added in VSR BZCC Release 68 to prevent AI from locking onto friendlies attempting to kill enemies

@@ -1,0 +1,20 @@
+[Texture]
+TileTexture1="bane4.tga"
+TileTexture2="bane5.tga"
+TileTexture3="dark4.tga"
+TileTexture4="bane.tga"
+TileTexture5="bane2.tga"
+//TileTexture6="STValley01.tga"
+
+[NormalView]
+DiffuseColor = "207 207 207 255"
+SpecularPower = 10
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap4"
+CaptureTarget2 = "VSRcap4"
+CaptureTarget3 = "VSRcap4"
+CaptureTarget4 = "VSRcap4"
+CaptureTarget5 = "VSRcap5"
+CaptureTarget6 = "VSRcap5"

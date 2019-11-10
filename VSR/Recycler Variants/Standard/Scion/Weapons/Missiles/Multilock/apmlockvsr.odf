@@ -1,0 +1,10 @@
+[GameObjectClass]
+classLabel="apmlock"
+
+// *Used to require stronghold. {VSR-240}
+requireCount=1
+requireName1="fbantm"
+requiretext1="Build Antenna Mound"
+
+[WeaponPowerupClass]
+weaponName="gmlockvsr_c"

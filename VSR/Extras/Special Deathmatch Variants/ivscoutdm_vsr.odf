@@ -1,0 +1,24 @@
+[GameObjectClass]
+classLabel="ivscout_vsr"
+
+aiName="MorphTankFriend" 
+aiName2="RocketTankEnemy" 
+
+weaponMask=00111 // Enable weapon linking for AI, first 3 weapon hardpoints
+weaponName1="gchain_c"
+weaponName2="gchain_c"
+weaponName3=""
+weaponName4=""
+
+[CraftClass]
+/////// AI SETTINGS /////////////////
+craftTeamIsPilotTeam=true // AI will attack this ship immediately if occupied by an enemy
+engageRange=170
+blastDist=40  // Gets in close
+
+attackTask="ArcherAttack"
+subAttackTask="ArcherSubAttack"
+subAttackClass="ANN" // AA Ability
+
+[HoverCraftClass]
+aiAccelDrag=16 // Seems to affect AI strafing

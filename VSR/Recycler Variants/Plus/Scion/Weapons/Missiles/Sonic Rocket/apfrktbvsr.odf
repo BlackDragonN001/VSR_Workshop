@@ -1,0 +1,19 @@
+[GameObjectClass]
+baseName = "apfrktbvsr"
+classLabel = "aprocket"
+scrapCost = 20
+
+unitName = "Sonic Rocket"
+
+requireCount = 2
+requireName1 = "fbstro"
+requiretext1 = "Build Stronghold"
+requireName2 = "fbover"
+requireText2 = "Build Overseer Array"
+
+lightName1 = "omniorng-ap"
+
+[PowerUpClass]
+
+[WeaponPowerupClass]
+weaponName = "gfrbombvsr_c"

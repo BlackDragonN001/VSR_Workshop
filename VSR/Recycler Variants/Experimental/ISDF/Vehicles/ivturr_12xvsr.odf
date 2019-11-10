@@ -1,0 +1,35 @@
+[GameObjectClass]
+classLabel="ivturr_vsr"
+
+weaponName1="gminigun_a"	//weaponName1="gminigunfvsr_a"
+weaponName2="gminigun_a"	//weaponName2="gminigunfvsr_a"
+
+
+[CraftClass]
+// {VSR-UNDOC}
+// VSR Turret AI
+CanAIPForceIdle=false
+DoIdleDispatch=false
+sitAttackCheckAbleToHit=true // Check if can hit. If check returns false, hold immediately.
+gunTowerProcessCheckCantHit=true
+
+// {VSR-001}
+// VSR Turret Physics
+use13Aim=false
+aim12CannonError0=0.05
+aim12CannonError1=-0.2
+aim12CannonError2=-0.03
+aim12CannonError3=-0.1
+weaponPitch=1.5 // *1.0
+pitchScatter=0.2
+steerScatter=0.1
+
+[DeployableClass]
+// {VSR-004}
+timeUndeploy=1.0 // *3.0
+
+[TurretTankClass]
+// {VSR-001}
+// VSR Turret Physics
+omegaTurret=1.0 // ZST
+alphaTurret=1.75 // ZST

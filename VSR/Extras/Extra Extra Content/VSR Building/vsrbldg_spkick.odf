@@ -1,0 +1,26 @@
+[GameObjectClass]
+geometryName = NULL
+classLabel = "magnet"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 150
+maxAmmo = 50
+unitName = "Aids Kick"
+explosionName = "collapse"
+canInteract = 0
+canDetect = 0
+
+[MineClass]
+lifeSpan = 1.5
+
+[MagnetMineClass]
+triggerDelay = 0.5
+fieldRadius = 64.0
+objPushCenter = 200.0
+objPushEdge = 100.0
+objDragCenter = 0.2
+objDragEdge = 0.5
+ordPushCenter = 100.0
+ordPushEdge = 250.0
+ordDragCenter = 2.0
+ordDragEdge = 5.0

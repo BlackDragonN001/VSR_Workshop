@@ -1,0 +1,13 @@
+[GameObjectClass]
+TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZCC
+baseName="fbspir"
+classLabel="fbspir"
+
+provideCount=4 
+provideName1="fbspir"
+provideName2="fbspir_vsr"
+provideName3="VIRTUAL_CLASS_GUNTOWER"
+provideName4="defender"
+
+[TurretCraftClass]
+powerName="fblung_vsr"

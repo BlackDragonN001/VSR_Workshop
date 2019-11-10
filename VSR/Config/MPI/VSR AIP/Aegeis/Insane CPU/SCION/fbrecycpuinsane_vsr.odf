@@ -1,0 +1,24 @@
+[GameObjectClass]
+classLabel="fbrecy_12svsr"
+upgradeName=""
+
+provideCount=5
+provideName3="fbrecycpuinsane_vsr"
+provideName4="VIRTUAL_CLASS_RECYCLER"
+provideName5="VIRTUAL_CLASS_RECYCLERBUILDING"
+
+[FactoryClass]
+weaponConfig="fweapon_12xvsr.odf"
+buildItem1="fvscavcpuinsane_vsr"
+buildItem2="fvscout_vsr"
+buildItem3="fvturr_vsr"
+buildItem4="fvtug"
+buildItem5="fvconscpuinsane_vsr"
+buildItem6="fvservcpuinsane_vsr"
+buildItem7="apserv_vsr"
+//buildItem8=""
+
+[buildGroup8]
+buildLabel = "Other Stuff"
+buildItem1 = "fvscoutcpuinsane_vsr"
+buildItem2 = "fvturrcpuinsane_vsr"

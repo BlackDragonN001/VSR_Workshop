@@ -1,0 +1,18 @@
+[WeaponClass]
+classLabel="gmlock_c"
+altName="gmlockvsr_a"
+ordName="lockervsr"
+aiRange=180 // *170 {VSR-241}
+
+[LauncherClass]
+// initialShotDelay is easily averted because the user is always holding LMB anyway. Doesn't do anything different for AI.
+// initialShotDelay=0.75 // *0.0 -- Delays locking for 3/4 seconds, to discourage single-locking targets
+lockRange=190.0 // *170 {VSR-241}
+shotDelay=0.4 // *1.0 {VSR-244}
+lockDelay=1.0 // *2.0 {VSR-242}
+coneAngle=0.1 // *0.05 {VSR-243}
+// TeamFilter=3 //3 = targets only enemies, but why restrict freedom?
+
+[MultiLauncherClass]
+// Omitting loseAngle just results in default max value, which I put here so we can inherit again
+loseAngle=1.57 // {VSR-245}

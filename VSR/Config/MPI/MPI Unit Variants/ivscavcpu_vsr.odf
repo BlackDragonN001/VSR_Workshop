@@ -1,0 +1,31 @@
+[GameObjectClass]
+classLabel = "ivscav_vsr"
+StayWithOwner = true
+
+/////// PROVIDES ///////////////////
+
+provideCount = 3
+provideName2 = "ivscavcpu"
+provideName3 = "VIRTUAL_CLASS_SCAVENGER"
+
+////////////////////////////////////
+
+ExplosionName = "xvehcpuxpl"
+
+[CraftClass]
+XplChunk = "xseccpuxpl"
+
+[TrackedVehicleClass]
+
+[TrackedDeployableClass]
+
+[DeployBuildingClass]
+
+[ScavengerClass]
+deployClass = "ibscav_vsr"
+ScavClassProvides = 22 		// Matches DepositClassMatch (dzpoolGH01_L.odf) allowing it to deploy.  22 = 01101
+StayWithOwner=true
+
+[Lod1]
+
+[Lod2]

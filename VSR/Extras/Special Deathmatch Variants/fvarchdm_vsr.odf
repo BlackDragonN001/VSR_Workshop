@@ -1,0 +1,40 @@
+[GameObjectClass]
+classLabel="fvarch_vsr"
+aiName="RocketTankFriend" // *"AttachWingman"
+aiName2="RocketTankEnemy" // *"AttachWingman"
+
+weaponName1="gmlockvsr_c"
+weaponName2="gblinkvsr"
+weaponName3="gabsorb"
+
+[MorphTankClass]
+switchMask=00001 // *new
+rangeScan=280.0f // *250.0f
+velocStrafe=18.0 // *16.0
+accelThrust=18 // *25.0
+omegaSpin=1.5 // *4.0
+omegaTurn=0.8 // *0.5
+
+// Stock values must be repasted, BZ2 does not inherit from [MorphTankClass].
+unitName="Lancer"
+maxHealth=2000
+maxAmmo=3000
+addAmmo=0.0
+addHealth=9.0
+engageRange=150
+isAssault=0
+periodScan=5.0f
+velocJam=5.0f
+velocForward=28.0
+velocReverse=10.0
+accelDragStop=8.0
+accelJump=8.0
+setAltitude=1.0
+alphaTrack=21.0
+alphaDamp=8.0 
+pitchPitch=0.25
+pitchThrust=0.1
+rollStrafe=0.08
+alphaSteer=3.0
+rollSteer=0.08
+soundThrust="ssent01k.wav"

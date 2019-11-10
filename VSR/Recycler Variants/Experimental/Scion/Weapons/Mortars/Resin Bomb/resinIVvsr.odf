@@ -1,0 +1,83 @@
+[GameObjectClass]
+classLabel = "magnet"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "Resin Pool"
+effectHard1 = "Resin Pool"
+effectName1 = "resinIVvsr.bubblehostemitter"
+canDetect = 0
+canInteract = 0
+
+explosionName = "null"
+
+[MineClass]
+lifeSpan = 20.0
+
+[MagnetMineClass]
+triggerDelay = 0.0
+fieldRadius = 70.0 // *100
+objPushCenter = 0.0
+objPushEdge = 0.0
+objDrag = 0.3//careful with this, multiple archers with resin could lock down an entire base, acid/howie would proceed to crush the enemy with no possible retaliation
+ordPushCenter = 0.0
+ordPushEdge = 0.0
+ordDrag = 0.0
+
+[Bubblehostemitter]
+renderBase = "draw_emit"
+emitName = "resinIVvsr.bubblehostemitter2"
+emitDelay = 1.0
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "30.0 0.0 30.0"
+
+[Bubblehostemitter2]//so there's not a single stream of bubbles in the center of the field
+renderBase = "draw_emit"
+simulateBase = "sim_dust"
+lifeTime = 2.0
+emitName = "resinIVvsr.bubblehost"
+emitDelay = 0.8
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "40.0 0.0 40.0"
+
+[Bubblehost]
+simulateBase = "sim_dust"
+lifeTime = 2.0
+renderBase = "draw_emit"
+emitName = "resinIVvsr.bubble"
+emitDelay = 1.1
+emitVelocity = "0.0 3.0 0.0"
+emitVariance = "0.0 1.0 0.0"
+
+[Bubble]
+simulateBase = "sim_smoke"
+lifeTime = 2.0
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "resinIVvsr.sphere"
+renderName2 = "resinIVvsr.drips"
+
+[Sphere]
+renderBase = "draw_sprite"
+textureName = "raindrop.tga"
+textureBlend = "one one modulate"
+startColor = "120 255 0 80"
+finishColor = "120 255 0 80"
+startRadius = 0.5
+finishRadius = 0.5
+
+[Drips]
+renderBase = "draw_twirl_trail"
+textureName = "spark.tga"
+textureBlend = "one one modulate"
+startColor = "120 255 0 80"
+finishColor = "120 255 0 80"
+startRadius = 0.25
+finishRadius = 0.5
+animateTime = 1.0
+rotationRate = 0.0
+emitDelay = 0.8
+emitVelocity = "0.0 -10.0 0.0"
+emitVariance = "1.0 3.0 1.0"
+emitLife = 1.0

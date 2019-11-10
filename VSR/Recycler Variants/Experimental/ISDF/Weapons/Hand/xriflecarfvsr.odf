@@ -1,0 +1,92 @@
+// ==============
+// BULLET CAR HIT
+// ==============
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 3
+particleClass1 = "xriflecarfvsr.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleBias1 = "0.0 0.0 0.0"
+
+particleClass2 = "xriflecarfvsr.spark"
+particleCount2 = 2
+particleVeloc2 = "5.0 5.0 5.0"
+particleBias2 = "0.0 1.0 0.0"
+
+particleClass3 = "xriflecarfvsr.light"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+particleBias3 = "0.0 0.0 0.0"
+
+// particleClass3 = "xriflecarvsr.puff"
+// particleCount3 = 2
+// particleVeloc3 = "25.0 25.0 25.0"
+// particleBias3 = "0.0 0.0 0.0"
+
+explSound = "wmgr1.wav"
+damageRadius = 0.0
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_twirl"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "255 63 127 255"
+finishColor = "0 0 255 0"
+startRadius = 0.05
+finishRadius = 0.75
+animateTime = 0.2
+BottomInteractsWithTerrain = false
+
+[Spark]
+simulateBase = "sim_ember"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "spark.tga"
+textureBlend = "one one modulate"
+startColor = "255 127 127 255"
+finishColor = "0 0 255 0"
+//startColor = "255 255 0 255"
+//finishColor = "255 0 0 0"
+startRadius = 0.1
+finishRadius = 0.05
+animateTime = 1.0
+rotationRate = 20.0
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "255 127 127 255"
+finishColor = "0 0 255 0"
+startRadius = 30.0
+finishRadius = 30.0
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 0.3
+renderBase = "draw_twirl"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "255 127 127 255"
+finishColor = "0 0 255 0"
+//startColor = "255 150 0 255"
+//finishColor = "200 0 0 0"
+startRadius = 0.12
+finishRadius = 0.06
+animateTime = 0.3
+BottomInteractsWithTerrain = false

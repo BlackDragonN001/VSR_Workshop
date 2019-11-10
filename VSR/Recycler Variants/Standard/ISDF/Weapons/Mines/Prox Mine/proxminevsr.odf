@@ -1,0 +1,10 @@
+[GameObjectClass]
+classLabel="proxmine"
+isAssault=0 // Mines should not make Scion AI morph {VSR-009}
+
+[MineClass]
+lifeSpan=40 // *30 {VSR-152}
+xplBlast="xminxplvsr" // {VSR-156}
+
+[ProximityMineClass]
+triggerRadius=23.0 // *20 {VSR-154}

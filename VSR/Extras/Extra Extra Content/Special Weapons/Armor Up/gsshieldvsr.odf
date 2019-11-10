@@ -1,0 +1,26 @@
+[WeaponClass]
+classLabel = "shieldup"
+ordName = NULL
+wpnName = "Reinforced Armor"
+fireSound = "gphan00.wav"
+wpnReticle = "gshield"
+wpnPriority = 0
+wpnCategory = "SPEC"
+CouldHit = false // default = true, except for ShieldUpgrade weapons which default false
+
+
+[ShieldUpgradeClass]
+
+// stasis shield (balanced)
+shieldClass = "S"
+
+animateTime = 1.2
+colorRange = 0.5
+scaleStart = 0.2
+scaleFinish = 1.0
+
+// [white->cyan->blue]
+textureName = "bulhit.tga"
+startColor = "255 255 255 10"
+middleColor = "0 200 255 110"
+finishColor = "0 0 255 0"

@@ -1,0 +1,102 @@
+[WeaponClass]
+classLabel = "igsnip_a"
+
+// don't need any geometry
+// (igsnip_c already has it)
+
+ordName = "snipefvsr"
+altName = "igsnipfvsr_c"
+
+MinOwnerLifetimeSeconds = 0.0f //Set to 0 in VSR BZCC Release 69
+
+flashTime = 0.05 // *new
+flashName = "igsnipfvsr_a.flash" // *new
+
+[CannonClass]
+
+[flash]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "igsnipfvsr_a.ShellEject"
+renderName2 = "igsnipfvsr_a.SmokeEmitter" // SmokeOut"
+renderName3 = "igsnipfvsr_a.MuzFlash"
+
+[ShellEject]
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_emit"
+emitName = "igsnipfvsr_a.shell"
+emitDelay = 0.2
+emitVelocity = "2.0 3.0 0.0"//.4 0 0
+emitVariance = "0.5 0.5 0.5" // "1.0 1.0 0.0"// .5 .5 .5
+
+[Shell]
+simulateBase = "sim_ember"
+lifeTime = 2.5
+renderBase = "draw_twirl"
+textureName = "sshellvsr.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 0.06
+finishRadius = 0.06
+animateTime = 2.5
+rotationRate = 0.1
+
+[SmokeOut]
+simulateBase = "sim_dust"
+lifeTime = 0.5
+renderBase = "draw_emit"
+emitName = "igsnipfvsr_a.smoke"
+emitDelay = 0.5
+emitVelocity = "0.0 1.0 1.2"
+emitVariance = "0.1 1.0 0.1"
+
+[Smoke]
+simulateBase = "sim_smoke"
+lifeTime = 2.0
+renderBase = "draw_twirl"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "110 110 110 30"
+finishColor = "120 120 120 0"
+startRadius = 0.1
+finishRadius = 0.3 //
+animateTime = 2.0
+
+
+[SmokeEmitter]
+simulateBase = "sim_smoke"
+lifeTime = 0.2
+renderBase = "draw_emit"
+emitName = "igsnipfvsr_a.SmokeParticle"
+emitDelay = 0.1
+emitVelocity = "0.0 1.5 0.4"
+emitVariance = "0.7 0.5 0.7"
+emitInherit = "0.1 0.0 0.1"
+emitLife = 0.6
+
+[SmokeParticle]
+simulateBase = "sim_smoke"
+lifeTime = 0.6
+renderBase = "draw_twirl"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "95 85 67 50"
+finishCOlor = "110 110 110 0"
+startRadius = 0.15
+finishRadius = 0.5
+animateTime = 0.6
+rotationRate = 5.0
+
+
+[MuzFlash]
+renderBase = "draw_geom"
+textureName = "sflash.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 1.0
+finishRadius = 0.0
+animateTime = 0.1
+geomName = "g_sflash.xsi"

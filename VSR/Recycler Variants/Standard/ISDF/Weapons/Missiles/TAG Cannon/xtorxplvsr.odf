@@ -1,0 +1,12 @@
+// Impact explosion for comet
+
+[ExplosionClass]
+classLabel="xcomxpl"
+
+// {VSR-267}
+damageValue(N)=1400 // *2000
+damageValue(L)=1100 // *1500
+damageValue(H)= 800 // *1500
+damageValue(S)=1100 // *2000
+damageValue(D)= 800 // *1300
+damageValue(A)=1400 // *1700

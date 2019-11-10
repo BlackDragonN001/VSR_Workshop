@@ -1,0 +1,17 @@
+[OrdnanceClass]
+classLabel="plasma_c"
+//renderName="plasmavsr_c.render" // {VSR-131}		//Commented out to remove error in VSR BZCC Release 40
+
+// Faster, same range
+lifeSpan=1.4 // *1.89 (to maintain range)
+shotSpeed=135.0 // *100 {VSR-132}
+
+//Commented out to remove error in VSR BZCC Release 40 - Plasma will now use the BZCC stock plasma graphics
+//// Restored 1.2 light effects {VSR-131}
+//[Render]
+//renderBase="draw_multi"
+//renderCount=4
+//renderName1="plasma_c.flame"
+//renderName2="plasma_c.smoke"
+//renderName3="plasma_c.trail"
+//renderName4="plasma_c.light"

@@ -1,0 +1,122 @@
+//
+// StratStarting.txt - Vehicles possible to start with in strat/MPI
+//
+// Format of lines: unique identifier, space separator, odf filename, space
+// separator, description Lines starting with // are ignored.
+//
+// NOTE: do not put .odf extension on odf filename; added automatically
+// on loading
+//
+// Also, please remember that these vehicle names will be changed to
+// the appropriate race at runtime, so make sure they exist across
+// races -- for example, ivmbike has no scion counterpart (fvmbike).
+// 
+// Unlike MPVehicles.txt, there are no XSI names. You still need to
+// have a unique identifier for the first part of the name, due to
+// code reasons. No more than 32 craft can be listed here. Also, do
+// *NOT* put more than 6 different types of units in here, as that'll
+// exceed the F#-keys available in MPI. There's a 4-player limit on
+// MPI, which means F8-F10 must be reserved for allies. With the
+// recycler on F1, that means the rest of the groups must fit in
+// F2..F6.
+//
+// The first 2 fields on each line must be 5 characters or longer, or
+// the line will be ignored.
+
+[StratStarting]
+xsi1 = "Turr01"
+cfg1 = "ivturr_st"
+Description1 = "Turret / Guardian"
+
+xsi2 = "Turr02"
+cfg2 = "ivturr_st"
+Description2 = "Turret / Guardian"
+
+xsi3 = "Turr03"
+cfg3 = "ivturr_st"
+Description3 = "Turret / Guardian"
+
+xsi4 = "Turr04"
+cfg4 = "ivturr_st"
+Description4 = "Turret / Guardian"
+
+xsi5 = "Scav01"
+cfg5 = "ivscav"
+Description5 = "Scav"
+
+xsi6 = "Scav02"
+cfg6 = "ivscav"
+Description6 = "Scav"
+
+xsi7 = "Scav03"
+cfg7 = "ivscav"
+Description7 = "Scav"
+
+xsi8 = "Scav04"
+cfg8 = "ivscav"
+Description8 = "Scav"
+
+xsi9 = "Scout01"
+cfg9 = "ivscout"
+Description9 = "Scout"
+
+xsi10 = "Scout02"
+cfg10 = "ivscout"
+Description10 = "Scout"
+
+xsi11 = "Scout03"
+cfg11 = "ivscout"
+Description11 = "Scout"
+
+xsi12 = "Scout04"
+cfg12 = "ivscout"
+Description12 = "Scout"
+
+xsi13 = "Tank01"
+cfg13 = "ivtank"
+Description13 = "Sabre / Warrior"
+
+xsi14 = "Tank02"
+cfg14 = "ivtank"
+Description14 = "Sabre / Warrior"
+
+xsi15 = "Tank03"
+cfg15 = "ivtank"
+Description15 = "Sabre / Warrior"
+
+xsi16 = "Tank04"
+cfg16 = "ivtank"
+Description16 = "Sabre / Warrior"
+
+xsi17 = "ATank01"
+cfg17 = "ivatank"
+Description17 = "Assault Tank / Titan"
+
+xsi18 = "ATank02"
+cfg18 = "ivatank"
+Description18 = "Assault Tank / Titan"
+
+xsi19 = "ATank03"
+cfg19 = "ivatank"
+Description19 = "Assault Tank / Titan"
+
+xsi20 = "ATank04"
+cfg20 = "ivatank"
+Description20 = "Assault Tank / Titan"
+
+xsi21 = "Serv01"
+cfg21 = "ivserv"
+Description21 = "Service Truck / Healer"
+
+xsi22 = "Serv02"
+cfg22 = "ivserv"
+Description22 = "Service Truck / Healer"
+
+xsi23 = "Serv03"
+cfg23 = "ivserv"
+Description23 = "Service Truck / Healer"
+
+xsi24 = "Serv04"
+cfg24 = "ivserv"
+Description24 = "Service Truck / Healer"
+

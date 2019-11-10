@@ -1,0 +1,10 @@
+[GameObjectClass]
+clearBuildZone=0 // {VSR-005}
+classLabel="ivbomb"
+// Praise to TKO for getting the idea
+// in his head that he could snipe a bomber.
+canSnipe=0
+StayWithOwner = true // Should "fix" MPI AI bombers on Team 7-10 from blowing up? needs testing. -GBD
+
+[CraftClass]
+TeamTransferrable=true // *false {VSR-041}

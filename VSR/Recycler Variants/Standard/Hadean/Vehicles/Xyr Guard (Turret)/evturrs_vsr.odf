@@ -1,0 +1,52 @@
+// BZ2CP Hadean Turret "Xyr Guard"
+// Mesh/skin originally by Slaor, Pastell
+// Updated Mesh/skin by Jayden
+
+[GameObjectClass]
+classLabel="evturr_vsr"
+scrapCost=45
+customCost=50
+scrapValue=25
+buildTime=12.0
+customTime=12.0
+
+addAmmo=5
+unitName="Xyr Guard SR"
+
+requireCount=1
+requireName1="ebarmo"
+requireText1="Build Arsenal" // Weaponsvat Reference removed - HM
+
+weaponName1="gslicer_a"
+weaponName2="gslicer_a"
+
+infoName="evturr_vsr.inf"
+
+// VSR Turret AI
+CanAIPForceIdle=false
+DoIdleDispatch=false
+sitAttackCheckAbleToHit=true // Check if can hit. If check returns false, hold immediately.
+gunTowerProcessCheckCantHit=true
+
+// VSR Turret Physics
+use13Aim=false
+aim12CannonError0=0.05
+aim12CannonError1=-0.2
+aim12CannonError2=-0.03
+aim12CannonError3=-0.1
+weaponPitch=1.5 // *1.0
+pitchScatter=0.2
+steerScatter=0.1
+
+[CraftClass]
+damageEffect1="dmgvhcl1_hadean"
+damageEffect2="dmgvhcl2_hadean"
+damageEffect3="dmgvhcl3_hadean"
+damageEffect4="dmgvhcl4_hadean"
+
+velocJam=1.0
+
+[TurretTankClass]
+// VSR Turret Physics
+omegaTurret=1.0 // ZST
+alphaTurret=1.75 // ZST

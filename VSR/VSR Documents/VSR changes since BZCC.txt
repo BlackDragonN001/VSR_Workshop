@@ -1,0 +1,22 @@
+This document is a list of gameplay items that have been changed since converting VSR to BZCC (not including 1.3 changes).
+
+Release 1: VSR Mortar Bike given stock BZCC model: For compatabiliy
+Release 1: Seeker Mine given stock BZCC model: For compatibility
+Release 1: Units renamed to match stock BZCC names: To be consistent with BZCC
+Release 13: Removed omegaKick from Chain Gun and Pummel: To improve multiplayer gameplay performance (omegaKick on these weapons is STOCK in BZCC, now)
+Release 13: Min/Max zoom distance removed on satellite buildings: This caused a "pulsating" problem in BZCC
+Release 17: Camera pod's texture matches map's chrome texture & SITE camera removed: sort of cop-out changes for compatibility & ease of integration
+Release 31: Hadean Procreator and Mega Xenomator decorative spikes cannot be hidden inside of any more: In BZCC you could hide inside them and shoot out, but not be shot yourself as the spike provided protection
+Release 40: MAG drop cost reduced to 20 scrap from 30 scrap (33% decrease): minor change to hopefully allow more usage in games (requested by community)
+Release 41: JabbaPop's JChat keys added for quick chatting, chat setting changes, and other things that can be done with a single button press (can be overridden by putting a copy of bzgame_keys.cfg in your My Documents addon folder)
+Release 53: Kiln is no longer a requirement for a Healer: To be consistent with other races only requiring the service bay building
+Release 55: New game mode ST: Capture allows you to capture points around the map for perks... the team that captures all of the points wins
+Release 55: "Respawn with Sniper" shell option is now "Sniper:" and can be set to ON (for starting sniper), OFF (for no sniper), or RESPAWN (for respawn w/ sniper)
+Release 56: "Sniper:" option now defaults to OFF (no sniper at all at the start of the game), but this can be changed after map has been selected
+Release 64: ISDF Sniper Rifle now requires a Relay Bunker to build from Armory (community poll), Scion requires Antenna Mound, Hadean requires Eyes of Xyr
+Release 68: Hornet Rocket, Shadower Missile, and Photon Torpedo can no longer lock onto friendly targets at all, preventing AI from accidentally locking onto friendly things
+Release 68: Delay on firing Sniper Rifle upon hopping out of ship removed per community poll
+Release 69: Xares FS and Xares SGS now have 300 meter range, the stock one still has 325 to compensate for slower speed
+Release 69: Xypos SX given the same HP boost as the Xypos full scout (2200 instead of 1800)
+Release 69: Hadean ship names with weapon codes now have the weapon codes capitalized to look better
+Release 70: Scion Popper shotspeed has been doubled so the shots can't be outrun by Bombers or other relatively slow units

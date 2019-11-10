@@ -1,0 +1,38 @@
+so, the map INFs need:
+
+ivar54=60            //Seconds for ST-Capture timer.
+ivar54Min = 30
+ivar54Max = 120
+on all of the map infs
+The TRN, depending on how many capture points it has...
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap4"
+CaptureTarget2 = "VSRcap1"
+CaptureTarget3 = "VSRcap2"
+
+
+And you can choose which object is at which capturegoal# (corresponds to CaptureTarget#)
+
+VSRCap1 = Healing Crystal
+VSRCap2 = Ammo Regen Mushroom
+VSRCap3 = Radar Thing
+VSRCap4 = Scrap Well
+VSRCap5 = Pillar that does nothing
+
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap4"
+CaptureTarget2 = "VSRcap1"
+CaptureTarget3 = "VSRcap2"
+CaptureTarget4 = "VSRcap4"
+CaptureTarget5 = "VSRcap1"
+CaptureTarget6 = "VSRcap2"
+CaptureTarget7 = "VSRcap4"
+CaptureTarget8 = "VSRcap1"
+CaptureTarget9 = "VSRcap2"
+CaptureTarget10 = "VSRcap4"
+CaptureTarget11 = "VSRcap1"
+CaptureTarget12 = "VSRcap2"

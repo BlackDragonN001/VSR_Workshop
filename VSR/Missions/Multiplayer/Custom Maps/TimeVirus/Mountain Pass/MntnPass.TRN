@@ -1,0 +1,42 @@
+[Size]
+MetersPerGrid = 8.0
+HeightGranularity = 0.1
+MinX=-1280
+MinZ=-1280
+Width=2560
+Depth=2560
+Height=100
+Tile = 1
+color=128 128 128 255
+
+[NormalView]
+
+FogColor="100 100 50 255"
+FogStart=325
+FogEnd=425
+VisibilityRange=425
+
+[Texture]
+TileTexture1  = "dune3.tga"
+TileTexture2  = "treetex01.tga"
+TileTexture3  = "treetex02.tga"
+TileTexture4  = "treetex03.tga"
+TileTexture5  = "treetex04.tga"
+TileTexture6  = "dune6.tga"
+TileTexture7  = "gravtex01.tga"
+TileTexture8  = "plantex02.tga"
+TileTexture9  = "plantex01.tga"
+//TileTexture10 = "plantex03z.tga"
+TileTexture11 = "mars2.tga"
+TileTexture12 = "mars3.tga"
+TileTexture13 = "mire.tga"
+TileTexture14 = "mars5.tga"
+TileTexture15 = "mars6.tga"
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap1"
+CaptureTarget2 = "VSRcap2"
+CaptureTarget3 = "VSRcap3"
+CaptureTarget4 = "VSRcap5"
+CaptureTarget5 = "VSRcap5"

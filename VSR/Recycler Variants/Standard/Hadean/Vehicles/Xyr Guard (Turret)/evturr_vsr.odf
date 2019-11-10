@@ -1,0 +1,155 @@
+// BZ2CP Hadean Turret "Xyr Guard"
+// Mesh/skin originally by Slaor, Pastell
+// Updated Mesh/skin by Jayden
+
+[GameObjectClass]
+baseName="evturr"
+geometryName="evturr00.fbx"
+geometryScale=0.7
+cockpitName="hvturr_cockpit.xsi" // cockpit – Tempest storm
+
+animCount=4
+animName1="deploy"
+animFile1="evturr00.fbx"
+animName2="forward"
+animFile2="evturrsf.fbx"
+animName3="neutral"
+animFile3="evturrsn.fbx"
+animName4="reverse"
+animFile4="evturrsr.fbx"
+
+classLabel="turrettank"
+scrapCost=40
+customCost=45
+scrapValue=15 // *15 {VSR-029}
+buildTime=10.0
+customTime=10.0
+maxHealth=2500
+maxAmmo=3000
+addAmmo=4
+unitName="Xyr Guard"
+aiName="TurretTankFriend"
+aiName2="TurretTankEnemy"
+heatSignature=0.1
+imageSignature=1.0
+radarSignature=0.1
+isAssault=0
+
+armorClass=L
+
+requireCount=0
+
+provideCount=4
+provideName1="evturr"
+provideName2="evturr_vsr"
+provideName3="VIRTUAL_CLASS_TURRET"
+provideName4="DefendUnit"
+
+/////// weapons ///////////////////
+
+weaponMask=00011
+weaponHard1="HP_GUN_1"
+weaponName1="gshellgun_a"
+recoilName1="barrel_r"
+weaponAssault1=1
+weaponHard2="HP_GUN_2"
+weaponName2="gshellgun_a"
+recoilName2="barrel_l"
+weaponAssault2=1
+
+//////////////////////////////////
+
+turretCount=3
+turretName1="turret_y"
+turretName2="turret_x"
+turretName3="hp_eyepoint"
+
+mass=7087.13 // ISDF turret mass (VSR-012)
+
+[CraftClass]
+damageEffect1="dmgvhcl1_hadean"
+damageEffect2="dmgvhcl2_hadean"
+damageEffect3="dmgvhcl3_hadean"
+damageEffect4="dmgvhcl4_hadean"
+rangeScan=300.0
+periodScan=1.5
+velocJam=0.5
+engageRange=150
+
+selectGoMsg="evturr01.wav"
+selectAttackMsg="evturr02.wav"
+selectDeployMsg="evturr11.wav"
+selectOtherMsg="evturr10.wav"
+holdMsg="evturr04.wav"
+goMsg="evturr05.wav"
+followMeMsg="evturr06.wav"
+reloadMsg="evturr07.wav"
+repairMsg="eivturr07.wav"
+rescueMsg="evturr08.wav"
+recycleMsg="evturr09.wav"
+otherMsg="evturr11.wav"
+attackMsg="evturr10.wav"
+
+deployedMsg="evturr03.wav"
+killedMsg="evturr12.wav"
+died=""
+
+infoName="evturr_vsr.inf"
+
+// {VSR-UNDOC}
+// VSR Turret AI
+CanAIPForceIdle=false
+DoIdleDispatch=false
+sitAttackCheckAbleToHit=true // Check if can hit. If check returns false, hold immediately.
+gunTowerProcessCheckCantHit=true
+
+// {VSR-001}
+// VSR Turret Physics
+use13Aim=false
+aim12CannonError0=0.05
+aim12CannonError1=-0.2
+aim12CannonError2=-0.03
+aim12CannonError3=-0.1
+weaponPitch=1.5 // *1.0
+pitchScatter=0.2
+steerScatter=0.1
+
+[HoverCraftClass]
+setAltitude=1.0
+accelDragStop=20.0
+accelDragFull=1.0
+alphaTrack=10.0
+alphaDamp=3.0
+pitchPitch=0.5
+pitchThrust=0.1
+rollStrafe=0.1
+rollSteer=0.1
+
+velocForward=20.0
+velocReverse=15.0
+velocStrafe=15.0
+accelThrust=50.0
+accelBrake=50.0
+omegaSpin=4.0
+omegaTurn=1.5
+alphaSteer=10.0
+accelJump=15.0
+
+soundThrust="ienge.wav"
+soundSteer="avturre8.wav"
+soundDeploy="avturre4.wav"
+soundUndeploy="avturre5.wav"
+
+[DeployableClass]
+timeDeploy=8.0
+soundDeploy="avturre4.wav"
+soundUndeploy="avturre5.wav"
+// {VSR-004}
+timeUndeploy=1.0 // *3.0
+
+[TurretTankClass]
+// {VSR-001}
+// VSR Turret Physics
+omegaTurret=1.0 // ZST
+alphaTurret=1.75 // ZST
+

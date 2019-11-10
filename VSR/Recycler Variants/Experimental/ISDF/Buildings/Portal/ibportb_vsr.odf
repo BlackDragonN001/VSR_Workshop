@@ -1,0 +1,113 @@
+[GameObjectClass] // Version with no login terminal/no power use for maps. -GBD
+TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZCC
+baseName = "ibport"
+geometryName = "ibportBGH00.xsi"
+classLabel = "powered" //"teleportal"
+BZCClasslabel = "portal"
+RequirePowerMask = 0 // None
+powerCost = 0
+scrapCost = 10000
+scrapValue = 0
+unitName = "Teleporter"
+maxHealth = 0 // Invincible.
+addHealth = 0
+//the DLL sets the current ammo to 0 when it teleports
+//so, Ammo = full, Teleports, ammo = 0, addammo makes it go up, when it's full again, teleports
+maxAmmo = 0  // zero = instant,anything greater will be set as the delay until ammo if full.
+addAmmo = 0  // DLL sets ammo as zero so unless maxammo = o then you'll need to add ammo to reactivate portal.
+
+heatSignature = 0.8
+imageSignature = 8.0
+radarSignature = 1.0
+isAssault = 0
+isSingle = 0
+armorClass = H
+collisionRadius = 0.01
+//explosionName = "xbldGHxpl"
+CanAcceptPowerups = false
+AlwaysShowAmmo = true
+ownsTerrain = 1
+buildSupport = "F"
+buildRequire = "F"
+
+PositionOffset1 = "0.000000 5.000000 0.000000" // Teleport Exit Location.
+PositionOffset2 = "0.000000 0.000000 50.000000" // Goto Destination after AI unit Exits.
+
+GameObjectClassServiceMask = 9
+GameObjectClassServiceMatch = 9
+GameObjectClassServiceProvides = 9
+
+DoBettyAttack = true // true: do betty attack warnings when this is damaged.
+
+requireCount = 0
+
+provideCount = 0
+
+
+[TeleportalClass]
+//soundActivate = "portalx.wav"  // not used.... the sound effect is made by the portalEffect's explosion, though it's sometimes quite soft :-/
+
+
+//DLLSet it's lifespan to 0.1 no scrap left behind.
+// it's just an i76building thats invisibile/invincible with a lifespan of 0.1. something that dies to create an explosion.
+//PortalEffectIn = "PortalEffectinI"
+PortalEffectOut = "PortalEffectoutI"
+PortalEffectVehicle = "PortalEffectVehI"
+
+TeleporterChannel = 1
+ShowChannel = false
+CanEnter = true
+CanExit = true
+RandomDestination = false
+RandomUsesChannels = true
+TeleportFilter = 3 // Craft + Pilots
+// Teleport Filter options: 
+// All         = 0
+// Craft       = 1
+// Pilots      = 2
+// Powerups    = 4
+// Weapons     = 8 (Torpedoes, Mines)
+// Other       = 16
+ExitForwardOnly = false
+ExitVelocity = 0
+ExitUsesCenter = true
+PortalTargetRange = 20.0f
+TeleportTeamFilter = 0
+DestinationTeamFilter = 3
+// 0 = All Teams, 1 = same team only, 2 = allies only, 3 = Same Team + Allies, 4 = Enemies only, 5 = Same Team + Enemies, 6 = Allies + Enemies.
+// Team Filter options: 
+// All Teams        = 0
+// Same Team Only   = 1
+// Allies           = 2
+// Enemies          = 4
+// 
+// Add the values to get the desired result. Same Team + Allies is 3, Enemies + Allies is 6.
+
+
+[PoweredBuildingClass]
+detectRange = 500
+
+// Teleport destionation exit point.
+//powerTap1 = "hp_PortalExit_1"
+//powerName1 = "PortalExitGH"// invincible nav beacon.
+
+// "Goto" after exiting teleporter.
+//powerTap2 = "hp_PortalNav_1"
+//powerName2 = "PortalNavGH"// invincible nav beacon.
+
+PoweredByTaps = false
+
+
+[BuildingClass]
+//soundAmbient = "portal03.wav"
+
+tunnelCount = 1
+bldEdge = "twtw"
+tunnel01X0 = 2
+tunnel01Z0 = 1
+tunnel01DX = 4
+tunnel01DZ = 6
+tunnel01Edge = "twtw"
+
+candemolish = false
+

@@ -1,0 +1,42 @@
+[Size]
+MetersPerGrid=8.0
+HeightGranularity=0.1
+MinX=2048.0
+MinZ=2048.0
+Width=4096.0
+Depth=4096.0
+Height=130.0
+Tile=1
+Color="255 255 255 255"
+
+[NormalView]
+DiffuseColor="255 255 255"
+SpecularColor="10 10 10"
+SpecularPower=1024.0
+
+[Texture]
+TileTexture0="rend_vsr.bmp"
+TileTexture1="rend6.bmp"
+TileTexture2="rend3_vsr.bmp"
+TileTexture3="rend4.bmp"
+TileTexture4="rend7.bmp"
+TileTexture5="rend8.bmp"
+TileTexture6="rend9.bmp"
+TileTexture7="rend10.bmp"
+TileTexture8="rend6.bmp"
+
+TileTexture10="rend2.bmp"
+TileTexture11="rbextf01.bmp"
+TileTexture12="rbextw01.bmp"
+TileTexture13="rbextw02.bmp"
+TileTexture14="rbextw03.bmp"
+TileTexture15="rbextw00.bmp"
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap1"
+CaptureTarget2 = "VSRcap2"
+CaptureTarget3 = "VSRcap3"
+CaptureTarget4 = "VSRcap4"
+CaptureTarget5 = "VSRcap5"
+CaptureTarget6 = "VSRcap5"

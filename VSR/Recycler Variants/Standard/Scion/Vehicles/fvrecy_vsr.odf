@@ -1,0 +1,16 @@
+[GameObjectClass]
+baseName="fvrecy"
+classLabel="fvrecy"
+scrapReturn=0
+
+requireCount=1
+requireName1="fbover"
+requireText1="Build Overseer Array"
+
+// DLL
+startingVariant="_vsr"
+pilotRespawnWithSniper="fsuser" 
+pilotRespawnWithOutSniper="fsuser_m"
+
+[DeployBuildingClass]
+deployName="fbrecy_vsr"

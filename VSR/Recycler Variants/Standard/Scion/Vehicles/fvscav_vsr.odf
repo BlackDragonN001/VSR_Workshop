@@ -1,0 +1,19 @@
+[GameObjectClass]
+classLabel="fvscav"
+baseName="fvscav"
+collisionRadius=10 // {VSR-013}
+mass=40000.0 // (stock ivscav=53157.3) {VSR-012}
+
+[CraftClass]
+TeamTransferrable=true
+GotoTaskHasLeader=false
+
+[TrackedVehicleClass]
+alphaSteer=8.0 // 2.0* {VSR-014}
+TREAD_STATIC_FRICTION=5.0
+
+[DeployBuildingClass]
+DoExtraBuildzoneCheck=false
+
+[ScavengerClass]
+deployClass="fbscav_vsr"

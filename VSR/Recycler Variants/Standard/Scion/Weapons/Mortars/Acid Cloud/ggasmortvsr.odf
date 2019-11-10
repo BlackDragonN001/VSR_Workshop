@@ -1,0 +1,9 @@
+[WeaponClass]
+classLabel="ggasmort"
+ordName="gasbombvsr"
+aiRange=300 // *350 {VSR-277}
+
+[CannonClass]
+InitialShotDelay=1.5 // *new {VSR-271} -- added to prevent archer's first shot from being wildly inaccurate
+shotDelay=25.0 // *20 {VSR-272}
+shotVariance=0.15 // *0 {VSR-273}

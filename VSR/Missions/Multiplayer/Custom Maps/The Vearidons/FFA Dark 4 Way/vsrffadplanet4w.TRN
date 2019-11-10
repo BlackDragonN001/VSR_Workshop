@@ -1,0 +1,23 @@
+[Texture]
+TileTexture1="dark.tga"
+TileTexture2="dark2.tga"
+TileTexture3="core_4.tga"
+//TileTexture4="dospik00.pic"
+TileTexture5="core_6.tga"
+TileTexture6="dark.tga"
+
+[NormalView]
+DiffuseColor = "150 150 200 255"
+SpecularColor = "200 200 255"
+SpecularPower = 1024
+
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap1"
+CaptureTarget2 = "VSRcap1"
+CaptureTarget3 = "VSRcap1"
+CaptureTarget4 = "VSRcap5"
+CaptureTarget5 = "VSRcap5"
+CaptureTarget6 = "VSRcap5"
+CaptureTarget7 = "VSRcap5"

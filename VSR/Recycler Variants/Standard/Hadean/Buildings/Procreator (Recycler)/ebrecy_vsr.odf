@@ -1,0 +1,75 @@
+[GameObjectClass]
+TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZCC
+//buildTime=30.0
+scrapReturn=0
+baseName="ebrecy_vsr"
+geometryName="ebrecy_vsr00.fbx"
+//collisionName="ebrecy00.fbx"
+classLabel="recycler"
+powerCost=0
+scrapCost=0
+scrapValue=10
+maxHealth=12000
+maxAmmo=0
+unitName="Procreator"
+aiName="BuildingProcess"
+aiName2="BuildingProcess"
+heatSignature=2.0
+imageSignature=1.0
+radarSignature=1.0
+isAssault=1
+
+collisionRadius=4.0
+
+armorClass=H
+
+provideCount=4
+provideName1="ebrecy"
+provideName2="VIRTUAL_CLASS_RECYCLER"
+provideName3="VIRTUAL_CLASS_RECYCLERBUILDING"
+provideName4="base"
+
+// DLL
+startingVariant="_vsr"
+pilotRespawnWithSniper="esuser"
+pilotRespawnWithOutSniper="esuser_m"
+
+[PoweredBuildingClass]
+detectRange=100
+
+[BuildingClass]
+tunnelCount = 1
+
+tunnel01X0 = 3
+tunnel01Z0 = 3
+tunnel01DX = 2
+tunnel01DZ = 4
+tunnel01Edge = "wwtw"
+
+soundAmbient="ibrecy01.wav"
+
+
+[FactoryClass]
+soundBuild="ibrecy02.wav"
+soundFinish="iapc04.wav"
+buildItem1="evscav_vsr"
+buildItem2="evscout_vsr"
+buildItem3="evturr_vsr"
+buildItem4="evturrs_vsr"
+buildItem5="evcons_vsr"
+buildItem6="evserv_vsr"
+buildItem7="apserv_vsr"
+buildItem8="evscoutm_vsr"
+buildEmptyItem=8
+
+reloadMsg="evrecy12.wav"
+rescueMsg="evrecy13.wav"
+
+BeamColor="204 153 101 31"
+BuildSparkConfig="sparker_hadean"
+LineFinishColor="255 255 255 0"
+LineStartColor="204 153 101 255"
+
+[RecyclerClass]
+scrapHold=40
+scrapDelay=3.0 // # of seconds before +1 scrap

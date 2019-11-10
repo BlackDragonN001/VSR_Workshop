@@ -1,0 +1,34 @@
+[Texture]
+TileTexture1="wasteland1.tga"
+TileTexture4="wasteland3.tga"
+TileTexture2="mars5.tga"
+
+TileTexture5="street_2.tga"
+TileTexture10="dune3.tga"
+TileTexture11="street_1.tga"
+
+[Size]
+MetersPerGrid=8.0
+HeightGranularity=0.1
+MinX=-1024.0
+MinZ=-1024.0
+Width=2048.0
+Depth=2048.0
+Height=160.0
+Tile=0
+Color="255 255 255 255"
+
+[NormalView]
+DiffuseColor = "178.5 178.5 178.5"
+SpecularColor = "10 10 10"
+SpecularPower = 1024.0
+
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap1"
+CaptureTarget2 = "VSRcap2"
+CaptureTarget3 = "VSRcap3"
+CaptureTarget4 = "VSRcap4"
+CaptureTarget5 = "VSRcap5"
+CaptureTarget6 = "VSRcap5"

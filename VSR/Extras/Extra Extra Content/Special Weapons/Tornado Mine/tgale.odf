@@ -1,0 +1,41 @@
+[OrdnanceClass]
+classLabel = "pulse"
+
+shotGeometry = NULL
+shotRadius = -3.0
+xplGround = "xtornhit"
+xplVehicle = "xtornhit"
+xplBuilding = "xtornhit"
+xplExpire = "xtorncloud"
+
+renderName = "tgale.puff"
+ammoCost = 1
+lifeSpan = 1.6
+shotSpeed = 60.0
+
+damageValue(N) = 13
+damageValue(L) = 9
+damageValue(H) = 2
+damageValue(S) = 9
+damageValue(D) = 5
+damageValue(A) = 12
+
+[PulseShellClass]
+pulseDelay = 0.2
+pulsePeriod = 0.2
+xplPulse = "tornademit"
+
+[Puff]
+simulateBase = "sim_null"
+renderBase = "draw_twirl"
+// textureName = "flame2.tga"
+// textureBlend = "one one modulate"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "130 128 120 255"
+finishColor = "100 98 90 60"
+startRadius = 0.75
+finishRadius = 10.0
+animateTime = 0.8
+lifeTime = 0.8
+maxCount = 512

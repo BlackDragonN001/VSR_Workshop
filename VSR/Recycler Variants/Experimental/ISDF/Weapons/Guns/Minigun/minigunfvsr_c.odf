@@ -1,0 +1,17 @@
+[OrdnanceClass]
+classLabel="minigun_c"
+shotGeometry=NULL
+xplGround="xminigndfvsr"
+xplVehicle="xminicarfvsr"
+xplBuilding="xminibldfvsr"
+renderName="minigunfvsr_c.render"
+
+[Render]
+renderBase="draw_trail"
+textureBlend="one one modulate"
+textureName="trail.tga"
+startColor="0 127 255 255"
+finishColor="0 0 255 0"
+startRadius=0.02
+finishRadius=0.05
+segmentTime=0.05

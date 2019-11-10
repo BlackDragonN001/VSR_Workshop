@@ -1,0 +1,47 @@
+[GameObjectClass]
+TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZCC
+geometryName = "ebtcen00.fbx"
+classLabel = "techcenter" // "powered"
+scrapCost = 65 // *80 stock/vsr5.0
+scrapValue = 10 // *3 stock/vsr5.0
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Xyr Tower"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+collisionRadius = 4.0
+isAssault = 1
+isSingle = 1
+
+armorClass = H
+
+requireCount = 2
+requireName1 = "ebcbun"
+requireText1 = "Build Eyes of Xyr"
+requireName2 = "ebsbay"
+requireText2 = "Build Repair Vat"
+
+/////// PROVIDES ///////////////////
+
+provideCount = 4
+provideName1 = "ebtcen"
+provideName2 = "ebtcen_vsr"
+provideName3 = "VIRTUAL_CLASS_TECHCENTER"
+provideName4 = "base"
+
+////////////////////////////////////
+
+lightHard1 = "hp_light_1"
+lightName1 = "o_orange_nf"
+
+[BuildingClass]
+soundAmbient = "iabomb01.wav"
+[PoweredBuildingClass]
+detectRange = 100
+
+//[Lod1]
+//geometryName = "ebtcenl1.xsi" ;geometry for lod1
+//distance = 100                   ;bsphere under 200 pixel => switch to lod1
+//dontShiftLOD = 1
+

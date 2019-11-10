@@ -1,0 +1,54 @@
+[GameObjectClass]
+TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZCC
+baseName="fbstro"
+classLabel="fbstro"
+
+provideCount=5
+provideName1="fbstro"
+provideName2="fbstro_vsr"
+provideName3="VIRTUAL_CLASS_ARMORY"
+provideName4="VIRTUAL_CLASS_STRONGHOLD"
+provideName5="base"
+
+scrapCost=60 // {VSR-361}
+scrapValue=20 // {VSR-361} to match ISDF
+
+[PoweredBuildingClass]
+powerTap1="HP_TAP_1"
+powerName="fblung_vsr"
+
+[ArmoryClass]
+// {VSR-010}
+DropoffDX=-3.5 // *0
+DropoffDZ=12 // *16, *32
+
+[ArmoryGroup1]
+buildItem1="apiong"
+buildItem2="aplockvsr"
+buildItem3="apgaus"
+
+[ArmoryGroup2]
+buildItem1="apsplasmavsr"
+buildItem2="apsonicvsr"
+buildItem3="apquilvsr"
+buildItem4="aparccvsr"
+
+[ArmoryGroup3]
+buildItem1="apmlockvsr"
+buildItem2="apstingvsr"
+
+[ArmoryGroup4]
+buildItem2="apgasvsr"
+buildItem4="appopgvsr"
+
+[ArmoryGroup5]
+buildItem1="apflar_svsr"
+buildItem2="apseekvsr"
+buildItem3="approxvsr"
+
+[ArmoryGroup6]
+buildItem1="apblnkvsr"
+
+[ArmoryGroup8]
+buildItem2="fpsnipvsr"
+buildItem4="fpjetpvsr"

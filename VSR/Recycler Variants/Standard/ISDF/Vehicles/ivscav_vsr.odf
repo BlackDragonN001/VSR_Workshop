@@ -1,0 +1,18 @@
+[GameObjectClass]
+classLabel="ivscav"
+//collisionRadius=10 // *new {VSR-013}			COMMENTED OUT FOR TEST
+mass=40000.0 // (stock ivscav=53157.3) {VSR-012}
+
+//[CraftClass]						COMMENTED OUT FOR TEST (already in ivscav.odf)
+//TeamTransferrable=true				COMMENTED OUT FOR TEST (already in ivscav.odf)
+//GotoTaskHasLeader=false				COMMENTED OUT FOR TEST (already in ivscav.odf)
+
+[TrackedVehicleClass]
+alphaSteer=8.0 // *2.0 {VSR-014}
+TREAD_STATIC_FRICTION=5.0
+
+//[DeployBuildingClass]					COMMENTED OUT FOR TEST
+//DoExtraBuildzoneCheck=false				COMMENTED OUT FOR TEST
+
+[ScavengerClass]
+deployClass="ibscav_vsr"

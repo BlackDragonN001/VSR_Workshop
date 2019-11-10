@@ -1,0 +1,10 @@
+[WeaponClass]
+classLabel="gsonic_a"
+altName="gsonicvsr_c"
+
+[MagnetGunClass]
+coneAngle=1.0 // *0.75 {VSR-166}
+
+// New forcemass values mean sonic has original pushing power vs rocket tanks.
+// forceMass=33488 // equal to mass of ivrckt_vsr
+// minForceMassScale=0.5

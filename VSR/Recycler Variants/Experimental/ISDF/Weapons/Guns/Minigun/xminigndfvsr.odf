@@ -1,0 +1,117 @@
+// =================
+// BULLET GROUND HIT
+// =================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 6
+particleClass1 = "xminigndfvsr.sand"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleClass2 = "xminigndfvsr.light"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+particleClass3 = "xminigndfvsr.chunks"
+particleCount3 = 2
+particleVeloc3 = "8.0 13.0 6.0"
+particleClass4 = "xminigndfvsr.sand2"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+particleClass5 = "xminigndfvsr.hole"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.0 0.0"
+particleClass6 = "xminigndfvsr.grounddust"
+particleCount6 = 2
+particleVeloc6 = "1.0 1.0 1.0"
+
+
+explSound = "wmgr2.wav"
+damageRadius = 0.0
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+[sand]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 1.0
+textureName = "bulsandvsr.tga"
+textureBlend = "srcalpha incalpha modulatealpha"
+startColor = "75 75 75 230"
+finishColor = "75 75 75 0"
+startRadius = 0.4
+finishRadius = 2.2
+animateTime = 0.5
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_light"
+startColor = "100 150 255 255" // "255 150 100 255" 
+finishColor = "0 0 200 0" // "200 0 0 0"
+startRadius = 0.0
+finishRadius = 0.0
+animateTime = 0.2
+attenuateConstant = 0.0
+attenuateLinear = 2.0
+attenuateQuadratic = 0.0
+
+[Chunks]
+simulateBase = "sim_ember"
+lifeTime = 1.0
+renderBase = "draw_sprite" // "draw_light" // "draw_sprite"
+textureName = "dirt.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "200 100 0 11"
+finishColor = "255 50 0 11"
+startRadius = 0.07
+finishRadius = 0.07
+animateTime = 1.0
+attenuateConstant = 0.0
+attenuateLinear = 2.0
+attenuateQuadratic = 0.0
+
+[sand2]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 1.0
+textureName = "bulsand2vsr.tga"
+textureBlend = "srcalpha incalpha modulatealpha"
+startColor = "150 150 150 255"
+finishColor = "150 150 150 0"
+startRadius = 0.2
+finishRadius = 1.1
+animateTime = 0.5
+
+[Hole]
+simulateBase = "sim_null"
+lifeTime = 72.0
+renderBase = "draw_planar"
+textureName = "gndbulvsr.tga" // "grndchar.tga"
+textureBlend = "srcalpha incalpha modulatealpha"
+startColor = "10 10 10 170"
+finishColor = "10 10 10 0"
+startRadius = 0.15
+finishRadius = 0.15
+startDelay = 52 // 0
+animateTime = 20 // 72.0
+
+[Grounddust]
+simulateBase = "sim_dust"
+lifeTime = 0.3 // 1.0
+renderBase = "draw_twirl"
+textureName = "smoke.tga"
+textureBlend = "srcalpha incalpha modulatealpha"
+startColor = "153 153 153 250"
+finishColor = "153 153 153 250"
+startRadius = 0.4
+finishRadius = 0.0
+animateTime = 0.3 // 1.0

@@ -1,0 +1,68 @@
+[GameObjectClass]
+TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZCC
+baseName="fbforg"
+classLabel="fbforg"
+
+provideCount=7
+provideName1="fbkiln"
+provideName2="fbkiln_vsr"
+provideName3="fbforg"
+provideName4="fbforg_vsr"
+provideName5="VIRTUAL_CLASS_FACTORY"
+provideName6="VIRTUAL_CLASS_FACTORY_U"
+provideName7="VIRTUAL_CLASS_FORGE"
+
+[PoweredBuildingClass]
+powerTap1="HP_TAP_1"
+powerTap2="HP_TAP_2"
+powerName="fblung_vsr"
+
+[BuildingClass]
+// {VSR-074}
+tunnelCount=6
+
+tunnel01X0=3
+tunnel01Z0=3
+tunnel01DX=2
+tunnel01DZ=3
+tunnel01Edge="wfff" // Center Pad
+
+tunnel02X0=3
+tunnel02Z0=6
+tunnel02DX=2
+tunnel02DZ=1
+tunnel02Edge="wwtw" // Center Entrance
+
+tunnel03X0=1
+tunnel03Z0=5
+tunnel03DX=1.5
+tunnel03DZ=2
+tunnel03Edge="wftw" // Left Entrance Outer
+
+tunnel04X0=5.5
+tunnel04Z0=5
+tunnel04DX=1.5
+tunnel04DZ=2
+tunnel04Edge="wwtf" // Right Entrance Outer
+
+tunnel05X0=2.5
+tunnel05Z0=3
+tunnel05DX=0.5
+tunnel05DZ=3
+tunnel05Edge="ffff" // Left Entrance Inner
+
+tunnel06X0=5
+tunnel06Z0=3
+tunnel06DX=0.5
+tunnel06DZ=3
+tunnel06Edge="ffff" // Right Entrance Inner
+
+[FactoryClass]
+weaponConfig="fweapon_vsr.odf"
+buildItem1="fvsent_vsr"
+buildItem2="fvarch_vsr"
+buildItem3="fvtank_vsr"
+buildItem4="fvartl_vsr"
+buildItem5="fvwalk_vsr"
+buildItem6="fvatank_vsr"
+

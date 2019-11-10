@@ -1,0 +1,21 @@
+[Texture]
+TileTexture1="mars1.tga"	//TileTexture1="mars04.bmp"
+TileTexture2="mire5.tga"	//TileTexture2="STMojave01.bmp"
+TileTexture4="mars7.tga"	//TileTexture4="STMojave02.bmp"
+TileTexture5="street_2.tga"
+TileTexture10="dune3.tga"	//TileTexture10="STMojave03.bmp"
+TileTexture11="street_1.tga"
+
+[NormalView]
+diffusecolor = "255 255 255 255"
+specularpower = "15"
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap1"
+CaptureTarget2 = "VSRcap1"
+CaptureTarget3 = "VSRcap2"
+CaptureTarget4 = "VSRcap2"
+CaptureTarget5 = "VSRcap3"
+CaptureTarget6 = "VSRcap5"
+CaptureTarget7 = "VSRcap5"

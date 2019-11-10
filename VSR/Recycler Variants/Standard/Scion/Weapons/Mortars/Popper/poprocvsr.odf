@@ -1,0 +1,34 @@
+[OrdnanceClass]
+classLabel="thermalmissile" // *"bullet" {VSR-223}
+
+// {VSR-222}
+leadPositionMinTime=0.7 // *new
+leadPositionMaxTime=3.0 // *new
+
+shotRadius=3.0 // *1.0 {VSR-224}
+lifeSpan=2.8 // *4.0 {VSR-220} //was 5.6
+
+// {VSR-225}
+damageValue(N)=250 // Stock
+damageValue(L)=225 // *220
+damageValue(H)=100 // Stock
+damageValue(S)=225 // *220
+damageValue(D)=180 // Stock
+damageValue(A)=250 // Stock
+
+// Stock values we must repaste because we are using a new class
+shotGeometry="ioartl00.xsi"
+shotSound="Ordin_c.wav"
+xplGround="xpopgnd"
+xplVehicle="xpopcar"
+xplBuilding="xpopcar"
+renderName="poproc.render"
+ammoCost=30
+shotSpeed=100 //was 50
+
+[MissileClass]
+omegaTurn=0.25
+teamFilter=3 // 0=targets all teams, 1=targets same team only, 2=targets only allies, 3=targets only enemies, 4=targets not same team
+
+[ThermalMissileClass]
+coneAngle=0.07

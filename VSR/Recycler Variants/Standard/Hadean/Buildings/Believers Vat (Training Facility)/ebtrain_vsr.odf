@@ -1,0 +1,44 @@
+[GameObjectClass]
+TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZCC
+geometryName = "ebtrain00.fbx"
+classLabel = "barracks"
+scrapCost = 60
+scrapValue = 30
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Believers Vat"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+collisionRadius = 1.0
+isAssault = 1
+
+armorClass = H
+
+requireCount = 2
+requireName1 = "ebcbun"
+requireText1 = "Build Eyes of Xyr"
+requireName2 = "ebfact2"
+requireText2 = "Build Mega Xenomator"
+
+/////// PROVIDES ///////////////////
+
+provideCount = 5
+provideName1 = "ebtrain"
+provideName2 = "ebtrain_vsr"
+provideName3 = "VIRTUAL_CLASS_BARRACKS"
+provideName4 = "VIRTUAL_CLASS_TECHCENTER"
+provideName5 = "base"
+
+////////////////////////////////////
+
+[BuildingClass]
+soundAmbient = "abbarre0.wav"
+
+[PoweredBuildingClass]
+detectRange = 200
+
+[BarracksClass]
+pilotHold = 500
+
+

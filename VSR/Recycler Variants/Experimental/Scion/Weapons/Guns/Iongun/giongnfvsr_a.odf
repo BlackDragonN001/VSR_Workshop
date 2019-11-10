@@ -1,0 +1,16 @@
+[WeaponClass]
+altName="giongnfvsr_c"
+classLabel="giongn_a"
+ordName="ionizefvsr_a"
+flashName="giongnfvsr_c.flash"
+
+[Flash]
+renderBase="draw_geom"
+textureName="sflash.tga"
+textureBlend="one one modulate"
+startColor="0 255 0 255"
+finishColor="0 255 0 0"
+startRadius=3.0
+finishRadius=1.0
+animateTime=0.1
+geomName="g_sflash.xsi"

@@ -1,0 +1,140 @@
+[ExplosionClass]
+classLabel = "xmortxpl"
+StartUpright = true
+particleTypes = 7
+particleClass1 = "xmortbldfvsr.shock"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleClass2 = "xmortbldfvsr.shrap"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+particleClass3 = "xmortbldfvsr.light"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+particleClass4 = "xmortbldfvsr.streamer"
+particleCount4 = 6
+particleVeloc4 = "100.0 100.0 100.0"
+particleBias4 = "0.0 12.0 0.0"
+particleClass5 = "xmortbldfvsr.puffR" // smoke emitter
+particleCount5 = 2 // 4
+particleVeloc5 = "0.0 4.0 0.0"
+particleBias5 = "0.0 2.0 0.0"
+particleClass6 = "xmortbldfvsr.puffs" // burning flames
+particleCount6 = 3 // 8
+particleVeloc6 = "0.0 0.0 0.0"
+particleBias6 = "0.0 2.0 1.0"
+particleClass7 = "xmortgndfvsr.ring"
+particleCount7 = 1
+particleVeloc7 = "0.0 0.0 0.0"
+
+explSound = "xmv1.wav"
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.4
+renderBase = "draw_sphere"
+textureName = "vsmoke.dxtbz2"
+textureBlend = "one one modulate"
+startColor = "255 255 63 127"
+finishColor = "255 0 0 0"
+startRadius = 0.0
+finishRadius = 15.0
+animateTime = 0.4
+latitudeBands = 8
+longitudeSegments = 16
+
+[light]
+simulateBase = "sim_null"
+lifeTime = 0.7
+renderBase = "draw_sprite"
+textureName = "blast.dxtbz2"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 0 0 0"
+startRadius = 12.0
+finishRadius = 0
+animateTime = 0.7
+
+[shrap]
+simulateBase = "sim_null"
+lifeTime = 0.4 // 0.7
+renderBase = "draw_sprite"
+textureName = "shrap.dxtbz2"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 127 0 0"
+startRadius = 0.5
+finishRadius = 14
+animateTime = 0.4 // 0.7
+
+[streamer]
+simulateBase = "sim_ember"
+lifeTime = 0.3 // 0.5
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+startColor = "255 127 0 255"
+finishColor = "255 0 0 0"
+startRadius = 0.07
+finishRadius = 0.0
+trailTime = 0.25
+segmentTime = 0.25
+
+[PuffR]
+simulateBase = "sim_smoke"
+lifeTime = 0.5 // 0.8
+renderBase = "draw_emit"
+emitName = "xmortbldfvsr.puffremit"
+emitDelay = 0.1 // 0.2
+emitDelayVar = 0.05 // 0.1
+emitVelocity = "0 5 0"
+emitVariance = "6.0 -4.0 4.0"
+
+[puffremit]
+simulateBase = "sim_smoke"
+lifeTime = 1.2 // 2.0
+renderBase = "draw_twirl"
+textureName = "smoke.dxtbz2"
+textureBlend = "srcalpha infvsrcalpha modulatealpha"
+startColor = "32 32 32 192"
+finishColor = "0 0 0 0"
+startRadius = 0.125
+finishRadius = 5.0
+animateTime = 1.2 // 2.0
+rotationRate = 8.0
+
+[Puffs]
+simulateBase = "sim_smoke"
+lifeTime = 0.6
+renderBase = "draw_emit"
+emitName = "xmortbldfvsr.puffsemit"
+emitDelay = 0.1
+emitDelayVar = 0.07
+emitVelocity = "0 2.0 0"
+emitVariance = "10.0 -8.0 6.0"
+
+[puffsemit]
+simulateBase = "sim_smoke"
+lifeTime = 0.4 // *0.8
+renderBase = "draw_twirl"
+textureName = "flame2.dxtbz2" 
+textureBlend = "one one modulate"
+startColor = " 255 255 255 160" 
+finishColor = "255 255 255 0" 
+startRadius = 0.25
+finishRadius = 3.5
+animateTime = 0.4 // *0.8
+rotationRate = 16.0
+
+[ring]
+simulateBase = "sim_null"
+lifeTime = 20 // 30 // *10
+renderBase = "draw_planar"
+textureName = "grndchar.dxtbz2"
+textureBlend = "srcalpha infvsrcalpha modulatealpha"
+startColor = "10 10 10 192"
+finishColor = "10 10 10 0"
+startRadius = 6.0
+finishRadius = 6.0
+animateTime = 10 // *10
+startDelay = 10 // 20 // *0
+

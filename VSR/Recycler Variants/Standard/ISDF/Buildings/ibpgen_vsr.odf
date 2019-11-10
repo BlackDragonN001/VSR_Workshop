@@ -1,0 +1,10 @@
+[GameObjectClass]
+TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZCC
+classLabel="ibpgen"
+scrapValue=10 // *3 {VSR-075}
+
+provideCount=4
+provideName1="ibpgen"
+provideName2="ibpgen_vsr"
+provideName3="VIRTUAL_CLASS_POWERPLANT"
+provideName4="base"

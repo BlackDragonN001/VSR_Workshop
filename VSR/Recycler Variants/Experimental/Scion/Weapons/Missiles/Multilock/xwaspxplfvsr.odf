@@ -1,0 +1,141 @@
+// =================
+// WASP TORPEDO EXPLOSION
+// =================
+
+[ExplosionClass]
+classLabel = "xwaspxplvsr"
+
+particleTypes = 7
+particleClass1 = "xwaspxplfvsr.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 10.0 0.0"
+particleClass2 = "xwaspxplfvsr.shock"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+particleClass3 = "xwaspxplfvsr.light"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+particleClass4 = "xwaspxplfvsr.streamer"
+particleCount4 = 8
+particleVeloc4 = "70.0 90.0 70.0"
+particleBias4 = "0.0 10.0 0.0"
+particleClass5 = "xwaspxplfvsr.puffR"
+particleCount5 = 3
+particleVeloc5 = "12.0 16.0 12.0"
+particleBias5 = "0.0 8.0 0.0"
+particleClass6 = "xwaspxplfvsr.puffs"
+particleCount6 = 4
+particleVeloc6 = "14.0 16.0 14.0"
+particleBias6 = "0.0 4.0 0.0"
+particleClass7 = "xwaspxplfvsr.blast"
+particleCount7 = 1
+particleVeloc7 = "0.0 0.0 0.0"
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 2.0
+renderBase = "draw_twirl"
+textureName = "blast.dxtbz2"
+textureBlend = "one one modulate"
+startColor = "0 128 255 255"
+finishColor = "255 128 0 0"
+startRadius = 1.0
+finishRadius = 30.0
+animateTime = 2.0
+BottomInteractsWithTerrain = false
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.6
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "63 255 255 192"
+finishColor = "0 0 255 0"
+startRadius = 1.0
+finishRaius = 40.0
+animateTime = 0.6
+
+[blast]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_sprite"
+textureName = "blast.dxtbz2"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255" 
+finishColor = "0 64 255 0"
+startRadius = 1.0
+finishRadius = 40.0
+animateTime = 1.0
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_light"
+startColor = "255 255 255 9000"
+finishColor = "0 64 255 0"
+startRadius = 10.0
+finishRadius = 20.0
+animateTime = 1.0
+attenuateConstant = 0.0
+attenuateLinear = 0.0
+attenuateQuadratic = 0.1
+
+[streamer]
+simulateBase = "sim_ember"
+lifeTime = 2.0
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+startColor = "0 127 255 255"
+finishColor = "255 0 0 0"
+startRadius = 0.1
+finishRadius = 0.0
+trailTime = 0.4
+segmentTime = 0.4
+
+[PuffR]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_emit"
+emitName = "xwaspxplfvsr.puffremit"
+emitDelay = 0.3
+emitDelayVar = 0.25
+emitVelocity = "0.0 3.0 0.0"
+emitVariance = "3.0 1.5 3.0"
+
+[puffremit]
+simulateBase = "sim_smoke"
+lifeTime = 2.5
+renderBase = "draw_twirl"
+textureName = "smoke.dxtbz2"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 200"
+finishColor = "20 20 20 0"
+startRadius = 0.25
+finishRadius = 8.0
+animateTime = 2.5
+rotationRate = 6.0
+
+[Puffs]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_emit"
+emitName = "xwaspxplfvsr.puffsemit"
+emitDelay = 0.2
+emitDelayVar = 0.1
+emitVelocity = "0.0 3.0 0.0"
+emitVariance = "5.0 1.5 3.0"
+
+[puffsemit]
+simulateBase = "sim_smoke"
+lifeTime = 2.0
+renderBase = "draw_twirl"
+textureName = "flame.dxtbz2"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 128 0 0"
+startRadius = 0.25
+finishRadius = 6.0
+animateTime = 2.0
+rotationRate = 10.0
+

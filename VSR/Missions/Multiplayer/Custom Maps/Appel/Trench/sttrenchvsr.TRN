@@ -1,0 +1,25 @@
+[Texture]
+TileTexture1="metal.tga"
+TileTexture2="metal2.tga"  //<-- pool
+TileTexture3="metal3.tga"
+TileTexture4="metal4.tga"
+TileTexture5="metal5.tga"
+TileTexture6="metal6.tga"
+TileTexture7="metal7.tga"
+TileTexture8="metal8.tga"
+TileTexture9="metal9.tga"
+TileTexture10="metal10.tga"
+TileTexture11="metal11.tga"
+TileTexture12="metal12.tga"
+
+[NormalView]
+SpecularPower = 1024
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap1"
+CaptureTarget2 = "VSRcap1"
+CaptureTarget3 = "VSRcap1"
+CaptureTarget4 = "VSRcap1"
+CaptureTarget5 = "VSRcap5"
+CaptureTarget6 = "VSRcap5"

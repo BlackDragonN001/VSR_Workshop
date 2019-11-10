@@ -1,0 +1,48 @@
+// Capture target 1: Healing Crystal.
+[GameObjectClass]
+geometryName = "bocryst01.fbx"
+classLabel = "supplydepot"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "Healing Crystal"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+collisionRadius = 8.0
+canDetect = true
+canInteract = true
+ownsTerrain = true
+isSingle = false
+CategoryTypeOverride = 22
+
+[BuildingClass]
+soundAmbient = "BACRYS1B.wav"
+
+justTerrain = true
+CanDemolish = false
+CanAlliedCommanderDemolish = false
+DoBettyLost = false
+AmbeintSoundWhenUnpowered = true
+
+[PoweredBuildingClass]
+detectRange = 0.0f
+
+[SupplyDepotClass]
+supplyRange = 1e6 // Map wide.
+healthRate = 3.0f // Slow health regen.
+ammoRate = 0.0f
+
+//supplySound = ""
+
+localAmmoRate = 0.0f
+
+ServiceSTs = true
+ServiceCraft = true
+ServiceBuildings = true
+ServicePilots = true
+ServiceOther = true
+
+ServiceAllies = true
+ServiceParallel = true

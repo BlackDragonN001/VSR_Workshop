@@ -1,0 +1,57 @@
+// Ammo Jetpack from FE (Modded)
+// Boost height lowered
+
+[WeaponClass]
+classLabel = "jetpack"
+geometryName = "fgjetpvsr00.xsi"
+//geometryScale = 0.12
+animCount = 1
+animName1 = "launch"
+animFile1 = "fgjetpvsr00.xsi"
+ordName = NULL
+wpnName = "Hover Pack"
+wpnIcon = "wire_hoverpackvsr.tga"  //"wire_igjetp%d.tga"
+fireSound = NULL //"whcan.wav"
+flashName = "fghovpvsr.render"
+wpnReticle = "gphantom.0"
+wpnPriority = 0
+wpnCategory = "PACK"
+isAssault = 0
+canSelect = 0
+
+
+[JetPackClass]
+thrustDelay = 20
+ammoCost = 40
+burnTime = 3.0
+accelThrust = 13.5
+activeSound = "zhovervsr03.wav"
+expireSound = "zhovervsr04.wav"
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "fghovpvsr.flare"
+renderName2 = "fghovpvsr.contrail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "160 110 200 255"
+finishColor = "140 70 230 255"
+startRadius = 2.0
+finishRadius = 2.0
+
+[Contrail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "120 80 220 90"
+finishColor = "100 100 220 0"
+startRadius = 0.4
+finishRadius = 0.8 
+segmentTime = 3.0  // time each segment animates
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.3
+textureRate = 0.05

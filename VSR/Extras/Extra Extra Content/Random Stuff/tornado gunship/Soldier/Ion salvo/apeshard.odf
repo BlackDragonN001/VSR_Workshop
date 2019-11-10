@@ -1,0 +1,16 @@
+[GameObjectClass]
+classLabel = "apspecial"
+scrapCost = 20
+
+//explosionName = "xbmbxpl" // Was: xplGround = "xbmbxpl" never worked. -GBD
+
+requireCount = 1
+requireName1 = "ibarmo"
+requireText1 = "Build Armory"
+
+lightName1 = "omnipurple"
+
+[PowerUpClass]
+
+[WeaponPowerupClass]
+weaponName = "geshard"

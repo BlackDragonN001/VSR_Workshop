@@ -1,0 +1,61 @@
+// (c) BZ2CP unit "Xares"
+// Mesh - Slaor, Pastell
+// Skin - Slaor
+// Skin map, odf, model adaptation, animations - Pastell
+
+[GameObjectClass]
+classLabel="evtank_vsr"
+
+scrapValue=30
+scrapCost=60
+customCost=60
+
+unitName="Xares II"
+
+requireCount=0
+
+weaponMask = 00111
+weaponName1="gfbgun_c"
+weaponName2="gslicer_c"
+weaponName3="gslicer_c"
+weaponName4=""
+
+infoName="evtank_vsr.inf"
+
+[CraftClass]
+UseSelectWeapon = 0
+canHunt = 1
+damageEffect1="dmgvhcl1_hadean"
+damageEffect2="dmgvhcl2_hadean"
+damageEffect3="dmgvhcl3_hadean"
+damageEffect4="dmgvhcl4_hadean"
+rangeScan=250.0f
+
+engageRange=170
+blastDist = 70
+
+avoidSpeed=30;
+topSpeed=50;
+
+// VSR Physics {VSR-000}
+MIN_BOUNCE_VEL=2.0
+GROUND_ELASTICITY=-0.07
+
+[HoverCraftClass]
+accelDragStop=6.0
+accelJump=18.0
+alphaDamp=9.0
+rollStrafe=0.08
+
+// VSR Physics {VSR-000}
+MoreLike12Physics=true
+OverWaterVelocFrontMult=1.0
+OverWaterVelocSideMult=1.0
+OverWaterThrottleMult=0.8
+airborneVelocFrontMult=1.05
+airborneVelocSideMult=1.05
+airborneThrottleMult=1.2
+airborneMinHeightRatio=1.6
+airborneMaxHeightRatio=4.0
+LIFT_SPRING=8
+LIFT_DAMP=3

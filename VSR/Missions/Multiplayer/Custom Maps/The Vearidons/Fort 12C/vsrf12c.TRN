@@ -1,0 +1,35 @@
+[Texture]
+TileTexture0="tunnel_8.tga"
+TileTexture1="tunnel_1.tga"
+TileTexture2="tunnel_2.tga"
+TileTexture3="tunnel_3.tga"
+TileTexture4="tunnel_4.tga"
+TileTexture5="tunnel_5.tga"
+TileTexture6="tunnel_6.tga"
+TileTexture7="tunnel_7.tga"
+TileTexture8="tunnel_0.tga"
+
+[Size]
+MetersPerGrid = 8.0
+HeightGranularity = 0.1
+MinX = -2048.0
+MinZ = -2048.0
+Width = 4096.0
+Depth = 4096.0
+Height = 100
+Tile = 8
+Color = "255 255 255 255"
+
+[NormalView]
+DiffuseColor = "178.5 178.5 178.5"
+SpecularColor = "10 10 10"
+SpecularPower = 1024.0
+
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap1"
+CaptureTarget2 = "VSRcap2"
+CaptureTarget3 = "VSRcap4"
+CaptureTarget4 = "VSRcap5"
+CaptureTarget5 = "VSRcap5"

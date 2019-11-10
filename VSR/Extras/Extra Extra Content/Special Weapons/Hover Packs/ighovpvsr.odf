@@ -1,0 +1,57 @@
+// Ammo Jetpack from FE (Modded)
+// Boost height lowered
+
+[WeaponClass]
+classLabel = "jetpack"
+geometryName = "igjetpvsr.xsi" // "igboostervsr.xsi"
+//geometryScale = 0.07
+animCount = 1
+animName1 = "launch"
+animFile1 = "igjetpvsr.xsi" // "igboostervsr.xsi"
+ordName = NULL
+wpnName = "Hover Pack"
+wpnIcon = "wire_hoverpackvsr.tga"  //"wire_igjetp%d.tga"
+fireSound = NULL //"whcan.wav"
+flashName = "ighovpvsr.render"
+wpnReticle = "gphantom.0"
+wpnPriority = 0
+wpnCategory = "PACK"
+isAssault = 0
+canSelect = 0
+
+
+[JetPackClass]
+ammoCost = 27
+burnTime = 4.0
+setAltitude = 100
+accelThrust = 13
+activeSound = "zhovervsr03.wav"
+expireSound = "zhovervsr04.wav"
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "ighovpvsr.flare"
+renderName2 = "ighovpvsr.contrail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "50 100 200 255"
+finishColor = "30 90 230 255"
+startRadius = 2.0
+finishRadius = 2.0
+
+[Contrail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "20 70 220 90"
+finishColor = "40 60 220 0"
+startRadius = 0.4
+finishRadius = 0.8 
+segmentTime = 2.0  // time each segment animates
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.3
+textureRate = 0.05

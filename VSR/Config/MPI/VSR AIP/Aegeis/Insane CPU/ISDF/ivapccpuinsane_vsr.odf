@@ -1,0 +1,22 @@
+[GameObjectClass]
+classLabel = "ivapc"
+scrapCost = 40
+buildTime = 5.0
+
+/////// REQUIREMENTS ///////////////
+requireCount = 0
+
+[CraftClass]
+
+[HoverCraftClass]
+
+[APCClass]
+soldierType = "issold"
+soldierCount = 4
+soldierDelay = 0.0 // Everyone deploys at once
+timeDeploy = 2.0
+flightAltitude = 75.0
+SoldierAltitude = 65.0 // Altitude at which it starts spitting soldiers out.
+InternalSoldiersAreAmmo = true // if true, ammo meter shows the % of soldiers in the APC. (updated occasionally)
+
+[Lod1]

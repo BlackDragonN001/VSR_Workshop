@@ -1,0 +1,119 @@
+//Modified since VSR 6.0 for quick conversion to BZCC:
+//-Unit names changed to match BZCC's IN GAME names (Sabre -> Tank, for example)
+
+[MPVehicles]
+xsi1 = "ivscout00.fbx"
+cfg1 = "ivscout_vsr"
+Description1 = "VSR ISDF Scout"
+
+xsi2 = "fvscout_skel.fbx"
+cfg2 = "fvscout_vsr"
+Description2 = "VSR Scion Scout"
+
+xsi3 = "evscout00.msh"
+cfg3 = "evscout_vsr"
+Description3 = "VSR Hadean Scout"
+
+xsi4 = "ivtank00.fbx"
+cfg4 = "ivtank_vsr"
+Description4 = "Tank"
+
+xsi5 = "fvtank_skel.fbx"
+cfg5 = "fvtank_vsr"
+Description5 = "Warrior"
+
+xsi6 = "evtank00.msh"
+cfg6 = "evtank_vsr"
+Description6 = "Xares"
+
+xsi7 = "ivmbik00.fbx"
+cfg7 = "ivmbike_vsr"
+Description7 = "Mortar Bike"
+
+xsi8 = "evmort00.msh"
+cfg8 = "evmort_vsr"
+Description8 = "Locust"
+
+xsi9 = "fvsent_skel.fbx"
+cfg9 = "fvsent_vsr"
+Description9 = "Sentry"
+
+xsi10 = "ivmisl00.fbx"
+cfg10 = "ivmisl_vsr"
+Description10 = "Missile Scout"
+
+xsi11 = "fvlancer_skel.fbx"
+cfg11 = "fvarch_vsr"
+Description11 = "Lancer"
+
+xsi12 = "evmisl00.msh"
+cfg12 = "evmisl_vsr"
+Description12 = "Zeus"
+
+xsi13 = "ivrckt00.fbx"
+cfg13 = "ivrckt_vsr"
+Description13 = "Rocket Tank"
+
+xsi14 = "ivatnk00.fbx"
+cfg14 = "ivatank_vsr"
+Description14 = "Assault Tank"
+
+xsi15 = "fvtitan_skel.fbx"
+cfg15 = "fvatank_vsr"
+Description15 = "Titan"
+
+xsi16 = "evatank00.msh"
+cfg16 = "evatank_vsr"
+Description16 = "Hedoux"
+
+xsi17 = "ivwalk_skel.fbx"
+cfg17 = "ivwalk_vsr"
+Description17 = "Walker"
+
+xsi18 = "fvwalk_skel.fbx"
+cfg18 = "fvwalk_vsr"
+Description18 = "Mauler"
+
+xsi19 = "evwalk_skel.msh"
+cfg19 = "evwalk_vsr"
+Description19 = "Krahanos"
+
+xsi20 = "ivturr00.fbx"
+cfg20 = "ivturr_vsr"
+Description20 = "Turret"
+
+xsi21 = "fvturr_skel.fbx"
+cfg21 = "fvturr_vsr"
+Description21 = "Guardian"
+
+xsi22 = "evturr00.msh"
+cfg22 = "evturr_vsr"
+Description22 = "Xyr Guard"
+
+xsi23 = "ivstas00.fbx"
+cfg23 = "ivintc"
+Description23 = "Interceptor"
+
+xsi24 = "ispilo_rifle_skel.fbx"
+cfg24 = "ispilo"
+Description24 = "ISDF Pilot"
+
+xsi25 = "fspilo_rifle_skel.fbx"
+cfg25 = "fspilo"
+Description25 = "Scion Pilot"
+
+xsi26 = "hspilo_rifle_skel.msh"
+cfg26 = "espilo"
+Description26 = "Hadean Pilot"
+
+xsi27 = "vsrcamerapod00_0.25.msh"
+cfg27 = "ivcamr_vsr"
+Description27 = "Camera Pod (ISDF)"
+
+xsi28 = "vsrcamerapod00_0.25.msh"
+cfg28 = "fvcamr_vsr"
+Description28 = "Camera Pod (Scion)"
+
+xsi29 = "vsrcamerapod00_0.25.msh"
+cfg29 = "evcamr_vsr"
+Description29 = "Camera Pod (Hadean)"

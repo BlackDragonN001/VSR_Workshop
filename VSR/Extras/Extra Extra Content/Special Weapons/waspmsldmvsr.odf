@@ -1,0 +1,36 @@
+// DM Wasp 'Animal'
+// Big Engagerange
+[GameObjectClass]
+geometryName = "sgwasp00.xsi"
+geometryScale = 2.0
+classLabel = "torpedo"
+baseName = "waspmsl"
+scrapValue = 0
+scrapCost = 0
+maxHealth = 300
+maxAmmo = 200 [250] // 750 [250]
+unitName = "WASP Rocket"
+aiName = "TorpedoProcess"
+aiName2 = "TorpedoProcess"
+explosionName = "xwaspdesvsr"
+// collisionRadius = 0.01 // *undefined
+
+[CraftClass]
+
+[TorpedoClass]
+setAltitude = 1.0
+alphaTrack = 20.0
+alphaDamp = 3.0 // *5.0
+velocForward = 37.0 // *30.0
+accelDragThrust = 60
+accelThrust = 50.0
+omegaTurn = 4.0 // 2.0
+pitchPitch = 0.25
+alphaSteer = 8.0
+lifeSpan = 10.0
+xplBlast = "xwaspxplvsr"
+
+LIFT_SPRING = 30.0 // *40.0
+LIFT_DAMP = 5.0 // *15.0
+
+soundThrust = "waspmsl.wav"

@@ -1,0 +1,116 @@
+// =========
+// TORNADO CLOUD
+// =========
+
+[ExplosionClass]
+classLabel = "explosion"
+
+
+
+particleTypes = 3
+
+particleClass1 = "xtorncloud.smoke2"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xtorncloud.smoke4"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "xtorncloud.smokecenter"
+particleCount3 = 1
+particleVeloc3 = "2.0 0.0 0.0"
+
+
+
+explSound = NULL
+damageRadius = 60.0
+damageValue(N) = 11
+damageValue(L) = 8
+damageValue(H) = 6
+damageValue(S) = 8
+damageValue(D) = 6
+damageValue(A) = 10
+
+kickRadius = 60.0
+kickVeloc = -2.5
+kickOmega = 0.5
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 127 0 127"
+finishColor = "255 0 0 0"
+startRadius = 1.0
+finishRadius = 10.0
+animateTime = 0.5
+maxCount = 512
+
+// AIR AND GROUND DUST
+[smoke2]
+simulateBase = "sim_dust"
+lifeTime = 0.2 // 2
+renderBase = "draw_emit"
+emitName = "xtorncloud.smokeemit2"
+emitDelay = 0.1
+emitVelocity = "-15.0 0.0 4.0"
+emitVariance = "5.0 1.0 6.0"
+
+[smokeemit2]
+simulateBase = "sim_smoke"
+lifeTime = 1.5
+renderBase = "draw_twirl"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = " 120 120 120 70"
+finishColor = "190 190 190 155"
+startRadius = 8
+finishRadius = 2
+animateTime = 1.5
+rotateTime = 20
+maxCount = 512
+
+
+// GROUND DUST
+[smoke4]
+simulateBase = "sim_dust"
+lifeTime = 0.2 // 2
+renderBase = "draw_emit"
+emitName = "xtorncloud.smokeemit4"
+emitDelay = 0.1
+emitVelocity = "-27.0 0.0 30.0"
+emitVariance = "12.0 1.0 8.0"
+
+[smokeemit4]
+simulateBase = "sim_smoke"
+lifeTime = 1.2
+renderBase = "draw_twirl"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "70 70 70 155"
+finishColor = "180 180 200 70"
+startRadius = 8
+finishRadius = 2
+animateTime = 1.2
+rotateTime = 20
+maxCount = 512
+
+// CLOUDS
+[smokecenter]
+simulateBase = "sim_null"
+lifeTime = 5
+renderBase = "draw_twirl"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = " 0 0 0 255"
+finishColor = "80 80 80 0"
+startRadius = 15
+finishRadius = 20
+animateTime = 5
+rotateTime = 10
+maxCount = 512
+
+

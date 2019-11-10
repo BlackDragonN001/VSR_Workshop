@@ -1,0 +1,20 @@
+[GameObjectClass]
+classLabel="gasbomb2"
+addHealth=-36 // *0 {VSR-276}
+isAssault=0 // Mines should not make Scion AI morph {VSR-009}
+imageSiginature=1.0 // *new {VSR-275}
+
+[FlareMineClass]
+payloadName="gasordvsr" // *NULL {VSR-278} {VSR-279}
+
+triggerDelay=1.5 // *5.0 {VSR-280}
+shotDelay=0.2 // *1e30 {VSR-278}
+damageRadius=65.0 // *75 {VSR-281}
+
+// {VSR-278}
+damageValue(N)=160 // *500
+damageValue(L)=98  // *300
+damageValue(H)=23  // *50
+damageValue(S)=25  // *50
+damageValue(D)=173 // *500
+damageValue(A)=173 // *500

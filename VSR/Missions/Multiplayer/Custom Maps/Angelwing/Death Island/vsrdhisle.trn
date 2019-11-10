@@ -1,0 +1,34 @@
+[Size]
+MetersPerGrid = 8.0
+HeightGranularity = 0.06 // 0.1
+MinX = -2048.0
+MinZ = -2048.0
+Width = 4096.0
+Depth = 4096.0
+Height = 5.0
+Tile = 1
+Color = "170 150 120 255"
+
+[NormalView]
+DiffuseColor = "255 255 255"
+SpecularColor = "10 10 10"
+SpecularPower = 1024.0
+
+[Texture]
+TileTexture1 = "dune1.tga"
+TileTexture2 = "dune2.tga"
+TileTexture3 = "dune3.tga"
+TileTexture4 = "dune4.tga"
+TileTexture5 = "dune5.tga"
+TileTexture6 = "dune6.tga"
+TileTexture7 = "dune7.tga"
+TileTexture8 = "dune8.tga"
+TileTexture9 = "dune9.tga"
+
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap1"
+CaptureTarget2 = "VSRcap1"
+CaptureTarget3 = "VSRcap5"
+CaptureTarget4 = "VSRcap5"

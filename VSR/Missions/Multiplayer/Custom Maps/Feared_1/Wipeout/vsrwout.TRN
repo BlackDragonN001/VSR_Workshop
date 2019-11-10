@@ -1,0 +1,38 @@
+[Size]
+MetersPerGrid = 8.0
+HeightGranularity = 0.1
+MinX = -2048.0
+MinZ = -2048.0
+Width = 4096.0
+Depth = 4096.0
+Height = 300
+Tile = 2
+Color = "212 184 217 255"
+
+[NormalView]
+SpecularPower = 1024
+DiffuseColor = "200 200 200 255"
+
+[Texture]
+TileTexture1  = "bane.tga"
+TileTexture2  = "bane2.tga"
+TileTexture3  = "bane3.tga"
+TileTexture4  = "bane4.tga"
+TileTexture5  = "bane5.tga"
+TileTexture6  = "bbextf01.pic"
+TileTexture7  = "bbextf02.pic"
+TileTexture9  = "pluto.tga"
+TileTexture10 = "pluto2.tga"
+TileTexture11 = "pluto3.tga"
+TileTexture12 = "pluto6.tga"
+TileTexture13 = "pluto7.tga"
+TileTexture14 = "ibfoun00.tga"
+TileTexture15 = "ibfoun00.tga"
+
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap4"
+CaptureTarget2 = "VSRcap4"
+CaptureTarget3 = "VSRcap4"
+CaptureTarget4 = "VSRcap4"

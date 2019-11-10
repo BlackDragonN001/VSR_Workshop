@@ -1,0 +1,79 @@
+[MPVehicles]
+// Starting scouts
+xsi1 = "ivscout00.fbx"
+cfg1 = "ivscout_vsr"
+Description1 = "Default ISDF"
+xsi2 = "fvscout_skel.fbx"
+cfg2 = "fvscout_vsr"
+Description2 = "Default Scion"
+xsi3 = "evscout00.fbx"
+cfg3 = "evscout_vsr"
+Description3 = "Default Hadean"
+
+// Mid game scouts
+xsi4 = "ivscout00.fbx"
+cfg4 = "ivscoutdm_vsr"
+Description4 = "Chain Scout"
+xsi5 = "fvscout_skel.fbx"
+cfg5 = "fvscoutdm_vsr"
+Description5 = "Sonic Scout"
+xsi6 = "evscout00.fbx"
+cfg6 = "evscoutdm_vsr"
+Description6 = "Slicer Xypos"
+
+// Mid game tanks
+xsi7 = "ivtank00.fbx"
+cfg7 = "ivtankdm2_vsr"
+Description7 = "Pl/Las Tank"
+xsi8 = "fvtank_skel.fbx"
+cfg8 = "fvtankdm2_vsr"
+Description8 = "Sonic Warrior"
+xsi9 = "evtank00.xsi"
+cfg9 = "evtankdm_vsr"
+Description9 = "Xares DB"
+
+// Late game tanks
+xsi10 = "ivtank00.fbx"
+cfg10 = "ivtankdm_vsr"
+Description10 = "Blast Tank"
+xsi11 = "fvtank_skel.fbx"
+cfg11 = "fvtankdm_vsr"
+Description11 = "Arc Warrior"
+xsi12 = "evtank00.xsi"
+cfg12 = "evtankfdm_vsr"
+Description12 = "Xares FS"
+
+// ISDF Extras
+xsi13 = "ivmisl00.fbx"
+cfg13 = "ivmisldm_vsr"
+Description13 = "Shad Avenger"
+xsi14 = "ivmbik00.fbx"
+cfg14 = "ivmbikedm_vsr"
+Description14 = "Hover Jackal"
+
+// Scion Extras
+xsi15 = "fvsent_skel.fbx"
+cfg15 = "fvsentdm_vsr"
+Description15 = "Gauss Sentry"
+xsi16 = "fvlancer_skel.fbx"
+cfg16 = "fvarchdm_vsr"
+Description16 = "MultiLock Lancer"
+xsi17 = "fvscout_skel.fbx"
+cfg17 = "fvscoutdm2_vsr"
+Description17 = "Arc Scout"
+
+// Hadean Extras
+xsi18 = "evmisl00.xsi"
+cfg18 = "evmisludm_vsr"
+Description18 = "Zeus SKS"
+xsi19 = "evmisl00.xsi"
+cfg19 = "evmislwdm_vsr"
+Description19 = "Zeus WRM"
+xsi20 = "evatank00.xsi"
+cfg20 = "evatankudm_vsr"
+Description20 = "Hedoux DB"
+
+// Secret
+xsi21 = "NULL.xsi"
+cfg21 = "ivspbkvsr"
+Description21 = " "

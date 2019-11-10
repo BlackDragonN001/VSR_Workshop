@@ -1,0 +1,44 @@
+VSR AIP/DLL Path Points:
+
+
+Player_#: Player Spawn, start at 1. (this is Per Team. 1 for MPI, more for FFA.)
+Enemy_1: AI 1 spawn.
+Enemy_2: AI 2 spawn.
+Enemy_3: AI 3 spawn.
+.....
+Enemy_10: AI 10 spawn.
+
+
+These are pre-numbered for each AIP. AIP 0 runs on Enemy_1, AIP 1 on Enemy_2,
+and AIP 2 on Enemy_3.... and so on...
+
+0Patrol1 - 0Patrol#: AI Patrol paths.
+0MLay1 - 0MLay#: AI Minelayer places to mine.
+
+
+Stage points, per AI team.
+
+stage1 - stage3: Enemy_1's stage points.
+stage4 - stage6: Enemy_2's stage points.
+stage5 - stage9: Enemy_3's stage points.
+....
+stage28 - stage30 Enemy_10's stage points.
+
+
+ST: Capture mode pathpoints:
+
+capturegoal# // Must be 1-16, this is a place to spawn a capture goal object. Though maps should probably keep this sane. 5 or so. -GBD
+
+==ZA Proposed Pathpoints==
+
+NOT IMPLEMENTED YET
+
+0Portal1...0Portal#: Portal Exit Nodes
+0PortalE: Portal Entry Node (base portal)
+
+0Cbun: Power relay (built by AIP)
+0Gtow: Gun Towers (built by AIP)
+0Spir: Gunspire Structures (needs no power) (built by AIP) (keep?)
+0Tur: Turrets (deployed here by AIP)
+0Defender: Fixed defensive points for first CPU team (placed by DLL)
+0SPDefender: Special fixed defenses for first CPU team (e.g. megaguard) (placed by DLL)

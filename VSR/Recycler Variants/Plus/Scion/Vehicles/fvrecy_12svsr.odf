@@ -1,0 +1,15 @@
+[GameObjectClass]
+classLabel="fvrecy_vsr"
+scrapReturn=0
+
+requireCount=2
+requireName1="fbantm"
+requireText1="Pack Up Requires Antenna"
+requireName2="fbkiln"
+requireText2="Pack Up Requires Kiln/Forge"
+
+// DLL
+startingVariant="_vsr"
+
+[DeployBuildingClass]
+deployName="fbrecy_12svsr"

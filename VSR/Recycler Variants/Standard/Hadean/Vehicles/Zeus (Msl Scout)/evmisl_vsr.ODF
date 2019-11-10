@@ -1,0 +1,145 @@
+// (c) BZ2CP Unit "Zeus"
+// Mesh, skin - Slaor
+// Skin Map, odf, model adaptation, animations - Pastell
+
+[GameObjectClass]
+clearBuildZone=0 // {VSR-005}
+
+baseName="evmisl"
+geometryName="evmisl00.xsi"
+CockpitName="hvmisl_cockpit.xsi" // cockpit – Tempest storm
+animCount=3
+animName1="forward"
+animFile1="evmislsf.xsi"
+animName2="neutral"
+animFile2="evmislsn.xsi"
+animName3="reverse"
+animFile3="evmislsr.xsi"
+classLabel="wingman"
+scrapValue=25
+scrapCost=55
+customCost=70
+buildTime=15.0
+customTime=15.0
+maxHealth=2800
+maxAmmo=2500
+addAmmo=5
+unitName="Zeus mc"
+aiName="RocketTankFriend" // "TankFriend"
+aiName2="RocketTankEnemy" // "TankEnemy"
+heatSignature=0.5
+imageSignature=1.5
+radarSignature=1.5
+canSnipe=1
+isAssault=0
+armorClass=L
+
+requireCount=2
+requireName1="ebfact"
+requireText1="Build Xenomator"
+requireName2="ebcbun"
+requireText2="Build Eyes of Xyr"
+
+provideCount=4
+provideName1="evmisl"
+provideName2="evmisl_vsr"
+provideName3="VIRTUAL_CLASS_MISSILESCOUT"
+provideName4="DefendUnit"
+
+weaponMask=00011
+weaponHard1="HP_ROCKET_1"
+weaponName1="gcpworm_c"
+weaponAssault1=0
+weaponHard2="HP_ROCKET_3"
+weaponName2="gcpworm_c"
+weaponAssault2=0
+
+infoName="evmisl_vsr.inf"
+
+[CraftClass]
+damageEffect1="dmgvhcl1_hadean"
+damageEffect2="dmgvhcl2_hadean"
+damageEffect3="dmgvhcl3_hadean"
+damageEffect4="dmgvhcl4_hadean"
+rangeScan=325.0f
+periodScan=5.0f
+velocJam=5.0f
+engageRange=195
+
+braccelFactor=0.03
+velFactor=0.2
+steerFactor=1.5
+omegaFactor=0.2
+strafeFactor=0.2
+
+avoidSpeed=20;
+topSpeed=30;
+
+selectWaitMsg="evmslys1.wav"
+selectAttackMsg="evmslat1.wav"
+selectFollowMsg="evmslpro.wav"
+selectGoMsg="evmslmov.wav"
+selectOtherMsg="evmslys2.wav"
+holdMsg="evmslh.wav"
+goMsg="evmslmto.wav"
+attackMsg="evmslat.wav"
+followMeMsg="evmslf2.wav"
+followMsg="evmslys1.wav"
+repairMsg="evmslrr.wav"
+reloadMsg="evmslat1.wav"
+rescueMsg="evmslpick.wav"
+recycleMsg="evmslrec.wav"
+otherMsg="evmslys2.wav" 
+//holdMsg="evmslh.wav"		//Commented out duplicate label for BZCC
+user1Msg="evdeath01.wav"  
+killedMsg="evmsldes.wav"
+diedMsg="evdeath01.wav"
+
+// VSR Physics {VSR-000}
+GROUND_ELASTICITY=-0.2
+
+[HoverCraftClass]
+velocForward=32.5
+velocReverse=15.0
+velocStrafe=15.0
+accelThrust=12.0
+accelDragStop=6.0
+accelJump=12.0
+
+setAltitude=1.3
+
+alphaTrack=21.0
+alphaDamp=8.0
+
+pitchPitch=0.30
+pitchThrust=0.1
+
+rollStrafe=0.13
+omegaSpin=4.0
+omegaTurn=5.5
+alphaSteer=6.5
+rollSteer=0.08
+
+soundThrust="evmsljmp.wav"
+soundTurbo="evmsleng.wav"
+
+// VSR Physics {VSR-000}
+MoreLike12Physics=true
+OverWaterVelocFrontMult=1.0
+OverWaterVelocSideMult=1.0
+OverWaterThrottleMult=0.8
+airborneVelocFrontMult=1.0
+airborneVelocSideMult=1.0
+airborneThrottleMult=1.2
+airborneMinHeightRatio=1.6
+airborneMaxHeightRatio=4.0
+LIFT_SPRING=6
+LIFT_DAMP=0.1
+
+[Lod1]
+geometryName="evmislL1.xsi"
+distance=50
+
+[Lod2]
+geometryName="evmislL2.xsi"
+distance=130

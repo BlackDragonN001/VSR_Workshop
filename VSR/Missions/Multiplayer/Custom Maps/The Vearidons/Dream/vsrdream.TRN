@@ -1,0 +1,43 @@
+[Size]
+MetersPerGrid=8.0
+HeightGranularity=0.1
+MinX=2048.0
+MinZ=2048.0
+Width=4096.0
+Depth=4096.0
+Height=0.0
+Tile=0
+Color="255 255 255 255"
+
+[NormalView] 
+DiffuseColor="204 204 204"
+SpecularColor="10 10 10"
+SpecularPower=1024.0
+
+[Texture]
+TileTexture0="bane2.tga" // L0 Main color (189, 173, 202), pool color (137, 138, 179)
+TileTexture1="bane5.tga" // L1 Mountain edges and dotted randomly, (85, 89, 119)
+TileTexture2="bane3.tga" // L2 Mountain tops (212, 184, 217)
+TileTexture3="bane.tga"  // L3 Random distribution
+
+TileTexture4="bbextf01.tga"
+TileTexture5="bbextf02.tga"
+TileTexture6="bbextw00.tga"
+TileTexture7="bbintc00.tga"
+TileTexture8="bbintc01.tga"
+TileTexture9="bbintf00.tga"
+TileTexture10="bbintf01.tga"
+TileTexture11="bbintf02.tga"
+TileTexture12="bbintw00.tga"
+TileTexture13="beruin04.tga"
+
+# TileTexture15="vsr_white.tga" # Old shellmap hack used to make shellmap brighter
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap1"
+CaptureTarget2 = "VSRcap2"
+CaptureTarget3 = "VSRcap3"
+CaptureTarget4 = "VSRcap4"
+CaptureTarget5 = "VSRcap5"
+CaptureTarget6 = "VSRcap5"

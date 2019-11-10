@@ -1,0 +1,152 @@
+[ExplosionClass]
+classLabel = "xheatbld"
+
+particleTypes = 8
+particleClass1 = "xheatcarfvsr.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleClass2 = "xheatcarfvsr.puff"
+particleCount2 = 3
+particleVeloc2 = "8.0 4.0 8.0"
+particleBias2 = "0.0 4.0 0.0"
+particleClass3 = "xheatcarfvsr.puff2"
+particleCount3 = 3
+particleVeloc3 = "6.0 5.0 6.0"
+particleBias3 = "0.0 4.0 0.0"
+particleClass4 = "xheatcarfvsr.smoke"
+particleCount4 = 5
+particleVeloc4 = "12.0 10.0 12.0"
+particleBias4 = "0.0 8.0 0.0"
+particleClass5 = "xheatcarfvsr.blast"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.0 0.0"
+particleClass6 = "xheatcarfvsr.Shock"
+particleCount6 = 1
+particleVeloc6 = "0.0 0.0 0.0"
+particleClass7 = "xheatcarfvsr.light"
+particleCount7 = 1
+particleVeloc7 = "0.0 0.0 0.0"
+particleClass8 = "xheatcarfvsr.streamer"
+particleCount8 = 8
+particleVeloc8 = "100.0 100.0 100.0"
+particleBias8 = "0.0 12.0 0.0"
+
+explSound = "xms2.wav"
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "flame.dxtbz2"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 1.0
+finishRadius = 10.0
+rotationRate = 8.0
+animateTime = 1.0
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 0.5
+renderBase = "draw_emit"
+emitName = "xheatcarfvsr.puffs"
+emitDelay = 0.12
+emitDelayVar = 0.06
+emitVelocity = "3.0 3.0 3.0"
+emitVariance = "6.0 6.0 6.0"
+
+[Puff2]
+simulateBase = "sim_smoke"
+lifeTime = 0.5
+renderBase = "draw_emit"
+emitName = "xheatcarfvsr.puffs"
+emitDelay = 0.12
+emitDelayVar = 0.06
+emitVelocity = "-3.0 3.0 -3.0"
+emitVariance = "6.0 6.0 6.0"
+
+[puffs]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "flame2.dxtbz2"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 127 64 0"
+startRadius = 0.25
+finishRadius = 3.0
+animateTime = 1.0
+rotationRate = 10.0
+
+[smoke]
+simulateBase = "sim_smoke"
+lifeTime = 0.8
+renderBase = "draw_emit"
+emitName = "xheatcarfvsr.smokes"
+emitDelay = 0.2
+emitDelayVar = 0.25
+emitVelocity = "0.0 3.0 0.0"
+emitVariance = "3.0 1.5 3.0"
+
+[smokes]
+simulateBase = "sim_smoke"
+lifeTime = 2.5
+renderBase = "draw_twirl"
+textureName = "smoke.dxtbz2"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "30 30 30 192"
+finishColor = "0 0 0 0"
+startRadius = 0.25
+finishRadius = 6.0
+animateTime = 2.5
+rotationRate = 6.0
+
+[blast]
+simulateBase = "sim_null"
+lifeTime = 0.8
+renderBase = "draw_sprite"
+textureName = "blast.dxtbz2"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 127 0 0"
+startRadius = 1.0
+finishRadius = 12.0
+animateTime = 0.8
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_light"
+startColor = "255 255 63 1000"
+finishColor = "255 0 0 0"
+startRadius = 10.0
+finishRadius = 25.0
+animateTime = 1.0
+attenuateConstant = 0.0
+attenuateLinear = 0.0
+attenuateQuadratic = 0.1
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.3
+renderBase = "draw_sphere"
+textureName = "vsmoke.dxtbz2"
+textureBlend = "one one modulate"
+startColor = "255 255 63 152"
+finishColor = "255 64 0 0"
+startRadius = 1.0
+finishRadius = 15.0
+animateTime = 0.3
+
+[streamer]
+simulateBase = "sim_ember"
+lifeTime = 0.5
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+startColor = "255 127 0 255"
+finishColor = "255 0 0 0"
+startRadius = 0.07
+finishRadius = 0.0
+trailTime = 0.25
+segmentTime = 0.25

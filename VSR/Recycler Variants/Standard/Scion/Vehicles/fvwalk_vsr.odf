@@ -1,0 +1,14 @@
+[GameObjectClass]
+clearBuildZone=0 // {VSR-005}
+classLabel="fvwalk"
+// scrapValue=15 // *25 The community poll result said revert to stock
+
+provideCount=4
+provideName1="fvwalk"
+provideName2="VIRTUAL_CLASS_WALKER"
+provideName3="assault"
+provideName4="DefendUnit"
+
+[CraftClass]
+topSpeed=50 // {VSR-105}
+avoidSpeed=25 // {VSR-UNDOC}

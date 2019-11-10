@@ -1,0 +1,23 @@
+[GameObjectClass]
+TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZCC
+baseName="fbantm"
+classLabel="fbantm"
+upgradeName="fbover_vsr"
+
+provideCount=7
+provideName1="fbantm"
+provideName2="fbantm_vsr"
+provideName3="VIRTUAL_CLASS_COMMBUNKER"
+provideName4="VIRTUAL_CLASS_COMMTOWER"
+provideName5="VIRTUAL_CLASS_ANTENNA_MOUND"
+provideName6="VIRTUAL_CLASS_TECHCENTER"
+provideName7="base"
+
+[PoweredBuildingClass]
+powerTap1="HP_TAP_1"
+powerName="fblung_vsr"
+
+//[CommBunkerClass] Old values no logner used in BZCC. -GBD
+// {VSR-011}
+//minViewDist=100.0
+//maxViewDist=200.0

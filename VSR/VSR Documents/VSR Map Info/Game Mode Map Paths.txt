@@ -1,0 +1,42 @@
+Enables MPI on strat maps in VSR (really only the first two are REQUIRED, but the others make it more robust)
+
+Player_1
+Enemy_6
+6Patrol1
+6Patrol2
+6Patrol3
+6MLay1
+6MLay2
+6MLay3
+stage1
+stage2
+stage3	<-- most maps stop here
+.
+.
+.
+stage 32
+
+
+==================================
+New game mode (ST Capture); *put the LAST points in the base areas*:
+
+capturegoal1
+capturegoal2
+capturegoal3
+capturegoal4
+capturegoal5
+capturegoal6  <-- most maps stop here
+.
+.
+.
+capturegoal16
+
+And then in the .TRN file:
+
+[DLL]
+CaptureTarget1 = ""
+CaptureTarget2 = ""
+.
+.
+.
+CaptureTarget16 = ""

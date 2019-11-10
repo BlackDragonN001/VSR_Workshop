@@ -1,0 +1,80 @@
+// ==============
+// BULLET CAR HIT
+// ==============
+
+[ExplosionClass]
+classLabel = "xbulcar"
+
+particleTypes = 4
+particleClass1 = "xioncarfvsr.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleBias1 = "0.0 0.0 0.0"
+
+particleClass2 = "xioncarfvsr.trail"
+particleCount2 = 1
+particleVeloc2 = "12.0 12.0 12.0"
+particleBias2 = "0.0 1.0 0.0"
+
+particleClass3 = "xioncarfvsr.light"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+particleBias3 = "0.0 0.0 0.0"
+
+particleClass4 = "xioncarfvsr.puff"
+particleCount4 = 2
+particleVeloc4 = "50.0 50.0 50.0"
+particleBias4 = "0.0 0.0 0.0"
+
+explSound = "wmgr1.wav"
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.4
+renderBase = "draw_twirl"
+textureName = "blast.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 0 127"
+finishColor = "255 255 0 0"
+startRadius = 0.1
+finishRadius = 1.0
+animateTime = 0.4
+BottomInteractsWithTerrain = false
+
+[Trail]
+simulateBase = "sim_ember"
+lifeTime = 0.6
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+startColor = "0 255 0 127"
+finishColor = "255 255 0 0"
+startRadius = 0.01
+finishRadius = 0.0
+trailTime = 1.0
+segmentTime = 0.2
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.4
+renderBase = "draw_light"
+startColor = "0 255 0 255"
+finishColor = "255 255 0 0"
+startRadius = 30.0
+finishRadius = 30.0
+animateTime = 0.4
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 0.4
+renderBase = "draw_twirl"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 0 127"
+finishColor = "255 255 0 0"
+startRadius = 0.15
+finishRadius = 0.1
+animateTime = 0.4
+BottomInteractsWithTerrain = false

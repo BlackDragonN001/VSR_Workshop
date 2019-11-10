@@ -1,0 +1,55 @@
+//(c)BZ2CP unit "Brawler"
+// Created by Slaor and Pastell
+
+[GameObjectClass]
+clearBuildZone=0
+
+geometryName = "fvrbombvsr00.xsi"
+
+classLabel = "fvrbomb_vsr"
+
+maxHealth = 3500
+addAmmo = 0
+
+aiName = "TankFriend"
+aiName2 = "TankEnemy"
+
+heatSignature = 1.5
+imageSignature = 1.5
+radarSignature = 0.3
+
+
+weaponMask = 00011
+weaponHard1 = "HP_ROCKET_1"
+weaponName1 = "gmlock_c"
+weaponAssault1 = 0
+weaponHard2 = "HP_ROCKET_3"
+weaponName2 = "gmlock_c"
+weaponAssault2 = 0
+weaponHard3 = "HP_GUN_1"
+weaponName3 = ""
+weaponAssault3 = 0
+weaponHard4 = "HP_GUN_2"
+weaponName4 = ""
+weaponAssault4 = 0
+weaponHard5 = "HP_ROCKET_2"
+weaponName5 = "gfrbombvsr_a"
+weaponAssault5 = 1
+
+
+[CraftClass]
+rangeScan = 250.0f
+
+engageRange = 170
+
+[HoverCraftClass]
+velocForward = 23.5 // []
+
+velocStrafe = 15.0 // []
+accelThrust = 25.0 //acceleration []
+
+accelJump = 15.0 // []
+
+
+omegaSpin = 1.5 //spinning in place speed []
+omegaTurn = 0.7 //turning while moving speed []

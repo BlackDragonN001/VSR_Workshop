@@ -1,0 +1,10 @@
+[WeaponClass]
+classLabel="gblink"
+CouldHit=false // Allows AI to use {VSR-UNDOC}
+
+[BlinkDeviceClass]
+ammoBase=400  // *200 {VSR-202}
+ammoDist=1.5  // *1.0 {VSR-203}
+shotDelay=2.0 // *new {VSR-201}
+xplEnter="xblinkinvsr" // {VSR-206} {VSR-204} {VSR-205}
+xplExit="xblinkoutvsr" // {VSR-206}

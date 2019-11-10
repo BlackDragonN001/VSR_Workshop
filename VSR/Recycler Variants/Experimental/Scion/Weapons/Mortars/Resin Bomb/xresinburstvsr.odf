@@ -1,0 +1,153 @@
+// ==============
+// MINE EXPLOSION
+// ==============
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "rmort02.wav"
+
+particleTypes = 9
+particleClass1 = "xresinburstvsr.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleClass2 = "xresinburstvsr.gunkI"
+particleCount2 = 10
+particleVeloc2 = "40.0 40.0 40.0"
+particleClass3 = "xresinburstvsr.gunkII"
+particleCount3 = 10
+particleVeloc3 = "40.0 40.0 40.0"
+particleClass4 = "xresinburstvsr.gunkIII"
+particleCount4 = 10
+particleVeloc4 = "40.0 40.0 40.0"
+particleClass5 = "xresinburstvsr.gunkIV"
+particleCount5 = 10
+particleVeloc5 = "20.0 20.0 20.0"
+particleClass6 = "xresinburstvsr.gunkV"
+particleCount6 = 10
+particleVeloc6 = "30.0 30.0 30.0"
+particleClass7 = "xresinburstvsr.gunkVI"
+particleCount7 = 10
+particleVeloc7 = "50.0 50.0 50.0"
+particleClass8 = "xresinburstvsr.gunkVII"
+particleCount8 = 10
+particleVeloc8 = "60.0 60.0 60.0"
+particleClass9 = "xresinburstvsr.resinswell"
+particleCount9 = 1
+particleVeloc9 = "0.0 0.0 0.0"
+
+damageRadius = 50 // 100.0 (lets not kill pilots too much eh?)
+damageValue(N) = 400 // 300
+damageValue(L) = 300 // 200
+damageValue(H) = 150 // 100
+damageValue(S) = 400
+damageValue(D) = 500
+damageValue(A) = 150
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "gunk.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "120 255 0 255"
+finishColor = "120 255 0 255"
+startRadius = 2.0
+finishRadius = 10.0
+animateTime = 1.0
+
+[GunkI]
+simulateBase = "sim_ember"
+lifeTime = 3.0
+renderBase = "draw_twirl"
+textureName = "gunk.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "120 255 0 255"
+finishColor = "120 255 0 0"
+startRadius = 0.75
+finishRadius = 1.5
+animateTime = 3.0
+
+[GunkII]
+simulateBase = "sim_ember"
+lifeTime = 2.5
+renderBase = "draw_twirl"
+textureName = "gunk.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "120 255 0 255"
+finishColor = "120 255 0 0"
+startRadius = 0.75
+finishRadius = 1.5
+animateTime = 3.0
+
+[GunkIII]
+simulateBase = "sim_ember"
+lifeTime = 2.0
+renderBase = "draw_twirl"
+textureName = "gunk.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "120 255 0 255"
+finishColor = "120 255 0 0"
+startRadius = 0.75
+finishRadius = 1.5
+animateTime = 3.0
+
+[GunkIV]
+simulateBase = "sim_ember"
+lifeTime = 1.5
+renderBase = "draw_twirl"
+textureName = "gunk.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "120 255 0 255"
+finishColor = "120 255 0 0"
+startRadius = 0.75
+finishRadius = 1.5
+animateTime = 3.0
+
+[GunkV]
+simulateBase = "sim_ember"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "gunk.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "120 255 0 255"
+finishColor = "120 255 0 0"
+startRadius = 0.75
+finishRadius = 1.5
+animateTime = 3.0
+
+[GunkVI]
+simulateBase = "sim_ember"
+lifeTime = 0.5
+renderBase = "draw_twirl"
+textureName = "gunk.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "120 255 0 255"
+finishColor = "120 255 0 0"
+startRadius = 0.75
+finishRadius = 1.5
+animateTime = 3.0
+
+[GunkVII]
+simulateBase = "sim_ember"
+lifeTime = 3.5
+renderBase = "draw_twirl"
+textureName = "gunk.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "120 255 0 255"
+finishColor = "120 255 0 0"
+startRadius = 0.75
+finishRadius = 1.5
+animateTime = 3.0
+
+[Resinswell]
+simulateBase = "sim_null"
+lifeTime = 30
+renderBase = "draw_planar"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "120 255 0 255"
+finishColor = "120 255 0 0"
+startRadius = 60.0
+finishRadius = 110.0
+animateTime = 30

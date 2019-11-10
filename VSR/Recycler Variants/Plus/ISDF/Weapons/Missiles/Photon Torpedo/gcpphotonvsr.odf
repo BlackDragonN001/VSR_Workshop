@@ -1,0 +1,28 @@
+[WeaponClass]
+classLabel = "multilauncher"
+
+ordName = "cpphotonvsr"
+wpnName = "Photon Torpedo"
+fireSound = "mag03.wav"
+wpnReticle = "gcomet.0"
+
+wpnCategory = "ROCK"
+aiRange = 215
+isAssault = 1
+
+[LauncherClass]
+lockRange = 215.0
+shotDelay = 1.5
+lockDelay = 2.2
+coneAngle = 0.20
+TeamFilter = 3 //Added in VSR BZCC Release 68 to prevent AI from locking onto friendlies attempting to kill enemies
+lockingReticle = "gshadow.A"
+lockingSound = "lock01.wav"
+lockedReticle = "gshadow.B"
+lockedSound = "lock02.wav"
+targetCount = 3
+targetReticle = "gmlock_c.1"
+
+[MultiLauncherClass]
+targetCount = 4
+//loseAngle = 2.25

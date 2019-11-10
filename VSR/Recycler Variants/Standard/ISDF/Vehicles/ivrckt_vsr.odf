@@ -1,0 +1,11 @@
+[GameObjectClass]
+clearBuildZone=0 // {VSR-005}
+classLabel="ivrckt"
+weaponName1="gshadowvsr_c"
+weaponName2="gshadowvsr_c"
+weaponName3="gshadowvsr_a"
+
+[TrackedVehicleClass]
+// {VSR-040}
+CENTER_SHIFT=-0.5 //was -0.4 Lowers the centre of gravity, reducing wobble (when sonic waved) More than this causes odd effects.
+SUSPENSION_MIN=0.2 //was-0.2 Lowers the suspension so the mudguards no longer cut into the tracks (its bothered me for ages) 

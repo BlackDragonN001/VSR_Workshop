@@ -1,0 +1,24 @@
+[Texture]
+TileTexture1="moon1.tga"
+TileTexture2="moon2.tga"
+TileTexture6="moon6.tga"
+//TileTexture10="t89.bmp"
+TileTexture3="mooncrater01.dds"
+TileTexture4="moonrough01.dds"
+TileTexture7="wasteland5.tga"
+TileTexture8="wasteland6.tga"
+
+[NormalView]
+DiffuseColor="178.5 178.5 178.5"
+SpecularColor="10 10 10"
+SpecularPower=1024.0
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap1"
+CaptureTarget2 = "VSRcap2"
+CaptureTarget3 = "VSRcap3"
+CaptureTarget4 = "VSRcap4"
+CaptureTarget5 = "VSRcap4"
+CaptureTarget6 = "VSRcap5"
+CaptureTarget7 = "VSRcap5"
