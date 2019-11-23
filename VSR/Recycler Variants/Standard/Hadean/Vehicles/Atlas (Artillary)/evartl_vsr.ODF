@@ -95,7 +95,19 @@ velocForward=15.0
 velocReverse=10.0
 accelThrust=12.0
 
-TREAD_STATIC_FRICTION=1.5
+//////The following values came from the ISDF rocket tank
+COLLISION_RAISE =  0.5
+//SUSPENSION_MIN = -0.2
+TREAD_STATIC_FRICTION = 1.5 //2.0
+
+NormalTrackFactor = 1.0 // may need to be > 0 for some of the other params to take effect
+pitchThrust = 0.2
+rollSteer = 0.2
+alphaTrack = 6.0
+
+//alphaDampX = 10.0
+//alphaDampZ = 35.0 //30.0
+//////End rocket tank stuff
 
 engineSound="evartlen.wav"
 treadSound="evartltr.wav"
