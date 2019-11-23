@@ -18,3 +18,32 @@ mass=34316.1 // ISDF ass. tank {VSR-012}
 // MIN_BOUNCE_VEL=10.5
 // OBJECT_ELASTICITY=0.0125
 // GROUND_ELASTICITY=0.002
+
+[TrackedVehicleClass]
+COLLISION_RAISE =  0.5
+//SUSPENSION_MIN = -0.2
+//SUSPENSION_MAX = 0.3
+//SPRING_FACTOR = 2.0
+//DAMPING_FACTOR = 2.0	// critical damped
+TREAD_STATIC_FRICTION = 1.5
+
+NormalTrackFactor = 1.0 // may need to be > 0 for some of the other params to take effect
+pitchThrust = 3.0
+rollSteer = 3.0
+alphaTrack = 8.0
+
+alphaDampX = 10.0
+alphaDampZ = 35.0 //30.0
+
+//UseGlobalFriction = false // true //to use global friction settings below
+//GlobalFrictionMaxThrottle = 0.04f
+//GlobalFrictionMaxHeight = 2.0f
+//GlobalFrictionStaticCoeff = 0.4f
+//GlobalFrictionDynamicCoeff = 0.24f
+
+//LiftSpring = 5.0
+//TreadForceFeedback = 1.0
+//LevelForce = 10.0
+//ThrustTrack = 0.0
+
+//CENTER_SHIFT = -0.4

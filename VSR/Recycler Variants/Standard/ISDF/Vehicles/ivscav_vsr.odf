@@ -11,6 +11,16 @@ mass=40000.0 // (stock ivscav=53157.3) {VSR-012}
 alphaSteer=8.0 // *2.0 {VSR-014}
 TREAD_STATIC_FRICTION=5.0
 
+TREAD_STATIC_FRICTION = 1.5
+
+NormalTrackFactor = 1.0 // may need to be > 0 for some of the other params to take effect
+pitchThrust = 3.0
+rollSteer = 3.0
+alphaTrack = 8.0
+
+alphaDampX = 10.0
+alphaDampZ = 35.0 //30.0
+
 //[DeployBuildingClass]					COMMENTED OUT FOR TEST
 //DoExtraBuildzoneCheck=false				COMMENTED OUT FOR TEST
 
