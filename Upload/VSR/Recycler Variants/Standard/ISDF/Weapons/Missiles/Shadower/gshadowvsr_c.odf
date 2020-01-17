@@ -2,6 +2,13 @@
 classLabel="gshadow_c"
 altName="gshadowvsr_a"
 ordName="shadowvsr_c"
+//The following settings are present in the stock ODF, but there is a bug with inheritence, so they are included here
+wpnName = "Shadower Msl"
+fireSound = "gsand00.wav"
+wpnReticle = "gshadow.0"
+wpnCategory = "ROCK"
+isAssault = 0
+aiRange = 200
 
 [LauncherClass]
 // Stock values (NOT INHERITED)
@@ -10,3 +17,11 @@ shotDelay=1.0
 lockDelay=1.5
 coneAngle=0.05
 TeamFilter = 3 //Added in VSR BZCC Release 68 to prevent AI from locking onto friendlies attempting to kill enemies
+
+//The following settings are present in the stock ODF, but there is a bug with inheritence, so they are included here
+lockingReticle = "gshadow.A"
+lockingSound = "lock01.wav"
+lockedReticle = "gshadow.B"
+lockedSound = "lock02.wav"
+targetCount = 3
+targetReticle = "gshadow.1"
