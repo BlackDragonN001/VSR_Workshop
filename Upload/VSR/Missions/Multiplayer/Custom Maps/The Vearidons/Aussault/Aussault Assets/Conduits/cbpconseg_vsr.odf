@@ -1,0 +1,20 @@
+[GameObjectClass]
+geometryName="cbpconseg_vsr.xsi"
+classLabel="plant"
+collisionRadius=0.0
+explosionName=NULL
+canDetect=0
+canInteract=0
+canSnipe=0
+NoShadow=true
+
+[BuildingClass]
+
+[PlantClass]
+standUp=1
+darkRadius=0
+darkScale=0
+TransparentGrow=false
+TransparentFall=false
+TransparentBurn=false
+typeOfDeath=0 // 0:none, 1:explode, 2:fall, 3:burn, 4:carFall&bulletBurn

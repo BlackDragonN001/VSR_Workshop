@@ -1,0 +1,15 @@
+[GameObjectClass]
+geometryName="cbramp00_vsr.xsi"
+classLabel="terrain"
+collisionRadius=1.0
+heatSignature=0.0
+imageSignature=0.0
+radarSignature=0.0
+
+isTerrain=true
+AllowUndergroundSpawn=true
+hitType="G"
+ScanTeamLimit=1 // Only same team (e.g. team 0) can see
+
+[BuildingClass]
+canDemolish=0

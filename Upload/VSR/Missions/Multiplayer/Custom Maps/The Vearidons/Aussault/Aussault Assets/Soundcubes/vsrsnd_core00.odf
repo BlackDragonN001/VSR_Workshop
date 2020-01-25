@@ -1,0 +1,18 @@
+[GameObjectClass]
+geometryName=NULL
+geometryName="soundcube.xsi"
+classLabel="I76Sign"
+scrapCost=1
+scrapValue=0
+maxHealth=0
+maxAmmo=0
+canCollide=0
+canDetect=0
+canInteract=0
+unitName="Soundcube"
+NoShadow=1
+ScanTeamLimit=1 // Only same team (e.g. team 0) can see
+
+[BuildingClass]
+SoundAmbient="cenv01.wav"
+canDemolish=0

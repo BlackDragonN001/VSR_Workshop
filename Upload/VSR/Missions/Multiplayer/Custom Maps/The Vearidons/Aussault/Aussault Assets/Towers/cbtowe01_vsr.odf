@@ -1,0 +1,28 @@
+[GameObjectClass]
+geometryName="cbtowe01.xsi"
+classLabel="i76building"
+heatSignature=0.0
+imageSignature=0.0
+radarSignature=0.0
+ownsTerrain=1
+canInteract=0
+collisionRadius=0.1
+canDetect=0
+NoShadow=true
+maxHealth=4000
+isTerrain=true
+lightingType=73
+lightingFlags=73
+scrapCost=0
+scrapValue=0
+armorClass=H
+ScanTeamLimit=1 // Only same team (e.g. team 0) can see
+
+[BuildingClass]
+canDemolish=0
+tunnelCount=0
+bldEdge="wwww"
+
+[Lod1]
+geometryName = "cbtowe01L1_vsr.xsi"
+distance = 50
