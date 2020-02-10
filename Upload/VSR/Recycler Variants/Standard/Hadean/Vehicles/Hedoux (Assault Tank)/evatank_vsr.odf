@@ -120,22 +120,22 @@ velocForward=27.0
 velocReverse=15.0
 accelThrust=10.0
 
-COLLISION_RAISE= 0.5	//-0.5
-//SUSPENSION_MIN=-0.2
-//SUSPENSION_MAX=0.3
-//SPRING_FACTOR=2.0 // minimum value: 0.01
-//DAMPING_FACTOR=2.0	// 2.0=critical damped, minimum value: 0.01
-TREAD_STATIC_FRICTION=1.5 // *2.0
+COLLISION_RAISE= -0.5
+SUSPENSION_MIN=-0.2
+SUSPENSION_MAX=0.3
+SPRING_FACTOR=2.0 // minimum value: 0.01
+DAMPING_FACTOR=2.0	// 2.0=critical damped, minimum value: 0.01
+TREAD_STATIC_FRICTION=2.0
 
 ///// New Values //// TeST / CALIBRATE!!! ////////
 
-NormalTrackFactor=1.0 // may need to be > 0 for some of the other params to take effect
-pitchThrust=3.0
-rollSteer=3.0
-alphaTrack=8.0
+//NormalTrackFactor=1.0 // may need to be > 0 for some of the other params to take effect
+//pitchThrust=3.0
+//rollSteer=3.0
+//alphaTrack=8.0
 
-alphaDampX=10.0
-alphaDampZ=35.0 //30.0
+//alphaDampX=10.0
+//alphaDampZ=35.0 //30.0
 
 //UseGlobalFriction=false
 //GlobalFrictionMaxThrottle=0.04f

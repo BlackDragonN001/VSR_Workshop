@@ -83,15 +83,15 @@ omegaSpin=1.0
 omegaTurn=0.6
 alphaSteer=8.0 // 2.0* {VSR-014}
 
-TREAD_STATIC_FRICTION=1.5 //was 5.0
+TREAD_STATIC_FRICTION=5.0 //was 1.5... reverted because it didn't work in release 73
 
-NormalTrackFactor = 1.0 // may need to be > 0 for some of the other params to take effect
-pitchThrust = 3.0
-rollSteer = 3.0
-alphaTrack = 8.0
+//NormalTrackFactor = 1.0 // may need to be > 0 for some of the other params to take effect
+//pitchThrust = 3.0
+//rollSteer = 3.0
+//alphaTrack = 8.0
 
-alphaDampX = 10.0
-alphaDampZ = 35.0 //30.0
+//alphaDampX = 10.0
+//alphaDampZ = 35.0 //30.0
 
 engineSound="ebscav.wav" //engineSound="evserven.wav"
 treadSound="ebscav.wav" //treadSound="iscav01b.wav"

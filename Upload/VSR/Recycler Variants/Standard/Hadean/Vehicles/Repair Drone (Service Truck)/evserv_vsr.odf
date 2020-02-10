@@ -90,7 +90,7 @@ diedMsg=""
 //accelThrust=20.0
 
 [TrackedVehicleClass]
-TREAD_STATIC_FRICTION = 1.5
+//TREAD_STATIC_FRICTION = 1.5
 
 omegaSpin=2.0
 omegaTurn=0.75
@@ -116,13 +116,13 @@ CENTER_SHIFT=-0.25
 
 ///// New Values //// TeST / CALIBRATE!!! ////////
 
-NormalTrackFactor=1.0 // 02.0 // may need to be > 0 for some of the other params to take effect
-pitchThrust=3.0 // *0.7
-rollSteer=3.0 //was commented out previously
+NormalTrackFactor=0.2 // may need to be > 0 for some of the other params to take effect
+pitchThrust=0.7
+//rollSteer=3.0 //was commented out previously
 alphaTrack=8.0 // *8.0
 
-alphaDampX=10.0		//was commented out before release 72
-alphaDampZ=35.0 //30.0	//was commented out before release 72
+//alphaDampX=10.0		//was commented out before release 72
+//alphaDampZ=35.0 //30.0	//was commented out before release 72
 
 UseGlobalFriction=true
 GlobalFrictionMaxThrottle=2.0f // 0.04f
