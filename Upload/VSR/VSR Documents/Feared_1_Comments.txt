@@ -488,6 +488,7 @@ March 22nd, 2019
 -Removed LuaMission.dll (test) from maps; all maps are playable again
 
 
+
 ==Release 53==
 March 29th, 2019
 
@@ -718,9 +719,20 @@ February 7th, 2020
 
 ==Release 73==
 February 7th, 2020
+
 -(General BlackDragon) Fixed error message that appeared at the start of games related to Xyr Tower
+
 
 
 =Release 74==
 February 9th, 2020
+
 -Removed physics changes from release 72 as they caused major problems with tracked vehicles going up hills
+
+
+
+==Release 75==
+???
+
+-Day Wrecker will drop 3x faster and has 2x ammo
+-Fixed a bug where the Bomber could not be passed without blowing up (commented out a line that GBD added to try to fix Bomber going to the wrong base)

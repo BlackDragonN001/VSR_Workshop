@@ -1,0 +1,25 @@
+//VSR DAY WRECKER
+//This Day Wrecker is harder to hit because it falls 3x faster than the stock Day Wrecker
+//Also, it has twice the armor, so it cannot be killed by a single blast, laser, or arc shot
+
+[GameObjectClass]
+geometryName = "daywrecker00.fbx"
+classLabel = "daywrecker"
+scrapCost = 20
+scrapValue = 0
+maxHealth = 1000	//VSR MODIFIED: Stock is 500
+maxAmmo = 0
+unitName = "Day Wrecker"
+aiName = "PowerUpProcess"
+
+requireCount = 1
+requireName1 = "ibarmo"
+
+ClearBuildZone = 0
+
+[PowerUpClass]
+SlowFall = false
+FallSpeed = 36	//VSR MODIFIED: Stock is 12
+
+[DayWreckerClass]
+xplBlast = "xbmbxpl"

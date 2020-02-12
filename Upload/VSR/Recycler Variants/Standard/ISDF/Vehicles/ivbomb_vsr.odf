@@ -4,7 +4,11 @@ classLabel="ivbomb"
 // Praise to TKO for getting the idea
 // in his head that he could snipe a bomber.
 canSnipe=0
-StayWithOwner = true // Should "fix" MPI AI bombers on Team 7-10 from blowing up? needs testing. -GBD
+//StayWithOwner = true // Should "fix" MPI AI bombers on Team 7-10 from blowing up? needs testing. -GBD <-- Does not work -Feared_1
 
 [CraftClass]
 TeamTransferrable=true // *false {VSR-041}
+
+//If people like the Experimental Variant bomb, add the following:
+//[BomberClass]
+//bombName = "apwrckvsr" //VSR modified Day Wrecker
