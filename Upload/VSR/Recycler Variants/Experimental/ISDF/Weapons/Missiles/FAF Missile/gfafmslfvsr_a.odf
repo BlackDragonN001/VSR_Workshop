@@ -3,3 +3,11 @@ classLabel = "gfafmslvsr_a"
 altName = "gfafmslfvsr_c"
 ordName = "fafmslfvsr_a"
 fireSound = "crckt01.wav"
+
+[LauncherClass]
+// Stock values (NOT INHERITED)
+lockRange=250.0
+shotDelay=1.0
+lockDelay=2.0
+coneAngle=0.075
+TeamFilter = 3 //Added in VSR BZCC Release 68 to prevent AI from locking onto friendlies attempting to kill enemies

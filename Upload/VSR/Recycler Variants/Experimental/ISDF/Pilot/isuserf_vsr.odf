@@ -7,8 +7,14 @@ clearBuildZone=0
 baseName="ispilo"
 classLabel="isuser"
 
-weaponName1="igsnipfvsr_c" // "igsnip_c"
-weaponName2="igsnipfvsr_a" // "igsnip_a"
+//VSR Standard Pulse
+weaponName1="igsnipvsr_c"
+weaponName2="igsnipvsr_a"
+weaponName3="igjetpvsr"
+
+//Enhanced Pulse - removed for now
+//weaponName1="igsnipfvsr_c" // "igsnip_c"
+//weaponName2="igsnipfvsr_a" // "igsnip_a"
 
 [CraftClass]
 
