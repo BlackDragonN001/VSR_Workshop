@@ -3,7 +3,14 @@ TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZ
 //buildTime=30.0
 scrapReturn=0
 baseName="ebrecy_vsr"
-geometryName="ebrecy_vsr00.fbx"
+geometryName = "ebrecy00.fbx"
+animCount = 2
+animName1 = "deploy"
+animFile1 = "ebrecy00_deploy.fbx"
+animName2 = "loop"
+animFile2 = "ebrecy00_loop.fbx"
+RunAnimation = "loop"
+RunAnimIsLooped = true
 //collisionName="ebrecy00.fbx"
 classLabel="recycler"
 powerCost=0
@@ -28,6 +35,15 @@ provideName1="ebrecy"
 provideName2="VIRTUAL_CLASS_RECYCLER"
 provideName3="VIRTUAL_CLASS_RECYCLERBUILDING"
 provideName4="base"
+
+lightHard1 = "hp_light_1"
+lightName1 = "omnipurple"
+lightHard2 = "hp_light_2"
+lightName2 = "omniyohad"
+lightHard3 = "hp_light_3"
+lightName3 = "omniyohad"
+lightHard4 = "hp_light_4"
+lightName4 = "omniyohad"
 
 // DLL
 startingVariant="_vsr"
