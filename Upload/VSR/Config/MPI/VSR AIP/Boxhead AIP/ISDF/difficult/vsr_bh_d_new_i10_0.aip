@@ -548,13 +548,13 @@ planCompare = ">="
 planConditionClassProvided = true
 planConditionOr = false
 planCondition2 = "Exists"
-planConditionClass2 = "ibbomb_vsr"
+planConditionClass2 = "VIRTUAL_CLASS_BOMBERBAY"
 planConditionCount2 = 1
 planCompare2 = ">="
 planConditionClassProvided2 = true
 MaxUnits = 5
 MinMissionSeconds = 70
-targetType = "ibbomb_vsr"
+targetType = "ibbombcpu_vsr"
 ContinueEvenIfFail = true
 
 [Plan7]
@@ -686,7 +686,7 @@ unitType1 = "ibrecycpu"
 unitType2 = "ibfact_vsr"
 unitType3 = "ibpgen_vsr"
 unitType4 = "ibgtow_vsr"
-unitType5 = "ibbomb_vsr"
+unitType5 = "ibbombcpu_vsr"
 unitType6 = "ibsbay_vsr"
 unitType7 = "ibcbun_vsr"
 unitType8 = "ibarmo_vsr"
@@ -1023,11 +1023,11 @@ planConditionCount2 = 1
 planCompare2 = ">="
 planConditionClassProvided2 = true
 planCondition3 = "NotExists"
-planConditionClass3 = "ibbomb_vsr"
+planConditionClass3 = "VIRTUAL_CLASS_BOMBERBAY"
 planConditionCount3 = 1
 planCompare3 = ">="
 planConditionClassProvided3 = true
-buildType1 = "ibbomb_vsr"
+buildType1 = "ibbombcpu_vsr"
 buildCount1 = 1
 minTtlScrap = 100
 
@@ -1040,7 +1040,7 @@ planConditionCount = 2
 planCompare = ">="
 planConditionClassProvided = true
 planCondition2 = "Exists"
-planConditionClass2 = "ibbomb_vsr"
+planConditionClass2 = "VIRTUAL_CLASS_BOMBERBAY"
 planConditionCount2 = 1
 planCompare2 = ">="
 planConditionClassProvided2 = true
@@ -1049,7 +1049,7 @@ planConditionClass3 = "ibfact_vsr"
 planConditionCount3 = 1
 planCompare3 = ">="
 planConditionClassProvided3 = true
-buildType1 = "ivbomb_vsr"
+buildType1 = "ivbombcpu_vsr"
 buildCount1 = 1
 minTtlScrap = 80
 
@@ -1725,7 +1725,7 @@ planConditionClass4 = "ibtrain_vsr"
 planConditionCount4 = 1
 planCompare4 = ">="
 planConditionClassProvided4 = true
-buildType1 = "ibbomb_vsr"
+buildType1 = "ibbombcpu_vsr"
 buildCount1 = 1
 
 [Plan68]
@@ -1750,7 +1750,7 @@ planConditionCount = 2
 planCompare = ">="
 planConditionClassProvided = true
 planCondition2 = "Exists"
-planConditionClass2 = "ibbomb_vsr"
+planConditionClass2 = "VIRTUAL_CLASS_BOMBERBAY"
 planConditionCount2 = 1
 planCompare2 = ">="
 planConditionClassProvided2 = true
@@ -1759,7 +1759,7 @@ planConditionClass3 = "ibfact_vsr"
 planConditionCount3 = 1
 planCompare3 = ">="
 planConditionClassProvided3 = true
-buildType1 = "ivbomb_vsr"
+buildType1 = "ivbombcpu_vsr"
 buildCount1 = 1
 minTtlScrap = 80
 
@@ -2667,7 +2667,7 @@ buildIfNoIdle = 1
 [Plan117]
 planType = "BaseBuildMinimums"
 planPriority = 220
-buildType1 = "ibbomb_vsr"
+buildType1 = "ibbombcpu_vsr"
 buildCount1 = 1
 minTtlScrap = 100
 

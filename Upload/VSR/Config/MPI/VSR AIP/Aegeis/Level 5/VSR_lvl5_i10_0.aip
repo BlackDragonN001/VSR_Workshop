@@ -196,7 +196,7 @@ unitType1 = "ibrecy"
 unitType2 = "ibfactcpuinsane_vsr"
 unitType3 = "ibpgen_vsr"
 unitType4 = "ibgtow_vsr"
-unitType5 = "ibbomb_xvsr"
+buildType1 = "ibbombcpu_vsr"
 unitType6 = "ibsbay_vsr"
 unitType7 = "ibcbun_12xvsr"
 unitType8 = "ibarmo_12xvsr"
@@ -230,7 +230,7 @@ ContinueEvenIfFail = true
 [Plan5]
 planType = "DefendArea"
 planPriority = 600
-targetType = "ibbomb_xvsr"
+targetType = "ibbombcpu_vsr"
 maxCurScrap = 40
 ContinueEvenIfFail = true
 
@@ -280,7 +280,7 @@ ContinueEvenIfFail = true
 planType = "Attacker"
 planPriority = 530
 planCondition = "Exists"
-planConditionClass = "ivbomb_xvsr"
+planConditionClass = "VIRTUAL_CLASS_BOMBER"
 planConditionCount = 1
 planCompare = ">="
 planCondition2 = "HisExists"
@@ -295,7 +295,7 @@ planCompare3 = "<="
 minTtlScrap = 100
 minCurScrap = 40
 targetType = "VIRTUAL_CLASS_BOMBERBAY"
-attackType1 = "ivbomb_xvsr"
+attackType1 = "ivbombcpu_vsr"
 useScrapCost1 = false
 maxAttacks = 0
 ContinueEvenIfFail = true
@@ -304,7 +304,7 @@ ContinueEvenIfFail = true
 planType = "Attacker"
 planPriority = 520
 planCondition = "Exists"
-planConditionClass = "ivbomb_xvsr"
+planConditionClass = "VIRTUAL_CLASS_BOMBER"
 planConditionCount = 1
 planCompare = ">="
 planCondition2 = "HisExists"
@@ -315,7 +315,7 @@ planCompare2 = ">="
 maxTtlScrap = 100
 minCurScrap = 40
 targetType = "extract"
-attackType1 = "ivbomb_xvsr"
+attackType1 = "ivbombcpu_vsr"
 useScrapCost1 = false
 maxAttacks = 0
 ContinueEvenIfFail = true
@@ -743,7 +743,7 @@ ContinueEvenIfFail = true
 planType = "BaseBuildMinimums"
 planPriority = 170
 minTtlScrap = 100
-buildType1 = "ibbomb_xvsr"
+buildType1 = "ibbombcpu_vsr"
 buildCount1 = 1
 buildType2 = "ibtcen_vsr"
 buildCount2 = 1
@@ -754,9 +754,9 @@ buildCount4 = 5
 planType = "BuildMinimums"
 planPriority = 160
 planCondition = "Exists"
-planConditionClass = "ibbomb_xvsr"
+planConditionClass = "VIRTUAL_CLASS_BOMBERBAY"
 planConditionCount = 1
-buildType1 = "ivbomb_xvsr"
+buildType1 = "ivbombcpu_vsr"
 buildCount1 = 1
 
 [Plan52]
