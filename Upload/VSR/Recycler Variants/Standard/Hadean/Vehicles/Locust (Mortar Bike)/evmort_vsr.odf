@@ -1,19 +1,16 @@
-//(c)BZ2CP
-// Created by Slaor and Pastell
-
 [GameObjectClass]
 clearBuildZone=0 // {VSR-005}
 baseName="evmort"
-geometryName="evmort00.xsi"
+geometryName="evmort00.fbx"
 cockpitName="hvmort_cockpit.xsi" // cockpit – Tempest storm
 classLabel="wingman"
 animCount=3
 animName1="forward"
-animFile1="evmortsf.xsi"
+animFile1="evmortsf.fbx"
 animName2="neutral"
-animFile2="evmortsn.xsi"
+animFile2="evmortsn.fbx"
 animName3="reverse"
-animFile3="evmortsr.xsi"
+animFile3="evmortsr.fbx"
 scrapValue=25
 scrapCost=50
 customCost=50
@@ -47,6 +44,7 @@ weaponMask=00001
 weaponHard1="HP_MORTAR_1"
 weaponName1="gtagcr_a"
 weaponAssault1=1
+RecoilName1 = "recoil_01"
 weaponHard2="HP_SPECIAL_1"
 weaponName2="gproxminvsr"
 weaponAssault2=0

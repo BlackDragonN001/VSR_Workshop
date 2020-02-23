@@ -29,7 +29,7 @@ provideCount = 5
 provideName1 = "ebgt4g"
 provideName2 = "ebgt4g_vsr"
 provideName3 = "VIRTUAL_CLASS_GUNTOWER"
-provideName4="defender"
+provideName4 = "defender"
 provideName5 = "base"
 
 
@@ -37,19 +37,14 @@ weaponMask = 00011
 weaponHard1 = "hp_cannon_1"
 weaponName1 = "gcphlaser"
 weaponAssault1 = 0
+RecoilName1 = "recoil_l"
 weaponHard2 = "hp_cannon_2"
 weaponName2 = "gcphlaser"
 weaponAssault2 = 0
+RecoilName2 = "recoil_r"
 
 lightHard1 = "hp_light_1"
 lightName1 = "spothadean"
-
-//The provide stuff below is already done above, why is it included twice? Removed for BZCC
-//provideCount = 4
-//provideName1 = "ebgt4g"
-//provideName2 = "ebgt4g_vsr"
-//provideName3 = "VIRTUAL_CLASS_GUNTOWER"
-//provideName4 = "defender"
 
 turretCount = 4
 turretName1 = "turret_y_1"
