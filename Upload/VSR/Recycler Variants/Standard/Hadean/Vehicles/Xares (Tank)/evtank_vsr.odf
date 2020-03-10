@@ -8,18 +8,18 @@
 clearBuildZone=0 // {VSR-005}
 
 baseName="evtank"
-geometryName="evtank00.xsi"
-CockpitName="hvtank_cockpit.xsi" // cockpit – Tempest storm
+geometryName="evtank00.fbx"
+CockpitName="evtank_cockpit.xsi" // cockpit – Tempest storm
 classLabel="wingman"
 geometryScale=1.0
 
 animCount=3
 animName1="forward"
-animFile1="evtanksf.xsi"
+animFile1="evtanksf.fbx"
 animName2="neutral"
-animFile2="evtanksn.xsi"
+animFile2="evtanksn.fbx"
 animName3="reverse"
-animFile3="evtanksr.xsi"
+animFile3="evtanksr.fbx"
 
 scrapValue=25
 scrapCost=55		
@@ -54,11 +54,13 @@ weaponName1="gcphlas_c"
 weaponAssault1=0
 weaponHard2="HP_GUN_1"
 weaponName2="gcphcg_c"
-recoilName2="gun_r"
+recoilName2 = "recoil_r"
+recoilDist2 = -0.3f
 weaponAssault2=0
 weaponHard3="HP_GUN_2"
 weaponName3="gcphcg_c"
-recoilName3="gun_l"
+recoilName3 = "recoil_l"
+recoilDist3 = -0.3f
 weaponAssault3=0
 weaponHard4="HP_SPECIAL_1"
 weaponName4="gproxminvsr"
