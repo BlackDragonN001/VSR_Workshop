@@ -110,7 +110,9 @@ aim12CannonError0=0.05
 aim12CannonError1=-0.2
 aim12CannonError2=-0.03
 aim12CannonError3=-0.1
-weaponPitch=1.5 // *1.0
+//weaponPitch=1.5 // *1.0
+MinWeaponPitch = 1.0
+MaxWeaponPitch = 1.5
 pitchScatter=0.2
 steerScatter=0.1
 
