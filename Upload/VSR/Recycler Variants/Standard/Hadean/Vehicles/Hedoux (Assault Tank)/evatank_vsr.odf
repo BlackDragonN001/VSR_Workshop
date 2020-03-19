@@ -6,7 +6,7 @@
 [GameObjectClass]
 clearBuildZone=0 // {VSR-005}
 baseName="evatank"
-geometryName="evatank00.xsi"
+geometryName="evatank00.fbx"
 CockpitName="evatank_cockpit.xsi"
 classLabel="assaulttank"
 scrapValue=30
@@ -53,16 +53,17 @@ weaponMask=00001
 weaponHard1="HP_CANNON_1"
 weaponName1="gslagstab_a"
 weaponAssault1=1
+recoilName1 = "recoil_1"
 weaponHard2="HP_GUN_1"
 weaponName2="gshellgun_c"
 weaponAssault2=0
+recoilName2 = "recoil_2"
+recoilDist2 = -0.3f
 weaponHard3="HP_GUN_2"
 weaponName3="gshellgun_c"
 weaponAssault3=0
-
-recoilName1="recoil_1"
-recoilName2="lgun"
-recoilName3="rgun"
+recoilName3 = "recoil_2"
+recoilDist3 = -0.3f
 
 ////////////////////////////////////
 
@@ -70,6 +71,15 @@ turretCount=2
 turretName1="turret_y"
 turretName2="turret_x"
 //turretName3="hp_eyepoint"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "dusttrail3"
+effectMinVelocity1 = 3.0
+effectMaxVelocity1 = 500.0
+effectHard2 = "hp_emit_2" 
+effectName2 = "dusttrail3"
+effectMinVelocity2 = 3.0
+effectMaxVelocity2 = 500.0
 
 infoName="evatank_vsr.inf"
 
