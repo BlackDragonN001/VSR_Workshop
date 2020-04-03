@@ -1,0 +1,19 @@
+[Texture]
+TileTexture1 = "miradorbrick.tga"
+TileTexture2 = "hardwater.bmp"
+TileTexture3 = "miradorcracked.tga"
+TileTexture4 = "mossyrock01.tga" //TileTexture4 = "hard05.bmp"
+
+[NormalView]
+SpecularPower = 5
+DiffuseColor = "255 255 255"
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap4"
+CaptureTarget2 = "VSRcap4"
+CaptureTarget3 = "VSRcap4"
+CaptureTarget4 = "VSRcap4"
+CaptureTarget5 = "VSRcap1"
+CaptureTarget6 = "VSRcap5"
+CaptureTarget7 = "VSRcap5"
