@@ -77,8 +77,7 @@ March 12th, 2018
 
 -Converted 11 maps from 1.3 to BZCC.
 	Adjusted sky, terrain color, and terrain textures (if there was a problem) in order to look good in the new game; BZCC's terrain colors mainly come from the texture set, so generally colors had to be completely removed from maps
-
-A special thanks to Bladicus for helping with the conversion of two maps!
+(A special thanks to Bladicus for helping with the conversion of two maps!)
 
 
 
@@ -108,8 +107,7 @@ March 30th, 2018
 
 -More maps converted from 1.3 to BZCC (Strat Arena, Midwars, Hilo Blues, Ridges)
 -More map enhancements on existing maps (pool colors match better, texture errors fixed, etc.)
-
-A special thanks to ExE for helping with the conversion of maps!
+(A special thanks to ExE for helping with the conversion of maps!)
 
 
 
@@ -303,7 +301,7 @@ September 27th, 2018
 October 3rd, 2018
 
 -The "Q" button will now build service pods when you are commanding if you don't have a custom bzgame_keys.cfg file
--(Vearie) Converted 13 maps from 1.3 to BZCC (Abuse, Consciousness, Dream, Ebola, Forgotten, Know Thyself, Mexican Mission, Ogg Vorbis, Quarry 2, Satart, Scammed, Stack, Trapped)
+-Vearie: Converted 13 maps from 1.3 to BZCC (Abuse, Consciousness, Dream, Ebola, Forgotten, Know Thyself, Mexican Mission, Ogg Vorbis, Quarry 2, Satart, Scammed, Stack, Trapped)
 
 
 
@@ -404,9 +402,9 @@ November 29th, 2018
 ==Release 38==
 December 3rd, 2018
 
--(Jayden) Updated Xyr Guard model for BZCC
--(Jayden) Hadean Collector now has team colors
--(Jayden) F-key icons adjusted to be more like the originals
+-Jayden: Updated Xyr Guard model for BZCC
+-Jayden: Hadean Collector now has team colors
+-Jayden: F-key icons adjusted to be more like the originals
 
 
 
@@ -428,7 +426,7 @@ January 4th, 2019
 ==Release 41==
 February 27th, 2019
 
--(Jayden) Updated Hadean Extractor and Refinery models; updated Creator and Repair Drone models and icons
+-Jayden: Updated Hadean Extractor and Refinery models; updated Creator and Repair Drone models and icons
 -Fixed disappearing pool on Trapped
 -Hadean pilot (without sniper/esuser_m) now has the VSR Hadean Jetpack rather than the stock Scion one
 -Jabbapop's JChat keys have been added to replace Newkeys; if you have your own set of Newkeys in your addon folder, this will not affect you (undoes Newkeys release & updates from VSR Releases 20, 21, 26)
@@ -445,7 +443,7 @@ February 27th, 2019
 ==Release 43==
 March 1st, 2019
 
--(Jabbapop) Changed Numpad0 keybinds to Numpad* so it doesn't interfere with people's jump keys
+-Jabbapop: Changed Numpad0 keybinds to Numpad* so it doesn't interfere with people's jump keys
 
 
 
@@ -493,10 +491,10 @@ March 22nd, 2019
 March 29th, 2019
 
 -Moved over the rest of the 1.3 VSR content for integration with BZCC (MPI files, Experimental & Plus variants, DLLs, scripts, etc.) - some small, non-essential things disabled until we can figure out how they work
--(General BlackDragon) Adjusted AIP's, shell options, map ivars/svars, and many other things for compatibility with BZCC (Undoes changes made in several previous releases, especially Release 1)
--(General BlackDragon) VSR's MPI feature now works in BZCC
--(General BlackDragon) The chatbox in the shell can now scroll with the mouse wheel
--(General BlackDragon) Objects in the environment will now make sound again (core towers, sound cubes, icebergs, etc.)
+-General BlackDragon: Adjusted AIP's, shell options, map ivars/svars, and many other things for compatibility with BZCC (Undoes changes made in several previous releases, especially Release 1)
+-General BlackDragon: VSR's MPI feature now works in BZCC
+-General BlackDragon: The chatbox in the shell can now scroll with the mouse wheel
+-General BlackDragon: Objects in the environment will now make sound again (core towers, sound cubes, icebergs, etc.)
 -Removed Daedlians (will consider re-adding at a later time, replace with Cerberi, or other options)
 -Enabled MPI on several maps that were converted directly from 1.2, or otherwise did not originally have MPI enabled
 -Changed default team names to "Team 1" and "Team 2" so any team colors can be used and still make sense
@@ -518,8 +516,8 @@ March 29th, 2019
 ==Release 54==
 March 30th, 2019
 
--(General BlackDragon) Fixed FFA MPI shell options, hopefully fixing FFA MPI
--(General BlackDragon) Scion Antenna Mound and Overseer Array will now allow you to press "4" to open sattelite view in Experimental variant
+-General BlackDragon: Fixed FFA MPI shell options, hopefully fixing FFA MPI
+-General BlackDragon: Scion Antenna Mound and Overseer Array will now allow you to press "4" to open sattelite view in Experimental variant
 -Fixed a few error messages appearing when modifying units in VSR Experimental variant
 -Fixed Ravine map description
 -Xypos now appears in ship preview screen
@@ -530,12 +528,12 @@ March 30th, 2019
 ==Release 55==
 April 18th, 2019
 
--(General BlackDragon) Fixed error message and silence when shooting assault chain gun at the ground (to be consistent with Release 19)
--(General BlackDragon) Replaced "Respawn with Sniper" option with the options to remove starting sniper, have normal sniper behavior, or turn respawn with sniper on
--(Vearie) Reworked the map selector so it works in BZCC - it will only sort alphabetically but allows you to see previews for all maps at the same time
--(Boxhead) Added VSR MPI Level 3 to his VSR AIP list
--(Aegeis) New VSR MPI enemy AIP (Level 4) to test against ISDF; this is VERY challenging
--(Fel) Created a custom loading screen for the VSR mod
+-General BlackDragon: Fixed error message and silence when shooting assault chain gun at the ground (to be consistent with Release 19)
+-General BlackDragon: Replaced "Respawn with Sniper" option with the options to remove starting sniper, have normal sniper behavior, or turn respawn with sniper on
+-Vearie: Reworked the map selector so it works in BZCC - it will only sort alphabetically but allows you to see previews for all maps at the same time
+-Boxhead: Added VSR MPI Level 3 to his VSR AIP list
+-Aegeis: New VSR MPI enemy AIP (Level 4) to test against ISDF; this is VERY challenging
+-Fel: Created a custom loading screen for the VSR mod
 -New game mode "ST Capture" is now enabled on maps with a "VSR" prefix (the code for ST Capture was in VSR 6.0 in 1.3, but was never enabled; this is the first implementation of this game mode, so please report any problems)
 -Camera pods have their 1000m radar back since they are "enemy to all" with VSR DLL, and their radar is not shared with teammates (undoes what was done in release 17, Camera Pod change 3)
 -Changed VSR's Experimental units that use Minigun to the stock BZCC Minigun instead of the old VSR minigun
@@ -551,13 +549,13 @@ April 26th, 2019
 
 -Fixed Scion Healer's Kiln requirement (removed the Kiln requirement as it didn't apply previously)
 -Changed the default behavior of starting sniper option to be "off" - NO starting sniper... you need to turn this to ON to get a sniper at the start of a game
--(General Blackdragon) Fixed multiple bugs related to FFA MPI:
+-General Blackdragon: Fixed multiple bugs related to FFA MPI:
 	>Alliance settings for players re-joining fixed
 	>Players that Respawn can no longer become added to the "Thug" pilot list which switches FFA's "thug" pilots to commander's team
 	>MPI AI Alliances now work properly for Thugs; it was only allying commander with AI, but not Thugs.
 -Fixed MPI on Curiosity
--(Vearie) Converted 8 maps from 1.3 to BZCC (Fort 12C, Lunix, Nigeria, Pitfall, Rapemas, Rectal, Swamp Gas, The War)
--(Vearie) Retextured DM: Volcanoes to look more like 1.3 & modified weapon crates to be their VSR variants
+-Vearie: Converted 8 maps from 1.3 to BZCC (Fort 12C, Lunix, Nigeria, Pitfall, Rapemas, Rectal, Swamp Gas, The War)
+-Vearie: Retextured DM: Volcanoes to look more like 1.3 & modified weapon crates to be their VSR variants
 -Converted 2 maps from 1.3 to BZCC (Titan, Trail)
 -Brightened Ebola's preview image
 
@@ -566,10 +564,10 @@ April 26th, 2019
 ==Release 57==
 May 12th, 2019
 
--(Vearie) Converted 11 maps from 1.3 to BZCC (310, Concrete Jungle, Death Island, Fire Island, Island of V8, Jurassic Dog Park, No Man's Land, Oldboy, Ragnarok, Throbbing Gristle, Vegan)
--(Vearie) Updated 10 maps to look more like originals or fix pools (Crater, Forgotten, Garden, Lunar, Lunix, Moonshroud, Plaza, Satart, Swamp Gas, The War)
+-Vearie: Converted 11 maps from 1.3 to BZCC (310, Concrete Jungle, Death Island, Fire Island, Island of V8, Jurassic Dog Park, No Man's Land, Oldboy, Ragnarok, Throbbing Gristle, Vegan)
+-Vearie: Updated 10 maps to look more like originals or fix pools (Crater, Forgotten, Garden, Lunar, Lunix, Moonshroud, Plaza, Satart, Swamp Gas, The War)
 -Converted 1 map from 1.3 to BZCC (Six Way)
--(Aegeis) Level 4 AIP now can be played versus the Scion race
+-Aegeis: Level 4 AIP now can be played versus the Scion race
 -VSR JAX (in the experimental variant) can now be dropped from the Scion Stronghold
 -Static Charge can now be dropped from the Experimental Stronghold
 
@@ -588,7 +586,7 @@ June 9th, 2019
 -"Forgotten" preview image updated to match the new look
 -Scion pilots now give 5 scrap when they reach the Matriarch
 -Removed JAX from "Standard" Scion Stronghold - it will remain in the Experimental Stronghold
--(Aegeis) Level 4 AIP with the Scion race now works without error messages or other problems
+-Aegeis: Level 4 AIP with the Scion race now works without error messages or other problems
 -DM: Vet Training Grounds now works again and includes an additional "very difficult" obstacle course by Sly
 
 
@@ -596,8 +594,8 @@ June 9th, 2019
 ==Release 61==
 June 26th, 2019
 
--(General BlackDragon) Fixed some team issues in FFA (spawning on top of someone else's base)
--(Gravey) Added 1 new map (Oasis)
+-General BlackDragon: Fixed some team issues in FFA (spawning on top of someone else's base)
+-Gravey: Added 1 new map (Oasis)
 -Stock pool "wepool01" specularpower set to 0, allowing these pools to match terrain better; lighting adjusted on affected maps
 
 
@@ -612,16 +610,16 @@ June 28th, 2019
 ==Release 63==
 July 4th, 2019
 
--(General BlackDragon) Fixed instant action instafail when VSR is activated
--(General BlackDragon) Added a fix for ST: Mars (the bridge will now work)
+-General BlackDragon: Fixed instant action instafail when VSR is activated
+-General BlackDragon: Added a fix for ST: Mars (the bridge will now work)
 
 
 
 ==Release 64==
 August 25th, 2019
 
--(Jayden) Graphically updated all Hadean buildings except for Procreator building and Defender
--(General BlackDragon) Separated Hadean models into a separate asset pack to reduce the size of the VSR mod itself, Hadean graphics will be updated independently from VSR from now on (PLEASE LOOK FOR ERROR MESSAGES)
+-Jayden: Graphically updated all Hadean buildings except for Procreator building and Defender
+-General BlackDragon: Separated Hadean models into a separate asset pack to reduce the size of the VSR mod itself, Hadean graphics will be updated independently from VSR from now on (PLEASE LOOK FOR ERROR MESSAGES)
 -Fixed DM team issues (Humans vs Bots now default to off)
 -Aesthetically tweaked a few maps to make them look better, have matching pool color, etc.
 -Sniper tech requirement changes (undoes release 13 change):
@@ -635,7 +633,7 @@ August 25th, 2019
 ==Release 65==
 August 25th, 2019
 
--(General BlackDragon) Fixed some missing models/textures
+-General BlackDragon: Fixed some missing models/textures
 -Hadean Scout reverted to stock size (not 5% larger) - this change was insigificant and complicated the hadean update slightly
 
 
@@ -643,19 +641,19 @@ August 25th, 2019
 ==Release 66==
 August 25th, 2019
 
--(General BlackDragon) Fixed some error messages involving the Hadean Spike
--(General BlackDragon) Fixed some missing and/or un-updated models
+-General BlackDragon: Fixed some error messages involving the Hadean Spike
+-General BlackDragon: Fixed some missing and/or un-updated models
 
 
 
 ==Release 67==
 September 4th, 2019
 
--(F9 Bomber) Added 1 new map to VSR (Hound)
+-F9 Bomber: Added 1 new map to VSR (Hound)
 -Minor changes to Overlook map for pathing
--(Aegeis) Level 4 AIP for the Hadean Race now works
--(Aegeis) Level 4 AI will no longer use OP weapons
--(Aegeis) Level 5 AIP for ISDF and Scion race added, in which the enemy will use OP weapons (does not work for Hadeans yet)
+-Aegeis: Level 4 AIP for the Hadean Race now works
+-Aegeis: Level 4 AI will no longer use OP weapons
+-Aegeis: Level 5 AIP for ISDF and Scion race added, in which the enemy will use OP weapons (does not work for Hadeans yet)
 -Added descriptions for VSR Recycler Variants and VSR AIPs to give more specific information about each
 
 
@@ -686,8 +684,8 @@ October 30th, 2019
 -The shotspeed of Popper has been doubled; Bombers and Scouts can no longer outrun popper shots
 -MFF Mine now says "MFF" after it's been laid on the ground instead of "MITS"
 -Slightly adjusted lighting on multiple maps for playability: some maps were too dark, or some maps had weather that made the maps too dark
--(F9 Bomber) On Hound, added a lot of base starting loose, attempting to prevent one team from completely dominating early on by locking down the middle
--(Jayden) Modified the Scion Matriarch and Hadean Procreator models to hopefully reduce units getting stuck
+-F9 Bomber: On Hound, added a lot of base starting loose, attempting to prevent one team from completely dominating early on by locking down the middle
+-Jayden: Modified the Scion Matriarch and Hadean Procreator models to hopefully reduce units getting stuck
 
 
 
@@ -695,8 +693,8 @@ October 30th, 2019
 November 3rd, 2019
 
 -Hadean Procreator model should now be fixed with Jayden's updated one
--(General BlackDragon) Removed collisionmeshforpathing flag on had recy, fixed it's tunnel code to match FE's
--(General BlackDragon) Removed the recy dropoff bugfix from the bug in 2.0.180 in all 3 race's *brecy odfs (this fixes units running far away to recycle)
+-General BlackDragon: Removed collisionmeshforpathing flag on had recy, fixed it's tunnel code to match FE's
+-General BlackDragon: Removed the recy dropoff bugfix from the bug in 2.0.180 in all 3 race's *brecy odfs (this fixes units running far away to recycle)
 -Converted 1 map from 1.3 to BZCC (Wales)
 
 
@@ -704,23 +702,23 @@ November 3rd, 2019
 ==Release 72==
 February 7th, 2020
 
--(Jayden) Updated Hadean Defender & Portal models for BZCC
--(General BlackDragon) Added build sparks to Recycler and Scavenger deployment for Hadeans
--(General BlackDragon) Changed the Xerrakis mine to spawn at ship height rather than ground height so it can blow up immediately upon activation
+-Jayden: Updated Hadean Defender & Portal models for BZCC
+-General BlackDragon: Added build sparks to Recycler and Scavenger deployment for Hadeans
+-General BlackDragon: Changed the Xerrakis mine to spawn at ship height rather than ground height so it can blow up immediately upon activation
 -Fixed a bug involving VSR Shadower Missile where Missle Scouts equipped with this weapon would not attack enemies properly
 -Removed stock MPI and STCTF maps from the VSR map list; they were not compatible with VSR & caused confusion, all but one map (Iceberg) already have VSR-capable counterparts
 -Removed the "Playground" maps from the VSR Instant Action list
 -Changed Instant Action maps to have VSR-options enabled by default
 -Converted stock map MPI: Iceberg into a VSR map
--(Cloaket) Converted 1 map from 1.3 to BZCC (Aussault)
--(General BlackDragon) Slightly adjusted tracked vehicle physics to be less bouncy and have more control if they are airborne
+-Vearie: Converted 1 map from 1.3 to BZCC (Aussault)
+-General BlackDragon: Slightly adjusted tracked vehicle physics to be less bouncy and have more control if they are airborne
 
 
 
 ==Release 73==
 February 7th, 2020
 
--(General BlackDragon) Fixed error message that appeared at the start of games related to Xyr Tower
+-General BlackDragon: Fixed error message that appeared at the start of games related to Xyr Tower
 
 
 
@@ -751,10 +749,10 @@ February 17th, 2020
 ==Release 77==
 March 3rd, 2020
 
--(Gravey) Added 1 new map to VSR (Cracked)
--(Jayden) Updated Hadean Procreator & Locust models
--(General BlackDragon) Updated AI Bombers so they will go to appropriate Bomber Bay
--(General BlackDragon) Gave Hadean Gun Towers a recoil animation
+-Gravey: Added 1 new map to VSR (Cracked)
+-Jayden Updated: Hadean Procreator & Locust models
+-General BlackDragon: Updated AI Bombers so they will go to appropriate Bomber Bay
+-General BlackDragon: Gave Hadean Gun Towers a recoil animation
 
 
 
@@ -769,29 +767,31 @@ March 3rd, 2020
 March 10th, 2020
 
 -New map "Cracked" from Release 77 is NOW playable
--(Jayden) Updated Hadean Xares model for BZCC
--(General BlackDragon) Cleaned up some files in the VSR directory
+-Jayden: Updated Hadean Xares model for BZCC
+-General BlackDragon: Cleaned up some files in the VSR directory
 
 
 
 ==Release 80==
 March 14th, 2020
 
--(Jayden) Updated Hadean Zeus model for BZCC
+-Jayden: Updated Hadean Zeus model for BZCC
 
 
 
 ==Release 81==
 April 5th, 2020
 
--(General BlackDragon) Fixed broken lightning bolt animation for Hadean Xyr Tower
 -Fixed the error message regarding ibbombcpu_vsr and ivbombcpu_vsr at the start of MPI games
--(General BlackDragon) Turrets can no longer shoot straight down at mines placed underneath them
--(Gravey) Updated several maps for aesthetics and/or playability (Cracked, BottleNeck, Reflex, Rendon, Tempest, Hound)
--(Gravey) Rebalanced loose scrap on several maps to help prevent "snowball games" (Amino, Ancient Hills, Barren, Bowl, Dedux, Mayhem, Mesa, Quagmire, Red Slope, IceAge, Prodigy, Ravine, Sahara)
--(Jayden) Updated Hadean Hedoux, Xerrakis, and Atlas models for BZCC
--(General BlackDragon) Added dust and engine glow effects to Hadean units
--(General BlackDragon) Adjusted Scion Scout Special hardpoint so that mines are laid directly underneath it
--(Gravey) Added 1 new map to BZCC (Impact)
--(Herp McDerperson) Hadean AI Empty Scouts can no longer paint enemies
+-General BlackDragon: Turrets can no longer shoot straight down at mines placed underneath them
+-Herp McDerperson: Hadean AI Empty Scouts can no longer paint enemies
+-Gravey: Updated several maps for aesthetics and/or playability (Cracked, BottleNeck, Reflex, Rendon, Tempest, Hound)
+-Gravey: Rebalanced loose scrap on several maps to help prevent "snowball games" (Amino, Ancient Hills, Barren, Bowl, Dedux, Mayhem, Mesa, Quagmire, Red Slope, IceAge, Prodigy, Ravine, Sahara)
+-Jayden: Updated Hadean Hedoux, Xerrakis, and Atlas models for BZCC
+-General BlackDragon: VSR now uses GBD's "Improved Model" packs...some improvements:
+	>ISDF: AI will actually hit ISDF extractor when they shoot at it, eagle removed from ISDF Scout, and some other things
+	>Scion: Drone special hardpoint moved to the center of the scout like in 1.3, Antenna & Overseer Array collision mesh added (you can now shoot through the hologram on the inside...)
+-General BlackDragon: Fixed broken lightning bolt animation for Hadean Xyr Tower
+-General BlackDragon: Added dust and engine glow effects to Hadean units
+-Gravey: Added 1 new map to BZCC (Impact)
 -Converted 2 maps from ZST to BZCC (Royal Stadium, Mirador)
