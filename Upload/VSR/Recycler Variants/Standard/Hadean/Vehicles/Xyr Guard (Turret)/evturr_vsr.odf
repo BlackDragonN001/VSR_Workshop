@@ -66,6 +66,20 @@ turretName3="hp_eyepoint"
 
 mass=7087.13 // ISDF turret mass (VSR-012)
 
+// Dust fx.
+effectHard1 = "hp_com_1"
+effectName1 = "dusttrail"
+effectMinAltitude1 = 0.0
+effectMaxAltitude1 = 5.0
+effectFlags1 = 2147483127 // thrusting only when undeployed.
+
+// Engine flame glow.
+effectHard2 = "hp_com_1"
+effectName2 = "engglow_e.small"
+effectMinAltitude2 = 0.0
+effectMaxAltitude2 = 5.0
+effectFlags2 = 2147483127 // thrusting only when undeployed.
+
 [CraftClass]
 damageEffect1="dmgvhcl1_hadean"
 damageEffect2="dmgvhcl2_hadean"

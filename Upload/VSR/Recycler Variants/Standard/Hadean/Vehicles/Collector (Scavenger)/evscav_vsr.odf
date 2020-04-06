@@ -41,6 +41,15 @@ mass=40000.0 // (stock ivscav=53157.3) {VSR-012}
 
 infoName="evscav_vsr.inf"
 
+effectHard1 = "hp_emit_1"
+effectName1 = "dusttrail3"
+effectMinVelocity1 = 5.0
+effectMaxVelocity1 = 500.0
+effectHard2 = "hp_emit_2"
+effectName2 = "dusttrail3"
+effectMinVelocity2 = 5.0
+effectMaxVelocity2 = 500.0
+
 [CraftClass]
 damageEffect1="dmgvhcl1_hadean"
 damageEffect2="dmgvhcl2_hadean"

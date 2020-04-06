@@ -4,7 +4,7 @@
 
 [GameObjectClass]
 baseName="evartl"
-geometryName="evartl00.xsi"
+geometryName="evartl00.fbx"
 classLabel="assaulttank"
 scrapValue=30
 scrapCost=65
@@ -40,6 +40,8 @@ weaponMask=00011
 weaponHard1="HP_MORTAR_1"
 weaponName1="ghmortar"
 weaponAssault1=0
+recoilName1 = "recoil_1"
+recoilDist1 = -0.3
 
 turretCount=2
 turretName1="turret_y"
@@ -47,6 +49,15 @@ turretName2="turret_x"
 turretName3="hp_eyepoint"
 
 infoName="evartl_vsr.inf"
+
+effectHard1 = "hp_emit_01"
+effectName1 = "dusttrail3"
+effectMinVelocity1 = 3.0
+effectMaxVelocity1 = 500.0
+effectHard2 = "hp_emit_02" 
+effectName2 = "dusttrail3"
+effectMinVelocity2 = 3.0
+effectMaxVelocity2 = 500.0
 
 [CraftClass]
 damageEffect1="dmgvhcl1_hadean"
