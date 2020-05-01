@@ -77,7 +77,7 @@ lightName2=""
 
 [CraftClass]
 rangeScan=1000.0f //3000.0f // Causes massive spam of log errors: DIAG|        CockpitRadar:1424 |11:03:24|126176 |CockpitRadar too complex (pcount 35344 icount 140624). Will not render
-periodScan=5.0f
+periodScan=0.0f
 CanUserBailout=false // Human can exit craft w/ Ctrl-B if true
 CanUserHopout=false
 collideTerrainSound="silence.wav" // Sound on collision w/ terrain
