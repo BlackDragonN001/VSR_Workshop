@@ -4,12 +4,12 @@ saveType [1] =
 0
 binarySave [1] =
 false
-msn_filename = Curiosityvsr.bzn
+msn_filename = curiosityvsr.bzn
 seq_count [1] =
 2507
 saveType [1] =
 0
-g_TerrainName = Curiosityvsr
+g_TerrainName = curiosityvsr
 size [1] =
 69
 [GameObject]
@@ -23,11 +23,11 @@ true
 objAddr = 00000001
 transform [1] =
   right.x [1] =
-8.61216843e-01
+8.61216784e-01
   right.y [1] =
--1.69605706e-02
+-1.69605687e-02
   right.z [1] =
-5.07946134e-01
+5.07946074e-01
   up.x [1] =
 -9.79667157e-03
   up.y [1] =
@@ -35,11 +35,11 @@ transform [1] =
   up.z [1] =
 4.99571934e-02
   front.x [1] =
--5.08132577e-01
+-5.08132517e-01
   front.y [1] =
--4.80001569e-02
+-4.80001532e-02
   front.z [1] =
-8.59930217e-01
+8.59930158e-01
   posit.x [1] =
 4.24657822e+01
   posit.y [1] =
@@ -59,17 +59,17 @@ illumination [1] =
 1.00000000e+00
 euler =
  mass [1] =
-5.72595117e+03
+5.72449658e+03
  mass_inv [1] =
-1.74643472e-04
+1.74687855e-04
  v_mag [1] =
 6.71773970e-01
  v_mag_inv [1] =
 1.48859596e+00
  I [1] =
-3.92654805e+04
+3.92424258e+04
  k_i [1] =
-2.54676615e-05
+2.54826246e-05
  v [1] =
   x [1] =
 7.01083150e-03
@@ -185,11 +185,11 @@ transform [1] =
   front.z [1] =
 9.99991357e-01
   posit.x [1] =
--8.61205006e+00
+-5.76949453e+00
   posit.y [1] =
-2.50000000e+01
+2.48430080e+01
   posit.z [1] =
--3.93734985e+02
+-3.47086029e+02
 name = Spawn
 [GameObject]
 objClass = ccybpool
@@ -414,7 +414,7 @@ transform [1] =
   posit.y [1] =
 2.50000000e+01
   posit.z [1] =
-4.80000000e+01
+1.60000000e+01
 saveClass = 
 illumination [1] =
 1.00000000e+00
@@ -4550,11 +4550,11 @@ transform [1] =
   front.z [1] =
 9.99991357e-01
   posit.x [1] =
-2.94174988e+02
+2.89269836e+02
   posit.y [1] =
-2.50000000e+01
+2.67080154e+01
   posit.z [1] =
--4.09958992e+01
+-1.11683754e+02
 illumination [1] =
 1.00000000e+00
 euler =
@@ -4644,11 +4644,11 @@ transform [1] =
   front.z [1] =
 9.99991357e-01
   posit.x [1] =
-3.13153992e+02
+3.18789001e+02
   posit.y [1] =
-2.50000000e+01
+2.53746262e+01
   posit.z [1] =
--2.31812992e+01
+-8.79893646e+01
 illumination [1] =
 1.00000000e+00
 euler =
@@ -4738,11 +4738,11 @@ transform [1] =
   front.z [1] =
 9.99991357e-01
   posit.x [1] =
-3.32709015e+02
+3.47086121e+02
   posit.y [1] =
-2.50000000e+01
+2.52623215e+01
   posit.z [1] =
-2.03374004e+00
+-5.43589249e+01
 illumination [1] =
 1.00000000e+00
 euler =
@@ -4832,11 +4832,11 @@ transform [1] =
   front.z [1] =
 9.99991357e-01
   posit.x [1] =
-2.50307999e+02
+2.37921707e+02
   posit.y [1] =
-2.50000000e+01
+2.76788712e+01
   posit.z [1] =
--5.03162994e+01
+-1.29618256e+02
 illumination [1] =
 1.00000000e+00
 euler =
@@ -6426,31 +6426,74 @@ pathType = 00000000
 name = AiPath
 sObject = 00000047
 size [1] =
-12
-label = capturegoal2
+6
+label = stage1
 pointCount [1] =
 1
 points [1] =
   x [1] =
-3.22264587e+02
+-3.13956337e+01
   z [1] =
--3.34871521e+02
+1.68014008e+02
 pathType = 00000000
 name = AiPath
 sObject = 00000048
 size [1] =
 12
-label = capturegoal3
+label = capturegoal1
 pointCount [1] =
 1
 points [1] =
   x [1] =
--3.40262360e+02
+-3.45470917e+02
   z [1] =
-3.38072540e+02
+-2.86952911e+02
 pathType = 00000000
 name = AiPath
 sObject = 00000049
+size [1] =
+8
+label = Player_1
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-8.47803497e+00
+  z [1] =
+-4.01800842e+02
+pathType = 00000000
+name = AiPath
+sObject = 0000004A
+size [1] =
+9
+label = edge_path
+pointCount [1] =
+2
+points [2] =
+  x [1] =
+-4.90122986e+02
+  z [1] =
+4.95389008e+02
+  x [1] =
+4.91980011e+02
+  z [1] =
+-4.89348999e+02
+pathType = 00000000
+name = AiPath
+sObject = 0000004B
+size [1] =
+7
+label = Enemy_6
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-1.99368362e+01
+  z [1] =
+3.80522675e+02
+pathType = 00000000
+name = AiPath
+sObject = 0000004C
 size [1] =
 8
 label = 6Patrol3
@@ -6491,76 +6534,20 @@ points [8] =
 2.35858002e+02
 pathType = 00000000
 name = AiPath
-sObject = 0000004A
-size [1] =
-7
-label = Enemy_6
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--1.99368362e+01
-  z [1] =
-3.80522675e+02
-pathType = 00000000
-name = AiPath
-sObject = 0000004B
-size [1] =
-9
-label = edge_path
-pointCount [1] =
-2
-points [2] =
-  x [1] =
--4.90122986e+02
-  z [1] =
-4.95389008e+02
-  x [1] =
-4.91980011e+02
-  z [1] =
--4.89348999e+02
-pathType = 00000000
-name = AiPath
-sObject = 0000004C
-size [1] =
-8
-label = Player_1
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--8.47803497e+00
-  z [1] =
--4.01800842e+02
-pathType = 00000000
-name = AiPath
 sObject = 0000004D
 size [1] =
 12
-label = capturegoal1
+label = capturegoal3
 pointCount [1] =
 1
 points [1] =
   x [1] =
--3.45470917e+02
+-3.40262360e+02
   z [1] =
--2.86952911e+02
+3.38072540e+02
 pathType = 00000000
 name = AiPath
 sObject = 0000004E
-size [1] =
-6
-label = stage1
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--3.13956337e+01
-  z [1] =
-1.68014008e+02
-pathType = 00000000
-name = AiPath
-sObject = 0000004F
 size [1] =
 12
 label = capturegoal6
@@ -6573,7 +6560,33 @@ points [1] =
 -4.29927002e+02
 pathType = 00000000
 name = AiPath
+sObject = 0000004F
+size [1] =
+12
+label = capturegoal2
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+3.22264587e+02
+  z [1] =
+-3.34871521e+02
+pathType = 00000000
+name = AiPath
 sObject = 00000050
+size [1] =
+12
+label = capturegoal4
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+3.45703033e+02
+  z [1] =
+2.72184937e+02
+pathType = 00000000
+name = AiPath
+sObject = 00000051
 size [1] =
 8
 label = 6Patrol1
@@ -6602,7 +6615,20 @@ points [5] =
 3.93266357e+02
 pathType = 00000000
 name = AiPath
-sObject = 00000051
+sObject = 00000052
+size [1] =
+12
+label = capturegoal5
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-2.30619621e+01
+  z [1] =
+3.67586746e+01
+pathType = 00000000
+name = AiPath
+sObject = 00000053
 size [1] =
 8
 label = 6Patrol2
@@ -6667,7 +6693,7 @@ points [14] =
 2.37917007e+02
 pathType = 00000000
 name = AiPath
-sObject = 00000052
+sObject = 00000054
 size [1] =
 12
 label = capturegoal7
@@ -6680,7 +6706,7 @@ points [1] =
 4.24274445e+02
 pathType = 00000000
 name = AiPath
-sObject = 00000053
+sObject = 00000055
 size [1] =
 6
 label = stage3
@@ -6693,7 +6719,7 @@ points [1] =
 9.38186035e+01
 pathType = 00000000
 name = AiPath
-sObject = 00000054
+sObject = 00000056
 size [1] =
 8
 label = 0Patrol4
@@ -6722,7 +6748,7 @@ points [5] =
 2.42033997e+02
 pathType = 00000000
 name = AiPath
-sObject = 00000055
+sObject = 00000057
 size [1] =
 6
 label = 6MLay1
@@ -6735,7 +6761,7 @@ points [1] =
 1.22178818e+02
 pathType = 00000000
 name = AiPath
-sObject = 00000056
+sObject = 00000058
 size [1] =
 6
 label = 6MLay2
@@ -6748,7 +6774,7 @@ points [1] =
 9.50943832e+01
 pathType = 00000000
 name = AiPath
-sObject = 00000057
+sObject = 00000059
 size [1] =
 6
 label = 6MLay3
@@ -6759,32 +6785,6 @@ points [1] =
 1.38402939e+02
   z [1] =
 1.85723068e+02
-pathType = 00000000
-name = AiPath
-sObject = 00000058
-size [1] =
-12
-label = capturegoal4
-pointCount [1] =
-1
-points [1] =
-  x [1] =
-3.45703033e+02
-  z [1] =
-2.72184937e+02
-pathType = 00000000
-name = AiPath
-sObject = 00000059
-size [1] =
-12
-label = capturegoal5
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--2.30619621e+01
-  z [1] =
-3.67586746e+01
 pathType = 00000000
 hasEntered [1] =
 false
