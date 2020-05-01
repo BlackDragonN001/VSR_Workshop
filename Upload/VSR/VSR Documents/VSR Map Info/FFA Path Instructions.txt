@@ -1,0 +1,32 @@
+See example at bottom if this is confusing, but this is how you set up FFA MPI path points...
+
+Place the player path points in some kind of order going around each base area - 15 players maximum (one per base area)
+
+Player_1
+Player_2
+Player_3
+.
+.
+.
+Player_15
+
+
+THEN, place AI enemy path points in the same base areas going in REVERSE ORDER of the player path points, but DO NOT put an enemy path point in Player_1's base.
+Enemy path points should go in decreasing order ENDING with Enemy_6, STARTING with whatever Enemy_# would result in ENDING with Enemy_6
+
+Enemy_15
+Enemy_14
+Enemy_13
+.
+.
+.
+Enemy_6
+
+
+FOR EXAMPLE:
+On a map, LEFT to RIGHT would be placed the players, RIGHT to LEFT would be placed the enemies such that you END with Enemy_6 in the base area RIGHT of Player_1:
+
+Player_1 | Player_2 | Player_3 | Player_4 | Player_5 |
+(NoEnemy)|  Enemy_6 |  Enemy_7 |  Enemy_8 |  Enemy_9 |
+
+This will ensure that the enemies will start the farthest away from the humans and fill up in their direction, and vise-versa with the humans filling toward the enemies.

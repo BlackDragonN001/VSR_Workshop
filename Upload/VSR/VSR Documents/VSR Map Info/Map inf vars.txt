@@ -88,6 +88,9 @@ svar8 = "STvsrcheck.odf"	//File to add to asset check
 
 
 FFA w/ MPI option:
+NOTE: See "FFA Path Instructions.txt" for how to set up FFA w/ MPI option on maps
+NOTE: ivar81-ivar94 determines thug vs commander for each team (starting with team1/player1 being ivar81)
+ivar81 = 0 is a commander, ivar81 = 1 is a thug
 
 [NetVars]
 ivar0 = 0			//Kill limit 0
