@@ -4,11 +4,7 @@
 //
 // Battlezone II - Setup for game mission
 //
-
-
-// Default BZCC bzgame_keys.cfg modified with command to load JCHAT at the end.
-// Add any custom keybindings to JCHAT_LISTS.CFG 
-
+ 
 // Camera views
 Bind("+shift F1", "view.set.cockpit");
 Bind("+shift F2", "view.set.forward");
@@ -58,7 +54,7 @@ Bind("-shift +ctrl F7", "control.team.moveto4");
 // Editor keys
 Bind("+ctrl E", "mission.edit");
 Bind("+ctrl Z", "editor.undo");
-Bind("+ctrl Y", "editor.redo");
+Bind("+ctrl A", "editor.redo");
 
 // Activate chat
 Bind("-shift -ctrl Enter", "network.chatline.activate2");
@@ -119,10 +115,56 @@ Bind("+ctrl P", "playback.stop");
 
 // Screen grab
 Bind("+ctrl G", "iface.screenshot");
-Bind("SysRq", "iface.screenshot");
 
-// Quick Save
-Bind("+ctrl F12", "game.quicksave");
+// Single Player Cheat keys
+Bind("+alt h", "game.cheat bzstealth"); //Change user to team 0 (ignored by AI)
+Bind("+alt j", "game.cheat bzbody");    //Infinite Health
+Bind("+alt k", "game.cheat bztnt");     //Infinite Ammo
+Bind("+alt l", "game.cheat bzradar");   //Full Radar
+Bind("+alt ;", "game.cheat bzfree");    //Infinite Scrap Supply
+Bind("+alt '", "game.cheat bzview");    //Free Sat View, hit Shift+F10 to activate
 
-//Chat Menu 
-Exec("bzgame_jchat_main.cfg");
+// Toggle Normal Maps
+Bind("b", "bump.toggle");
+
+
+
+/////Newkeys for in-game communication and logistics/////
+
+//Build a pod with Q
+Bind ("-shift -ctrl q", "control.base.set1;control.command.item7.trigger");
+
+//Select Entire Team with F11
+Bind("-shift -ctrl F11", "control.team.toggle1");
+Bind("-shift -ctrl F11", "control.team.toggle2");
+Bind("-shift -ctrl F11", "control.team.toggle3");
+Bind("-shift -ctrl F11", "control.team.toggle4");
+
+//Logistical (row 1 of number pad)
+Bind("-shift Numpad1", "network.chateditline 'Stay together';network.chatline.entered");
+Bind("-shift Numpad2", "network.chateditline 'Help me!';network.chatline.entered");
+Bind("-shift Numpad3", "network.chateditline 'Paint me a target!';network.chatline.entered");
+
+//Defensive (row 2 of number pad)
+Bind("-shift Numpad4", "network.chateditline 'RETREAT!!';network.chatline.entered");
+Bind("-shift Numpad5", "network.chateditline 'Defend this area!';network.chatline.entered");
+Bind("-shift Numpad6", "network.chateditline 'Get back to base!';network.chatline.entered");
+
+//Alerts (row 3 of number pad)
+Bind("-shift Numpad7", "network.chateditline 'INCOMING!!!';network.chatline.entered");
+Bind("-shift Numpad8", "network.chateditline 'Watch out...sniper here!';network.chatline.entered");
+Bind("-shift Numpad9", "network.chateditline '&%$#@!, INBOUND BOMBER!!!';network.chatline.entered");
+
+//Requests and commands (perimeter of number pad)
+Bind("-shift Numpad0", "network.chateditline 'Need 2 Pods!!';network.chatline.entered");
+Bind("-shift Numpad.", "network.chateditline 'I need a scav!';network.chatline.entered");
+Bind("-shift NumpadEnter", "network.chateditline 'CANCEL!!!';network.chatline.entered");
+Bind("-shift Numpad*", "network.chateditline 'Hit their pools!';network.chatline.entered");
+Bind("-shift Numpad/", "network.chateditline 'Hit their base!';network.chatline.entered");
+
+
+// Team Colors
+Bind ("+shift ,", "game.teamcolors 0"); //Off   
+Bind ("+shift .", "game.teamcolors 1"); //Default
+Bind ("+shift /", "game.teamcolors 2"); //Team Play
+Bind ("+shift Non-US/?", "game.teamcolors 2"); //Team Play
