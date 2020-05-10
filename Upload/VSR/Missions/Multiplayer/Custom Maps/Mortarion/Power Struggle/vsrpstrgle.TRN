@@ -1,0 +1,42 @@
+[Size]
+MetersPerGrid=8.0
+HeightGranularity=0.1
+MinX=-2048.0
+MinZ=-2048.0
+Width=4096.0
+Depth=4096.0
+Height=-200
+Tile=1
+Color="255 255 255 255"
+
+[NormalView]
+DiffuseColor="255 255 255"
+SpecularColor="15 25 10"
+SpecularPower=256
+
+[Texture] 
+TileTexture0="metal4.tga"
+TileTexture1 = "dark.tga"
+TileTexture2 = "dark2.tga"
+TileTexture3 = "dark3.tga"
+TileTexture4 = "dark4.tga"
+TileTexture5 = "dark5.tga"
+TileTexture6 = "metal2.tga"
+TileTexture7 = "core_1.tga"
+TileTexture8 = "bane2.tga"
+TileTexture9 = "cbextf02.bmp"
+TileTexture10 = "cbextf01.bmp"
+TileTexture11 = "rend6.bmp"
+TileTexture12 = "core_1.bmp"
+TileTexture13 = "core_4.bmp"
+TileTexture14 = "core_5.bmp"
+TileTexture15 = "core_6.bmp"
+TileTexture16 = "core_2.bmp"
+
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRcap3"
+CaptureTarget2 = "VSRcap3"
+CaptureTarget3 = "VSRcap5"
+CaptureTarget4 = "VSRcap5"
