@@ -1,13 +1,13 @@
 // (c) BZ2CP unit "Hedoux"
-// Created by Slaor and Pastell
-// Vehicle V/O's - Zeeder  
-// Voice effects, vehicle sounds - Chipotle
+// Original Concept: Slaor and Pastell
+// Voice acting - Zeeder,  voice effects/vehicle sounds - Chipotle
+// FE Remastered Model and Texture: Jayden Hopkins
 
 [GameObjectClass]
 clearBuildZone=0 // {VSR-005}
 baseName="evatank"
 geometryName="evatank00.fbx"
-CockpitName="evatank_cockpit.xsi"
+CockpitName="evatank_cockpit.fbx"
 classLabel="assaulttank"
 scrapValue=30
 scrapCost=65
@@ -171,10 +171,10 @@ pitchMin=-0.4
 pitchMax=0.9
 laserName1="recoil_1"
 
-[Lod1]
-geometryName="evatankl1.xsi"
-distance=50
+//[Lod1]
+//geometryName="evatankl1.xsi"
+//distance=50
 
-[Lod2]
-geometryName="evatankl2.xsi"
-distance=135
+//[Lod2]
+//geometryName="evatankl2.xsi"
+//distance=135

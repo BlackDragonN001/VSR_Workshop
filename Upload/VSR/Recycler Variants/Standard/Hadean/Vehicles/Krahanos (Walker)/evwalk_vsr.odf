@@ -1,12 +1,13 @@
 // BZ2CP Hadean Walker "Krahanos"
 // Created by Slaor and Pastell
+// FE Remastered Model and Texture: Jayden Hopkins
 
 [GameObjectClass]
 clearBuildZone=0 // {VSR-005}
 
 baseName="evwalk"
 classLabel="iv_walker"
-cockpitName="evwalk_cockpit.xsi"
+cockpitName="evwalk_cockpit.fbx"
 
 geometryName="evwalk_skel.fbx"
 geometryScale=1.0

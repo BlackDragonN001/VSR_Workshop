@@ -1,15 +1,14 @@
 // (c) BZ2CP unit "Xares"
-// Mesh - Slaor, Pastell
-// Skin - Slaor
-// Skin map, odf, model adaptation, animations - Pastell
-// voice acting - Firebird  voice effects - Chipotle
+// Original Concept: Slaor and Pastell
+// Voice acting - Firebird  voice effects - Chipotle
+// FE Remastered Model and Texture: Jayden Hopkins
 
 [GameObjectClass]
 clearBuildZone=0 // {VSR-005}
 
 baseName="evtank"
 geometryName="evtank00.fbx"
-CockpitName="evtank_cockpit.xsi" // cockpit – Tempest storm
+CockpitName="evtank_cockpit.fbx"
 classLabel="wingman"
 geometryScale=1.0
 
@@ -20,6 +19,14 @@ animName2="neutral"
 animFile2="evtanksn.fbx"
 animName3="reverse"
 animFile3="evtanksr.fbx"
+
+animCountCockpit = 3
+animNameCockpit1 = "forward"
+animFileCockpit1 = "evtanksf_cockpit.fbx"
+animNameCockpit2 = "neutral"
+animFileCockpit2 = "evtanksn_cockpit.fbx"
+animNameCockpit3 = "reverse"
+animFileCockpit3 = "evtanksr_cockpit.fbx"
 
 scrapValue=25
 scrapCost=55		
@@ -167,10 +174,10 @@ airborneMaxHeightRatio=4.0
 LIFT_SPRING=8
 LIFT_DAMP=3
 
-[Lod1]
-geometryName="evtankL1.xsi"
-distance=50
+//[Lod1]
+//geometryName="evtankL1.xsi"
+//distance=50
 
-[Lod2]
-geometryName="evtankL2.xsi"
-distance=135
+//[Lod2]
+//geometryName="evtankL2.xsi"
+//distance=135

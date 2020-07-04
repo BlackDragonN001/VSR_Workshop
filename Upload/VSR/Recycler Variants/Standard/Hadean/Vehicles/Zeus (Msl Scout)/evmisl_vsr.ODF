@@ -1,13 +1,13 @@
-// (c) BZ2CP Unit "Zeus"
-// Mesh, skin - Slaor
-// Skin Map, odf, model adaptation, animations - Pastell
+// (c) BZ2CP unit "Zeus"
+// Original Concept: Slaor and Pastell
+// FE Remastered Model and Texture: Jayden Hopkins
 
 [GameObjectClass]
 clearBuildZone=0 // {VSR-005}
 
 baseName="evmisl"
 geometryName="evmisl00.xsi"
-CockpitName="evmisl_cockpit.xsi" // cockpit – Tempest storm
+CockpitName="evmisl_cockpit.fbx"
 animCount=3
 animName1="forward"
 animFile1="evmislsf.fbx"
@@ -15,6 +15,13 @@ animName2="neutral"
 animFile2="evmislsn.fbx"
 animName3="reverse"
 animFile3="evmislsr.fbx"
+animCountCockpit = 3
+animNameCockpit1 = "forward"
+animFileCockpit1 = "evmislsf_cockpit.fbx"
+animNameCockpit2 = "neutral"
+animFileCockpit2 = "evmislsn_cockpit.fbx"
+animNameCockpit3 = "reverse"
+animFileCockpit3 = "evmislsr_cockpit.fbx"
 classLabel="wingman"
 scrapValue=25
 scrapCost=55
@@ -154,10 +161,10 @@ airborneMaxHeightRatio=4.0
 LIFT_SPRING=6
 LIFT_DAMP=0.1
 
-[Lod1]
-geometryName="evmislL1.xsi"
-distance=50
+//[Lod1]
+//geometryName="evmislL1.xsi"
+//distance=50
 
-[Lod2]
-geometryName="evmislL2.xsi"
-distance=130
+//[Lod2]
+//geometryName="evmislL2.xsi"
+//distance=130

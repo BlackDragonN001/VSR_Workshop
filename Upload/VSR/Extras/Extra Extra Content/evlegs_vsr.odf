@@ -8,40 +8,40 @@ classLabel="fv_walker"
 //cockpitName="ivcons_cockpit.xsi"
 infoName="evlegs_vsr.inf"
 
-geometryName="evlegs_skel.xsi"
+geometryName="evlegs_skel.fbx"
 geometryScale=1.0
 
 animCount=10
 
 animName1="idle"
-animFile1="evwalk_idle.xsi"
+animFile1="evwalk_idle.fbx"
 
 animName2="idle2"
-animFile2="evwalk_idle.xsi"
+animFile2="evwalk_idle2.fbx"
 
 animName3="idle3"
-animFile3="evwalk_idle.xsi"
+animFile3="evwalk_idle3.fbx"
 
 animName4="sitdown"
-animFile4="evwalk_sit.xsi"
+animFile4="evwalk_sit.fbx"
 
 animName5="walk"
-animFile5="evwalk_walk.xsi"
+animFile5="evwalk_walk.fbx"
 
 animName6="turn"
-animFile6="evwalk_turn.xsi"
+animFile6="evwalk_turn.fbx"
 
 animName7="death"
-animFile7="evwalk_death01.xsi"
+animFile7="evwalk_death01.fbx"
 
 animName8="death2"
-animFile8="evwalk_death02.xsi"
+animFile8="evwalk_death02.fbx"
 
 animName9="death3"
-animFile9="evwalk_death03.xsi"
+animFile9="evwalk_death03.fbx"
 
 animName10="run"
-animFile10="evwalk_run.xsi"
+animFile10="evwalk_run.fbx"
 
 scrapValue=30
 scrapCost=100
@@ -134,7 +134,7 @@ attackSpeed=35.0
 
 headpiece="neck"
 rightfootpiece="rfoot";
-leftfootpiece="rfoot01";
+leftfootpiece="lfoot";
 
 jumpSound ="avwalke2.wav"
 landSound ="avwalke3.wav"

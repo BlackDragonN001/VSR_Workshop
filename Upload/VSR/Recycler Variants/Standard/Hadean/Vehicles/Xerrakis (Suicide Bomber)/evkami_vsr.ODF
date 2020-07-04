@@ -1,14 +1,13 @@
 // (c) BZ2CP unit "Xerrakis"
-// Mesh - Slaor
-// Skin - Slaor
-// Skin map, odf, game adaptation, animations - Pastell
+// Original Concept: Slaor and Pastell
+// FE Remastered Model and Texture: Jayden Hopkins
 
 [GameObjectClass]
 clearBuildZone=0 // {VSR-005}
 
 baseName="evkami"
 geometryName="evkami00.fbx"
-cockpitName= "evkami_cockpit.xsi" // cockpit – Tempest storm
+cockpitName= "evkami_cockpit.fbx"
 animCount=3
 animName1="forward"
 animFile1="evkamisf.fbx"
