@@ -1,0 +1,20 @@
+[GameObjectClass]
+geometryName="apcann00.xsi"
+classLabel="wpnpower"
+scrapCost=5
+scrapValue=0
+maxHealth=150
+maxAmmo=0
+unitName=NULL
+aiName="PowerUpProcess"
+
+requireCount=1
+requireName1="cbarmo"
+requireText1="Build Dispenser Node"
+
+[PowerUpClass]
+soundPickup="pickup01.wav"
+soundReject="reject.wav"
+
+[WeaponPowerupClass]
+weaponName="gELC_c"
