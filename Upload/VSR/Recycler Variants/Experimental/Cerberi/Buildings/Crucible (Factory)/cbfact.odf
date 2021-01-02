@@ -1,0 +1,61 @@
+[GameObjectClass]
+geometryName="cbfact03.xsi"
+classLabel="factory"
+scrapCost=55
+scrapValue=15	//*10 VSR Release 89
+maxHealth=6000	//*12000 VSR Release 89
+maxAmmo=0
+unitName="Crucible"
+aiName="BuildingProcess"
+aiName2="BuildingProcess"
+heatSignature=2.0
+imageSignature=1.0
+radarSignature=1.0
+isAssault=1
+armorClass=H
+
+requireCount=1
+requireName1="cbpgen"
+requireText1="Build Energy Node" //*"Build Power" (VSR Release 90)
+
+provideCount=1
+provideName1="cbfact"
+
+collisionRadius=4.0
+
+lightHard1="hp_light_1"
+lightName1="cerbpurple"
+lightHard2="hp_light_2"
+lightName2="cerbpurple"
+lightHard3="hp_light_3"
+lightName3="cerb_blue"
+
+[PoweredBuildingClass]
+detectRange=100
+
+[BuildingClass]
+soundAmbient="ibfact00.wav"
+tunnelCount = 1
+
+tunnel01X0 = 2
+tunnel01Z0 = 2.5
+tunnel01DX = 4
+tunnel01DZ = 6
+tunnel01Edge = "wttt"
+
+[FactoryClass]
+buildItem1="cvtankm"	//Moved Harpie to Foundry & added "Light Krul" for balance (VSR Release 90)
+buildItem2="cvtank"	//Original Krul moved to slot 2 (VSR Release 90)
+buildItem3="cvrbomb"
+buildItem4="cvatank"
+buildItem5="cvhatank"
+buildItem6="cvtalon"
+buildItem7="cvdcar"
+buildItem8="cvwalk"
+buildItem9="cvgorg"
+builditem10="cvwraith"
+
+//soundBuild="ibrecy02.wav"
+soundFinish="iapc04.wav"
+//reloadMsg="ivrecy12.wav"
+//rescueMsg="ivrecy13.wav"

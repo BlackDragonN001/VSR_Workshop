@@ -1,0 +1,138 @@
+// =================
+// BLAST CANNON VEHICLE HIT
+// =================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "xsv2.wav"
+damageRadius = 0.0
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+particleTypes = 6
+
+particleClass1 = "xannicar.puff"
+particleCount1 = 3 //5
+particleVeloc1 = "4.0 4.0 4.0"
+particleInherit1 = "0.5 0.5 0.5"
+
+particleClass2 = "xannicar.light"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "xannicar.splat"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+//particleInherit3 = "0.5 0.5 0.5"
+
+particleClass4 = "xannicar.energypuffa"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+particleClass5 = "xannicar.sparkTrails"
+particleCount5 = 4
+particleVeloc5 = "36.0 30.0 36.0"
+particleBias5 = "0.0 8.0 0.0"
+particleInherit5 = "0.5 0.5 0.5"
+
+particleClass6 = "xannicar.Smoke"
+particleCount6 = 5 //7
+particleVeloc6 = "2.2 3.5 2.2"
+particleInherit6 = "0.5 0.5 0.5"
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 1.5
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 10 124 255"
+finishColor = "255 10 124 0"
+startRadius = 0.2
+finishRadius = 4.0
+animateTime = 1.5
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.7
+renderBase = "draw_light"
+startColor = "100 255 100 855"
+finishColor = "0 255 255 0"
+startRadius = 20.0
+finishRadius = 10.0
+animateTime = 0.7
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
+lensFlare = 0
+
+[Splat]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_twirl"
+textureName = "ring.tga"
+textureBlend = "one one modulate"
+startColor = "100 200 255 255"
+finishColor = "0 255 0 0"
+startRadius = 0.1
+finishRadius = 3.5
+animateTime = 0.5
+BottomInteractsWithTerrain = false
+
+[EnergyPuffA]
+simulateBase = "sim_smoke"
+lifeTime = 0.15
+renderBase = "draw_emit"
+emitName = "xannicar.EnergyPuffB"
+emitVariance = "30.0 30.0 0.0"
+emitDelay = 0.03
+emitInherit = "1.0 1.0 1.0"
+
+	[EnergyPuffB]
+	simulateBase = "sim_smoke"
+	lifeTime = 0.3
+	renderBase = "draw_bolt"
+	textureName = "trail2.tga"
+	textureBlend = "one one modulate"
+	textureRate = 0.8
+	texturespeed = -16.0
+	startColor = "100 255 100 255"
+	finishColor = "0 255 255 0"
+	startRadius = 0.05
+	finishRadius = 0.008
+	segmentLength = 0.4
+	segmentVariance = "1.4 1.4 0.0"
+	animateTime = 0.3
+	
+[SparkTrails]
+simulateBase = "sim_ember"
+lifeTime = 2.0
+renderBase = "draw_trail"
+textureName = "spark2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.3
+startColor = "100 255 100 255"
+finishColor = "0 255 255 0"
+startRadius = 0.1
+finishRadius = 0.0
+animateTime = 2.0
+segmentTime = 0.15
+segmentLength = 0.3
+
+[Smoke]
+simulateBase = "sim_smoke"
+lifeTime = 2.0
+renderBase = "draw_twirl"
+textureName = "smoke2.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 90"
+finishColor = "20 20 20 0"
+startRadius = 1.1
+finishRadius = 2.3
+animateTime = 2.0
+rotationRate = 4.0

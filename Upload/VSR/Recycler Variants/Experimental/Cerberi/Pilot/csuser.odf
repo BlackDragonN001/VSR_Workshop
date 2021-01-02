@@ -1,0 +1,8 @@
+// The machine race doesn't really have a pilot,
+// so we just set a default.
+// Used to be default "error.odf" in 1.2 FE
+
+[GameObjectClass]
+clearBuildZone=0 // {VSR-005}
+baseName="cspilo"
+classLabel="cspilo"

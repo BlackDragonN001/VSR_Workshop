@@ -12,13 +12,13 @@ ammoCost=25
 lifeSpan=9.0
 shotSpeed=150.0
 
-damageValue(N)=210
-damageValue(L)=190
-damageValue(H)=150
+damageValue(N)=170 //was 210
+damageValue(L)=150 //was 190
+damageValue(H)=120 //was 150
 
-damageValue(S)=190
-damageValue(D)=150
-damageValue(A)=210
+damageValue(S)=150 //was 190 
+damageValue(D)=120 //was 150
+damageValue(A)=170 //was 210
 
 [MissileClass]
 omegaTurn=1.5

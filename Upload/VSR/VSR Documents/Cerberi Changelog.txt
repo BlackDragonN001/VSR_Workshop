@@ -1,0 +1,78 @@
+This document lists the changes made to the Cerberi race as it is balanced for strategy.
+
+ORIGINAL PLAYABLE CERBERI RELEASE DATE: July 17th, 2020
+
+
+
+Release 87: July 17th, 2020
+OBJECTIVE: Release the raw 1.3 version of Cerberi as a test for VSR
+
+-Playable Cerberi released to VSR
+-Switched Service Pods to slot #7 in Foundry build menu
+
+
+
+Release 88: August 9th, 2020
+OBJECTIVE: Improve playability of Cerberi in a VSR strategy setting by reducing errors and bugs, begin making the Cerberi race consistent with other VSR races
+
+-Switched Fabricator to slot #5 in Foundry build menu to be consistent with other races
+-Fixed bad filenames on Spore Mine and Singularity explosions - these will look good now
+-Halved the distance between the Dispenser Node and its dropoff so weapon drops don't land on other buildings
+-Foundry will now build VSR Service Pods instead of stock service pods
+-AI will now correctly shoot at the Drainer model and its upgrade
+-Drainer & its upgrade now have proper animations
+-Fabricator's mass now matches the constructor units of other races
+-Sentinel AI and physics adjusted to be VSR-enabled (like other races)
+-Fixed the Cerberi pilot to be a Scion pilot with no sniper as a placeholder for a snipeless Cerberi pilot
+-Fixed Svar8 errors for Strategy and MPI - please look for others
+-(Gravey) Foundry will now build Empty Scouts for 30 scrap (no shield)
+-(Gravey) Crucible pathing errors fixed; units will now exit the Crucible build deck correctly
+
+
+
+Release 89: August 10th, 2020
+OBJECTIVES: Continue to remove errors and make adjustments for playability.
+	    Begin making balance changes by adjusting Cerberi Foundry scrap bar
+
+-Foundry will now have a green scrap bar with a maximum of 60 scrap
+-Energy Node & Crucible HP values set to match that of other races (Crucible has the same HP as ISDF Factory)
+-Drainer initDelay removed so it will start collecting scrap immediately upon deploy/upgrade
+-Cerberi Scavengers added isAssault = 1 to ODF so that units morph to kill it
+-Drainer & its upgrade will drop 4 pieces of loose now instead of 1
+-Upgraded Drainer is now named "Drainer+"
+-Fixed xscavxpl.odf missing file
+
+
+
+Release 90: August 15th, 2020
+OBJECTIVES: Balance early game Cerberi (up to 5-10 minutes) by adjusting Krul and Demon units
+
+-Fixed missing scavxpl.wav
+-Modified Kruls to cost 65 scrap and drop 4 pieces of loose/give 20 scrap when recycling (matching other late game tanks)
+-Kruls now require Uplink Array, Dispenser Node, and Regenerator in order to be built
+-Added "Light Krul" with no requirements to replace the original Krul in early game (cost 50, no shield, combat rocket & no Particle Shredder)
+-Crucible now builds Light Kruls in place of Harpies (build option 1)
+-Foundry now builds Harpies (build option 4)
+-Demon now costs 100 scrap instead of 80
+-Demon is now limited to 1 per team
+-Demon now has a radar range of 300 instead of 600 (so you can't see most of the map anymore if you have a Demon out)
+-Empty Triton now costs 20 scrap from the Foundry
+
+
+
+Release 91: January 1st, 2021
+OBJECTIVES: Continue implementing bug fixes as bugs are found in game following a more balanced early game.
+-Demon passed to an enemy thug will now (hopefully) count toward the unit limit of 1 Demon per team
+-Triton and Empty Triton scrap values reduced to 15 from 30 (they will now only drop 3 pieces of loose and cancel/recycle for 15), consistent with other races
+-(Gravey) Rapido now requires Anti-Matter Generator to drop from Dispenser Node instead of Dispenser Node and Regenerator (to delay it in the tech tree)
+-(Gravey) Cerberi Blast now requires Research Node to drop from Dispenser Node instead of Dispenser Node and Regenerator (to delay it in the tech tree)
+-(Gravey) Havoc Missile damage reduced by 20% (due to potentially extremely high fire rate)
+-(Gravey) Rapier Gun's range reduced to 150 from 200 (both combat and assault)
+-(Gravey) Dread vehicle limit set to 1
+-(Gravey) Excluder now has a range of 400 instead of 600 (to match 2 Scion Jammers)
+-(Gravey) Excluder now has a build limit of 1
+-(Gravey) Excluder now requires Anti-Matter Generator and Research Node instead of Regenerator and Uplink Array (to put it more in line with Scion Jammer tech tree)
+
+-TODO: Check to make sure that you can only build 1 Dread per team and not 1 Dread per player
+-TODO: Check Havoc ammo consumption - reduce?
+-TODO: Update .inf files with new stats (later)

@@ -47,6 +47,9 @@ isAssault=1
 armorClass=H
 requireCount=0
 
+mass=7000 // {VSR-012}
+StayWithOwner = true // MPI Team6-10 fix. -GBD
+
 [CraftClass]
 rangeScan=400.0f
 periodScan=5.0f

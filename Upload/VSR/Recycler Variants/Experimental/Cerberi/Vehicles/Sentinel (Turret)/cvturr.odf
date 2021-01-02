@@ -50,6 +50,29 @@ periodScan=3.0
 velocJam=1.0
 engageRange=150
 
+///////////VSR STUFF////////////
+
+// VSR Turret AI
+CanAIPForceIdle=false
+DoIdleDispatch=false
+sitAttackCheckAbleToHit=true // Check if can hit. If check returns false, hold immediately.
+gunTowerProcessCheckCantHit=true
+
+// {VSR-001}
+// VSR Turret Physics
+use13Aim=false
+aim12CannonError0=0.05
+aim12CannonError1=-0.2
+aim12CannonError2=-0.03
+aim12CannonError3=-0.1
+//weaponPitch=1.5 // *1.0
+MinWeaponPitch = 1.0
+MaxWeaponPitch = 1.5
+pitchScatter=0.2
+steerScatter=0.1
+
+
+
 //selectGoMsg="fvturr06.wav"
 //selectDeployMsg="fvturr01.wav"
 //selectOtherMsg="fvturr08.wav"

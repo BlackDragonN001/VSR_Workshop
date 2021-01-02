@@ -1,0 +1,43 @@
+[GameObjectClass]
+
+limitClass1Count=1	
+limitClass1="cbjamm"	
+
+geometryName="cbjam01.xsi"
+classLabel="jammer"
+collisionRadius=5.0
+scrapCost=50
+scrapValue=3
+maxHealth=800
+maxAmmo=0
+powerCost=0
+unitName="Excluder"
+heatSignature=2.0
+imageSignature=1.0
+radarSignature=1.0
+canCollide=1
+isAssault=1
+ownsTerrain=1
+
+armorClass=H
+
+buildSupport="A"
+buildRequire="F"
+
+requireCount=2
+requireName1="cbtcen"
+requireText1="Build Research Node" // was uplink
+requireName2="cbagen"
+requireText2="Build Anti-Matter Generator" //was regenerator
+provideCount=1
+provideName1="cbjamm"
+
+[PoweredBuildingClass]
+powerCost=0
+detectRange=10
+
+[BuildingClass]
+soundAmbient="sjam01.wav"
+
+[JammerTowerClass]
+jammerRange=400.0 //was 600

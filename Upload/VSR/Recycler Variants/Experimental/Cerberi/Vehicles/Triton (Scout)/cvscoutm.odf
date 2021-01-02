@@ -1,0 +1,28 @@
+//VSR Triton Empty Scout
+
+[GameObjectClass]
+classLabel="cvscout"
+customCost=30  // *60   {VSR-054} 
+buildTime=10.0 // *15.0 {VSR-006}
+scrapCost = 20 // *30 (VSR Release 90)
+
+// Stock values
+weaponMask=00001
+weaponHard1="HP_ROCKET_1"
+weaponName1="gcvfaf_c"
+weaponAssault1=0
+weaponHard2="HP_ROCKET_2"
+weaponName2="gcvfaf_c"
+weaponAssault2=0
+weaponHard3="HP_SHIELD_1"
+weaponName3=""
+weaponAssault3=0
+unitName="Empty Triton"
+aiName="SentryProcess"
+aiName2="SentryProcess"
+weaponHard4=""
+weaponName4=""
+weaponAssault4=0
+
+soundThrust="cvscout_CERB.wav"
+soundTurbo="cvscout1_CERB.wav"

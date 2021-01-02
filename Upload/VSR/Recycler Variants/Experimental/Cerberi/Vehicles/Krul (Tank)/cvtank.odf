@@ -5,8 +5,8 @@
 baseName="cvtank"
 geometryName="cvspider00.xsi"
 classLabel="wingman"
-scrapValue=40
-scrapCost=50		
+scrapValue=20	//*40 (VSR Release 90)
+scrapCost=65	//*50 (VSR Release 90)
 customCost=55
 buildTime=10.0
 customTime=15.0
@@ -23,7 +23,14 @@ isAssault=0
 canSnipe=0
 armorClass=L
 needPilot=1
-requireCount=0
+
+requireCount=3
+requireName1 ="cbcbun"
+requireText1 ="Build Uplink Array"
+requireName2 ="cbarmo"
+requireText2 ="Build Dispenser Node"
+requireName3 ="cbsbay"
+requireText3 ="Build Regenerator"
 
 weaponMask=00001
 weaponHard1="HP_CANNON_1"

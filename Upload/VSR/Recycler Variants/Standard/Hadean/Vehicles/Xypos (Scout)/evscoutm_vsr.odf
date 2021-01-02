@@ -3,7 +3,8 @@
 
 [GameObjectClass]
 classLabel="evscout_vsr"
-scrapValue=10 // *20
+scrapValue=15 // *20  //Drops 3 pieces of loose
+scrapReturn=10 // *20 //Cancels for 10
 scrapCost=20
 customCost=30
 buildTime=10.0 // *15.0 {VSR-006}
