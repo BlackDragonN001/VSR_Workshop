@@ -1,1 +1,1 @@
-# VSR_Workshop
+# VSR Workshop
