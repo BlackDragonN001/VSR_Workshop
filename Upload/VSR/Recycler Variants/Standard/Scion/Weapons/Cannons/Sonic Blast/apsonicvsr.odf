@@ -2,10 +2,11 @@
 classLabel="apsonic"
 scrapCost=20 // *30 {VSR-164}
 
-// {VSR-402} *Used to require overseer
+// {VSR-402} *Used to require overseer (OUTDATED)
+//VSR Release 93: Sonic now requires only a Forge
 requireCount=1
-requireName1="fbstro"
-requireText1="Build Stronghold"
+requireName1="fbforg_vsr"
+requireText1="Build Forge"
 
 [WeaponPowerupClass]
 weaponName="gsonicvsr_c"
