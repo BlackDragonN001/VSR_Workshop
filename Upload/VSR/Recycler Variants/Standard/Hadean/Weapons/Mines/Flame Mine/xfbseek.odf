@@ -10,7 +10,7 @@ damageRadius = 10.0
 
 damageValue(N) = 200 // none
 damageValue(L) = 180 // light
-damageValue(H) = 160 // heavy
+damageValue(H) = 128 // heavy	**WAS 160 - VSR Release 93
 
 damageValue(S) = 100 // standard
 damageValue(D) = 100 // deflection
