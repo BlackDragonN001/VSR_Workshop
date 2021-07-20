@@ -17,6 +17,8 @@ canRescue=0 // {VSR-106}
 //attackTask = "ArtlAttack"
 //subAttackTask = "ArtlSubAttack"
 
+weaponPitch = 1.57 // Closer to full pi/2. -GBD
+
 [HoverCraftClass]
 velocForward=21.37 // *15.0 {VSR-110}
 velocReverse=15.37 // *15.0 {VSR-110}
