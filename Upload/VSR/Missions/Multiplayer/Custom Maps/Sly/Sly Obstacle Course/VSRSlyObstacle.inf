@@ -1,0 +1,31 @@
+[description]
+MissionName="VSR DM: Sly's Obstacle Course"
+Maptga="VSRSlyObstacle.dds"
+mapDesc="VSRSlyObstacle.des"
+Myside=1
+
+[NetVars]
+ivar0=0				//Unlimited kill limit
+ivar1=0				//Unlimited time limit
+ivar2=10			//Default player limit is 10
+ivar3=0				//Teamplay defaults to off
+ivar4=7				//Only pilots originally selected
+ivar5=1				//Game type: deathmatch (used for filtering games)
+ivar7=7				//Vehicle-only deathmatch
+ivar9=0				//Default bot count is 0
+ivar10=0			//Everyone will pause on a join until movepackets from a player come in
+ivar11=0			//Teamplay NOT locked (you can play in teams if you want)
+ivar13=15			//Spawn kill if killed within 15 seconds
+ivar14=1			//+1 point awarded for killing AI craft
+ivar15=1			//+1 kill awarded for killing AI craft
+ivar16=0			//Humans vs bots defaults to OFF
+ivar19=0			//1 shot kill mode defaults to OFF
+ivar23=0			//Rabbit mode defaults to OFF
+ivar27=0			//Default # of animals on the map
+ivar33=0			//Voice chat disabled
+ivar34=-1			//unlimited alt-tab time limit
+svar1="Team 1"
+svar2="Team 2"
+svar4="mpvehiclesdmvsr.odf"	//Available units will be all VSR units
+svar7="dm"			//Extra options menu will be the DM menu
+svar11="Rogues"			//Team name for teams 11-15 is "Rogues"
