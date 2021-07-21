@@ -18,6 +18,43 @@ startingVariant="_vsr"
 pilotRespawnWithSniper="fsuser" 
 pilotRespawnWithOutSniper="fsuser_m"
 
+[BuildingClass]
+tunnelCount = 5
+//middle
+tunnel01X0 = 3
+tunnel01Z0 = 1
+tunnel01DX = 2
+tunnel01DZ = 6
+tunnel01Edge = "TWTW"
+
+//left top
+tunnel02X0 = 1
+tunnel02Z0 = 1
+tunnel02DX = 2
+tunnel02DZ = 2
+tunnel02Edge = "TWWT"
+
+//right top
+tunnel03X0 = 5
+tunnel03Z0 = 1
+tunnel03DX = 2
+tunnel03DZ = 2
+tunnel03Edge = "TTWW"
+
+//bottom left
+tunnel04X0 = 1
+tunnel04Z0 = 5
+tunnel04DX = 2
+tunnel04DZ = 2
+tunnel04Edge = "WWTT"
+
+// bottom right
+tunnel05X0 = 5
+tunnel05Z0 = 5
+tunnel05DX = 2
+tunnel05DZ = 2
+tunnel05Edge = "WTTW"
+
 [FactoryClass]
 weaponConfig="fweapon_vsr.odf"
 buildItem1="fvscav_vsr"
