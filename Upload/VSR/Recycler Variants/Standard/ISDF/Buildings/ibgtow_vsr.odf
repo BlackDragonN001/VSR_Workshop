@@ -11,3 +11,22 @@ provideName5 = "base"
 
 weaponName1="gtowervsr"
 weaponName2="gtowervsr"
+
+//The following was added for VSR Release 95 to make Gun Towers a little smarter and more agressive
+[CraftClass]
+use13Aim=true //was false
+weaponPitch = 1.8 //was 1.5 (can aim slightly upside-down to track targets better)
+//steerFactorTurret = 10 //no idea - tested
+//pitchFactor = 10.0f //no idea - tested
+
+fireConeXBase = 0.75 //Was added, now continues to fire even if it might not hit its target
+fireConeYBase = 0.75 //Was added, now continues to fire even if it might not hit its target
+
+filterFactor0=1.0 //To make Turret AI Level 0 more accurate
+filterFactor1=1.0 //To make Turret AI Level 1 more accurate
+filterFactor2=1.0 //To make Turret AI Level 2 more accurate
+filterFactor3=1.0 //To make Turret AI Level 3 more accurate
+
+[TurretCraftClass]
+omegaTurret = 5.0f //was 2.0, changed to 5.0f for faster reaction (side effect: faster idle spin)
+alphaTurret = 5.0f //added for faster reaction (I think)?

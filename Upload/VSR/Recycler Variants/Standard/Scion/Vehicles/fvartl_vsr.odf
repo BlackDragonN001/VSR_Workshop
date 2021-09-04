@@ -14,8 +14,9 @@ provideName4="AntiAir"
 
 [CraftClass]
 canRescue=0 // {VSR-106}
-//attackTask = "ArtlAttack"
-//subAttackTask = "ArtlSubAttack"
+attackTask = "ArtlAttack"
+subAttackTask = "ArtlSubAttack"
+DefendTask = "ArtlAttack"
 
 weaponPitch = 1.57 // Closer to full pi/2. -GBD
 

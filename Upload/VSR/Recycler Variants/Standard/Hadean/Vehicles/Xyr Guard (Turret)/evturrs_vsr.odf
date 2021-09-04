@@ -22,25 +22,48 @@ weaponName2="gslicer_a"
 
 infoName="evturr_vsr.inf"
 
+[CraftClass]
 // VSR Turret AI
 CanAIPForceIdle=false
 DoIdleDispatch=false
 sitAttackCheckAbleToHit=true // Check if can hit. If check returns false, hold immediately.
 gunTowerProcessCheckCantHit=true
 
-// VSR Turret Physics
-use13Aim=false
-aim12CannonError0=0.05
-aim12CannonError1=-0.2
-aim12CannonError2=-0.03
-aim12CannonError3=-0.1
+// {VSR-001}
+// VSR Turret Physics for looking straight up and not all the way down
 //weaponPitch=1.5 // *1.0
 MinWeaponPitch = 1.0
 MaxWeaponPitch = 1.5
-pitchScatter=0.2
-steerScatter=0.1
 
-[CraftClass]
+// VSR Turret Physics
+//Updated for BZCC VSR Release 95...
+use13Aim=true //Was false, now uses 1.3 aiming code instead of 1.2 aiming code
+fireConeXBase = 0.75 //Was added, now continues to fire even if it might not hit its target
+fireConeYBase = 0.75 //Was added, now continues to fire even if it might not hit its target
+filterFactor0=1.0 //To make Turret AI Level 0 more accurate
+filterFactor1=1.0 //To make Turret AI Level 1 more accurate
+filterFactor2=1.0 //To make Turret AI Level 2 more accurate
+filterFactor3=1.0 //To make Turret AI Level 3 more accurate
+
+//Use13Aim Settings (not sure what these do, was testing for Release 95)
+//omegaScaleTurret = 2.0f
+//alphaScaleTurret = 2.0f
+//steerFactorTurret = 1.0f
+//omegaFactorTurret = 0.25f
+
+//Old 1.2 aiming settings
+//aim12CannonError0=0.05
+//aim12CannonError1=-0.2
+//aim12CannonError2=-0.03
+//aim12CannonError3=-0.1
+
+//These were either in the original VSR Turret before Release 95 ODF or tested for Release 95 and seem to do nothing...
+//pitchScatter=0.2 //Not in ODF documentation - probably does nothing
+//steerScatter=0.1 //Not in ODF documentation - probably does nothing
+//pitchFactor = 10.0f //Added for testing
+//pitchFilter = 10.0f //Added for testing
+//steerFactor=0.5 //Added for testing
+
 damageEffect1="dmgvhcl1_hadean"
 damageEffect2="dmgvhcl2_hadean"
 damageEffect3="dmgvhcl3_hadean"
@@ -49,6 +72,10 @@ damageEffect4="dmgvhcl4_hadean"
 velocJam=1.0
 
 [TurretTankClass]
+// {VSR-001}
 // VSR Turret Physics
-omegaTurret=1.0 // ZST
-alphaTurret=1.75 // ZST
+
+//Updated for BZCC VSR Release 95...
+//Side effect is that idle Turret spins faster
+omegaTurret=10.0f // Was 1.0 For Aim12 (but 2.0 worked better)
+alphaTurret=10.0f // Was 1.75 For Aim12 (but 1.75 worked better)
