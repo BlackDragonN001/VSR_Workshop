@@ -1,0 +1,95 @@
+[GameObjectClass] //Mist created by F9bomber - 2021
+//geometryName = "igflar00.fbx"
+//classLabel = "flare"
+geometryName = NULL
+classLabel = "i76building"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = " "
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+AllowUnderGroundSpawn = 1
+canCollide = 0
+canInteract = 0
+scanTeamLimit = 3
+ignoreMissingInf = true
+unitName = "Mist"
+effectHard1 = "Mist"
+effectName1 = "mist.render"
+
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "mist.core"
+renderName2 = "mist.cloudemit"
+renderName3 = "mist.glowy"
+renderName4 = "mist.cloudemit2"
+
+[Core]
+renderBase = "draw_twirl"
+textureName = "acidcloud.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "50 200 255 127"
+finishColor = "50 200 255 127"
+startRadius = 2.0
+finishRadius = 20.0
+animateTime = 5.0
+rotationRate = 2.0
+BottomInteractsWithTerrain = false
+
+[glowy]
+renderBase = "draw_twirl"
+textureName = "acidcloud.tga"
+textureBlend = "one one modulate"
+startColor = "204 255 255 127"
+finishColor = "230 255 255 127"
+startRadius = 8.0
+finishRadius = 3.0
+animateTime = 2.0
+rotationRate = -5.0
+
+[CloudEmit]
+renderBase = "draw_emit"
+emitName = "mist.cloudpuff"
+emitDelay = 0.1 //0.2
+emitVariance = "20.0 0.0 20.0" //"40.0 0.0 40.0"
+emitPosVariance = "30.0 0.0 30.0"
+
+[CloudPuff]
+simulateBase = "sim_dust"
+lifeTime = 6.0
+renderBase = "draw_twirl"
+textureName = "acidcloud.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "255 255 255 200" //"63 127 0 127"
+finishColor = "255 255 255 0" //"31 63 0 0"
+startRadius = 5.0
+finishRadius = 12.0
+animateTime = 6.0
+rotationRate = 3.0
+BottomInteractsWithTerrain = false
+
+[CloudEmit2]
+renderBase = "draw_emit"
+emitName = "mist.cloudpuff2"
+emitDelay = 0.1 //0.05
+emitVariance = "40.0 0.0 40.0"
+emitPosVariance = "15.0 0.0 15.0"
+
+[CloudPuff2]
+simulateBase = "sim_dust"
+lifeTime = 6.0
+renderBase = "draw_twirl"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "179 235 255 127"//"50 200 255 127"
+finishColor = "50 200 255 127"
+startRadius = 5.0
+finishRadius = 14.0
+animateTime = 6.0
+rotationRate = 3.0
+BottomInteractsWithTerrain = false

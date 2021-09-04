@@ -1,0 +1,47 @@
+[GameObjectClass] //waterfall (NEW) - SirBramley and F9bomber - 2021
+geometryName = NULL
+classLabel = "i76building"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = " "
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+AllowUnderGroundSpawn = 1
+canCollide = 0
+canInteract = 0
+scanTeamLimit = 3
+ignoreMissingInf = true
+
+effectHard1 = " "
+effectName1 = "waterfall.render"
+
+[render]
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "waterfall.beamemitter"
+
+[beamemitter]
+renderBase = "draw_emit"
+emitName = "waterfall.beamemit"
+emitDelay = 2.0
+emitVelocity = "0.0 -120.0 0.0"//60
+emitVariance = "0.0 0.0 0.0"
+
+[beamemit]
+simulateBase = "sim_smoke"
+lifeTime = 100000000.0
+renderBase = "draw_trail"
+textureName = "trail4.tga"
+textureBlend = "one one modulate"
+textureRate = 0.01
+textureSpeed = -0.3
+startColor = "179 235 255 127"//"50 200 255 127"
+finishColor = "50 200 255 127"
+startRadius = 4.0
+finishRadius = 10.0
+segmentTime = 8.0
+maxDist = 1e6
+maxCount = 128

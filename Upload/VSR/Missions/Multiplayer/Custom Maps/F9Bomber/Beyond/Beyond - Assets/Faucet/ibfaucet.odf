@@ -1,0 +1,22 @@
+[GameObjectClass] //Faucet by Autarch Katherlyn - 2021
+geometryName = "ibfaucet00.fbx"
+classLabel = "i76building"
+scrapCost = 8
+scrapValue = 3
+maxHealth = 10000
+addHealth = 10000
+unitName = "Faucet"
+heatSignature = 0.8
+imageSignature = 8.0
+radarSignature = 1.0
+collisionRadius = 5.0
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+ownsTerrain = 1
+armorClass = H
+
+effectHard1 = "hp_emit_1"
+effectName1 = "waterfall.render"
+
+[BuildingClass]

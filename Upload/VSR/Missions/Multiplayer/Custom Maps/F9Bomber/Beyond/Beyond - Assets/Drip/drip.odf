@@ -1,0 +1,63 @@
+[GameObjectClass] //drip- SirBramley and F9bomber - 2021
+geometryName = NULL
+classLabel = "i76building"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = " "
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+AllowUnderGroundSpawn = 1
+canCollide = 0
+canInteract = 0
+scanTeamLimit = 3
+ignoreMissingInf = true
+
+effectHard1 = " "
+effectName1 = "drip.render"
+
+[render]
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "drip.pulseemitter"
+
+[pulseemitter]
+renderBase = "draw_emit"
+emitName = "drip.pulseemit"
+emitDelay = 6.0 //4.0 //this makes them "drop" longer - EH
+emitDelayVar = 5.5//3.5 
+emitVelocity = "0.0 -30.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[pulseemit]
+simulateBase = "sim_smoke"
+lifeTime = 100000000.0//10.0
+renderBase = "draw_multi"
+renderCount = 1
+//renderName1 = "drip.light" //For optimization - EH
+renderName1 = "drip.trail"
+
+//[Light]
+//renderBase = "draw_light"
+//startColor = "50 127 255 1000"
+//finishColor = "50 127 255 1000"
+//startRadius = 100.0
+//finishRadius = 100.0
+//animateTime = 0.1
+//attenuateConstant = 1.0
+//attenuateLinear = 0.0
+//attenuateQuadratic = 15.0
+//lensFlare = true
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "trail4.tga"
+textureBlend = "one one modulate"
+textureRate = 0.01
+startColor = "50 127 255 127"
+finishColor = "0 127 255 0"
+startRadius = 0.5
+finishRadius = 0.0
+segmentTime = 0.2

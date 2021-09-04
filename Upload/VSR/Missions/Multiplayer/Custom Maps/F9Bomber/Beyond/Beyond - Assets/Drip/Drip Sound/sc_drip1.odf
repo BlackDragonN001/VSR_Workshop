@@ -1,0 +1,15 @@
+[GameObjectClass]
+geometryName = "soundcube.xsi"
+classLabel = "I76Sign"
+scrapCost = 1
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+canCollide = 0
+canDetect = 0
+canInteract = 0
+unitName = "Drip"
+
+[BuildingClass]
+SoundAmbient = "sc_drip1F.wav"
+SoundAmbientDist = 5.0
