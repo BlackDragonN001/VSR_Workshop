@@ -59,10 +59,10 @@ rangeScan=200.0
 periodScan=0.0
 velocJam=0.0
 
-braccelFactor=0.09
-velFactor =	0.3
-steerFactor=1.5
-omegaFactor=0.1
+braccelFactor=0.1 //Was 0.09, changed to be the same as the ISDF Scavenger (Release 96)
+velFactor =0.3
+steerFactor=1.0 //Was 1.5, changed to be the same as the ISDF Scavenger (Release 96)
+omegaFactor=1.0 //Was 0.1, , changed to be the same as the ISDF Scavenger (Release 96)
 
 selectWaitMsg="evscav01.wav"
 selectGoMsg="evscav02.wav"
@@ -89,7 +89,7 @@ velocReverse=10.0
 accelThrust=5.0
 
 omegaSpin=1.0
-omegaTurn=0.6
+omegaTurn=0.5 //Was 0.6, changed to be the same as the ISDF Scavenger (Release 96)
 alphaSteer=8.0 // 2.0* {VSR-014}
 
 TREAD_STATIC_FRICTION=5.0 //was 1.5... reverted because it didn't work in release 73
