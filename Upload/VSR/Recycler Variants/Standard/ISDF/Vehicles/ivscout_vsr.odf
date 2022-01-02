@@ -24,6 +24,8 @@ omegaTurn=3.0   // *3.5 {VSR-051}
 alphaSteer=7.5  // *5.5 {VSR-051}
 // omegaTurnAttenuation=8.5 // Changed to insane values and noticed absolutely no difference...
 
+accelThrust = 25.0 // acceleration //25.0
+
 // VSR Physics {VSR-000}
 MoreLike12Physics=true
 OverWaterVelocFrontMult=1.01
