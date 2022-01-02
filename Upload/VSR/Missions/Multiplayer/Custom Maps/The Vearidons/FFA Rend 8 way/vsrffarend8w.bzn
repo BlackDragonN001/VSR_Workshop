@@ -6,16 +6,16 @@ binarySave [1] =
 false
 msn_filename = vsrffarend8w.bzn
 seq_count [1] =
-871
+875
 saveType [1] =
 0
 g_TerrainName = vsrffarend8w
 size [1] =
 341
 [GameObject]
-objClass = player
+objClass = ivscout
 seqno [1] =
-800001
+800367
 team [1] =
 17
 isUser [1] =
@@ -23,75 +23,75 @@ true
 objAddr = 00000001
 transform [1] =
   right.x [1] =
--9.06901777e-01
+-8.82925928e-01
   right.y [1] =
--9.51908762e-04
+4.33285577e-38
   right.z [1] =
--4.21330839e-01
+4.69511628e-01
   up.x [1] =
-7.47729279e-03
+-6.92084479e-09
   up.y [1] =
-9.99799252e-01
+9.99999881e-01
   up.z [1] =
--1.83534808e-02
+-1.05070734e-08
   front.x [1] =
-4.21263725e-01
+-4.69511360e-01
   front.y [1] =
--1.97952185e-02
+-6.59017832e-38
   front.z [1] =
--9.06712651e-01
+-8.82925808e-01
   posit.x [1] =
--1.22964575e+03
+5.80188477e+02
   posit.y [1] =
-1.22392754e+02
+1.21782753e+02
   posit.z [1] =
-9.09554077e+02
+1.34574329e+03
 abandoned [1] =
 0
 curAmmo [1] =
-1.20000000e+03
+1.50000000e+03
 maxAmmo [1] =
-1.20000000e+03
+1.50000000e+03
 addAmmo [1] =
-5.00000000e+00
-curPilot = psuser
+1.00000000e+00
+curPilot = ispilo
 illumination [1] =
 1.00000000e+00
 euler =
  mass [1] =
-1.30762100e+04
+5.72449658e+03
  mass_inv [1] =
-7.64747601e-05
+1.74687855e-04
  v_mag [1] =
-1.43969810e+00
+2.26497650e-05
  v_mag_inv [1] =
-6.94590092e-01
+4.41505703e+04
  I [1] =
-1.44904813e+05
+3.92424258e+04
  k_i [1] =
-6.90108209e-06
+2.54826246e-05
  v [1] =
   x [1] =
-1.42701340e+00
+0.00000000e+00
   y [1] =
--9.38906148e-02
+-2.26497650e-05
   z [1] =
--1.65976092e-01
+0.00000000e+00
  omega [1] =
   x [1] =
-0.00000000e+00
+1.91401025e-37
   y [1] =
-0.00000000e+00
+1.41943384e-37
   z [1] =
-0.00000000e+00
+1.34834833e-37
  Accel [1] =
   x [1] =
--3.97211766e+00
+0.00000000e+00
   y [1] =
-2.47113407e-01
+0.00000000e+00
   z [1] =
-4.66175914e-01
-name = Sabre
+0.00000000e+00
+name = Scout
 saveFlags [1] =
 108
 isVisible [1] =
@@ -101,7 +101,7 @@ EffectsMask [1] =
 isSeen [1] =
 2
 groupNumber [1] =
-0
+-1
 undefaicmd =
 priority [1] =
 0
@@ -3541,7 +3541,7 @@ false
 objAddr = 0000002B
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -3557,7 +3557,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.12417004e+03
   posit.y [1] =
@@ -3635,7 +3635,7 @@ false
 objAddr = 0000002C
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -3651,7 +3651,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.10564001e+03
   posit.y [1] =
@@ -3729,7 +3729,7 @@ false
 objAddr = 0000002D
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -3745,7 +3745,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.12275000e+03
   posit.y [1] =
@@ -3823,7 +3823,7 @@ false
 objAddr = 0000002E
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -3839,7 +3839,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.15475000e+03
   posit.y [1] =
@@ -3917,7 +3917,7 @@ false
 objAddr = 0000002F
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -3933,7 +3933,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.16247998e+03
   posit.y [1] =
@@ -4011,7 +4011,7 @@ false
 objAddr = 00000030
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -4027,7 +4027,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.15750000e+03
   posit.y [1] =
@@ -4105,7 +4105,7 @@ false
 objAddr = 00000031
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -4121,7 +4121,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -2.87000000e+02
   posit.y [1] =
@@ -4199,7 +4199,7 @@ false
 objAddr = 00000032
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -4215,7 +4215,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -2.67270996e+02
   posit.y [1] =
@@ -4293,7 +4293,7 @@ false
 objAddr = 00000033
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -4309,7 +4309,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -2.44835007e+02
   posit.y [1] =
@@ -4387,7 +4387,7 @@ false
 objAddr = 00000034
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -4403,7 +4403,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -2.36856003e+02
   posit.y [1] =
@@ -4481,7 +4481,7 @@ false
 objAddr = 00000035
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -4497,7 +4497,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -2.52990005e+02
   posit.y [1] =
@@ -4575,7 +4575,7 @@ false
 objAddr = 00000036
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -4591,7 +4591,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -2.93097992e+02
   posit.y [1] =
@@ -4669,7 +4669,7 @@ false
 objAddr = 00000037
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -4685,7 +4685,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 2.65222992e+02
   posit.y [1] =
@@ -4763,7 +4763,7 @@ false
 objAddr = 00000038
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -4779,7 +4779,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 2.53143005e+02
   posit.y [1] =
@@ -4857,7 +4857,7 @@ false
 objAddr = 00000039
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -4873,7 +4873,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 2.51725006e+02
   posit.y [1] =
@@ -4951,7 +4951,7 @@ false
 objAddr = 0000003A
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -4967,7 +4967,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 2.74820007e+02
   posit.y [1] =
@@ -5045,7 +5045,7 @@ false
 objAddr = 0000003B
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -5061,7 +5061,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 2.96308990e+02
   posit.y [1] =
@@ -5139,7 +5139,7 @@ false
 objAddr = 0000003C
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -5155,7 +5155,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 3.05266998e+02
   posit.y [1] =
@@ -5233,7 +5233,7 @@ false
 objAddr = 0000003D
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -5249,7 +5249,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.11927002e+03
   posit.y [1] =
@@ -5327,7 +5327,7 @@ false
 objAddr = 0000003E
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -5343,7 +5343,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.10127002e+03
   posit.y [1] =
@@ -5421,7 +5421,7 @@ false
 objAddr = 0000003F
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -5437,7 +5437,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.08963000e+03
   posit.y [1] =
@@ -5515,7 +5515,7 @@ false
 objAddr = 00000040
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -5531,7 +5531,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.08735999e+03
   posit.y [1] =
@@ -5609,7 +5609,7 @@ false
 objAddr = 00000041
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -5625,7 +5625,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.11075000e+03
   posit.y [1] =
@@ -5703,7 +5703,7 @@ false
 objAddr = 00000042
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -5719,7 +5719,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.13567004e+03
   posit.y [1] =
@@ -5797,7 +5797,7 @@ false
 objAddr = 00000043
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -5813,7 +5813,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.51452002e+03
   posit.y [1] =
@@ -5891,7 +5891,7 @@ false
 objAddr = 00000044
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -5907,7 +5907,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.46717004e+03
   posit.y [1] =
@@ -5985,7 +5985,7 @@ false
 objAddr = 00000045
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -6001,7 +6001,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.45125000e+03
   posit.y [1] =
@@ -6079,7 +6079,7 @@ false
 objAddr = 00000046
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -6095,7 +6095,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.48703003e+03
   posit.y [1] =
@@ -6173,7 +6173,7 @@ false
 objAddr = 00000047
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -6189,7 +6189,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.51488000e+03
   posit.y [1] =
@@ -6267,7 +6267,7 @@ false
 objAddr = 00000048
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -6283,7 +6283,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.52118005e+03
   posit.y [1] =
@@ -6361,7 +6361,7 @@ false
 objAddr = 00000049
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -6377,7 +6377,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.85833997e+03
   posit.y [1] =
@@ -6455,7 +6455,7 @@ false
 objAddr = 0000004A
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -6471,7 +6471,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.86316003e+03
   posit.y [1] =
@@ -6549,7 +6549,7 @@ false
 objAddr = 0000004B
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -6565,7 +6565,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.85998999e+03
   posit.y [1] =
@@ -6643,7 +6643,7 @@ false
 objAddr = 0000004C
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -6659,7 +6659,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.84619995e+03
   posit.y [1] =
@@ -6737,7 +6737,7 @@ false
 objAddr = 0000004D
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -6753,7 +6753,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.82168994e+03
   posit.y [1] =
@@ -6831,7 +6831,7 @@ false
 objAddr = 0000004E
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -6847,7 +6847,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.82158997e+03
   posit.y [1] =
@@ -6925,7 +6925,7 @@ false
 objAddr = 0000004F
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -6941,7 +6941,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.78851001e+03
   posit.y [1] =
@@ -7019,7 +7019,7 @@ false
 objAddr = 00000050
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -7035,7 +7035,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.77419995e+03
   posit.y [1] =
@@ -7113,7 +7113,7 @@ false
 objAddr = 00000051
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -7129,7 +7129,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.77915002e+03
   posit.y [1] =
@@ -7207,7 +7207,7 @@ false
 objAddr = 00000052
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -7223,7 +7223,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.79776001e+03
   posit.y [1] =
@@ -7301,7 +7301,7 @@ false
 objAddr = 00000053
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -7317,7 +7317,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.81662000e+03
   posit.y [1] =
@@ -7395,7 +7395,7 @@ false
 objAddr = 00000054
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -7411,7 +7411,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.82641003e+03
   posit.y [1] =
@@ -7489,7 +7489,7 @@ false
 objAddr = 00000055
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -7505,7 +7505,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.40357996e+03
   posit.y [1] =
@@ -7583,7 +7583,7 @@ false
 objAddr = 00000056
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -7599,7 +7599,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.36577002e+03
   posit.y [1] =
@@ -7677,7 +7677,7 @@ false
 objAddr = 00000057
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -7693,7 +7693,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.35533997e+03
   posit.y [1] =
@@ -7771,7 +7771,7 @@ false
 objAddr = 00000058
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -7787,7 +7787,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.41547998e+03
   posit.y [1] =
@@ -7865,7 +7865,7 @@ false
 objAddr = 00000059
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -7881,7 +7881,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.42696997e+03
   posit.y [1] =
@@ -7959,7 +7959,7 @@ false
 objAddr = 0000005A
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -7975,7 +7975,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.37629004e+03
   posit.y [1] =
@@ -8053,7 +8053,7 @@ false
 objAddr = 0000005B
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -8069,7 +8069,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 9.28247986e+02
   posit.y [1] =
@@ -8147,7 +8147,7 @@ false
 objAddr = 0000005C
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -8163,7 +8163,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.00406000e+03
   posit.y [1] =
@@ -8241,7 +8241,7 @@ false
 objAddr = 0000005D
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -8257,7 +8257,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 9.30297974e+02
   posit.y [1] =
@@ -8335,7 +8335,7 @@ false
 objAddr = 0000005E
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -8351,7 +8351,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 9.87616028e+02
   posit.y [1] =
@@ -8429,7 +8429,7 @@ false
 objAddr = 0000005F
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -8445,7 +8445,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 9.74916992e+02
   posit.y [1] =
@@ -8523,7 +8523,7 @@ false
 objAddr = 00000060
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -8539,7 +8539,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 9.59752991e+02
   posit.y [1] =
@@ -8617,7 +8617,7 @@ false
 objAddr = 00000061
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -8633,7 +8633,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 2.53666000e+02
   posit.y [1] =
@@ -8711,7 +8711,7 @@ false
 objAddr = 00000062
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -8727,7 +8727,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 3.05481995e+02
   posit.y [1] =
@@ -8805,7 +8805,7 @@ false
 objAddr = 00000063
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -8821,7 +8821,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 3.03735992e+02
   posit.y [1] =
@@ -8899,7 +8899,7 @@ false
 objAddr = 00000064
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -8915,7 +8915,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 2.43707993e+02
   posit.y [1] =
@@ -8993,7 +8993,7 @@ false
 objAddr = 00000065
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -9009,7 +9009,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 2.34951004e+02
   posit.y [1] =
@@ -9087,7 +9087,7 @@ false
 objAddr = 00000066
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -9103,7 +9103,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 2.91588989e+02
   posit.y [1] =
@@ -9181,7 +9181,7 @@ false
 objAddr = 00000067
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -9197,7 +9197,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -3.45514008e+02
   posit.y [1] =
@@ -9275,7 +9275,7 @@ false
 objAddr = 00000068
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -9291,7 +9291,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -3.50136993e+02
   posit.y [1] =
@@ -9369,7 +9369,7 @@ false
 objAddr = 00000069
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -9385,7 +9385,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -3.54546997e+02
   posit.y [1] =
@@ -9463,7 +9463,7 @@ false
 objAddr = 0000006A
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -9479,7 +9479,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -3.88906006e+02
   posit.y [1] =
@@ -9557,7 +9557,7 @@ false
 objAddr = 0000006B
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -9573,7 +9573,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -3.90088013e+02
   posit.y [1] =
@@ -9651,7 +9651,7 @@ false
 objAddr = 0000006C
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -9667,7 +9667,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -3.88612000e+02
   posit.y [1] =
@@ -9745,7 +9745,7 @@ false
 objAddr = 0000006D
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -9761,7 +9761,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.13526001e+03
   posit.y [1] =
@@ -9839,7 +9839,7 @@ false
 objAddr = 0000006E
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -9855,7 +9855,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.08740002e+03
   posit.y [1] =
@@ -9933,7 +9933,7 @@ false
 objAddr = 0000006F
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -9949,7 +9949,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.12426001e+03
   posit.y [1] =
@@ -10027,7 +10027,7 @@ false
 objAddr = 00000070
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -10043,7 +10043,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.07065002e+03
   posit.y [1] =
@@ -10121,7 +10121,7 @@ false
 objAddr = 00000071
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -10137,7 +10137,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.10866003e+03
   posit.y [1] =
@@ -10215,7 +10215,7 @@ false
 objAddr = 00000072
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -10231,7 +10231,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.08267004e+03
   posit.y [1] =
@@ -10309,7 +10309,7 @@ false
 objAddr = 00000073
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -10325,7 +10325,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.44716003e+03
   posit.y [1] =
@@ -10403,7 +10403,7 @@ false
 objAddr = 00000074
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -10419,7 +10419,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.41044995e+03
   posit.y [1] =
@@ -10497,7 +10497,7 @@ false
 objAddr = 00000075
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -10513,7 +10513,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.43364001e+03
   posit.y [1] =
@@ -10591,7 +10591,7 @@ false
 objAddr = 00000076
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -10607,7 +10607,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.39605005e+03
   posit.y [1] =
@@ -10685,7 +10685,7 @@ false
 objAddr = 00000077
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -10701,7 +10701,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.42456006e+03
   posit.y [1] =
@@ -10779,7 +10779,7 @@ false
 objAddr = 00000078
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -10795,7 +10795,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.45206006e+03
   posit.y [1] =
@@ -10873,7 +10873,7 @@ false
 objAddr = 00000079
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -10889,7 +10889,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.75820996e+03
   posit.y [1] =
@@ -10967,7 +10967,7 @@ false
 objAddr = 0000007A
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -10983,7 +10983,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.76302002e+03
   posit.y [1] =
@@ -11061,7 +11061,7 @@ false
 objAddr = 0000007B
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -11077,7 +11077,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.78977002e+03
   posit.y [1] =
@@ -11155,7 +11155,7 @@ false
 objAddr = 0000007C
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -11171,7 +11171,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.79494995e+03
   posit.y [1] =
@@ -11249,7 +11249,7 @@ false
 objAddr = 0000007D
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -11265,7 +11265,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.78103003e+03
   posit.y [1] =
@@ -11343,7 +11343,7 @@ false
 objAddr = 0000007E
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -11359,7 +11359,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.77550000e+03
   posit.y [1] =
@@ -11437,7 +11437,7 @@ false
 objAddr = 0000007F
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -11453,7 +11453,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.85416003e+03
   posit.y [1] =
@@ -11531,7 +11531,7 @@ false
 objAddr = 00000080
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -11547,7 +11547,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.83123999e+03
   posit.y [1] =
@@ -11625,7 +11625,7 @@ false
 objAddr = 00000081
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -11641,7 +11641,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.86248999e+03
   posit.y [1] =
@@ -11719,7 +11719,7 @@ false
 objAddr = 00000082
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -11735,7 +11735,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.81345996e+03
   posit.y [1] =
@@ -11813,7 +11813,7 @@ false
 objAddr = 00000083
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -11829,7 +11829,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.84754004e+03
   posit.y [1] =
@@ -11907,7 +11907,7 @@ false
 objAddr = 00000084
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -11923,7 +11923,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.85228003e+03
   posit.y [1] =
@@ -12001,7 +12001,7 @@ false
 objAddr = 00000085
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -12017,7 +12017,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.39485999e+03
   posit.y [1] =
@@ -12095,7 +12095,7 @@ false
 objAddr = 00000086
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -12111,7 +12111,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.36693005e+03
   posit.y [1] =
@@ -12189,7 +12189,7 @@ false
 objAddr = 00000087
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -12205,7 +12205,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.37420996e+03
   posit.y [1] =
@@ -12283,7 +12283,7 @@ false
 objAddr = 00000088
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -12299,7 +12299,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.40216003e+03
   posit.y [1] =
@@ -12377,7 +12377,7 @@ false
 objAddr = 00000089
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -12393,7 +12393,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.41857996e+03
   posit.y [1] =
@@ -12471,7 +12471,7 @@ false
 objAddr = 0000008A
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -12487,7 +12487,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.41552002e+03
   posit.y [1] =
@@ -12565,7 +12565,7 @@ false
 objAddr = 0000008B
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -12581,7 +12581,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -5.36286987e+02
   posit.y [1] =
@@ -12659,7 +12659,7 @@ false
 objAddr = 0000008C
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -12675,7 +12675,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -5.37875000e+02
   posit.y [1] =
@@ -12753,7 +12753,7 @@ false
 objAddr = 0000008D
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -12769,7 +12769,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -4.90300995e+02
   posit.y [1] =
@@ -12847,7 +12847,7 @@ false
 objAddr = 0000008E
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -12863,7 +12863,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -5.08785004e+02
   posit.y [1] =
@@ -12941,7 +12941,7 @@ false
 objAddr = 0000008F
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -12957,7 +12957,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -5.66953979e+02
   posit.y [1] =
@@ -13035,7 +13035,7 @@ false
 objAddr = 00000090
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -13051,7 +13051,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -4.97600006e+02
   posit.y [1] =
@@ -13129,7 +13129,7 @@ false
 objAddr = 00000091
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -13145,7 +13145,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 6.39223999e+02
   posit.y [1] =
@@ -13196,7 +13196,7 @@ isVisible [1] =
 EffectsMask [1] =
 65535
 isSeen [1] =
-0
+3
 groupNumber [1] =
 0
 undefaicmd =
@@ -13223,7 +13223,7 @@ false
 objAddr = 00000092
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -13239,7 +13239,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 6.07828003e+02
   posit.y [1] =
@@ -13290,7 +13290,7 @@ isVisible [1] =
 EffectsMask [1] =
 65535
 isSeen [1] =
-0
+3
 groupNumber [1] =
 0
 undefaicmd =
@@ -13317,7 +13317,7 @@ false
 objAddr = 00000093
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -13333,7 +13333,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 6.19908020e+02
   posit.y [1] =
@@ -13384,7 +13384,7 @@ isVisible [1] =
 EffectsMask [1] =
 65535
 isSeen [1] =
-0
+3
 groupNumber [1] =
 0
 undefaicmd =
@@ -13411,7 +13411,7 @@ false
 objAddr = 00000094
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -13427,7 +13427,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 6.61653015e+02
   posit.y [1] =
@@ -13478,7 +13478,7 @@ isVisible [1] =
 EffectsMask [1] =
 65535
 isSeen [1] =
-0
+3
 groupNumber [1] =
 0
 undefaicmd =
@@ -13505,7 +13505,7 @@ false
 objAddr = 00000095
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -13521,7 +13521,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 6.77684021e+02
   posit.y [1] =
@@ -13572,7 +13572,7 @@ isVisible [1] =
 EffectsMask [1] =
 65535
 isSeen [1] =
-0
+3
 groupNumber [1] =
 0
 undefaicmd =
@@ -13599,7 +13599,7 @@ false
 objAddr = 00000096
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -13615,7 +13615,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 6.81242004e+02
   posit.y [1] =
@@ -13666,7 +13666,7 @@ isVisible [1] =
 EffectsMask [1] =
 65535
 isSeen [1] =
-0
+3
 groupNumber [1] =
 0
 undefaicmd =
@@ -13693,7 +13693,7 @@ false
 objAddr = 00000097
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -13709,7 +13709,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.52666003e+03
   posit.y [1] =
@@ -13787,7 +13787,7 @@ false
 objAddr = 00000098
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -13803,7 +13803,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.50717004e+03
   posit.y [1] =
@@ -13881,7 +13881,7 @@ false
 objAddr = 00000099
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -13897,7 +13897,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.55103003e+03
   posit.y [1] =
@@ -13975,7 +13975,7 @@ false
 objAddr = 0000009A
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -13991,7 +13991,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.54938000e+03
   posit.y [1] =
@@ -14069,7 +14069,7 @@ false
 objAddr = 0000009B
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -14085,7 +14085,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.50741003e+03
   posit.y [1] =
@@ -14163,7 +14163,7 @@ false
 objAddr = 0000009C
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -14179,7 +14179,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.45201001e+03
   posit.y [1] =
@@ -14257,7 +14257,7 @@ false
 objAddr = 0000009D
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -14273,7 +14273,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.38082996e+03
   posit.y [1] =
@@ -14351,7 +14351,7 @@ false
 objAddr = 0000009E
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -14367,7 +14367,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.32669995e+03
   posit.y [1] =
@@ -14445,7 +14445,7 @@ false
 objAddr = 0000009F
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -14461,7 +14461,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.28181995e+03
   posit.y [1] =
@@ -14539,7 +14539,7 @@ false
 objAddr = 000000A0
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -14555,7 +14555,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.29523999e+03
   posit.y [1] =
@@ -14633,7 +14633,7 @@ false
 objAddr = 000000A1
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -14649,7 +14649,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.36906995e+03
   posit.y [1] =
@@ -14727,7 +14727,7 @@ false
 objAddr = 000000A2
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -14743,7 +14743,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.36741003e+03
   posit.y [1] =
@@ -14821,7 +14821,7 @@ false
 objAddr = 000000A3
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -14837,7 +14837,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 4.49334991e+02
   posit.y [1] =
@@ -14915,7 +14915,7 @@ false
 objAddr = 000000A4
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -14931,7 +14931,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 3.89785004e+02
   posit.y [1] =
@@ -15009,7 +15009,7 @@ false
 objAddr = 000000A5
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -15025,7 +15025,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 4.14373993e+02
   posit.y [1] =
@@ -15103,7 +15103,7 @@ false
 objAddr = 000000A6
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -15119,7 +15119,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 4.61852997e+02
   posit.y [1] =
@@ -15197,7 +15197,7 @@ false
 objAddr = 000000A7
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -15213,7 +15213,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 4.47045013e+02
   posit.y [1] =
@@ -15291,7 +15291,7 @@ false
 objAddr = 000000A8
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -15307,7 +15307,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 3.91007996e+02
   posit.y [1] =
@@ -15385,7 +15385,7 @@ false
 objAddr = 000000A9
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -15401,7 +15401,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -7.20510010e+02
   posit.y [1] =
@@ -15479,7 +15479,7 @@ false
 objAddr = 000000AA
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -15495,7 +15495,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -7.84687012e+02
   posit.y [1] =
@@ -15573,7 +15573,7 @@ false
 objAddr = 000000AB
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -15589,7 +15589,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -7.27578003e+02
   posit.y [1] =
@@ -15667,7 +15667,7 @@ false
 objAddr = 000000AC
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -15683,7 +15683,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -6.93065002e+02
   posit.y [1] =
@@ -15761,7 +15761,7 @@ false
 objAddr = 000000AD
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -15777,7 +15777,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -7.46307007e+02
   posit.y [1] =
@@ -15855,7 +15855,7 @@ false
 objAddr = 000000AE
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -15871,7 +15871,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -7.66299988e+02
   posit.y [1] =
@@ -15949,7 +15949,7 @@ false
 objAddr = 000000AF
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -15965,7 +15965,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.31405005e+03
   posit.y [1] =
@@ -16043,7 +16043,7 @@ false
 objAddr = 000000B0
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -16059,7 +16059,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.27664001e+03
   posit.y [1] =
@@ -16137,7 +16137,7 @@ false
 objAddr = 000000B1
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -16153,7 +16153,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.33001001e+03
   posit.y [1] =
@@ -16231,7 +16231,7 @@ false
 objAddr = 000000B2
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -16247,7 +16247,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.27227002e+03
   posit.y [1] =
@@ -16325,7 +16325,7 @@ false
 objAddr = 000000B3
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -16341,7 +16341,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.36550000e+03
   posit.y [1] =
@@ -16419,7 +16419,7 @@ false
 objAddr = 000000B4
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -16435,7 +16435,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.31231006e+03
   posit.y [1] =
@@ -16513,7 +16513,7 @@ false
 objAddr = 000000B5
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -16529,7 +16529,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.31088000e+03
   posit.y [1] =
@@ -16607,7 +16607,7 @@ false
 objAddr = 000000B6
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -16623,7 +16623,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.25839001e+03
   posit.y [1] =
@@ -16701,7 +16701,7 @@ false
 objAddr = 000000B7
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -16717,7 +16717,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.25630005e+03
   posit.y [1] =
@@ -16795,7 +16795,7 @@ false
 objAddr = 000000B8
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -16811,7 +16811,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.28940002e+03
   posit.y [1] =
@@ -16889,7 +16889,7 @@ false
 objAddr = 000000B9
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -16905,7 +16905,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.27183997e+03
   posit.y [1] =
@@ -16983,7 +16983,7 @@ false
 objAddr = 000000BA
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -16999,7 +16999,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.27554004e+03
   posit.y [1] =
@@ -17077,7 +17077,7 @@ false
 objAddr = 000000BB
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -17093,7 +17093,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.23359001e+02
   posit.y [1] =
@@ -17171,7 +17171,7 @@ false
 objAddr = 000000BC
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -17187,7 +17187,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.23603996e+02
   posit.y [1] =
@@ -17265,7 +17265,7 @@ false
 objAddr = 000000BD
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -17281,7 +17281,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.73128998e+02
   posit.y [1] =
@@ -17359,7 +17359,7 @@ false
 objAddr = 000000BE
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -17375,7 +17375,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.79097000e+02
   posit.y [1] =
@@ -17453,7 +17453,7 @@ false
 objAddr = 000000BF
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -17469,7 +17469,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -3.45832001e+02
   posit.y [1] =
@@ -17547,7 +17547,7 @@ false
 objAddr = 000000C0
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -17563,7 +17563,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -3.39450012e+02
   posit.y [1] =
@@ -17641,7 +17641,7 @@ false
 objAddr = 000000C1
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -17657,7 +17657,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -3.92243011e+02
   posit.y [1] =
@@ -17735,7 +17735,7 @@ false
 objAddr = 000000C2
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -17751,7 +17751,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -3.30589996e+02
   posit.y [1] =
@@ -17829,7 +17829,7 @@ false
 objAddr = 000000C3
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -17845,7 +17845,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -3.10658997e+02
   posit.y [1] =
@@ -17923,7 +17923,7 @@ false
 objAddr = 000000C4
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -17939,7 +17939,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -3.20545990e+02
   posit.y [1] =
@@ -18017,7 +18017,7 @@ false
 objAddr = 000000C5
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -18033,7 +18033,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -3.67934998e+02
   posit.y [1] =
@@ -18111,7 +18111,7 @@ false
 objAddr = 000000C6
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -18127,7 +18127,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.29735992e+02
   posit.y [1] =
@@ -18205,7 +18205,7 @@ false
 objAddr = 000000C7
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -18221,7 +18221,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.16953003e+02
   posit.y [1] =
@@ -18299,7 +18299,7 @@ false
 objAddr = 000000C8
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -18315,7 +18315,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.62682999e+02
   posit.y [1] =
@@ -18393,7 +18393,7 @@ false
 objAddr = 000000C9
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -18409,7 +18409,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.49199005e+02
   posit.y [1] =
@@ -18487,7 +18487,7 @@ false
 objAddr = 000000CA
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -18503,7 +18503,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.27244003e+02
   posit.y [1] =
@@ -18581,7 +18581,7 @@ false
 objAddr = 000000CB
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -18597,7 +18597,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.17242996e+02
   posit.y [1] =
@@ -18675,7 +18675,7 @@ false
 objAddr = 000000CC
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -18691,7 +18691,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.62468994e+02
   posit.y [1] =
@@ -18769,7 +18769,7 @@ false
 objAddr = 000000CD
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -18785,7 +18785,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.64529999e+02
   posit.y [1] =
@@ -18863,7 +18863,7 @@ false
 objAddr = 000000CE
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -18879,7 +18879,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 3.85479004e+02
   posit.y [1] =
@@ -18957,7 +18957,7 @@ false
 objAddr = 000000CF
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -18973,7 +18973,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 3.88542999e+02
   posit.y [1] =
@@ -19051,7 +19051,7 @@ false
 objAddr = 000000D0
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -19067,7 +19067,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 3.49390015e+02
   posit.y [1] =
@@ -19145,7 +19145,7 @@ false
 objAddr = 000000D1
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -19161,7 +19161,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 3.49941010e+02
   posit.y [1] =
@@ -19239,7 +19239,7 @@ false
 objAddr = 000000D2
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -19255,7 +19255,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 3.56291992e+02
   posit.y [1] =
@@ -19333,7 +19333,7 @@ false
 objAddr = 000000D3
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -19349,7 +19349,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 3.42152008e+02
   posit.y [1] =
@@ -19427,7 +19427,7 @@ false
 objAddr = 000000D4
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -19443,7 +19443,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 3.79545013e+02
   posit.y [1] =
@@ -19521,7 +19521,7 @@ false
 objAddr = 000000D5
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -19537,7 +19537,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 3.94777008e+02
   posit.y [1] =
@@ -19615,7 +19615,7 @@ false
 objAddr = 000000D6
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -19631,7 +19631,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 9.41908035e+01
   posit.y [1] =
@@ -19709,7 +19709,7 @@ false
 objAddr = 000000D7
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -19725,7 +19725,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 8.49229965e+01
   posit.y [1] =
@@ -19803,7 +19803,7 @@ false
 objAddr = 000000D8
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -19819,7 +19819,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.25208000e+02
   posit.y [1] =
@@ -19897,7 +19897,7 @@ false
 objAddr = 000000D9
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -19913,7 +19913,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.31113998e+02
   posit.y [1] =
@@ -19991,7 +19991,7 @@ false
 objAddr = 000000DA
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -20007,7 +20007,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.83202991e+01
   posit.y [1] =
@@ -20085,7 +20085,7 @@ false
 objAddr = 000000DB
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -20101,7 +20101,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.74214001e+01
   posit.y [1] =
@@ -20179,7 +20179,7 @@ false
 objAddr = 000000DC
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -20195,7 +20195,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 5.49897003e+01
   posit.y [1] =
@@ -20273,7 +20273,7 @@ false
 objAddr = 000000DD
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -20289,7 +20289,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 4.22504997e+01
   posit.y [1] =
@@ -20367,7 +20367,7 @@ false
 objAddr = 000000DE
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -20383,7 +20383,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.06978998e+01
   posit.y [1] =
@@ -20461,7 +20461,7 @@ false
 objAddr = 000000DF
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -20477,7 +20477,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -3.50667992e+01
   posit.y [1] =
@@ -20555,7 +20555,7 @@ false
 objAddr = 000000E0
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -20571,7 +20571,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.13365002e+01
   posit.y [1] =
@@ -20649,7 +20649,7 @@ false
 objAddr = 000000E1
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -20665,7 +20665,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 6.94394989e+01
   posit.y [1] =
@@ -20743,7 +20743,7 @@ false
 objAddr = 000000E2
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -20759,7 +20759,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 3.46630001e+00
   posit.y [1] =
@@ -20837,7 +20837,7 @@ false
 objAddr = 000000E3
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -20853,7 +20853,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.96502991e+01
   posit.y [1] =
@@ -20931,7 +20931,7 @@ false
 objAddr = 000000E4
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -20947,7 +20947,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 3.33265007e-01
   posit.y [1] =
@@ -21025,7 +21025,7 @@ false
 objAddr = 000000E5
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -21041,7 +21041,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 2.40856991e+01
   posit.y [1] =
@@ -21119,7 +21119,7 @@ false
 objAddr = 000000E6
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -21135,7 +21135,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 4.29490013e+01
   posit.y [1] =
@@ -21213,7 +21213,7 @@ false
 objAddr = 000000E7
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -21229,7 +21229,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.72670002e+01
   posit.y [1] =
@@ -21307,7 +21307,7 @@ false
 objAddr = 000000E8
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -21323,7 +21323,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -4.78083000e+01
   posit.y [1] =
@@ -21401,7 +21401,7 @@ false
 objAddr = 000000E9
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -21417,7 +21417,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 2.24726009e+01
   posit.y [1] =
@@ -21495,7 +21495,7 @@ false
 objAddr = 000000EA
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -21511,7 +21511,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 6.25441017e+01
   posit.y [1] =
@@ -21589,7 +21589,7 @@ false
 objAddr = 000000EB
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -21605,7 +21605,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 7.55056000e+01
   posit.y [1] =
@@ -21683,7 +21683,7 @@ false
 objAddr = 000000EC
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -21699,7 +21699,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 6.99763031e+01
   posit.y [1] =
@@ -21777,7 +21777,7 @@ false
 objAddr = 000000ED
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -21793,7 +21793,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.51484001e+00
   posit.y [1] =
@@ -21871,7 +21871,7 @@ false
 objAddr = 000000EE
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -21887,7 +21887,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -2.23556995e+01
   posit.y [1] =
@@ -21965,7 +21965,7 @@ false
 objAddr = 000000EF
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -21981,7 +21981,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.41654007e+02
   posit.y [1] =
@@ -22059,7 +22059,7 @@ false
 objAddr = 000000F0
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -22075,7 +22075,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.65783997e+02
   posit.y [1] =
@@ -22153,7 +22153,7 @@ false
 objAddr = 000000F1
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -22169,7 +22169,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -1.60912003e+02
   posit.y [1] =
@@ -22247,7 +22247,7 @@ false
 objAddr = 000000F2
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -22263,7 +22263,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -8.75792007e+01
   posit.y [1] =
@@ -22341,7 +22341,7 @@ false
 objAddr = 000000F3
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -22357,7 +22357,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 6.44895983e+00
   posit.y [1] =
@@ -22435,7 +22435,7 @@ false
 objAddr = 000000F4
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -22451,7 +22451,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.23403999e+02
   posit.y [1] =
@@ -22529,7 +22529,7 @@ false
 objAddr = 000000F5
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -22545,7 +22545,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.73369995e+02
   posit.y [1] =
@@ -22623,7 +22623,7 @@ false
 objAddr = 000000F6
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -22639,7 +22639,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.87654007e+02
   posit.y [1] =
@@ -22717,7 +22717,7 @@ false
 objAddr = 000000F7
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -22733,7 +22733,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 9.64311981e+01
   posit.y [1] =
@@ -22811,7 +22811,7 @@ false
 objAddr = 000000F8
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -22827,7 +22827,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 1.50271997e+01
   posit.y [1] =
@@ -22905,7 +22905,7 @@ false
 objAddr = 000000F9
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -22921,7 +22921,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -4.90854988e+01
   posit.y [1] =
@@ -22999,7 +22999,7 @@ false
 objAddr = 000000FA
 transform [1] =
   right.x [1] =
-4.65255976e-02
+4.65256013e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -23015,7 +23015,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-4.65253964e-02
+4.65254001e-02
   posit.x [1] =
 -9.29465027e+01
   posit.y [1] =
@@ -23187,7 +23187,7 @@ false
 objAddr = 000000FC
 transform [1] =
   right.x [1] =
--9.10969675e-01
+-9.10969615e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
@@ -23203,7 +23203,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--9.10965681e-01
+-9.10965621e-01
   posit.x [1] =
 -9.45401978e+02
   posit.y [1] =
@@ -23472,11 +23472,11 @@ false
 objAddr = 000000FF
 transform [1] =
   right.x [1] =
--9.00554597e-01
+-9.00554657e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
-4.34732914e-01
+4.34733003e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -23484,11 +23484,11 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
--4.34731036e-01
+-4.34731126e-01
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--9.00550663e-01
+-9.00550723e-01
   posit.x [1] =
 -2.28147003e+02
   posit.y [1] =
@@ -23567,11 +23567,11 @@ false
 objAddr = 00000100
 transform [1] =
   right.x [1] =
--9.00554597e-01
+-9.00554657e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
-4.34732914e-01
+4.34733003e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -23579,11 +23579,11 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
--4.34731036e-01
+-4.34731126e-01
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--9.00550663e-01
+-9.00550723e-01
   posit.x [1] =
 5.57419983e+02
   posit.y [1] =
@@ -23662,11 +23662,11 @@ false
 objAddr = 00000101
 transform [1] =
   right.x [1] =
--9.00554597e-01
+-9.00554657e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
-4.34732914e-01
+4.34733003e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -23674,11 +23674,11 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
--4.34731036e-01
+-4.34731126e-01
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--9.00550663e-01
+-9.00550723e-01
   posit.x [1] =
 8.86596008e+02
   posit.y [1] =
@@ -23757,11 +23757,11 @@ false
 objAddr = 00000102
 transform [1] =
   right.x [1] =
--9.00554597e-01
+-9.00554657e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
-4.34732914e-01
+4.34733003e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -23769,11 +23769,11 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
--4.34731036e-01
+-4.34731126e-01
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--9.00550663e-01
+-9.00550723e-01
   posit.x [1] =
 8.67888977e+02
   posit.y [1] =
@@ -23852,11 +23852,11 @@ false
 objAddr = 00000103
 transform [1] =
   right.x [1] =
--9.00554597e-01
+-9.00554657e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
-4.34732914e-01
+4.34733003e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -23864,11 +23864,11 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
--4.34731036e-01
+-4.34731126e-01
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--9.00550663e-01
+-9.00550723e-01
   posit.x [1] =
 -5.50041016e+02
   posit.y [1] =
@@ -23947,11 +23947,11 @@ false
 objAddr = 00000104
 transform [1] =
   right.x [1] =
--7.87043452e-01
+-7.87043393e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
-6.16890550e-01
+6.16890490e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -23959,11 +23959,11 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
--6.16887867e-01
+-6.16887808e-01
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--7.87040055e-01
+-7.87039995e-01
   posit.x [1] =
 -2.12139008e+02
   posit.y [1] =
@@ -24042,7 +24042,7 @@ false
 objAddr = 00000105
 transform [1] =
   right.x [1] =
-9.55121934e-01
+9.55121875e-01
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -24058,7 +24058,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-9.55117762e-01
+9.55117702e-01
   posit.x [1] =
 -2.18871994e+02
   posit.y [1] =
@@ -24137,7 +24137,7 @@ false
 objAddr = 00000106
 transform [1] =
   right.x [1] =
-9.55121934e-01
+9.55121875e-01
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -24153,7 +24153,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-9.55117762e-01
+9.55117702e-01
   posit.x [1] =
 -2.04597000e+02
   posit.y [1] =
@@ -24232,7 +24232,7 @@ false
 objAddr = 00000107
 transform [1] =
   right.x [1] =
-9.55121934e-01
+9.55121875e-01
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -24248,7 +24248,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-9.55117762e-01
+9.55117702e-01
   posit.x [1] =
 1.33632996e+03
   posit.y [1] =
@@ -24327,7 +24327,7 @@ false
 objAddr = 00000108
 transform [1] =
   right.x [1] =
-9.55121934e-01
+9.55121875e-01
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -24343,7 +24343,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-9.55117762e-01
+9.55117702e-01
   posit.x [1] =
 1.55434998e+03
   posit.y [1] =
@@ -24422,7 +24422,7 @@ false
 objAddr = 00000109
 transform [1] =
   right.x [1] =
-9.55121934e-01
+9.55121875e-01
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -24438,7 +24438,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-9.55117762e-01
+9.55117702e-01
   posit.x [1] =
 1.04831006e+03
   posit.y [1] =
@@ -24517,7 +24517,7 @@ false
 objAddr = 0000010A
 transform [1] =
   right.x [1] =
-9.55121934e-01
+9.55121875e-01
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -24533,7 +24533,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-9.55117762e-01
+9.55117702e-01
   posit.x [1] =
 -7.83263000e+02
   posit.y [1] =
@@ -24612,7 +24612,7 @@ false
 objAddr = 0000010B
 transform [1] =
   right.x [1] =
-9.55121934e-01
+9.55121875e-01
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -24628,7 +24628,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-9.55117762e-01
+9.55117702e-01
   posit.x [1] =
 -1.82415002e+03
   posit.y [1] =
@@ -24707,7 +24707,7 @@ false
 objAddr = 0000010C
 transform [1] =
   right.x [1] =
-9.55121934e-01
+9.55121875e-01
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -24723,7 +24723,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-9.55117762e-01
+9.55117702e-01
   posit.x [1] =
 -1.44758997e+03
   posit.y [1] =
@@ -24802,11 +24802,11 @@ false
 objAddr = 0000010D
 transform [1] =
   right.x [1] =
--9.41302419e-01
+-9.41302478e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
--3.37551445e-01
+-3.37551504e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -24814,11 +24814,11 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
-3.37549984e-01
+3.37550044e-01
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--9.41298306e-01
+-9.41298366e-01
   posit.x [1] =
 -1.42129004e+03
   posit.y [1] =
@@ -24897,7 +24897,7 @@ false
 objAddr = 0000010E
 transform [1] =
   right.x [1] =
--8.45373631e-01
+-8.45373571e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
@@ -24913,7 +24913,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--8.45369935e-01
+-8.45369875e-01
   posit.x [1] =
 -1.38947998e+03
   posit.y [1] =
@@ -24992,11 +24992,11 @@ false
 objAddr = 0000010F
 transform [1] =
   right.x [1] =
--4.99236166e-01
+-4.99236226e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
-8.66460919e-01
+8.66461039e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -25004,11 +25004,11 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
--8.66457164e-01
+-8.66457283e-01
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--4.99233991e-01
+-4.99234051e-01
   posit.x [1] =
 -9.30461975e+02
   posit.y [1] =
@@ -25087,7 +25087,7 @@ false
 objAddr = 00000110
 transform [1] =
   right.x [1] =
--1.23135438e-02
+-1.23135429e-02
   right.y [1] =
 0.00000000e+00
   right.z [1] =
@@ -25103,7 +25103,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--1.23134898e-02
+-1.23134889e-02
   posit.x [1] =
 -1.14653003e+03
   posit.y [1] =
@@ -25182,7 +25182,7 @@ false
 objAddr = 00000111
 transform [1] =
   right.x [1] =
--1.23135438e-02
+-1.23135429e-02
   right.y [1] =
 0.00000000e+00
   right.z [1] =
@@ -25198,7 +25198,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--1.23134898e-02
+-1.23134889e-02
   posit.x [1] =
 -5.23796021e+02
   posit.y [1] =
@@ -25277,7 +25277,7 @@ false
 objAddr = 00000112
 transform [1] =
   right.x [1] =
--1.23135438e-02
+-1.23135429e-02
   right.y [1] =
 0.00000000e+00
   right.z [1] =
@@ -25293,7 +25293,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--1.23134898e-02
+-1.23134889e-02
   posit.x [1] =
 1.34869003e+02
   posit.y [1] =
@@ -26037,11 +26037,11 @@ false
 objAddr = 0000011A
 transform [1] =
   right.x [1] =
--8.03406417e-01
+-8.03406358e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
-5.95423937e-01
+5.95423996e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -26049,11 +26049,11 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
--5.95421374e-01
+-5.95421433e-01
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--8.03402901e-01
+-8.03402841e-01
   posit.x [1] =
 -6.67322021e+02
   posit.y [1] =
@@ -26607,7 +26607,7 @@ false
 objAddr = 00000120
 transform [1] =
   right.x [1] =
--3.10113672e-02
+-3.10113709e-02
   right.y [1] =
 0.00000000e+00
   right.z [1] =
@@ -26623,7 +26623,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--3.10112331e-02
+-3.10112368e-02
   posit.x [1] =
 1.07415002e+03
   posit.y [1] =
@@ -26702,7 +26702,7 @@ false
 objAddr = 00000121
 transform [1] =
   right.x [1] =
--8.90486002e-01
+-8.90485883e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
@@ -26718,7 +26718,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--8.90482128e-01
+-8.90482008e-01
   posit.x [1] =
 1.39153003e+03
   posit.y [1] =
@@ -26991,7 +26991,7 @@ transform [1] =
   right.y [1] =
 0.00000000e+00
   right.z [1] =
--1.91299710e-02
+-1.91299673e-02
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -26999,7 +26999,7 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
-1.91298872e-02
+1.91298835e-02
   front.y [1] =
 0.00000000e+00
   front.z [1] =
@@ -27086,7 +27086,7 @@ transform [1] =
   right.y [1] =
 0.00000000e+00
   right.z [1] =
--1.49668440e-01
+-1.49668410e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -27094,7 +27094,7 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
-1.49667785e-01
+1.49667755e-01
   front.y [1] =
 0.00000000e+00
   front.z [1] =
@@ -27177,7 +27177,7 @@ false
 objAddr = 00000126
 transform [1] =
   right.x [1] =
--9.18901205e-01
+-9.18901324e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
@@ -27193,7 +27193,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--9.18897212e-01
+-9.18897331e-01
   posit.x [1] =
 -2.57510010e+02
   posit.y [1] =
@@ -27272,7 +27272,7 @@ false
 objAddr = 00000127
 transform [1] =
   right.x [1] =
--9.18901205e-01
+-9.18901324e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
@@ -27288,7 +27288,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--9.18897212e-01
+-9.18897331e-01
   posit.x [1] =
 -1.20240002e+03
   posit.y [1] =
@@ -27367,11 +27367,11 @@ false
 objAddr = 00000128
 transform [1] =
   right.x [1] =
-2.71956801e-01
+2.71956712e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
--9.62305009e-01
+-9.62304950e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -27379,11 +27379,11 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
-9.62300837e-01
+9.62300777e-01
   front.y [1] =
 -0.00000000e+00
   front.z [1] =
-2.71955609e-01
+2.71955520e-01
   posit.x [1] =
 -1.28905005e+03
   posit.y [1] =
@@ -27466,7 +27466,7 @@ transform [1] =
   right.y [1] =
 0.00000000e+00
   right.z [1] =
--3.33470225e-01
+-3.33470166e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -27474,7 +27474,7 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
-3.33468765e-01
+3.33468705e-01
   front.y [1] =
 0.00000000e+00
   front.z [1] =
@@ -27557,11 +27557,11 @@ false
 objAddr = 0000012A
 transform [1] =
   right.x [1] =
--6.08782113e-01
+-6.08782172e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
--7.93332160e-01
+-7.93332040e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -27569,11 +27569,11 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
-7.93328702e-01
+7.93328583e-01
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--6.08779490e-01
+-6.08779550e-01
   posit.x [1] =
 -1.74781995e+03
   posit.y [1] =
@@ -27652,11 +27652,11 @@ false
 objAddr = 0000012B
 transform [1] =
   right.x [1] =
--8.20482969e-01
+-8.20482910e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
--5.71663558e-01
+-5.71663499e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -27664,11 +27664,11 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
-5.71661055e-01
+5.71660995e-01
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--8.20479393e-01
+-8.20479333e-01
   posit.x [1] =
 -1.08466003e+03
   posit.y [1] =
@@ -27751,7 +27751,7 @@ transform [1] =
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
-3.78222913e-01
+3.78222972e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -27759,7 +27759,7 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
--3.78221273e-01
+-3.78221333e-01
   front.y [1] =
 0.00000000e+00
   front.z [1] =
@@ -27842,11 +27842,11 @@ false
 objAddr = 0000012D
 transform [1] =
   right.x [1] =
--9.60833192e-01
+-9.60833311e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
-2.77111501e-01
+2.77111590e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -27854,11 +27854,11 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
--2.77110308e-01
+-2.77110398e-01
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--9.60829020e-01
+-9.60829139e-01
   posit.x [1] =
 -1.07101001e+03
   posit.y [1] =
@@ -28317,7 +28317,7 @@ false
 objAddr = 00000132
 transform [1] =
   right.x [1] =
--6.01223469e-01
+-6.01223409e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
@@ -28333,7 +28333,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--6.01220846e-01
+-6.01220787e-01
   posit.x [1] =
 1.11492004e+03
   posit.y [1] =
@@ -28412,7 +28412,7 @@ false
 objAddr = 00000133
 transform [1] =
   right.x [1] =
--6.01223469e-01
+-6.01223409e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
@@ -28428,7 +28428,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--6.01220846e-01
+-6.01220787e-01
   posit.x [1] =
 1.34351001e+03
   posit.y [1] =
@@ -28511,7 +28511,7 @@ transform [1] =
   right.y [1] =
 0.00000000e+00
   right.z [1] =
--7.08438605e-02
+-7.08438754e-02
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -28519,7 +28519,7 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
-7.08435550e-02
+7.08435699e-02
   front.y [1] =
 0.00000000e+00
   front.z [1] =
@@ -28792,11 +28792,11 @@ false
 objAddr = 00000137
 transform [1] =
   right.x [1] =
--3.75169784e-01
+-3.75169814e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
--9.26951468e-01
+-9.26951528e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -28804,11 +28804,11 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
-9.26947415e-01
+9.26947474e-01
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--3.75168145e-01
+-3.75168175e-01
   posit.x [1] =
 -4.37757538e+02
   posit.y [1] =
@@ -29077,7 +29077,7 @@ false
 objAddr = 0000013A
 transform [1] =
   right.x [1] =
-8.70699584e-01
+8.70699525e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
@@ -29093,7 +29093,7 @@ transform [1] =
   front.y [1] =
 -0.00000000e+00
   front.z [1] =
-8.70695770e-01
+8.70695710e-01
   posit.x [1] =
 4.75234253e+02
   posit.y [1] =
@@ -29172,11 +29172,11 @@ false
 objAddr = 0000013B
 transform [1] =
   right.x [1] =
--9.23467577e-01
+-9.23467517e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
-3.83665472e-01
+3.83665413e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -29184,11 +29184,11 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
--3.83663803e-01
+-3.83663744e-01
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--9.23463583e-01
+-9.23463523e-01
   posit.x [1] =
 9.83279785e+02
   posit.y [1] =
@@ -29366,7 +29366,7 @@ transform [1] =
   right.y [1] =
 0.00000000e+00
   right.z [1] =
--9.93828773e-01
+-9.93828714e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -29374,7 +29374,7 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
-9.93824422e-01
+9.93824363e-01
   front.y [1] =
 0.00000000e+00
   front.z [1] =
@@ -29457,11 +29457,11 @@ false
 objAddr = 0000013E
 transform [1] =
   right.x [1] =
--7.38031685e-01
+-7.38031745e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
--6.74759626e-01
+-6.74759746e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -29469,11 +29469,11 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
-6.74756706e-01
+6.74756825e-01
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--7.38028467e-01
+-7.38028526e-01
   posit.x [1] =
 1.58242383e+03
   posit.y [1] =
@@ -29647,11 +29647,11 @@ false
 objAddr = 00000140
 transform [1] =
   right.x [1] =
-2.14752614e-01
+2.14752600e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
--9.76664007e-01
+-9.76664066e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -29659,11 +29659,11 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
-9.76659775e-01
+9.76659834e-01
   front.y [1] =
 -0.00000000e+00
   front.z [1] =
-2.14751676e-01
+2.14751661e-01
   posit.x [1] =
 1.66836047e+03
   posit.y [1] =
@@ -29837,11 +29837,11 @@ false
 objAddr = 00000142
 transform [1] =
   right.x [1] =
--3.15957367e-01
+-3.15957338e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
-9.48768854e-01
+9.48768795e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -29849,11 +29849,11 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
--9.48764741e-01
+-9.48764682e-01
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--3.15955997e-01
+-3.15955967e-01
   posit.x [1] =
 1.61975256e+03
   posit.y [1] =
@@ -30027,11 +30027,11 @@ false
 objAddr = 00000144
 transform [1] =
   right.x [1] =
--4.08958018e-01
+-4.08958048e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
--9.12548423e-01
+-9.12548482e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -30039,11 +30039,11 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
-9.12544429e-01
+9.12544489e-01
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--4.08956230e-01
+-4.08956259e-01
   posit.x [1] =
 9.30479858e+02
   posit.y [1] =
@@ -30122,7 +30122,7 @@ false
 objAddr = 00000145
 transform [1] =
   right.x [1] =
-3.09372861e-02
+3.09372880e-02
   right.y [1] =
 -0.00000000e+00
   right.z [1] =
@@ -30138,7 +30138,7 @@ transform [1] =
   front.y [1] =
 0.00000000e+00
   front.z [1] =
-3.09371520e-02
+3.09371538e-02
   posit.x [1] =
 8.73136414e+02
   posit.y [1] =
@@ -30502,11 +30502,11 @@ false
 objAddr = 00000149
 transform [1] =
   right.x [1] =
-6.11666918e-01
+6.11666977e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
--7.91109979e-01
+-7.91110039e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -30514,11 +30514,11 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
-7.91106522e-01
+7.91106582e-01
   front.y [1] =
 -0.00000000e+00
   front.z [1] =
-6.11664236e-01
+6.11664295e-01
   posit.x [1] =
 -5.14899475e+02
   posit.y [1] =
@@ -30597,11 +30597,11 @@ false
 objAddr = 0000014A
 transform [1] =
   right.x [1] =
-1.25672966e-01
+1.25672951e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
--9.92067397e-01
+-9.92067456e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -30609,11 +30609,11 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
-9.92063105e-01
+9.92063165e-01
   front.y [1] =
 -0.00000000e+00
   front.z [1] =
-1.25672415e-01
+1.25672400e-01
   posit.x [1] =
 -1.46100488e+03
   posit.y [1] =
@@ -30791,7 +30791,7 @@ transform [1] =
   right.y [1] =
 0.00000000e+00
   right.z [1] =
-5.27283788e-01
+5.27283847e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -30799,7 +30799,7 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
--5.27281523e-01
+-5.27281582e-01
   front.y [1] =
 0.00000000e+00
   front.z [1] =
@@ -30981,7 +30981,7 @@ transform [1] =
   right.y [1] =
 0.00000000e+00
   right.z [1] =
--9.52675879e-01
+-9.52675700e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -30989,7 +30989,7 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
-9.52671707e-01
+9.52671528e-01
   front.y [1] =
 0.00000000e+00
   front.z [1] =
@@ -31266,7 +31266,7 @@ transform [1] =
   right.y [1] =
 0.00000000e+00
   right.z [1] =
--7.07616061e-02
+-7.07616135e-02
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -31274,7 +31274,7 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
-7.07613006e-02
+7.07613081e-02
   front.y [1] =
 0.00000000e+00
   front.z [1] =
@@ -31642,11 +31642,11 @@ false
 objAddr = 00000155
 transform [1] =
   right.x [1] =
--4.70602751e-01
+-4.70602691e-01
   right.y [1] =
 0.00000000e+00
   right.z [1] =
--8.82340312e-01
+-8.82340252e-01
   up.x [1] =
 0.00000000e+00
   up.y [1] =
@@ -31654,11 +31654,11 @@ transform [1] =
   up.z [1] =
 0.00000000e+00
   front.x [1] =
-8.82336497e-01
+8.82336438e-01
   front.y [1] =
 0.00000000e+00
   front.z [1] =
--4.70600694e-01
+-4.70600635e-01
   posit.x [1] =
 9.21212769e+00
   posit.y [1] =
@@ -31738,44 +31738,31 @@ count [1] =
 name = AiPath
 sObject = 00000156
 size [1] =
-7
-label = Enemy_6
+8
+label = Enemy_14
 pointCount [1] =
 1
 points [1] =
   x [1] =
--1.56174231e+03
+-1.62750195e+03
   z [1] =
-7.04465149e+02
+6.77737915e+02
 pathType = 00000000
 name = AiPath
 sObject = 00000157
 size [1] =
-6
-label = stage6
+7
+label = stage18
 pointCount [1] =
 1
 points [1] =
   x [1] =
-2.37292999e+02
+-3.96358917e+02
   z [1] =
-3.20752014e+02
+-1.24669250e+02
 pathType = 00000000
 name = AiPath
 sObject = 00000158
-size [1] =
-7
-label = stage22
-pointCount [1] =
-1
-points [1] =
-  x [1] =
-1.98007004e+02
-  z [1] =
-5.20209999e+01
-pathType = 00000000
-name = AiPath
-sObject = 00000159
 size [1] =
 8
 label = Enemy_11
@@ -31783,12 +31770,38 @@ pointCount [1] =
 1
 points [1] =
   x [1] =
-4.36464905e+02
+6.51757446e+02
   z [1] =
--1.52808374e+03
+1.32430139e+03
+pathType = 00000000
+name = AiPath
+sObject = 00000159
+size [1] =
+6
+label = stage4
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-2.38549072e+02
+  z [1] =
+2.65910095e+02
 pathType = 00000000
 name = AiPath
 sObject = 0000015A
+size [1] =
+8
+label = Enemy_13
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+1.42678894e+03
+  z [1] =
+-7.04947937e+02
+pathType = 00000000
+name = AiPath
+sObject = 0000015B
 size [1] =
 7
 label = stage20
@@ -31801,59 +31814,33 @@ points [1] =
 -1.82022003e+02
 pathType = 00000000
 name = AiPath
-sObject = 0000015B
-size [1] =
-8
-label = Enemy_10
-pointCount [1] =
-1
-points [1] =
-  x [1] =
-1.45434998e+03
-  z [1] =
--7.20607971e+02
-pathType = 00000000
-name = AiPath
 sObject = 0000015C
 size [1] =
-6
-label = stage4
+8
+label = Enemy_15
 pointCount [1] =
 1
 points [1] =
   x [1] =
--2.24524002e+02
+4.10080902e+02
   z [1] =
-2.95675995e+02
+-1.52235156e+03
 pathType = 00000000
 name = AiPath
 sObject = 0000015D
 size [1] =
 7
-label = Enemy_8
+label = stage22
 pointCount [1] =
 1
 points [1] =
   x [1] =
-6.11815979e+02
+1.98007004e+02
   z [1] =
-1.35841003e+03
+5.20209999e+01
 pathType = 00000000
 name = AiPath
 sObject = 0000015E
-size [1] =
-7
-label = stage18
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--3.99638000e+02
-  z [1] =
--1.21421997e+02
-pathType = 00000000
-name = AiPath
-sObject = 0000015F
 size [1] =
 6
 label = stage8
@@ -31866,111 +31853,20 @@ points [1] =
 2.07910004e+02
 pathType = 00000000
 name = AiPath
+sObject = 0000015F
+size [1] =
+6
+label = stage6
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+2.37292999e+02
+  z [1] =
+3.20752014e+02
+pathType = 00000000
+name = AiPath
 sObject = 00000160
-size [1] =
-7
-label = stage21
-pointCount [1] =
-1
-points [1] =
-  x [1] =
-1.45764999e+02
-  z [1] =
--1.67393997e+02
-pathType = 00000000
-name = AiPath
-sObject = 00000161
-size [1] =
-6
-label = stage2
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--3.87518005e+02
-  z [1] =
-7.20818024e+01
-pathType = 00000000
-name = AiPath
-sObject = 00000162
-size [1] =
-7
-label = Enemy_7
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--5.72609009e+02
-  z [1] =
-1.45850000e+03
-pathType = 00000000
-name = AiPath
-sObject = 00000163
-size [1] =
-7
-label = Enemy_9
-pointCount [1] =
-1
-points [1] =
-  x [1] =
-1.63734998e+03
-  z [1] =
-4.17010010e+02
-pathType = 00000000
-name = AiPath
-sObject = 00000164
-size [1] =
-6
-label = stage3
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--3.51993988e+02
-  z [1] =
-2.03731003e+02
-pathType = 00000000
-name = AiPath
-sObject = 00000165
-size [1] =
-7
-label = stage24
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--1.38429993e+02
-  z [1] =
-8.33659973e+01
-pathType = 00000000
-name = AiPath
-sObject = 00000166
-size [1] =
-6
-label = stage5
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--7.40679016e+01
-  z [1] =
-3.66725006e+02
-pathType = 00000000
-name = AiPath
-sObject = 00000167
-size [1] =
-8
-label = Player_3
-pointCount [1] =
-1
-points [1] =
-  x [1] =
-4.67151917e+02
-  z [1] =
--1.54005493e+03
-pathType = 00000000
-name = AiPath
-sObject = 00000168
 size [1] =
 7
 label = stage13
@@ -31983,7 +31879,20 @@ points [1] =
 -3.55463989e+02
 pathType = 00000000
 name = AiPath
-sObject = 00000169
+sObject = 00000161
+size [1] =
+7
+label = stage21
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+1.45764999e+02
+  z [1] =
+-1.67393997e+02
+pathType = 00000000
+name = AiPath
+sObject = 00000162
 size [1] =
 8
 label = Player_1
@@ -31991,90 +31900,90 @@ pointCount [1] =
 1
 points [1] =
   x [1] =
--1.46543530e+03
+-1.53653491e+03
   z [1] =
--5.63168762e+02
+-5.75370422e+02
 pathType = 00000000
 name = AiPath
-sObject = 0000016A
+sObject = 00000163
 size [1] =
 6
-label = stage7
+label = stage2
 pointCount [1] =
 1
 points [1] =
   x [1] =
-6.59399033e+01
+-3.87518005e+02
   z [1] =
-3.89710999e+02
+7.20818024e+01
 pathType = 00000000
 name = AiPath
-sObject = 0000016B
+sObject = 00000164
 size [1] =
 7
-label = stage10
+label = Enemy_7
 pointCount [1] =
 1
 points [1] =
   x [1] =
-3.81480011e+02
+-6.44128662e+02
   z [1] =
--5.12086983e+01
+1.39513757e+03
 pathType = 00000000
 name = AiPath
-sObject = 0000016C
-size [1] =
-8
-label = Player_2
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--6.86687988e+02
-  z [1] =
--1.52171997e+03
-pathType = 00000000
-name = AiPath
-sObject = 0000016D
+sObject = 00000165
 size [1] =
 7
-label = stage19
+label = Enemy_9
 pointCount [1] =
 1
 points [1] =
   x [1] =
--2.30375000e+02
+1.63760950e+03
   z [1] =
--7.75384979e+01
+3.95389130e+02
 pathType = 00000000
 name = AiPath
-sObject = 0000016E
+sObject = 00000166
+size [1] =
+6
+label = stage3
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-3.51993988e+02
+  z [1] =
+2.03731003e+02
+pathType = 00000000
+name = AiPath
+sObject = 00000167
 size [1] =
 7
-label = stage11
+label = stage24
 pointCount [1] =
 1
 points [1] =
   x [1] =
-3.48045013e+02
+-1.38429993e+02
   z [1] =
--2.14203003e+02
+8.33659973e+01
 pathType = 00000000
 name = AiPath
-sObject = 0000016F
+sObject = 00000168
 size [1] =
-8
-label = Player_5
+6
+label = stage5
 pointCount [1] =
 1
 points [1] =
   x [1] =
-1.61600000e+03
+-7.40679016e+01
   z [1] =
-4.36325989e+02
+3.66725006e+02
 pathType = 00000000
 name = AiPath
-sObject = 00000170
+sObject = 00000169
 size [1] =
 8
 label = Player_4
@@ -32082,25 +31991,12 @@ pointCount [1] =
 1
 points [1] =
   x [1] =
-1.41368994e+03
+5.47586548e+02
   z [1] =
--7.64323975e+02
+-1.47234961e+03
 pathType = 00000000
 name = AiPath
-sObject = 00000171
-size [1] =
-7
-label = stage23
-pointCount [1] =
-1
-points [1] =
-  x [1] =
-4.12818985e+01
-  z [1] =
-1.52324997e+02
-pathType = 00000000
-name = AiPath
-sObject = 00000172
+sObject = 0000016A
 size [1] =
 7
 label = stage14
@@ -32113,6 +32009,110 @@ points [1] =
 -4.20243988e+02
 pathType = 00000000
 name = AiPath
+sObject = 0000016B
+size [1] =
+6
+label = stage7
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+6.59399033e+01
+  z [1] =
+3.89710999e+02
+pathType = 00000000
+name = AiPath
+sObject = 0000016C
+size [1] =
+8
+label = Player_8
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+5.30919189e+02
+  z [1] =
+1.39513757e+03
+pathType = 00000000
+name = AiPath
+sObject = 0000016D
+size [1] =
+7
+label = stage10
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+3.81480011e+02
+  z [1] =
+-5.12086983e+01
+pathType = 00000000
+name = AiPath
+sObject = 0000016E
+size [1] =
+8
+label = Player_3
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-5.06623077e+02
+  z [1] =
+1.44930652e+03
+pathType = 00000000
+name = AiPath
+sObject = 0000016F
+size [1] =
+8
+label = Player_7
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-8.06635254e+02
+  z [1] =
+-1.45914526e+03
+pathType = 00000000
+name = AiPath
+sObject = 00000170
+size [1] =
+7
+label = stage19
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-2.34603821e+02
+  z [1] =
+-6.54905701e+01
+pathType = 00000000
+name = AiPath
+sObject = 00000171
+size [1] =
+7
+label = stage11
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+3.48045013e+02
+  z [1] =
+-2.14203003e+02
+pathType = 00000000
+name = AiPath
+sObject = 00000172
+size [1] =
+8
+label = Player_2
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+1.57231885e+03
+  z [1] =
+5.06570129e+02
+pathType = 00000000
+name = AiPath
 sObject = 00000173
 size [1] =
 8
@@ -32121,129 +32121,25 @@ pointCount [1] =
 1
 points [1] =
   x [1] =
-5.79026978e+02
+1.35595276e+03
   z [1] =
-1.40721997e+03
+-8.13285706e+02
 pathType = 00000000
 name = AiPath
 sObject = 00000174
 size [1] =
-8
-label = Player_7
+7
+label = stage23
 pointCount [1] =
 1
 points [1] =
   x [1] =
--5.53507996e+02
+4.12818985e+01
   z [1] =
-1.48956006e+03
+1.52324997e+02
 pathType = 00000000
 name = AiPath
 sObject = 00000175
-size [1] =
-8
-label = Enemy_12
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--5.54359619e+02
-  z [1] =
--1.49747083e+03
-pathType = 00000000
-name = AiPath
-sObject = 00000176
-size [1] =
-6
-label = stage9
-pointCount [1] =
-1
-points [1] =
-  x [1] =
-4.04466003e+02
-  z [1] =
-4.28264008e+01
-pathType = 00000000
-name = AiPath
-sObject = 00000177
-size [1] =
-7
-label = stage12
-pointCount [1] =
-1
-points [1] =
-  x [1] =
-2.83265015e+02
-  z [1] =
--2.92773987e+02
-pathType = 00000000
-name = AiPath
-sObject = 00000178
-size [1] =
-7
-label = stage15
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--8.70238037e+01
-  z [1] =
--3.88898987e+02
-pathType = 00000000
-name = AiPath
-sObject = 00000179
-size [1] =
-8
-label = Player_8
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--1.43042590e+03
-  z [1] =
-7.25419922e+02
-pathType = 00000000
-name = AiPath
-sObject = 0000017A
-size [1] =
-7
-label = stage16
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--2.27867004e+02
-  z [1] =
--3.38747009e+02
-pathType = 00000000
-name = AiPath
-sObject = 0000017B
-size [1] =
-6
-label = stage1
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--3.73308014e+02
-  z [1] =
--2.19533005e+01
-pathType = 00000000
-name = AiPath
-sObject = 0000017C
-size [1] =
-7
-label = stage17
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--3.36529999e+02
-  z [1] =
--2.30084000e+02
-pathType = 00000000
-name = AiPath
-sObject = 0000017D
 size [1] =
 12
 label = capturegoal1
@@ -32256,7 +32152,20 @@ points [1] =
 -6.31035995e+01
 pathType = 00000000
 name = AiPath
-sObject = 0000017E
+sObject = 00000176
+size [1] =
+8
+label = Enemy_12
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-6.69129639e+02
+  z [1] =
+-1.54248193e+03
+pathType = 00000000
+name = AiPath
+sObject = 00000177
 size [1] =
 12
 label = capturegoal2
@@ -32264,12 +32173,25 @@ pointCount [1] =
 1
 points [1] =
   x [1] =
--1.14659521e+03
+-1.22486060e+03
   z [1] =
--6.75628540e+02
+-6.89782532e+02
 pathType = 00000000
 name = AiPath
-sObject = 0000017F
+sObject = 00000178
+size [1] =
+6
+label = stage9
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+4.04466003e+02
+  z [1] =
+4.28264008e+01
+pathType = 00000000
+name = AiPath
+sObject = 00000179
 size [1] =
 12
 label = capturegoal3
@@ -32277,9 +32199,87 @@ pointCount [1] =
 1
 points [1] =
   x [1] =
--1.24659937e+03
+-1.29832190e+03
   z [1] =
-4.03582062e+02
+3.73558868e+02
+pathType = 00000000
+name = AiPath
+sObject = 0000017A
+size [1] =
+7
+label = stage12
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+2.83265015e+02
+  z [1] =
+-2.92773987e+02
+pathType = 00000000
+name = AiPath
+sObject = 0000017B
+size [1] =
+7
+label = stage15
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-8.70238037e+01
+  z [1] =
+-3.88898987e+02
+pathType = 00000000
+name = AiPath
+sObject = 0000017C
+size [1] =
+8
+label = Player_5
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-1.56916626e+03
+  z [1] =
+7.86075623e+02
+pathType = 00000000
+name = AiPath
+sObject = 0000017D
+size [1] =
+7
+label = stage16
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-2.27867004e+02
+  z [1] =
+-3.38747009e+02
+pathType = 00000000
+name = AiPath
+sObject = 0000017E
+size [1] =
+6
+label = stage1
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-3.84523163e+02
+  z [1] =
+-4.18190918e+01
+pathType = 00000000
+name = AiPath
+sObject = 0000017F
+size [1] =
+7
+label = stage17
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-3.21399231e+02
+  z [1] =
+-2.31190903e+02
 pathType = 00000000
 name = AiPath
 sObject = 00000180
@@ -32367,5 +32367,5 @@ ownerObj [1] =
 0
 ownerObj [1] =
 0
-PadData = 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+PadData = 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 PadData2 = 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
