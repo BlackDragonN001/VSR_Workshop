@@ -945,3 +945,16 @@ September 7th, 2021
 -Updated Hadean Collector's physics to be the same as the ISDF Scavenger (special thanks to Herp McDerperson)
 -blue_banana: Replaced BZ1Moon map with a new variant of the map (Selena)
 -F9Bomber: Fixed Beyond map so things can properly take damage again
+
+
+
+==Release 97==
+January 2nd, 2022
+
+-ISDF pilots should now recycle for 5 scrap (this already worked for me, but I added a few things that should definitely make it work all the time?)
+-Hornet Rocket now works correctly on AI units (they won't try to use it at 400m anymore)
+-Fixed a texture error on Sinister
+-F9Bomber: Rereleased Beyond (replacing the previous version)
+-Started laying the groundwork for a better FFA/MPI experience, allowing more flexibility with commanders and teams (can choose specific teams and commanders with AI teams thrown in, etc.)
+	>Herp McDerperson: changed AI teams in path editor to match new DLL settings
+	>Need to check specialty MPI maps for correctness (Face Off, Ascent, BottleNeck, Meltdown, Stranded) <-- these may or may not work?

@@ -12,21 +12,79 @@ Player_15
 
 
 THEN, place AI enemy path points in the same base areas going in REVERSE ORDER of the player path points, but DO NOT put an enemy path point in Player_1's base.
-Enemy path points should go in decreasing order ENDING with Enemy_6, STARTING with whatever Enemy_# would result in ENDING with Enemy_6
+Enemy path points should go in decreasing order ENDING with Enemy_11, STARTING with whatever Enemy_# would result in ENDING with Enemy_11
 
 Enemy_15
 Enemy_14
 Enemy_13
-.
-.
-.
-Enemy_6
+Enemy_12
+Enemy_11
 
 
 FOR EXAMPLE:
-On a map, LEFT to RIGHT would be placed the players, RIGHT to LEFT would be placed the enemies such that you END with Enemy_6 in the base area RIGHT of Player_1:
+On a map, LEFT to RIGHT would be placed the players and AI, and AI are placed such that you END with Enemy_11 (the FIRST AI enemy) farthest away from Player_1:
 
-Player_1 | Player_2 | Player_3 | Player_4 | Player_5 |
-(NoEnemy)|  Enemy_6 |  Enemy_7 |  Enemy_8 |  Enemy_9 |
+KEEP IN MIND:
+In FFA mode with HUMANS ONLY, the player slots will fill in increasing order from Player_1 to Player_10
 
-This will ensure that the enemies will start the farthest away from the humans and fill up in their direction, and vise-versa with the humans filling toward the enemies.
+If you want PLAYERS to spawn as far away from each other as possible, you'll need to have Player_2 on the opposite side of the map as Player_1, and Player_3 somewhere equidistant from both, and so on.
+
+When you mix AI and Humans, this is an important consideration:
+You don't want AI spawning too close to players, and you don't want players spawning too close to players... try to balance this as much as possible.
+
+
+GBD: players are spawned in incrementing order, Enemy_# are also placed in increasing order, so the paths should be placed in a way where there is no or minimal overlap
+
+
+Here are all of the possible options for proper FFA setup:
+
+Player_1 |  Player_2 |  Player_3 |
+(NoEnemy)|  Enemy_12 |  Enemy_11 |
+
+
+Player_1 |  Player_2 |  Player_3 |  Player_4 |
+(NoEnemy)|  Enemy_13 |  Enemy_12 |  Enemy_11 |
+
+
+Player_1 |  Player_2 |  Player_3 |  Player_4 | Player_5  |
+(NoEnemy)|  Enemy_14 |  Enemy_13 |  Enemy_12 |  Enemy_11 |
+
+
+Player_1 |  Player_2 |  Player_3 |  Player_4 | Player_5  | Player_6 | 
+(NoEnemy)|  Enemy_15 |  Enemy_14 |  Enemy_13 |  Enemy_12 | Enemy_11 |
+
+
+Player_1 |  Player_2 |  Player_3 |  Player_4 | Player_5  | Player_6 | Player_7 |
+(NoEnemy)| (NoEnemy) |  Enemy_15 |  Enemy_14 |  Enemy_13 | Enemy_12 | Enemy_11 |
+
+
+Player_1 |  Player_2 |  Player_3 |  Player_4 |  Player_5 | Player_6 | Player_7 | Player_8 |
+(NoEnemy)| (NoEnemy) | (NoEnemy) |  Enemy_15 |  Enemy_14 | Enemy_13 | Enemy_12 | Enemy_11 |
+
+
+Player_1 |  Player_2 |  Player_3 |  Player_4 | Player_5  | Player_6 | Player_7 | Player_8 | Player_9 |
+(NoEnemy)| (NoEnemy) | (NoEnemy) | (NoEnemy) |  Enemy_15 | Enemy_14 | Enemy_13 | Enemy_12 | Enemy_11 |
+
+
+Player_1 |  Player_2 |  Player_3 |  Player_4 | Player_5  | Player_6 | Player_7 | Player_8 | Player_9 | Player_10 |
+(NoEnemy)| (NoEnemy) | (NoEnemy) | (NoEnemy) | (NoEnemy) | Enemy_15 | Enemy_14 | Enemy_13 | Enemy_12 | Enemy_11  |
+
+
+Player_1 |  Player_2 |  Player_3 |  Player_4 | Player_5  | Player_6 | Player_7 | Player_8 | Player_9 | Player_10 |(NoPlayer)|
+(NoEnemy)| (NoEnemy) | (NoEnemy) | (NoEnemy) | (NoEnemy) | (NoEnemy)| Enemy_15 | Enemy_14 | Enemy_13 | Enemy_12  | Enemy_11 |
+
+
+Player_1 |  Player_2 |  Player_3 |  Player_4 | Player_5  | Player_6 | Player_7 | Player_8 | Player_9 | Player_10 |(NoPlayer)|(NoPlayer)|
+(NoEnemy)| (NoEnemy) | (NoEnemy) | (NoEnemy) | (NoEnemy) | (NoEnemy)| (NoEnemy)| Enemy_15 | Enemy_14 | Enemy_13  | Enemy_12 | Enemy_11 |
+
+
+Player_1 |  Player_2 |  Player_3 |  Player_4 | Player_5  | Player_6 | Player_7 | Player_8 | Player_9 | Player_10 |(NoPlayer)|(NoPlayer)|(NoPlayer)|
+(NoEnemy)| (NoEnemy) | (NoEnemy) | (NoEnemy) | (NoEnemy) | (NoEnemy)| (NoEnemy)| (NoEnemy)| Enemy_15 | Enemy_14  | Enemy_13 | Enemy_12 | Enemy_11 |
+
+
+Player_1 |  Player_2 |  Player_3 |  Player_4 |  Player_5 | Player_6 | Player_7 | Player_8 | Player_9 | Player_10 |(NoPlayer)|(NoPlayer)|(NoPlayer)|(NoPlayer)|
+(NoEnemy)| (NoEnemy) | (NoEnemy) | (NoEnemy) | (NoEnemy) | (NoEnemy)| (NoEnemy)| (NoEnemy)| (NoEnemy)| Enemy_15  | Enemy_14 | Enemy_13 | Enemy_12 | Enemy_11 |
+
+
+Player_1 |  Player_2 |  Player_3 |  Player_4 |  Player_5 | Player_6 | Player_7 | Player_8 | Player_9 | Player_10 |(NoPlayer)|(NoPlayer)|(NoPlayer)|(NoPlayer)|(NoPlayer)|
+(NoEnemy)| (NoEnemy) | (NoEnemy) | (NoEnemy) | (NoEnemy) | (NoEnemy)| (NoEnemy)| (NoEnemy)| (NoEnemy)| (NoEnemy) | Enemy_15 | Enemy_14 | Enemy_13 | Enemy_12 | Enemy_11 |
