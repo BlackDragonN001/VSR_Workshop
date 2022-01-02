@@ -23,23 +23,23 @@ true
 objAddr = 00000001
 transform [1] =
   right.x [1] =
--8.52547228e-01
+-8.52547169e-01
   right.y [1] =
--1.04956709e-01
+-1.04956694e-01
   right.z [1] =
-5.11994898e-01
+5.11994779e-01
   up.x [1] =
--4.25252616e-02
+-4.25252579e-02
   up.y [1] =
-9.90306497e-01
+9.90306377e-01
   up.z [1] =
-1.32197648e-01
+1.32197633e-01
   front.x [1] =
--5.20906866e-01
+-5.20906687e-01
   front.y [1] =
-9.09320265e-02
+9.09320042e-02
   front.z [1] =
--8.48746359e-01
+-8.48746240e-01
   posit.x [1] =
 6.26645874e+02
   posit.y [1] =
@@ -87640,116 +87640,9 @@ size [1] =
 0
 [AiPaths]
 count [1] =
-55
+56
 name = AiPath
 sObject = 000003A8
-size [1] =
-6
-label = 6MLay3
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--1.35817993e+02
-  z [1] =
--8.29020020e+02
-pathType = 00000000
-name = AiPath
-sObject = 000003A9
-size [1] =
-8
-label = 6Patrol1
-pointCount [1] =
-5
-points [5] =
-  x [1] =
--6.99801025e+02
-  z [1] =
--9.08776001e+02
-  x [1] =
--4.89019012e+02
-  z [1] =
--9.23017029e+02
-  x [1] =
--4.86170990e+02
-  z [1] =
--7.20781006e+02
-  x [1] =
--7.08346008e+02
-  z [1] =
--7.43568970e+02
-  x [1] =
--6.99801025e+02
-  z [1] =
--9.08776001e+02
-pathType = 00000000
-name = AiPath
-sObject = 000003AA
-size [1] =
-6
-label = stage2
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--2.18421997e+02
-  z [1] =
--5.12848999e+02
-pathType = 00000000
-name = AiPath
-sObject = 000003AB
-size [1] =
-8
-label = Player_4
-pointCount [1] =
-1
-points [1] =
-  x [1] =
-8.28323975e+02
-  z [1] =
-4.34057007e+01
-pathType = 00000000
-name = AiPath
-sObject = 000003AC
-size [1] =
-6
-label = 6MLay4
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--7.31132996e+02
-  z [1] =
--4.53032013e+02
-pathType = 00000000
-name = AiPath
-sObject = 000003AD
-size [1] =
-8
-label = Player_3
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--8.92921997e+02
-  z [1] =
-1.69531994e+01
-pathType = 00000000
-name = AiPath
-sObject = 000003AE
-size [1] =
-8
-label = Player_2
-pointCount [1] =
-1
-points [1] =
-  x [1] =
-5.73469971e+02
-  z [1] =
--8.92710999e+02
-pathType = 00000000
-name = AiPath
-sObject = 000003AF
 size [1] =
 8
 label = Player_1
@@ -87757,136 +87650,12 @@ pointCount [1] =
 1
 points [1] =
   x [1] =
--1.35529999e+02
+-1.35103943e+02
   z [1] =
-8.25367981e+02
+8.23255615e+02
 pathType = 00000000
 name = AiPath
-sObject = 000003B0
-size [1] =
-9
-label = edge_path
-pointCount [1] =
-2
-points [2] =
-  x [1] =
--1.09335986e+03
-  z [1] =
-1.06524170e+03
-  x [1] =
-1.12003125e+03
-  z [1] =
--1.18399915e+03
-pathType = 00000000
-name = AiPath
-sObject = 000003B1
-size [1] =
-7
-label = Enemy_7
-pointCount [1] =
-1
-points [1] =
-  x [1] =
-8.29788025e+02
-  z [1] =
-1.01169996e+01
-pathType = 00000000
-name = AiPath
-sObject = 000003B2
-size [1] =
-6
-label = 7MLay3
-pointCount [1] =
-1
-points [1] =
-  x [1] =
-5.87104980e+02
-  z [1] =
-4.94343994e+02
-pathType = 00000000
-name = AiPath
-sObject = 000003B3
-size [1] =
-6
-label = 6MLay2
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--3.03873993e+02
-  z [1] =
--5.41331970e+02
-pathType = 00000000
-name = AiPath
-sObject = 000003B4
-size [1] =
-7
-label = Enemy_9
-pointCount [1] =
-1
-points [1] =
-  x [1] =
-5.94984009e+02
-  z [1] =
--9.01536987e+02
-pathType = 00000000
-name = AiPath
-sObject = 000003B5
-size [1] =
-7
-label = Enemy_6
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--5.75023987e+02
-  z [1] =
--8.94918030e+02
-pathType = 00000000
-name = AiPath
-sObject = 000003B6
-size [1] =
-8
-label = 7Patrol1
-pointCount [1] =
-5
-points [5] =
-  x [1] =
-8.92453003e+02
-  z [1] =
--1.32302994e+02
-  x [1] =
-8.86755981e+02
-  z [1] =
-2.12352997e+02
-  x [1] =
-8.15546021e+02
-  z [1] =
-2.12352997e+02
-  x [1] =
-7.98455994e+02
-  z [1] =
--1.23758003e+02
-  x [1] =
-8.92453003e+02
-  z [1] =
--1.32302994e+02
-pathType = 00000000
-name = AiPath
-sObject = 000003B7
-size [1] =
-6
-label = stage1
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--6.96952026e+02
-  z [1] =
--3.73277008e+02
-pathType = 00000000
-name = AiPath
-sObject = 000003B8
+sObject = 000003A9
 size [1] =
 8
 label = 8Patrol1
@@ -87915,169 +87684,157 @@ points [5] =
 2.07796005e+02
 pathType = 00000000
 name = AiPath
-sObject = 000003B9
+sObject = 000003AA
 size [1] =
-7
-label = Enemy_8
+6
+label = 6MLay3
 pointCount [1] =
 1
 points [1] =
   x [1] =
--8.70135010e+02
+-1.35817993e+02
   z [1] =
-1.12564001e+01
+-8.29020020e+02
 pathType = 00000000
 name = AiPath
-sObject = 000003BA
+sObject = 000003AB
 size [1] =
 8
-label = 6Patrol2
+label = 6Patrol1
 pointCount [1] =
 5
 points [5] =
   x [1] =
--3.03873993e+02
+-6.99801025e+02
   z [1] =
--9.48653015e+02
+-9.08776001e+02
   x [1] =
-2.23080002e+02
+-4.89019012e+02
   z [1] =
--9.00229980e+02
+-9.23017029e+02
   x [1] =
-2.11686005e+02
+-4.86170990e+02
   z [1] =
--7.26478027e+02
+-7.20781006e+02
   x [1] =
--2.81085999e+02
+-7.08346008e+02
   z [1] =
--7.72052002e+02
+-7.43568970e+02
   x [1] =
--3.03873993e+02
+-6.99801025e+02
   z [1] =
--9.48653015e+02
+-9.08776001e+02
 pathType = 00000000
 name = AiPath
-sObject = 000003BB
+sObject = 000003AC
 size [1] =
 6
-label = stage3
+label = stage2
 pointCount [1] =
 1
 points [1] =
   x [1] =
--1.90340996e+01
+-2.18421997e+02
   z [1] =
--8.71745972e+02
+-5.12848999e+02
 pathType = 00000000
 name = AiPath
-sObject = 000003BC
-size [1] =
-6
-label = stage6
-pointCount [1] =
-1
-points [1] =
-  x [1] =
-6.82241028e+02
-  z [1] =
-5.98596008e+02
-pathType = 00000000
-name = AiPath
-sObject = 000003BD
-size [1] =
-6
-label = 7MLay4
-pointCount [1] =
-1
-points [1] =
-  x [1] =
-5.92801025e+02
-  z [1] =
--3.97204010e+02
-pathType = 00000000
-name = AiPath
-sObject = 000003BE
-size [1] =
-6
-label = stage4
-pointCount [1] =
-1
-points [1] =
-  x [1] =
-2.66375000e+02
-  z [1] =
--3.65966988e+01
-pathType = 00000000
-name = AiPath
-sObject = 000003BF
-size [1] =
-6
-label = 7MLay2
-pointCount [1] =
-1
-points [1] =
-  x [1] =
-2.99416992e+02
-  z [1] =
--2.12154007e+01
-pathType = 00000000
-name = AiPath
-sObject = 000003C0
-size [1] =
-6
-label = stage5
-pointCount [1] =
-1
-points [1] =
-  x [1] =
-6.65151001e+02
-  z [1] =
--4.30815002e+02
-pathType = 00000000
-name = AiPath
-sObject = 000003C1
-size [1] =
-6
-label = stage7
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--3.83058990e+02
-  z [1] =
--8.68241024e+00
-pathType = 00000000
-name = AiPath
-sObject = 000003C2
+sObject = 000003AD
 size [1] =
 8
-label = 7Patrol2
+label = Player_4
 pointCount [1] =
-5
-points [5] =
+1
+points [1] =
   x [1] =
-5.22731018e+02
+8.23402100e+02
   z [1] =
--5.47598999e+02
-  x [1] =
-5.74002014e+02
-  z [1] =
--2.17184998e+02
-  x [1] =
-8.36054016e+02
-  z [1] =
--2.79850006e+02
-  x [1] =
-7.67692993e+02
-  z [1] =
--6.95145996e+02
-  x [1] =
-5.22731018e+02
-  z [1] =
--5.47598999e+02
+4.18973389e+01
 pathType = 00000000
 name = AiPath
-sObject = 000003C3
+sObject = 000003AE
+size [1] =
+6
+label = 6MLay4
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-7.31132996e+02
+  z [1] =
+-4.53032013e+02
+pathType = 00000000
+name = AiPath
+sObject = 000003AF
+size [1] =
+8
+label = Player_3
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-8.91724609e+02
+  z [1] =
+1.58723755e+01
+pathType = 00000000
+name = AiPath
+sObject = 000003B0
+size [1] =
+9
+label = edge_path
+pointCount [1] =
+2
+points [2] =
+  x [1] =
+-1.09335986e+03
+  z [1] =
+1.06524170e+03
+  x [1] =
+1.12003125e+03
+  z [1] =
+-1.18399915e+03
+pathType = 00000000
+name = AiPath
+sObject = 000003B1
+size [1] =
+8
+label = Player_2
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+5.72745178e+02
+  z [1] =
+-8.92422607e+02
+pathType = 00000000
+name = AiPath
+sObject = 000003B2
+size [1] =
+6
+label = stage1
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-6.96952026e+02
+  z [1] =
+-3.73277008e+02
+pathType = 00000000
+name = AiPath
+sObject = 000003B3
+size [1] =
+8
+label = Enemy_13
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-8.71901611e+02
+  z [1] =
+9.57423401e+00
+pathType = 00000000
+name = AiPath
+sObject = 000003B4
 size [1] =
 8
 label = 6Patrol3
@@ -88106,7 +87863,185 @@ points [5] =
 -5.75513000e+02
 pathType = 00000000
 name = AiPath
-sObject = 000003C4
+sObject = 000003B5
+size [1] =
+8
+label = Enemy_12
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+8.36448975e+02
+  z [1] =
+-1.44499207e+00
+pathType = 00000000
+name = AiPath
+sObject = 000003B6
+size [1] =
+8
+label = 6Patrol2
+pointCount [1] =
+5
+points [5] =
+  x [1] =
+-3.03873993e+02
+  z [1] =
+-9.48653015e+02
+  x [1] =
+2.23080002e+02
+  z [1] =
+-9.00229980e+02
+  x [1] =
+2.11686005e+02
+  z [1] =
+-7.26478027e+02
+  x [1] =
+-2.81085999e+02
+  z [1] =
+-7.72052002e+02
+  x [1] =
+-3.03873993e+02
+  z [1] =
+-9.48653015e+02
+pathType = 00000000
+name = AiPath
+sObject = 000003B7
+size [1] =
+6
+label = 7MLay3
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+5.87104980e+02
+  z [1] =
+4.94343994e+02
+pathType = 00000000
+name = AiPath
+sObject = 000003B8
+size [1] =
+6
+label = 6MLay2
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-3.03873993e+02
+  z [1] =
+-5.41331970e+02
+pathType = 00000000
+name = AiPath
+sObject = 000003B9
+size [1] =
+8
+label = Enemy_14
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+5.94372925e+02
+  z [1] =
+-8.98950623e+02
+pathType = 00000000
+name = AiPath
+sObject = 000003BA
+size [1] =
+8
+label = Enemy_11
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-6.05374146e+02
+  z [1] =
+-8.25751465e+02
+pathType = 00000000
+name = AiPath
+sObject = 000003BB
+size [1] =
+8
+label = 7Patrol1
+pointCount [1] =
+5
+points [5] =
+  x [1] =
+8.92453003e+02
+  z [1] =
+-1.32302994e+02
+  x [1] =
+8.86755981e+02
+  z [1] =
+2.12352997e+02
+  x [1] =
+8.15546021e+02
+  z [1] =
+2.12352997e+02
+  x [1] =
+7.98455994e+02
+  z [1] =
+-1.23758003e+02
+  x [1] =
+8.92453003e+02
+  z [1] =
+-1.32302994e+02
+pathType = 00000000
+name = AiPath
+sObject = 000003BC
+size [1] =
+6
+label = stage7
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-3.83058990e+02
+  z [1] =
+-8.68241024e+00
+pathType = 00000000
+name = AiPath
+sObject = 000003BD
+size [1] =
+6
+label = stage3
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-1.90340996e+01
+  z [1] =
+-8.71745972e+02
+pathType = 00000000
+name = AiPath
+sObject = 000003BE
+size [1] =
+8
+label = 7Patrol2
+pointCount [1] =
+5
+points [5] =
+  x [1] =
+5.22731018e+02
+  z [1] =
+-5.47598999e+02
+  x [1] =
+5.74002014e+02
+  z [1] =
+-2.17184998e+02
+  x [1] =
+8.36054016e+02
+  z [1] =
+-2.79850006e+02
+  x [1] =
+7.67692993e+02
+  z [1] =
+-6.95145996e+02
+  x [1] =
+5.22731018e+02
+  z [1] =
+-5.47598999e+02
+pathType = 00000000
+name = AiPath
+sObject = 000003BF
 size [1] =
 6
 label = stage8
@@ -88119,140 +88054,7 @@ points [1] =
 -2.82127991e+02
 pathType = 00000000
 name = AiPath
-sObject = 000003C5
-size [1] =
-6
-label = 6MLay1
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--4.09264008e+02
-  z [1] =
--6.63812988e+02
-pathType = 00000000
-name = AiPath
-sObject = 000003C6
-size [1] =
-8
-label = 8Patrol2
-pointCount [1] =
-5
-points [5] =
-  x [1] =
--7.60187012e+02
-  z [1] =
-8.36721008e+02
-  x [1] =
--9.16848022e+02
-  z [1] =
-4.94914001e+02
-  x [1] =
--5.66495972e+02
-  z [1] =
-4.57885010e+02
-  x [1] =
--5.77888977e+02
-  z [1] =
-8.48114990e+02
-  x [1] =
--7.60187012e+02
-  z [1] =
-8.36721008e+02
-pathType = 00000000
-name = AiPath
-sObject = 000003C7
-size [1] =
-6
-label = 7MLay1
-pointCount [1] =
-1
-points [1] =
-  x [1] =
-4.76016998e+02
-  z [1] =
--2.97605991e+01
-pathType = 00000000
-name = AiPath
-sObject = 000003C8
-size [1] =
-7
-label = stage12
-pointCount [1] =
-1
-points [1] =
-  x [1] =
-4.79434998e+02
-  z [1] =
--3.92645996e+02
-pathType = 00000000
-name = AiPath
-sObject = 000003C9
-size [1] =
-6
-label = 8MLay4
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--6.61062012e+02
-  z [1] =
--3.15739014e+02
-pathType = 00000000
-name = AiPath
-sObject = 000003CA
-size [1] =
-6
-label = 9MLay3
-pointCount [1] =
-1
-points [1] =
-  x [1] =
-6.04765015e+02
-  z [1] =
--4.33662994e+02
-pathType = 00000000
-name = AiPath
-sObject = 000003CB
-size [1] =
-6
-label = stage9
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--7.16320984e+02
-  z [1] =
-5.75239014e+02
-pathType = 00000000
-name = AiPath
-sObject = 000003CC
-size [1] =
-7
-label = stage10
-pointCount [1] =
-1
-points [1] =
-  x [1] =
-2.14533997e+02
-  z [1] =
--5.19114990e+02
-pathType = 00000000
-name = AiPath
-sObject = 000003CD
-size [1] =
-6
-label = 8MLay1
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--5.27187988e+02
-  z [1] =
--8.68241978e+00
-pathType = 00000000
-name = AiPath
-sObject = 000003CE
+sObject = 000003C0
 size [1] =
 8
 label = 7Patrol3
@@ -88281,7 +88083,140 @@ points [5] =
 3.94080994e+02
 pathType = 00000000
 name = AiPath
-sObject = 000003CF
+sObject = 000003C1
+size [1] =
+6
+label = stage6
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+6.82241028e+02
+  z [1] =
+5.98596008e+02
+pathType = 00000000
+name = AiPath
+sObject = 000003C2
+size [1] =
+6
+label = 6MLay1
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-4.09264008e+02
+  z [1] =
+-6.63812988e+02
+pathType = 00000000
+name = AiPath
+sObject = 000003C3
+size [1] =
+6
+label = 7MLay4
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+5.92801025e+02
+  z [1] =
+-3.97204010e+02
+pathType = 00000000
+name = AiPath
+sObject = 000003C4
+size [1] =
+6
+label = stage4
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+2.66375000e+02
+  z [1] =
+-3.65966988e+01
+pathType = 00000000
+name = AiPath
+sObject = 000003C5
+size [1] =
+6
+label = 7MLay2
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+2.99416992e+02
+  z [1] =
+-2.12154007e+01
+pathType = 00000000
+name = AiPath
+sObject = 000003C6
+size [1] =
+6
+label = stage5
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+6.65151001e+02
+  z [1] =
+-4.30815002e+02
+pathType = 00000000
+name = AiPath
+sObject = 000003C7
+size [1] =
+6
+label = 8MLay1
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-5.27187988e+02
+  z [1] =
+-8.68241978e+00
+pathType = 00000000
+name = AiPath
+sObject = 000003C8
+size [1] =
+8
+label = 8Patrol2
+pointCount [1] =
+5
+points [5] =
+  x [1] =
+-7.60187012e+02
+  z [1] =
+8.36721008e+02
+  x [1] =
+-9.16848022e+02
+  z [1] =
+4.94914001e+02
+  x [1] =
+-5.66495972e+02
+  z [1] =
+4.57885010e+02
+  x [1] =
+-5.77888977e+02
+  z [1] =
+8.48114990e+02
+  x [1] =
+-7.60187012e+02
+  z [1] =
+8.36721008e+02
+pathType = 00000000
+name = AiPath
+sObject = 000003C9
+size [1] =
+6
+label = 8MLay2
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-3.59132996e+02
+  z [1] =
+-1.15307999e+01
+pathType = 00000000
+name = AiPath
+sObject = 000003CA
 size [1] =
 8
 label = 9Patrol2
@@ -88310,7 +88245,7 @@ points [5] =
 -4.79237000e+02
 pathType = 00000000
 name = AiPath
-sObject = 000003D0
+sObject = 000003CB
 size [1] =
 8
 label = 8Patrol3
@@ -88339,7 +88274,124 @@ points [5] =
 -2.57631989e+02
 pathType = 00000000
 name = AiPath
+sObject = 000003CC
+size [1] =
+6
+label = 7MLay1
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+4.76016998e+02
+  z [1] =
+-2.97605991e+01
+pathType = 00000000
+name = AiPath
+sObject = 000003CD
+size [1] =
+7
+label = stage12
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+4.79434998e+02
+  z [1] =
+-3.92645996e+02
+pathType = 00000000
+name = AiPath
+sObject = 000003CE
+size [1] =
+6
+label = 8MLay4
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-6.61062012e+02
+  z [1] =
+-3.15739014e+02
+pathType = 00000000
+name = AiPath
+sObject = 000003CF
+size [1] =
+6
+label = 9MLay3
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+6.04765015e+02
+  z [1] =
+-4.33662994e+02
+pathType = 00000000
+name = AiPath
+sObject = 000003D0
+size [1] =
+6
+label = stage9
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-7.16320984e+02
+  z [1] =
+5.75239014e+02
+pathType = 00000000
+name = AiPath
 sObject = 000003D1
+size [1] =
+7
+label = stage10
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+2.14533997e+02
+  z [1] =
+-5.19114990e+02
+pathType = 00000000
+name = AiPath
+sObject = 000003D2
+size [1] =
+6
+label = 9MLay1
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+3.59803009e+02
+  z [1] =
+-6.41596008e+02
+pathType = 00000000
+name = AiPath
+sObject = 000003D3
+size [1] =
+6
+label = 9MLay2
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+2.43018005e+02
+  z [1] =
+-5.30508972e+02
+pathType = 00000000
+name = AiPath
+sObject = 000003D4
+size [1] =
+6
+label = 9MLay4
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-4.75180016e+01
+  z [1] =
+-8.09651001e+02
+pathType = 00000000
+name = AiPath
+sObject = 000003D5
 size [1] =
 7
 label = stage11
@@ -88352,7 +88404,20 @@ points [1] =
 -8.18197021e+02
 pathType = 00000000
 name = AiPath
-sObject = 000003D2
+sObject = 000003D6
+size [1] =
+6
+label = 8MLay3
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-6.86697998e+02
+  z [1] =
+5.15421997e+02
+pathType = 00000000
+name = AiPath
+sObject = 000003D7
 size [1] =
 12
 label = capturegoal2
@@ -88360,12 +88425,12 @@ pointCount [1] =
 1
 points [1] =
   x [1] =
--6.97038940e+02
+-6.95142395e+02
   z [1] =
--9.44587524e+02
+-9.49347473e+02
 pathType = 00000000
 name = AiPath
-sObject = 000003D3
+sObject = 000003D8
 size [1] =
 8
 label = 9Patrol3
@@ -88394,7 +88459,7 @@ points [5] =
 -7.66924988e+02
 pathType = 00000000
 name = AiPath
-sObject = 000003D4
+sObject = 000003D9
 size [1] =
 12
 label = capturegoal3
@@ -88407,7 +88472,7 @@ points [1] =
 -9.18544800e+02
 pathType = 00000000
 name = AiPath
-sObject = 000003D5
+sObject = 000003DA
 size [1] =
 8
 label = 9Patrol1
@@ -88436,7 +88501,7 @@ points [5] =
 -9.46374023e+02
 pathType = 00000000
 name = AiPath
-sObject = 000003D6
+sObject = 000003DB
 size [1] =
 12
 label = capturegoal4
@@ -88447,71 +88512,6 @@ points [1] =
 8.57711792e+02
   z [1] =
 2.58586456e+02
-pathType = 00000000
-name = AiPath
-sObject = 000003D7
-size [1] =
-6
-label = 9MLay1
-pointCount [1] =
-1
-points [1] =
-  x [1] =
-3.59803009e+02
-  z [1] =
--6.41596008e+02
-pathType = 00000000
-name = AiPath
-sObject = 000003D8
-size [1] =
-6
-label = 8MLay2
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--3.59132996e+02
-  z [1] =
--1.15307999e+01
-pathType = 00000000
-name = AiPath
-sObject = 000003D9
-size [1] =
-6
-label = 9MLay2
-pointCount [1] =
-1
-points [1] =
-  x [1] =
-2.43018005e+02
-  z [1] =
--5.30508972e+02
-pathType = 00000000
-name = AiPath
-sObject = 000003DA
-size [1] =
-6
-label = 8MLay3
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--6.86697998e+02
-  z [1] =
-5.15421997e+02
-pathType = 00000000
-name = AiPath
-sObject = 000003DB
-size [1] =
-6
-label = 9MLay4
-pointCount [1] =
-1
-points [1] =
-  x [1] =
--4.75180016e+01
-  z [1] =
--8.09651001e+02
 pathType = 00000000
 name = AiPath
 sObject = 000003DC
@@ -88551,6 +88551,19 @@ points [1] =
 -9.21006409e+02
   z [1] =
 2.95046295e+02
+pathType = 00000000
+name = AiPath
+sObject = 000003DF
+size [1] =
+8
+label = Player_5
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-6.46876892e+02
+  z [1] =
+-8.50802246e+02
 pathType = 00000000
 hasEntered [1] =
 false
