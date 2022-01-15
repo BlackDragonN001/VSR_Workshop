@@ -949,12 +949,13 @@ September 7th, 2021
 
 
 ==Release 97==
-January 2nd, 2022
+January 15th, 2022
 
 -ISDF pilots should now recycle for 5 scrap (this already worked for me, but I added a few things that should definitely make it work all the time?)
--Hornet Rocket now works correctly on AI units (they won't try to use it at 400m anymore)
--Fixed a texture error on Sinister
+-Hornet Rocket now works correctly on AI units (they won't try to use it at 400m anymore) - test out rocket tanks
+-Fixed texture errors on Sinister & stock Chill
+-Changed the water on stock River and River4 to be more like previous versions of BZ2 (glowing water)
 -F9Bomber: Rereleased Beyond (replacing the previous version)
 -Started laying the groundwork for a better FFA/MPI experience, allowing more flexibility with commanders and teams (can choose specific teams and commanders with AI teams thrown in, etc.)
-	>Herp McDerperson: changed AI teams in path editor to match new DLL settings
-	>Need to check specialty MPI maps for correctness (Face Off, Ascent, BottleNeck, Meltdown, Stranded) <-- these may or may not work?
+	>Herp McDerperson: changed AI teams in path editor to match new DLL settings (please check for errors)
+	>Need to check specialty MPI maps for correctness; if you have a separate map pack for VSR, see "FFA Path Instructions.txt"
