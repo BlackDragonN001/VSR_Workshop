@@ -1,65 +1,159 @@
-[OrdnanceClass]
-classLabel = "grenade"
+[GameObjectClass]
+geometryName = NULL //"igflar00.fbx"
+classLabel = "flare"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = " "
+heatSignature = 0.0
+effectHard1 = " "
+effectName1 = "hfire2.render"
+explosionName = "" //"xhfire"
+scanTeamLimit = 3
+canInteract = false
 
-shotGeometry = "ioartl00.xsi"
-shotSound = "crckt02.wav"
+[MineClass]
+lifeSpan = 10.0
 
-xplGround = "xhfire2"
-xplVehicle = "xhfire2"
-xplBuilding = "xhfire2"
-
-renderName = "hfire2.render"
-
-ammoCost = 50
-lifeSpan = 60.0
-shotSpeed = 65.0
-
-damageValue(N) = 800 // 150 // none
-damageValue(L) = 800 // 150 // light
-damageValue(H) = 800 // 150 // heavy
-
-damageValue(S) = 650 // 200 // standard
-damageValue(D) = 200 // 225 // deflection
-damageValue(A) = 475 // 150 // absorbtion
-
+[FlareMineClass]
+payloadName = NULL //"flarepuff"
+fireSound = "smine01.wav" // Need a good crackling fire sound here... -GBD
+triggerDelay = 0.0
+shotDelay = 1e30
+shotVariance = 1.6
+damageRadius = 50.0 //75.0
+damageValue(N) = 300 // none
+damageValue(L) = 200 // light
+damageValue(H) = 100 // heavy
+damageValue(S) = 100 // standard
+damageValue(D) = 300 // deflection
+damageValue(A) = 200 // absorbtion
+kickRadius = 0.0
+kickVeloc = 0.0
+kickOmega = 0.0
 
 [Render]
 renderBase = "draw_multi"
-renderCount = 2
-renderName1 = "hfire2.flare"
-renderName2 = "hfire2.sparkle"
+renderCount = 3
+renderName1 = "hfire2.fire"
+renderName2 = "hfire2.light"
+renderName3 = "hfire2.spray"
 
-[Flare]
-renderBase = "draw_sprite"
-textureName = "lightflare.tga"
-textureBlend = "one one modulate"
-startColor = "180 100 30 50"
-finishColor = "180 100 30 50"
-startRadius = 1.0
-finishRadius = 0.5
-
-[Sparkle]
-renderBase = "draw_twirl_trail"
-textureName = "plasma.tga" // flame
-textureblend = "one one modulate"
-startColor = "120 70 0 50"
-finishColor = "120 70 0 200"
-startRadius = 0.75
-finishRadius = 0.05
-animateTime = 2.4
+[Fire]
+renderBase = "draw_emit"
+emitName = "hfire2.fire2"
 emitDelay = 0.005
-emitVariance = "3.0 3.0 3.0"
-emitLife = 2.5
+emitDelayVar = 0.01
+emitVelocity = "0.0 6.0 0.0"
+emitVariance = "1.0 1.0 1.0"
+emitPosVariance = "50.0 0.0 50.0"
 
-//renderBase = "draw_twirl_trail"
-//textureName = "smoke.tga"
-//textureBlend = "srcalpha invsrcalpha modulatealpha"
-//startColor = "255 255 255 64"
-//finishColor = "255 255 255 0"
-//startRadius = 0.5
-//finishRadius = 2.0
-//animateTime = 2.0
-//emitDelay = 0.01
-//emitVelocity = "0.0 0.0 0.0"
-//emitVariance = "1.0 1.0 1.0"
-//emitLife = 2.0
+[Fire2]
+simulateBase = "sim_dust" // Put the fire on the ground...
+lifeTime = 1.0
+renderBase = "draw_emit"
+emitName = "hfire2.fire3"
+emitDelay = 1.1
+
+[Fire3]
+simulateBase = "sim_spray" // Now put the fire on top of collisions :)
+lifeTime = 0.1
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "hfire2.flame"
+renderName2 = "hfire2.smoke"
+
+[Flame]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.05
+emitDelayVar = 0.1
+emitVelocity = "0.0 3.5 0.0"
+emitVariance = "1.5 1.5 1.5"
+emitLife = 1.0
+textureName = "fire.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 200 127"
+finishColor = "255 100 100 0"
+startRadius = 2.0
+finishRadius = 0.0
+animateTime = 1.0
+rotationRate = 8.0
+BottomInteractsWithTerrain = false
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.05
+emitDelayVar = 0.1
+emitVelocity = "0.0 6.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitPosVariance = "0.5 0.5 0.5"
+emitLife = 1.3
+textureName = "smoke2.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "31 31 31 127"
+finishColor = "63 63 63 0"
+startRadius = 0.5
+finishRadius = 5.0
+animateTime = 1.3
+rotationRate = 8.0
+BottomInteractsWithTerrain = false
+
+[Light]
+renderBase = "draw_emit"
+emitName = "flaremine.lightA"
+emitDelay = 0.1
+emitDelayVar = 0.05
+emitVelocity = "0.0 1 0.0"
+emitVariance = "1.0 1.0 1.0"
+emitPosVariance = "30.0 0.0 30.0"
+
+[LightA]
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "255 30 30 400"
+finishColor = "255 30 30 0"
+startRadius = 100.0
+finishRadius = 100.0
+animateTime = 0.1
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
+lensFlare = 0
+
+
+[Spray]
+renderBase = "draw_emit"
+emitName = "hfire2.spray2"
+emitDelay = 1.0
+emitDelayVar = 2.0
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+emitPosVariance = "30.0 0.0 30.0"
+
+[Spray2]
+simulateBase = "sim_dust" // Put the sprays on the ground...
+lifeTime = 1.0
+renderBase = "draw_emit"
+emitName = "hfire2.spray3"
+emitDelay = 1.1
+
+[Spray3]
+simulateBase = "sim_spray" // Put the sprays on the buildings
+lifeTime = 1.0
+renderBase = "draw_emit"
+emitName = "hfire2.sprayemit"
+emitDelay = 1.1
+emitVelocity = "0.0 10.0 0.0"
+emitVariance = "50.0 5.0 50.0"
+
+[SprayEmit]
+simulateBase = "sim_ember"
+lifeTime = 2.0
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "fball2c.flame"
+renderName2 = "fball2c.smoke"
+renderName3 = "fball2c.light"
+

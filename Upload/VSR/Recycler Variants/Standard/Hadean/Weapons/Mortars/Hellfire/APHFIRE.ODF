@@ -1,7 +1,7 @@
 [GameObjectClass]
 geometryName = "apmort00.xsi"
 classLabel = "wpnpower"
-scrapCost = 20
+scrapCost = 40
 scrapValue = 0
 maxHealth = 150
 maxAmmo = 0
@@ -12,6 +12,10 @@ aiName = "PowerUpProcess"
 heatSignature = 0.0
 imageSignature = 0.0
 radarSignature = 0.0
+
+requireCount = 1
+requireName1 = "ebtcen"
+requireText1 = "Build Xyr Tower"
 
 lightHard1 = "hp_light_1"
 lightName1 = "omnibrown"
