@@ -10,11 +10,11 @@ damageRadius = 10.0
 
 damageValue(N) = 200 // none
 damageValue(L) = 180 // light
-damageValue(H) = 128 // heavy	**WAS 160 - VSR Release 93
+damageValue(H) = 96 // heavy	**WAS 160 - VSR Release 93
 
-damageValue(S) = 100 // standard
-damageValue(D) = 100 // deflection
-damageValue(A) = 100// absorbtion
+damageValue(S) = 150 // standard
+damageValue(D) = 200 // deflection
+damageValue(A) = 100 // absorbtion
 
 kickRadius = 20.0
 kickOmega = 5.0
