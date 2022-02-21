@@ -1,0 +1,15 @@
+[GameObjectClass]
+baseName="ibbseg"
+classLabel="ibbseg"
+scrapCost = 0
+maxHealth = 0
+heatSignature = 0
+imageSignature = 0
+radarSignature = 0
+canInteract = false
+
+[BuildingClass]
+tunnelCount = 0
+ownsTerrain = false
+justTerrain = true
+CanDemolish = false
