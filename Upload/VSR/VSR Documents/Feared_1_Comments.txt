@@ -959,3 +959,23 @@ January 15th, 2022
 -Started laying the groundwork for a better FFA/MPI experience, allowing more flexibility with commanders and teams (can choose specific teams and commanders with AI teams thrown in, etc.)
 	>Herp McDerperson: changed AI teams in path editor to match new DLL settings (please check for errors)
 	>Need to check specialty MPI maps for correctness; if you have a separate map pack for VSR, see "FFA Path Instructions.txt"
+
+
+==Release 98==
+January 18th, 2022
+
+-General BlackDragon: Enabled DLL logging so that any errors/resyncs caused by the new DLL can be caught and fixed & some tweaks
+-General BlackDragon: Hadean Hellfire mortar is now a DIFFERENT WEAPON that needs testing
+	>This is a powerful weapon for NON-UPGRADED Atlases (requires DOWNGRADING Xenomater to build this Atlas)
+	>Requires Xyr Tower and 40 scrap to drop from Arsenal
+	>Similar to Scion Acid Cloud but sets things on fire and does a lot of damage
+	>This will be the new Hellfire mortar in the Forgotten Enemies mod, so it needs testing
+-General BlackDragon: Removed the original Hellfire mortar and some weird hellfire2 mortar that wasn't used
+
+
+
+==Release 99==
+???
+
+-Fixed incorrect path points on FFA 4Play, should be playable for MPI now
+TODO: Delete StratBeyond.bzn, then fix path points on beyond.bzn
