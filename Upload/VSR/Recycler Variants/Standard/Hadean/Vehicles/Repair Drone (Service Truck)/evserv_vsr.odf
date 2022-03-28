@@ -1,198 +1,71 @@
-// (c) BZ2CP unit "Repair Drone"
-// Original Concept: Slaor and Pastell
-// FE Remastered Model and Texture: Jayden Hopkins
-
 [GameObjectClass]
-clearBuildZone=0 // {VSR-005}
-baseName="evserv"
-geometryName="evserv_skel.fbx"
-//cockpitName="ivserv_cockpit.xsi"
-classLabel="service"
+clearBuildZone = 0 // {VSR-005}
 
-animCount=1
-animName1="deploy"
-animFile1="evserv_repair.fbx"
+classLabel = "evserv"
 
-scrapValue=20
-scrapCost=50
-buildTime=10.0
-maxHealth=2400
-maxAmmo=1200
-unitName="Repair Drone"
-aiName="ServiceProcess"
-aiName2="ServiceProcess"
-heatSignature=0.1
-imageSignature=1.0
-radarSignature=0.0
-isAssault=0
-needPilot=0
+needPilot = false
 
-armorClass=L
+provideCount = 3
+provideName3 = "evserv_vsr"
 
-requireCount=1
-requireName1="ebsbay"
-requireText1="Build Repair Vat"
+mass = 3200 // {VSR-012} 5214=stock ivserv mass // 2213.16=mort 
 
-provideCount=3
-provideName1="evserv"
-provideName2="evserv_vsr"
-provideName3="VIRTUAL_CLASS_SERVICETRUCK"
-
-mass=3200 // {VSR-012} 5214=stock ivserv mass // 2213.16=mort 
-
-// MaxPostExplosionVelocity=45.0 // -1.0 // -1: autodetermine. If > 0, a velocity
-// DamageIfVelocityClamped=0.05 // Health ratio lost if velocity clamped
-
-infoName="evserv_vsr.inf"
-
-effectHard1 = "hp_emit_1"
-effectName1 = "dusttrail2"
-effectMinVelocity1 = 5.0
-effectMaxVelocity1 = 500.0
-effectHard2 = "hp_emit_2"
-effectName2 = "dusttrail2"
-effectMinVelocity2 = 5.0
-effectMaxVelocity2 = 500.0
+// MaxPostExplosionVelocity = 45.0 // -1.0 // -1: autodetermine. If > 0, a velocity
+// DamageIfVelocityClamped = 0.05 // Health ratio lost if velocity clamped
 
 [CraftClass]
-damageEffect1="dmgvhcl1_hadean"
-damageEffect2="dmgvhcl2_hadean"
-damageEffect3="dmgvhcl3_hadean"
-damageEffect4="dmgvhcl4_hadean"
-rangeScan=300.0f
-periodScan=5.0f
-velocJam=5.0f
-engagerange=40 // *30 {VSR-015}
+engagerange = 40.0 // *30.0 {VSR-015}
 
-canRescue=0
-canSnipe=0
-
-braccelFactor=0.09
-velFactor=0.3
-steerFactor=1.4
-omegaFactor=0.2
-strafeFactor=0.1
-
-TeamTransferrable=true
-
-selectAttackMsg="evserv04.wav"
-selectGoMsg="evserv02.wav"
-selectFollowMsg="evserv03.wav"
-selectOtherMsg="evserv04.wav"
-
-goMsg="evserv02.wav"
-goObjectMsg="evserv05.wav"
-attackMsg="evserv01.wav"
-followMeMsg="evserv06.wav"
-followMsg="evserv03.wav"
-repairMsg="evserv07.wav"
-reloadMsg="evserv07.wav"
-rescueMsg="evserv08.wav"
-recycleMsg="evserv08.wav"
-holdMsg="evserv09.wav"
-user1Msg="evserv11.wav"
-killedMsg=""
-diedMsg=""
-
-//[TrackedVehicleClass]
-//omegaSpin=2.0
-//velocForward=20.0
-//velocReverse=15.0
-//accelThrust=20.0
+canRescue = false
+canSnipe = false
 
 [TrackedVehicleClass]
 //TREAD_STATIC_FRICTION = 1.5
 
-omegaSpin=2.0
-omegaTurn=0.75
-alphaSteer=2.0
-velocForward=20.0
-velocReverse=15.0
-accelThrust=20.0
-
-engineSound="evserven.wav" //Reverted back to 1.2 FE sound for BZCC
-treadSound="evservtr.wav" //Reverted back to 1.2 FE sound for BZCC
-
+omegaSpin = 2.0
+omegaTurn = 0.75
+alphaSteer = 2.0
 
 ///// Suspension /////
 
-// COLLISION_RAISE= 0.5
-// SUSPENSION_MIN=-0.3
-SUSPENSION_MAX=0.3 // 0.3
-SPRING_FACTOR=1.5 // minimum value: 0.01
-DAMPING_FACTOR=2.9	// 2.0=critical damped, minimum value: 0.01
-TREAD_STATIC_FRICTION=1.5 // *1.5
+// COLLISION_RAISE = 0.5
+// SUSPENSION_MIN = -0.3
+SUSPENSION_MAX = 0.3 // 0.3
+SPRING_FACTOR = 1.5 // minimum value: 0.01
+DAMPING_FACTOR = 2.9	// 2.0=critical damped, minimum value: 0.01
+TREAD_STATIC_FRICTION = 1.5 // *1.5
 
-CENTER_SHIFT=-0.25
+CENTER_SHIFT = -0.25
 
 ///// New Values //// TeST / CALIBRATE!!! ////////
 
-NormalTrackFactor=0.2 // may need to be > 0 for some of the other params to take effect
-pitchThrust=0.7
-//rollSteer=3.0 //was commented out previously
-alphaTrack=8.0 // *8.0
+NormalTrackFactor = 0.2 // may need to be > 0 for some of the other params to take effect
+pitchThrust = 0.7
+//rollSteer = 3.0 //was commented out previously
+alphaTrack = 8.0 // *8.0
 
-//alphaDampX=10.0		//was commented out before release 72
-//alphaDampZ=35.0 //30.0	//was commented out before release 72
+//alphaDampX = 10.0		//was commented out before release 72
+//alphaDampZ = 35.0 //30.0	//was commented out before release 72
 
-UseGlobalFriction=true
-GlobalFrictionMaxThrottle=2.0f // 0.04f
-GlobalFrictionMaxHeight=2.0f
-GlobalFrictionStaticCoeff=0.4f
-GlobalFrictionDynamicCoeff=0.24f
-LiftSpring=1.0 // 0.0
-TreadForceFeedback=1.0
-LevelForce=10.0
-ThrustTrack=0.0
-
+UseGlobalFriction = true
+GlobalFrictionMaxThrottle = 2.0f // 0.04f
+GlobalFrictionMaxHeight = 2.0f
+GlobalFrictionStaticCoeff = 0.4f
+GlobalFrictionDynamicCoeff = 0.24f
+LiftSpring = 1.0 // 0.0
+TreadForceFeedback = 1.0
+LevelForce = 10.0
+ThrustTrack = 0.0
 
 [ServiceTruck]
-supplyRange=20.0
-supplyRadius=15.0
-supplyRate=50.0
-supplySound="mnu_empt.wav"
-supplyEffect="evserv_vsr.supply"
-supplyHard="hp_special_1"
 
 // Individual classification tweakers
-serviceSTs=0       // Stock
-serviceCraft=1     // Stock
-serviceBuildings=1 // *0 {VSR-016}
-servicePilots=0    // Stock
-serviceOther=0     // Stock
+serviceSTs = 0       // Stock
+serviceCraft = 1     // Stock
+serviceBuildings = 1 // *0 {VSR-016}
+servicePilots = 0    // Stock
+serviceOther = 0     // Stock
 
-objPush=0.0f
-objDrag=0.0f
-
-[Supply]
-renderBase="draw_multi"
-renderCount=2
-renderName1="evserv_vsr.halo"
-renderName2="evserv_vsr.bolt"
-
-[Halo]
-renderBase="draw_twirl"
-textureName="particle.tga"
-textureBlend="one one modulate"
-startColor="255 50 0 127"
-finishColor="255 0 0 0"
-startRadius=5.0
-finishRadius=1.0
-animateTime=0.3
-BottomInteractsWithTerrain=false
-
-[Bolt]
-renderBase="draw_bolt"
-textureName="trail2.tga"
-textureBlend="one one modulate"
-startColor="255 150 0 63"
-finishColor="255 20 0 0"
-startRadius=1.0
-finishRadius=0.3
-segmentLength=2.0
-segmentVariance="0.5 0.5 0.5"
-animateTime=0.3
-textureRate=0.05
-textureSpeed=-0.5
-
+objPush = 0.0f
+objDrag = 0.0f
 

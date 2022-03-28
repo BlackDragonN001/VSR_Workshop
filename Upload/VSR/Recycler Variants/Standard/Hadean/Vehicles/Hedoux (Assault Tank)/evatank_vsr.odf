@@ -1,140 +1,24 @@
-// (c) BZ2CP unit "Hedoux"
-// Original Concept: Slaor and Pastell
-// Voice acting - Zeeder,  voice effects/vehicle sounds - Chipotle
-// FE Remastered Model and Texture: Jayden Hopkins
-
 [GameObjectClass]
-clearBuildZone=0 // {VSR-005}
-baseName="evatank"
-geometryName="evatank00.fbx"
-CockpitName="evatank_cockpit.fbx"
-classLabel="assaulttank"
-scrapValue=30
-scrapCost=65
-customCost=70
-buildTime=18.0
-customTime=20.0
-maxHealth=4200
-addhealth=5.0
-maxAmmo=3000
-addAmmo=4
-unitName="Hedoux SGS"
-aiName="AssaultTankProcess"
-aiName2="AssaultTankProcess"
-heatSignature=0.5
-imageSignature=5.0
-radarSignature=5.0
+clearBuildZone = 0 // {VSR-005}
+classLabel = "evatank"
 
-//effectHard1="tractor_l"
-//effectName1="trackw.render"
-//effectHard2="tractor_r"
-//effectName2="trackw.render"
+provideCount = 5
+provideName5 = "evatank_vsr"
 
-isAssault=1
-
-armorClass=H
-	
-requireCount=2
-requireName1="ebarmo"
-requireText1="Build Arsenal" // Weapons vat Reference removed – HM
-requireName2="ebsbay"
-requireText2="Build Repair Vat"
-
-provideCount=5
-provideName1="evatank"
-provideName2="evatank_vsr"
-provideName3="VIRTUAL_CLASS_ASSAULTTANK"
-provideName4="DefendUnit"
-provideName5="assault"
-
-/////// weapons ///////////////////
-
-weaponMask=00001
-weaponHard1="HP_CANNON_1"
-weaponName1="gslagstab_a"
-weaponAssault1=1
-recoilName1 = "recoil_1"
-weaponHard2="HP_GUN_1"
-weaponName2="gshellgun_c"
-weaponAssault2=0
-recoilName2 = "recoil_2"
-recoilDist2 = -0.3f
-weaponHard3="HP_GUN_2"
-weaponName3="gshellgun_c"
-weaponAssault3=0
-recoilName3 = "recoil_2"
-recoilDist3 = -0.3f
-
-////////////////////////////////////
-
-turretCount=2
-turretName1="turret_y"
-turretName2="turret_x"
-//turretName3="hp_eyepoint"
-
-effectHard1 = "hp_emit_1"
-effectName1 = "dusttrail3"
-effectMinVelocity1 = 3.0
-effectMaxVelocity1 = 500.0
-effectHard2 = "hp_emit_2" 
-effectName2 = "dusttrail3"
-effectMinVelocity2 = 3.0
-effectMaxVelocity2 = 500.0
-
-infoName="evatank_vsr.inf"
-
-mass=34316.1 // ISDF ass. tank {VSR-012}
+mass = 34316.1 // ISDF ass. tank {VSR-012}
 
 [CraftClass]
-damageEffect1="dmgvhcl1_hadean"
-damageEffect2="dmgvhcl2_hadean"
-damageEffect3="dmgvhcl3_hadean"
-damageEffect4="dmgvhcl4_hadean"
-rangeScan=300.0f
-periodScan=4.0f
-velocJam=0.0f
-engageRange=225 // 210 - AI errors
-
-braccelFactor=0.01
-velFactor=0.4
-steerFactor=1.2
-omegaFactor=0.2
-strafeFactor=0.1
-
-selectWaitMsg="evatank01.wav"
-selectAttackMsg="evatank04.wav"
-selectFollowMsg="evatank02.wav"
-selectGoMsg="evatank11.wav"
-selectOtherMsg="evatank01.wav"
-
-goMsg="evatank10.wav"
-attackMsg="evatank05.wav"
-followMeMsg="evatank09.wav"
-followMsg="evatank02.wav"
-repairMsg="evatank05.wav"
-reloadMsg="evatank05.wav"
-rescueMsg="evatank06.wav"
-recycleMsg="evatank08.wav"
-otherMsg="evatank10.wav" 
-holdMsg="evatank03.wav"
-user1Msg=""    
-killedMsg="evatank07.wav"
-diedMsg=""
 
 [TrackedVehicleClass]
-omegaSpin=2.0
-omegaTurn=0.5
-alphaSteer=4.0 //2.0
-
-velocForward=27.0
-velocReverse=15.0
-accelThrust=10.0
+omegaTurn = 0.5
+alphaSteer = 4.0 //2.0
 
 COLLISION_RAISE= -0.5
 SUSPENSION_MIN=-0.2
 SUSPENSION_MAX=0.3
 SPRING_FACTOR=2.0 // minimum value: 0.01
 DAMPING_FACTOR=2.0	// 2.0=critical damped, minimum value: 0.01
+
 TREAD_STATIC_FRICTION=2.0
 
 ///// New Values //// TeST / CALIBRATE!!! ////////
@@ -159,22 +43,4 @@ TREAD_STATIC_FRICTION=2.0
 
 //CENTER_SHIFT=-0.4
 
-///////////////////////////////////////////////////
-
-engineSound="evatanken.wav"
-treadSound="evatanktr.wav"
-
-
 [AssaultTankClass]
-yawRate=4.0
-pitchMin=-0.4
-pitchMax=0.9
-laserName1="recoil_1"
-
-//[Lod1]
-//geometryName="evatankl1.xsi"
-//distance=50
-
-//[Lod2]
-//geometryName="evatankl2.xsi"
-//distance=135

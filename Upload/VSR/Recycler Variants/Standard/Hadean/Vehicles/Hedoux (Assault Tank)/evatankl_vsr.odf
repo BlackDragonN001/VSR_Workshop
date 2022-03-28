@@ -1,27 +1,31 @@
-// (c) BZ2CP unit "Hedoux"
-// Created by Slaor and Pastell
-// Vehicle V/O's - Zeeder  
-// Voice effects, vehicle sounds - Chipotle
-
 [GameObjectClass]
-classLabel="evatank_vsr"
-scrapCost=60
-unitName="Hedoux LS"
+classLabel = "evatank_vsr"
+scrapCost = 60
+unitName = "Hedoux LS"
 
-requireCount=1
-requireName1="ebsbay"
-requireText1="Build Repair Vat"
+provideCount = 5
+provideName5 = "evatank_vsr"
 
-weaponName1="gcphlaser"
-weaponName2="gcphcg_a"
-weaponName3="gcphcg_a"
+mass = 34316.1 // ISDF ass. tank {VSR-012}
 
-infoName="evatanku_vsr.inf"
+requireCount = 1
+requireName1 = "ebsbay"
+requireText1 = "Build Repair Vat"
+
+weaponName1 = "gcphlaser"
+weaponName2 = "gcphcg_a"
+weaponName3 = "gcphcg_a"
 
 [CraftClass]
-damageEffect1="dmgvhcl1_hadean"
-damageEffect2="dmgvhcl2_hadean"
-damageEffect3="dmgvhcl3_hadean"
-damageEffect4="dmgvhcl4_hadean"
 
-engageRange=210
+engageRange = 210
+
+[TrackedVehicleClass]
+omegaTurn = 0.5
+alphaSteer = 4.0 //2.0
+
+COLLISION_RAISE= -0.5
+SUSPENSION_MIN=-0.2
+SUSPENSION_MAX=0.3
+SPRING_FACTOR=2.0 // minimum value: 0.01
+DAMPING_FACTOR=2.0	// 2.0=critical damped, minimum value: 0.01

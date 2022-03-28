@@ -1,5 +1,19 @@
 [GameObjectClass]
-classLabel = "ebrecy_vsr"
+TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZCC
+
+classLabel = "evrecy"
+
+scrapReturn = 0
+
+//collisionName="ebrecy00.fbx"
+
+provideCount = 5
+provideName5 = "base"
+
+// DLL
+startingVariant="_vsr"
+pilotRespawnWithSniper="esuser"
+pilotRespawnWithOutSniper="esuser_m"
 
 [PoweredBuildingClass]
 
@@ -7,8 +21,14 @@ classLabel = "ebrecy_vsr"
 
 
 [FactoryClass]
+buildItem1 = "evscav_vsr"
+buildItem2 = "evscout_vsr"
+buildItem3 = "evturr_vsr"
+buildItem4 = "evturrs_vsr"
+buildItem5 = "evcons_vsr"
+buildItem6 = "evserv_vsr"
+buildItem7 = "apserv_vsr"
 buildItem8 = "evscoutm_vsr"
 buildItem9 = "evscoutu_vsr"
-BuildEmptyItem = 8
 
 [RecyclerClass]

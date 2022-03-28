@@ -1,77 +1,77 @@
-// (c) BZ2CP Unit "Zeus"
-// Mesh, skin - Slaor
-// Skin Map, odf, model adaptation, animations - Pastell
-
 [GameObjectClass]
-baseName="evmislu"
-classLabel="evmisl_vsr"
-scrapValue=35
-scrapCost=75
-buildTime=20.0
-customTime=20.0
-maxHealth=3500
-maxAmmo=3500
-unitName="Zeus WRM"
-imageSignature=2.5
-radarSignature=2.5
-canSnipe=0
-isAssault=1
-armorClass=H
+clearBuildZone = 0 // {VSR-005}
 
-requireCount=2
-requireName1="ebsbay"
-requireText1="Build Repair Vat"
-requireName2="ebarmo"
-requireText2="Build Arsenal"
+baseName = "evmislu"
+classLabel = "evmisl"
 
-weaponHard2="HP_ROCKET_2"
+scrapValue = 35
+scrapCost = 75
+buildTime = 20.0
+customTime = 20.0
+maxHealth = 3500
+maxAmmo = 3500
+unitName = "Zeus WRM"
+imageSignature = 2.5
+radarSignature = 2.5
+canSnipe = 0
+isAssault = 1
+armorClass = H
+
+aiName = "RocketTankFriend" // "TankFriend"
+aiName2 = "RocketTankEnemy" // "TankEnemy"
+
+provideCount = 4
+provideName4 = "evmisl_vsr"
+
+unitStatus = "wire_evmislu.tga"
+
+requireCount = 2
+requireName1 = "ebsbay"
+requireText1 = "Build Repair Vat"
+requireName2 = "ebarmo"
+requireText2 = "Build Arsenal"
+
+weaponHard2 = "HP_ROCKET_2"
 recoilName2 = "recoil_02"
-weaponHard3="HP_ROCKET_3"
-weaponName3="gcpworm_a"
-weaponAssault3=1
+weaponHard3 = "HP_ROCKET_3"
+weaponName3 = "gcpworm_a"
+weaponAssault3 = 1
 recoilName3 = "recoil_03"
 recoilDist3 = 0.3f
-weaponHard4="HP_SPECIAL_1"
-weaponName4="gsnare"
-weaponAssault4=0
-
-infoName="evmislu_vsr.inf"
+weaponHard4 = "HP_SPECIAL_1"
+weaponName4 = "gsnare"
+weaponAssault4 = 0
 
 [CraftClass]
-damageEffect1="dmgvhcl1_hadean"
-damageEffect2="dmgvhcl2_hadean"
-damageEffect3="dmgvhcl3_hadean"
-damageEffect4="dmgvhcl4_hadean"
-
-steerFactor=0.2
+steerFactor = 0.2
 
 user1Msg=""
 
 // VSR Physics {VSR-000}
-GROUND_ELASTICITY=-0.2
+GROUND_ELASTICITY = -0.2
 
 [HoverCraftClass]
-velocForward=29.5
-velocStrafe=12.0
-accelThrust=20.0
+velocForward = 29.5
+velocStrafe = 12.0
+accelThrust = 20.0
 
-accelJump=8.0
-pitchPitch=0.40
+accelJump = 8.0
+pitchPitch = 0.40
 
-rollStrafe=0.10
-omegaSpin=2.0
-omegaTurn=1.0
-alphaSteer=1.5
+rollStrafe = 0.10
+omegaSpin = 2.0
+omegaTurn = 1.0
+alphaSteer = 1.5
 
 // VSR Physics {VSR-000}
-MoreLike12Physics=true
-OverWaterVelocFrontMult=1.0
-OverWaterVelocSideMult=1.0
-OverWaterThrottleMult=0.8
-airborneVelocFrontMult=1.0
-airborneVelocSideMult=1.0
-airborneThrottleMult=1.2
-airborneMinHeightRatio=1.6
-airborneMaxHeightRatio=4.0
-LIFT_SPRING=6
-LIFT_DAMP=0.1
+MoreLike12Physics = true
+OverWaterVelocFrontMult = 1.0
+OverWaterVelocSideMult = 1.0
+OverWaterThrottleMult = 0.8
+airborneVelocFrontMult = 1.0
+airborneVelocSideMult = 1.0
+airborneThrottleMult = 1.2
+airborneMinHeightRatio = 1.6
+airborneMaxHeightRatio = 4.0
+LIFT_SPRING = 6.0
+LIFT_DAMP = 0.1

@@ -1,105 +1,26 @@
-// BZ2CP unit "Procreator"
-// Original Concept by Slaor and Pastell
-// FE Remastered Model and Texture: Jayden Hopkins
-
 [GameObjectClass]
-scrapReturn=0
-baseName="evrecy"
-geometryName="evrecy00.fbx"
+scrapReturn = 0
 
-animCount=1
-animName1="deploy"
-animFile1="evrecy00_deploy.fbx"
+classLabel = "evrecy"
 
-classLabel="recyclervehicle"
+startingVariant = "_vsr"
+pilotRespawnWithSniper = "esuser"
+pilotRespawnWithOutSniper = "esuser_m"
 
-collisionRadius=7.0
-scrapCost=0
-scrapValue=100
-maxHealth=6000
-maxAmmo=0
-unitName="Procreator Vehicle"
-aiName="DeployBuildingFriend"
-aiName2="DeployBuildingEnemy"
-heatSignature=2.0
-imageSignature=5.0
-radarSignature=5.0
-isAssault=1
-startingVariant="_vsr"
-pilotRespawnWithSniper="esuser"
-pilotRespawnWithOutSniper="esuser_m"
-
-armorClass=H
-
-provideCount=5
-provideName1="evrecy"
-provideName2="evrecyvsr"
-provideName3="VIRTUAL_CLASS_RECYCLER"
-provideName4="VIRTUAL_CLASS_RECYCLERVEHICLE"
-provideName5="base"
-
-infoName="evrecy_vsr.inf"
-
-effectHard1 = "hp_emit_1"
-effectName1 = "dusttrailrec"
-effectMinVelocity1 = 2.0
-effectMaxVelocity1 = 500.0
-effectHard2 = "hp_emit_2"
-effectName2 = "dusttrailrec"
-effectMinVelocity2 = 2.0
-effectMaxVelocity2 = 500.0
+provideCount = 5
+provideName4 = "base"
+provideName5 = "evrecy_vsr"
 
 [CraftClass]
-rangeScan=400.0f
-periodScan=5.0f
-velocJam=0.0f
-TeamTransferrable=false
-
-selectUser1Msg="evrecy12.wav"  // building
-selectUser2Msg="ivrecy10.wav"  // can't do
-selectWaitMsg="evrecy04.wav"  // yes sir
-selectGoMsg="evrecy01.wav"  // in transit
-selectOtherMsg="evrecy04.wav"  // yes sir
-holdMsg="ivrecy09.wav"
-attackMsg="evrecy05.wav"
-goMsg="evrecy05.wav"
-goObjectMsg="evrecy04.wav"
-user1Msg="evrecy08.wav"
-user2Msg="evrecy13.wav"
-followMsg="evrecy03.wav"
-otherMsg="evrecy04.wav"
-
-deployedMsg="evrecy08.wav"
-
-damageEffect1="dmgvhcl1_hadean"
-damageEffect2="dmgvhcl2_hadean"
-damageEffect3="dmgvhcl3_hadean"
-damageEffect4="dmgvhcl4_hadean"
 
 [TrackedVehicleClass]
-velocForward=10.0
-velocReverse=10.0
-accelThrust=50.0
-omegaSpin=2.0
+omegaSpin = 2.0
 
 TREAD_STATIC_FRICTION=1.5
 
-
-engineSound="ship10.wav" //engineSound="irecy01.wav"
-treadSound="ship12.wav" //treadSound="irecy01b.wav"
-
 [TrackedDeployableClass]
-timeDeploy=10.0
-timeUndeploy=10.0
-soundDeploy="irecy03.wav"
 
 [DeployBuildingClass]
-deployName="ebrecym_vsr"
-
-BeamColor="204 153 101 31"
-BuildSparkConfig="sparker_hadean"
-LineFinishColor="255 255 255 0"
-LineStartColor="204 153 101 255"
+deployName = "ebrecy_vsr"
 
 [RecyclerVehicleClass]
-scrapHold=40

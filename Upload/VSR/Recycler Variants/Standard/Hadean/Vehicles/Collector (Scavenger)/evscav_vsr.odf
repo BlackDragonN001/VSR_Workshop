@@ -1,98 +1,29 @@
-// BZ2CP unit "Collector"
-// Original Concept by Slaor and Pastell
-// FE Remastered Model and Texture: Jayden Hopkins
-
 [GameObjectClass]
-baseName="evscav"
-geometryName="evscav00.fbx"
-cockpitName="evscav_cockpit.fbx"
-animCount=1
-animName1="deploy"
-animFile1="evscav00.fbx"
-classLabel="scavenger"
-geometryScale=1.0
-scrapValue=10
-scrapCost=20
-buildTime=10.0
-maxHealth=3000
-maxAmmo=0
-unitName="Collector"
-collisionRadius=10 // {VSR-013}
-aiName="ScavProcess"
-aiName2="ScavProcess"
-heatSignature=5.0
-imageSignature=3.0
-radarSignature=2.0
-isAssault=1
+classLabel = "evscav"
 
-armorClass=H
+collisionRadius = 10 // {VSR-013}
 
-requireCount=0
 
 provideCount=3
-provideName1="evscav"
-provideName2="evscav_vsr"
-provideName3="VIRTUAL_CLASS_SCAVENGER"
-
-lightHard1="hp_light_1"
-lightName1="spotblue2" 
+provideName3 = "evscav_vsr"
 
 mass=40000.0 // (stock ivscav=53157.3) {VSR-012}
 
-infoName="evscav_vsr.inf"
-
-effectHard1 = "hp_emit_1"
-effectName1 = "dusttrail3"
-effectMinVelocity1 = 5.0
-effectMaxVelocity1 = 500.0
-effectHard2 = "hp_emit_2"
-effectName2 = "dusttrail3"
-effectMinVelocity2 = 5.0
-effectMaxVelocity2 = 500.0
-
 [CraftClass]
-damageEffect1="dmgvhcl1_hadean"
-damageEffect2="dmgvhcl2_hadean"
-damageEffect3="dmgvhcl3_hadean"
-damageEffect4="dmgvhcl4_hadean"
-rangeScan=200.0
-periodScan=0.0
-velocJam=0.0
 
-braccelFactor=0.1 //Was 0.09, changed to be the same as the ISDF Scavenger (Release 96)
-velFactor =0.3
-steerFactor=1.0 //Was 1.5, changed to be the same as the ISDF Scavenger (Release 96)
-omegaFactor=1.0 //Was 0.1, , changed to be the same as the ISDF Scavenger (Release 96)
-
-selectWaitMsg="evscav01.wav"
-selectGoMsg="evscav02.wav"
-selectPickupMsg="evscav05.wav"
-selectDropoffMsg="evscav05.wav"
-selectOtherMsg="evscav01.wav"
-selectFollowMsg="evscav03.wav"
-holdMsg="evscav11.wav"
-goMsg="evscav04.wav"
-stopMsg="evscav04.wav"
-followMsg="evscav11.wav"
-followMeMsg="evscav07.wav"
-rescueMsg="evscav11.wav"
-repairMsg="evscav08.wav"
-recycleMsg="evscav10.wav"
-otherMsg="evscav13.wav"
-
-TeamTransferrable=true 
-GotoTaskHasLeader=false
+braccelFactor = 0.1 //Was 0.09, changed to be the same as the ISDF Scavenger (Release 96)
+velFactor = 0.3
+steerFactor = 1.0 //Was 1.5, changed to be the same as the ISDF Scavenger (Release 96)
+omegaFactor = 1.0 //Was 0.1, , changed to be the same as the ISDF Scavenger (Release 96)
 
 [TrackedVehicleClass]
-velocForward=15.0
-velocReverse=10.0
-accelThrust=5.0
 
-omegaSpin=1.0
-omegaTurn=0.5 //Was 0.6, changed to be the same as the ISDF Scavenger (Release 96)
-alphaSteer=8.0 // 2.0* {VSR-014}
+accelThrust = 5.0
 
-TREAD_STATIC_FRICTION=5.0 //was 1.5... reverted because it didn't work in release 73
+omegaTurn = 0.5 //Was 0.6, changed to be the same as the ISDF Scavenger (Release 96)
+alphaSteer = 8.0 // 2.0* {VSR-014}
+
+TREAD_STATIC_FRICTION = 5.0 //was 1.5... reverted because it didn't work in release 73
 
 //NormalTrackFactor = 1.0 // may need to be > 0 for some of the other params to take effect
 //pitchThrust = 3.0
@@ -102,30 +33,8 @@ TREAD_STATIC_FRICTION=5.0 //was 1.5... reverted because it didn't work in releas
 //alphaDampX = 10.0
 //alphaDampZ = 35.0 //30.0
 
-engineSound="ebscav.wav" //engineSound="evserven.wav"
-treadSound="ebscav.wav" //treadSound="iscav01b.wav"
-
 [TrackedDeployableClass]
-timeDeploy=5.0
-timeUndeploy=5.0
-soundDeploy="irecy03.wav"
-soundUndeploy="trundepl.wav"
 
 [ScavengerClass]
-soundPickup="suck.wav"
-scrapHold=20
-deployClass="ebscav_vsr"
-deployOffset=4.0
-
-BeamColor="204 153 101 31"
-BuildSparkConfig="sparker_hadean"
-LineFinishColor="255 255 255 0"
-LineStartColor="204 153 101 255"
-
-//[Lod1]
-//geometryName="evscavl1.xsi" ;geometry for lod1
-//distance=50                 ;...distance over this many meters => switch to lod2
-
-//[Lod2]
-//geometryName="evscavl2.xsi" ;geometry for lod2
-//distance=135                 ;...distance over this many meters => switch to lod2
+deployClass = "ebscav_vsr"
+deployOffset = 4.0

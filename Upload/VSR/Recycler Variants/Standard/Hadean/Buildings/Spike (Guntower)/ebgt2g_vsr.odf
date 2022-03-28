@@ -1,82 +1,32 @@
 [GameObjectClass]
 TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZCC
-geometryName = "ebgt2g00.xsi"
-classLabel = "turret"
-collisionRadius = 4.0
-powerCost = 0
-scrapCost = 50
-scrapValue = 20
-maxHealth = 4000
-maxAmmo = 10000 // 0 is *not* treated as infinite ammo!
-unitName = "Spike"
-aiName = "GunTowerFriend"
-aiName2 = "GunTowerEnemy"
-heatSignature = 2.0
-imageSignature = 1.0
-radarSignature = 1.0
-isAssault = 1
 
-armorClass = L
-
-buildSupport = B
-buildRequire = B
-
-weaponMask = 00011
-weaponHard1 = "hp_gun_1"
-weaponName1 = "gshellgun"
-weaponAssault1 = 1
-RecoilName1 = "gun_l"
-weaponHard2 = "hp_gun_2"
-weaponName2 = "gshellgun"
-weaponAssault2 = 1
-RecoilName2 = "gun_r"
+classLabel = "ebgt2g"
 
 provideCount = 6
-provideName1 = "ebgt2g"
-provideName2 = "ebgt2g_vsr"
-provideName3 = "VIRTUAL_CLASS_TURRET"
-provideName4 = "VIRTUAL_CLASS_GUNTOWER"
-provideName5 = "defender"
+provideName4 = "ebgt2g_vsr"
+provideName5 = "VIRTUAL_CLASS_TURRET"
 provideName6 = "base"
 
-
-lightHard1 = "hp_light_1"
-lightName1 = "spothadean"
-
-turretCount = 4
-turretName1 = "turret_y"
-turretName2 = "turret_x"
-turretName3 = "hp_light_1"
-turretName4 = "hp_eyepoint"
-
 [BuildingClass]
-soundAmbient = "igtow01.wav"
 
 [CraftClass]
-rangeScan = 300
-periodScan = 0.0
-velocJam = 0.0
-weaponPitch = 1.0
-steerFactor = 0.5
-engageRange = 180
 
 //ADDED THESE for Release 95
-use13Aim=true //was false
+use13Aim = true //was false
 //weaponPitch = 1.5 //Commented out - can already shoot slightly upside-down
 //steerFactorTurret = 10 //no idea - tested (steer factor is above)
 //pitchFactor = 10.0f //no idea - tested
 fireConeXBase = 0.75 //Was added, now continues to fire even if it might not hit its target
 fireConeYBase = 0.75 //Was added, now continues to fire even if it might not hit its target
 
-filterFactor0=1.0 //To make Turret AI Level 0 more accurate
-filterFactor1=1.0 //To make Turret AI Level 1 more accurate
-filterFactor2=1.0 //To make Turret AI Level 2 more accurate
-filterFactor3=1.0 //To make Turret AI Level 3 more accurate
-
+filterFactor0 = 1.0 //To make Turret AI Level 0 more accurate
+filterFactor1 = 1.0 //To make Turret AI Level 1 more accurate
+filterFactor2 = 1.0 //To make Turret AI Level 2 more accurate
+filterFactor3 = 1.0 //To make Turret AI Level 3 more accurate
 
 [TurretCraftClass]
 //omegaTurret = 2.0
-detectRange = 190
 
 //ADDED THESE for Release 95
 omegaTurret = 5.0f //was 2.0, changed to 5.0f for faster reaction (side effect: faster idle spin)

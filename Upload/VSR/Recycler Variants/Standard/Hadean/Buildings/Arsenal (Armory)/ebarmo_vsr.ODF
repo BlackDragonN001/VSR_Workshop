@@ -1,47 +1,20 @@
 [GameObjectClass]
 TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZCC
-geometryName="ebarmo00.fbx"
-classLabel="armory"
-collisionRadius=1.0
-scrapCost=60
-scrapValue=3
-maxHealth=5000
-maxAmmo=0
-unitName="Arsenal"
-aiName="ArmoryProcess"
-aiName2="ArmoryProcess"
-heatSignature=2.0
-imageSignature=1.0
-radarSignature=1.0
-isAssault=1
 
-armorClass=H
+classLabel="ebarmo"
 
-requireCount=2
-requireName1="ebfact"
-requireText1="Build Xenomator"
-requireName2="ebcbun"
-requireText2="Build Eyes of Xyr"
-
-provideCount=4
-provideName1="ebarmo"
-provideName2="ebarmo_vsr"
-provideName3="VIRTUAL_CLASS_ARMORY"
+provideCount = 4
+provideName3="ebarmo_vsr"
 provideName4="base"
 
-lightHard1="hp_light_1"
-lightName1="spothadean"
-
 [BuildingClass]
-soundAmbient="iarm01.wav"
 
 [PoweredBuildingClass]
-detectRange=100
 
 [ArmoryClass]
 // {VSR-010}
-DropoffDX=0
-DropoffDZ=16 // *32
+DropoffDX = 0
+DropoffDZ = 16 // *32
 
 [FactoryClass]
 soundBuild="ibrecy02.wav"
@@ -51,48 +24,19 @@ reloadMsg="evrecy12.wav"
 rescueMsg="evrecy13.wav"
 
 [ArmoryGroup1]
-buildLabel="Guns"
-buildItem1="apshellgun"
-buildItem2="apcphcg"
-buildItem3="apslicer"
-buildItem4="apeburst"
 
 [ArmoryGroup2]
-buildLabel="Cannons"
-buildItem1="apdragb"
-buildItem2="apslagstab"
-buildItem3="apcphlas"
-buildItem4="apfbgun"
 
 [ArmoryGroup3]
-buildLabel="Rockets"
-buildItem1="aptagcr"
-buildItem2="apcpworm"
-buildItem3="apsprink"
-// Removed because of how 1.3 weapon powerups work. {VSR-115}
-//buildItem4="apcombo1" // "Worm/Sprink" would only give "worm".
-//buildItem5="apcombo2" // "Sprink/Worm" would only give "sprink".
 
 [ArmoryGroup4]
-buildLabel="Mortars"
-buildItem1="aphfire"
-buildItem2="aphmort"
-buildItem3="apslagmort"
-buildItem4="aptagcr_c"
-buildItem5="aptagcr_a"
 
 [ArmoryGroup5]
-buildLabel="Mines"
 buildItem1="approxvsr"
-buildItem2="apflamemin"
 
 [ArmoryGroup6]
-buildLabel="Specials"
-buildItem1="apcpmits"
-buildItem2="apcphan"
 
 [ArmoryGroup7]
-buildLabel="Pilot"
 // {VSR-045}
 buildItem1="epbazo_vsr"
 buildItem2="epsnip_vsr"

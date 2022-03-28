@@ -1,50 +1,40 @@
-// (c) BZ2CP unit "Xypos"
-// Created by Slaor and Pastell
-
 [GameObjectClass]
-classLabel="evscout_vsr"
-scrapValue=15 // *20  //Drops 3 pieces of loose
-scrapReturn=10 // *20 //Cancels for 10
-scrapCost=20
-customCost=30
-buildTime=10.0 // *15.0 {VSR-006}
-maxHealth=1800
-addAmmo=5
-aiName="SentryProcess"    // otherwise empties will paint
-aiName2="SentryProcess"   // - Herp 04/02/2020
-unitName="Empty Xypos"
-armorClass=N  // L FE-AB
-requireCount=0
-weaponHard3=""
-weaponName3=""
-weaponAssault3=0
+classLabel = "evscout"
+
+scrapValue = 15 // *20  //Drops 3 pieces of loose
+scrapReturn = 10 // *20 //Cancels for 10
+scrapCost = 20
+customCost = 30
+buildTime = 10.0 // *15.0 {VSR-006}
+maxHealth = 1800
+
+aiName = "SentryProcess"    // otherwise empties will paint
+aiName2 = "SentryProcess"   // - Herp 04/02/2020
+unitName = "Empty Xypos"
+
+weaponHard3 = ""
+weaponName3 = ""
+weaponAssault3 = 0
 
 [CraftClass]
-damageEffect1="dmgvhcl1_hadean"
-damageEffect2="dmgvhcl2_hadean"
-damageEffect3="dmgvhcl3_hadean"
-damageEffect4="dmgvhcl4_hadean"
-selectAttackMsg="evscout4.wav"
-otherMsg="evscout1.wav" 
-user1Msg="evscout7.wav"  
 
 // VSR Physics {VSR-000}
-MIN_BOUNCE_VEL=1.8
-OBJECT_ELASTICITY=0.025
-GROUND_ELASTICITY=-0.2
-DAMAGE_SCALE=0.02
+MIN_BOUNCE_VEL = 1.8
+OBJECT_ELASTICITY = 0.025
+GROUND_ELASTICITY = -0.2
+DAMAGE_SCALE = 0.02
 
 [HoverCraftClass]
 // VSR Physics {VSR-000}
-omegaTurnAttenuation=8.5
-MoreLike12Physics=true
-OverWaterVelocFrontMult=1.0
-OverWaterVelocSideMult=1.0
-OverWaterThrottleMult=0.8
-airborneVelocFrontMult=1.01
-airborneVelocSideMult=1.05
-airborneThrottleMult=1.2
-airborneMinHeightRatio=1.6
-airborneMaxHeightRatio=4.0
-LIFT_SPRING=16
-LIFT_DAMP=2
+omegaTurnAttenuation = 8.5
+MoreLike12Physics = true
+OverWaterVelocFrontMult = 1.0
+OverWaterVelocSideMult = 1.0
+OverWaterThrottleMult = 0.8
+airborneVelocFrontMult = 1.01
+airborneVelocSideMult = 1.05
+airborneThrottleMult = 1.2
+airborneMinHeightRatio = 1.6
+airborneMaxHeightRatio = 4.0
+LIFT_SPRING = 16.0
+LIFT_DAMP = 2.0

@@ -1,53 +1,22 @@
 [GameObjectClass]
 TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZCC
-geometryName = "ebcbun00.fbx"
-classLabel = "commbunker"
-collisionRadius = 1.0
-scrapCost = 60
-scrapValue = 30
-maxHealth = 5000
-maxAmmo = 0
-unitName = "Eyes of Xyr"
-aiName = "CommTowerProcess"
-aiName2 = "CommTowerProcess"
-heatSignature = 2.0
-imageSignature = 1.0
-radarSignature = 1.0
-isAssault = 1
 
-armorClass = H
-
-buildSupport = B
-buildRequire = B
+classLabel = "ebcbun"
 
 UseCollisionMeshForPathing = 1
 
-requireCount = 1
-requireName1 = "ebpgen"
-requireText1 = "Build Battery Tray"
-
 provideCount = 5
-provideName1 = "ebcbun"
-provideName2 = "ebcbun_vsr"
-provideName3 = "VIRTUAL_CLASS_COMMBUNKER"
-provideName4 = "VIRTUAL_CLASS_COMMTOWER"
-provideName5 = "base"
-
-lightHard1 = "hp_light_1"
-lightName1 = "omniyohad"
+provideName4 = "ebcbun_vsr"
+provideName5 = "VIRTUAL_CLASS_COMMTOWER"
 
 [BuildingClass]
-soundAmbient = "icomm01.wav"
 
 [CommBunkerClass]
-rangeScan = 1000 
-periodScan = 3.0
 // {VSR-011}	As this caused "pulsating" in other "relay bunker" variants, this has been commented out (BZCC VSR release 31)
 //minViewDist = 100.0 // If specified, minimum height of commbunker view
 //maxViewDist = 200.0 // If specified, maximim height of commbunker view
 
 [PoweredBuildingClass]
-detectRange = 300
 
 //Commented out LOD for BZCC (VSR Release 64)
 //[Lod1]

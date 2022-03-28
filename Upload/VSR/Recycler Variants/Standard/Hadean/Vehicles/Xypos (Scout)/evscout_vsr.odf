@@ -1,176 +1,39 @@
-// (c) BZ2CP unit "Xypos"
-// Original Concept: Slaor and Pastell
-// FE Remastered Model and Texture: Jayden Hopkins
-
 [GameObjectClass]
-clearBuildZone=0 // {VSR-005}
-baseName="evscout"
-geometryName="evscout00.fbx"
-//geometryScale=1.05
-cockpitName= "evscout_cockpit.fbx"
-animCount=3
-animName1="forward"
-animFile1="evscoutsf.fbx"
-animName2="neutral"
-animFile2="evscoutsn.fbx"
-animName3="reverse"
-animFile3="evscoutsr.fbx"
-animCountCockpit = 3
-animNameCockpit1 = "forward"
-animFileCockpit1 = "evscoutsf_cockpit.fbx"
-animNameCockpit2 = "neutral"
-animFileCockpit2 = "evscoutsn_cockpit.fbx"
-animNameCockpit3 = "reverse"
-animFileCockpit3 = "evscoutsr_cockpit.fbx"
-classLabel="wingman"
-scrapValue=20
-scrapCost=40
-customCost=50
-buildTime=15.0
-customTime=15.0
-maxHealth=2200 //1800
-maxAmmo=1700
-addAmmo=5 // 1 - HM
-unitName="Xypos"
-aiName="ScoutFriend"
-aiName2="ScoutEnemy"
+clearBuildZone = 0 // {VSR-005}
 
-heatSignature=0.5
-imageSignature=2.0
-radarSignature=0.3
+classLabel = "evscout"
 
-isAssault=0
+buildTime = 15.0
 
-provideCount=3
-provideName1="evscout"
-provideName2="evscout_vsr"
-provideName3="VIRTUAL_CLASS_SCOUT"
+provideCount = 3
+provideName3 = "evscout_vsr"
 
-armorClass=N // L
-
-weaponMask=00011
-
-weaponHard1="HP_GUN_1"
-weaponName1="gcphcg_c"
-weaponAssault1=0
-weaponHard2="HP_GUN_2"
-weaponName2="gcphcg_c"
-weaponAssault2=0
-weaponHard3="HP_SPECIAL_1"
-weaponName3="gmflamemin"
-weaponAssault3=0
-
-mass=4314.09 // Stock ISDF Scout Mass {VSR-012}
-
-infoName="evscout_vsr.inf"
-
-// Dust fx.
-effectHard1 = "hp_com_1"
-effectName1 = "dusttrail"
-effectMinAltitude1 = 0.0
-effectMaxAltitude1 = 5.0
-effectFlags1 = 2147483135 // thrusting only.
-
-// Engine flame glow.
-effectHard2 = "hp_special_1"
-effectName2 = "engglow_e.small"
-effectMinAltitude2 = 0.0
-effectMaxAltitude2 = 5.0
-effectFlags2 = 2147483135 // thrusting only.
+mass = 4314.09 // Stock ISDF Scout Mass {VSR-012}
 
 [CraftClass]
-RetargetOnStrafe=true //*false -- change target if under fire
-damageEffect1="dmgvhcl1_hadean"
-damageEffect2="dmgvhcl2_hadean"
-damageEffect3="dmgvhcl3_hadean"
-damageEffect4="dmgvhcl4_hadean"
-rangeScan=450.0f
-periodScan=5.0f
-velocJam=10.0f
-engageRange=130
-
-braccelFactor=0.03
-velFactor=0.2
-steerFactor=1.5
-omegaFactor=0.2
-strafeFactor=0.2
-
-avoidSpeed=30;
-topSpeed=40;
-
-selectWaitMsg="evscout1.wav"   // "Yes lord"
-selectAttackMsg="evscout4.wav"  // "Engaging the enemy"
-selectFollowMsg="evscout2.wav" // "Supporting"
-selectGoMsg="evscout1.wav"     // "Yes lord"
-selectOtherMsg="evscout1.wav"  // "Yes lord"
-holdMsg="evscout3.wav"         // "Holding ground"
-goMsg="evscout1.wav"           // "Yes lord"
-attackMsg="evscout5.wav"       // "They will perish"
-followMeMsg="evscout9.wav"     // "Behind you"
-followMsg="evscout2.wav"       // "Supporting"
-repairMsg="evscout8.wav"       // "I will return"
-reloadMsg="evscout8.wav"       // "I will return"
-rescueMsg="evscout6.wav"       // "As fast as I can"
-recycleMsg="evscout8.wav"      // "I will return"
-otherMsg="evscout1.wav"
-//holdMsg="evscout3.wav"         // "Aolding ground"  <-- Commented out for BZCC... why is this even here?
-user1Msg="evscout.wav"
-killedMsg="evscout7.wav"       // "An eye for an eye"
-diedMsg="evscout8.wav"         // "I will return"		
+RetargetOnStrafe = true //*false -- change target if under fire
 
 // VSR Physics {VSR-000}
-MIN_BOUNCE_VEL=1.8
-OBJECT_ELASTICITY=0.025
-GROUND_ELASTICITY=-0.2
-DAMAGE_SCALE=0.02
+MIN_BOUNCE_VEL = 1.8
+OBJECT_ELASTICITY = 0.025
+GROUND_ELASTICITY = -0.2
+DAMAGE_SCALE = 0.02
 
 [HoverCraftClass]
-velocForward=40.5
-velocReverse=15.0
-velocStrafe=20.0
-accelThrust=28.0
-accelDragStop=6.0
-accelJump=14.0
-
-setAltitude=1.0
-
-alphaTrack=21.0
-alphaDamp=8.0
-
-pitchPitch=0.25
-pitchThrust=0.08
-
-rollStrafe=0.10
-omegaSpin=5.0  // *4.2
-omegaTurn=3.0  // *4.0
-alphaSteer=7.5 // *7.0
-rollSteer=0.08
-
-soundThrust="xypos_idle.wav"
-soundTurbo="xypos_acc.wav"
-
-animSteer="steer"
+omegaSpin = 5.0  // *4.2
+omegaTurn = 3.0  // *4.0
+alphaSteer = 7.5 // *7.0
 
 // VSR Physics {VSR-000}
-omegaTurnAttenuation=8.5
-MoreLike12Physics=true
-OverWaterVelocFrontMult=1.0
-OverWaterVelocSideMult=1.0
-OverWaterThrottleMult=0.8
-airborneVelocFrontMult=1.01
-airborneVelocSideMult=1.05
-airborneThrottleMult=1.2
-airborneMinHeightRatio=1.6
-airborneMaxHeightRatio=4.0
-LIFT_SPRING=16
-LIFT_DAMP=2
-
-//Commented out LOD stuff for BZCC conversion
-//[Lod1]
-//geometryName="evscoutL1.xsi"
-//distance=50
-
-//[Lod2]
-//geometryName="evscoutL2.xsi"
-//distance=130
-
+omegaTurnAttenuation = 8.5
+MoreLike12Physics = true
+OverWaterVelocFrontMult = 1.0
+OverWaterVelocSideMult = 1.0
+OverWaterThrottleMult = 0.8
+airborneVelocFrontMult = 1.01
+airborneVelocSideMult = 1.05
+airborneThrottleMult = 1.2
+airborneMinHeightRatio = 1.6
+airborneMaxHeightRatio = 4.0
+LIFT_SPRING = 16.0
+LIFT_DAMP = 2.0

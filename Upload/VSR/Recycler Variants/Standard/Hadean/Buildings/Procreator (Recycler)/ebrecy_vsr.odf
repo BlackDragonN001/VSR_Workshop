@@ -1,49 +1,14 @@
 [GameObjectClass]
 TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZCC
-//buildTime=30.0
-scrapReturn=0
-baseName="ebrecy_vsr"
-geometryName = "ebrecy00.fbx"
-animCount = 2
-animName1 = "deploy"
-animFile1 = "ebrecy00_deploy.fbx"
-animName2 = "loop"
-animFile2 = "ebrecy00_loop.fbx"
-RunAnimation = "loop"
-RunAnimIsLooped = true
+
+classLabel = "evrecy"
+
+scrapReturn = 0
+
 //collisionName="ebrecy00.fbx"
-classLabel="recycler"
-powerCost=0
-scrapCost=0
-scrapValue=10
-maxHealth=12000
-maxAmmo=0
-unitName="Procreator"
-aiName="BuildingProcess"
-aiName2="BuildingProcess"
-heatSignature=2.0
-imageSignature=1.0
-radarSignature=1.0
-isAssault=1
 
-collisionRadius=4.0
-
-armorClass=H
-
-provideCount=4
-provideName1="ebrecy"
-provideName2="VIRTUAL_CLASS_RECYCLER"
-provideName3="VIRTUAL_CLASS_RECYCLERBUILDING"
-provideName4="base"
-
-lightHard1 = "hp_light_1"
-lightName1 = "omnipurple"
-lightHard2 = "hp_light_2"
-lightName2 = "omniyohad"
-lightHard3 = "hp_light_3"
-lightName3 = "omniyohad"
-lightHard4 = "hp_light_4"
-lightName4 = "omniyohad"
+provideCount = 5
+provideName5 = "base"
 
 // DLL
 startingVariant="_vsr"
@@ -51,114 +16,18 @@ pilotRespawnWithSniper="esuser"
 pilotRespawnWithOutSniper="esuser_m"
 
 [PoweredBuildingClass]
-detectRange=100
 
 [BuildingClass]
-bldEdge = "wwww"
-
-tunnelCount = 11 //9
-
-// Pad.
-tunnel01X0 = 3
-tunnel01Z0 = 3
-tunnel01DX = 2
-tunnel01DZ = 4.5
-tunnel01Edge = "wwfw"
-
-// Top Left Corner.
-tunnel02X0 = 0
-tunnel02Z0 = 0
-tunnel02DX = 1
-tunnel02DZ = 1
-tunnel02Edge = "tfft"
-
-// Top (back)
-tunnel03X0 = 1
-tunnel03Z0 = 0
-tunnel03DX = 6
-tunnel03DZ = 1
-tunnel03Edge = "tfwf"
-
-// Top Right Corner
-tunnel04X0 = 7
-tunnel04Z0 = 0
-tunnel04DX = 1
-tunnel04DZ = 1
-tunnel04Edge = "ttff"
-
-// Left side
-tunnel05X0 = 0
-tunnel05Z0 = 1
-tunnel05DX = 1
-tunnel05DZ = 6.5
-tunnel05Edge = "fwft"
-
-// Right side
-tunnel06X0 = 7
-tunnel06Z0 = 1
-tunnel06DX = 1
-tunnel06DZ = 6.5
-tunnel06Edge = "ftfw"
-
-// Bottom Left Corner
-tunnel07X0 = 0
-tunnel07Z0 = 7.5
-tunnel07DX = 1
-tunnel07DZ = 0.5
-tunnel07Edge = "fftt"
-
-// Bottom Right Corner
-tunnel08X0 = 7
-tunnel08Z0 = 7.5
-tunnel08DX = 1
-tunnel08DZ = 0.5
-tunnel08Edge = "fttf"
-
-// Bottom (front) Edge Left
-tunnel09X0 = 1
-tunnel09Z0 = 7.5
-tunnel09DX = 2
-tunnel09DZ = 0.5
-tunnel09Edge = "wftf"
-
-// Bottom (front) Edge Center
-tunnel10X0 = 3
-tunnel10Z0 = 7.5
-tunnel10DX = 2
-tunnel10DZ = 0.5
-tunnel10Edge = "fftf"
-
-// Bottom (front) Edge Right
-tunnel11X0 = 5
-tunnel11Z0 = 7.5
-tunnel11DX = 2
-tunnel11DZ = 0.5
-tunnel11Edge = "wftf"
-
-soundAmbient="ibrecy01.wav"
-
 
 [FactoryClass]
-soundBuild="ibrecy02.wav"
-soundFinish="iapc04.wav"
-buildItem1="evscav_vsr"
-buildItem2="evscout_vsr"
-buildItem3="evturr_vsr"
-buildItem4="evturrs_vsr"
-buildItem5="evcons_vsr"
-buildItem6="evserv_vsr"
-buildItem7="apserv_vsr"
-buildItem8="evscoutm_vsr"
-buildEmptyItem=8
-
-reloadMsg="evrecy12.wav"
-rescueMsg="evrecy13.wav"
-
-BeamColor="204 153 101 31"
-BuildSparkConfig="sparker_hadean"
-LineFinishColor="255 255 255 0"
-LineStartColor="204 153 101 255"
+buildItem1 = "evscav_vsr"
+buildItem2 = "evscout_vsr"
+buildItem3 = "evturr_vsr"
+buildItem4 = "evturrs_vsr"
+buildItem5 = "evcons_vsr"
+buildItem6 = "evserv_vsr"
+buildItem7 = "apserv_vsr"
+buildItem8 = "evscoutm_vsr"
+buildEmptyItem = 8
 
 [RecyclerClass]
-scrapHold=40
-scrapDelay=3.0 // # of seconds before +1 scrap

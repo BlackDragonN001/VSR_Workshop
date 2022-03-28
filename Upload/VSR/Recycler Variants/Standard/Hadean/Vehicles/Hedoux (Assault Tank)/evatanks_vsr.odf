@@ -1,51 +1,50 @@
-// (c) BZ2CP unit "Hedoux"
-// Created by Slaor and Pastell
-// Vehicle V/O's - Zeeder  
-// Voice effects, vehicle sounds - Chipotle
-
 [GameObjectClass]
-baseName="evatanku"
-classLabel="evatank_vsr"
-scrapValue=40
-scrapCost=85
-customCost=85
-buildTime=25.0
-customTime=25.0
-maxHealth=5500
-maxAmmo=4000
-addAmmo=8
-unitName="Hedoux FBS"
+baseName = "evatanku"
+classLabel = "evatank"
+scrapValue = 40
+scrapCost = 85
+customCost = 85
+buildTime = 25.0
+customTime = 25.0
+maxHealth = 5500
+maxAmmo = 4000
+addAmmo = 8
+unitName = "Hedoux FBS"
 
-requireName1="ebtcen"
-requireText1="Build Xyr Tower"
+provideCount = 5
+provideName5 = "evatank_vsr"
 
-weaponMask=00001 // Added VSR 5.1 -- Use Cannon Only
-weaponName1="gfbgun_a"
-weaponName2="gslicer"
-weaponName3="gslicer"
+mass = 34316.1 // ISDF ass. tank {VSR-012}
 
-infoName="evatanku_vsr.inf"
+unitStatus = "wire_evatanku.tga"
+
+requireName1 = "ebtcen"
+requireText1 = "Build Xyr Tower"
+
+weaponMask = 00001 // Added VSR 5.1 -- Use Cannon Only
+weaponName1 = "gfbgun_a"
+weaponName2 = "gslicer"
+weaponName3 = "gslicer"
 
 [CraftClass]
-damageEffect1="dmgvhcl1_hadean"
-damageEffect2="dmgvhcl2_hadean"
-damageEffect3="dmgvhcl3_hadean"
-damageEffect4="dmgvhcl4_hadean"
 
-engageRange=250 // 210 - AI errors
+engageRange = 250 // 210 - AI errors
 
-UseSelectWeapon=0 // Added VSR 5.1 -- Force Weaponmask
+UseSelectWeapon = 0 // Added VSR 5.1 -- Force Weaponmask
 
 [TrackedVehicleClass]
-velocForward=18.0
-velocReverse=10.0
-accelThrust=8.0
+velocForward = 18.0
+velocReverse = 10.0
+accelThrust = 8.0
+
+omegaTurn = 0.5
+alphaSteer = 4.0 //2.0
+
+COLLISION_RAISE= -0.5
+SUSPENSION_MIN=-0.2
+SUSPENSION_MAX=0.3
+SPRING_FACTOR=2.0 // minimum value: 0.01
+DAMPING_FACTOR=2.0	// 2.0=critical damped, minimum value: 0.01
 
 [AssaultTankClass]
-pitchMax=0.99
-
-[Lod1]
-geometryName="evatankL1.xsi" ;geometry for lod1
-
-[Lod2]
-geometryName="evatankL2.xsi" ;geometry for lod2
+pitchMax = 0.99

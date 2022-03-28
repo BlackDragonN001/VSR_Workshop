@@ -1,128 +1,23 @@
 [GameObjectClass]
 TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZCC
-geometryName = "ebsbay00.fbx"
 
-//Animation added by Jayden for BZCC
-animCount = 2
-animName1 = "deploy"
-animFile1 = "ebsbay00.fbx"
-animName2 = "loop"
-animFile2 = "ebsbay00_loop.fbx"
-RunAnimation = "loop"
-RunAnimIsLooped = true
-
-classLabel = "supplydepot"
-collisionRadius = 1.0
-scrapCost = 50
-scrapValue = 3
-maxHealth = 5000
-maxAmmo = 0
-unitName = "Repair Vat"
-heatSignature = 2.0
-imageSignature = 1.0
-radarSignature = 1.0
-isAssault = 1
-
-armorClass = H
-
-requireCount = 1
-requireName1 = "ebfact"
-requireText1 = "Build Xenomator"
-
-/////// PROVIDES ///////////////////
+classLabel = "ebsbay"
 
 provideCount = 5
-provideName1 = "ebsbay"
-provideName2 = "ebsbay_vsr"
-providename3 = "VIRTUAL_CLASS_SUPPLYDEPOT"
-provideName4 = "VIRTUAL_CLASS_DOWER"
-provideName5 = "base"
-
-////////////////////////////////////
-
-lightHard1 = "hp_light_1"
-lightName1 = "omniyohad"
-lightHard2 = "hp_light_1"
-lightName2 = "spothadean"
-lightHard3 = "hp_light_1"
-lightName3 = "spothadean"
-
-effectHard1 = "hp_emit_1"
-effectName1 = "ebsbay_vsr.wave"
-effectFlags1 = 2147483583 // only when powered.
+provideName4 = "ebsbay_vsr"
+provideName5 = "VIRTUAL_CLASS_DOWER"
 
 [PoweredBuildingClass]
-detectRange = 100
 
 [BuildingClass]
-tunnelCount = 2 // tunnels 3 and 4 not needed
-
-bldEdge = "wwww"
-
-// Central Pad
-tunnel01X0 = 0
-tunnel01Z0 = 0
-tunnel01Dx = 8
-tunnel01Dz = 6
-tunnel01Edge = "ttft"
-
-// South Pillar Entrance
-tunnel02X0 = 2
-tunnel02Z0 = 6
-tunnel02Dx = 4
-tunnel02Dz = 2
-tunnel02Edge = "fwtw"
-
-// SW Pillar
-tunnel03X0 = 0
-tunnel03Z0 = 6
-tunnel03Dx = 2
-tunnel03Dz = 2
-tunnel03Edge = "wwww"
-
-// SE Pillar
-tunnel04X0 = 6
-tunnel04Z0 = 6
-tunnel04Dx = 2
-tunnel04Dz = 2
-tunnel04Edge = "wwww"
 
 [SupplyDepotClass]
-supplyRange = 40.0
-supplyRate = 150.0
-supplySound = "mnu_empt.wav"
-
 // Individual classification tweakers
 serviceSTs = 1
 serviceCraft = 1
 serviceBuildings = 0
 servicePilots = 1
 serviceOther = 0
-
-[Wave]
-renderBase = "draw_emit"
-emitName = "ebsbay_vsr.waveemit"
-emitDelay = 0.5
-emitVelocity = "0.0 -5.0 0.0"
-emitVariance = "0.0 0.0 0.0"
-
-[Waveemit]
-simulateBase = "sim_smoke"
-lifeTime = 2.0
-renderBase = "draw_wave"
-textureName = "wave.tga"
-textureBlend = "one one modulate"
-startColor = "255 180 30 200"
-finishColor = "255 150 30 0"
-startRadius = 5.0
-finishRadius = 1.0
-animateTime = 2.0
-waveAngle = 3.14159265359
-waveDepth = 1.0
-waveColorCenter = "255 255 255 255"
-waveColorEdge = "255 255 255 255"
-waveSegments = 64
-maxCount = 256
 
 //Commented out LOD for BZCC (VSR Release 64)
 //[Lod1]
