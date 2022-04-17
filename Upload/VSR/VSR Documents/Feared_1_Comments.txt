@@ -992,3 +992,17 @@ April 16th, 2022
 
 -Added pilots to DM vehicle selection options (for sniper DMs)
 -General BlackDragon: Updated Hadean weapon effects, report any issues with these (especially performance issues)
+-General BlackDragon: Adjusted damage values of chunk explosions (shibbits); damage now scales with armor/shield types - fixes scav bailing on rec pad exploit
+-General BlackDragon: Updated mod ini to use new asset packs & set up Hadeans to use new asset pack files (subscribe to these to join games faster), removed files from VSR that are now in a separate asset pack
+-General BlackDragon: Fixed portal code always teleporting units with inversed pitch
+-General BlackDragon: Adjusted Portal GOTO order to only happen when the goto order is within a tolerance of distance to entrance portal (CollisionRadius + 25m). This prevents the portal from interrupting orders when the portal teleportation is accidental
+-General BlackDragon: Fixed MPI Player TeamGroup 2 (Team 6-10) units getting added to DLL driven Idle Dispatcher
+-General BlackDragon: Fixed Thug Scavenger management code not working in MPI FFA mode
+
+
+
+==Release 101==
+April 16th, 2022
+
+-General BlackDragon: Fixed a few duplicate files (related to the use of the new asset pack for hadeans)
+-General BlackDragon: Fixed a bug involving Hadean Procreator deploying back into a vehicle
