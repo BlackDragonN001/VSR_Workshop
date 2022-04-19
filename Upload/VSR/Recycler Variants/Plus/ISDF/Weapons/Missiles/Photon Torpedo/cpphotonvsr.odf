@@ -42,7 +42,9 @@ finishRadius = 0.2
 animateTime = 0.1
 emitDelay = 0.05
 emitLife = 0.1
-rotationrate = 1
+bottomInteractsWithTerrain = false
+emitInherit = "1.0 1.0 1.0"
+rotationrate = 1.0
 
 [burst]
 renderBase = "draw_twirl_trail"
@@ -54,16 +56,19 @@ startRadius = 2.5
 finishRadius = 0.5
 animateTime = 0.1
 emitDelay = 0.2
-emitLife = 0.1
-rotationrate = 1
+emitLife = 0.21
+bottomInteractsWithTerrain = false
+emitInherit = "1.0 1.0 1.0"
+rotationrate = 1.0
 
 [light]
 renderBase = "draw_light"
 startColor = "255 200 0 600"
 finishColor = "100 80 0 600"
-startRadius = 12.0
-finishRadius = 1.0
-animateTime = 1.0
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+startRadius = 25.0
+finishRadius = 25.0
+animateTime = 5.5
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 25.0
+lensFlare = 1
