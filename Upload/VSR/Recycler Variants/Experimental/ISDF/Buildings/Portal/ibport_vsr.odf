@@ -76,24 +76,51 @@ weaponName4 = "gchannel4"
 weaponAssault4 = 1
 weaponGroup4 = 3
 
+effectsMask = 0 // Start out OFF.
+effectHard1 = "hp_emit_1"
+effectName1 = NULL //"PortalFx_I0Start.render"
+effectHard2 = "hp_emit_1"
+effectName2 = "PortalFx_I0.render"
+effectHard3 = "hp_emit_1"
+effectName3 = "PortalFx_I0End.render"
+
+effectHard4 = "hp_emit_1"
+effectName4 = NULL //"PortalFx_I1Start.render"
+effectHard5 = "hp_emit_1"
+effectName5 = NULL //"PortalFx_I1.render"
+effectHard6 = "hp_emit_1"
+effectName6 = "PortalFx_I1End.render"
+
+effectHard7 = "hp_emit_1"
+effectName7 = NULL //"PortalFx_I2Start.render"
+effectHard8 = "hp_emit_1"
+effectName8 = NULL //"PortalFx_I2.render"
+effectHard9 = "hp_emit_1"
+effectName9 = "PortalFx_I2End.render"
 
 [TeleportalClass]
-//soundActivate = "portalx.wav"  // not used.... the sound effect is made by the portalEffect's explosion, though it's sometimes quite soft :-/
+soundActivate = "portalx.wav"
+soundDeactivate = NULL
 
+PortalEffect = "PortalFx_I" // Effect # is added to the end, as well as a Start and End versions.
+InEffect = 4
+OutEffect = 7
+OnEffect = 1
 
-//DLLSet it's lifespan to 0.1 no scrap left behind.
-// it's just an i76building thats invisibile/invincible with a lifespan of 0.1. something that dies to create an explosion.
-//PortalEffectIn = "PortalEffectinI"
-PortalEffectOut = "PortalEffectoutI"
-PortalEffectVehicle = "PortalEffectVehI"
+VehInEffect = 1
+VehOutEffect = 2
 
-TeleporterChannel = 1
+TeleporterChannel = 1 //0
 ShowChannel = true
 CanEnter = true
 CanExit = true
-RandomDestination = false
-RandomUsesChannels = true
-TeleportFilter = 3 // Craft + Pilots.
+ContinuousFx = true
+ContinuousFxRange = 0.0f
+MatchType = 0 // 0 = Closest, 1 = Cycle, 2 = Random.
+MatchTypeUsesChannels = true
+FxOnVehicle = false
+TeleportColorFade = "0 127 255 255"
+TeleportFilter = 3 // Pilots + Craft
 // Teleport Filter options: 
 // All         = 0
 // Craft       = 1
@@ -103,9 +130,13 @@ TeleportFilter = 3 // Craft + Pilots.
 // Other       = 16
 ExitForwardOnly = false
 ExitVelocity = 0
+ExitKickAI = true
+EnterGotoIsExit = false // If true, AI ordered to goto this portal will goto the exit position offset instead of the object.
 ExitUsesCenter = true
-PortalTargetRange = 20.0f
+EnterRange = 20.0f
 TeleportTeamFilter = 0
+DestinationMinRange = 0.0
+DestinationMaxRange = 0.0
 DestinationTeamFilter = 3
 // 0 = All Teams, 1 = same team only, 2 = allies only, 3 = Same Team + Allies, 4 = Enemies only, 5 = Same Team + Enemies, 6 = Allies + Enemies.
 // Team Filter options: 
@@ -115,7 +146,6 @@ DestinationTeamFilter = 3
 // Enemies          = 4
 // 
 // Add the values to get the desired result. Same Team + Allies is 3, Enemies + Allies is 6.
-
 
 [PoweredBuildingClass]
 CanAlliesUse = false
@@ -134,7 +164,6 @@ tunnel01Edge = "twtw"
 
 candemolish = false
 
-
 [CraftClass]
 rangeScan = 210.0
 periodScan = 0.0
@@ -144,13 +173,5 @@ steerFactor = 1.0
 engageRange = 210
 
 [TurretCraftClass]
-// Teleport destionation exit point.
-//powerTap1 = "hp_PortalExit_1"
-//powerName1 = "PortalExitGH"// invincible nav beacon.
-
-// "Goto" after exiting teleporter.
-//powerTap2 = "hp_PortalNav_1"
-//powerName2 = "PortalNavGH"// invincible nav beacon.
-
 omegaTurret = 0.0
 detectRange = 500

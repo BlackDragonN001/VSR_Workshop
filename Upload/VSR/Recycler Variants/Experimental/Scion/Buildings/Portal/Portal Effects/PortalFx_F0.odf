@@ -1,0 +1,83 @@
+[GameObjectClass] // Portal Constant On Scion
+classLabel = "PortalFX"
+
+effectName1 = "PortalFx_F0.render"
+
+[PoweredBuildingClass]
+
+[BuildingClass]
+//soundAmbient = "portal02.wav" // On sound.
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "PortalFx_F0.light"
+renderName2 = "PortalFx_F0.shock1"
+renderName3 = "PortalFx_F0.shock2"
+renderName4 = "PortalFx_F0.twirl"
+
+[Light]
+//simulateBase = "sim_null"
+//lifeTime = 1.0
+renderBase = "draw_light"
+startColor = "255 255 127 2500"
+finishColor = "255 255 127 2500"
+startRadius = 60.0
+finishRadius = 60.0
+//animateTime = 1.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
+lensFlare = false
+
+[Shock1]
+//simulateBase = "sim_smoke"
+//lifeTime = 0.5
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 127 63"
+finishColor = "255 255 127 63"
+startRadius = 31.0
+finishRadius = 31.0
+animateTime = 0.5
+latitudeBands = 64
+longitudeSegments = 128
+InitialPitch = 0.0
+InitialYaw = 0.0
+InitialRoll = 0.0
+AddPitch = 10.0
+AddYaw = 10.0
+AddRoll = 10.0
+
+[Shock2]
+//simulateBase = "sim_smoke"
+//lifeTime = 0.5
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 127 63"
+finishColor = "255 255 127 63"
+startRadius = 31.0
+finishRadius = 31.0
+animateTime = 0.5
+latitudeBands = 64
+longitudeSegments = 128
+InitialPitch = 0.0
+InitialYaw = 0.0
+InitialRoll = 0.0
+AddPitch = -10.0
+AddYaw = -10.0
+AddRoll = -10.0
+
+[Twirl]
+renderBase = "draw_twirl"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 127 255"
+finishColor = "255 255 127 255"
+startRadius = 31.0
+finishRadius = 31.0
+//animateTime = 0.1
+rotationRate = 5.0
+BottomInteractsWithTerrain = false
