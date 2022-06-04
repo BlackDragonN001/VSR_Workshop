@@ -1,0 +1,22 @@
+[GameObjectClass]
+classLabel = "cvdcar"
+
+scrapCost = 100		//*80 (VSR Release 90)
+
+teamLimitClass1 = "cvdcar"		//Limit 1 demon per team (VSR Release 90)
+teamLimitClass1Count = 1		//Limit 1 demon per team (VSR Release 90)
+teamLimitClass1Text = "Only 1 Allowed"
+
+[CraftClass]
+rangeScan = 300.0	//*600.0 (VSR Release 90)
+
+engageRange = 450.0
+
+damageEffect1 = "dmgvhcl_c1"
+damageEffect2 = "dmgvhcl_c2"
+damageEffect3 = "dmgvhcl_c3"
+damageEffect4 = "dmgvhcl_c4"
+
+[HoverCraftClass]
+
+[CarrierClass]

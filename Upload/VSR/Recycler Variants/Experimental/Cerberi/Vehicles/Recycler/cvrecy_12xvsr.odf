@@ -1,65 +1,25 @@
 [GameObjectClass]
-baseName="cvrecy"
-geometryName="cvrecy02.xsi"
-//geometryScale=1.48
-animCount=1
-animName1="deploy"
-animFile1="cvrecy02.xsi"
-classLabel="recyclervehicle"
-collisionRadius=7.0
-scrapCost=0
-scrapValue=100
-maxHealth=6000
-maxAmmo=0
-unitName="Recycler"
-aiName="DeployBuildingFriend"
-aiName2="DeployBuildingEnemy"
-heatSignature=2.0
-imageSignature=5.0
-radarSignature=5.0
-isAssault=1
+classLabel = "cvrecy02"
 
-armorClass=H
+startingVariant = "_vsr" //12xvsr"
+pilotRespawnWithSniper = "csuser"
+pilotRespawnWithOutSniper = "csuser_m"
 
 [CraftClass]
-rangeScan=400.0f
-periodScan=5.0f
-velocJam=0.0f
 
-TeamTransferrable=false
-
-//selectUser1Msg="ivrecy02.wav"
-//selectUser2Msg="ivrecy10.wav"
-//selectWaitMsg="ivrecy04.wav"
-//selectGoMsg="ivrecy01.wav"
-//selectOtherMsg="ivrecy04.wav"
-//holdMsg="ivrecy09.wav"
-//attackMsg="ivrecy05.wav"
-//goMsg="ivrecy05.wav"
-//goObjectMsg="ivrecy04.wav"
-//user1Msg="ivrecy02.wav"
-//user2Msg="ivrecy13.wav"
-//followMsg="ivrecy03.wav"
-//otherMsg="ivrecy04.wav"
+damageEffect1 = "dmgvhcl_c1"
+damageEffect2 = "dmgvhcl_c2"
+damageEffect3 = "dmgvhcl_c3"
+damageEffect4 = "dmgvhcl_c4"
 
 [TrackedVehicleClass]
-velocForward=10.0
-velocReverse=10.0
-accelThrust=50.0
-omegaSpin=2.0
-
-TREAD_STATIC_FRICTION=1.5 // *New
-
-engineSound	= "irecy01.wav"
-treadSound="irecy01b.wav"
+velocReverse = 10.0
+accelThrust = 50.0
+omegaSpin = 2.0
 
 [TrackedDeployableClass]
-timeDeploy=10.0
-timeUndeploy=10.0
-soundDeploy="irecy03.wav"
 
 [DeployBuildingClass]
-deployName="cbrecy"
+deployName = "cbrecy_vsr"
 
 [RecyclerVehicleClass]
-scrapHold=40

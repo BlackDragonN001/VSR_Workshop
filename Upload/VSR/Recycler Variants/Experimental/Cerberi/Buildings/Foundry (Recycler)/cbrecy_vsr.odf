@@ -1,0 +1,20 @@
+[GameObjectClass]
+classLabel = "cbrecy"
+
+[PoweredBuildingClass]
+
+[BuildingClass]
+
+[FactoryClass]
+buildItem1="cvscav_vsr"
+buildItem2="cvscout_vsr"
+buildItem3="cvturr_vsr"
+buildItem4="cvmlay_vsr"	//Added Harpie to Foundry to make space for Light Krul in Crucible (VSR Release 90)
+buildItem5="cvcons_vsr"
+buildItem6="cvserv_vsr"
+buildItem7="apserv_vsr"
+buildItem8="cvscoutm_vsr"
+buildEmptyItem = 8
+
+[RecyclerClass]
+scrapDelay = 3.0	//Changed to Default for VSR Release 89 to create a green scrap bar

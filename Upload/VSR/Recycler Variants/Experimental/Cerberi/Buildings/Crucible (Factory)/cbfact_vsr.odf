@@ -1,0 +1,21 @@
+[GameObjectClass]
+classLabel = "cbfact"
+
+scrapValue = 15	//*10 VSR Release 89
+maxHealth = 6000	//*12000 VSR Release 89
+
+[PoweredBuildingClass]
+
+[BuildingClass]
+
+[FactoryClass]
+buildItem1 = "cvtankm_vsr"	//Moved Harpie to Foundry & added "Light Krul" for balance (VSR Release 90)
+buildItem2 = "cvtank_vsr"	//Original Krul moved to slot 2 (VSR Release 90)
+buildItem3 = "cvrbomb_vsr"
+buildItem4 = "cvatank_vsr"
+buildItem5 = "cvhatank_vsr"
+buildItem6 = "cvtalon_vsr"
+buildItem7 = "cvdcar_vsr"
+buildItem8 = "cvwalk_vsr"
+buildItem9 = "cvgorg_vsr"
+builditem10 = "cvwraith_vsr"

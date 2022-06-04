@@ -1,0 +1,28 @@
+//VSR Triton Empty Scout
+[GameObjectClass]
+classLabel = "cvscout"
+
+needPilot = 1 // Allow player control. -GBD
+
+customCost = 30  // *60   {VSR-054} 
+buildTime = 10.0 // *15.0 {VSR-006}
+scrapCost = 20 // *30 (VSR Release 90)
+scrapValue = 15	// *30 VSR Release 91
+
+unitName = "Empty Triton"
+aiName = "SentryProcess"
+aiName2 = "SentryProcess"
+
+// Stock values
+weaponName1 = "gcvfaf_c"
+weaponName2 = "gcvfaf_c"
+weaponName3 = ""
+
+[CraftClass]
+
+damageEffect1 = "dmgvhcl_c1"
+damageEffect2 = "dmgvhcl_c2"
+damageEffect3 = "dmgvhcl_c3"
+damageEffect4 = "dmgvhcl_c4"
+
+[HoverCraftClass]

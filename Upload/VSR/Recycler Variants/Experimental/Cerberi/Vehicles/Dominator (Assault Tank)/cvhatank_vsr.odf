@@ -1,0 +1,21 @@
+[GameObjectClass]
+classLabel = "cvhatank"
+
+needPilot = 1 // Allow player control. -GBD
+
+weaponName2 = "gcrapiervsr_c"
+weaponName3 = "gcrapiervsr_c"
+
+[CraftClass]
+
+damageEffect1 = "dmgvhcl_c1"
+damageEffect2 = "dmgvhcl_c2"
+damageEffect3 = "dmgvhcl_c3"
+damageEffect4 = "dmgvhcl_c4"
+
+[TrackedVehicleClass]
+omegaTurn = 0.4 // *New
+alphaSteer = 1.5 // *New
+omegaSpin = 2.5 // *4.0
+
+[AssaultTankClass]

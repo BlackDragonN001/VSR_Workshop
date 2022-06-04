@@ -1,0 +1,17 @@
+[GameObjectClass]
+classLabel = "cbjamm"
+
+canCollide = 1
+
+limitClass1Count = 1
+limitClass1 = "cbjamm_vsr"
+
+requireName1 = "cbtcen"
+requireText1 = "Build Research Node" // was uplink
+
+[PoweredBuildingClass]
+
+[BuildingClass]
+
+[JammerTowerClass]
+jammerRange = 400.0 //was 600

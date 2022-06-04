@@ -1,0 +1,36 @@
+[GameObjectClass]
+classLabel = "cvturr"
+
+needPilot = 1 // Allow player control. -GBD
+
+[CraftClass]
+
+damageEffect1 = "dmgvhcl_c1"
+damageEffect2 = "dmgvhcl_c2"
+damageEffect3 = "dmgvhcl_c3"
+damageEffect4 = "dmgvhcl_c4"
+
+///////////VSR STUFF////////////
+
+// VSR Turret AI
+CanAIPForceIdle = false
+DoIdleDispatch = false
+sitAttackCheckAbleToHit = true // Check if can hit. If check returns false, hold immediately.
+gunTowerProcessCheckCantHit = true
+
+// {VSR-001}
+// VSR Turret Physics
+use13Aim = false
+aim12CannonError0 = 0.05
+aim12CannonError1 = -0.2
+aim12CannonError2 = -0.03
+aim12CannonError3 = -0.1
+//weaponPitch = 1.5 // *1.0
+MinWeaponPitch = 1.0
+MaxWeaponPitch = 1.5
+pitchScatter = 0.2
+steerScatter = 0.1
+
+[HoverCraftClass]
+
+[TurretTankClass]
