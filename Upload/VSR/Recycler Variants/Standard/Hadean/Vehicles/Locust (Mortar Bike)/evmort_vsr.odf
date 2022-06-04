@@ -14,6 +14,12 @@ provideName5 = "evmort_vsr"
 weaponName2="gproxminvsr"
 
 [CraftClass]
+
+damageEffect1 = "dmgvhcl_e1"
+damageEffect2 = "dmgvhcl_e2"
+damageEffect3 = "dmgvhcl_e3"
+damageEffect4 = "dmgvhcl_e4"
+
 // AI changes to better utilize SentryProcess {VSR-360}
 gotoTaskHasLeader = 0
 AttackTaskUsesGroups = 0

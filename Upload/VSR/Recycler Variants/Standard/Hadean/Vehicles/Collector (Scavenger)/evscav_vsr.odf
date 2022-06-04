@@ -3,13 +3,17 @@ classLabel = "evscav"
 
 collisionRadius = 10 // {VSR-013}
 
-
 provideCount=3
 provideName3 = "evscav_vsr"
 
 mass=40000.0 // (stock ivscav=53157.3) {VSR-012}
 
 [CraftClass]
+
+damageEffect1 = "dmgvhcl_e1"
+damageEffect2 = "dmgvhcl_e2"
+damageEffect3 = "dmgvhcl_e3"
+damageEffect4 = "dmgvhcl_e4"
 
 braccelFactor = 0.1 //Was 0.09, changed to be the same as the ISDF Scavenger (Release 96)
 velFactor = 0.3

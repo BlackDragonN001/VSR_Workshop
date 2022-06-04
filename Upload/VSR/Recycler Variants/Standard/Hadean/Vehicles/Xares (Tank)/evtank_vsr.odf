@@ -12,6 +12,11 @@ mass = 12158.2 // Stock ISDF Tank Mass {VSR-012}
 
 [CraftClass]
 
+damageEffect1 = "dmgvhcl_e1"
+damageEffect2 = "dmgvhcl_e2"
+damageEffect3 = "dmgvhcl_e3"
+damageEffect4 = "dmgvhcl_e4"
+
 // VSR Physics {VSR-000}
 MIN_BOUNCE_VEL = 2.0
 GROUND_ELASTICITY = -0.07

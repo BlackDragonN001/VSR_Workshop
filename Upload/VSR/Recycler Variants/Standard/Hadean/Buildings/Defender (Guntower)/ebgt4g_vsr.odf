@@ -3,6 +3,8 @@ TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZ
 
 classLabel = "ebgt4g"
 
+buildRequire = A //B // Make Adjacency able to chain off eachother, like ISDF Gun Towers. -GBD
+
 provideCount = 5
 provideName4 = "ebgt4g_vsr"
 provideName5 = "base"
@@ -10,6 +12,11 @@ provideName5 = "base"
 [BuildingClass]
 
 [CraftClass]
+
+damageEffect1 = "dmgvhcl_e1"
+damageEffect2 = "dmgvhcl_e2"
+damageEffect3 = "dmgvhcl_e3"
+damageEffect4 = "dmgvhcl_e4"
 
 //ADDED THESE for Release 95:
 use13Aim = true //was false

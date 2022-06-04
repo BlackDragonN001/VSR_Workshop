@@ -40,6 +40,10 @@ pitchScatter = 0.1 // Allowed pitch inaccuracy
 TopSpeed = 50 // Set this over actual top speed for more aggressive forward AI movement
 avoidSpeed = 32
 
+damageEffect1 = "dmgvhcl_e1"
+damageEffect2 = "dmgvhcl_e2"
+damageEffect3 = "dmgvhcl_e3"
+damageEffect4 = "dmgvhcl_e4"
 
 [HoverCraftClass]
 aiAccelDrag = 16 // Seems to affect AI strafing
