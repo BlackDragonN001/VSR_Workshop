@@ -123,9 +123,6 @@ alphaDamp=5.0
 omegaTurn=30.0
 omegaTurnAttenuation=0.5f
 
-is13Walker=false // Set to false for a 1.2 style walker hierarchy
-Walker12Type=1 //1 // -1=auto, 0=isdf style, 1=fury style
-
 alphaSteer=0.1
 velocJump=20;
 alphaTrack=20.0
@@ -137,13 +134,13 @@ velocReverse=8.0
 velocWalkFactor=0.41
 attackSpeed=35.0 
 
-headpiece="neck"
+headpiece="head"
 rightfootpiece="rfoot";
 leftfootpiece="lfoot";
 
 jumpSound ="avwalke2.wav"
 landSound ="avwalke3.wav"
-stepSound ="ivewalkst.wav"
+stepSound ="evwalkst.wav"
 
 engineSound="evwalken.wav"
 
