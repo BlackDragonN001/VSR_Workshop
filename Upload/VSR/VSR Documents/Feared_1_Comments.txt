@@ -1025,6 +1025,14 @@ June 4th, 2022
 
 
 ==Release 103==
-???
+Februrary 8th, 2023
 
 -blue_banana: Fixed whatever was wrong with Domain
+-General BlackDragon: Fixed incorrect render names in Scion Portal
+-General BlackDragon: Fixed broken evlegs ODF
+-General BlackDragon: Updated DLL's: AI should now get randomized weapons as they should have been; their weapons will also adjust based on the difficulty
+-General BlackDragon: Fixed "EjectKillRetCode" table in LuaMission.dll
+-General BlackDragon: Fixed missing VehicleHelper::Execute call in DLL - some more features should work properly again
+-General BlackDragon: Updated MPI AIP scheme to the new 5 AI limit format
+-General BlackDragon: Fixed incorrect path names for Stage points from the old system, now converted to the new system
+-General BlackDragon: Fixed AI Spawns on FFA Middle-Low
