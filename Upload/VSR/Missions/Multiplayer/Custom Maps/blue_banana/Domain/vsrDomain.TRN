@@ -1,0 +1,19 @@
+[Size]
+Height = 100
+Color = "255 255 255 255"
+Tile = 0
+
+[NormalView]
+DiffuseColor = "255 255 255"
+SpecularColor = "10 10 10"
+SpecularPower = 1024.0
+
+[CellType]
+GradeSloped = 0.3f
+GradeCliff = 0.4f
+
+[Texture]
+TileTexture0 = "mars1.dds" // Pools
+TileTexture1 = "mars7.dds" // Flat
+TileTexture2 = "mars2.dds" // Detail
+TileTexture3 = "mars6.dds" // Slope
