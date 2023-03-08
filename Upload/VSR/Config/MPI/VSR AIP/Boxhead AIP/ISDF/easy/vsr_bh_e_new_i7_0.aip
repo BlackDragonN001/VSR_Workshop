@@ -1,0 +1,2069 @@
+//VSR BCC AIP
+//Written by Boxhead
+
+[Start]
+scrapCount = 40
+consClass = "ivcons_vsr"
+scavClass = "ivscavcpu_vsr"
+IdleAllCraft = true
+CheckProvides = true
+unitsService = true
+Difficulty = 1 // 1=Easy, 2=Medium, 3=Hard, 4=Extreme
+
+[Cheat]
+moneyAmount = 5
+moneyDelay = 30
+
+[IdleDispatcher]
+ScavIdleSeconds = 40
+UnitIdleSeconds = 10
+MinAttackForce = 8
+MaxAttackForce = 99
+MinMissionSeconds = 5
+MaxPatrolUnits = 3
+MaxHuntUnits = 2
+MaxTargets = 120
+MaxBomberTargets = 60
+sendAllUnitsOnStartup = true
+DoDLLDispatch = true
+
+[Match]
+
+targetType1 = "Virtual_Class_Scout"
+attackType1_1 = "DefendUnit"
+attackType1_2 = "DefendUnit"
+targetType2 = "Virtual_Class_Scout"
+attackType2_1 = "DefendUnit"
+attackType2_2 = "DefendUnit"
+attackType2_3 = "DefendUnit"
+targetType3 = "Virtual_Class_Sentry"
+attackType3_1 = "DefendUnit"
+attackType3_2 = "DefendUnit"
+targetType4 = "Virtual_Class_Sentry"
+attackType4_1 = "DefendUnit"
+attackType4_2 = "DefendUnit"
+attackType4_3 = "DefendUnit"
+targetType5 = "Virtual_Class_MissileScout"
+attackType5_1 = "DefendUnit"
+attackType5_2 = "DefendUnit"
+targetType6 = "Virtual_Class_MissileScout"
+attackType6_1 = "DefendUnit"
+attackType6_2 = "DefendUnit"
+attackType6_3 = "DefendUnit"
+targetType7 = "Virtual_Class_Tank"
+attackType7_1 = "DefendUnit"
+attackType7_2 = "DefendUnit"
+targetType8 = "Virtual_Class_Tank"
+attackType8_1 = "DefendUnit"
+attackType8_2 = "DefendUnit"
+attackType8_3 = "DefendUnit"
+targetType9 = "Virtual_Class_AssaultTank"
+attackType9_1 = "DefendUnit"
+attackType9_2 = "DefendUnit"
+attackType9_3 = "DefendUnit"
+targetType10 = "Virtual_Class_AssaultTank"
+attackType10_1 = "DefendUnit"
+attackType10_2 = "DefendUnit"
+attackType10_3 = "DefendUnit"
+attackType10_4 = "DefendUnit"
+targetType11 = "Virtual_Class_Walker"
+attackType11_1 = "DefendUnit"
+attackType11_2 = "DefendUnit"
+attackType11_3 = "DefendUnit"
+targetType12 = "Virtual_Class_Walker"
+attackType12_1 = "DefendUnit"
+attackType12_2 = "DefendUnit"
+attackType12_3 = "DefendUnit"
+attackType12_4 = "DefendUnit"
+targetType13 = "Virtual_Class_Guntower"
+attackType13_1 = "DefendUnit"
+attackType13_2 = "DefendUnit"
+targetType14 = "Virtual_Class_Guntower"
+attackType14_1 = "DefendUnit"
+attackType14_2 = "DefendUnit"
+attackType14_3 = "DefendUnit"
+targetType15 = "Virtual_Class_Turret"
+attackType15_1 = "DefendUnit"
+attackType15_2 = "DefendUnit"
+targetType16 = "Virtual_Class_Turret"
+attackType16_1 = "DefendUnit"
+attackType16_2 = "DefendUnit"
+attackType16_3 = "DefendUnit"
+targetType17 = "Virtual_Class_Artillery"
+attackType17_1 = "DefendUnit"
+targetType18 = "Virtual_Class_Artillery"
+attackType18_1 = "DefendUnit"
+attackType18_2 = "DefendUnit"
+
+[Plan140]
+planType = "Attacker"
+planPriority = 900
+planCondition = "Exists"
+planConditionClass = "extract"
+planConditionCount = 2
+planCompare = "<="
+planConditionClassProvided = true
+planCondition2 = "Exists"
+planConditionClass2 = "ivwalk_vsr"
+planConditionCount2 = 2
+planCompare2 = ">="
+planConditionClassProvided2 = true
+attackType1 = "ivwalk_vsr"
+attackType2 = "ivwalk_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+ContinueEvenIfFail = true
+maxAttacks = 0
+buildIfNoIdle = 0
+
+[Plan141]
+planType = "Attacker"
+planPriority = 895
+planCondition = "Exists"
+planConditionClass = "extract"
+planConditionCount = 2
+planCompare = "<="
+planConditionClassProvided = true
+planCondition2 = "Exists"
+planConditionClass2 = "ivwalk_vsr"
+planConditionCount2 = 2
+planCompare2 = ">="
+planConditionClassProvided2 = true
+attackType1 = "ivwalk_vsr"
+attackType2 = "ivwalk_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+ContinueEvenIfFail = true
+maxAttacks = 0
+buildIfNoIdle = 0
+
+[Plan142]
+planType = "Attacker"
+planPriority = 890
+planCondition = "Exists"
+planConditionClass = "extract"
+planConditionCount = 1
+planCompare = "<="
+planConditionClassProvided = true
+planCondition2 = "Exists"
+planConditionClass2 = "ivatank_vsr"
+planConditionCount2 = 2
+planCompare2 = ">="
+planConditionClassProvided2 = true
+attackType1 = "ivatank_vsr"
+attackType2 = "ivatank_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+ContinueEvenIfFail = true
+maxAttacks = 0
+buildIfNoIdle = 0
+
+
+[Plan143]
+planType = "Attacker"
+planPriority = 885
+planCondition = "Exists"
+planConditionClass = "extract"
+planConditionCount = 1
+planCompare = "<="
+planConditionClassProvided = true
+planCondition2 = "Exists"
+planConditionClass2 = "ivatank_vsr"
+planConditionCount2 = 2
+planCompare2 = ">="
+planConditionClassProvided2 = true
+attackType1 = "ivatank_vsr"
+attackType2 = "ivatank_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+ContinueEvenIfFail = true
+maxAttacks = 0
+buildIfNoIdle = 0
+
+[Plan144]
+planType = "Attacker"
+planPriority = 880
+planCondition = "Exists"
+planConditionClass = "extract"
+planConditionCount = 1
+planCompare = "<="
+planConditionClassProvided = true
+planCondition2 = "Exists"
+planConditionClass2 = "ivrckt_vsr"
+planConditionCount2 = 2
+planCompare2 = ">="
+planConditionClassProvided2 = true
+attackType1 = "ivrckt_vsr"
+attackType2 = "ivrckt_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+ContinueEvenIfFail = true
+maxAttacks = 0
+buildIfNoIdle = 0
+
+[Plan145]
+planType = "Attacker"
+planPriority = 875
+planCondition = "Exists"
+planConditionClass = "extract"
+planConditionCount = 1
+planCompare = "<="
+planConditionClassProvided = true
+planCondition2 = "Exists"
+planConditionClass2 = "ivrckt_vsr"
+planConditionCount2 = 2
+planCompare2 = ">="
+planConditionClassProvided2 = true
+attackType1 = "ivrckt_vsr"
+attackType2 = "ivrckt_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+ContinueEvenIfFail = true
+maxAttacks = 0
+buildIfNoIdle = 0
+
+[Plan146]
+planType = "Attacker"
+planPriority = 870
+planCondition = "Exists"
+planConditionClass = "extract"
+planConditionCount = 1
+planCompare = "<="
+planConditionClassProvided = true
+planCondition2 = "Exists"
+planConditionClass2 = "ivrckt_vsr"
+planConditionCount2 = 2
+planCompare2 = ">="
+planConditionClassProvided2 = true
+attackType1 = "ivrckt_vsr"
+attackType2 = "ivrckt_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+ContinueEvenIfFail = true
+maxAttacks = 0
+buildIfNoIdle = 0
+
+[Plan147]
+planType = "Attacker"
+planPriority = 865
+planCondition = "Exists"
+planConditionClass = "extract"
+planConditionCount = 0
+planCompare = "<="
+planConditionClassProvided = true
+planCondition2 = "Exists"
+planConditionClass2 = "ivapc"
+planConditionCount2 = 2
+planCompare2 = ">="
+planConditionClassProvided2 = true
+attackType1 = "ivapc"
+attackType2 = "ivapc"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+ContinueEvenIfFail = true
+maxAttacks = 0
+buildIfNoIdle = 0
+
+[Plan148]
+planType = "Attacker"
+planPriority = 860
+planCondition = "Exists"
+planConditionClass = "extract"
+planConditionCount = 0
+planCompare = "<="
+planConditionClassProvided = true
+planCondition2 = "Exists"
+planConditionClass2 = "ivtank_vsr"
+planConditionCount2 = 2
+planCompare2 = ">="
+planConditionClassProvided2 = true
+attackType1 = "ivtank_vsr"
+attackType2 = "ivtank_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+ContinueEvenIfFail = true
+maxAttacks = 0
+buildIfNoIdle = 0
+
+[Plan149]
+planType = "Attacker"
+planPriority = 855
+planCondition = "Exists"
+planConditionClass = "extract"
+planConditionCount = 0
+planCompare = "<="
+planConditionClassProvided = true
+planCondition2 = "Exists"
+planConditionClass2 = "ivtank_vsr"
+planConditionCount2 = 2
+planCompare2 = ">="
+planConditionClassProvided2 = true
+attackType1 = "ivtank_vsr"
+attackType2 = "ivtank_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+ContinueEvenIfFail = true
+maxAttacks = 0
+buildIfNoIdle = 0
+
+[Plan150]
+planType = "Attacker"
+planPriority = 850
+planCondition = "Exists"
+planConditionClass = "extract"
+planConditionCount = 0
+planCompare = "<="
+planConditionClassProvided = true
+planCondition2 = "Exists"
+planConditionClass2 = "ivmisl_vsr"
+planConditionCount2 = 2
+planCompare2 = ">="
+planConditionClassProvided2 = true
+attackType1 = "ivmisl_vsr"
+attackType2 = "ivmisl_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+ContinueEvenIfFail = true
+maxAttacks = 0
+buildIfNoIdle = 0
+
+[Plan151]
+planType = "Attacker"
+planPriority = 845
+planCondition = "Exists"
+planConditionClass = "extract"
+planConditionCount = 0
+planCompare = "<="
+planConditionClassProvided = true
+planCondition2 = "Exists"
+planConditionClass2 = "ivmbike_vsr"
+planConditionCount2 = 2
+planCompare2 = ">="
+planConditionClassProvided2 = true
+attackType1 = "ivmbike_vsr"
+attackType2 = "ivmbike_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+ContinueEvenIfFail = true
+maxAttacks = 0
+buildIfNoIdle = 0
+
+
+
+[Plan1]
+planType = "Hold"
+planPriority = 800
+planCondition = "Exists"
+planConditionClass = "DefendUnit"
+planConditionCount = 4
+planCompare = ">="
+planConditionClassProvided = true
+planConditionOr = false
+planCondition2 = "HisExists"
+planConditionClass2 = "DefendUnit"
+planConditionCount2 = 5
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planConditionOr2 = false
+planCondition3 = "Exists"
+planConditionClass3 = "extract"
+planConditionCount3 = 2
+planCompare3 = ">="
+planConditionClassProvided3 = true
+planConditionOr3 = false
+holdType = "DefendUnit"
+holdCount = 2
+holdPoint = "stage4"
+ContinueEvenIfFail = true
+
+[Plan2]
+planType = "Hold"
+planPriority = 795
+planCondition = "Exists"
+planConditionClass = "DefendUnit"
+planConditionCount = 4
+planCompare = ">="
+planConditionClassProvided = true
+planConditionOr = false
+planCondition2 = "HisExists"
+planConditionClass2 = "DefendUnit"
+planConditionCount2 = 5
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planConditionOr2 = false
+planCondition3 = "Exists"
+planConditionClass3 = "extract"
+planConditionCount3 = 2
+planCompare3 = ">="
+planConditionClassProvided3 = true
+planConditionOr3 = false
+holdType = "DefendUnit"
+holdCount = 2
+holdPoint = "stage5"
+ContinueEvenIfFail = true
+
+[Plan3]
+planType = "Hold"
+planPriority = 790
+planCondition = "Exists"
+planConditionClass = "DefendUnit"
+planConditionCount = 4
+planCompare = ">="
+planConditionClassProvided = true
+planConditionOr = false
+planCondition2 = "HisExists"
+planConditionClass2 = "DefendUnit"
+planConditionCount2 = 5
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planConditionOr2 = false
+planCondition3 = "Exists"
+planConditionClass3 = "extract"
+planConditionCount3 = 2
+planCompare3 = ">="
+planConditionClassProvided3 = true
+planConditionOr3 = false
+holdType = "DefendUnit"
+holdCount = 2
+holdPoint = "stage6"
+ContinueEvenIfFail = true
+
+[Plan4]
+planType = "DefendArea"
+planPriority = 785
+planCondition = "Exists"
+planConditionClass = "DefendUnit"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planConditionOr = false
+planCondition2 = "Exists"
+planConditionClass2 = "Virtual_Class_Recycler"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+MaxUnits = 5
+MinMissionSeconds = 70
+targetType = "Virtual_Class_Recycler"
+ContinueEvenIfFail = true
+
+[Plan5]
+planType = "DefendArea"
+planPriority = 780
+planCondition = "Exists"
+planConditionClass = "DefendUnit"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planConditionOr = false
+planCondition2 = "Exists"
+planConditionClass2 = "ivscavcpu_vsr"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+MaxUnits = 2
+maxTtlScrap = 101
+targetType = "ivscavcpu_vsr"
+ContinueEvenIfFail = true
+
+[Plan6]
+planType = "DefendArea"
+planPriority = 775
+planCondition = "Exists"
+planConditionClass = "DefendUnit"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planConditionOr = false
+planCondition2 = "Exists"
+planConditionClass2 = "VIRTUAL_CLASS_BOMBERBAY"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+MaxUnits = 5
+MinMissionSeconds = 70
+targetType = "ibbombcpu_vsr"
+ContinueEvenIfFail = true
+
+[Plan7]
+planType = "DefendArea"
+planPriority = 770
+planCondition = "Exists"
+planConditionClass = "DefendUnit"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planConditionOr = false
+planCondition2 = "Exists"
+planConditionClass2 = "ibgtow_vsr"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+MaxUnits = 5
+MinMissionSeconds = 70
+targetType = "ibgtow_vsr"
+ContinueEvenIfFail = true
+
+[Plan8]
+planType = "DefendArea"
+planPriority = 765
+planCondition = "Exists"
+planConditionClass = "DefendUnit"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planConditionOr = false
+planCondition2 = "Exists"
+planConditionClass2 = "extract"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+MaxUnits = 5
+MinMissionSeconds = 70
+targetType = "extract"
+ContinueEvenIfFail = true
+
+[Plan9]
+planType = "DefendArea"
+planPriority = 760
+planCondition = "Exists"
+planConditionClass = "DefendUnit"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planConditionOr = false
+planCondition2 = "Exists"
+planConditionClass2 = "defender"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+MaxUnits = 5
+MinMissionSeconds = 70
+targetType = "defender"
+ContinueEvenIfFail = true
+
+[Plan10]
+planType = "DefendArea"
+planPriority = 755
+planCondition = "Exists"
+planConditionClass = "DefendUnit"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planConditionOr = false
+planCondition2 = "Exists"
+planConditionClass2 = "base"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+MaxUnits = 5
+MinMissionSeconds = 70
+targetType = "base"
+ContinueEvenIfFail = true
+
+[Plan11]
+planType = "DefendArea"
+planPriority = 750
+planCondition = "Exists"
+planConditionClass = "DefendUnit"
+planConditionCount = 2
+planCompare = ">="
+planConditionClassProvided = true
+planConditionOr = false
+MinMissionSeconds = 70
+MinUnits = 2
+targetType = "DefendUnit"
+ContinueEvenIfFail = true
+//testing, idle units fix?
+
+[Plan12]
+planType = "DefendArea"
+planPriority = 745
+planCondition = "Exists"
+planConditionClass = "DefendUnit"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planConditionOr = false
+planCondition2 = "Exists"
+planConditionClass2 = "ivcons_vsr"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+MaxUnits = 5
+MinMissionSeconds = 70
+targetType = "ivcons_vsr"
+ContinueEvenIfFail = true
+
+[Plan13]
+planType = "Service"
+planPriority = 740
+planCondition = "Exists"
+planConditionClass = "ivserv_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+serviceUnit = "ivserv_vsr"
+minWreckAmmo = 0.8
+minWreckHealth = 0.8
+maxWreckAmmo = 1.0
+maxWreckHealth = 1.0
+maxWreckDist = 500.0
+repairTime = 60.0
+unitType1 = "ibrecycpu"
+unitType2 = "ibfact_vsr"
+unitType3 = "ibpgen_vsr"
+unitType4 = "ibgtow_vsr"
+unitType5 = "ibbombcpu_vsr"
+unitType6 = "ibsbay_vsr"
+unitType7 = "ibcbun_vsr"
+unitType8 = "ibarmo_vsr"
+unitType9 = "ibtcen_vsr"
+unitType10 = "ibtrain_vsr"
+unitType11 = "ibscup_vsr"
+unitType12 = "defender"
+unitType13 = "ivserv_vsr"
+ContinueEvenIfFail = true
+
+//RecyclerDead Section
+[Plan14]
+planType = "BaseBuildMinimums"
+planPriority = 735
+planCondition = "Exists"
+planConditionClass = "ivcons_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "NotExists"
+planConditionClass2 = "Virtual_Class_Recycler"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+maxCurPower = 3
+buildType1 = "ibpgen_vsr"
+buildCount1 = 1
+minTtlScrap = 40
+
+[Plan15]
+planType = "BaseBuildMinimums"
+planPriority = 730
+planCondition = "Exists"
+planConditionClass = "ivcons_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "NotExists"
+planConditionClass2 = "Virtual_Class_Recycler"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+maxCurPower = 3
+buildType1 = "ibpgen_vsr"
+buildCount1 = 2
+minTtlScrap = 40
+
+[Plan16]
+planType = "BaseBuildMinimums"
+planPriority = 725
+planCondition = "Exists"
+planConditionClass = "ivcons_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "NotExists"
+planConditionClass2 = "Virtual_Class_Recycler"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+maxCurPower = 3
+buildType1 = "ibpgen_vsr"
+buildCount1 = 3
+minTtlScrap = 40
+
+[Plan17]
+planType = "BaseBuildMinimums"
+planPriority = 720
+planCondition = "Exists"
+planConditionClass = "ivcons_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "NotExists"
+planConditionClass2 = "Virtual_Class_Recycler"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+maxCurPower = 3
+buildType1 = "ibpgen_vsr"
+buildCount1 = 4
+minTtlScrap = 40
+
+[Plan18]
+planType = "BaseBuildMinimums"
+planPriority = 715
+planCondition = "Exists"
+planConditionClass = "ivcons_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "NotExists"
+planConditionClass2 = "Virtual_Class_Recycler"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+maxCurPower = 3
+buildType1 = "ibpgen_vsr"
+buildCount1 = 5
+minTtlScrap = 40
+
+[Plan19]
+planType = "BaseBuildMinimums"
+planPriority = 710
+planCondition = "Exists"
+planConditionClass = "ivcons_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "NotExists"
+planConditionClass2 = "Virtual_Class_Recycler"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+maxCurPower = 3
+buildType1 = "ibpgen_vsr"
+buildCount1 = 6
+minTtlScrap = 40
+
+[Plan20]
+planType = "BaseBuildMinimums"
+planPriority = 705
+planCondition = "Exists"
+planConditionClass = "ivcons_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "NotExists"
+planConditionClass2 = "Virtual_Class_Recycler"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+maxCurPower = 3
+buildType1 = "ibpgen_vsr"
+buildCount1 = 7
+minTtlScrap = 40
+
+[Plan21]
+planType = "BaseBuildMinimums"
+planPriority = 700
+planCondition = "Exists"
+planConditionClass = "ivcons_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "NotExists"
+planConditionClass2 = "Virtual_Class_Recycler"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+maxCurPower = 3
+buildType1 = "ibpgen_vsr"
+buildCount1 = 8
+minTtlScrap = 40
+
+[Plan22]
+planType = "BaseBuildMinimums"
+planPriority = 695
+planCondition = "Exists"
+planConditionClass = "ivcons_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "NotExists"
+planConditionClass2 = "Virtual_Class_Recycler"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+maxCurPower = 3
+buildType1 = "ibpgen_vsr"
+buildCount1 = 9
+minTtlScrap = 40
+
+[Plan23]
+planType = "BaseBuildMinimums"
+planPriority = 690
+planCondition = "Exists"
+planConditionClass = "ivcons_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "NotExists"
+planConditionClass2 = "Virtual_Class_Recycler"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planCondition3 = "NotExists"
+planConditionClass3 = "ibfact_vsr"
+planConditionCount3 = 1
+planCompare3 = ">="
+planConditionClassProvided3 = true
+buildType1 = "ibfact_vsr"
+buildCount1 = 1
+minTtlScrap = 60
+
+[Plan24]
+planType = "BaseBuildMinimums"
+planPriority = 685
+planCondition = "Exists"
+planConditionClass = "ivcons_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "NotExists"
+planConditionClass2 = "Virtual_Class_Recycler"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planCondition3 = "NotExists"
+planConditionClass3 = "ibcbun_vsr"
+planConditionCount3 = 2
+planCompare3 = ">="
+planConditionClassProvided3 = true
+buildType1 = "ibcbun_vsr"
+buildCount1 = 2
+minTtlScrap = 60
+
+[Plan25]
+planType = "BaseBuildMinimums"
+planPriority = 680
+planCondition = "Exists"
+planConditionClass = "ivcons_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "NotExists"
+planConditionClass2 = "Virtual_Class_Recycler"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+buildType1 = "ibgtow_vsr"
+buildCount1 = 5
+minTtlScrap = 60
+
+[Plan26]
+planType = "BaseBuildMinimums"
+planPriority = 675
+planCondition = "Exists"
+planConditionClass = "ivcons_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "NotExists"
+planConditionClass2 = "Virtual_Class_Recycler"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planCondition3 = "NotExists"
+planConditionClass3 = "ibsbay_vsr"
+planConditionCount3 = 1
+planCompare3 = ">="
+planConditionClassProvided3 = true
+buildType1 = "ibsbay_vsr"
+buildCount1 = 1
+minTtlScrap = 60
+
+[Plan27]
+planType = "BaseBuildMinimums"
+planPriority = 670
+planCondition = "Exists"
+planConditionClass = "ivcons_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "NotExists"
+planConditionClass2 = "Virtual_Class_Recycler"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planCondition3 = "NotExists"
+planConditionClass3 = "ibarmo_vsr"
+planConditionCount3 = 1
+planCompare3 = ">="
+planConditionClassProvided3 = true
+buildType1 = "ibarmo_vsr"
+buildCount1 = 1
+minTtlScrap = 60
+
+[Plan28]
+planType = "BaseBuildMinimums"
+planPriority = 665
+planCondition = "Exists"
+planConditionClass = "ivcons_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "NotExists"
+planConditionClass2 = "Virtual_Class_Recycler"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planCondition3 = "NotExists"
+planConditionClass3 = "ibtcen_vsr"
+planConditionCount3 = 1
+planCompare3 = ">="
+planConditionClassProvided3 = true
+buildType1 = "ibtcen_vsr"
+buildCount1 = 1
+minTtlScrap = 80
+
+[Plan29]
+planType = "BaseBuildMinimums"
+planPriority = 660
+planCondition = "Exists"
+planConditionClass = "ivcons_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "NotExists"
+planConditionClass2 = "Virtual_Class_Recycler"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planCondition3 = "NotExists"
+planConditionClass3 = "ibtrain_vsr"
+planConditionCount3 = 1
+planCompare3 = ">="
+planConditionClassProvided3 = true
+buildType1 = "ibtrain_vsr"
+buildCount1 = 1
+minTtlScrap = 80
+
+[Plan30]
+planType = "BaseBuildMinimums"
+planPriority = 655
+planCondition = "Exists"
+planConditionClass = "ivcons_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "NotExists"
+planConditionClass2 = "Virtual_Class_Recycler"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planCondition3 = "NotExists"
+planConditionClass3 = "VIRTUAL_CLASS_BOMBERBAY"
+planConditionCount3 = 1
+planCompare3 = ">="
+planConditionClassProvided3 = true
+buildType1 = "ibbombcpu_vsr"
+buildCount1 = 1
+minTtlScrap = 100
+
+[Plan31]
+planType = "BuildMinimums"
+planPriority = 650
+planCondition = "Exists"
+planConditionClass = "extract"
+planConditionCount = 2
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "Exists"
+planConditionClass2 = "VIRTUAL_CLASS_BOMBERBAY"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planCondition3 = "Exists"
+planConditionClass3 = "ibfact_vsr"
+planConditionCount3 = 1
+planCompare3 = ">="
+planConditionClassProvided3 = true
+buildType1 = "ivbombcpu_vsr"
+buildCount1 = 1
+minTtlScrap = 80
+
+[Plan32]
+planType = "Attacker"
+planPriority = 645
+planCondition = "NotExists"
+planConditionClass = "Virtual_Class_Recycler"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "Exists"
+planConditionClass2 = "ibfact_vsr"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planCondition3 = "Exists"
+planConditionClass3 = "ibtcen_vsr"
+planConditionCount3 = 1
+planCompare3 = ">="
+planConditionClassProvided3 = true
+attackType1 = "ivwalk_vsr"
+attackType2 = "ivwalk_vsr"
+attackType3 = "ivwalk_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+maxAttacks = 0
+buildIfNoIdle = 1
+minTtlScrap = 120
+
+[Plan33]
+planType = "Attacker"
+planPriority = 640
+planCondition = "NotExists"
+planConditionClass = "Virtual_Class_Recycler"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "Exists"
+planConditionClass2 = "ibfact_vsr"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planCondition3 = "Exists"
+planConditionClass3 = "ibtrain_vsr"
+planConditionCount3 = 1
+planCompare3 = ">="
+planConditionClassProvided3 = true
+attackType1 = "ivapc"
+attackType2 = "ivapc"
+attackType3 = "ivapc"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+maxAttacks = 0
+buildIfNoIdle = 1
+minTtlScrap = 60
+
+[Plan34]
+planType = "Attacker"
+planPriority = 635
+planCondition = "NotExists"
+planConditionClass = "Virtual_Class_Recycler"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "Exists"
+planConditionClass2 = "ibfact_vsr"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planCondition3 = "Exists"
+planConditionClass3 = "ibcbun_vsr"
+planConditionCount3 = 1
+planCompare3 = ">="
+planConditionClassProvided3 = true
+planCondition4 = "Exists"
+planConditionClass4 = "ibsbay_vsr"
+planConditionCount4 = 1
+planCompare4 = ">="
+planConditionClassProvided4 = true
+attackType1 = "ivatank_vsr"
+attackType2 = "ivatank_vsr"
+attackType3 = "ivatank_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+maxAttacks = 0
+buildIfNoIdle = 1
+minTtlScrap = 80
+
+[Plan35]
+planType = "Attacker"
+planPriority = 630
+planCondition = "NotExists"
+planConditionClass = "Virtual_Class_Recycler"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "Exists"
+planConditionClass2 = "ibfact_vsr"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planCondition3 = "Exists"
+planConditionClass3 = "ibcbun_vsr"
+planConditionCount3 = 1
+planCompare3 = ">="
+planConditionClassProvided3 = true
+planCondition4 = "Exists"
+planConditionClass4 = "ibarmo_vsr"
+planConditionCount4 = 1
+planCompare4 = ">="
+planConditionClassProvided4 = true
+attackType1 = "ivrckt_vsr"
+attackType2 = "ivrckt_vsr"
+attackType3 = "ivrckt_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+maxAttacks = 0
+buildIfNoIdle = 1
+minTtlScrap = 80
+
+[Plan36]
+planType = "Attacker"
+planPriority = 625
+planCondition = "NotExists"
+planConditionClass = "Virtual_Class_Recycler"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "Exists"
+planConditionClass2 = "ibfact_vsr"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planCondition3 = "Exists"
+planConditionClass3 = "ibcbun_vsr"
+planConditionCount3 = 1
+planCompare3 = ">="
+planConditionClassProvided3 = true
+attackType1 = "ivtank_vsr"
+attackType2 = "ivtank_vsr"
+attackType3 = "ivtank_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+maxAttacks = 0
+buildIfNoIdle = 1
+minTtlScrap = 80
+
+[Plan37]
+planType = "Attacker"
+planPriority = 620
+planCondition = "NotExists"
+planConditionClass = "Virtual_Class_Recycler"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "Exists"
+planConditionClass2 = "ibfact_vsr"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+attackType1 = "ivmisl_vsr"
+attackType2 = "ivmisl_vsr"
+attackType3 = "ivmisl_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+maxAttacks = 0
+buildIfNoIdle = 1
+minTtlScrap = 60
+
+[Plan38]
+planType = "Attacker"
+planPriority = 615
+planCondition = "NotExists"
+planConditionClass = "Virtual_Class_Recycler"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "Exists"
+planConditionClass2 = "ibfact_vsr"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+attackType1 = "ivmisl_vsr"
+attackType2 = "ivmisl_vsr"
+attackType3 = "ivmisl_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+maxAttacks = 0
+buildIfNoIdle = 1
+minTtlScrap = 60
+
+[Plan39]
+planType = "Attacker"
+planPriority = 610
+planCondition = "NotExists"
+planConditionClass = "Virtual_Class_Recycler"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "Exists"
+planConditionClass2 = "ibfact_vsr"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+attackType1 = "ivmisl_vsr"
+attackType2 = "ivmisl_vsr"
+attackType3 = "ivmisl_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+maxAttacks = 0
+buildIfNoIdle = 1
+minTtlScrap = 60
+//RecyclerDead Section
+
+[Plan40]
+planType = "CollectPool"
+planPriority = 605
+maxCurScrap = 20
+ContinueEvenIfFail = true
+
+[Plan41]
+planType = "CollectPool"
+planPriority = 600
+minCurScrap = 20
+maxCurScrap = 40
+ContinueEvenIfFail = true
+
+[Plan42]
+planType = "CollectPool"
+planPriority = 595
+minCurScrap = 40
+maxCurScrap = 60
+ContinueEvenIfFail = true
+
+[Plan43]
+planType = "CollectPool"
+planPriority = 590
+maxCurScrap = 60
+minTtlScrap = 60
+maxTtlScrap = 80
+ContinueEvenIfFail = true
+
+[Plan44]
+planType = "CollectPool"
+planPriority = 585
+maxCurScrap = 80
+minTtlScrap = 100
+maxTtlScrap = 120
+ContinueEvenIfFail = true
+
+[Plan45]
+planType = "CollectPool"
+planPriority = 580
+maxCurScrap = 60
+minTtlScrap = 100
+ContinueEvenIfFail = true
+
+[Plan46]
+planType = "CollectPool"
+planPriority = 575
+planCondition = "Exists"
+planConditionClass = "ivscavcpu_vsr"
+planConditionCount = 2
+planConditionClassProvided = true
+maxCurScrap = 60
+ContinueEvenIfFail = true
+
+[Plan47]
+planType = "CollectPool"
+planPriority = 570
+planCondition = "Exists"
+planConditionClass = "ivscavcpu_vsr"
+planConditionCount = 3
+planConditionClassProvided = true
+maxCurScrap = 60
+ContinueEvenIfFail = true
+
+[Plan48]
+planType = "CollectPool"
+planPriority = 565
+planCondition = "Exists"
+planConditionClass = "ivscavcpu_vsr"
+planConditionCount = 4
+planConditionClassProvided = true
+maxCurScrap = 60
+ContinueEvenIfFail = true
+
+[Plan49]
+planType = "CollectField"
+planPriority = 560
+ContinueEvenIfFail = true
+
+[Plan50]
+planType = "BuildMinimums"
+planPriority = 555
+planCondition = "NotHisExists"
+planConditionClass = "assault"
+planConditionCount = 5
+planCompare = ">="
+planConditionClassProvided = true
+planConditionOr = true
+planCondition2 = "NotHisExists"
+planConditionClass2 = "defendunit"
+planConditionCount2 = 8
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planConditionOr2 = true
+buildType1 = "ivscavcpu_vsr"
+buildCount1 = 4
+maxTtlScrap = 61
+
+[Plan51]
+planType = "BuildMinimums"
+planPriority = 550
+planCondition = "NotHisExists"
+planConditionClass = "assault"
+planConditionCount = 8
+planCompare = ">="
+planConditionClassProvided = true
+planConditionOr = true
+planCondition2 = "NotHisExists"
+planConditionClass2 = "defendunit"
+planConditionCount2 = 12
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planConditionOr2 = true
+buildType1 = "ivscavcpu_vsr"
+buildCount1 = 3
+maxTtlScrap = 81
+
+[Plan52]
+planType = "BuildMinimums"
+planPriority = 545
+buildType1 = "ivscavcpu_vsr"
+buildCount1 = 2
+
+//ReactivePlans START
+//If low energy...
+[Plan53]
+planType = "BaseBuildMinimums"
+planPriority = 540
+planCondition = "Exists"
+planConditionClass = "ivcons_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+maxCurPower = 3
+buildType1 = "ibpgen_vsr"
+buildCount1 = 1
+
+[Plan54]
+planType = "BaseBuildMinimums"
+planPriority = 535
+planCondition = "Exists"
+planConditionClass = "ivcons_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+maxCurPower = 3
+buildType1 = "ibpgen_vsr"
+buildCount1 = 2
+
+[Plan55]
+planType = "BaseBuildMinimums"
+planPriority = 530
+planCondition = "Exists"
+planConditionClass = "ivcons_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+maxCurPower = 3
+buildType1 = "ibpgen_vsr"
+buildCount1 = 3
+
+[Plan56]
+planType = "BaseBuildMinimums"
+planPriority = 525
+planCondition = "Exists"
+planConditionClass = "ivcons_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+maxCurPower = 3
+buildType1 = "ibpgen_vsr"
+buildCount1 = 4
+
+[Plan57]
+planType = "BaseBuildMinimums"
+planPriority = 520
+planCondition = "Exists"
+planConditionClass = "ivcons_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+maxCurPower = 3
+buildType1 = "ibpgen_vsr"
+buildCount1 = 5
+
+[Plan58]
+planType = "BaseBuildMinimums"
+planPriority = 515
+planCondition = "Exists"
+planConditionClass = "ivcons_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+maxCurPower = 3
+buildType1 = "ibpgen_vsr"
+buildCount1 = 6
+
+[Plan59]
+planType = "BaseBuildMinimums"
+planPriority = 510
+planCondition = "Exists"
+planConditionClass = "ivcons_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+maxCurPower = 3
+buildType1 = "ibpgen_vsr"
+buildCount1 = 7
+
+[Plan60]
+planType = "BaseBuildMinimums"
+planPriority = 505
+planCondition = "Exists"
+planConditionClass = "ivcons_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+maxCurPower = 3
+buildType1 = "ibpgen_vsr"
+buildCount1 = 8
+
+[Plan61]
+planType = "BaseBuildMinimums"
+planPriority = 500
+planCondition = "Exists"
+planConditionClass = "ivcons_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+maxCurPower = 3
+buildType1 = "ibpgen_vsr"
+buildCount1 = 9
+
+[Plan68]
+planType = "BuildLoop"
+planPriority = 465
+planCondition = "HisExists"
+planConditionClass = "Virtual_Class_Bomber"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+buildType1 = "ivturr_vsr"
+buildCount1 = 3
+loopDelay = 300
+
+//If Bomber has been destroyed...
+[Plan69]
+planType = "BuildMinimums"
+planPriority = 460
+planCondition = "Exists"
+planConditionClass = "extract"
+planConditionCount = 2
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "Exists"
+planConditionClass2 = "VIRTUAL_CLASS_BOMBERBAY"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planCondition3 = "Exists"
+planConditionClass3 = "ibfact_vsr"
+planConditionCount3 = 1
+planCompare3 = ">="
+planConditionClassProvided3 = true
+buildType1 = "ivbombcpu_vsr"
+buildCount1 = 1
+minTtlScrap = 80
+
+[Plan70]
+planType = "BuildMinimums"
+planPriority = 455
+planCondition = "NotExists"
+planConditionClass = "ibfact_vsr"
+planConditionCount = 1
+planConditionClassProvided = true
+planCondition2 = "NotExists"
+planConditionClass2 = "ibarmo_vsr"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planCondition3 = "NotExists"
+planConditionClass3 = "ibsbay_vsr"
+planConditionCount3 = 1
+planConditionClassProvided3 = true
+buildType1 = "ivturr_vsr"
+buildCount1 = 4
+buildType2 = "ivscout_vsr"
+buildCount2 = 2
+minTtlScrap = 60
+
+[Plan71]
+planType = "Attacker"
+planPriority = 450
+attackType1 = "ivscout_vsr"
+attackType2 = "ivscout_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+maxAttacks = 5
+buildIfNoIdle = 1
+
+[Plan72]
+planType = "BuildMinimums"
+planPriority = 445
+buildType1 = "ivcons_vsr"
+buildCount1 = 2
+minTtlScrap = 40
+
+//Build Defenders... START
+[Plan73]
+planType = "BuildMinimums"
+planPriority = 440
+planCondition = "NotExists"
+planConditionClass = "ibarmo_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "NotExists"
+planConditionClass2 = "ibsbay_vsr"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planCondition3 = "NotExists"
+planConditionClass3 = "ibfact_vsr"
+planConditionCount3 = 1
+planCompare3 = ">="
+planConditionClassProvided3 = true
+planCondition4 = "NotExists"
+planConditionClass4 = "ibcbun_vsr"
+planConditionCount4 = 1
+planCompare4 = ">="
+planConditionClassProvided4 = true
+planCondition5 = "NotExists"
+planConditionClass5 = "ibtcen_vsr"
+planConditionCount5 = 1
+planCompare5 = ">="
+planConditionClassProvided5 = true
+buildType1 = "ivscout_vsr"
+buildCount1 = 4
+minTtlScrap = 60
+minMissionSeconds = 200//Does this actually work?
+
+[Plan74]
+planType = "BuildMinimums"
+planPriority = 435
+planCondition = "Exists"
+planConditionClass = "ibfact_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "NotExists"
+planConditionClass2 = "ibsbay_vsr"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planCondition3 = "NotExists"
+planConditionClass3 = "ibcbun_vsr"
+planConditionCount3 = 1
+planCompare3 = ">="
+planConditionClassProvided3 = true
+planCondition4 = "NotExists"
+planConditionClass4 = "ibarmo_vsr"
+planConditionCount4 = 1
+planCompare4 = ">="
+planConditionClassProvided4 = true
+planCondition5 = "NotExists"
+planConditionClass5 = "ibtcen_vsr"
+planConditionCount5 = 1
+planCompare5 = ">="
+planConditionClassProvided5 = true
+buildType1 = "ivmisl_vsr"
+buildCount1 = 3
+minTtlScrap = 60
+minMissionSeconds = 200
+
+[Plan75]
+planType = "BuildMinimums"
+planPriority = 430
+planCondition = "Exists"
+planConditionClass = "ibfact_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "NotExists"
+planConditionClass2 = "ibsbay_vsr"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planCondition3 = "Exists"
+planConditionClass3 = "ibcbun_vsr"
+planConditionCount3 = 1
+planCompare3 = ">="
+planConditionClassProvided3 = true
+planCondition4 = "NotExists"
+planConditionClass4 = "ibarmo_vsr"
+planConditionCount4 = 1
+planCompare4 = ">="
+planConditionClassProvided4 = true
+planCondition5 = "NotExists"
+planConditionClass5 = "ibtcen_vsr"
+planConditionCount5 = 1
+planCompare5 = ">="
+planConditionClassProvided5 = true
+buildType1 = "ivtank_vsr"
+buildCount1 = 2
+buildType2 = "ivmisl_vsr"
+buildCount2 = 2
+minTtlScrap = 80
+minMissionSeconds = 200
+
+[Plan76]
+planType = "BuildMinimums"
+planPriority = 425
+planCondition = "Exists"
+planConditionClass = "ibfact_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "NotExists"
+planConditionClass2 = "ibsbay_vsr"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planCondition3 = "Exists"
+planConditionClass3 = "ibcbun_vsr"
+planConditionCount3 = 1
+planCompare3 = ">="
+planConditionClassProvided3 = true
+planCondition4 = "Exists"
+planConditionClass4 = "ibarmo_vsr"
+planConditionCount4 = 1
+planCompare4 = ">="
+planConditionClassProvided4 = true
+buildType1 = "ivrckt_vsr"
+buildCount1 = 2
+minTtlScrap = 80
+maxTtlScrap = 101
+minMissionSeconds = 200
+
+[Plan77]
+planType = "BuildMinimums"
+planPriority = 420
+planCondition = "Exists"
+planConditionClass = "ibfact_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "Exists"
+planConditionClass2 = "ibsbay_vsr"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planCondition3 = "Exists"
+planConditionClass3 = "ibcbun_vsr"
+planConditionCount3 = 1
+planCompare3 = ">="
+planConditionClassProvided3 = true
+buildType1 = "ivatank_vsr"
+buildCount1 = 2
+minTtlScrap = 80
+maxTtlScrap = 101
+minMissionSeconds = 200
+
+[Plan78]
+planType = "BuildMinimums"
+planPriority = 415
+planCondition = "Exists"
+planConditionClass = "ibfact_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "Exists"
+planConditionClass2 = "ibsbay_vsr"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planCondition3 = "Exists"
+planConditionClass3 = "ibcbun_vsr"
+planConditionCount3 = 1
+planCompare3 = ">="
+planConditionClassProvided3 = true
+planCondition4 = "Exists"
+planConditionClass4 = "ibarmo_vsr"
+planConditionCount4 = 1
+planCompare4 = ">="
+planConditionClassProvided4 = true
+buildType1 = "ivatank_vsr"
+buildCount1 = 2
+buildType2 = "ivrckt_vsr"
+buildCount2 = 2
+minTtlScrap = 80
+maxTtlScrap = 101
+minMissionSeconds = 200
+
+[Plan79]
+planType = "BuildMinimums"
+planPriority = 410
+planCondition = "Exists"
+planConditionClass = "ibfact_vsr"
+planConditionCount = 1
+planCompare = ">="
+planConditionClassProvided = true
+planCondition2 = "Exists"
+planConditionClass2 = "ibsbay_vsr"
+planConditionCount2 = 1
+planCompare2 = ">="
+planConditionClassProvided2 = true
+planCondition3 = "Exists"
+planConditionClass3 = "ibcbun_vsr"
+planConditionCount3 = 1
+planCompare3 = ">="
+planConditionClassProvided3 = true
+planCondition4 = "Exists"
+planConditionClass4 = "ibarmo_vsr"
+planConditionCount4 = 1
+planCompare4 = ">="
+planConditionClassProvided4 = true
+planCondition5 = "Exists"
+planConditionClass5 = "ibtcen_vsr"
+planConditionCount5 = 1
+planCompare5 = ">="
+planConditionClassProvided5 = true
+buildType1 = "ivatank_vsr"
+buildCount1 = 1
+buildType2 = "ivrckt_vsr"
+buildCount2 = 2
+buildType3 = "ivwalk_vsr"
+buildCount3 = 2
+minTtlScrap = 120
+minMissionSeconds = 200
+//Build Defenders... END
+
+[Plan80]
+planType = "Attacker"
+planPriority = 405
+attackType1 = "ivscout_vsr"
+attackType2 = "ivscout_vsr"
+attackType3 = "ivscout_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+maxAttacks = 0
+minTtlScrap = 40
+maxTtlScrap = 41
+buildIfNoIdle = 1
+
+[Plan81]
+planType = "Attacker"
+planPriority = 400
+planCondition = "HisExists"
+planConditionClass = "Virtual_Class_ConstructionRig"
+planConditionCount = 1
+planCompare = ">="
+attackType1 = "ivscout_vsr"
+attackType2 = "ivscout_vsr"
+targettype = "Virtual_Class_ConstructionRig"
+AttackAnything = true
+maxAttacks = 2
+minTtlScrap = 40
+buildIfNoIdle = 1
+
+[Plan82]
+planType = "BaseBuildMinimums"
+planPriority = 395
+buildType1 = "ibfact_vsr"
+buildCount1 = 1
+
+[Plan83]
+planType = "Attacker"
+planPriority = 390
+attackType1 = "ivmisl_vsr"
+attackType2 = "ivmisl_vsr"
+attackType3 = "ivscout_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+maxAttacks = 3
+buildIfNoIdle = 1
+
+[Plan84]
+planType = "Attacker"
+planPriority = 385
+attackType1 = "ivmisl_vsr"
+attackType2 = "ivmisl_vsr"
+attackType3 = "ivscout_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+maxAttacks = 3
+buildIfNoIdle = 1
+
+[Plan85]
+planType = "BaseBuildMinimums"
+planPriority = 380
+buildType1 = "ibcbun_vsr"
+buildCount1 = 2
+
+[Plan86]
+planType = "Attacker"
+planPriority = 375
+attackType1 = "ivtank_vsr"
+attackType2 = "ivmisl_vsr"
+attackType3 = "ivscout_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+maxAttacks = 0
+minTtlScrap = 60
+maxTtlScrap = 61
+buildIfNoIdle = 1
+
+[Plan87]
+planType = "Attacker"
+planPriority = 370
+attackType1 = "ivmisl_vsr"
+attackType2 = "ivmisl_vsr"
+attackType3 = "ivtank_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+maxAttacks = 2
+buildIfNoIdle = 1
+
+[Plan88]
+planType = "BaseBuildMinimums"
+planPriority = 365
+buildType1 = "ibgtow_vsr"
+buildCount1 = 1
+
+[Plan89]
+planType = "Attacker"
+planPriority = 360
+attackType1 = "ivtank_vsr"
+attackType2 = "ivtank_vsr"
+attackType3 = "ivtank_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+maxAttacks = 4
+buildIfNoIdle = 1
+
+[Plan90]
+planType = "Attacker"
+planPriority = 355
+attackType1 = "ivtank_vsr"
+attackType2 = "ivtank_vsr"
+attackType3 = "ivtank_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+maxAttacks = 4
+buildIfNoIdle = 1
+
+[Plan91]
+planType = "BaseBuildMinimums"
+planPriority = 350
+buildType1 = "ibsbay_vsr"
+buildCount1 = 1
+
+[Plan92]
+planType = "Attacker"
+planPriority = 345
+attackType1 = "ivatank_vsr"
+attackType2 = "ivatank_vsr"
+attackType3 = "ivatank_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+maxAttacks = 0
+buildIfNoIdle = 1
+
+[Plan93]
+planType = "BaseBuildMinimums"
+planPriority = 340
+buildType1 = "ibgtow_vsr"
+buildCount1 = 2
+
+[Plan94]
+planType = "Attacker"
+planPriority = 335
+attackType1 = "ivscout_vsr"
+attackType2 = "ivscout_vsr"
+attackType3 = "ivscout_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+maxAttacks = 0
+buildIfNoIdle = 1
+
+[Plan95]
+planType = "Attacker"
+planPriority = 330
+attackType1 = "ivtank_vsr"
+attackType2 = "ivtank_vsr"
+attackType3 = "ivtank_vsr"
+targettype = "Virtual_Class_Extractor"
+targettype1 = "defender"
+targettype2 = "Virtual_Class_Turret"
+targetType3 = "DefendUnit"
+targettype4 = "Virtual_Class_ConstructionRig"
+targetType5 = "base"
+targetType6 = "Virtual_Class_Recycler"
+AttackAnything = true
+maxAttacks = 0
+buildIfNoIdle = 1
