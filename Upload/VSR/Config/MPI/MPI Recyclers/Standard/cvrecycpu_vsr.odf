@@ -1,0 +1,14 @@
+[GameObjectClass]
+classLabel="cvrecy_vsr"
+StayWithOwner = true
+
+provideCount=4
+provideName3="VIRTUAL_CLASS_RECYCLER"
+provideName4="VIRTUAL_CLASS_RECYCLERVEHICLE"
+
+// DLL
+startingVariant="_vsr"
+
+[DeployBuildingClass]
+deployName="cbrecycpu_vsr"
+StayWithOwner=true
