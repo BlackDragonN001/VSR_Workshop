@@ -17,7 +17,7 @@ RaceCPU = 105 // 105 = ascii 'i' for ISDF, 102 = 'f' for Scion
 // for them to take effect.
 
 // If specified, it takes this string, and looks for bzshell_instant_xo_<string>.cfg
-ExtraOptions = "VSR"
+ExtraOptions = "Default"
 
 // If the Lock params are true, the user is prevented from changing
 // the choice. Default is false if commented out
