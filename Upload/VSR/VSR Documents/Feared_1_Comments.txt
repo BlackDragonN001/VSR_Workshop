@@ -1036,3 +1036,14 @@ Februrary 8th, 2023
 -General BlackDragon: Updated MPI AIP scheme to the new 5 AI limit format
 -General BlackDragon: Fixed incorrect path names for Stage points from the old system, now converted to the new system
 -General BlackDragon: Fixed AI Spawns on FFA Middle-Low
+
+
+==Release 104==
+March 15th, 2023
+
+-General BlackDragon: Stronger attempt to fix possible crash from max entities, cleans up more scrap if there's > 1024 loose on the map
+-General BlackDragon: Fixed Instant Action not using the correct AI Teams/AIPs
+-General BlackDragon: Changed the way the MPI chooses AI Plans. It now uses the same AIP plans for the Enemys as Instant Action does (Plans 6 - 10). This fixes the Stage Points issue without removing functionality from Instant Action
+-General BlackDragon: More work on fixing MPI, point to the correct, now *overridden* AIP file names (Team 11 uses AIP 6, Team 12 uses AIP 7, etc...)
+-General BlackDragon: Made Stock IA Maps use Stock Extra Options page, except Ground Four, which supports FFA
+-General BlackDragon: Fixed missing CVRECYCPU errors
