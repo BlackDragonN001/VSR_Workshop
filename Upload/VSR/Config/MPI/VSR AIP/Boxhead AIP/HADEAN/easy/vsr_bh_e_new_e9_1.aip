@@ -992,8 +992,8 @@ planConditionCount3 = 2
 planCompare3 = ">="
 planConditionClassProvided3 = true
 planConditionOr3 = false
-holdType = "DefendUnit"
-holdCount = 2
+holdType1 = "DefendUnit"
+holdCount1 = 2
 holdPoint = "stage10"
 ContinueEvenIfFail = true
 
@@ -1018,8 +1018,8 @@ planConditionCount3 = 2
 planCompare3 = ">="
 planConditionClassProvided3 = true
 planConditionOr3 = false
-holdType = "DefendUnit"
-holdCount = 2
+holdType1 = "DefendUnit"
+holdCount1 = 2
 holdPoint = "stage11"
 ContinueEvenIfFail = true
 
@@ -1044,8 +1044,8 @@ planConditionCount3 = 2
 planCompare3 = ">="
 planConditionClassProvided3 = true
 planConditionOr3 = false
-holdType = "DefendUnit"
-holdCount = 2
+holdType1 = "DefendUnit"
+holdCount1 = 2
 holdPoint = "stage12"
 ContinueEvenIfFail = true
 
@@ -1063,7 +1063,6 @@ planConditionClass2 = "Virtual_Class_Recycler"
 planConditionCount2 = 1
 planCompare2 = ">="
 planConditionClassProvided2 = true
-MinUnits = 2
 MaxUnits = 5
 MinMissionSeconds = 70
 targetType = "Virtual_Class_Recycler"
@@ -1102,7 +1101,6 @@ planConditionClass2 = "extract"
 planConditionCount2 = 1
 planCompare2 = ">="
 planConditionClassProvided2 = true
-MinUnits = 2
 MaxUnits = 5
 MinMissionSeconds = 70
 targetType = "extract"
@@ -1122,7 +1120,6 @@ planConditionClass2 = "defender"
 planConditionCount2 = 1
 planCompare2 = ">="
 planConditionClassProvided2 = true
-MinUnits = 3
 MaxUnits = 5
 MinMissionSeconds = 70
 targetType = "defender"
@@ -1162,7 +1159,6 @@ planConditionClass2 = "evturr_vsr"
 planConditionCount2 = 1
 planCompare2 = ">="
 planConditionClassProvided2 = true
-MinUnits = 2
 MaxUnits = 5
 MinMissionSeconds = 70
 targetType = "evturr_vsr"
