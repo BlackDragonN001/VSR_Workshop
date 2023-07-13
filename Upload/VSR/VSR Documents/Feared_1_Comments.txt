@@ -1038,6 +1038,7 @@ Februrary 8th, 2023
 -General BlackDragon: Fixed AI Spawns on FFA Middle-Low
 
 
+
 ==Release 104==
 March 15th, 2023
 
@@ -1047,3 +1048,16 @@ March 15th, 2023
 -General BlackDragon: More work on fixing MPI, point to the correct, now *overridden* AIP file names (Team 11 uses AIP 6, Team 12 uses AIP 7, etc...)
 -General BlackDragon: Made Stock IA Maps use Stock Extra Options page, except Ground Four, which supports FFA
 -General BlackDragon: Fixed missing CVRECYCPU errors
+
+
+
+==Release 105==
+July 13th, 2023
+
+-Camera Pods can now bail out into their race-specific full scouts
+-General BlackDragon: Camera Pods can no longer undeploy during game to be seen, heard, or interacted with
+-General BlackDragon: Disabled auto-generated log file from every game
+-General BlackDragon: Fixed missing paths on IA FFA Mid Low
+-General BlackDragon: Fixed Instant Action spawning some AI defences in the center of the map (0, 0, 0) if the path point for them was missing
+-General BlackDragon: Fixed some typos in Boxhead AIPs (HoldType and HoldCount params don't exist, it's HoldType1 ... HoldType# and HoldCount1 ... HoldCount#)
+-General BlackDragon: Navs can no longer be placed outside of map boundaries in strategy games
