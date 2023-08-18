@@ -1,14 +1,6 @@
 [GameObjectClass]
 classLabel = "cvwalk"
 
-needPilot = 1 // Allow player control. -GBD
-
-requireCount = 2
-requireName1 = "cbtcen"
-requireText1 = "Build Research Node" // *"Build Tech Center"
-requireName2 = "cbsbay"
-requireText2 = "Build Regenerator"
-
 [CraftClass]
 
 damageEffect1 = "dmgvhcl_c1"

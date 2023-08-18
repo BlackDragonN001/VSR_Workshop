@@ -1,12 +1,6 @@
 [GameObjectClass]
 classLabel = "cvrbomb"
 
-needPilot = 1 // Allow player control. -GBD
-
-requireCount = 1
-requireName1 = "cbarmo"
-requireText1 = "Build Dispenser Node"
-
 [CraftClass]
 
 damageEffect1 = "dmgvhcl_c1"
