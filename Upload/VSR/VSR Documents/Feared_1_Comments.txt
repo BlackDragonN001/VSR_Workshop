@@ -1054,10 +1054,19 @@ March 15th, 2023
 ==Release 105==
 July 13th, 2023
 
--Camera Pods can now bail out into their race-specific full scouts
+-Camera Pods can now bail out (right now they bail out as pilots...working on that)
 -General BlackDragon: Camera Pods can no longer undeploy during game to be seen, heard, or interacted with
 -General BlackDragon: Disabled auto-generated log file from every game
 -General BlackDragon: Fixed missing paths on IA FFA Mid Low
 -General BlackDragon: Fixed Instant Action spawning some AI defences in the center of the map (0, 0, 0) if the path point for them was missing
 -General BlackDragon: Fixed some typos in Boxhead AIPs (HoldType and HoldCount params don't exist, it's HoldType1 ... HoldType# and HoldCount1 ... HoldCount#)
 -General BlackDragon: Navs can no longer be placed outside of map boundaries in strategy games
+
+
+
+==Release 106==
+???
+
+-Scion and Hadean Scavenger units are now consistent with their better-working ISDF counterparts
+-TO DO: FIX HADEAN SNIPER??? CLOAKET
+-PULL FROM GBD

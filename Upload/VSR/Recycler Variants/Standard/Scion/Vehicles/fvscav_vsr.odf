@@ -1,17 +1,22 @@
+//Most of this ODF is a copy/paste of ivscav_vsr.odf to maintain consistency between all race's scavengers
+//as of VSR BZCC Release 106
+
 [GameObjectClass]
 classLabel="fvscav"
 baseName="fvscav"
-collisionRadius=10 // {VSR-013}
+//collisionRadius=10 // *new {VSR-013}
 mass=40000.0 // (stock ivscav=53157.3) {VSR-012}
 
-[CraftClass]
-TeamTransferrable=true
-GotoTaskHasLeader=false
+//[CraftClass]
+//TeamTransferrable=true
+//GotoTaskHasLeader=false
 
 [TrackedVehicleClass]
-alphaSteer=8.0 // 2.0* {VSR-014}
+alphaSteer=8.0 // *2.0 {VSR-014}
+TREAD_STATIC_FRICTION=5.0
 
-TREAD_STATIC_FRICTION = 5.0 //was 1.5 before release 73
+//Commented out physics changes... tracked vehicles were broken in Release 73
+//TREAD_STATIC_FRICTION = 1.5
 
 //NormalTrackFactor = 1.0 // may need to be > 0 for some of the other params to take effect
 //pitchThrust = 3.0
