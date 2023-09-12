@@ -1,0 +1,74 @@
+[GameObjectClass]
+baseName = "evserv"
+geometryName = "dorelc02.fbx"
+classLabel = "serviceH"
+scrapValue = 0
+scrapCost = 0
+maxHealth = 1200
+maxAmmo = 0
+addHealth = 10
+unitName = "JO Crystal"
+aiName = "ServiceHProcess"
+aiName2 = "ServiceHProcess"
+needPilot = false
+
+animCount = 1
+animName1 = "loop"
+animFile1 = "dorelc02.fbx"
+RunAnimation = "loop"
+RunAnimIsLooped = true
+
+heatSignature = 0.5
+imageSignature = 50.0
+radarSignature = 5.0
+
+isAssault = 0
+armorClass = L
+
+explosionName = "kamixpl"
+
+PilotConfig = "espilo"
+
+[CraftClass]
+avoidSpeed = 0
+topSpeed = 0
+
+[HoverCraftClass]
+setAltitude = 1
+accelDragStop = 10
+alphaDamp = 10
+alphaTrack = 10
+pitchPitch = 0
+pitchThrust = 0
+rollStafe = 0
+rollSteer = 0
+aiAccelDrag = 100
+velocForward = 0
+velocReverse = 0
+velocStafe = 0
+accelThrust = 0
+accelBrake = 0
+omegaSpin = 0
+omegaTurn = 0
+alphaSteer = 0
+accelJump = 0
+soundThrust = 
+soundFly = 
+soundJump = 
+accelDragEmpty = 1000000
+alphaDampEmpty = 1.0
+alphaTrackEmpty = 2.0
+
+[ServiceTruckH]
+supplyRange = 50.0
+supplyRadius = 50.0
+healthRate = 25.0
+serviceAllies = true
+allyRangeScan = 50.0
+objPush = 0
+objDrag = 0
+ServiceSTs = true
+ServiceCraft = true
+ServiceBuildings = false
+ServicePilots = false
+ServiceOther = false
