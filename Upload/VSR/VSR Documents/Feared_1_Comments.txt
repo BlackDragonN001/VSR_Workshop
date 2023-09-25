@@ -1069,3 +1069,11 @@ September 11th, 2023
 
 -Scion and Hadean Scavenger units should now be more consistent with their better-working ISDF counterparts
 -blue_banana: Added 1 new map (JO Crystal)
+
+
+
+==Release 107==
+September 25th, 2023
+
+-General BlackDragon: Compatability update for Cerberi Asset Pack changes (Stock Cerberi ODFs now have pilots and tech requirements)
+-General BlackDragon: Fixed NAVs not being able to be placed on maps missing [Size] in the .trn. Assumes 4096x4096 map size if it's missing (test and report if this happens on other maps)
