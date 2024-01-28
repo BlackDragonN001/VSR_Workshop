@@ -1,0 +1,38 @@
+[Size]
+MetersPerGrid = 8.0
+HeightGranularity = 0.1
+MinX = -1250.0
+MinZ = -1250.0
+Width = 2500.0
+Depth = 2500.0
+Height = 100
+Tile = 1
+
+[NormalView]
+Diffusecolor = "178 178 178 255"
+SpecularColor = "100 100 100 255"
+SpecularPower = 1024
+
+[World]
+MusicTrack1=4
+MusicTrack2=3
+MusicTrack3=2
+
+[Texture]
+TileTexture1 = "dune1.tga"
+TileTexture2 = "dune2.tga"
+TileTexture3 = "dune3.tga"
+TileTexture4 = "dune4.tga"
+TileTexture5 = "dune5.tga"
+TileTexture6 = "dune6.tga"
+TileTexture7 = "dune7.tga"
+TileTexture8 = "dune8.tga"
+TileTexture9 = "dune9.tga"
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRCap4"
+CaptureTarget2 = "VSRCap4"
+CaptureTarget3 = "VSRCap3"
+CaptureTarget4 = "VSRCap5"
+CaptureTarget5 = "VSRCap5"

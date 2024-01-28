@@ -1,0 +1,52 @@
+[Size]
+MetersPerGrid = 8.0
+HeightGranularity = 0.1
+MinX = -1024.0
+MinZ = -1024.0
+Width = 2048.0
+Depth = 2048.0
+Height = 100
+Tile = 1
+
+[World]
+MusicTrack1=9
+MusicTrack2=3
+MusicTrack3=4
+
+[NormalView]
+DiffuseColor = "200 200 200 255"
+SpecularColor = "200 200 200 255"
+SpecularPower = 1024
+
+[Texture]
+TileTexture1 = "bane3.dds"
+TileTexture2 = "metal2.tga"
+TileTexture3 = "bane5.dds"
+TileTexture4 = "bane2.dds"
+TileTexture5 = "bane4.dds"
+TileTexture6 = "bane.dds"
+TileTexture7 = "metal2.tga"
+TileTexture8 = "bane2.dds"
+TileTexture9 = "bane8.dds
+TileTexture10="metal10.tga"
+TileTexture11="metal11.tga"
+TileTexture12="metal12.tga"
+
+//TileTexture1="metal.tga"
+//TileTexture2="metal2.tga"  <-- pool
+//TileTexture3="metal3.tga"
+//TileTexture4="metal4.tga"
+//TileTexture5="metal5.tga"
+//TileTexture6="metal6.tga"
+//TileTexture7="metal7.tga"
+//TileTexture8="metal8.tga"
+//TileTexture9="metal9.tga"
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRCap3"
+CaptureTarget2 = "VSRCap3"
+CaptureTarget3 = "VSRCap1"
+CaptureTarget4 = "VSRCap1"
+CaptureTarget5 = "VSRCap5"
+CaptureTarget6 = "VSRCap5"

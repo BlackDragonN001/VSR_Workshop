@@ -1,0 +1,28 @@
+[Size]
+MetersPerGrid = 8.0
+HeightGranularity = 0.1
+MinX = -1024.0
+MinZ = -1024.0
+Width = 2048.0
+Depth = 2048.0
+Height = 100
+Tile = 1
+
+[NormalView]
+DiffuseColor="240 240 240"
+SpecularColor="240 240 240"
+SpecularPower=1024
+
+[World]
+
+[Texture]
+TileTexture1="bane.tga"
+TileTexture2="bane2.tga"
+TileTexture3="bane3.tga"
+TileTexture4="bane4.tga"
+TileTexture5="bane5.tga"
+//TileTexture6="bane6.tga"
+TileTexture7="bane3.tga"
+TileTexture8="wasteland1.tga"
+TileTexture9="wasteland2.tga"
+TileTexture0=""

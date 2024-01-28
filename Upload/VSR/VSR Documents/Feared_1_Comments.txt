@@ -1077,3 +1077,12 @@ September 25th, 2023
 
 -General BlackDragon: Compatability update for Cerberi Asset Pack changes (Stock Cerberi ODFs now have pilots and tech requirements)
 -General BlackDragon: Fixed NAVs not being able to be placed on maps missing [Size] in the .trn. Assumes 4096x4096 map size if it's missing (test and report if this happens on other maps)
+
+
+
+==Release 108==
+???
+
+-Stinger Missile now has 200m range, as it should have from the beginning
+-Starting Xypos now has 1800 health rather than 2200 health (originally-intended behavior)
+-Removed ExE's map pack as a dependency for VSR; his maps are now included in the VSR mod so they can use VSR settings

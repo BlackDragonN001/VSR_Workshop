@@ -1,0 +1,37 @@
+[Size]
+MetersPerGrid = 8.0
+HeightGranularity = 0.1
+MinX=-1024
+MinZ=-1024
+Width=1080
+Depth=1080
+Height=100
+Tile = 1
+Color = "178.5 178.5 178.5 255"
+
+[NormalView]
+DiffuseColor = "178.5 178.5 178.5"
+SpecularColor = "178.5 178.5 178.5"
+SpecularPower = 256
+
+[World]
+MusicTrack1=2
+MusicTrack2=7
+MusicTrack3=3
+
+[Texture]
+TileTexture1 = "mire.tga"
+TileTexture2 = "mire2.tga"
+TileTexture3 = "mire3.tga"
+TileTexture4 = "mire4.tga"
+TileTexture5 = "mire5.tga"
+TileTexture6 = "mire6.tga"
+TileTexture7 = "mire7.tga"
+TileTexture8 = "mbextf02.tga"
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRCap5"
+CaptureTarget2 = "VSRCap5"
+CaptureTarget3 = "VSRCap5"
+CaptureTarget4 = "VSRCap5"

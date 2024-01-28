@@ -1,0 +1,34 @@
+[Size]
+MetersPerGrid = 8.0
+HeightGranularity = 0.1
+MinX = -1024.0
+MinZ = -1024.0
+Width = 2048.0
+Depth = 2048.0
+Height = 100
+Tile = 1
+
+[World]
+MusicTrack1=9
+MusicTrack2=3
+MusicTrack3=4
+
+[NormalView]
+DiffuseColor = "200 200 200"
+SpecularColor = "0 0 0"
+SpecularPower = 2
+
+
+[Texture]
+TileTexture1="xtile.dds"
+TileTexture2="xtile.dds"
+TileTexture3="core_1.dds"
+TileTexture4="core_2.dds"
+TileTexture5="core_3.dds"
+TileTexture6="core_4.dds"
+TileTexture9="xmetal2.dds"
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRCap2"
+CaptureTarget2 = "VSRCap2"

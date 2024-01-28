@@ -1,0 +1,37 @@
+[Size]
+MetersPerGrid = 8.0
+HeightGranularity = 0.1
+MinX = -1024.0
+MinZ = -1024.0
+Width = 2048.0
+Depth = 2048.0
+Height = 50.0
+Tile = 1
+Color = "220 220 220 255"
+
+[NormalView]
+DiffuseColor = "255 255 255 255"
+SpecularColor = "255 255 255 255"
+SpecularPower = 1024
+
+[World]
+MusicTrack1=8
+MusicTrack2=10
+MusicTrack3=6
+
+[Texture]
+TileTexture1 = "wasteland1.tga"
+TileTexture2 = "wasteland2.tga"
+TileTexture3 = "wasteland3.tga"
+TileTexture4 = "wasteland4.tga"
+TileTexture5 = "wasteland5.tga"
+TileTexture6 = "wasteland6.tga"
+TileTexture7 = "wasteland7.tga"
+TileTexture8 = "wasteland8.tga"
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRCap2"
+CaptureTarget2 = "VSRCap2"
+CaptureTarget3 = "VSRCap1"
+CaptureTarget4 = "VSRCap1"

@@ -1,8 +1,8 @@
 [OrdnanceClass]
 classLabel="stinger_c"
 
-lifeSpan=2.666 // *4.0 (to maintain range)
-shotSpeed=75.0 // *50 {VSR-191}
+lifeSpan = 3.67 // *4.0 (to maintain 200m range)	Was 2.666 before BZCC VSR Release 108, lifespan*shotspeed did not result in a 200m range, but this does, for some reason
+shotSpeed = 75.0 // *50 {VSR-191}
 
 // {VSR-195}
 damageValue(H)=20 // *10
