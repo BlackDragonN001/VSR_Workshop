@@ -1,0 +1,29 @@
+[Size]
+MinX = 0
+MinZ = 0
+Width = 2306
+Depth = 2306
+Height = 44
+Tile = 0
+Color = "127 127 127 255"
+
+[NormalView]
+SpecularPower = 1024
+DiffuseColor = "255 255 255 255"
+
+[Texture]
+TileTexture0 = "titan.dds" // Rock
+TileTexture2 = "titan4.dds" // Ice
+TileTexture4 = "titan3.dds" // Sand
+TileTexture5 = "bz1Titan00.dds" // Base
+TileTexture6 = "rend.tga" // Methane
+
+[DLL]
+CaptureIsRandom = false
+CaptureTarget1 = "VSRCap3"
+CaptureTarget2 = "VSRCap2"
+CaptureTarget3 = "VSRCap4"
+CaptureTarget4 = "VSRCap1"
+CaptureTarget5 = "VSRCap1"
+CaptureTarget6 = "VSRCap5"
+CaptureTarget7 = "VSRCap5"
