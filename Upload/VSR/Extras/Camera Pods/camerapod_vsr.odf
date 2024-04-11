@@ -2,10 +2,10 @@
 // Camera Pod (Spectator Vehicle)
 
 [GameObjectClass]
-classLabel="morphtank"
+classLabel="wingman" //"morphtank"
 baseName="camerapodvsr"
-pilotConfig="ivscout_vsr" // If blank, uses [if]spilo/[if]suser. Otherwise, pilot for craft
-geometryName="vsrcamerapod00_0.25.msh"	//"vsrcamerapod00.fbx" - Model by General BlackDragon
+//pilotConfig="ivscout_vsr" // If blank, uses [if]spilo/[if]suser. Otherwise, pilot for craft
+geometryName=NULL //"vsrcamerapod00_0.25.msh"	//"vsrcamerapod00.fbx" - Model by General BlackDragon
 //geometryScale=0.25
 unitStatus = "wire_camerapod_vsr.tga"
 
@@ -31,6 +31,7 @@ canSelect=0
 canDetect=0
 canInteract=0
 isStealth=1
+canCollide = 0
 
 canAcceptPowerups=false // reject powerups (such as mines)
 
