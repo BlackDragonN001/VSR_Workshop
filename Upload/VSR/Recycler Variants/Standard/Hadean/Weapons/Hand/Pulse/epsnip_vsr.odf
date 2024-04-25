@@ -1,24 +1,12 @@
 [GameObjectClass]
-geometryName="aphand00.xsi"
-classLabel="wpnpower"
+classLabel="epsnip"
 scrapCost=30 // *10 {VSR-046}
-scrapValue=0
-maxHealth=150
-maxAmmo=0
-heatSignature=0
-imageSignature=0
-radarSignature=0
-unitName="Hadean Sniper"
-aiName="PowerUpProcess"
+
 requireCount=1
 requireName1="ebcbun_vsr"
 requireText1="Build Eyes of Xyr"
-lightHard1="hp_light_1"
-lightName1="omnipur-pil"
 
 [PowerUpClass]
-soundPickup="pickup01.wav"
-soundReject="reject.wav"
 
 [WeaponPowerupClass]
 weaponName="egsnip_vsr_c"

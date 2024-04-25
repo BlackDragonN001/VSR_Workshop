@@ -1,25 +1,5 @@
 [WeaponClass]
-classLabel="cannon"
+classLabel="egsnip_a"
 ordName="esnipe_vsr"
-wpnName="Sniper"
-fireSound="gsnipe00.wav"
-wpnReticle="grifle_s"
-wpnCategory="HAND"
-isAssault=1
-isFlying=0
 altName="egsnip_vsr_c"
 MinOwnerLifetimeSeconds = 0.0f //Added 2.5 in VZR BZCC Release 22 - Set to 0 Release 68
-
-[CannonClass]
-shotDelay=1.0
-
-[Flash]
-renderBase="draw_geom"
-textureName="sflash.tga"
-textureBlend="one one modulate"
-startColor="255 255 100 255"
-finishColor="255 255 0 255"
-startRadius=3.0
-finishRadius=1
-animateTime=0.1
-geomName="g_sflash.xsi"
