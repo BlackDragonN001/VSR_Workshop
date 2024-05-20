@@ -7,6 +7,9 @@
 classLabel="mcurmin"
 maxAmmo=45 // *50 {VSR-147}
 isAssault=0 // Mines should not make Scion AI morph {VSR-009}
+imageSignature = 0.0	//Removed missile lock signatures for VSR BZCC Release 109
+radarSignature = 0.0	//Removed missile lock signatures for VSR BZCC Release 109
+heatSignature = 0.0	//Removed missile lock signatures for VSR BZCC Release 109
 
 [MineClass]
 lifeSpan=25.0 // *30.0 {VSR-146}
