@@ -44,13 +44,6 @@ LIFT_DAMP=2
 switchMask=00011 // *new {VSR-UNDOC}
 maxHealth=1900 // *1500 {VSR-078}
 
-// VSR Physics {VSR-000}
-airborneVelocFrontMult=1.1
-airborneVelocSideMult=1.15
-airborneThrottleMult=1.5
-LIFT_SPRING=20
-LIFT_DAMP=5.125
-
 // Stock values must be repasted, BZ2 does not inherit from [MorphTankClass].
 //maxHealth=1500
 addhealth=5.0

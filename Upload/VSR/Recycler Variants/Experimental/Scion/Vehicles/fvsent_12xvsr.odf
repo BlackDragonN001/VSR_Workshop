@@ -121,24 +121,5 @@ omegaTurn=3.3 //turning while moving speed
 alphaSteer=5 //how fast it responds to steering
 rollSteer=0.03 //rolls while steering
 
-MoreLike12Physics=true
-
-OverWaterVelocFrontMult=1.0 // *.75
-OverWaterVelocSideMult=1.0 // *.75
-OverWaterThrottleMult=0.8
-airborneVelocFrontMult=1.1 // *1.0
-airborneVelocSideMult=1.1 // *1.0
-airborneThrottleMult=1.5 // *1.0
-airborneMinHeightRatio=1.3 // *2.0
-airborneMaxHeightRatio=5.0 // *5.0
-
-// Beta 4 Pre 11 settings
-// LIFT_SPRING=12 // 14
-// LIFT_DAMP=3 // 5.125 // *6.25
-
-// Beta 4 Settings
-LIFT_SPRING=14
-LIFT_DAMP=2
-
 soundThrust="ssent01c.wav"
 [DeployableClass]
