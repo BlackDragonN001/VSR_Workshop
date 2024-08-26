@@ -8,7 +8,7 @@ weaponName3="gshadowvsr_a"
 [TrackedVehicleClass]
 // {VSR-040}
 CENTER_SHIFT=-0.5 //was -0.4 Lowers the centre of gravity, reducing wobble (when sonic waved) More than this causes odd effects.
-SUSPENSION_MIN=0.2 //was-0.2 Lowers the suspension so the mudguards no longer cut into the tracks (its bothered me for ages) 
+SUSPENSION_MIN=0.2 //was-0.2 Lowers the suspension so the mudguards no longer cut into the tracks (its bothered me for ages)
 
 //Commented out physics changes... tracked vehicles were broken in Release 73
 //COLLISION_RAISE =  0.5
@@ -22,3 +22,7 @@ SUSPENSION_MIN=0.2 //was-0.2 Lowers the suspension so the mudguards no longer cu
 
 //alphaDampX = 10.0
 //alphaDampZ = 35.0 //30.0
+
+//
+//[AssaultTankClass]
+pitchMax = 1.3 //Will aim nearly vertically, about 75 degrees angle of elevation (1.5 is vertical) - community poll for BZCC VSR Release 111

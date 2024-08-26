@@ -7,6 +7,7 @@ mass=7087.13 // ISDF turret mass (VSR-012)
 
 
 [CraftClass]
+engageRange = 180 //Changed from 150 in VSR Release 111 - revert if there are serious side effects
 attackTask="TurretAttack"
 subAttackTask="TurretDefendTask"
 subAttackClass="ADS"
