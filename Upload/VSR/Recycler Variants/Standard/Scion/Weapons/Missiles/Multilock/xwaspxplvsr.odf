@@ -1,7 +1,10 @@
-// WASP impact explosion
+// VSR WASP impact explosion
+// VSR Release 111 changes:
+// Now inherits from the stock WASP explosion and now has the proper graphical updates
+// Per community poll, WASP will revert back to stock damage as of Release 111
 
 [ExplosionClass]
-classLabel="xtorxpl"
+classLabel="xwaspxpl" //<-- xtorxpl doesn't exist in BZCC, which is what was here before?
 
 // {VSR-255}
 kickRadius=40.0
@@ -11,9 +14,10 @@ kickVeloc=4.0
 damageRadius=40.0 // *60 {VSR-258}
 
 // {VSR-256}
-damageValue(N)=400 // *1500
-damageValue(L)=400 // *1100
-damageValue(H)=400 // *800
-damageValue(A)=400 // *1500
-damageValue(D)=250 // *800
-damageValue(S)=320 // *1100
+//Reverted to stock damage values for VSR Release 111
+damageValue(N)=1500 // *1500	400
+damageValue(L)=1100 // *1100	400
+damageValue(H)=800 // *800	400
+damageValue(A)=1500 // *1500	400
+damageValue(D)=800 // *800	250
+damageValue(S)=1100 // *1100	320
