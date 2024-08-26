@@ -1109,3 +1109,14 @@ August 16th, 2024
 -General BlackDragon: Removed some invalid ODF parameters from the Scion Sentry (shouldn't change anything)
 -General BlackDragon: Removed some old, unused .msh files
 -Blue Banana: Fixed Europa Night Map (this is now playable with full VSR capabilities)
+
+
+
+==Release 111==
+August 25th, 2024
+
+-Map VSR: Forgotten shell image is now in the correct .dds format and will not produce a baked version in bindata
+-Removed OmegaKick from the Hadean Combat Laser explosions (the Hadean weapon remaster added OmegaKick)
+-Rocket Tanks can now aim nearly vertically (at a ~75 degree angle of elevation instead of <60 degrees)
+-Scion Guardians now have an EngageRange of 180m instead of 150m; this will allow them to use Gauss Gun at max range - please test for side effects
+-Scion WASP missile damage reverted to stock (and stock graphical update applied) - please test

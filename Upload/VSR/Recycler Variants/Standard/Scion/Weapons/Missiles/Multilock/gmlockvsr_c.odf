@@ -6,9 +6,9 @@ aiRange=180 // *170 {VSR-241}
 
 [LauncherClass]
 // initialShotDelay is easily averted because the user is always holding LMB anyway. Doesn't do anything different for AI.
-// initialShotDelay=0.75 // *0.0 -- Delays locking for 3/4 seconds, to discourage single-locking targets
+//initialShotDelay=0.75 // *0.0 -- Delays locking for 3/4 seconds, to discourage single-locking targets
 lockRange=190.0 // *170 {VSR-241}
-shotDelay=0.4 // *1.0 {VSR-244}
+shotDelay=0.4 // *1.0 {VSR-244} //0.1 works well
 lockDelay=1.0 // *2.0 {VSR-242}
 coneAngle=0.1 // *0.05 {VSR-243}
 // TeamFilter=3 //3 = targets only enemies, but why restrict freedom?

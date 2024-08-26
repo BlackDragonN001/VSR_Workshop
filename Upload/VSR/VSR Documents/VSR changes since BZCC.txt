@@ -26,5 +26,10 @@ Release 95: Turrets and Gun Towers now use 1.3 aiming code and defense AI will b
 Release 96: Hadean Collector physics updated to be more like the ISDF Scavenger
 Release 99: Flame Mine damage reduced to H armor by 40%, and scales differently depending on shield type (based on community feedback)
 Release 100: Vehicle chunk explosions (shibbits) now do less damage, so it is more difficult to destroy buildings by bailing units on them (based on community feedback)
-Release 105: Camera Pods can now bail out
-Release 108: Starting Xypos now has 1800 health rather than 2200 health
+Release 105: Camera Pods can now bail out: so these players can join the game
+Release 108: Starting Xypos now has 1800 health rather than 2200 health: to be consistent with other races
+Release 109: M-Curtain no longer has missile-lock vulnerability: per community poll, missiles will ignore these to hit relevant targets instead
+Release 111: Removed omegaKick from Hadean Combat Laser explosions: To improve multiplayer gameplay performance (omegaKick on these weapons is STOCK BEHAVIOR in FE, now)
+Release 111: Rocket Tanks can now aim much higher up (almost vertically, about 75 degrees) to make them more useful against hovering Arc empties
+Release 111: Scion Guardians engagerange changed from 150 to 180: Gauss Guardians will now fire at their maximum range
+Release 111: Scion WASP Missile reverted to stock damage values to make it more relevant in late game assaults and defense against heavy assaults
