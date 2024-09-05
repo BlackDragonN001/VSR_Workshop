@@ -20,11 +20,11 @@ ivar9=30			//Unit limit 30 (switch to 0 for unlimited for later)
 ivar11=1			//Teamplay option is locked (to on)
 ivar14=0			//Points (score) per AI kill = 0 (doesn't matter since ivar15 = 0)
 ivar15=0			//AI kills are not added to score
-ivar16=2			//Respawn with sniper off
+ivar16=2			//Starting sniper defaults to off: 2=off, 0=start only, 1=respawn w/sniper
 ivar17=3			//Turret skill level 3
 ivar18=3			//Other units skill level 3
 ivar28=0			//Pilot lifespan unlimited
-ivar32=1			//Friendly fire enabled (you can give/recieve damage from allies)
+ivar32=0			//AI friendly fire disabled (you can NOT receive damage from your own team's AI)
 ivar33=0			//Voice chat off
 ivar34=-1			//Alt-tab tolerate time unlimited
 ivar35 = 1			//Player 1 is on Team 1 by default
@@ -72,6 +72,7 @@ ivar46Max = 15
 ivar47Max = 15
 ivar48Max = 15
 ivar49Max = 15
+ivar50=1			//Player friendly fire enabled (you CAN receive damage from players on YOUR team)
 ivar54=30			//Seconds for ST-Capture timer.
 ivar54Min = 30
 ivar54Max = 120
@@ -81,8 +82,8 @@ ivar119=2			//Restore player on rejoin (0 = Off, 1 = By Name, 2 = By Slot.)
 ivar120=10			//Pilot AND new Empty Scout invulnerability in seconds (set to 10 by default)
 ivar120Max=120
 ivar120Min=0
-svar1="Team Red"			//Team 1's default name
-svar2="Team Blue"			//Team 2's default name
+svar1="Team 1"			//Team 1's default name
+svar2="Team 2"			//Team 2's default name
 svar4="mpvehiclesvsr.odf"	//Allowed units to start with (for players)
 svar5="ivrecy_vsr"		//Starting Recycler will be a VSR Recycler
 svar6="stratstartingvsr.odf"	//Possible starting units in a strat

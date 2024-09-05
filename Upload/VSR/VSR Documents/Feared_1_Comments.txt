@@ -1120,3 +1120,12 @@ August 25th, 2024
 -Rocket Tanks can now aim nearly vertically (at a ~75 degree angle of elevation instead of <60 degrees)
 -Scion Guardians now have an EngageRange of 180m instead of 150m; this will allow them to use Gauss Gun at max range - please test for side effects
 -Scion WASP missile damage reverted to stock (and stock graphical update applied) - please test
+
+
+
+==Release 112==
+September 4th, 2024
+
+-Added some taunts for MPI
+-Adjusted map ivar settings (ivar32=0 and ivar50=1) to have the correct friendly fire options set by default (AI no damage, players can damage each other)
+-Fixed missing team names on some Vearidons maps

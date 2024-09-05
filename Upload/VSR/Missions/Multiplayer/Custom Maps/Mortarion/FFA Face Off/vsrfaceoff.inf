@@ -24,7 +24,7 @@ ivar16 = 0			//Respawn with sniper off
 ivar17 = 3			//Turret skill level 3
 ivar18 = 3			//Other units skill level 3
 ivar28 = 0			//Pilot lifespan unlimited
-ivar32 = 1			//Friendly fire enabled (you can give/recieve damage from allies)
+ivar32 = 0			//AI friendly fire disabled
 ivar33 = 0			//Voice chat off
 ivar34 = -1			//Alt-tab tolerate time unlimited
 ivar35 = 1			//Player 1 is on Team 1 by default
@@ -82,6 +82,7 @@ ivar91 = 1			//Player 11 is a thug for team 1
 ivar92 = 1			//Player 12 is a thug for team 2
 ivar93 = 1			//Player 13 is a thug for team 1
 ivar94 = 1			//Player 14 is a thug for team 2
+ivar50=1	//Player friendly fire enabled
 ivar55=0			//When an ALLIED pilot gets into an EMPTY ALLIED ship, the TEAM of the ship DOES NOT CHANGE to the PILOT'S team
 ivar118=1			//Everything spawns facing the center of the map
 ivar119=0			//Restore player on rejoin (0 = Off, 1 = By Name, 2 = By Slot.)
