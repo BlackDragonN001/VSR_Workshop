@@ -1,0 +1,69 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = NULL
+
+xplGround = "xbulgnd"
+xplVehicle = "xbulcar"
+xplBuilding = "xbulbld"
+
+renderName = "epulse.render"
+
+ammoCost = 2
+lifeSpan = 0.667 // 200.1m
+shotSpeed = 300.0 //Reverted back to 300.0 to match VSR's other pulse rifles (Release 113)
+
+damageValue(N) = 5
+damageValue(L) = 3
+damageValue(H) = 0
+
+damageValue(S) = 3
+damageValue(D) = 5
+damageValue(A) = 3
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "epulse.core"
+renderName2 = "epulse.flare"
+renderName3 = "epulse.trail"
+
+[Core]
+renderBase = "draw_twirl"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "130 100 230 255"
+finishColor = "130 100 230 255"
+startRadius = 0.3
+finishRadius = 0.3
+
+[Flare]
+renderBase = "draw_twirl"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "255 200 200 255"
+finishColor = "255 200 200 255"
+startRadius = 0.3
+finishRadius = 0.3
+
+[Trail]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+textureName = "trail.tga"
+startColor = "220 100 130 255"
+finishColor = "100 100 100 0"  // "255 0 0 0"
+startRadius = 0.04
+finishRadius = 0.01
+segmentTime = 0.065
+textureRate = 0.2
+textureSpeed = 1.0
+
+[Dull]
+renderBase = "draw_trail"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureName = "strail.tga"
+startColor = "0 0 0 0"
+finishColor = "10 10 10 255"
+startRadius = 0.02
+finishRadius = 0.05
+segmentTime = 0.09
