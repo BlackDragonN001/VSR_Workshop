@@ -1133,9 +1133,17 @@ September 4th, 2024
 
 
 ==Release 113==
-???
+September 28th, 2024
 
 -Hadean pulse rifle now has a range of 200m instead of 133m to be consistent with other races
 -Fixed a typo in VSR's mod description
 -General BlackDragon: Adjusted damage values of chunk explosions (shibbits); shibbits will now do more damage (adjusts change made in Release 100)
 -General BlackDragon: Fixed accidental switch of deployed Hadean Recycler into the non Multiplayer building form; fixes missing evscoutu_vsr in Recy build tree
+
+
+
+==Release 114===
+September 29th, 2024
+
+-Removed epulse_vsr.odf from VSR; VSR will use the Hadean Assets pulse rifle
+-General BlackDragon: Fixed Hadean Empty Scouts building with a pilot in them
