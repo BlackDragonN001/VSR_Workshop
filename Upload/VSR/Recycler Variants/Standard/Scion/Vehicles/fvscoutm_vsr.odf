@@ -46,8 +46,6 @@ accelThrust=37.0 // *22.0 {VSR-070}
 accelJump=14.0   // *10.0 {VSR-071}
 
 // Stock values must be repasted, BZ2 does not inherit from [MorphTankClass].
-soundThrust="avtanke0.wav"
-soundTurbo="avtanke3.wav"
 maxHealth=900
 maxAmmo=1500
 engageRange=100
@@ -69,5 +67,4 @@ pitchPitch=0.12
 pitchThrust=0.12
 rollStrafe=0.085
 rollSteer=0.07
-//soundThrust="ssent01j.wav"
-//soundTurbo="avtanke3.wav"
+soundThrust="ssent01j.wav"
