@@ -1,0 +1,17 @@
+[GameObjectClass]
+baseName="fvcons"
+classLabel="fvcons"
+mass=7000 // {VSR-012}
+StayWithOwner = true // MPI Team6-10 fix. -GBD
+
+scrapCost = 10
+buildTime = 5.0
+
+[ConstructionRigClass]
+buildLabel="Structures"
+buildItem1="fbkiln_vsr"
+buildItem2="fbspir_vsr"
+buildItem3="fbantm_vsr"
+buildItem4="fbdowe_vsr"
+buildItem5="fbstro_vsr"
+buildItem6="fbjamm_vsr"

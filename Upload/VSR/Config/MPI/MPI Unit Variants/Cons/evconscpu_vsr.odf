@@ -1,0 +1,38 @@
+[GameObjectClass]
+classLabel = "evcons"
+
+StayWithOwner = true // MPI Team6-10 fix. -GBD
+
+scrapCost = 10
+buildTime = 5.0
+
+provideCount = 4
+provideName3 = "evcons_vsr"
+provideName4 = "base"
+
+mass = 7000 // {VSR-012}
+
+[CraftClass]
+
+damageEffect1 = "dmgvhcl_e1"
+damageEffect2 = "dmgvhcl_e2"
+damageEffect3 = "dmgvhcl_e3"
+damageEffect4 = "dmgvhcl_e4"
+
+braccelFactor = 0.1
+
+[HoverCraftClass]
+
+[DeployableClass]
+
+[ConstructionRigClass]
+
+buildItem1="ebpgen_vsr"
+buildItem2="ebfact_vsr"
+buildItem3="ebcbun_vsr"
+buildItem4="ebarmo_vsr"
+buildItem5="ebsbay_vsr"
+buildItem6="ebgt2g_vsr"
+buildItem7="ebtrain_vsr"
+buildItem8="ebtcen_vsr"
+buildItem9="ebgt4g_vsr"

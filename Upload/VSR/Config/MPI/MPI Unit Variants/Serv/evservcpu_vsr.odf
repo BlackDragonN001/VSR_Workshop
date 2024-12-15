@@ -1,0 +1,80 @@
+[GameObjectClass]
+clearBuildZone = 0 // {VSR-005}
+
+classLabel = "evserv"
+
+needPilot = false
+
+scrapCost = 10
+buildTime = 5.0
+
+provideCount = 3
+provideName3 = "evserv_vsr"
+
+mass = 3200 // {VSR-012} 5214=stock ivserv mass // 2213.16=mort 
+
+// MaxPostExplosionVelocity = 45.0 // -1.0 // -1: autodetermine. If > 0, a velocity
+// DamageIfVelocityClamped = 0.05 // Health ratio lost if velocity clamped
+
+[CraftClass]
+
+damageEffect1 = "dmgvhcl_e1"
+damageEffect2 = "dmgvhcl_e2"
+damageEffect3 = "dmgvhcl_e3"
+damageEffect4 = "dmgvhcl_e4"
+
+engagerange = 40.0 // *30.0 {VSR-015}
+
+canRescue = false
+canSnipe = false
+
+[TrackedVehicleClass]
+//TREAD_STATIC_FRICTION = 1.5
+
+omegaSpin = 2.0
+omegaTurn = 0.75
+alphaSteer = 2.0
+
+///// Suspension /////
+
+// COLLISION_RAISE = 0.5
+// SUSPENSION_MIN = -0.3
+SUSPENSION_MAX = 0.3 // 0.3
+SPRING_FACTOR = 1.5 // minimum value: 0.01
+DAMPING_FACTOR = 2.9	// 2.0=critical damped, minimum value: 0.01
+TREAD_STATIC_FRICTION = 1.5 // *1.5
+
+CENTER_SHIFT = -0.25
+
+///// New Values //// TeST / CALIBRATE!!! ////////
+
+NormalTrackFactor = 0.2 // may need to be > 0 for some of the other params to take effect
+pitchThrust = 0.7
+//rollSteer = 3.0 //was commented out previously
+alphaTrack = 8.0 // *8.0
+
+//alphaDampX = 10.0		//was commented out before release 72
+//alphaDampZ = 35.0 //30.0	//was commented out before release 72
+
+UseGlobalFriction = true
+GlobalFrictionMaxThrottle = 2.0f // 0.04f
+GlobalFrictionMaxHeight = 2.0f
+GlobalFrictionStaticCoeff = 0.4f
+GlobalFrictionDynamicCoeff = 0.24f
+LiftSpring = 1.0 // 0.0
+TreadForceFeedback = 1.0
+LevelForce = 10.0
+ThrustTrack = 0.0
+
+[ServiceTruck]
+supplyRange = 20.0
+supplyRadius = 50.0 // 15
+supplyRate = 50.0 // 40
+serviceSTs = 1
+serviceCraft = 1
+serviceBuildings=1 // *0 {VSR-016}
+serviceAllies = true
+serviceOther = 1
+objPush = 0.0f // Used while servicing. Factor based on distance from truck to target
+objDrag = 0.0f // Used while servicing. Factor based on target's velocity
+

@@ -1,0 +1,36 @@
+[GameObjectClass]
+clearBuildZone=0 // {VSR-005}
+classLabel="ivserv"
+mass=3200 // {VSR-012} 5214=stock ivserv mass // 2213.16=mort equal to fvserv_vsr, testing dmg by emp
+
+scrapCost = 10
+buildTime = 5.0
+
+[CraftClass]
+engageRange=40 // *30 {VSR-015}
+canRescue=0
+canSnipe=0
+
+//[TrackedVehicleClass]
+//TREAD_STATIC_FRICTION = 1.5
+
+//NormalTrackFactor = 1.0 // may need to be > 0 for some of the other params to take effect
+//pitchThrust = 3.0
+//rollSteer = 3.0
+//alphaTrack = 8.0
+
+//alphaDampX = 10.0
+//alphaDampZ = 35.0 //30.0
+
+
+[ServiceTruck]
+supplyRange = 20.0
+supplyRadius = 50.0 // 15
+supplyRate = 50.0 // 40
+serviceSTs = 1
+serviceCraft = 1
+serviceBuildings=1 // *0 {VSR-016}
+serviceAllies = true
+serviceOther = 1
+objPush = 0.0f // Used while servicing. Factor based on distance from truck to target
+objDrag = 0.0f // Used while servicing. Factor based on target's velocity

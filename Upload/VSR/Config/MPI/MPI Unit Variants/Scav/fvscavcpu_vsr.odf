@@ -1,11 +1,14 @@
 [GameObjectClass]
-classLabel = "ivscav_vsr"
+classLabel = "fvscav_vsr"
 StayWithOwner = true
+
+scrapCost = 10
+buildTime = 5.0
 
 /////// PROVIDES ///////////////////
 
 provideCount = 3
-provideName2 = "ivscavcpu"
+provideName2 = "fvscavcpu"
 provideName3 = "VIRTUAL_CLASS_SCAVENGER"
 
 ////////////////////////////////////
@@ -22,10 +25,5 @@ XplChunk = "xseccpuxpl"
 [DeployBuildingClass]
 
 [ScavengerClass]
-deployClass = "ibscav_vsr"
+deployClass = "fbscav_vsr"
 ScavClassProvides = 22 		// Matches DepositClassMatch (dzpoolGH01_L.odf) allowing it to deploy.  22 = 01101
-StayWithOwner=true
-
-[Lod1]
-
-[Lod2]

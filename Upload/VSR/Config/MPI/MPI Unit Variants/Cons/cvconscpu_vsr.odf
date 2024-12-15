@@ -1,0 +1,30 @@
+[GameObjectClass]
+classLabel = "cvcons"
+
+scrapCost = 10
+buildTime = 5.0
+
+mass = 7000 // {VSR-012}
+StayWithOwner = true // MPI Team6-10 fix. -GBD
+
+[CraftClass]
+
+damageEffect1 = "dmgvhcl_c1"
+damageEffect2 = "dmgvhcl_c2"
+damageEffect3 = "dmgvhcl_c3"
+damageEffect4 = "dmgvhcl_c4"
+
+[HoverCraftClass]
+
+[DeployableClass]
+
+[ConstructionRigClass]
+buildItem1 = "cbpgen_vsr"
+buildItem2 = "cbfact_vsr"
+buildItem3 = "cbcbun_vsr"
+buildItem4 = "cbarmo_vsr"
+buildItem5 = "cbsbay_vsr"
+buildItem6 = "cbgtow_vsr"
+buildItem7 = "cbtcen_vsr"
+buildItem8 = "cbjamm_vsr"
+buildItem9 = "cbagen_vsr"

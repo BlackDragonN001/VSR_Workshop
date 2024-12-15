@@ -2,6 +2,9 @@
 classLabel="cvscav_vsr"
 StayWithOwner = true
 
+scrapCost = 10
+buildTime = 5.0
+
 [CraftClass]
 
 [TrackedVehicleClass]
@@ -13,7 +16,6 @@ StayWithOwner = true
 DoExtraBuildzoneCheck=false
 
 [ScavengerClass]
-StayWithOwner=true
 
 [Lod1]
 
