@@ -3,7 +3,7 @@
 
 [Start]
 scrapCount = 40
-consClass = "fvcons_vsr"
+consClass = "fvconscpu_vsr"
 scavClass = "fvscavcpu_vsr"
 IdleAllCraft = true
 CheckProvides = true
@@ -643,13 +643,13 @@ planCompare = ">="
 planConditionClassProvided = true
 planConditionOr = false
 planCondition2 = "Exists"
-planConditionClass2 = "fvcons_vsr"
+planConditionClass2 = "fvconscpu_vsr"
 planConditionCount2 = 1
 planCompare2 = ">="
 planConditionClassProvided2 = true
 MaxUnits = 2
 MinMissionSeconds = 70
-targetType = "fvcons_vsr"
+targetType = "fvconscpu_vsr"
 ContinueEvenIfFail = true
 
 [Plan15]
@@ -675,11 +675,11 @@ ContinueEvenIfFail = true
 planType = "Service"
 planPriority = 725
 planCondition = "Exists"
-planConditionClass = "fvserv_vsr"
+planConditionClass = "fvservcpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
-serviceUnit = "fvserv_vsr"
+serviceUnit = "fvservcpu_vsr"
 minWreckAmmo = 0.8
 minWreckHealth = 0.8
 maxWreckAmmo = 1.0
@@ -698,7 +698,7 @@ unitType9 = "fbjamm"
 unitType10 = "fbscup_vsr"
 unitType11 = "fblung_vsr"
 unitType12 = "defender"
-unitType13 = "fvserv_vsr"
+unitType13 = "fvservcpu_vsr"
 ContinueEvenIfFail = true
 
 //RecyclerDead Section
@@ -706,7 +706,7 @@ ContinueEvenIfFail = true
 planType = "BaseBuildMinimums"
 planPriority = 720
 planCondition = "Exists"
-planConditionClass = "fvcons_vsr"
+planConditionClass = "fvconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -728,7 +728,7 @@ minTtlScrap = 60
 planType = "BaseBuildMinimums"
 planPriority = 715
 planCondition = "Exists"
-planConditionClass = "fvcons_vsr"
+planConditionClass = "fvconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -745,7 +745,7 @@ minTtlScrap = 80
 planType = "Upgrade"
 planPriority = 710
 planCondition = "Exists"
-planConditionClass = "fvcons_vsr"
+planConditionClass = "fvconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -761,7 +761,7 @@ minTtlScrap = 60
 planType = "BaseBuildMinimums"
 planPriority = 705
 planCondition = "Exists"
-planConditionClass = "fvcons_vsr"
+planConditionClass = "fvconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -783,7 +783,7 @@ minTtlScrap = 60
 planType = "BaseBuildMinimums"
 planPriority = 700
 planCondition = "Exists"
-planConditionClass = "fvcons_vsr"
+planConditionClass = "fvconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -805,7 +805,7 @@ minTtlScrap = 60
 planType = "BaseBuildMinimums"
 planPriority = 695
 planCondition = "Exists"
-planConditionClass = "fvcons_vsr"
+planConditionClass = "fvconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -827,7 +827,7 @@ minTtlScrap = 60
 planType = "Upgrade"
 planPriority = 690
 planCondition = "Exists"
-planConditionClass = "fvcons_vsr"
+planConditionClass = "fvconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -843,7 +843,7 @@ minTtlScrap = 80
 planType = "BaseBuildMinimums"
 planPriority = 685
 planCondition = "Exists"
-planConditionClass = "fvcons_vsr"
+planConditionClass = "fvconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -1318,7 +1318,7 @@ buildCount1 = 2
 planType = "BaseBuildMinimums"
 planPriority = 560
 planCondition = "Exists"
-planConditionClass = "fvcons_vsr"
+planConditionClass = "fvconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -1458,7 +1458,7 @@ buildIfNoIdle = 1
 [Plan59]
 planType = "BuildMinimums"
 planPriority = 510
-buildType1 = "fvcons_vsr"
+buildType1 = "fvconscpu_vsr"
 buildCount1 = 2
 minTtlScrap = 40
 
@@ -1648,7 +1648,7 @@ planPriority = 465
 planCondition = "Exists"
 planConditionClass = "fbdowe_vsr"
 planConditionCount = 1
-buildType1 = "fvserv_vsr"
+buildType1 = "fvservcpu_vsr"
 buildCount1 = 2
 minTtlScrap = 60
 

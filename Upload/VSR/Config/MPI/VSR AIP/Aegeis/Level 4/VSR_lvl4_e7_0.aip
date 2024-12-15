@@ -7,7 +7,7 @@
 Difficulty = 4 // 1=Easy, 2=Medium, 3=Hard, 4=Extreme
 UnitsService = true // If units can get service.
 scrapCount = 40
-consClass = "evcons_vsr"
+consClass = "evconscpu_vsr"
 scavClass = "evscavcpu_vsr"
 IdleAllCraft = true
 CheckProvides = true
@@ -186,10 +186,10 @@ attackType52_3 = "evtanku_vsr"
 planType = "Service"
 planPriority = 490
 planCondition = "Exists"
-planConditionClass = "evserv_vsr"
+planConditionClass = "evservcpu_vsr"
 planConditionCount = 2
 planCompare = ">="
-serviceUnit = "evserv_vsr"
+serviceUnit = "evservcpu_vsr"
 minWreckAmmo = 0.8
 minWreckHealth = 0.8
 maxWreckAmmo = 1.0
@@ -208,7 +208,7 @@ unitType9 = "ebtrain_vsr"
 unitType10 = "ebtcen_vsr"
 unitType11 = "ebscup_vsr"
 unitType12 = "defender"
-unitType13 = "evserv_vsr"
+unitType13 = "evservcpu_vsr"
 
 [Plan2]
 planType = "DefendArea"
@@ -276,7 +276,7 @@ ContinueEvenIfFail = true
 [Plan11]
 planType = "DefendArea"
 planPriority = 480
-targetType = "evcons_vsr"
+targetType = "evconscpu_vsr"
 maxCurScrap = 40
 ContinueEvenIfFail = true
 
@@ -424,7 +424,7 @@ buildCount1 = 5
 [Plan25]
 planType = "BuildMinimums"
 planPriority = 390
-buildType1 = "evcons_vsr"
+buildType1 = "evconscpu_vsr"
 buildCount1 = 2
 
 [Plan26]
@@ -553,7 +553,7 @@ planConditionClassProvided = true
 planCompare = ">="
 buildType1 = "evatanklink_vsr"
 buildCount1 = 5
-buildType2 = "evserv_vsr"
+buildType2 = "evservcpu_vsr"
 buildCount2 = 2
 buildType3 = "evmort_vsr"
 buildCount3 = 4

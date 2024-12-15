@@ -3,7 +3,7 @@
 
 [Start]
 scrapCount = 40
-consClass = "evcons_vsr"
+consClass = "evconscpu_vsr"
 scavClass = "evscavcpu_vsr"
 IdleAllCraft = true
 CheckProvides = true
@@ -1178,25 +1178,25 @@ planCompare = ">="
 planConditionClassProvided = true
 planConditionOr = false
 planCondition2 = "Exists"
-planConditionClass2 = "evcons_vsr"
+planConditionClass2 = "evconscpu_vsr"
 planConditionCount2 = 1
 planCompare2 = ">="
 planConditionClassProvided2 = true
 MinUnits = 1
 MaxUnits = 5
 MinMissionSeconds = 70
-targetType = "evcons_vsr"
+targetType = "evconscpu_vsr"
 ContinueEvenIfFail = true
 
 [Plan11]
 planType = "Service"
 planPriority = 700
 planCondition = "Exists"
-planConditionClass = "evserv_vsr"
+planConditionClass = "evservcpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
-serviceUnit = "evserv_vsr"
+serviceUnit = "evservcpu_vsr"
 minWreckAmmo = 0.8
 minWreckHealth = 0.8
 maxWreckAmmo = 1.0
@@ -1218,7 +1218,7 @@ unitType12 = "ebtcen_vsr"
 unitType13 = "ebtrain_vsr"
 unitType14 = "ebscup_vsr"
 unitType15 = "defender"
-unitType16 = "evserv_vsr"
+unitType16 = "evservcpu_vsr"
 ContinueEvenIfFail = true
 
 //RecyclerDead Section
@@ -1227,7 +1227,7 @@ ContinueEvenIfFail = true
 planType = "BaseBuildMinimums"
 planPriority = 695
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -1245,7 +1245,7 @@ minTtlScrap = 40
 planType = "BaseBuildMinimums"
 planPriority = 690
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -1263,7 +1263,7 @@ minTtlScrap = 40
 planType = "BaseBuildMinimums"
 planPriority = 685
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -1281,7 +1281,7 @@ minTtlScrap = 40
 planType = "BaseBuildMinimums"
 planPriority = 680
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -1299,7 +1299,7 @@ minTtlScrap = 40
 planType = "BaseBuildMinimums"
 planPriority = 675
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -1317,7 +1317,7 @@ minTtlScrap = 40
 planType = "BaseBuildMinimums"
 planPriority = 670
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -1335,7 +1335,7 @@ minTtlScrap = 40
 planType = "BaseBuildMinimums"
 planPriority = 665
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -1353,7 +1353,7 @@ minTtlScrap = 40
 planType = "BaseBuildMinimums"
 planPriority = 660
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -1371,7 +1371,7 @@ minTtlScrap = 40
 planType = "BaseBuildMinimums"
 planPriority = 655
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -1389,7 +1389,7 @@ minTtlScrap = 40
 planType = "BaseBuildMinimums"
 planPriority = 645
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -1406,7 +1406,7 @@ minTtlScrap = 60
 planType = "BaseBuildMinimums"
 planPriority = 640
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -1423,7 +1423,7 @@ minTtlScrap = 80
 planType = "BaseBuildMinimums"
 planPriority = 640
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -1440,7 +1440,7 @@ minTtlScrap = 60
 planType = "BaseBuildMinimums"
 planPriority = 635
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -1458,7 +1458,7 @@ maxTtlScrap = 61
 planType = "BaseBuildMinimums"
 planPriority = 630
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -1475,7 +1475,7 @@ minTtlScrap = 60
 planType = "BaseBuildMinimums"
 planPriority = 625
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -1492,7 +1492,7 @@ minTtlScrap = 60
 planType = "BaseBuildMinimums"
 planPriority = 620
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -1509,7 +1509,7 @@ minTtlScrap = 80
 planType = "Upgrade"
 planPriority = 610
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -1531,7 +1531,7 @@ maxTtlScrap = 81
 planType = "Upgrade"
 planPriority = 605
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -1557,7 +1557,7 @@ minTtlScrap = 100
 planType = "BaseBuildMinimums"
 planPriority = 595
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -2221,7 +2221,7 @@ buildCount1 = 2
 planType = "BaseBuildMinimums"
 planPriority = 450
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -2234,7 +2234,7 @@ minTtlScrap = 40
 planType = "BaseBuildMinimums"
 planPriority = 445
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -2247,7 +2247,7 @@ minTtlScrap = 40
 planType = "BaseBuildMinimums"
 planPriority = 440
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -2260,7 +2260,7 @@ minTtlScrap = 40
 planType = "BaseBuildMinimums"
 planPriority = 435
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -2273,7 +2273,7 @@ minTtlScrap = 40
 planType = "BaseBuildMinimums"
 planPriority = 430
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -2286,7 +2286,7 @@ minTtlScrap = 40
 planType = "BaseBuildMinimums"
 planPriority = 425
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -2299,7 +2299,7 @@ minTtlScrap = 40
 planType = "BaseBuildMinimums"
 planPriority = 420
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -2312,7 +2312,7 @@ minTtlScrap = 40
 planType = "BaseBuildMinimums"
 planPriority = 415
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -2325,7 +2325,7 @@ minTtlScrap = 40
 planType = "BaseBuildMinimums"
 planPriority = 410
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -2339,7 +2339,7 @@ minTtlScrap = 40
 planType = "BaseBuildMinimums"
 planPriority = 405
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -2361,7 +2361,7 @@ minTtlScrap = 60
 planType = "BaseBuildMinimums"
 planPriority = 400
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -2378,7 +2378,7 @@ minTtlScrap = 80
 planType = "BaseBuildMinimums"
 planPriority = 395
 planCondition = "Exists"
-planConditionClass = "evcons_vsr"
+planConditionClass = "evconscpu_vsr"
 planConditionCount = 1
 planCompare = ">="
 planConditionClassProvided = true
@@ -2396,7 +2396,7 @@ maxTtlScrap = 61
 //planType = "BaseBuildMinimums"
 //planPriority = 390
 //planCondition = "Exists"
-//planConditionClass = "evcons_vsr"
+//planConditionClass = "evconscpu_vsr"
 //planConditionCount = 1
 //planCompare = ">="
 //planConditionClassProvided = true
@@ -2413,7 +2413,7 @@ maxTtlScrap = 61
 //planType = "BaseBuildMinimums"
 //planPriority = 385
 //planCondition = "Exists"
-//planConditionClass = "evcons_vsr"
+//planConditionClass = "evconscpu_vsr"
 //planConditionCount = 1
 //planCompare = ">="
 //planConditionClassProvided = true
@@ -2525,7 +2525,7 @@ buildIfNoIdle = 1
 [Plan82]
 planType = "BuildMinimums"
 planPriority = 340
-buildType1 = "evcons_vsr"
+buildType1 = "evconscpu_vsr"
 buildCount1 = 2
 minTtlScrap = 40
 
@@ -2762,7 +2762,7 @@ planPriority = 315
 planCondition = "Exists"
 planConditionClass = "ebsbay_vsr"
 planConditionCount = 1
-buildType1 = "evserv_vsr"
+buildType1 = "evservcpu_vsr"
 buildCount1 = 2
 minTtlScrap = 60
 

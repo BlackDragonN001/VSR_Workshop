@@ -1,6 +1,6 @@
 [Start]
 scrapCount=40
-consClass="cvcons_vsr"
+consClass="cvconscpu_vsr"
 scavClass="cvscavcpu_vsr"
 IdleAllCraft=true
 CheckProvides=true
@@ -198,7 +198,7 @@ buildtype1="cvscout_vsr"
 buildcount1=2
 buildtype2="cvturr_vsr"
 buildcount2=4
-buildtype3="cvcons_vsr"
+buildtype3="cvconscpu_vsr"
 buildcount3=2
 
 [Plan4]
@@ -357,7 +357,7 @@ buildCount1=3
 [plan22]
 plantype="buildminimums"
 planpriority=110
-buildtype1="cvserv_vsr"
+buildtype1="cvservcpu_vsr"
 buildcount1=3
 
 [plan23]
