@@ -1,10 +1,11 @@
 // Easy Difficulty
 [EasyWeaponSlot1]
-aiPatrolChance = 0.0
+aiPatrolChance = 0.1
 aiHuntChance = 0.2
-weaponName1 = "apsplasmavsr"
-weaponName2 = "apquilvsr"
-weaponName3 = "aparccvsr"
+weaponName1 = "apcpworm"
+weaponName2 = "apsprink"
+
+WeaponMask1 = 3
 
 [EasyWeaponSlot2]
 // Filled by the above slot
@@ -12,11 +13,13 @@ weaponName3 = "aparccvsr"
 
 // Medium Difficulty
 [MediumWeaponSlot1]
-aiPatrolChance = 0.0
+aiPatrolChance = 0.1
 aiHuntChance = 0.2
-weaponName1 = "apsplasmavsr"
-weaponName2 = "apquilvsr"
-weaponName3 = "aparccvsr"
+weaponName1 = "apcpworm"
+weaponName2 = "apsprink"
+
+WeaponMask1 = 3
+WeaponMask2 = 7
 
 [MediumWeaponSlot2]
 // Filled by the above slot
@@ -24,11 +27,13 @@ weaponName3 = "aparccvsr"
 
 // Hard Difficulty
 [HardWeaponSlot1]
-aiPatrolChance = 0.0
+aiPatrolChance = 0.1
 aiHuntChance = 0.2
-weaponName1 = "apsplasmavsr"
-weaponName2 = "apquilvsr"
-weaponName3 = "aparccvsr"
+weaponName1 = "apcpworm"
+weaponName2 = "apsprink"
+weaponName3 = "apsprink"
+
+WeaponMask1 = 3
 
 [HardWeaponSlot2]
 // Filled by the above slot
@@ -36,14 +41,13 @@ weaponName3 = "aparccvsr"
 
 // Extreme Difficulty
 [ExtremeWeaponSlot1]
-aiPatrolChance = 0.0
+aiPatrolChance = 0.1
 aiHuntChance = 0.2
-weaponName1 = "apsplasmavsr"
-weaponName2 = "apquilvsr"
-weaponName3 = "apquilvsr"
+weaponName1 = "apcpworm"
+weaponName2 = "apsprink"
+weaponName3 = "apsprink"
+
+WeaponMask1 = 3
 
 [ExtremeWeaponSlot2]
 // Filled by the above slot
-
-
-

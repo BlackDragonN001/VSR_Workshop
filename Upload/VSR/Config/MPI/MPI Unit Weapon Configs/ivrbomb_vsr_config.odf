@@ -1,17 +1,19 @@
 // Easy Difficulty
 [EasyWeaponSlot1]
-aiPatrolChance = 0.1
-aiHuntChance = 0.2
 weaponName1 = "aptaggvsr"
 weaponName2 = "apshdwvsr"
 weaponName3 = "apcpphotovsr"
-
-WeaponMask1 = 3
 
 [EasyWeaponSlot2]
 // Filled by the above slot
 
 [EasyWeaponSlot3]
+weaponName1 = "apfafmvsr"
+// weaponName2 = "aptaggvsr"
+weaponName2 = "apshdwvsr"
+weaponName3 = "apcpphotovsr"
+
+[EasyWeaponSlot4]
 weaponName1 = "approxvsr"
 weaponName2 = "apredfvsr"
 weaponName3 = "apmitsvsr"
@@ -20,19 +22,20 @@ weaponName4 = "apphanvsr"
 
 // Medium Difficulty
 [MediumWeaponSlot1]
-aiPatrolChance = 0.1
-aiHuntChance = 0.2
 weaponName1 = "aptaggvsr"
 weaponName2 = "apshdwvsr"
 weaponName3 = "apcpphotovsr"
-
-WeaponMask1 = 3
-WeaponMask2 = 7
 
 [MediumWeaponSlot2]
 // Filled by the above slot
 
 [MediumWeaponSlot3]
+weaponName1 = "apfafmvsr"
+weaponName2 = "aptaggvsr"
+weaponName3 = "apshdwvsr"
+weaponName4 = "apcpphotovsr"
+
+[MediumWeaponSlot4]
 weaponName1 = "approxvsr"
 weaponName2 = "apredfvsr"
 weaponName3 = "apmitsvsr"
@@ -41,20 +44,20 @@ weaponName4 = "apphanvsr"
 
 // Hard Difficulty
 [HardWeaponSlot1]
-aiPatrolChance = 0.1
-aiHuntChance = 0.2
 weaponName1 = "aptaggvsr"
 weaponName2 = "apshdwvsr"
 weaponName3 = "apcpphotovsr"
-
-WeaponMask1 = 3
-WeaponMask2 = 7
-WeaponMask3 = 7
 
 [HardWeaponSlot2]
 // Filled by the above slot
 
 [HardWeaponSlot3]
+weaponName1 = "apfafmvsr"
+weaponName2 = "aptaggvsr"
+weaponName3 = "apshdwvsr"
+weaponName4 = "apcpphotovsr"
+
+[HardWeaponSlot4]
 weaponName1 = "approxvsr"
 weaponName2 = "apredfvsr"
 weaponName3 = "apmitsvsr"
@@ -63,24 +66,30 @@ weaponName4 = "apphanvsr"
 
 // Extreme Difficulty
 [ExtremeWeaponSlot1]
-aiPatrolChance = 0.1
-aiHuntChance = 0.2
-weaponName1 = "aptaggvsr"
-weaponName2 = "apshdwvsr"
-weaponName3 = "apcpphotovsr"
-weaponName4 = "aptaggvsr"
-weaponName5 = "aptaggvsr"
-weaponName6 = "apshdwvsr"
-
-WeaponMask1 = 7
+weaponName1 = "apshdwvsr"
+weaponName2 = "apcpphotovsr"
+weaponName3 = "aptaggvsr"
+weaponName4 = "apshdwvsr"
+weaponName5 = "apshdwvsr"
+weaponName6 = "apcpphotovsr"
 
 [ExtremeWeaponSlot2]
 // Filled by the above slot
 
 [ExtremeWeaponSlot3]
-weaponName1 = "apphanvsr"
-weaponName2 = "approxvsr"
-weaponName3 = "apmitsvsr"
-weaponName4 = "apredfvsr"
-weaponName5 = "apphanvsr"
+weaponName1 = "apshdwvsr"
+weaponName2 = "apcpphotovsr"
+weaponName3 = "apfafmvsr"
+weaponName4 = "aptaggvsr"
+weaponName5 = "apfafmvsr"
+weaponName6 = "apfafmvsr"
+weaponName7 = "apshdwvsr"
+weaponName8 = "apcpphotovsr"
+
+[ExtremeWeaponSlot4]
+weaponName1 = "approxvsr"
+weaponName2 = "apphanvsr"
+weaponName3 = "apredfvsr"
+weaponName4 = "apmitsvsr"
+weaponName5 = "approxvsr"
 weaponName6 = "apphanvsr"

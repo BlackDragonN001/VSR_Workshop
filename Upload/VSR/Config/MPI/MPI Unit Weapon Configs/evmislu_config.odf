@@ -2,20 +2,18 @@
 [EasyWeaponSlot1]
 aiPatrolChance = 0.1
 aiHuntChance = 0.2
-weaponName1 = "apdragb"
-weaponName2 = "apslagstab"
-weaponName3 = "apfbgun"
+weaponName1 = "apcpworm"
+weaponName2 = "apsprink"
 
-WeaponMask1 = 1
-WeaponMask2 = 7
+WeaponMask1 = 3
 
 [EasyWeaponSlot2]
-weaponName1 = "apshellgun"
-weaponName2 = "apslicer"
-weaponName3 = "apeburst"
+// Filled by the above slot
 
 [EasyWeaponSlot3]
-// Filled by the above slot
+weaponName1 = "apcpworm"
+weaponName2 = "apsprink"
+weaponName3 = "aptagcr"
 
 [EasyWeaponSlot4]
 weaponName1 = "aphprox"
@@ -28,21 +26,19 @@ weaponName4 = "apcphan"
 [MediumWeaponSlot1]
 aiPatrolChance = 0.1
 aiHuntChance = 0.2
-weaponName1 = "apdragb"
-weaponName2 = "apslagstab"
-weaponName3 = "apfbgun"
+weaponName1 = "apcpworm"
+weaponName2 = "apsprink"
 
-WeaponMask1 = 1
+WeaponMask1 = 3
 WeaponMask2 = 7
-WeaponMask3 = 15
 
 [MediumWeaponSlot2]
-weaponName1 = "apshellgun"
-weaponName2 = "apslicer"
-weaponName3 = "apeburst"
+// Filled by the above slot
 
 [MediumWeaponSlot3]
-// Filled by the above slot
+weaponName1 = "apcpworm"
+weaponName2 = "apsprink"
+weaponName3 = "aptagcr"
 
 [MediumWeaponSlot4]
 weaponName1 = "aphprox"
@@ -56,21 +52,22 @@ weaponName5 = "apsnaremn"
 [HardWeaponSlot1]
 aiPatrolChance = 0.1
 aiHuntChance = 0.2
-weaponName1 = "apdragb"
-weaponName2 = "apslagstab"
-weaponName3 = "apfbgun"
+weaponName1 = "apcpworm"
+weaponName2 = "apsprink"
+weaponName3 = "apsprink"
 
-WeaponMask1 = 1
+WeaponMask1 = 3
 WeaponMask2 = 7
-WeaponMask3 = 15
+WeaponMask3 = 7
 
 [HardWeaponSlot2]
-weaponName1 = "apshellgun"
-weaponName2 = "apslicer"
-weaponName3 = "apeburst"
+// Filled by the above slot
 
 [HardWeaponSlot3]
-// Filled by the above slot
+weaponName1 = "apcpworm"
+weaponName2 = "apsprink"
+weaponName3 = "aptagcr"
+weaponName4 = "aptagcr"
 
 [HardWeaponSlot4]
 weaponName1 = "aphprox"
@@ -84,25 +81,21 @@ weaponName5 = "apsnaremn"
 [ExtremeWeaponSlot1]
 aiPatrolChance = 0.1
 aiHuntChance = 0.2
-weaponName1 = "apdragb"
-weaponName2 = "apslagstab"
-weaponName3 = "apfbgun"
-weaponName4 = "apfbgun"
-weaponName5 = "apfbgun"
-weaponName6 = "apdragb"
+weaponName1 = "apcpworm"
+weaponName2 = "apsprink"
+weaponName3 = "apsprink"
 
-WeaponMask1 = 1
-WeaponMask2 = 7
-WeaponMask3 = 15
+WeaponMask1 = 7
 
 [ExtremeWeaponSlot2]
-weaponName1 = "apshellgun"
-weaponName2 = "apslicer"
-weaponName3 = "apeburst"
-weaponName4 = "apslicer"
+// Filled by the above slot
 
 [ExtremeWeaponSlot3]
-// Filled by the above slot
+weaponName1 = "apcpworm"
+weaponName2 = "apsprink"
+weaponName3 = "apsprink"
+weaponName4 = "aptagcr"
+weaponName5 = "aptagcr"
 
 [ExtremeWeaponSlot4]
 weaponName1 = "aphprox"

@@ -1,10 +1,12 @@
 // Easy Difficulty
 [EasyWeaponSlot1]
 aiPatrolChance = 0.1
-aiHuntChance = 0.2
+aiHuntChance = 0.1
+
 weaponName1 = "apdragb"
 weaponName2 = "apslagstab"
 weaponName3 = "apfbgun"
+weaponName4 = "apcphlaser"
 
 WeaponMask1 = 1
 WeaponMask2 = 7
@@ -17,99 +19,70 @@ weaponName3 = "apeburst"
 [EasyWeaponSlot3]
 // Filled by the above slot
 
-[EasyWeaponSlot4]
-weaponName1 = "aphprox"
-weaponName2 = "apflamemin"
-weaponName3 = "apcpmits"
-weaponName4 = "apcphan"
-
 
 // Medium Difficulty
 [MediumWeaponSlot1]
 aiPatrolChance = 0.1
-aiHuntChance = 0.2
+aiHuntChance = 0.1
 weaponName1 = "apdragb"
 weaponName2 = "apslagstab"
 weaponName3 = "apfbgun"
+weaponName4 = "apfbgun"
+weaponName5 = "apcphlaser"
 
 WeaponMask1 = 1
 WeaponMask2 = 7
-WeaponMask3 = 15
 
 [MediumWeaponSlot2]
 weaponName1 = "apshellgun"
 weaponName2 = "apslicer"
-weaponName3 = "apeburst"
 
 [MediumWeaponSlot3]
 // Filled by the above slot
-
-[MediumWeaponSlot4]
-weaponName1 = "aphprox"
-weaponName2 = "apflamemin"
-weaponName3 = "apcpmits"
-weaponName4 = "apcphan"
-weaponName5 = "apsnaremn"
 
 
 // Hard Difficulty
 [HardWeaponSlot1]
 aiPatrolChance = 0.1
-aiHuntChance = 0.2
+aiHuntChance = 0.1
 weaponName1 = "apdragb"
-weaponName2 = "apslagstab"
-weaponName3 = "apfbgun"
+weaponName2 = "apdragb"
+weaponName3 = "apslagstab"
+weaponName4 = "apfbgun"
+weaponName5 = "apfbgun"
+weaponName6 = "apcphlaser"
 
 WeaponMask1 = 1
 WeaponMask2 = 7
-WeaponMask3 = 15
 
 [HardWeaponSlot2]
 weaponName1 = "apshellgun"
 weaponName2 = "apslicer"
-weaponName3 = "apeburst"
 
 [HardWeaponSlot3]
 // Filled by the above slot
-
-[HardWeaponSlot4]
-weaponName1 = "aphprox"
-weaponName2 = "apflamemin"
-weaponName3 = "apcpmits"
-weaponName4 = "apcphan"
-weaponName5 = "apsnaremn"
 
 
 // Extreme Difficulty
 [ExtremeWeaponSlot1]
 aiPatrolChance = 0.1
-aiHuntChance = 0.2
+aiHuntChance = 0.1
 weaponName1 = "apdragb"
 weaponName2 = "apslagstab"
 weaponName3 = "apfbgun"
 weaponName4 = "apfbgun"
-weaponName5 = "apfbgun"
+weaponName5 = "apdragb"
 weaponName6 = "apdragb"
+weaponName7 = "apcphlaser"
 
 WeaponMask1 = 1
 WeaponMask2 = 7
-WeaponMask3 = 15
 
 [ExtremeWeaponSlot2]
 weaponName1 = "apshellgun"
 weaponName2 = "apslicer"
-weaponName3 = "apeburst"
-weaponName4 = "apslicer"
+weaponName3 = "apslicer"
 
 [ExtremeWeaponSlot3]
 // Filled by the above slot
 
-[ExtremeWeaponSlot4]
-weaponName1 = "aphprox"
-weaponName2 = "apflamemin"
-weaponName3 = "apcpmits"
-weaponName4 = "apcphan"
-weaponName5 = "apflamemin"
-weaponName6 = "apflamemin"
-weaponName7 = "apcpmits"
-weaponName8 = "apsnaremn"
