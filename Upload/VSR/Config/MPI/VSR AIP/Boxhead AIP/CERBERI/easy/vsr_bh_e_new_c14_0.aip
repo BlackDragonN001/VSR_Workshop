@@ -1,0 +1,993 @@
+// AIP for BZCC VSR MPI
+// Written by wug
+// Updates by Aegeis
+// Version 4.2.c
+
+[Start]
+Difficulty = 1 // 1=Easy, 2=Medium, 3=Hard, 4=Extreme
+UnitsService = true // If units can get service.
+baseDir = -1 // -1 = auto, else 0..3 are rotations.
+scrapCount = 40
+consClass = "cvcons_vsr"
+scavClass = "cvscav_vsr"
+idleAllCraft = true
+CheckProvides = true
+
+[Cheat]
+moneyAmount = 10
+moneyDelay = 10
+
+[IdleDispatcher]
+DoDLLDispatch = true
+MaxPatrolUnits = 1 // Max number of Patrol ships
+MaxHuntUnits = 5 // Max number of Hunt ships.
+MaxEscortUnits = 2 // Max number of Escorts
+ScavIdleSeconds = 20
+UnitIdleSeconds = 30
+MinAttackForce = 3
+MaxTargets = 10
+
+[Match]
+targetType1 = "VIRTUAL_CLASS_SCOUT"
+attackType1_1 = "cvscout_vsr"
+attackType1_2 = "cvscout_vsr"
+targetType2 = "VIRTUAL_CLASS_SCOUT"
+attackType2_1 = "cvtank_vsr"
+targetType3 = "VIRTUAL_CLASS_SCOUT"
+attackType3_1 = "cvrbomb_vsr"
+targetType4 = "VIRTUAL_CLASS_SCOUT"
+attackType4_1 = "cvtalon_vsr"
+attackType4_2 = "cvtalon_vsr"
+
+targetType5 = "VIRTUAL_CLASS_MORTARBIKE"
+attackType5_1 = "cvscout_vsr"
+attackType5_2 = "cvscout_vsr"
+targetType6 = "VIRTUAL_CLASS_MORTARBIKE"
+attackType6_1 = "cvtalon_vsr"
+attackType6_2 = "cvtalon_vsr"
+targetType7 = "VIRTUAL_CLASS_MORTARBIKE"
+attackType7_1 = "cvtank_vsr"
+targetType8 = "VIRTUAL_CLASS_MORTARBIKE"
+attackType8_1 = "cvrbomb_vsr"
+
+targetType9 = "VIRTUAL_CLASS_MISSILESCOUT"
+attackType9_1 = "cvscout_vsr"
+attackType9_2 = "cvscout_vsr"
+attackType9_3 = "cvscout_vsr"
+targetType10 = "VIRTUAL_CLASS_MISSILESCOUT"
+attackType10_1 = "cvtank_vsr"
+attackType10_2 = "cvtank_vsr"
+targetType11 = "VIRTUAL_CLASS_MISSILESCOUT"
+attackType11_1 = "cvrbomb_vsr"
+attackType11_2 = "cvrbomb_vsr"
+
+targetType12 = "VIRTUAL_CLASS_TANK"
+attackType12_1 = "cvscout_vsr"
+attackType12_2 = "cvscout_vsr"
+targetType13 = "VIRTUAL_CLASS_TANK"
+attackType13_1 = "cvtank_vsr"
+attackType13_2 = "cvtank_vsr"
+targetType14 = "VIRTUAL_CLASS_TANK"
+attackType14_1 = "cvrbomb_vsr"
+attackType14_2 = "cvrbomb_vsr"
+targetType15 = "VIRTUAL_CLASS_TANK"
+attackType15_1 = "cvtalon_vsr"
+attackType15_2 = "cvtalon_vsr"
+attackType15_3 = "cvtalon_vsr"
+
+targetType16 = "VIRTUAL_CLASS_ARTILLERY"
+attackType16_1 = "cvtank_vsr"
+attackType16_2 = "cvtank_vsr"
+targetType17 = "VIRTUAL_CLASS_ARTILLERY"
+attackType17_1 = "cvrbomb_vsr"
+attackType17_2 = "cvrbomb_vsr"
+targetType18 = "VIRTUAL_CLASS_ARTILLERY"
+attackType18_1 = "cvatankcpu_vsr"
+
+targetType19 = "VIRTUAL_CLASS_ASSAULTTANK"
+attackType19_1 = "cvtank_vsr"
+attackType19_2 = "cvtank_vsr"
+attackType19_3 = "cvtank_vsr"
+targetType20 = "VIRTUAL_CLASS_ASSAULTTANK"
+attackType20_1 = "cvrbomb_vsr"
+attackType20_2 = "cvrbomb_vsr"
+targetType21 = "VIRTUAL_CLASS_ASSAULTTANK"
+attackType21_1 = "cvatankcpu_vsr"
+attackType21_2 = "cvatankcpu_vsr"
+targetType22 = "VIRTUAL_CLASS_ASSAULTTANK"
+attackType22_1 = "cvwalk_vsr"
+attackType22_2 = "cvwalk_vsr"
+
+targetType23 = "VIRTUAL_CLASS_WALKER"
+attackType23_1 = "cvrbomb_vsr"
+attackType23_2 = "cvrbomb_vsr"
+targetType24 = "VIRTUAL_CLASS_WALKER"
+attackType24_1 = "cvtank_vsr"
+attackType24_2 = "cvtank_vsr"
+targetType25 = "VIRTUAL_CLASS_WALKER"
+attackType25_1 = "cvwalk_vsr"
+attackType25_2 = "cvwalk_vsr"
+
+targetType26 = "VIRTUAL_CLASS_GUNTOWER"
+attackType26_1 = "cvatankcpu_vsr"
+attackType26_2 = "cvatankcpu_vsr"
+targetType27 = "VIRTUAL_CLASS_GUNTOWER"
+attackType27_1 = "cvrbomb_vsr"
+attackType27_2 = "cvrbomb_vsr"
+targetType28 = "VIRTUAL_CLASS_GUNTOWER"
+attackType28_1 = "cvtank_vsr"
+attackType28_2 = "cvtank_vsr"
+attackType28_3 = "cvtank_vsr"
+targetType29 = "VIRTUAL_CLASS_GUNTOWER"
+attackType29_1 = "cvtalon_vsr"
+attackType29_2 = "cvtalon_vsr"
+attackType29_3 = "cvtalon_vsr"
+
+targetType30 = "VIRTUAL_CLASS_TURRET"
+attackType30_1 = "cvtalon_vsr"
+attackType30_2 = "cvtalon_vsr"
+attackType30_3 = "cvtalon_vsr"
+targetType31 = "VIRTUAL_CLASS_TURRET"
+attackType31_1 = "cvtank_vsr"
+attackType31_2 = "cvtank_vsr"
+targetType32 = "VIRTUAL_CLASS_TURRET"
+attackType32_1 = "cvrbomb_vsr"
+targetType33 = "VIRTUAL_CLASS_TURRET"
+attackType33_1 = "cvscout_vsr"
+attackType33_2 = "cvscout_vsr"
+
+targetType34 = "VIRTUAL_CLASS_SCAVENGER"
+attackType34_1 = "cvtalon_vsr"
+targetType35 = "VIRTUAL_CLASS_SCAVENGER"
+attackType35_1 = "cvscout_vsr"
+targetType36 = "VIRTUAL_CLASS_SCAVENGER"
+attackType36_1 = "cvtank_vsr"
+targetType37 = "VIRTUAL_CLASS_SCAVENGER"
+attackType37_1 = "cvrbomb_vsr"
+
+targetType38 = "extract"
+attackType38_1 = "cvrbomb_vsr"
+targetType39 = "extract"
+attackType39_1 = "cvtank_vsr"
+targetType40 = "extract"
+attackType40_1 = "cvtalon_vsr"
+targetType41 = "extract"
+attackType41_1 = "cvscout_vsr"
+
+targetType42 = "extract"
+attackType42_1 = "cvrbomb_vsr"
+targetType43 = "extract"
+attackType43_1 = "cvtank_vsr"
+targetType44 = "extract"
+attackType44_1 = "cvtalon_vsr"
+targetType45 = "extract"
+attackType45_1 = "cvscout_vsr"
+
+targetType46 = "VIRTUAL_CLASS_CONSTRUCTIONRIG"
+attackType46_1 = "cvrbomb_vsr"
+targetType47 = "VIRTUAL_CLASS_CONSTRUCTIONRIG"
+attackType47_1 = "cvtank_vsr"
+targetType48 = "VIRTUAL_CLASS_CONSTRUCTIONRIG"
+attackType48_1 = "cvtalon_vsr"
+targetType49 = "VIRTUAL_CLASS_CONSTRUCTIONRIG"
+attackType49_1 = "cvscout_vsr"
+
+targetType50 = "VIRTUAL_CLASS_GUNTOWER"
+attackType50_1 = "cvatankcpu_vsr"
+attackType50_2 = "cvatankcpu_vsr"
+targetType51 = "VIRTUAL_CLASS_GUNTOWER"
+attackType51_1 = "cvrbomb_vsr"
+attackType51_2 = "cvrbomb_vsr"
+targetType52 = "VIRTUAL_CLASS_GUNTOWER"
+attackType52_1 = "cvtank_vsr"
+attackType52_2 = "cvtank_vsr"
+attackType52_3 = "cvtank_vsr"
+
+[Plan1]
+planType = "Service"
+planPriority = 640
+planCondition = "Exists"
+planConditionClass = "cvserv_vsr"
+planConditionCount = 2
+planCompare = ">="
+serviceUnit = "cvserv_vsr"
+minWreckAmmo = 0.8
+minWreckHealth = 0.8
+maxWreckAmmo = 1.0
+maxWreckHealth = 1.0
+maxWreckDist = 300.0
+repairTime = 60.0
+unitType1 = "cbrecy_vsr"
+unitType2 = "cbfact_vsr"
+unitType3 = "cbpgen_vsr"
+unitType4 = "cbgtow_vsr"
+unitType5 = "cbagen_vsr"
+unitType6 = "cbsbay_vsr"
+unitType7 = "cbcbun_vsr"
+unitType8 = "cbarmo_vsr"
+unitType9 = "cbtcen_vsr"
+unitType10 = "cbscup_vsr"
+unitType11 = "defender"
+unitType12 = "cvserv_vsr"
+
+[Plan2]
+planType = "DefendArea"
+planPriority = 630
+targetType = "cbrecy_vsr"
+maxCurScrap = 40
+ContinueEvenIfFail = true
+
+[Plan3]
+planType = "DefendArea"
+planPriority = 620
+targetType = "cbscup_vsr"
+maxCurScrap = 40
+ContinueEvenIfFail = true
+
+[Plan4]
+planType = "DefendArea"
+planPriority = 610
+targetType = "cbpgen_vsr"
+maxCurScrap = 40
+ContinueEvenIfFail = true
+
+[Plan5]
+planType = "DefendArea"
+planPriority = 600
+targetType = "cbagen_vsr"
+maxCurScrap = 40
+ContinueEvenIfFail = true
+
+[Plan6]
+planType = "DefendArea"
+planPriority = 590
+targetType = "cbgtow_vsr"
+maxCurScrap = 40
+ContinueEvenIfFail = true
+
+[Plan7]
+planType = "DefendArea"
+planPriority = 580
+targetType = "extract"
+maxCurScrap = 40
+ContinueEvenIfFail = true
+
+[Plan8]
+planType = "DefendArea"
+planPriority = 570
+targetType = "defender"
+maxCurScrap = 40
+ContinueEvenIfFail = true
+
+[Plan9]
+planType = "DefendArea"
+planPriority = 560
+targetType = "base"
+maxCurScrap = 40
+ContinueEvenIfFail = true
+
+[Plan10]
+planType = "DefendArea"
+planPriority = 550
+targetType = "cvturr_vsr"
+maxCurScrap = 40
+ContinueEvenIfFail = true
+
+[Plan11]
+planType = "DefendArea"
+planPriority = 540
+targetType = "cvcons_vsr"
+maxCurScrap = 40
+ContinueEvenIfFail = true
+
+[Plan12]
+planType = "Attacker"
+planPriority = 530
+planCondition = "Exists"
+planConditionClass = "cvrbomb_vsr"
+planConditionCount = 1
+planCompare = ">="
+planCondition2 = "HisExists"
+planConditionClass2 = "VIRTUAL_CLASS_BOMBERBAY"
+planConditionCount2 = 1
+planConditionClassProvided2 = true
+planCondition3 = "HisExists"
+planConditionClass3 = "VIRTUAL_CLASS_GUNTOWER"
+planConditionCount3 = 3
+planConditionClassProvided3 = true
+planCompare3 = "<="
+minTtlScrap = 100
+minCurScrap = 40
+targetType = "VIRTUAL_CLASS_BOMBERBAY"
+attackType1 = "cvtank_vsr"
+useScrapCost1 = false
+maxAttacks = 0
+ContinueEvenIfFail = true
+
+[Plan13]
+planType = "Attacker"
+planPriority = 520
+planCondition = "Exists"
+planConditionClass = "cvwalk_vsr"
+planConditionCount = 1
+planCompare = ">="
+planCondition2 = "HisExists"
+planConditionClass2 = "extract"
+planConditionCount2 = 2
+planConditionClassProvided2 = true
+planCompare2 = ">="
+maxTtlScrap = 100
+minCurScrap = 40
+targetType = "extract"
+attackType1 = "cvwalk_vsr"
+useScrapCost1 = false
+maxAttacks = 0
+ContinueEvenIfFail = true
+
+[Plan14]
+planType = "CollectPool"
+planPriority = 510
+buildIfNoIdle = 1
+
+[Plan15]
+planType = "BuildMinimums"
+planPriority = 500
+buildType1 = "cvscav_vsr"
+buildCount1 = 3
+
+[Plan16]
+planType = "CollectPool"
+planPriority = 490
+maxCurScrap = 20
+
+[Plan17]
+planType = "CollectPool"
+planPriority = 480
+minCurScrap = 20
+maxCurScrap = 40
+
+[Plan18]
+planType = "CollectPool"
+planPriority = 470
+minCurScrap = 40
+maxCurScrap = 60
+
+[Plan19]
+planType = "CollectPool"
+planPriority = 460
+maxCurScrap = 60
+minTtlScrap = 60
+maxTtlScrap = 80
+
+[Plan20]
+planType = "CollectPool"
+planPriority = 450
+maxCurScrap = 60
+minTtlScrap = 80
+maxTtlScrap = 100
+
+[Plan21]
+planType = "CollectPool"
+planPriority = 440
+maxCurScrap = 60
+minTtlScrap = 100
+
+[Plan22]
+planType = "CollectPool"
+planPriority = 430
+planCondition = "Exists"
+planConditionClass = "cvscav_vsr"
+planConditionCount = 2
+planConditionClassProvided = true
+maxCurScrap = 60
+
+[Plan23]
+planType = "CollectPool"
+planPriority = 420
+planCondition = "Exists"
+planConditionClass = "cvscav_vsr"
+planConditionCount = 3
+planConditionClassProvided = true
+maxCurScrap = 60
+
+[Plan24]
+planType = "CollectPool"
+planPriority = 410
+planCondition = "Exists"
+planConditionClass = "cvscav_vsr"
+planConditionCount = 4
+planConditionClassProvided = true
+maxCurScrap = 60
+
+[Plan25]
+planType = "BuildMinimums"
+planPriority = 400
+planCondition = "NotExists"
+planConditionClass = "cbfact_vsr"
+planConditionCount = 1
+planCondition2 = "NotExists"
+planConditionClass2 = "cbcbun_vsr"
+planConditionCount2 = 1
+planCondition3 = "NotExists"
+planConditionClass3 = "cbarmo_vsr"
+planConditionCount3 = 1
+planCondition4 = "NotExists"
+planConditionClass4 = "cbsbay_vsr"
+planConditionCount4 = 1
+planCondition5 = "NotExists"
+planConditionClass5 = "cbtcen_vsr"
+planConditionCount5 = 1
+planCondition6 = "NotExists"
+planConditionClass6 = "cbgtow_vsr"
+planConditionCount6 = 1
+planCompare6 = ">="
+buildType1 = "cvscout_vsr"
+buildCount1 = 2
+
+[Plan26]
+planType = "BuildMinimums"
+planPriority = 390
+planCondition = "NotExists"
+planConditionClass = "cbfact_vsr"
+planConditionCount = 1
+planConditionOr = true
+planCondition2 = "NotExists"
+planConditionClass2 = "cbcbun_vsr"
+planConditionCount2 = 1
+planConditionOr2 = true
+planCondition3 = "NotExists"
+planConditionClass3 = "cbarmo_vsr"
+planConditionCount3 = 1
+buildType1 = "cvscout_vsr"
+buildCount1 = 2
+
+[Plan27]
+planType = "BuildMinimums"
+planPriority = 380
+buildType1 = "cvcons_vsr"
+buildCount1 = 2
+
+[Plan28]
+planType = "BaseBuildMinimums"
+planPriority = 370
+MaxCurPower = 3
+buildType1 = "cbpgen_vsr"
+buildCount1 = 10
+
+[Plan29]
+planType = "BaseBuildMinimums"
+planPriority = 360
+buildHeading = 2
+buildType1 = "cbfact_vsr"
+buildCount1 = 1
+buildType2 = "cbcbun_vsr"
+buildCount2 = 1
+buildType3 = "cbarmo_vsr"
+buildCount3 = 1
+
+[Plan30]
+planType = "Upgrade"
+planPriority = 350
+planCondition = "NotExists"
+planConditionClass = "cbscup_vsr"
+planConditionCount = 1
+planCompare = ">="
+unitType = "cbscav_vsr"
+
+[Plan31]
+planType = "Attacker"
+planPriority = 340
+planCondition = "Exists"
+planConditionClass = "cvscout_vsr"
+planConditionCount = 3
+planCompare = ">="
+targetType = "VIRTUAL_CLASS_CONSTRUCTIONRIG"
+attackType1 = "cvscout_vsr"
+attackType2 = "cvscout_vsr"
+attackType3 = "cvscout_vsr"
+attackType4 = "cvscout_vsr"
+maxAttacks = 0
+ContinueEvenIfFail = true
+
+[Plan32]
+planType = "BuildMinimums"
+planPriority = 330
+planCondition = "NotExists"
+planConditionClass = "cbsbay_vsr"
+planConditionCount = 1
+planCondition2 = "NotExists"
+planConditionClass2 = "cbcbun_vsr"
+planConditionCount2 = 1
+planCondition3 = "NotExists"
+planConditionClass3 = "cbgtow_vsr"
+planConditionCount3 = 1
+planCompare3 = ">="
+buildType1 = "cvscout_vsr"
+buildCount1 = 2
+
+[Plan33]
+planType = "BuildMinimums"
+planPriority = 320
+planCondition = "NotExists"
+planConditionClass = "cbsbay_vsr"
+planConditionCount = 1
+planConditionOr = true
+planCondition2 = "NotExists"
+planConditionClass2 = "cbarmo_vsr"
+planConditionCount2 = 1
+planConditionOr2 = true
+planCondition3 = "Exists"
+planConditionClass3 = "cbgtow_vsr"
+planConditionCount3 = 1
+planCompare3 = "<="
+buildType1 = "cvscout_vsr"
+buildCount1 = 2
+
+[Plan34]
+planType = "BuildMinimums"
+planPriority = 310
+maxTtlScrap = 80
+buildType1 = "cvscout_vsr"
+buildCount1 = 2
+
+[Plan35]
+planType = "Attacker"
+planPriority = 305
+maxTtlScrap = 80
+targetType = "extract"
+targetType1 = "defender"
+targetType2 = "VIRTUAL_CLASS_COMMBUNKER"
+targetType3 = "VIRTUAL_CLASS_CONSTRUCTIONRIG"
+attackType1 = "cvscout_vsr"
+attackType2 = "cvscout_vsr"
+attackType3 = "cvscout_vsr"
+maxAttacks = 0
+attackAnything = true
+buildIfNoIdle = 1
+
+[Plan36]
+planType = "Attacker"
+planPriority = 300
+maxTtlScrap = 80
+targetType = "VIRTUAL_CLASS_SCOUT"
+attackType1 = "cvscout_vsr"
+attackType2 = "cvscout_vsr"
+maxAttacks = 0
+attackAnything = false
+buildIfNoIdle = 1
+
+[Plan37]
+planType = "BuildMinimums"
+planPriority = 290
+maxTtlScrap = 80
+buildType1 = "cvtank_vsr"
+buildCount1 = 2
+buildType2 = "cvrbomb_vsr"
+buildCount2 = 1
+
+[Plan38]
+planType = "Attacker"
+planPriority = 280
+maxTtlScrap = 80
+targetType = "VIRTUAL_CLASS_FACTORY"
+targetType1 = "VIRTUAL_CLASS_FORGE"
+targetType2 = "VIRTUAL_CLASS_SERVICETRUCK"
+targetType3 = "VIRTUAL_CLASS_RECYCLERBUILDING"
+attackType1 = "cvrbomb_vsr"
+attackType2 = "cvtank_vsr"
+attackType3 = "cvtank_vsr"
+maxAttacks = 0
+attackAnything = true
+buildIfNoIdle = 1
+
+[Plan39]
+planType = "Attacker"
+planPriority = 275
+maxTtlScrap = 80
+targetType = "VIRTUAL_CLASS_TANK"
+attackType1 = "cvscout_vsr"
+attackType2 = "cvscout_vsr"
+attackType3 = "cvtank_vsr"
+attackType4 = "cvtank_vsr"
+maxAttacks = 0
+attackAnything = false
+buildIfNoIdle = 1
+
+[Plan40]
+planType = "BuildMinimums"
+planPriority = 270
+maxTtlScrap = 80
+buildType1 = "cvtank_vsr"
+buildCount1 = 2
+buildType2 = "cvrbomb_vsr"
+buildCount2 = 1
+
+[Plan41]
+planType = "BaseBuildMinimums"
+planPriority = 260
+buildHeading = 2
+buildType1 = "cbgtow_vsr"
+buildCount1 = 3
+buildType2 = "cbsbay_vsr"
+buildCount2 = 1
+buildType3 = "cbtcen_vsr"
+buildCount3 = 1
+
+[Plan42]
+planType = "BuildMinimums"
+planPriority = 250
+buildType1 = "cvserv_vsr"
+buildCount1 = 2
+ContinueEvenIfFail = true
+
+[Plan43]
+planType = "Attacker"
+planPriority = 240
+planCondition = "Exists"
+planConditionClass = "cvtank_vsr"
+planConditionCount = 3
+planCompare = ">="
+targetType = "extract"
+attackType1 = "cvtank_vsr"
+attackType2 = "cvtank_vsr"
+attackType3 = "cvtank_vsr"
+maxAttacks = 0
+attackAnything = true
+ContinueEvenIfFail = true
+
+[Plan44]
+planType = "BuildMinimums"
+planPriority = 230
+planCondition = "HisExists"
+planConditionClass = "VIRTUAL_CLASS_POWERPLANT"
+planConditionCount = 1
+planConditionClassProvided = true
+planCompare = ">="
+planCondition2 = "Exists"
+planConditionClass2 = "cbgtow_vsr"
+planConditionCount2 = 5
+planCompare2 = ">="
+planCondition3 = "Exists"
+planConditionClass3 = "cbscup_vsr"
+planConditionCount3 = 2
+planCompare3 = ">="
+HisMinCurPower = 0
+HisMaxCurPower = 3
+buildType1 = "cvtank_vsr"
+buildCount1 = 3
+
+[Plan45]
+planType = "Attacker"
+planPriority = 220
+planCondition = "HisExists"
+planConditionClass = "VIRTUAL_CLASS_POWERPLANT"
+planConditionCount = 1
+planConditionClassProvided = true
+planCompare = ">="
+planCondition2 = "Exists"
+planConditionClass2 = "cbgtow_vsr"
+planConditionCount2 = 5
+planCompare2 = ">="
+planCondition3 = "Exists"
+planConditionClass3 = "cbscup_vsr"
+planConditionCount3 = 2
+planCompare3 = ">="
+HisMinCurPower = 0
+HisMaxCurPower = 3
+targetType = "VIRTUAL_CLASS_POWERPLANT"
+attackType1 = "cvtank_vsr"
+attackType2 = "cvtank_vsr"
+attackType3 = "cvrbomb_vsr"
+maxAttacks = 0
+attackAnything = false
+buildIfNoIdle = 1
+
+[Plan46]
+planType = "BuildMinimums"
+planPriority = 210
+planCondition = "HisExists"
+planConditionClass = "flier"
+planConditionCount = 1
+planConditionClassProvided = true
+planCompare = ">="
+minTtlScrap = 80
+buildType1 = "cvrbomb_vsr"
+buildCount1 = 1
+
+[Plan47]
+planType = "BuildMinimums"
+planPriority = 200
+planCondition = "HisExists"
+planConditionClass = "flier"
+planConditionCount = 1
+planConditionClassProvided = true
+planCompare = ">="
+minTtlScrap = 80
+buildType1 = "cvrbomb_vsr"
+buildCount1 = 2
+
+[Plan48]
+planType = "BuildMinimums"
+planPriority = 190
+planCondition = "HisExists"
+planConditionClass = "flier"
+planConditionCount = 1
+planConditionClassProvided = true
+planCompare = ">="
+buildType1 = "cvserv_vsr"
+buildCount1 = 4
+ContinueEvenIfFail = true
+
+[Plan49]
+planType = "BuildMinimums"
+planPriority = 180
+planCondition = "HisExists"
+planConditionClass = "flier"
+planConditionCount = 1
+planConditionClassProvided = true
+planCompare = ">="
+buildType1 = "cvserv_vsr"
+buildCount1 = 4
+ContinueEvenIfFail = true
+
+[Plan50]
+planType = "BaseBuildMinimums"
+planPriority = 170
+minTtlScrap = 120
+buildType1 = "cbagen_vsr"
+buildCount1 = 1
+buildType2 = "cbgtow_vsr"
+buildCount2 = 5
+
+[Plan51]
+planType = "BuildMinimums"
+planPriority = 160
+minTtlScrap = 110
+planCondition = "Exists"
+planConditionClass = "cbagen_vsr"
+planConditionCount = 1
+buildType1 = "cvgorg_vsr"
+buildCount1 = 1
+
+[Plan52]
+planType = "BuildMinimums"
+planPriority = 150
+maxTtlScrap = 100
+buildType1 = "cvrbomb_vsr"
+buildCount1 = 1
+buildType2 = "cvatankcpu_vsr"
+buildCount2 = 1
+buildType3 = "cvwalk_vsr"
+buildCount3 = 1
+buildType4 = "cvtank_vsr"
+buildCount4 = 4
+
+[Plan53]
+planType = "Attacker"
+planPriority = 140
+maxTtlScrap = 100
+targetType = "extract"
+targetType1 = "defender"
+targetType2 = "VIRTUAL_CLASS_COMMBUNKER"
+targetType3 = "VIRTUAL_CLASS_CONSTRUCTIONRIG"
+attackType1 = "cvwalk_vsr"
+attackType2 = "cvrbomb_vsr"
+attackType3 = "cvatankcpu_vsr"
+attackType4 = "cvtank_vsr"
+maxAttacks = 0
+attackAnything = true
+buildIfNoIdle = 1
+
+[Plan54]
+planType = "Attacker"
+planPriority = 135
+maxTtlScrap = 100
+targetType = "VIRTUAL_CLASS_TANK"
+attackType1 = "cvscout_vsr"
+attackType2 = "cvtank_vsr"
+attackType3 = "cvtank_vsr"
+maxAttacks = 0
+attackAnything = false
+buildIfNoIdle = 1
+
+[Plan55]
+planType = "BuildMinimums"
+planPriority = 130
+maxTtlScrap = 100
+buildType1 = "cvatankcpu_vsr"
+buildCount1 = 1
+buildType2 = "cvrbomb_vsr"
+buildCount2 = 1
+buildType3 = "cvwalk_vsr"
+buildCount3 = 1
+buildType4 = "cvtank_vsr"
+buildCount4 = 3
+
+[Plan56]
+planType = "Attacker"
+planPriority = 120
+maxTtlScrap = 100
+targetType = "VIRTUAL_CLASS_FACTORY"
+targetType1 = "VIRTUAL_CLASS_FORGE"
+targetType2 = "VIRTUAL_CLASS_SERVICETRUCK"
+targetType3 = "VIRTUAL_CLASS_RECYCLERBUILDING"
+attackType1 = "cvatankcpu_vsr"
+attackType2 = "cvtank_vsr"
+attackType3 = "cvrbomb_vsr"
+attackType4 = "cvwalk_vsr"
+maxAttacks = 0
+attackAnything = true
+buildIfNoIdle = 1
+
+[Plan57]
+planType = "Attacker"
+planPriority = 115
+maxTtlScrap = 100
+targetType = "VIRTUAL_CLASS_SCOUT"
+attackType1 = "cvscout_vsr"
+attackType2 = "cvtank_vsr"
+attackType3 = "cvtalon_vsr"
+attackType4 = "cvtalon_vsr"
+maxAttacks = 0
+attackAnything = false
+buildIfNoIdle = 1
+
+[Plan58]
+planType = "BuildMinimums"
+planPriority = 110
+maxTtlScrap = 100
+buildType1 = "cvdcarcpu_vsr"
+buildCount1 = 1
+buildType2 = "cvrbomb_vsr"
+buildCount2 = 1
+buildType3 = "cvatankcpu_vsr"
+buildCount3 = 1
+buildType4 = "cvrbomb_vsr"
+buildCount4 = 1
+buildType5 = "cvtank_vsr"
+buildCount5 = 3
+
+[Plan59]
+planType = "BuildMinimums"
+planPriority = 100
+minTtlScrap = 100
+buildType1 = "cvrbomb_vsr"
+buildCount1 = 1
+buildType2 = "cvatankcpu_vsr"
+buildCount2 = 1
+buildType3 = "cvtank_vsr"
+buildCount3 = 3
+buildType4 = "cvtalon_vsr"
+buildCount4 = 3
+
+[Plan60]
+planType = "Attacker"
+planPriority = 90
+planCondition = "HisExists"
+planConditionClass = "extract"
+planConditionCount = 2
+planConditionClassProvided = true
+planCompare = ">="
+minTtlScrap = 100
+targetType = "extract"
+targetType1 = "defender"
+targetType2 = "VIRTUAL_CLASS_COMMBUNKER"
+targetType3 = "VIRTUAL_CLASS_CONSTRUCTIONRIG"
+attackType1 = "cvtank_vsr"
+attackType2 = "cvrbomb_vsr"
+attackType3 = "cvwalk_vsr"
+attackType4 = "cvtalon_vsr"
+maxAttacks = 0
+attackAnything = true
+buildIfNoIdle = 1
+
+[Plan61]
+planType = "BaseBuildMinimums"
+planPriority = 80
+minTtlScrap = 100
+buildType1 = "cbgtow_vsr"
+buildCount1 = 6
+ContinueEvenIfFail = true
+
+[Plan62]
+planType = "BuildMinimums"
+planPriority = 70
+minTtlScrap = 100
+buildType1 = "cvrbomb_vsr"
+buildCount1 = 1
+buildType2 = "cvwalk_vsr"
+buildCount2 = 1
+buildType3 = "cvtank_vsr"
+buildCount3 = 3
+
+[Plan63]
+planType = "Attacker"
+planPriority = 60
+planCondition = "HisExists"
+planConditionClass = "extract"
+planConditionCount = 2
+planConditionClassProvided = true
+planCompare = ">="
+minTtlScrap = 100
+targetType = "VIRTUAL_CLASS_FACTORY"
+targetType1 = "VIRTUAL_CLASS_FORGE"
+targetType2 = "VIRTUAL_CLASS_SERVICETRUCK"
+targetType3 = "VIRTUAL_CLASS_RECYCLERBUILDING"
+attackType1 = "cvwalk_vsr"
+attackType2 = "cvrbomb_vsr"
+attackType3 = "cvtank_vsr"
+attackType4 = "cvtalon_vsr"
+attackType5 = "cvtank_vsr"
+maxAttacks = 0
+attackAnything = true
+buildIfNoIdle = 1
+
+[Plan64]
+planType = "Upgrade"
+planPriority = 50
+planCondition = "Exists"
+planConditionClass = "cbscup_vsr"
+planConditionCount = 2
+planCompare = "<="
+unitType = "cbscav_vsr"
+
+[Plan65]
+planType = "BuildMinimums"
+planPriority = 40
+minTtlScrap = 100
+buildType1 = "cvatankcpu_vsr"
+buildCount1 = 1
+buildType2 = "cvwalk_vsr"
+buildCount2 = 2
+buildType3 = "cvrbomb_vsr"
+buildCount3 = 2
+
+[Plan66]
+planType = "Attacker"
+planPriority = 30
+minTtlScrap = 100
+targetType = "VIRTUAL_CLASS_FACTORY"
+targetType1 = "VIRTUAL_CLASS_FORGE"
+targetType2 = "VIRTUAL_CLASS_RECYCLERBUILDING"
+attackType1 = "cvwalk_vsr"
+attackType2 = "cvatankcpu_vsr"
+attackType3 = "cvtank_vsr"
+attackType4 = "cvtalon_vsr"
+maxAttacks = 0
+attackAnything = true
+buildIfNoIdle = 1
+
+[Plan67]
+planType = "BuildMinimums"
+planPriority = 20
+buildType1 = "cvrbomb_vsr"
+buildCount1 = 1
+buildType2 = "cvatankcpu_vsr"
+buildCount2 = 1
+buildType3 = "cvtalon_vsr"
+buildCount3 = 2
+buildType4 = "cvdcarcpu_vsr"
+buildCount4 = 3
+buildType5 = "cvrbomb_vsr"
+buildCount5 = 2
+buildType6 = "cvgorg_vsr"
+buildCount6 = 1
+ContinueEvenIfFail = true
+
+[Plan68]
+planType = "Attacker"
+planPriority = 10
+minTtlScrap = 100
+targetType = "VIRTUAL_CLASS_FACTORY"
+targetType1 = "VIRTUAL_CLASS_FORGE"
+targetType2 = "VIRTUAL_CLASS_RECYCLERBUILDING"
+attackType1 = "cvwalk_vsr"
+attackType2 = "cvatankcpu_vsr"
+attackType3 = "cvrbomb_vsr"
+attackType3 = "cvdcarcpu_vsr"
+attackType4 = "cvtank_vsr"
+attackType5 = "cvtalon_vsr"
+attackType6 = "cvgorg_vsr"
+maxAttacks = 0
+attackAnything = true
+buildIfNoIdle = 1

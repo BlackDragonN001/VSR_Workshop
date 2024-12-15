@@ -1,0 +1,492 @@
+[Start]
+scrapCount=40
+consClass="cvcons_vsr"
+scavClass="cvscavcpu_vsr"
+IdleAllCraft=true
+CheckProvides=true
+
+unitsService=true
+Difficulty=2 // 1=Easy, 2=Medium, 3=Hard, 4=Extreme
+
+[Cheat]
+moneyAmount=20
+moneyDelay=10
+
+[IdleDispatcher]
+ScavIdleSeconds=5
+UnitIdleSeconds=20
+BomberIdleSeconds=0
+MaxBomberTargets=0
+MinAttackForce=3
+MaxAttackForce=99
+MinMissionSeconds=5
+
+MaxPatrolUnits=3
+MaxHuntUnits=3
+
+[Match]
+targetType1 = "VIRTUAL_CLASS_SCOUT"
+attackType1_1 = "cvscout_vsr"
+attackType1_2 = "cvscout_vsr"
+targetType2 = "VIRTUAL_CLASS_SCOUT"
+attackType2_1 = "cvtank_vsr"
+targetType3 = "VIRTUAL_CLASS_SCOUT"
+attackType3_1 = "cvrbomb_vsr"
+targetType4 = "VIRTUAL_CLASS_SCOUT"
+attackType4_1 = "cvtalon_vsr"
+attackType4_2 = "cvtalon_vsr"
+
+targetType5 = "VIRTUAL_CLASS_MORTARBIKE"
+attackType5_1 = "cvscout_vsr"
+attackType5_2 = "cvscout_vsr"
+targetType6 = "VIRTUAL_CLASS_MORTARBIKE"
+attackType6_1 = "cvtalon_vsr"
+attackType6_2 = "cvtalon_vsr"
+targetType7 = "VIRTUAL_CLASS_MORTARBIKE"
+attackType7_1 = "cvtank_vsr"
+targetType8 = "VIRTUAL_CLASS_MORTARBIKE"
+attackType8_1 = "cvrbomb_vsr"
+
+targetType9 = "VIRTUAL_CLASS_MISSILESCOUT"
+attackType9_1 = "cvscout_vsr"
+attackType9_2 = "cvscout_vsr"
+attackType9_3 = "cvscout_vsr"
+targetType10 = "VIRTUAL_CLASS_MISSILESCOUT"
+attackType10_1 = "cvtank_vsr"
+attackType10_2 = "cvtank_vsr"
+targetType11 = "VIRTUAL_CLASS_MISSILESCOUT"
+attackType11_1 = "cvrbomb_vsr"
+attackType11_2 = "cvrbomb_vsr"
+
+targetType12 = "VIRTUAL_CLASS_TANK"
+attackType12_1 = "cvscout_vsr"
+attackType12_2 = "cvscout_vsr"
+targetType13 = "VIRTUAL_CLASS_TANK"
+attackType13_1 = "cvtank_vsr"
+attackType13_2 = "cvtank_vsr"
+targetType14 = "VIRTUAL_CLASS_TANK"
+attackType14_1 = "cvrbomb_vsr"
+attackType14_2 = "cvrbomb_vsr"
+targetType15 = "VIRTUAL_CLASS_TANK"
+attackType15_1 = "cvtalon_vsr"
+attackType15_2 = "cvtalon_vsr"
+attackType15_3 = "cvtalon_vsr"
+
+targetType16 = "VIRTUAL_CLASS_ARTILLERY"
+attackType16_1 = "cvtank_vsr"
+attackType16_2 = "cvtank_vsr"
+targetType17 = "VIRTUAL_CLASS_ARTILLERY"
+attackType17_1 = "cvrbomb_vsr"
+attackType17_2 = "cvrbomb_vsr"
+targetType18 = "VIRTUAL_CLASS_ARTILLERY"
+attackType18_1 = "cvatankcpu_vsr"
+
+targetType19 = "VIRTUAL_CLASS_ASSAULTTANK"
+attackType19_1 = "cvtank_vsr"
+attackType19_2 = "cvtank_vsr"
+attackType19_3 = "cvtank_vsr"
+targetType20 = "VIRTUAL_CLASS_ASSAULTTANK"
+attackType20_1 = "cvrbomb_vsr"
+attackType20_2 = "cvrbomb_vsr"
+targetType21 = "VIRTUAL_CLASS_ASSAULTTANK"
+attackType21_1 = "cvatankcpu_vsr"
+attackType21_2 = "cvatankcpu_vsr"
+targetType22 = "VIRTUAL_CLASS_ASSAULTTANK"
+attackType22_1 = "cvwalk_vsr"
+attackType22_2 = "cvwalk_vsr"
+
+targetType23 = "VIRTUAL_CLASS_WALKER"
+attackType23_1 = "cvrbomb_vsr"
+attackType23_2 = "cvrbomb_vsr"
+targetType24 = "VIRTUAL_CLASS_WALKER"
+attackType24_1 = "cvtank_vsr"
+attackType24_2 = "cvtank_vsr"
+targetType25 = "VIRTUAL_CLASS_WALKER"
+attackType25_1 = "cvwalk_vsr"
+attackType25_2 = "cvwalk_vsr"
+
+targetType26 = "VIRTUAL_CLASS_GUNTOWER"
+attackType26_1 = "cvatankcpu_vsr"
+attackType26_2 = "cvatankcpu_vsr"
+targetType27 = "VIRTUAL_CLASS_GUNTOWER"
+attackType27_1 = "cvrbomb_vsr"
+attackType27_2 = "cvrbomb_vsr"
+targetType28 = "VIRTUAL_CLASS_GUNTOWER"
+attackType28_1 = "cvtank_vsr"
+attackType28_2 = "cvtank_vsr"
+attackType28_3 = "cvtank_vsr"
+targetType29 = "VIRTUAL_CLASS_GUNTOWER"
+attackType29_1 = "cvtalon_vsr"
+attackType29_2 = "cvtalon_vsr"
+attackType29_3 = "cvtalon_vsr"
+
+targetType30 = "VIRTUAL_CLASS_TURRET"
+attackType30_1 = "cvtalon_vsr"
+attackType30_2 = "cvtalon_vsr"
+attackType30_3 = "cvtalon_vsr"
+targetType31 = "VIRTUAL_CLASS_TURRET"
+attackType31_1 = "cvtank_vsr"
+attackType31_2 = "cvtank_vsr"
+targetType32 = "VIRTUAL_CLASS_TURRET"
+attackType32_1 = "cvrbomb_vsr"
+targetType33 = "VIRTUAL_CLASS_TURRET"
+attackType33_1 = "cvscout_vsr"
+attackType33_2 = "cvscout_vsr"
+
+targetType34 = "VIRTUAL_CLASS_SCAVENGER"
+attackType34_1 = "cvtalon_vsr"
+targetType35 = "VIRTUAL_CLASS_SCAVENGER"
+attackType35_1 = "cvscout_vsr"
+targetType36 = "VIRTUAL_CLASS_SCAVENGER"
+attackType36_1 = "cvtank_vsr"
+targetType37 = "VIRTUAL_CLASS_SCAVENGER"
+attackType37_1 = "cvrbomb_vsr"
+
+targetType38 = "extract"
+attackType38_1 = "cvrbomb_vsr"
+targetType39 = "extract"
+attackType39_1 = "cvtank_vsr"
+targetType40 = "extract"
+attackType40_1 = "cvtalon_vsr"
+targetType41 = "extract"
+attackType41_1 = "cvscout_vsr"
+
+targetType42 = "extract"
+attackType42_1 = "cvrbomb_vsr"
+targetType43 = "extract"
+attackType43_1 = "cvtank_vsr"
+targetType44 = "extract"
+attackType44_1 = "cvtalon_vsr"
+targetType45 = "extract"
+attackType45_1 = "cvscout_vsr"
+
+targetType46 = "VIRTUAL_CLASS_CONSTRUCTIONRIG"
+attackType46_1 = "cvrbomb_vsr"
+targetType47 = "VIRTUAL_CLASS_CONSTRUCTIONRIG"
+attackType47_1 = "cvtank_vsr"
+targetType48 = "VIRTUAL_CLASS_CONSTRUCTIONRIG"
+attackType48_1 = "cvtalon_vsr"
+targetType49 = "VIRTUAL_CLASS_CONSTRUCTIONRIG"
+attackType49_1 = "cvscout_vsr"
+
+targetType50 = "VIRTUAL_CLASS_GUNTOWER"
+attackType50_1 = "cvatankcpu_vsr"
+attackType50_2 = "cvatankcpu_vsr"
+targetType51 = "VIRTUAL_CLASS_GUNTOWER"
+attackType51_1 = "cvrbomb_vsr"
+attackType51_2 = "cvrbomb_vsr"
+targetType52 = "VIRTUAL_CLASS_GUNTOWER"
+attackType52_1 = "cvtank_vsr"
+attackType52_2 = "cvtank_vsr"
+attackType52_3 = "cvtank_vsr"
+
+[Plan1]
+planType="buildminimums"
+planPriority=210
+buildtype1="cvscavcpu_vsr"
+buildcount1=3
+
+[Plan2]
+planType="CollectPool"
+planPriority=205
+//continueEvenIfFail=true
+
+[plan3]
+plantype="buildminimums"
+planpriority=200
+buildtype1="cvscout_vsr"
+buildcount1=2
+buildtype2="cvturr_vsr"
+buildcount2=4
+buildtype3="cvcons_vsr"
+buildcount3=2
+
+[Plan4]
+planType="CollectPool"
+planpriority=195
+//continueEvenIfFail=true
+
+
+[plan5]
+plantype="attacker"
+planpriority=190
+// planCondition="Exists" // test
+// planConditionClass="ibsbay" // test
+// planConditionCount=1 // test
+// planConditionClassProvided=true // test
+targettype="Virtual_Class_Extractor"
+targettype1="Virtual_Class_Recycler"
+attacktype1="cvscout_vsr"
+attacktype2="cvscout_vsr"
+attacktype3="cvscout_vsr"
+buildIfNoIdle=true
+AttackAnything=true
+maxAttacks=4
+
+[plan6]
+plantype="basebuildminimums"
+planpriority=185
+MaxCurPower = 3
+buildtype1="cbpgen_vsr"
+buildcount1=10
+buildtype2="cbcbun_vsr"
+buildtype3="cbfact_vsr"
+
+
+[plan7]
+plantype="buildminimums"
+planpriority=165
+buildtype1="cvscout_vsr"
+buildcount1=2
+
+
+[plan8]
+plantype="collectpool"
+planpriority=175
+//continueEvenIfFail=true
+
+[plan9]
+plantype="attacker"
+planpriority=170
+targettype="Virtual_Class_Turret"
+targettype1="Virtual_Class_PowerPlant"
+targettype2="Virtual_Class_Recycler"
+attacktype1="cvtank_vsr"
+attacktype2="cvtank_vsr"
+attacktype3="cvtank_vsr"
+buildIfNoIdle=true
+AttackAnything=true
+maxAttacks=3
+
+[plan10]
+plantype="buildminimums"
+planpriority=165
+buildtype1="cvturr_vsr"
+buildcount1=6
+
+
+[plan11]
+plantype="collectpool"
+planpriority=160
+//continueEvenIfFail=true
+
+[plan12]
+plantype="basebuildminimums"
+planpriority=155
+buildtype1="cbarmo_vsr"
+buildtype2="cbsbay_vsr"
+
+[plan13]
+plantype="attacker"
+planpriority=150
+targettype="Virtual_Class_Turret"
+targettype1="Virtual_Class_Recycler"
+attacktype1="cvrbomb_vsr"
+attacktype2="cvtank_vsr"
+attacktype3="cvtank_vsr"
+buildIfNoIdle=true
+AttackAnything=true
+maxAttacks=3
+
+[plan14]
+plantype="buildminimums"
+planpriority=145
+buildtype1="cvscout_vsr"
+buildcount1=2
+
+[plan15]
+plantype="basebuildminimums"
+planpriority=142
+minTtlScrap = 120
+buildtype1="cbgtow_vsr"
+buildCount1=4
+buildtype2="cbtcen_vsr"
+buildtype3="cbjamm_vsr"
+buildtype4="cbagen_vsr"
+
+[plan16]
+plantype="attacker"
+planpriority=140
+targettype="Virtual_Class_PowerPlant"
+targettype1="Virtual_Class_CommBunker"
+targettype2="Virtual_Class_Factory"
+attacktype1="cvrbomb_vsr"
+attacktype2="cvrbomb_vsr"
+attacktype3="cvrbomb_vsr"
+BuildIfNoIdle=true
+AttackAnything=true
+maxAttacks=3
+
+[plan17]
+plantype="buildminimums"
+planpriority=135
+buildtype1="cvwalk_vsr"
+buildcount1=3
+
+[plan18]
+plantype="basebuildminimums"
+planpriority=130
+buildtype1="cbgtow_vsr"
+buildcount1=5
+
+
+[plan19]
+plantype="attacker"
+planpriority=125
+targettype="Virtual_Class_Guntower"
+targettype1="Virtual_Class_PowerPlant"
+targettype2="Virtual_Class_Armory"
+attacktype1="cvwalk_vsr"
+attacktype2="cvwalk_vsr"
+attacktype3="cvwalk_vsr"
+AttackAnything=true
+maxAttacks=2
+
+[plan20]
+plantype="buildminimums"
+planpriority=120
+buildtype1="cvdcarcpu_vsr"
+buildcount1=3
+
+[plan21]
+plantype="basebuildminimums"
+planpriority=115
+buildtype1="cbgtow_vsr"
+buildCount1=3
+
+[plan22]
+plantype="buildminimums"
+planpriority=110
+buildtype1="cvserv_vsr"
+buildcount1=3
+
+[plan23]
+plantype="collectpool"
+planpriority=105
+//continueEvenIfFail=true
+
+[plan24]
+plantype="basebuildminimums"
+planpriority=100
+buildtype1="cbgtow_vsr"
+buildCount1=5
+//continueEvenIfFail=true
+
+[plan25]
+plantype="buildminimums"
+planpriority=95
+buildtype1="cvrbomb_vsr"
+buildcount1=3
+
+
+[plan26]
+plantype="collectpool"
+planpriority=90
+//continueEvenIfFail=true
+
+
+[plan27]
+planpriority=85
+plantype="attacker"
+targettype="Virtual_Class_Armory"
+targettype1="Virtual_Class_PowerPlant"
+targettype2="Virtual_Class_SupplyDepot"
+attacktype1="cvrbomb_vsr"
+attacktype2="cvrbomb_vsr"
+attacktype3="cvrbomb_vsr"
+attacktype4="cvdcarcpu_vsr"
+buildIfNoIdle=true
+AttackAnything=true
+maxAttacks=0
+
+
+[plan28]
+plantype="buildminimums"
+planpriority=80
+buildtype1="cvatankcpu_vsr"
+buildcount1=3
+
+[plan29]
+plantype="collectpool"
+planpriority=75
+//continueEvenIfFail=true
+
+[plan30]
+plantype="attacker"
+planpriority=70
+targettype="Virtual_Class_SupplyDepot"
+targettype1="Virtual_Class_Armory"
+targettype2="Virtual_Class_Factory"
+attacktype1="cvhatank_vsr"
+attacktype2="cvhatank_vsr"
+attacktype3="cvdcarcpu_vsr"
+AttackAnything=true
+maxAttacks=0
+
+[plan31]
+plantype="buildminimums"
+planpriority=68
+buildtype1="cvtalon_vsr"
+buildcount1=3
+
+[plan32]
+plantype="collectpool"
+planpriority=65
+//continueEvenIfFail=true
+
+[plan33]
+plantype="attacker"
+planpriority=62
+targettype="Virtual_Class_Factory"
+targettype1="Virtual_Class_Recycler"
+targettype2="Virtual_Class_TechCenter"
+attacktype1="cvtalon_vsr"
+attacktype2="cvtalon_vsr"
+attacktype3="cvtalon_vsr"
+buildIfNoIdle=true
+AttackAnything=true
+maxAttacks=4
+
+
+[plan34]
+plantype="buildminimums"
+planpriority=60
+buildtype1="cvgorg_vsr"
+buildcount1=2
+
+[plan35]
+plantype="collectpool"
+planpriority=55
+//continueEvenIfFail=true
+
+[plan36]
+plantype="attacker"
+planpriority=50
+targettype="Virtual_Class_TechCenter"
+targettype1="Virtual_Class_Armory"
+attacktype1="cvwraith_vsr"
+attacktype2="cvwraith_vsr"
+AttackAnything=true
+maxAttacks=0
+
+[Plan37]
+planType="Attacker"
+planPriority=45
+targetType="Virtual_Class_Extractor"
+attackType1="cvtalon_vsr"
+attackType2="cvtalon_vsr"
+attackType3="cvtalon_vsr"
+AttackAnything=true
+maxAttacks=0
+buildIfNoIdle=1
+
+[Plan38]
+planType="Attacker"
+planPriority=44
+targettype="Virtual_Class_Recycler"
+attackType1="cvwalk_vsr"
+attackType2="cvwalk_vsr"
+attackType3="cvwalk_vsr"
+AttackAnything=true
+maxAttacks=0
+buildIfNoIdle=1
