@@ -2,7 +2,7 @@
 [EasyWeaponSlot1]
 aiPatrolChance = 0.1
 aiHuntChance = 0.1
-weaponName1 = "apcplasma"
+//weaponName1 = "apcplasma"
 
 WeaponMask1 = 1
 WeaponMask2 = 7
@@ -11,16 +11,19 @@ WeaponMask2 = 7
 // Filled by the above slot
 
 [EasyWeaponSlot3]
-weaponName1 = "apcslam"
+//weaponName1 = "apcslam"
 
 [EasyWeaponSlot4]
-weaponName1 = "apcshield"
+weaponName1 = "apcshld"
+weaponName2 = "apcshld"
+weaponName3 = "apcabso"
+weaponName4 = "apcdefl"
 
 // Medium Difficulty
 [MediumWeaponSlot1]
 aiPatrolChance = 0.1
 aiHuntChance = 0.1
-weaponName1 = "apcplasma"
+//weaponName1 = "apcplasma"
 
 WeaponMask1 = 1
 WeaponMask2 = 7
@@ -29,17 +32,20 @@ WeaponMask2 = 7
 // Filled by the above slot
 
 [MediumWeaponSlot3]
-weaponName1 = "apcslam"
+//weaponName1 = "apcslam"
 
 [MediumWeaponSlot4]
-weaponName1 = "apcshield"
+weaponName1 = "apcshld"
+weaponName2 = "apcshld"
+weaponName3 = "apcabso"
+weaponName4 = "apcdefl"
 
 
 // Hard Difficulty
 [HardWeaponSlot1]
 aiPatrolChance = 0.1
 aiHuntChance = 0.1
-weaponName1 = "apcplasma"
+//weaponName1 = "apcplasma"
 
 WeaponMask1 = 1
 WeaponMask2 = 7
@@ -48,17 +54,19 @@ WeaponMask2 = 7
 // Filled by the above slot
 
 [HardWeaponSlot3]
-weaponName1 = "apcslam"
+//weaponName1 = "apcslam"
 
 [HardWeaponSlot4]
-weaponName1 = "apcshield"
+weaponName1 = "apcshld"
+weaponName2 = "apcabso"
+weaponName3 = "apcdefl"
 
 
 // Extreme Difficulty
 [ExtremeWeaponSlot1]
 aiPatrolChance = 0.1
 aiHuntChance = 0.1
-weaponName1 = "apcplasma"
+//weaponName1 = "apcplasma"
 
 WeaponMask1 = 1
 WeaponMask2 = 7
@@ -67,8 +75,10 @@ WeaponMask2 = 7
 // Filled by the above slot
 
 [ExtremeWeaponSlot3]
-weaponName1 = "apcslam"
+//weaponName1 = "apcslam"
 
 [ExtremeWeaponSlot4]
-weaponName1 = "apcshield"
+weaponName1 = "apcshld"
+weaponName2 = "apcabso"
+weaponName3 = "apcdefl"
 
