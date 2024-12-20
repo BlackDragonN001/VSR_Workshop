@@ -1,0 +1,32 @@
+[OrdnanceClass]
+classLabel = "spraybomb" //"grenade"
+
+shotGeometry = NULL //"ioartl00.xsi"
+shotSound = "crckt02.wav"
+
+xplGround = "xhfiregnd"
+xplVehicle = "xhfire" //"xhfirecar"
+xplBuilding = "xhfire"
+xplExpire = "xhfire"
+
+renderName = "hfire.render"
+
+ammoCost = 200
+lifeSpan = 20.0 //60.0
+shotSpeed = 65.0
+
+damageValue(N) = 225 // none
+damageValue(L) = 200 // light
+damageValue(H) = 150 // heavy
+
+damageValue(S) = 200 // standard
+damageValue(D) = 225 // deflection
+damageValue(A) = 150 // absorbtion
+
+[SprayBombClass]
+payloadName = "hfire2insane_vsr"
+bounceRatio = 0.001
+soundBounce = "bounce.wav"
+hitExplodeTypes = 31
+buildSprayOnHit = true
+explodeOnHit = true

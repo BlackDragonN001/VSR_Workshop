@@ -1,0 +1,34 @@
+[GameObjectClass]
+geometryName = NULL //"igflar00.fbx"
+classLabel = "flare"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = " "
+heatSignature = 0.0
+effectHard1 = " "
+effectName1 = "hfire2.render"
+explosionName = "" //"xhfire"
+scanTeamLimit = 3
+canInteract = false
+
+[MineClass]
+lifeSpan = 10.0
+
+[FlareMineClass]
+payloadName = NULL //"flarepuff"
+fireSound = "smine01.wav" // Need a good crackling fire sound here... -GBD
+triggerDelay = 0.0
+shotDelay = 1e30
+shotVariance = 1.6
+damageRadius = 50.0 //75.0
+damageValue(N) = 150 // none
+damageValue(L) = 100 // light
+damageValue(H) = 75 // heavy
+damageValue(S) = 100 // standard
+damageValue(D) = 150 // deflection
+damageValue(A) = 75 // absorbtion
+kickRadius = 0.0
+kickVeloc = 0.0
+kickOmega = 0.0
