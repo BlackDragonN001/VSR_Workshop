@@ -72,7 +72,7 @@ function BuildPowerLoopCondition(team, time)
         return false, "I don't have a Constructor yet.";
     end
 
-    if (AIPUtil.GetPower(team, false) > 0) then
+    if (AIPUtil.GetPower(team, false) > 3) then
         return false, "I already have enough Power.";
     end
 
