@@ -1,37 +1,42 @@
+// Cerberi Stock VSR AIP
+// Written by AI_Unit
+// Version 1.0
+// Date Modified 22/12/2024.
+
 [Start]
-scrapCount=40
-consClass="cvconscpu_vsr"
-scavClass="cvscavcpu_vsr"
-IdleAllCraft=true
-CheckProvides=true
-
-unitsService=true
-Difficulty=2 // 1=Easy, 2=Medium, 3=Hard, 4=Extreme
-
-[Cheat]
-moneyAmount=20
-moneyDelay=10
+scavClass = "cvscavcpu_vsr"
+consClass = "cvconscpu_vsr"
+scrapCount = 40
+IdleAllCraft = true
+CheckProvides = true
+unitsService = true
+Difficulty = 2 // 1=Easy, 2=Medium, 3=Hard, 4=Extreme
+DLLCanSwitch = false // BD has confirmed that VSR does not switch DLLs, so to prevent any weird issues with undeploying, etc, just lock this.
+baseLoc = "RecyclerEnemy" // Tested before, and this makes the Recycler deploy faster, so we will use it.
 
 [IdleDispatcher]
-ScavIdleSeconds=5
-UnitIdleSeconds=20
-BomberIdleSeconds=0
-MaxBomberTargets=0
-MinAttackForce=3
-MaxAttackForce=99
-MinMissionSeconds=5
+ScavIdleSeconds = 2
+UnitIdleSeconds = 75
+MinAttackForce = 2
+MaxAttackForce = 6
+MaxPatrolUnits = 3
+MaxHuntUnits = 3
 
-MaxPatrolUnits=3
-MaxHuntUnits=3
+[Cheat]
+moneyAmount = 20
+moneyDelay = 10
 
 [Match]
 targetType1 = "VIRTUAL_CLASS_SCOUT"
 attackType1_1 = "cvscout_vsr"
 attackType1_2 = "cvscout_vsr"
+
 targetType2 = "VIRTUAL_CLASS_SCOUT"
 attackType2_1 = "cvtank_vsr"
+
 targetType3 = "VIRTUAL_CLASS_SCOUT"
 attackType3_1 = "cvrbomb_vsr"
+
 targetType4 = "VIRTUAL_CLASS_SCOUT"
 attackType4_1 = "cvtalon_vsr"
 attackType4_2 = "cvtalon_vsr"
@@ -39,34 +44,40 @@ attackType4_2 = "cvtalon_vsr"
 targetType5 = "VIRTUAL_CLASS_MORTARBIKE"
 attackType5_1 = "cvscout_vsr"
 attackType5_2 = "cvscout_vsr"
+
 targetType6 = "VIRTUAL_CLASS_MORTARBIKE"
 attackType6_1 = "cvtalon_vsr"
 attackType6_2 = "cvtalon_vsr"
+
 targetType7 = "VIRTUAL_CLASS_MORTARBIKE"
 attackType7_1 = "cvtank_vsr"
+
 targetType8 = "VIRTUAL_CLASS_MORTARBIKE"
 attackType8_1 = "cvrbomb_vsr"
 
 targetType9 = "VIRTUAL_CLASS_MISSILESCOUT"
 attackType9_1 = "cvscout_vsr"
 attackType9_2 = "cvscout_vsr"
-attackType9_3 = "cvscout_vsr"
+
 targetType10 = "VIRTUAL_CLASS_MISSILESCOUT"
 attackType10_1 = "cvtank_vsr"
 attackType10_2 = "cvtank_vsr"
+
 targetType11 = "VIRTUAL_CLASS_MISSILESCOUT"
 attackType11_1 = "cvrbomb_vsr"
-attackType11_2 = "cvrbomb_vsr"
 
 targetType12 = "VIRTUAL_CLASS_TANK"
 attackType12_1 = "cvscout_vsr"
 attackType12_2 = "cvscout_vsr"
+
 targetType13 = "VIRTUAL_CLASS_TANK"
 attackType13_1 = "cvtank_vsr"
 attackType13_2 = "cvtank_vsr"
+
 targetType14 = "VIRTUAL_CLASS_TANK"
 attackType14_1 = "cvrbomb_vsr"
 attackType14_2 = "cvrbomb_vsr"
+
 targetType15 = "VIRTUAL_CLASS_TANK"
 attackType15_1 = "cvtalon_vsr"
 attackType15_2 = "cvtalon_vsr"
@@ -75,9 +86,11 @@ attackType15_3 = "cvtalon_vsr"
 targetType16 = "VIRTUAL_CLASS_ARTILLERY"
 attackType16_1 = "cvtank_vsr"
 attackType16_2 = "cvtank_vsr"
+
 targetType17 = "VIRTUAL_CLASS_ARTILLERY"
 attackType17_1 = "cvrbomb_vsr"
 attackType17_2 = "cvrbomb_vsr"
+
 targetType18 = "VIRTUAL_CLASS_ARTILLERY"
 attackType18_1 = "cvatankcpu_vsr"
 
@@ -85,12 +98,15 @@ targetType19 = "VIRTUAL_CLASS_ASSAULTTANK"
 attackType19_1 = "cvtank_vsr"
 attackType19_2 = "cvtank_vsr"
 attackType19_3 = "cvtank_vsr"
+
 targetType20 = "VIRTUAL_CLASS_ASSAULTTANK"
 attackType20_1 = "cvrbomb_vsr"
 attackType20_2 = "cvrbomb_vsr"
+
 targetType21 = "VIRTUAL_CLASS_ASSAULTTANK"
 attackType21_1 = "cvatankcpu_vsr"
 attackType21_2 = "cvatankcpu_vsr"
+
 targetType22 = "VIRTUAL_CLASS_ASSAULTTANK"
 attackType22_1 = "cvwalk_vsr"
 attackType22_2 = "cvwalk_vsr"
@@ -98,9 +114,11 @@ attackType22_2 = "cvwalk_vsr"
 targetType23 = "VIRTUAL_CLASS_WALKER"
 attackType23_1 = "cvrbomb_vsr"
 attackType23_2 = "cvrbomb_vsr"
+
 targetType24 = "VIRTUAL_CLASS_WALKER"
 attackType24_1 = "cvtank_vsr"
 attackType24_2 = "cvtank_vsr"
+
 targetType25 = "VIRTUAL_CLASS_WALKER"
 attackType25_1 = "cvwalk_vsr"
 attackType25_2 = "cvwalk_vsr"
@@ -108,13 +126,16 @@ attackType25_2 = "cvwalk_vsr"
 targetType26 = "VIRTUAL_CLASS_GUNTOWER"
 attackType26_1 = "cvatankcpu_vsr"
 attackType26_2 = "cvatankcpu_vsr"
+
 targetType27 = "VIRTUAL_CLASS_GUNTOWER"
 attackType27_1 = "cvrbomb_vsr"
 attackType27_2 = "cvrbomb_vsr"
+
 targetType28 = "VIRTUAL_CLASS_GUNTOWER"
 attackType28_1 = "cvtank_vsr"
 attackType28_2 = "cvtank_vsr"
 attackType28_3 = "cvtank_vsr"
+
 targetType29 = "VIRTUAL_CLASS_GUNTOWER"
 attackType29_1 = "cvtalon_vsr"
 attackType29_2 = "cvtalon_vsr"
@@ -124,369 +145,532 @@ targetType30 = "VIRTUAL_CLASS_TURRET"
 attackType30_1 = "cvtalon_vsr"
 attackType30_2 = "cvtalon_vsr"
 attackType30_3 = "cvtalon_vsr"
+
 targetType31 = "VIRTUAL_CLASS_TURRET"
 attackType31_1 = "cvtank_vsr"
 attackType31_2 = "cvtank_vsr"
+
 targetType32 = "VIRTUAL_CLASS_TURRET"
 attackType32_1 = "cvrbomb_vsr"
+
 targetType33 = "VIRTUAL_CLASS_TURRET"
 attackType33_1 = "cvscout_vsr"
 attackType33_2 = "cvscout_vsr"
 
 targetType34 = "VIRTUAL_CLASS_SCAVENGER"
 attackType34_1 = "cvtalon_vsr"
+
 targetType35 = "VIRTUAL_CLASS_SCAVENGER"
 attackType35_1 = "cvscout_vsr"
+
 targetType36 = "VIRTUAL_CLASS_SCAVENGER"
 attackType36_1 = "cvtank_vsr"
+
 targetType37 = "VIRTUAL_CLASS_SCAVENGER"
 attackType37_1 = "cvrbomb_vsr"
 
 targetType38 = "extract"
 attackType38_1 = "cvrbomb_vsr"
+
 targetType39 = "extract"
 attackType39_1 = "cvtank_vsr"
+
 targetType40 = "extract"
 attackType40_1 = "cvtalon_vsr"
+
 targetType41 = "extract"
 attackType41_1 = "cvscout_vsr"
 
 targetType42 = "extract"
 attackType42_1 = "cvrbomb_vsr"
+
 targetType43 = "extract"
 attackType43_1 = "cvtank_vsr"
+
 targetType44 = "extract"
 attackType44_1 = "cvtalon_vsr"
+
 targetType45 = "extract"
 attackType45_1 = "cvscout_vsr"
 
 targetType46 = "VIRTUAL_CLASS_CONSTRUCTIONRIG"
 attackType46_1 = "cvrbomb_vsr"
+
 targetType47 = "VIRTUAL_CLASS_CONSTRUCTIONRIG"
 attackType47_1 = "cvtank_vsr"
+
 targetType48 = "VIRTUAL_CLASS_CONSTRUCTIONRIG"
 attackType48_1 = "cvtalon_vsr"
+
 targetType49 = "VIRTUAL_CLASS_CONSTRUCTIONRIG"
 attackType49_1 = "cvscout_vsr"
 
 targetType50 = "VIRTUAL_CLASS_GUNTOWER"
 attackType50_1 = "cvatankcpu_vsr"
 attackType50_2 = "cvatankcpu_vsr"
+
 targetType51 = "VIRTUAL_CLASS_GUNTOWER"
 attackType51_1 = "cvrbomb_vsr"
 attackType51_2 = "cvrbomb_vsr"
+
 targetType52 = "VIRTUAL_CLASS_GUNTOWER"
 attackType52_1 = "cvtank_vsr"
 attackType52_2 = "cvtank_vsr"
 attackType52_3 = "cvtank_vsr"
 
 [Plan1]
-planType="buildminimums"
-planPriority=210
-buildtype1="cvscavcpu_vsr"
-buildcount1=3
+planType = "BuildLoop"
+planPriority = 1000
+planCondition = "Lua"
+buildType1 = "apserv"
+buildCount1 = 2
+LuaFunction = "BuildServicePodCondition"
 
 [Plan2]
-planType="CollectPool"
-planPriority=205
-//continueEvenIfFail=true
+planType = "Recover"
+planPriority = 990
+planCondition = "Lua"
+serviceUnit = "apserv"
+MinWreckAmmo = 0.2
+MaxWreckAmmo = 0.6
+MinWreckHealth = 0.3
+MaxWreckHealth = 0.45
+unitType1 = "cvscout_vsr"
+unitType2 = "cvtank_vsr"
+unitType3 = "cvrbomb_vsr"
+LuaFunction = "EarlyRecoverCondition"
 
-[plan3]
-plantype="buildminimums"
-planpriority=200
-buildtype1="cvscout_vsr"
-buildcount1=2
-buildtype2="cvturr_vsr"
-buildcount2=4
-buildtype3="cvconscpu_vsr"
-buildcount3=2
+[Plan3]
+planType = "Recover"
+planPriority = 980
+planCondition = "Lua"
+serviceUnit = "cbsbay_vsr"
+MinWreckAmmo = 0.2
+MaxWreckAmmo = 0.4
+MinWreckHealth = 0.4
+MaxWreckHealth = 0.65
+unitType1 = "cvcons_vsr"
+unitType2 = "cvscout_vsr"
+unitType3 = "cvtank_vsr"
+unitType4 = "cvrbomb_vsr"
+unitType5 = "cvatank_vsr"
+unitType6 = "cvmlay_vsr"
+unitType7 = "cvhatank_vsr"
+LuaFunction = "ServiceBayRecoveryCondition"
 
 [Plan4]
-planType="CollectPool"
-planpriority=195
-//continueEvenIfFail=true
+planType = "Service"
+planPriority = 970
+planCondition = "Lua"
+serviceUnit = "cvservcpu_vsr"
+MinWreckAmmo = 0.1
+MaxWreckAmmo = 0.7
+MinWreckHealth = 0.25
+MaxWreckHealth = 0.5
+RepairTime = 40
+unitType1 = "cvdcar_vsr"
+unitType2 = "cbgtow_vsr"
+unitType3 = "cbrecy_vsr"
+unitType4 = "cbfact_vsr"
+unitType5 = "cbcbun_vsr"
+unitType6 = "cbarmo_vsr"
+unitType7 = "cbtcen_vsr"
+unitType8 = "cbagen_vsr"
+unitType9 = "cbjamm_vsr"
+unitType10 = "cvhatank_vsr"
+unitType11 = "cvwalk_vsr"
+unitType12 = "cvcons_vsr"
+unitType13 = "cvgorg_vsr"
+LuaFunction = "ServiceTruckServiceCondition"
 
+[Plan5] // Unique plan for starting units. Send the Stock Scav to do something.
+planType = "CollectPool"
+planPriority = 400
+planCondition1 = "Exists"
+planConditionClass1 = "cvscav"
+planConditionCount1 = 1
+planConditionClassProvided1 = true
+scavClass = "cvscav"
+buildIfNoIdle = false
+ContinueEvenIfFail = true
 
-[plan5]
-plantype="attacker"
-planpriority=190
-// planCondition="Exists" // test
-// planConditionClass="ibsbay" // test
-// planConditionCount=1 // test
-// planConditionClassProvided=true // test
-targettype="Virtual_Class_Extractor"
-targettype1="Virtual_Class_Recycler"
-attacktype1="cvscout_vsr"
-attacktype2="cvscout_vsr"
-attacktype3="cvscout_vsr"
-buildIfNoIdle=true
-AttackAnything=true
-maxAttacks=4
+//[Plan6] // Move the turrets out of the way of the Recycler deployment zone.
+//planType = "Hold"
+//planPriority = 390
+//planCondition1 = "Exists"
+//planConditionClass1 = "cvturr"
+//planConditionCount1 = 1
+//planConditionClassProvided1 = true
+//holdPoint = "turretEnemy1"
+//holdType1 = "cvturr"
+//holdCount1 = 1
+//maxTimes = 3
+//buildIfNoIdle = false
 
-[plan6]
-plantype="basebuildminimums"
-planpriority=185
-MaxCurPower = 3
-buildtype1="cbpgen_vsr"
-buildcount1=10
-buildtype2="cbcbun_vsr"
-buildtype3="cbfact_vsr"
+//[Plan7] // Move the turrets out of the way of the Recycler deployment zone.
+//planType = "Hold"
+//planPriority = 380
+//planCondition1 = "Exists"
+//planConditionClass1 = "cvturr"
+//planConditionCount1 = 1
+//planConditionClassProvided1 = true
+//holdPoint = "hold2"
+//holdType1 = "cvturr"
+//holdCount1 = 1
+//maxTimes = 3
+//buildIfNoIdle = false
 
+[Plan8]
+planType = "BuildMinimums"
+planPriority = 370
+planCondition = "Lua"
+buildType1 = "cvscavcpu_vsr"
+buildCount1 = 4
+LuaFunction = "BuildScavengerCondition"
 
-[plan7]
-plantype="buildminimums"
-planpriority=165
-buildtype1="cvscout_vsr"
-buildcount1=2
+[Plan9]
+planType = "CollectField"
+planPriority = 360
+planCondition = "Lua"
+ContinueEvenIfFail = true
+LuaFunction = "CollectFieldCondition"
 
+[Plan10]
+planType = "CollectPool"
+planPriority = 350
+planCondition = "Lua"
+ContinueEvenIfFail = true
+LuaFunction = "CollectPoolCondition"
 
-[plan8]
-plantype="collectpool"
-planpriority=175
-//continueEvenIfFail=true
+[Plan11]
+planType = "CollectField"
+planPriority = 340
+planCondition = "Lua"
+ContinueEvenIfFail = true
+LuaFunction = "CollectFieldCondition"
 
-[plan9]
-plantype="attacker"
-planpriority=170
-targettype="Virtual_Class_Turret"
-targettype1="Virtual_Class_PowerPlant"
-targettype2="Virtual_Class_Recycler"
-attacktype1="cvtank_vsr"
-attacktype2="cvtank_vsr"
-attacktype3="cvtank_vsr"
-buildIfNoIdle=true
-AttackAnything=true
-maxAttacks=3
+[Plan12]
+planType = "CollectPool"
+planPriority = 330
+planCondition = "Lua"
+ContinueEvenIfFail = true
+LuaFunction = "CollectPoolCondition"
 
-[plan10]
-plantype="buildminimums"
-planpriority=165
-buildtype1="cvturr_vsr"
-buildcount1=6
+[Plan13]
+planType = "BuildMinimums"
+planPriority = 320
+planCondition = "Lua"
+buildType1 = "cvconscpu_vsr"
+buildCount1 = 2
+LuaFunction = "BuildConstructorCondition"
 
+[Plan14]
+planType = "BuildMinimums"
+planPriority = 310
+planCondition = "Lua"
+buildType1 = "cvcons_vsr"
+buildCount1 = 1
+LuaFunction = "BuildConstructorCondition"
 
-[plan11]
-plantype="collectpool"
-planpriority=160
-//continueEvenIfFail=true
+[Plan15]
+planType = "Upgrade"
+planPriority = 300
+planCondition = "Lua"
+unitType = "cbscav_vsr"
+consClass = "cvcons_vsr"
+LuaFunction = "UpgradePoolCondition"
 
-[plan12]
-plantype="basebuildminimums"
-planpriority=155
-buildtype1="cbarmo_vsr"
-buildtype2="cbsbay_vsr"
+[Plan16]
+planType = "BaseBuildLoop"
+planPriority = 290
+planCondition = "Lua"
+buildType1 = "cbpgen_vsr"
+buildCount1 = 1
+LuaFunction = "BuildPowerLoopCondition"
 
-[plan13]
-plantype="attacker"
-planpriority=150
-targettype="Virtual_Class_Turret"
-targettype1="Virtual_Class_Recycler"
-attacktype1="cvrbomb_vsr"
-attacktype2="cvtank_vsr"
-attacktype3="cvtank_vsr"
-buildIfNoIdle=true
-AttackAnything=true
-maxAttacks=3
+[Plan17] // Always pick at enemy Scavengers.
+planType = "Attacker"
+planPriority = 280
+planCondition = "Lua"
+targetType1 = "VIRTUAL_CLASS_SCAVENGER"
+targetType2 = "VIRTUAL_CLASS_EXTRACTOR"
+attackType1 = "cvscout_vsr"
+buildIfNoIdle = true
+AttackAnything = true
+LuaFunction = "EarlyScavengerAttackCondition"
+maxAttacks = 99
 
-[plan14]
-plantype="buildminimums"
-planpriority=145
-buildtype1="cvscout_vsr"
-buildcount1=2
+[Plan18]
+planType = "Attacker"
+planPriority = 275
+planCondition = "Lua"
+targetType1 = "DefendUnit"
+targetType2 = "VIRTUAL_CLASS_RECYCLER"
+attackType1 = "cvscout_vsr"
+attackType2 = "cvscout_vsr"
+buildIfNoIdle = true
+AttackAnything = true
+maxAttacks = 4
+LuaFunction = "EarlyScoutAttackCondition"
 
-[plan15]
-plantype="basebuildminimums"
-planpriority=142
-minTtlScrap = 120
-buildtype1="cbgtow_vsr"
-buildCount1=4
-buildtype2="cbtcen_vsr"
-buildtype3="cbjamm_vsr"
-buildtype4="cbagen_vsr"
+[Plan19]
+planType = "BuildMinimums"
+planPriority = 270
+planCondition = "Lua"
+buildType1 = "cvturr_vsr"
+buildCount1 = 3
+LuaFunction = "BuildTurretsCondition"
 
-[plan16]
-plantype="attacker"
-planpriority=140
-targettype="Virtual_Class_PowerPlant"
-targettype1="Virtual_Class_CommBunker"
-targettype2="Virtual_Class_Factory"
-attacktype1="cvrbomb_vsr"
-attacktype2="cvrbomb_vsr"
-attacktype3="cvrbomb_vsr"
-BuildIfNoIdle=true
-AttackAnything=true
-maxAttacks=3
+[Plan20]
+planType = "BaseBuildMinimums"
+planPriority = 260
+planCondition = "Lua"
+buildType1 = "cbfact_vsr"
+buildCount1 = 1
+LuaFunction = "BuildFactoryCondition"
 
-[plan17]
-plantype="buildminimums"
-planpriority=135
-buildtype1="cvwalk_vsr"
-buildcount1=3
+[Plan21]
+planType = "Attacker"
+planPriority = 250
+planCondition = "Lua"
+targetType1 = "DefendUnit"
+targetType2 = "Defender"
+targetType3 = "VIRTUAL_CLASS_EXTRACTOR"
+targetType4 = "VIRTUAL_CLASS_RECYCLER"
+attackType1 = "cvtank_vsr"
+attackType2 = "cvscout_vsr"
+attackType3 = "cvscout_vsr"
+buildIfNoIdle = true
+AttackAnything = true
+maxAttacks = 3
+LuaFunction = "EarlyTankAttackCondition"
 
-[plan18]
-plantype="basebuildminimums"
-planpriority=130
-buildtype1="cbgtow_vsr"
-buildcount1=5
+[Plan22] // Removed until I know if the Idle Dispatcher from BD works in IA.
+planType = "BuildMinimums"
+planPriority = 240
+planCondition = "Lua"
+buildType1 = "cvmlay_vsr"
+buildCount1 = 2
+LuaFunction = "BuildMineLayersCondition"
 
+[Plan23]
+planType = "BaseBuildMinimums"
+planPriority = 230
+planCondition = "Lua"
+buildType1 = "cbcbun_vsr"
+buildCount1 = 1
+LuaFunction = "BuildRelayCondition"
 
-[plan19]
-plantype="attacker"
-planpriority=125
-targettype="Virtual_Class_Guntower"
-targettype1="Virtual_Class_PowerPlant"
-targettype2="Virtual_Class_Armory"
-attacktype1="cvwalk_vsr"
-attacktype2="cvwalk_vsr"
-attacktype3="cvwalk_vsr"
-AttackAnything=true
-maxAttacks=2
+[Plan24]
+planType = "BaseBuildMinimums"
+planPriority = 220
+planCondition = "Lua"
+buildType1 = "cbarmo_vsr"
+buildCount1 = 1
+LuaFunction = "BuildArmoryCondition"
 
-[plan20]
-plantype="buildminimums"
-planpriority=120
-buildtype1="cvdcarcpu_vsr"
-buildcount1=3
+[Plan25]
+planType = "Attacker"
+planPriority = 210
+planCondition = "Lua"
+targetType1 = "defender"
+targetType2 = "VIRTUAL_CLASS_POWERPLANT"
+targetType3 = "VIRTUAL_CLASS_FACTORY"
+targetType4 = "VIRTUAL_CLASS_ARMORY"
+targetType5 = "VIRTUAL_CLASS_RECYCLER"
+attackType1 = "cvrbomb_vsr"
+attackType2 = "cvtank_vsr"
+attackType3 = "cvtank_vsr"
+buildIfNoIdle = true
+AttackAnything = true
+maxAttacks = 4
+LuaFunction = "FirstRocketBomberAttackCondition"
 
-[plan21]
-plantype="basebuildminimums"
-planpriority=115
-buildtype1="cbgtow_vsr"
-buildCount1=3
+[Plan26]
+planType = "BaseBuildMinimums"
+planPriority = 200
+planCondition = "Lua"
+buildType1 = "cbgtow_vsr"
+buildCount1 = 2
+LuaFunction = "BuildGunTowersCondition"
 
-[plan22]
-plantype="buildminimums"
-planpriority=110
-buildtype1="cvservcpu_vsr"
-buildcount1=3
+[Plan27]
+planType = "BaseBuildMinimums"
+planPriority = 190
+planCondition = "Lua"
+buildType1 = "cbsbay_vsr"
+buildCount1 = 1
+LuaFunction = "BuildServiceBayCondition"
 
-[plan23]
-plantype="collectpool"
-planpriority=105
-//continueEvenIfFail=true
+[Plan28]
+planType = "BuildMinimums"
+planPriority = 180
+planCondition = "Lua"
+buildType1 = "cvservcpu_vsr"
+buildCount1 = 5
+LuaFunction = "BuildServiceTrucksCondition"
 
-[plan24]
-plantype="basebuildminimums"
-planpriority=100
-buildtype1="cbgtow_vsr"
-buildCount1=5
-//continueEvenIfFail=true
+[Plan29]
+planType = "Attacker"
+planPriority = 170
+planCondition = "Lua"
+targetType1 = "defender"
+targetType2 = "VIRTUAL_CLASS_POWERPLANT"
+targetType3 = "VIRTUAL_CLASS_FACTORY"
+targetType4 = "VIRTUAL_CLASS_ARMORY"
+targetType5 = "VIRTUAL_CLASS_SUPPLYDEPOT"
+targetType6 = "VIRTUAL_CLASS_COMMBUNKER"
+targetType7 = "VIRTUAL_CLASS_RECYCLER"
+attackType1 = "cvdcarcpu_vsr"
+buildIfNoIdle = true
+AttackAnything = true
+maxAttacks = 99
+LuaFunction = "DroneCarrierAttackCondition"
 
-[plan25]
-plantype="buildminimums"
-planpriority=95
-buildtype1="cvrbomb_vsr"
-buildcount1=3
+// Some defenses around the base paths.
+[Plan30]
+planType = "BaseBuildMinimums"
+planPriority = 160
+planCondition = "Lua"
+buildType1 = "cbgtow_vsr"
+buildCount1 = 2
+buildLoc1 = "gtow1"
+LuaFunction = "BuildGunTowersAtGtow1Condition"
+pathpointsCanBeMissing = true // Prevents errors in console. We can handle that in Lua.
 
+[Plan31]
+planType = "Attacker"
+planPriority = 150
+planCondition = "Lua"
+targetType1 = "defender"
+targetType2 = "VIRTUAL_CLASS_POWERPLANT"
+targetType3 = "VIRTUAL_CLASS_FACTORY"
+targetType4 = "VIRTUAL_CLASS_ARMORY"
+targetType5 = "VIRTUAL_CLASS_RECYCLER"
+attackType1 = "cvatank_vsr"
+attackType2 = "cvhatank_vsr"
+attackType3 = "cvhatank_vsr"
+buildIfNoIdle = true
+AttackAnything = true
+maxAttacks = 4
+LuaFunction = "SecondRocketBomberAttackCondition"
 
-[plan26]
-plantype="collectpool"
-planpriority=90
-//continueEvenIfFail=true
+// Some defenses around the base paths.
+[Plan32]
+planType = "BaseBuildMinimums"
+planPriority = 140
+planCondition = "Lua"
+buildType1 = "cbgtow_vsr"
+buildCount1 = 2
+buildLoc1 = "gtow2"
+LuaFunction = "BuildGunTowersAtGtow2Condition"
+pathpointsCanBeMissing = true // Prevents errors in console. We can handle that in Lua.
 
+[Plan33]
+planType = "Attacker"
+planPriority = 130
+planCondition = "Lua"
+targetType1 = "defender"
+targetType2 = "VIRTUAL_CLASS_POWERPLANT"
+targetType3 = "VIRTUAL_CLASS_FACTORY"
+targetType4 = "VIRTUAL_CLASS_ARMORY"
+targetType5 = "VIRTUAL_CLASS_SUPPLYDEPOT"
+targetType6 = "VIRTUAL_CLASS_COMMBUNKER"
+targetType7 = "VIRTUAL_CLASS_RECYCLER"
+attackType1 = "cvdcarcpu_vsr"
+buildIfNoIdle = true
+AttackAnything = true
+maxAttacks = 99
+LuaFunction = "LateDroneCarrierAttackCondition"
 
-[plan27]
-planpriority=85
-plantype="attacker"
-targettype="Virtual_Class_Armory"
-targettype1="Virtual_Class_PowerPlant"
-targettype2="Virtual_Class_SupplyDepot"
-attacktype1="cvrbomb_vsr"
-attacktype2="cvrbomb_vsr"
-attacktype3="cvrbomb_vsr"
-attacktype4="cvdcarcpu_vsr"
-buildIfNoIdle=true
-AttackAnything=true
-maxAttacks=0
+[Plan34]
+planType = "BaseBuildMinimums"
+planPriority = 120
+planCondition = "Lua"
+buildType1 = "cbtcen_vsr"
+buildCount1 = 1
+LuaFunction = "BuildTechCenterCondition"
 
+[Plan35]
+planType = "BaseBuildMinimums"
+planPriority = 110
+planCondition = "Lua"
+buildType1 = "cbjamm_vsr"
+buildCount1 = 1
+LuaFunction = "BuildJammerCondition"
 
-[plan28]
-plantype="buildminimums"
-planpriority=80
-buildtype1="cvatankcpu_vsr"
-buildcount1=3
-
-[plan29]
-plantype="collectpool"
-planpriority=75
-//continueEvenIfFail=true
-
-[plan30]
-plantype="attacker"
-planpriority=70
-targettype="Virtual_Class_SupplyDepot"
-targettype1="Virtual_Class_Armory"
-targettype2="Virtual_Class_Factory"
-attacktype1="cvhatank_vsr"
-attacktype2="cvhatank_vsr"
-attacktype3="cvdcarcpu_vsr"
-AttackAnything=true
-maxAttacks=0
-
-[plan31]
-plantype="buildminimums"
-planpriority=68
-buildtype1="cvtalon_vsr"
-buildcount1=3
-
-[plan32]
-plantype="collectpool"
-planpriority=65
-//continueEvenIfFail=true
-
-[plan33]
-plantype="attacker"
-planpriority=62
-targettype="Virtual_Class_Factory"
-targettype1="Virtual_Class_Recycler"
-targettype2="Virtual_Class_TechCenter"
-attacktype1="cvtalon_vsr"
-attacktype2="cvtalon_vsr"
-attacktype3="cvtalon_vsr"
-buildIfNoIdle=true
-AttackAnything=true
-maxAttacks=4
-
-
-[plan34]
-plantype="buildminimums"
-planpriority=60
-buildtype1="cvgorg_vsr"
-buildcount1=2
-
-[plan35]
-plantype="collectpool"
-planpriority=55
-//continueEvenIfFail=true
-
-[plan36]
-plantype="attacker"
-planpriority=50
-targettype="Virtual_Class_TechCenter"
-targettype1="Virtual_Class_Armory"
-attacktype1="cvwraith_vsr"
-attacktype2="cvwraith_vsr"
-AttackAnything=true
-maxAttacks=0
+[Plan36]
+planType = "BaseBuildMinimums"
+planPriority = 100
+planCondition = "Lua"
+buildType1 = "cbagen_vsr"
+buildCount1 = 1
+LuaFunction = "BuildAntiMatterCondition"
 
 [Plan37]
-planType="Attacker"
-planPriority=45
-targetType="Virtual_Class_Extractor"
-attackType1="cvtalon_vsr"
-attackType2="cvtalon_vsr"
-attackType3="cvtalon_vsr"
-AttackAnything=true
-maxAttacks=0
-buildIfNoIdle=1
+planType = "Attacker"
+planPriority = 90
+planCondition = "Lua"
+targetType1 = "defender"
+targetType2 = "VIRTUAL_CLASS_POWERPLANT"
+targetType3 = "VIRTUAL_CLASS_FACTORY"
+targetType4 = "VIRTUAL_CLASS_ARMORY"
+targetType5 = "VIRTUAL_CLASS_SUPPLYDEPOT"
+targetType6 = "VIRTUAL_CLASS_COMMBUNKER"
+targetType7 = "VIRTUAL_CLASS_RECYCLER"
+attackType1 = "cvwalk_vsr"
+attackType2 = "cvwalk_vsr"
+attackType3 = "cvtalon_vsr"
+buildIfNoIdle = true
+AttackAnything = true
+maxAttacks = 99
+LuaFunction = "FinalAttacksCondition"
 
 [Plan38]
-planType="Attacker"
-planPriority=44
-targettype="Virtual_Class_Recycler"
-attackType1="cvwalk_vsr"
-attackType2="cvwalk_vsr"
-attackType3="cvwalk_vsr"
-AttackAnything=true
-maxAttacks=0
-buildIfNoIdle=1
+planType = "Attacker"
+planPriority = 80
+planCondition = "Lua"
+targetType1 = "DefendUnit"
+targetType2 = "defender"
+targetType3 = "VIRTUAL_CLASS_POWERPLANT"
+targetType4 = "VIRTUAL_CLASS_FACTORY"
+targetType5 = "VIRTUAL_CLASS_ARMORY"
+targetType6 = "VIRTUAL_CLASS_SUPPLYDEPOT"
+targetType7 = "VIRTUAL_CLASS_COMMBUNKER"
+targetType8 = "VIRTUAL_CLASS_RECYCLER"
+attackType1 = "cvscout_vsr"
+attackType2 = "cvscout_vsr"
+attackType3 = "cvtank_vsr"
+attackType4 = "cvatank_vsr"
+buildIfNoIdle = true
+AttackAnything = true
+maxAttacks = 99
+LuaFunction = "FinalAttacksCondition"
+
+[Plan39]
+planType = "Attacker"
+planPriority = 70
+planCondition = "Lua"
+targetType1 = "DefendUnit"
+targetType2 = "defender"
+targetType3 = "VIRTUAL_CLASS_POWERPLANT"
+targetType4 = "VIRTUAL_CLASS_FACTORY"
+targetType5 = "VIRTUAL_CLASS_ARMORY"
+targetType6 = "VIRTUAL_CLASS_SUPPLYDEPOT"
+targetType7 = "VIRTUAL_CLASS_COMMBUNKER"
+targetType8 = "VIRTUAL_CLASS_RECYCLER"
+attackType1 = "cvtalon_vsr"
+attackType2 = "cvtalon_vsr"
+attackType3 = "cvtalon_vsr"
+buildIfNoIdle = true
+AttackAnything = true
+maxAttacks = 99
+LuaFunction = "FinalAttacksCondition"
+
+[Plan40]
+planType = "BuildMinimums"
+planPriority = 60
+planCondition = "Lua"
+buildType1 = "cvgorg_vsr"
+buildCount1 = 2
+LuaFunction = "BuildGorgonsCondition"
