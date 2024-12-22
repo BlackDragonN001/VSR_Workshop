@@ -7,8 +7,8 @@
 Difficulty = 4 // 1=Easy, 2=Medium, 3=Hard, 4=Extreme
 UnitsService = true // If units can get service.
 scrapCount = 40
-consClass = "ivconscpuinsane_vsr"
-scavClass = "ivscavcpuinsane_vsr"
+consClass = "ivconscpu_vsr"
+scavClass = "ivscavcpu_vsr"
 idleAllCraft = true
 CheckProvides = true
 
@@ -188,10 +188,10 @@ attackType52_3 = "ivtank_vsr"
 planType = "Service"
 planPriority = 640
 planCondition = "Exists"
-planConditionClass = "ivservcpuinsane_vsr"
+planConditionClass = "ivservcpu_vsr"
 planConditionCount = 2
 planCompare = ">="
-serviceUnit = "ivservcpuinsane_vsr"
+serviceUnit = "ivservcpu_vsr"
 minWreckAmmo = 0.8
 minWreckHealth = 0.8
 maxWreckAmmo = 1.0
@@ -199,7 +199,7 @@ maxWreckHealth = 1.0
 maxWreckDist = 300.0
 repairTime = 60.0
 unitType1 = "ibrecy"
-unitType2 = "ibfactcpuinsane_vsr"
+unitType2 = "ibfact_vsr"
 unitType3 = "ibpgen_vsr"
 unitType4 = "ibgtow_vsr"
 buildType1 = "ibbombcpu_vsr"
@@ -210,7 +210,7 @@ unitType9 = "ibtcen_vsr"
 unitType10 = "ibtrain_vsr"
 unitType11 = "ibscup_vsr"
 unitType12 = "defender"
-unitType13 = "ivservcpuinsane_vsr"
+unitType13 = "ivservcpu_vsr"
 
 [Plan2]
 planType = "DefendArea"
@@ -278,7 +278,7 @@ ContinueEvenIfFail = true
 [Plan11]
 planType = "DefendArea"
 planPriority = 540
-targetType = "ivconscpuinsane_vsr"
+targetType = "ivconscpu_vsr"
 maxCurScrap = 40
 ContinueEvenIfFail = true
 
@@ -334,7 +334,7 @@ buildIfNoIdle = 1
 [Plan15]
 planType = "BuildMinimums"
 planPriority = 500
-buildType1 = "ivscavcpuinsane_vsr"
+buildType1 = "ivscavcpu_vsr"
 buildCount1 = 3
 
 [Plan16]
@@ -378,7 +378,7 @@ minTtlScrap = 100
 planType = "CollectPool"
 planPriority = 430
 planCondition = "Exists"
-planConditionClass = "ivscavcpuinsane_vsr"
+planConditionClass = "ivscavcpu_vsr"
 planConditionCount = 2
 planConditionClassProvided = true
 maxCurScrap = 60
@@ -387,7 +387,7 @@ maxCurScrap = 60
 planType = "CollectPool"
 planPriority = 420
 planCondition = "Exists"
-planConditionClass = "ivscavcpuinsane_vsr"
+planConditionClass = "ivscavcpu_vsr"
 planConditionCount = 3
 planConditionClassProvided = true
 maxCurScrap = 60
@@ -396,7 +396,7 @@ maxCurScrap = 60
 planType = "CollectPool"
 planPriority = 410
 planCondition = "Exists"
-planConditionClass = "ivscavcpuinsane_vsr"
+planConditionClass = "ivscavcpu_vsr"
 planConditionCount = 4
 planConditionClassProvided = true
 maxCurScrap = 60
@@ -405,7 +405,7 @@ maxCurScrap = 60
 planType = "BuildMinimums"
 planPriority = 400
 planCondition = "NotExists"
-planConditionClass = "ibfactcpuinsane_vsr"
+planConditionClass = "ibfact_vsr"
 planConditionCount = 1
 planCondition2 = "NotExists"
 planConditionClass2 = "ibcbun_12xvsr"
@@ -430,7 +430,7 @@ buildCount1 = 4
 planType = "BuildMinimums"
 planPriority = 390
 planCondition = "NotExists"
-planConditionClass = "ibfactcpuinsane_vsr"
+planConditionClass = "ibfact_vsr"
 planConditionCount = 1
 planConditionOr = true
 planCondition2 = "NotExists"
@@ -446,7 +446,7 @@ buildCount1 = 4
 [Plan27]
 planType = "BuildMinimums"
 planPriority = 380
-buildType1 = "ivconscpuinsane_vsr"
+buildType1 = "ivconscpu_vsr"
 buildCount1 = 2
 
 [Plan28]
@@ -460,7 +460,7 @@ buildCount1 = 10
 planType = "BaseBuildMinimums"
 planPriority = 360
 buildHeading = 0
-buildType1 = "ibfactcpuinsane_vsr"
+buildType1 = "ibfact_vsr"
 buildCount1 = 1
 buildType2 = "ibcbun_12xvsr"
 buildCount2 = 1
@@ -629,7 +629,7 @@ buildCount4 = 4
 [Plan42]
 planType = "BuildMinimums"
 planPriority = 250
-buildType1 = "ivservcpuinsane_vsr"
+buildType1 = "ivservcpu_vsr"
 buildCount1 = 2
 ContinueEvenIfFail = true
 
@@ -666,7 +666,7 @@ planConditionCount3 = 2
 planCompare3 = ">="
 HisMinCurPower = 0
 HisMaxCurPower = 3
-buildType1 = "ivapccpuinsane_vsr"
+buildType1 = "ivapc"
 buildCount1 = 3
 
 [Plan45]
@@ -688,9 +688,9 @@ planCompare3 = ">="
 HisMinCurPower = 0
 HisMaxCurPower = 3
 targetType = "VIRTUAL_CLASS_POWERPLANT"
-attackType1 = "ivapccpuinsane_vsr"
-attackType2 = "ivapccpuinsane_vsr"
-attackType3 = "ivapccpuinsane_vsr"
+attackType1 = "ivapc"
+attackType2 = "ivapc"
+attackType3 = "ivapc"
 attackType4 = "ivmisl_vsr"
 attackType5 = "ivmisl_vsr"
 maxAttacks = 0
@@ -729,7 +729,7 @@ planConditionClass = "flier"
 planConditionCount = 1
 planConditionClassProvided = true
 planCompare = ">="
-buildType1 = "ivservcpuinsane_vsr"
+buildType1 = "ivservcpu_vsr"
 buildCount1 = 4
 ContinueEvenIfFail = true
 
@@ -741,7 +741,7 @@ planConditionClass = "flier"
 planConditionCount = 1
 planConditionClassProvided = true
 planCompare = ">="
-buildType1 = "ivservcpuinsane_vsr"
+buildType1 = "ivservcpu_vsr"
 buildCount1 = 4
 ContinueEvenIfFail = true
 
@@ -857,7 +857,7 @@ buildIfNoIdle = 1
 planType = "BuildMinimums"
 planPriority = 110
 maxTtlScrap = 100
-buildType1 = "ivapccpuinsane_vsr"
+buildType1 = "ivapc"
 buildCount1 = 2
 buildType2 = "ivmisl_vsr"
 buildCount2 = 3
@@ -990,7 +990,7 @@ buildType2 = "ivatank_vsr"
 buildCount2 = 3
 buildType3 = "ivatank_vsr"
 buildCount3 = 3
-buildType4 = "ivapccpuinsane_vsr"
+buildType4 = "ivapc"
 buildCount4 = 7
 buildType5 = "ivrckt_vsr"
 buildCount5 = 3
