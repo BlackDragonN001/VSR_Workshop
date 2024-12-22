@@ -12,12 +12,12 @@ lifeSpan = 0.5
 shotSpeed = 300.0
 
 damageValue(N) = 20 // none // 320
-damageValue(L) = 20 // light // 320
+damageValue(L) = 15 // light // 320
 damageValue(H) = 10 // heavy // 240
 
-damageValue(S) = 19 // standard // 300
-damageValue(D) = 9 // deflection // 160
-damageValue(A) = 18 // absorbtion // 320
+damageValue(S) = 15 // standard // 300
+damageValue(D) = 10 // deflection // 160
+damageValue(A) = 20 // absorbtion // 320
 
 [Render]
 renderBase = "draw_trail"

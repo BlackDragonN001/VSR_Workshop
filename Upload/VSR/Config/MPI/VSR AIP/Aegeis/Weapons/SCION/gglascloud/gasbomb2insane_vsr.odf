@@ -24,13 +24,13 @@ shotVariance = 0.0
 
 damageRadius = 100.0
 
-damageValue(N) = 650 // none
-damageValue(L) = 600 // light
-damageValue(H) = 400 // heavy
+damageValue(N) = 600 // none
+damageValue(L) = 300 // light
+damageValue(H) = 150 // heavy
 
-damageValue(S) = 150 // standard
-damageValue(D) = 500 // deflection
-damageValue(A) = 500 // absorbtion
+damageValue(S) = 300 // standard
+damageValue(D) = 600 // deflection
+damageValue(A) = 150 // absorbtion
 
 kickRadius = 0.0
 kickVeloc = 0.0
