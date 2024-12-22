@@ -1160,3 +1160,42 @@ December 8th, 2024
 -General BlackDragon: Fixed some more errors in FFA MPI Page 3 Extra Options
 -General BlackDragon: Fixed some broken map inf files (Trail, Hilo Blues, Stock Iceberg, Stock Quarry)
 -General BlackDragon: Fixed incorrect map size settings in Ancient Outposts that caused problems with navs
+
+
+
+==Release 116==
+December 22th, 2024
+
+- General BlackDragon: Fixed Scion Empty scout having the wrong engine sound.
+- General BlackDragon: Fixed some minor ODF bugs from ODFs in VSR overriding asset pack ODFs. TODO: Inherit weapon launchers?
+- General BlackDragon: Removed some unused files. Yay less space!
+- General BlackDragon: Tweaks to in-game HUD alignment, fixed command buttons not being fully click-able in Satellite view.
+- General BlackDragon: Fixed Cerberi assault tank missing it's limitClass text string.
+- General BlackDragon: Added a message warning users if they didn't leave enough spawn points for the AI to spawn in FFA MPI mode.
+- General BlackDragon: Added new map TRN parameters under [DLL]::FriendlySpawnpointMaxAllyRange = 100.0f, FriendlySpawnpointMinEnemyRange = 400.0f, and RandomSpawnpointMinEnemyRange = 450.0f. These allow map makers to calibrate how far "safe" zones are for spawnpoints in ST/DM. Small maps where two spawnpoints are within 450m of eachother may need smaller values here.
+- General BlackDragon: Used new map TRN parameters to fix potential spawning issues on ST Magma.
+- General BlackDragon: Optimized/updated MPI unit weapon config files. Now costs the AI slightly less scrap as it doesn't double-add for linked hardpoints. Also added Cerberi weapon config files.
+- General BlackDragon: Added new Cerberi AIPs by AI Unit (VSR Stock) and Aegeis (Level 1 - 4).
+- General BlackDragon: Removed Level 5 AIPs, as they were identical to Level 4. Added Insane variant of Hellfire for use in Level4 AI Atlas. (double damage)
+- General BlackDragon: Fixed Cerberi Extractor not upgrading into the _vsr version with the + on the name.
+- General BlackDragon: Fixed missing CPU Recycler in IA Extra Options menu.
+- General BlackDragon: DLL: Fixed custom Dispatcher code not running in Instant Action.
+- General BlackDragon: DLL: Re-wrote Carrier code (used by Cerberi Demon. Note: Breaks old Save Games, sorry) Made Drones gather under the Demon and launch attacks in waves. Also made them obey their code to stay near Carrier and retreat when no targets are nearby. Also fixed Drones not being re-activated if a new Demon is nearby, if theirs was killed.
+
+Asset Package Updates: (previously released)
+Hadean Asset Package: Hellfire damage reduced by half.
+Cerberi Asset Package: Fixed pathing on several buildings.
+Cerberi Asset Package: Added Cerberi versions of the Shields with unique texture variants. Also added them to their Armory.
+Cerberi Asset Package: Fixed Triton, Krull, and Siren engine sounds. They were using the wrong hz rate.
+Cerberi Asset Package: Tweaked the Dominator's hardpoint location/arrangement. Added a mortar HP, not used yet.
+Cerberi Asset Package: Made Gorgon considered an Assault unit.
+Cerberi Asset Package: Tweaks to Singularity mortar.
+Cerberi Asset Package: Fixed hp_vehicle location on Cerberi Factory.
+Cerberi Asset Package: Removed __h from treads on Cerberi units, fixes them building invisible/appearing invisible in editor.
+
+Asset Package Updates: 
+Cerberi Asset Package: Made Anti-Matter Generator limited to 1.
+Cerberi Asset Package: Fixed Cerberi CommBunker not having view min/max ranges.
+Cerberi Asset Package: Fixed some missing textures from Asset Packages for Cerberi weapons. (Blackhole mine, rapier)
+Cerberi Asset Package: Lowered Demon Drone's rangescan from 800 to 300, and engageRange from 750 to 300.
+Cerberi Asset Package: Made Demons use FlyingPhysics = true. But they still use Hover pathing so the Drones can follow them.
