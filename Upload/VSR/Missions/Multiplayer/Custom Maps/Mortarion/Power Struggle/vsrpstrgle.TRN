@@ -31,8 +31,6 @@ TileTexture12 = "core_1.bmp"
 TileTexture13 = "core_4.bmp"
 TileTexture14 = "core_5.bmp"
 TileTexture15 = "core_6.bmp"
-TileTexture16 = "core_2.bmp"
-
 
 [DLL]
 CaptureIsRandom = false
@@ -40,3 +38,6 @@ CaptureTarget1 = "VSRcap3"
 CaptureTarget2 = "VSRcap3"
 CaptureTarget3 = "VSRcap5"
 CaptureTarget4 = "VSRcap5"
+
+FriendlySpawnpointMinEnemyRange = 300.0f
+RandomSpawnpointMinEnemyRange = 300.0f
