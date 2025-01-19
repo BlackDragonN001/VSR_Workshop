@@ -1182,3 +1182,13 @@ December 22nd, 2024
 - General BlackDragon: Fixed missing CPU Recycler in IA Extra Options menu.
 - General BlackDragon: DLL: Fixed custom Dispatcher code not running in Instant Action.
 - General BlackDragon: DLL: Re-wrote Carrier code (used by Cerberi Demon. Note: Breaks old Save Games, sorry) Made Drones gather under the Demon and launch attacks in waves. Also made them obey their code to stay near Carrier and retreat when no targets are nearby. Also fixed Drones not being re-activated if a new Demon is nearby, if theirs was killed.
+
+
+==Release 117==
+Janurary 19nd, 2025
+(Released by General BlackDragon)
+
+- General BlackDragon: Used new map TRN parameters to fix potential spawning issues on ST Power Struggle.
+- General BlackDragon: Moved ScrapValue parameters for Cerberi to Cerberi Asset Pack.
+- General BlackDragon: Added 2025 Tournament asset pack.
+- General BlackDragon: Moved VSR Documents folder outside of the load path, since the game doesn't need to load those files. Slightly reduces chances of NO_DELETE crash.
