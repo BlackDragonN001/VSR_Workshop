@@ -2,145 +2,167 @@
 // Camera Pod (Spectator Vehicle)
 
 [GameObjectClass]
-classLabel="wingman" //"morphtank"
-baseName="camerapodvsr"
-//pilotConfig="ivscout_vsr" // If blank, uses [if]spilo/[if]suser. Otherwise, pilot for craft
-geometryName=NULL //"vsrcamerapod00_0.25.msh"	//"vsrcamerapod00.fbx" - Model by General BlackDragon
-//geometryScale=0.25
+classLabel = "commvehicleH" //"wingman" //"morphtank"
+baseName = "camerapodvsr"
+//pilotConfig = "ivscout_vsr" // If blank, uses [if]spilo/[if]suser. Otherwise, pilot for craft
+geometryName = "vsrcamerapod00_0.25.xsi"	//"vsrcamerapod00.fbx" - Model by General BlackDragon
+//geometryScale = 0.25
 unitStatus = "wire_camerapod_vsr.tga"
 
-unitName="Camera Pod"
+unitName = "Camera Pod"
 
-aiName="MorphTankFriend"
-aiName2="MorphTankEnemy"
+aiName = "MorphTankFriend"
+aiName2 = "MorphTankEnemy"
 
-maxHealth=0
-maxAmmo=0
+maxHealth = 0
+maxAmmo = 0
 
-armorClass=H
+armorClass = H
 
-scrapCost=0
-scrapValue=0
-canSnipe=0
-canCollide=0
+scrapCost = 0
+scrapValue = 0
+canSnipe = 0
+canSelect = 0
+canDetect = 0
+canInteract = 0
+isStealth = 1
+canCollide = 0
+isHidden = 1
 
-explosionName="NULL"
+explosionName = "NULL"
 
 DeployOnBuild = 1
 
-canSelect=0
-canDetect=0
-canInteract=0
-isStealth=1
-canCollide = 0
+canAcceptPowerups = false // reject powerups (such as mines)
+canScoutObjectify = false
 
-canAcceptPowerups=false // reject powerups (such as mines)
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
 
-heatSignature=0.0
-imageSignature=0.0
-radarSignature=0.0
+Mass = 1 // If < =  0, uses default of Sphere(Width*Height*Breadth) * 800.0
 
-Mass=1 // If <= 0, uses default of Sphere(Width*Height*Breadth) * 800.0
+provideCount = 0
 
-provideCount=0
+UseVehicleCrashOnDeath = 0
 
-UseVehicleCrashOnDeath=0
+NumChunks = 0
+NumChunks1 = 0
+NumChunks2 = 0
+NumChunks3 = 0
+NumChunks4 = 0
+NumChunks5 = 0
 
-NumChunks=0
-NumChunks1=0
-NumChunks2=0
-NumChunks3=0
-NumChunks4=0
-NumChunks5=0
+scanTeamLimit = 3
 
-scanTeamLimit=1
-
-weaponMask=00001
-weaponHard1="HP_SPECIAL_1"
-weaponName1="gsitecam"
-weaponAssault1=0
-weaponHard2=""
-weaponName2=""
-weaponAssault2=0
-weaponHard3=""
-weaponName3=""
-weaponAssault3=0
-weaponHard4=""
-weaponName4=""
-weaponAssault4=0
+weaponMask = 00001
+weaponHard1 = "HP_SPECIAL_1"
+weaponName1 = "gsitecam"
+weaponAssault1 = 0
+weaponHard2 = ""
+weaponName2 = ""
+weaponAssault2 = 0
+weaponHard3 = ""
+weaponName3 = ""
+weaponAssault3 = 0
+weaponHard4 = ""
+weaponName4 = ""
+weaponAssault4 = 0
 
 ////////////////////////////////////
 
-lightHard1=""
-lightName1=""
-lightHard2=""
-lightName2=""
+lightHard1 = ""
+lightName1 = ""
+lightHard2 = ""
+lightName2 = ""
 
 [CraftClass]
-rangeScan=1000.0f //3000.0f // Causes massive spam of log errors: DIAG|        CockpitRadar:1424 |11:03:24|126176 |CockpitRadar too complex (pcount 35344 icount 140624). Will not render
-periodScan=0.0f
-CanUserBailout=true // Human can exit craft w/ Ctrl-B if true
-CanUserHopout=false
-collideTerrainSound="silence.wav" // Sound on collision w/ terrain
-isFlying=1 // probably does nothing
+rangeScan = 8192.0f //3000.0f // Causes massive spam of log errors: DIAG|        CockpitRadar:1424 |11:03:24|126176 |CockpitRadar too complex (pcount 35344 icount 140624). Will not render
+periodScan = 0.0f
+CanUserBailout = true // Human can exit craft w/ Ctrl-B if true
+CanUserHopout = false
+collideTerrainSound = "silence.wav" // Sound on collision w/ terrain
+isFlying = 1 // probably does nothing
 
 /////// PHYSICS SETTINGS ////////////
-MAX_PILOT_HORIZ_VELOCITY=5.0 // Max horizontal velocity a pilot can have when ejecting. (Doesnt work yet?)
-GROUND_ELASTICITY=-0.07 // -0.7 // -0.2
-DAMAGE_SCALE=0.0 // Scale in turning velocity into damage, on craft:ground or craft:building collisions
- // MIN_BOUNCE_VEL=2.0 // 0.5
- // OBJECT_ELASTICITY=0.0125
-
+MAX_PILOT_HORIZ_VELOCITY = 5.0 // Max horizontal velocity a pilot can have when ejecting. (Doesnt work yet?)
+GROUND_ELASTICITY = -0.07 // -0.7 // -0.2
+DAMAGE_SCALE = 0.0 // Scale in turning velocity into damage, on craft:ground or craft:building collisions
+ // MIN_BOUNCE_VEL = 2.0 // 0.5
+ // OBJECT_ELASTICITY = 0.0125
 
 [HoverCraftClass]
-setAltitude=1.8
-velocForward=50
-velocStrafe=35
+setAltitude = 1.8
+velocForward = 50
+velocStrafe = 35
 
-MoreLike12Physics=true
+MoreLike12Physics = true
 
-alphaTrack=21.0 // *21 springs speed it rights itself 
-alphaDamp=12.0 // *8 +6 resists forces that change the pitch (and roll?) orientation of the craft, including terrain and pitchPitch
+alphaTrack = 21.0 // *21 springs speed it rights itself 
+alphaDamp = 12.0 // *8 +6 resists forces that change the pitch (and roll?) orientation of the craft, including terrain and pitchPitch
 
-accelDragFull=40
+accelDragFull = 40
 
-pitchPitch=0.6 // +.3 Nose up/down speed
-pitchThrust=0.0 // Nose changes when craft is moving forward and backing up
+pitchPitch = 0.6 // +.3 Nose up/down speed
+pitchThrust = 0.0 // Nose changes when craft is moving forward and backing up
 
-accelJump=18 // *18 Provides additional thrust to the upwards vector relative to the craft orientation.
+accelJump = 18 // *18 Provides additional thrust to the upwards vector relative to the craft orientation.
 
-rollStrafe=0.04 // 0.14 // Rolls while strafing. Rolling combined with accelJump can increase single directional strafing speed.
+rollStrafe = 0.04 // 0.14 // Rolls while strafing. Rolling combined with accelJump can increase single directional strafing speed.
 
-omegaSpin=4.5 // Turn speed when not thrusting 
-omegaTurn=3.5 // Turn speed while thrusting
-alphaSteer=8.5 // 10.5 // Turning responsiveness
+omegaSpin = 4.5 // Turn speed when not thrusting 
+omegaTurn = 3.5 // Turn speed while thrusting
+alphaSteer = 8.5 // 10.5 // Turning responsiveness
 
-OverWaterVelocFrontMult=1.0 // *.75
-OverWaterVelocSideMult=1.0 // *.75
-OverWaterThrottleMult=0.8
-airborneVelocFrontMult=1.2 // *1.0
-airborneVelocSideMult=1.05 // *1.0
-airborneThrottleMult=1.2 // *1.0
-airborneMinHeightRatio=1.6 // *2.0
-airborneMaxHeightRatio=3.0 // *5.0
+OverWaterVelocFrontMult = 1.0 // *.75
+OverWaterVelocSideMult = 1.0 // *.75
+OverWaterThrottleMult = 0.8
+airborneVelocFrontMult = 1.2 // *1.0
+airborneVelocSideMult = 1.05 // *1.0
+airborneThrottleMult = 1.2 // *1.0
+airborneMinHeightRatio = 1.6 // *2.0
+airborneMaxHeightRatio = 3.0 // *5.0
 
-LIFT_SPRING=2.5 // 6 // *25.0 Increases 
-LIFT_DAMP=0.1 // 0.1 // 5.75 // *6.25
+LIFT_SPRING = 2.5 // 6 // *25.0 Increases 
+LIFT_DAMP = 0.1 // 0.1 // 5.75 // *6.25
 
-soundThrust="silence.wav"
-soundTurbo="silence.wav"
+soundThrust = "silence.wav"
+soundTurbo = "silence.wav"
 
-[MorphTankClass]
-HiddenWhenMorphed=true // if true, Vir+Red turned on when morphed
-CanScoutObjectifyWhenHidden=false // if true, scouts can paint the ship when cloaked
-switchMask=00000
+//[MorphTankClass]
+//HiddenWhenMorphed = true // if true, Vir+Red turned on when morphed
+//CanScoutObjectifyWhenHidden = false // if true, scouts can paint the ship when cloaked
+//switchMask = 00000
 
-LIFT_SPRING=2.5 // 6 // *25.0 Increases 
-LIFT_DAMP=0.1 // 0.1 // 5.75 // *6.25
+//LIFT_SPRING = 2.5 // 6 // *25.0 Increases 
+//LIFT_DAMP = 0.1 // 0.1 // 5.75 // *6.25
 
-soundThrust="silence.wav"
-soundTurbo="silence.wav"
+//soundThrust = "silence.wav"
+//soundTurbo = "silence.wav"
+
+[CommVehicleHClass]
+viewDist = 300.0
+viewZoom = 1.5
+minZoom = 1.0
+maxZoom = 3.0
+viewPitch = 1.0
+minPitch = 0.75
+maxPitch = 1.5
+nearPlane = 1.0
+farPlane = 1000
+disableFog = true
+
+DoBettyOn = false
+DoBettyOff = false
 
 [DeployableClass]
 timeDeploy = 0.1 // Must stay 0.1!
 timeUndeploy = 0.1 // Must stay 0.1!
+
+isStealthDeployed = true
+ScanTeamLimitDeployed = 3
+
+soundDeploy = "silence.wav"
+soundUndeploy = "silence.wav"
+
+SinkOnDeploy = false
