@@ -1192,3 +1192,11 @@ Janurary 19nd, 2025
 - General BlackDragon: Moved ScrapValue parameters for Cerberi to Cerberi Asset Pack.
 - General BlackDragon: Added 2025 Tournament asset pack.
 - General BlackDragon: Moved VSR Documents folder outside of the load path, since the game doesn't need to load those files. Slightly reduces chances of NO_DELETE crash.
+
+==Release 118==
+March 12th, 2025
+(Released by General BlackDragon)
+
+- General BlackDragon: Removed 2025 Tournament asset pack.
+- General BlackDragon: Camera Pods are now CommVehicleH class, so they can deploy to enter Satellite mode any time. They also have 8192 radar range, so they can see the whole map now.
+- General BlackDragon: Fixed missing Path Points on VSR Abundance. This fixes MPI/Capture game modes not working on it.
