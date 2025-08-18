@@ -7,8 +7,8 @@
 Difficulty = 4 // 1=Easy, 2=Medium, 3=Hard, 4=Extreme
 UnitsService = true // If units can get service.
 scrapCount = 40
-consClass = "fvconscpu_vsr"
-scavClass = "fvscavcpu_vsr"
+consClass = "fvconscpuinsane_vsr"
+scavClass = "fvscavcpuinsane_vsr"
 idleAllCraft = true
 CheckProvides = true
 
@@ -28,8 +28,8 @@ MaxTargets = 10
 
 [Match]
 targetType1 = "VIRTUAL_CLASS_SCOUT"
-attackType1_1 = "fvscout12smartvsr"
-attackType1_2 = "fvscout12smartvsr"
+attackType1_1 = "fvscout_vsr"
+attackType1_2 = "fvscout_vsr"
 targetType2 = "VIRTUAL_CLASS_SCOUT"
 attackType2_1 = "fvtank_vsr"
 targetType3 = "VIRTUAL_CLASS_SCOUT"
@@ -39,8 +39,8 @@ attackType4_1 = "fvsent_vsr"
 attackType4_2 = "fvsent_vsr"
 
 targetType5 = "VIRTUAL_CLASS_MORTARBIKE"
-attackType5_1 = "fvscout12smartvsr"
-attackType5_2 = "fvscout12smartvsr"
+attackType5_1 = "fvscout_vsr"
+attackType5_2 = "fvscout_vsr"
 targetType6 = "VIRTUAL_CLASS_MORTARBIKE"
 attackType6_1 = "fvsent_vsr"
 attackType6_2 = "fvsent_vsr"
@@ -50,9 +50,9 @@ targetType8 = "VIRTUAL_CLASS_MORTARBIKE"
 attackType8_1 = "fvarch_vsr"
 
 targetType9 = "VIRTUAL_CLASS_MISSILESCOUT"
-attackType9_1 = "fvscout12smartvsr"
-attackType9_2 = "fvscout12smartvsr"
-attackType9_3 = "fvscout12smartvsr"
+attackType9_1 = "fvscout_vsr"
+attackType9_2 = "fvscout_vsr"
+attackType9_3 = "fvscout_vsr"
 targetType10 = "VIRTUAL_CLASS_MISSILESCOUT"
 attackType10_1 = "fvtank_vsr"
 attackType10_2 = "fvtank_vsr"
@@ -61,8 +61,8 @@ attackType11_1 = "fvarch_vsr"
 attackType11_2 = "fvarch_vsr"
 
 targetType12 = "VIRTUAL_CLASS_TANK"
-attackType12_1 = "fvscout12smartvsr"
-attackType12_2 = "fvscout12smartvsr"
+attackType12_1 = "fvscout_vsr"
+attackType12_2 = "fvscout_vsr"
 targetType13 = "VIRTUAL_CLASS_TANK"
 attackType13_1 = "fvtank_vsr"
 attackType13_2 = "fvtank_vsr"
@@ -132,13 +132,13 @@ attackType31_2 = "fvtank_vsr"
 targetType32 = "VIRTUAL_CLASS_TURRET"
 attackType32_1 = "fvarch_vsr"
 targetType33 = "VIRTUAL_CLASS_TURRET"
-attackType33_1 = "fvscout12smartvsr"
-attackType33_2 = "fvscout12smartvsr"
+attackType33_1 = "fvscout_vsr"
+attackType33_2 = "fvscout_vsr"
 
 targetType34 = "VIRTUAL_CLASS_SCAVENGER"
 attackType34_1 = "fvsent_vsr"
 targetType35 = "VIRTUAL_CLASS_SCAVENGER"
-attackType35_1 = "fvscout12smartvsr"
+attackType35_1 = "fvscout_vsr"
 targetType36 = "VIRTUAL_CLASS_SCAVENGER"
 attackType36_1 = "fvtank_vsr"
 targetType37 = "VIRTUAL_CLASS_SCAVENGER"
@@ -151,7 +151,7 @@ attackType39_1 = "fvtank_vsr"
 targetType40 = "extract"
 attackType40_1 = "fvsent_vsr"
 targetType41 = "extract"
-attackType41_1 = "fvscout12smartvsr"
+attackType41_1 = "fvscout_vsr"
 
 targetType42 = "extract"
 attackType42_1 = "fvarch_vsr"
@@ -160,7 +160,7 @@ attackType43_1 = "fvtank_vsr"
 targetType44 = "extract"
 attackType44_1 = "fvsent_vsr"
 targetType45 = "extract"
-attackType45_1 = "fvscout12smartvsr"
+attackType45_1 = "fvscout_vsr"
 
 targetType46 = "VIRTUAL_CLASS_CONSTRUCTIONRIG"
 attackType46_1 = "fvarch_vsr"
@@ -169,7 +169,7 @@ attackType47_1 = "fvtank_vsr"
 targetType48 = "VIRTUAL_CLASS_CONSTRUCTIONRIG"
 attackType48_1 = "fvsent_vsr"
 targetType49 = "VIRTUAL_CLASS_CONSTRUCTIONRIG"
-attackType49_1 = "fvscout12smartvsr"
+attackType49_1 = "fvscout_vsr"
 
 targetType50 = "VIRTUAL_CLASS_GUNTOWER"
 attackType50_1 = "fvatank_vsr"
@@ -186,10 +186,10 @@ attackType52_3 = "fvtank_vsr"
 planType = "Service"
 planPriority = 610
 planCondition = "Exists"
-planConditionClass = "fvservcpu_vsr"
+planConditionClass = "fvservcpuinsane_vsr"
 planConditionCount = 2
 planCompare = ">="
-serviceUnit = "fvservcpu_vsr"
+serviceUnit = "fvservcpuinsane_vsr"
 minWreckAmmo = 0.8
 minWreckHealth = 0.8
 maxWreckAmmo = 1.0
@@ -197,8 +197,8 @@ maxWreckHealth = 1.0
 maxWreckDist = 300.0
 repairTime = 60.0
 unitType1 = "fbrecy"
-unitType2 = "fbkiln_vsr"
-unitType3 = "fbforg_vsr"
+unitType2 = "fbkilncpuinsane_vsr"
+unitType3 = "fbforgcpuinsane_vsr"
 unitType4 = "fbspir_vsr"
 unitType5 = "fbantm_12xvsr"
 unitType6 = "fbover_12xvsr"
@@ -209,7 +209,7 @@ unitType10 = "fblung_vsr"
 unitType11 = "fbscup_vsr"
 unitType12 = "extract"
 unitType13 = "defender"
-unitType14 = "fvservcpu_vsr"
+unitType14 = "fvservcpuinsane_vsr"
 
 [Plan2]
 planType = "DefendArea"
@@ -221,7 +221,7 @@ ContinueEvenIfFail = true
 [Plan3]
 planType = "DefendArea"
 planPriority = 590
-targetType = "fbforg_vsr"
+targetType = "fbforgcpuinsane_vsr"
 maxCurScrap = 40
 ContinueEvenIfFail = true
 
@@ -284,7 +284,7 @@ ContinueEvenIfFail = true
 [Plan12]
 planType = "DefendArea"
 planPriority = 500
-targetType = "fvconscpu_vsr"
+targetType = "fvconscpuinsane_vsr"
 maxCurScrap = 40
 ContinueEvenIfFail = true
 
@@ -296,7 +296,7 @@ buildIfNoIdle = 1
 [Plan14]
 planType = "BuildMinimums"
 planPriority = 480
-buildType1 = "fvscavcpu_vsr"
+buildType1 = "fvscavcpuinsane_vsr"
 buildCount1 = 2
 
 [Plan15]
@@ -340,7 +340,7 @@ minTtlScrap = 100
 planType = "CollectPool"
 planPriority = 410
 planCondition = "Exists"
-planConditionClass = "fvscavcpu_vsr"
+planConditionClass = "fvscavcpuinsane_vsr"
 planConditionCount = 2
 planConditionClassProvided = true
 maxCurScrap = 60
@@ -349,7 +349,7 @@ maxCurScrap = 60
 planType = "CollectPool"
 planPriority = 400
 planCondition = "Exists"
-planConditionClass = "fvscavcpu_vsr"
+planConditionClass = "fvscavcpuinsane_vsr"
 planConditionCount = 3
 planConditionClassProvided = true
 maxCurScrap = 60
@@ -358,7 +358,7 @@ maxCurScrap = 60
 planType = "CollectPool"
 planPriority = 390
 planCondition = "Exists"
-planConditionClass = "fvscavcpu_vsr"
+planConditionClass = "fvscavcpuinsane_vsr"
 planConditionCount = 4
 planConditionClassProvided = true
 maxCurScrap = 60
@@ -367,7 +367,7 @@ maxCurScrap = 60
 planType = "BuildMinimums"
 planPriority = 380
 planCondition = "NotExists"
-planConditionClass = "fbkiln_vsr"
+planConditionClass = "fbkilncpuinsane_vsr"
 planConditionCount = 1
 planCondition2 = "NotExists"
 planConditionClass2 = "fbantm_12xvsr"
@@ -379,33 +379,33 @@ planConditionCount3 = 1
 planCondition4 = "NotExists"
 planConditionClass4 = "fbstro_12xvsr"
 planConditionCount4 = 1
-buildType1 = "fvscout12smartvsr"
+buildType1 = "fvscout_vsr"
 buildCount1 = 5
 
 [Plan25]
 planType = "BuildMinimums"
 planPriority = 370
 planCondition = "NotExists"
-planConditionClass = "fbforg_vsr"
+planConditionClass = "fbforgcpuinsane_vsr"
 planConditionCount = 1
 planConditionOr = true
 planCondition2 = "NotExists"
 planConditionClass2 = "fbantm_12xvsr"
 planConditionCount2 = 1
 planConditionClassProvided2 = true
-buildType1 = "fvscout12smartvsr"
+buildType1 = "fvscout_vsr"
 buildCount1 = 4
 
 [Plan26]
 planType = "BuildMinimums"
 planPriority = 360
-buildType1 = "fvconscpu_vsr"
+buildType1 = "fvconscpuinsane_vsr"
 buildCount1 = 2
 
 [Plan27]
 planType = "BaseBuildMinimums"
 planPriority = 350
-buildType1 = "fbkiln_vsr"
+buildType1 = "fbkilncpuinsane_vsr"
 buildCount1 = 1
 buildType2 = "fbantm_12xvsr"
 buildCount2 = 1
@@ -414,9 +414,9 @@ buildCount2 = 1
 planType = "Upgrade"
 planPriority = 340
 planCondition = "NotExists"
-planConditionClass = "fbforg_vsr"
+planConditionClass = "fbforgcpuinsane_vsr"
 planConditionCount = 1
-unitType = "fbkiln_vsr"
+unitType = "fbkilncpuinsane_vsr"
 
 [Plan29]
 planType = "Upgrade"
@@ -435,11 +435,11 @@ planConditionClass = "fvscout"
 planConditionCount = 3
 planCompare = ">="
 targetType = "VIRTUAL_CLASS_CONSTRUCTIONRIG"
-attackType1 = "fvscout12smartvsr"
-attackType2 = "fvscout12smartvsr"
-attackType3 = "fvscout12smartvsr"
-attackType4 = "fvscout12smartvsr"
-attackType5 = "fvscout12smartvsr"
+attackType1 = "fvscout_vsr"
+attackType2 = "fvscout_vsr"
+attackType3 = "fvscout_vsr"
+attackType4 = "fvscout_vsr"
+attackType5 = "fvscout_vsr"
 maxAttacks = 0
 ContinueEvenIfFail = true
 
@@ -497,7 +497,7 @@ targetType1 = "defender"
 targetType2 = "VIRTUAL_CLASS_CONSTRUCTIONRIG"
 attackType1 = "fvsent_vsr"
 attackType2 = "fvarch_vsr"
-attackType3 = "fvscout12smartvsr"
+attackType3 = "fvscout_vsr"
 attackType4 = "fvtank_vsr"
 attackType5 = "fvtank_vsr"
 attackType6 = "fvartl_vsr"
@@ -525,7 +525,7 @@ targetType1 = "VIRTUAL_CLASS_FORGE"
 targetType2 = "VIRTUAL_CLASS_RECYCLERBUILDING"
 attackType1 = "fvsent_vsr"
 attackType2 = "fvarch_vsr"
-attackType3 = "fvscout12smartvsr"
+attackType3 = "fvscout_vsr"
 attackType4 = "fvtank_vsr"
 attackType5 = "fvtank_vsr"
 attackType6 = "fvartl_vsr"
@@ -569,7 +569,7 @@ buildCount4 = 3
 [Plan40]
 planType = "BuildMinimums"
 planPriority = 220
-buildType1 = "fvservcpu_vsr"
+buildType1 = "fvservcpuinsane_vsr"
 buildCount1 = 2
 ContinueEvenIfFail = true
 
@@ -614,7 +614,7 @@ planConditionClass = "flier"
 planConditionCount = 1
 planConditionClassProvided = true
 planCompare = ">="
-buildType1 = "fvservcpu_vsr"
+buildType1 = "fvservcpuinsane_vsr"
 buildCount1 = 4
 ContinueEvenIfFail = true
 
@@ -768,7 +768,7 @@ planPriority = 80
 minTtlScrap = 100
 buildType1 = "fvtank_vsr"
 buildCount1 = 4
-buildType2 = "fvrbomb_vsr"
+buildType2 = "fvrbombcpuinsane_vsr"
 buildCount2 = 4
 buildType3 = "fvatank_vsr"
 buildCount3 = 4
@@ -784,7 +784,7 @@ attackType1 = "fvtank_vsr"
 attackType2 = "fvwalk_vsr"
 attackType3 = "fvtank_vsr"
 attackType4 = "fvatank_vsr"
-attackType5 = "fvrbomb_vsr"
+attackType5 = "fvrbombcpuinsane_vsr"
 attackType6 = "fvartl_vsr"
 attackType7 = "fvatank_vsr"
 attackType8 = "fvtank_vsr"
@@ -845,7 +845,7 @@ planType = "BuildMinimums"
 planPriority = 20
 buildType1 = "fvatank_vsr"
 buildCount1 = 4
-buildType2 = "fvrbomb_vsr"
+buildType2 = "fvrbombcpuinsane_vsr"
 buildCount2 = 4
 buildType3 = "fvartl_vsr"
 buildCount3 = 4
@@ -859,7 +859,7 @@ targetType = "extract"
 targetType1 = "VIRTUAL_CLASS_GUNTOWER"
 targetType2 = "VIRTUAL_CLASS_RECYCLERBUILDING"
 attackType1 = "fvwalk_vsr"
-attackType2 = "fvrbomb_vsr"
+attackType2 = "fvrbombcpuinsane_vsr"
 attackType3 = "fvarch_vsr"
 attackType4 = "fvartl_vsr"
 attackType5 = "fvtank_vsr"

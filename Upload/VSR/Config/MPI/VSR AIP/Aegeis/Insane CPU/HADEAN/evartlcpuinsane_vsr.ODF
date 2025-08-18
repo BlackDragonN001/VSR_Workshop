@@ -1,0 +1,41 @@
+[GameObjectClass]
+classLabel = "evartl_vsr"
+
+needPilot = 0
+
+scrapCost = 20
+buildTime = 3.0
+
+provideCount = 5
+provideName5 = "evartl_vsr"
+
+weaponName1 = "ghfireinsane_vsr"
+
+[CraftClass]
+
+damageEffect1 = "dmgvhcl_e1"
+damageEffect2 = "dmgvhcl_e2"
+damageEffect3 = "dmgvhcl_e3"
+damageEffect4 = "dmgvhcl_e4"
+
+[TrackedVehicleClass]
+omegaSpin = 1.0
+omegaTurn = 0.5
+alphaSteer = 2.0
+
+//Commented out physics changes... tracked vehicles were broken in Release 73 (TREAD_STATIC_FRICTION = 1.5 is okay)
+//////The following values came from the ISDF rocket tank
+//COLLISION_RAISE =  0.5
+//SUSPENSION_MIN = -0.2
+TREAD_STATIC_FRICTION = 1.5 //2.0
+
+//NormalTrackFactor = 1.0 // may need to be > 0 for some of the other params to take effect
+//pitchThrust = 0.2
+//rollSteer = 0.2
+//alphaTrack = 6.0
+
+//alphaDampX = 10.0
+//alphaDampZ = 35.0 //30.0
+//////End rocket tank stuff
+
+[AssaultTankClass]

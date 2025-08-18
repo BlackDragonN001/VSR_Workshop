@@ -1,0 +1,24 @@
+[GameObjectClass]
+clearBuildZone = 0 // {VSR-005}
+
+classLabel = "evwalk_vsr"
+
+scrapCost = 20
+buildTime = 5.0
+
+addAmmo = 20
+
+provideCount = 5
+provideName2 = "evwalk_vsr"
+
+mass = 242503 // ISDF walker mass {VSR-012}
+
+[CraftClass]
+
+damageEffect1 = "dmgvhcl_e1"
+damageEffect2 = "dmgvhcl_e2"
+damageEffect3 = "dmgvhcl_e3"
+damageEffect4 = "dmgvhcl_e4"
+
+[WalkerClass]
+

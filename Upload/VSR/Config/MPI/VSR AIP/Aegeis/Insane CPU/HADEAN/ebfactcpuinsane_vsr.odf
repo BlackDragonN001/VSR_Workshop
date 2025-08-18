@@ -1,0 +1,28 @@
+[GameObjectClass]
+TerrainBlendRadius = 0	//According to GBD, this could help with stuttering in BZCC
+
+classLabel = "ebfact_vsr"
+
+provideCount = 4
+provideName4 = "ebfact_vsr"
+
+upgradeName = "ebfact2cpuinsane_vsr"
+
+[PoweredBuildingClass]
+
+[BuildingClass]
+
+[FactoryClass]
+buildItem1 = "evmortcpuinsane_vsr"
+buildItem2 = "evmislcpuinsane_vsr"
+buildItem3 = "evtankcpuinsane_vsr"
+buildItem4 = "evtankscpuinsane_vsr"
+buildItem5 = "evatankcpuinsane_vsr"
+buildItem6 = "evatanklcpuinsane_vsr"
+buildItem7 = "evartlcpuinsane_vsr"
+
+//Commented out LOD for BZCC (VSR Release 64)
+//[Lod1]
+//geometryName = "ebfactL1.xsi" ;geometry for lod1
+//distance = 70              ;bsphere under 200 pixel => switch to lod1
+//dontShiftLOD = 1

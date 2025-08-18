@@ -1,0 +1,49 @@
+// VSR PROJECT
+// Missile Scout 1.2 Variant
+
+[GameObjectClass]
+classLabel = "ivmisl_vsr"
+baseName = "ivmisl"
+scrapCost = 40
+buildTime = 3.0
+// pilotConfig = "ispilo_vsr" // If blank, uses [if]spilo/[if]suser. Otherwise, pilot for craft
+requireCount = 0
+
+weaponName1 = "gshadow_c"
+weaponName2 = "gshadow_c"
+
+[CraftClass]
+
+
+[HoverCraftClass]
+// velocForward = 36.5 // 
+velocReverse = 13.0 // *12.0 // 
+velocStrafe = 19.5 // *18.5 // 
+accelThrust = 22.5 // *19.0 // acceleration 
+
+// IVSCOUT: velocStrafe = 20.0 // 
+// IVSCOUT: accelThrust = 25.0 // acceleration 
+// IVSCOUT: velocReverse = 10.0 // 
+
+// accelBrake = 75.0 // braking
+// accelDragStop = 6.0 // how fast it stops once hands are off controls 
+// accelJump = 15.0
+
+// setAltitude = 1.0 // how high off the ground
+
+// alphaTrack = 21.0 //springs speed it rights itself 
+// alphaDamp = 8.0 //shocks 
+
+// pitchPitch = 0.25 // nose up 
+// pitchThrust = 0.1 // nose down 
+
+// rollStrafe = 0.09 // rolls while strafing 
+// omegaSpin = 3.0 // spinning in place speed 
+// omegaTurn = 3.0 // turning while moving speed 
+// alphaSteer = 5.5 // how fast it responds to steering 
+// rollSteer = 0.12 // rolls while steering 
+
+
+[Lod1]
+
+[Lod2]

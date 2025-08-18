@@ -1,0 +1,48 @@
+[GameObjectClass]
+clearBuildZone = 0 // {VSR-005}
+
+classLabel = "evscout_vsr"
+
+scrapCost = 15
+buildTime = 3.0
+
+provideCount = 3
+provideName3 = "evscout_vsr"
+
+maxHealth = 1800 //Inherited 2200? Fixed in VSR BZCC Release 108
+
+mass = 4314.09 // Stock ISDF Scout Mass {VSR-012}
+
+[CraftClass]
+
+damageEffect1 = "dmgvhcl_e1"
+damageEffect2 = "dmgvhcl_e2"
+damageEffect3 = "dmgvhcl_e3"
+damageEffect4 = "dmgvhcl_e4"
+
+RetargetOnStrafe = true //*false -- change target if under fire
+
+// VSR Physics {VSR-000}
+MIN_BOUNCE_VEL = 1.8
+OBJECT_ELASTICITY = 0.025
+GROUND_ELASTICITY = -0.2
+DAMAGE_SCALE = 0.02
+
+[HoverCraftClass]
+omegaSpin = 5.0  // *4.2
+omegaTurn = 3.0  // *4.0
+alphaSteer = 7.5 // *7.0
+
+// VSR Physics {VSR-000}
+omegaTurnAttenuation = 8.5
+MoreLike12Physics = true
+OverWaterVelocFrontMult = 1.0
+OverWaterVelocSideMult = 1.0
+OverWaterThrottleMult = 0.8
+airborneVelocFrontMult = 1.01
+airborneVelocSideMult = 1.05
+airborneThrottleMult = 1.2
+airborneMinHeightRatio = 1.6
+airborneMaxHeightRatio = 4.0
+LIFT_SPRING = 16.0
+LIFT_DAMP = 2.0

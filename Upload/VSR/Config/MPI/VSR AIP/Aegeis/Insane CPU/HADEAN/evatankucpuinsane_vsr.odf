@@ -1,0 +1,56 @@
+[GameObjectClass]
+baseName = "evatanku"
+classLabel = "evatank_vsr"
+scrapValue = 40
+scrapCost = 25
+customCost = 80
+buildTime = 5.0
+maxHealth = 5500
+maxAmmo = 4000
+addAmmo = 8
+unitName = "Hedoux"
+
+provideCount = 5
+provideName5 = "evatank_vsr"
+
+mass = 34316.1 // ISDF ass. tank {VSR-012}
+
+unitStatus = "wire_evatanku.tga"
+
+requireCount = 3
+requireName1 = "ebfact2"
+requireText1 = "Build Mega Xenomator"
+requireName2 = "ebcbun"
+requireText2 = "Build Eyes of Xyr"
+requireName3 = "ebsbay"
+requireText3 = "Build Repair Vat"
+
+weaponName1 = "gdragb_a"
+weaponName2 = "gshellgun"
+weaponName3 = "gshellgun"
+
+[CraftClass]
+
+damageEffect1 = "dmgvhcl_e1"
+damageEffect2 = "dmgvhcl_e2"
+damageEffect3 = "dmgvhcl_e3"
+damageEffect4 = "dmgvhcl_e4"
+
+engageRange = 250 // 210 - AI errors
+
+[TrackedVehicleClass]
+velocForward = 18.0
+velocReverse = 10.0
+accelThrust = 8.0
+
+omegaTurn = 0.5
+alphaSteer = 4.0 //2.0
+
+COLLISION_RAISE= -0.5
+SUSPENSION_MIN=-0.2
+SUSPENSION_MAX=0.3
+SPRING_FACTOR=2.0 // minimum value: 0.01
+DAMPING_FACTOR=2.0	// 2.0=critical damped, minimum value: 0.01
+
+[AssaultTankClass]
+pitchMax = 0.99

@@ -1,0 +1,49 @@
+[GameObjectClass]
+classLabel = "evscav_vsr"
+
+buildTime = 2.0
+
+//collisionRadius = 10 // {VSR-013} //commented out in VSR BZCC Release 106
+
+provideCount=3
+provideName3 = "evscav_vsr"
+
+mass=40000.0 // (stock ivscav=53157.3) {VSR-012}
+
+[CraftClass]
+
+damageEffect1 = "dmgvhcl_e1"
+damageEffect2 = "dmgvhcl_e2"
+damageEffect3 = "dmgvhcl_e3"
+damageEffect4 = "dmgvhcl_e4"
+
+braccelFactor = 0.1 //Was 0.09, changed to be the same as the ISDF Scavenger (Release 96)
+velFactor = 0.3
+steerFactor = 1.0 //Was 1.5, changed to be the same as the ISDF Scavenger (Release 96)
+omegaFactor = 1.0 //Was 0.1, , changed to be the same as the ISDF Scavenger (Release 96)
+
+TeamTransferrable = true	//Added in VSR BZCC Release 106
+GotoTaskHasLeader = false	//Added in VSR BZCC Release 106
+
+[TrackedVehicleClass]
+
+accelThrust = 5.0
+
+omegaTurn = 0.5 //Was 0.6, changed to be the same as the ISDF Scavenger (Release 96)
+alphaSteer = 8.0 // 2.0* {VSR-014}
+
+TREAD_STATIC_FRICTION = 5.0 //was 1.5... reverted because it didn't work in release 73
+
+//NormalTrackFactor = 1.0 // may need to be > 0 for some of the other params to take effect
+//pitchThrust = 3.0
+//rollSteer = 3.0
+//alphaTrack = 8.0
+
+//alphaDampX = 10.0
+//alphaDampZ = 35.0 //30.0
+
+[TrackedDeployableClass]
+
+[ScavengerClass]
+deployClass = "ebscav_vsr"
+deployOffset = 4.0

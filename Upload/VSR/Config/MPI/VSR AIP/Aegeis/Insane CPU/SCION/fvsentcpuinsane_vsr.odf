@@ -1,0 +1,81 @@
+[GameObjectClass]
+clearBuildZone=0 // {VSR-005}
+classLabel="fvsent_vsr"
+baseName="fvsent"
+scrapCost=20 // {VSR-365}
+buildTime = 2.0
+weaponName1="ggauss_c"
+weaponName2="ggauss_c"
+weaponName3="gseekervsr"
+weaponName4="gdeflect"
+provideCount=4
+provideName2="fvsentcpuinsane_vsr"
+provideName3="VIRTUAL_CLASS_SENTRY"
+provideName4="DefendUnit"
+mass=4600
+requireCount=0
+[CraftClass]
+topSpeed=37 // {VSR-077}
+avoidSpeed=20 // {VSR-UNDOC}
+
+// VSR Physics {VSR-000}
+MIN_BOUNCE_VEL=0.8
+GROUND_ELASTICITY=-0.92
+DAMAGE_SCALE=0.02
+
+[HoverCraftClass]
+velocForward=37.0 // *35 {VSR-079}
+accelThrust=27.0  // *25 {VSR-080}
+pitchPitch=0.3    // *0.2 {VSR-081}
+alphaSteer=5.2    // *4.2 {VSR-082}
+accelJump=22.0    // *15 {VSR-083}
+alphaTrack=19.0   // *23 {VSR-084}
+setAltitude=1.2   // *1.0 {VSR-085}
+rollStrafe=0.24   // *0.08 {VSR-086}
+rollSteer=-0.14   // *0.17 {VSR-086}
+
+// VSR Physics {VSR-000}
+MoreLike12Physics=true
+OverWaterVelocFrontMult=1.0
+OverWaterVelocSideMult=1.0
+OverWaterThrottleMult=0.8
+airborneVelocFrontMult=1.03
+airborneVelocSideMult=1.2
+airborneThrottleMult=1.3
+airborneMinHeightRatio=1.3
+airborneMaxHeightRatio=4.0
+LIFT_SPRING=14
+LIFT_DAMP=2
+
+[MorphTankClass]
+switchMask=00011 // *new {VSR-UNDOC}
+maxHealth=1900 // *1500 {VSR-078}
+
+// Stock values must be repasted, BZ2 does not inherit from [MorphTankClass].
+//maxHealth=1500
+addhealth=5.0
+maxAmmo=2500
+addAmmo=0.0
+engageRange=100
+isAssault=0
+unitName="Sentry"
+rangeScan=250.0f
+periodScan=5.0f
+velocJam=5.0f
+velocForward=25.0
+velocReverse=10.0
+velocStrafe=25.0
+accelThrust=15.0
+accelDragStop=10.0
+accelJump=15.0
+setAltitude=1.0
+alphaTrack=23.0
+alphaDamp=9.0
+pitchPitch=0.2
+pitchThrust=0.1
+rollStrafe=0.05
+omegaSpin=2.8
+omegaTurn=3.3
+alphaSteer=3.9
+rollSteer=0.09
+soundThrust="ssent01c.wav"

@@ -1,0 +1,31 @@
+[GameObjectClass]
+classLabel = "cvdcar"
+
+buildTime = 5.0
+
+aiaddAmmo = 100
+
+scrapCost = 20		//MPI Only
+
+[CraftClass]
+rangeScan = 600.0	//MPI Only
+
+engageRange = 450.0
+
+damageEffect1 = "dmgvhcl_c1"
+damageEffect2 = "dmgvhcl_c2"
+damageEffect3 = "dmgvhcl_c3"
+damageEffect4 = "dmgvhcl_c4"
+
+[HoverCraftClass]
+
+[CarrierClass]
+controlRange = 0.0f // Range which Drones are limited to. Drones that get this far from a Carrier, will go dormant until another Carrier comes into range. If there are no Enemies within this range, (is > 0), the drones will be recalled back into the Carrier and need to be relaunched. (ammo is added back upon recall)
+defendRange = 200.0f // Range which Drones go idle and defend the Carrier.
+recallRange = 50.0f // Range which Drones are recalled into the Carrier.
+droneIdleTime = 180.0f // Idle time for drone recall.
+maxDrones = 0 // Number of drones, if limited. Drones beyond this limit will be dormant.
+minAttackForce = 12 // Max number of Drones idle before they launch an attack wave.
+repairRange = 200.0f // Range within which it will repair drones under it's control. Servicing is done in Parellel.
+HealthRepairAmount = 100 // Amount of Health per second to give drones.
+AmmoRepairAmount = 100 // Amount of Ammo per second to give drones.

@@ -1,0 +1,53 @@
+[GameObjectClass]
+classLabel="ibfact_vsr"
+baseName="ibfact"
+
+provideName2="ibfact_12svsr"
+
+[FactoryClass]
+weaponConfig="iweapon_12xvsr.odf"
+//buildItem1="ivmbike_12xvsr"
+buildItem2=""
+//buildItem3="ivtank_12xvsr"
+//buildItem4="ivrckt_vsr"
+//buildItem5="ivatank_vsr"
+buildItem6="ivwalk_vsr"
+buildItem7="ivrbomb_12svsr"
+//buildItem8="ivapccpuinsane_vsr"
+buildItem9="ivbomb_xvsr"
+
+[BuildGroup1]
+buildLabel = "Light Units"
+buildItem1 = "ivmbike_12xvsr"
+buildItem2 = "ivmbikecpuinsane_vsr"
+buildItem3 = "ivmisl_12svsr"
+buildItem4 = "ivmislcpuinsane_vsr"
+buildItem5 = ""
+
+[BuildGroup3]
+buildLabel = "Tanks"
+buildItem1 = "ivtank_12xvsr"
+buildItem2 = "ivtankcpuinsane_vsr"
+buildItem3 = "ivtank1cpuinsane_vsr"
+buildItem4 = ""
+buildItem5 = ""
+
+[BuildGroup4]
+buildLabel = "Rocket Tanks"
+buildItem1 = "ivrckt_vsr"
+buildItem2 = "ivrcktcpuinsane_vsr"
+
+[BuildGroup5]
+buildLabel = "Assault Tanks"
+buildItem1 = "ivatankcpuinsane_vsr"
+buildItem2 = "ivatank_vsr"
+buildItem3 = ""
+buildItem4 = ""
+buildItem5 = ""
+buildItem6 = ""
+buildItem7 = ""
+
+[BuildGroup8]
+buildLabel = "APCs"
+buildItem1 = "ivapccpuinsane_vsr"
+buildItem2 = ""

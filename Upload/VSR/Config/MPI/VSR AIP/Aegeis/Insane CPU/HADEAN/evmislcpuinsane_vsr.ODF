@@ -1,0 +1,39 @@
+[GameObjectClass]
+clearBuildZone = 0 // {VSR-005}
+
+classLabel = "evmisl_vsr"
+
+scrapCost = 20
+buildTime = 3.0
+
+aiName = "RocketTankFriend" // "TankFriend"
+aiName2 = "RocketTankEnemy" // "TankEnemy"
+
+provideCount = 4
+provideName4 = "evmisl_vsr"
+
+[CraftClass]
+
+damageEffect1 = "dmgvhcl_e1"
+damageEffect2 = "dmgvhcl_e2"
+damageEffect3 = "dmgvhcl_e3"
+damageEffect4 = "dmgvhcl_e4"
+
+// VSR Physics {VSR-000}
+GROUND_ELASTICITY = -0.2
+
+[HoverCraftClass]
+
+// VSR Physics {VSR-000}
+MoreLike12Physics = true
+OverWaterVelocFrontMult = 1.0
+OverWaterVelocSideMult = 1.0
+OverWaterThrottleMult = 0.8
+airborneVelocFrontMult = 1.0
+airborneVelocSideMult = 1.0
+airborneThrottleMult = 1.2
+airborneMinHeightRatio = 1.6
+airborneMaxHeightRatio = 4.0
+LIFT_SPRING = 6.0
+LIFT_DAMP = 0.1
+

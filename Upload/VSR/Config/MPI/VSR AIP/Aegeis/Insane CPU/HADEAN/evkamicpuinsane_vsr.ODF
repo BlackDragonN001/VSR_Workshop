@@ -1,0 +1,20 @@
+[GameObjectClass]
+clearBuildZone = 0 // {VSR-005}
+
+classLabel = "evkami_vsr"
+
+scrapCost = 10
+buildTime = 3.0
+
+provideCount = 3
+provideName3 = "evkami_vsr"
+
+[CraftClass]
+
+damageEffect1 = "dmgvhcl_e1"
+damageEffect2 = "dmgvhcl_e2"
+damageEffect3 = "dmgvhcl_e3"
+damageEffect4 = "dmgvhcl_e4"
+
+[HoverCraftClass]
+

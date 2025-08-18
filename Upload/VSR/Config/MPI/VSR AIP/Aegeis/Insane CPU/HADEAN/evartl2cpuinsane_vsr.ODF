@@ -1,0 +1,41 @@
+[GameObjectClass]
+classLabel = "evartl_vsr"
+scrapValue = 40
+scrapCost = 40
+buildTime = 5.0
+maxHealth = 2500
+addAmmo = 5
+unitName = "Atlas MS"
+	
+requireCount = 1
+requireName1 = "ebfact2"
+requireText1 = "Upgrade Mega Xenomator"
+
+provideCount = 6
+provideName5 = "evartl_vsr"
+provideName6 = "evartl2"
+
+weaponHard1 = "HP_SPECIAL_1"
+weaponName1 = "gpoptag"
+weaponAssault1 = 1
+weaponHard2 = "HP_MORTAR_1"
+weaponName2 = "ghmortar"
+weaponAssault2 = 0
+recoilName2 = "recoil_1"
+recoilDist2 = -0.3
+
+[CraftClass]
+
+damageEffect1 = "dmgvhcl_e1"
+damageEffect2 = "dmgvhcl_e2"
+damageEffect3 = "dmgvhcl_e3"
+damageEffect4 = "dmgvhcl_e4"
+
+UseAssaultSpecials = true // needs to be true for evartl2.odf
+
+[TrackedVehicleClass]
+omegaSpin = 1.0
+omegaTurn = 0.5
+alphaSteer = 2.0
+
+TREAD_STATIC_FRICTION = 1.5 //2.0

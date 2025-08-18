@@ -1,0 +1,901 @@
+// AIP for BZCC VSR MPI
+// Written by BZCP
+// Updates by Aegeis
+// Version 4.2.c
+
+[Start]
+Difficulty = 4 // 1=Easy, 2=Medium, 3=Hard, 4=Extreme
+UnitsService = true // If units can get service.
+scrapCount = 40
+consClass = "evconscpuinsane_vsr"
+scavClass = "evscavcpuinsane_vsr"
+IdleAllCraft = true
+CheckProvides = true
+
+[Cheat]
+moneyAmount = 10
+moneyDelay = 1
+
+[IdleDispatcher]
+DoDLLDispatch = true
+MaxPatrolUnits = 4 // Max number of Patrol ships
+MaxHuntUnits = 5 // Max number of Hunt ships.
+MaxEscortUnits = 3 // Max number of Escorts
+ScavIdleSeconds = 5
+UnitIdleSeconds = 10
+MinAttackForce = 4
+MaxTargets = 10
+
+[Match]
+targetType1 = "VIRTUAL_CLASS_SCOUT"
+attackType1_1 = "evscoutcpuinsane_vsr"
+attackType1_2 = "evscoutcpuinsane_vsr"
+targetType2 = "VIRTUAL_CLASS_SCOUT"
+attackType2_1 = "evtankcpuinsane_vsr"
+targetType3 = "VIRTUAL_CLASS_SCOUT"
+attackType3_1 = "evmislcpuinsane_vsr"
+targetType4 = "VIRTUAL_CLASS_SCOUT"
+attackType4_1 = "evmortcpuinsane_vsr"
+attackType4_2 = "evmortcpuinsane_vsr"
+
+targetType5 = "VIRTUAL_CLASS_MORTARBIKE"
+attackType5_1 = "evscoutcpuinsane_vsr"
+attackType5_2 = "evscoutcpuinsane_vsr"
+targetType6 = "VIRTUAL_CLASS_MORTARBIKE"
+attackType6_1 = "evmortcpuinsane_vsr"
+attackType6_2 = "evmortcpuinsane_vsr"
+targetType7 = "VIRTUAL_CLASS_MORTARBIKE"
+attackType7_1 = "evtankcpuinsane_vsr"
+targetType8 = "VIRTUAL_CLASS_MORTARBIKE"
+attackType8_1 = "evmislcpuinsane_vsr"
+
+targetType9 = "VIRTUAL_CLASS_MISSILESCOUT"
+attackType9_1 = "evscoutcpuinsane_vsr"
+attackType9_2 = "evscoutcpuinsane_vsr"
+attackType9_3 = "evscoutcpuinsane_vsr"
+targetType10 = "VIRTUAL_CLASS_MISSILESCOUT"
+attackType10_1 = "evtankcpuinsane_vsr"
+attackType10_2 = "evtankcpuinsane_vsr"
+targetType11 = "VIRTUAL_CLASS_MISSILESCOUT"
+attackType11_1 = "evmislcpuinsane_vsr"
+attackType11_2 = "evmislcpuinsane_vsr"
+
+targetType12 = "VIRTUAL_CLASS_TANK"
+attackType12_1 = "evscoutcpuinsane_vsr"
+attackType12_2 = "evscoutcpuinsane_vsr"
+targetType13 = "VIRTUAL_CLASS_TANK"
+attackType13_1 = "evtankcpuinsane_vsr"
+attackType13_2 = "evtankcpuinsane_vsr"
+targetType14 = "VIRTUAL_CLASS_TANK"
+attackType14_1 = "evmislcpuinsane_vsr"
+attackType14_2 = "evmislcpuinsane_vsr"
+targetType15 = "VIRTUAL_CLASS_TANK"
+attackType15_1 = "evmortcpuinsane_vsr"
+attackType15_2 = "evmortcpuinsane_vsr"
+attackType15_3 = "evmortcpuinsane_vsr"
+
+targetType16 = "VIRTUAL_CLASS_ARTILLERY"
+attackType16_1 = "evtankcpuinsane_vsr"
+attackType16_2 = "evtankcpuinsane_vsr"
+targetType17 = "VIRTUAL_CLASS_ARTILLERY"
+attackType17_1 = "evmislcpuinsane_vsr"
+attackType17_2 = "evmislcpuinsane_vsr"
+targetType18 = "VIRTUAL_CLASS_ARTILLERY"
+attackType18_1 = "evatankucpuinsane_vsr"
+
+targetType19 = "VIRTUAL_CLASS_ASSAULTTANK"
+attackType19_1 = "evtankcpuinsane_vsr"
+attackType19_2 = "evtankcpuinsane_vsr"
+attackType19_3 = "evtankcpuinsane_vsr"
+targetType20 = "VIRTUAL_CLASS_ASSAULTTANK"
+attackType20_1 = "evmislucpuinsane_vsr"
+attackType20_2 = "evmislucpuinsane_vsr"
+targetType21 = "VIRTUAL_CLASS_ASSAULTTANK"
+attackType21_1 = "evatankucpuinsane_vsr"
+attackType21_2 = "evatankucpuinsane_vsr"
+targetType22 = "VIRTUAL_CLASS_ASSAULTTANK"
+attackType22_1 = "evwalkcpuinsane_vsr"
+attackType22_2 = "evwalkcpuinsane_vsr"
+
+targetType23 = "VIRTUAL_CLASS_WALKER"
+attackType23_1 = "evmislucpuinsane_vsr"
+attackType23_2 = "evmislucpuinsane_vsr"
+targetType24 = "VIRTUAL_CLASS_WALKER"
+attackType24_1 = "evtankcpuinsane_vsr"
+attackType24_2 = "evtankcpuinsane_vsr"
+targetType25 = "VIRTUAL_CLASS_WALKER"
+attackType25_1 = "evwalkcpuinsane_vsr"
+attackType25_2 = "evwalkcpuinsane_vsr"
+
+targetType26 = "VIRTUAL_CLASS_GUNTOWER"
+attackType26_1 = "evatankucpuinsane_vsr"
+attackType26_2 = "evatankucpuinsane_vsr"
+targetType27 = "VIRTUAL_CLASS_GUNTOWER"
+attackType27_1 = "evmislucpuinsane_vsr"
+attackType27_2 = "evmislucpuinsane_vsr"
+targetType28 = "VIRTUAL_CLASS_GUNTOWER"
+attackType28_1 = "evtankcpuinsane_vsr"
+attackType28_2 = "evtankcpuinsane_vsr"
+attackType28_3 = "evtankcpuinsane_vsr"
+targetType29 = "VIRTUAL_CLASS_GUNTOWER"
+attackType29_1 = "evkamicpuinsane_vsr"
+attackType29_2 = "evkamicpuinsane_vsr"
+attackType29_3 = "evkamicpuinsane_vsr"
+
+targetType30 = "VIRTUAL_CLASS_TURRET"
+attackType30_1 = "evmortcpuinsane_vsr"
+attackType30_2 = "evmortcpuinsane_vsr"
+attackType30_3 = "evmortcpuinsane_vsr"
+targetType31 = "VIRTUAL_CLASS_TURRET"
+attackType31_1 = "evtankcpuinsane_vsr"
+attackType31_2 = "evtankcpuinsane_vsr"
+targetType32 = "VIRTUAL_CLASS_TURRET"
+attackType32_1 = "evmislcpuinsane_vsr"
+targetType33 = "VIRTUAL_CLASS_TURRET"
+attackType33_1 = "evscoutcpuinsane_vsr"
+attackType33_2 = "evscoutcpuinsane_vsr"
+
+targetType34 = "VIRTUAL_CLASS_SCAVENGER"
+attackType34_1 = "evmortcpuinsane_vsr"
+targetType35 = "VIRTUAL_CLASS_SCAVENGER"
+attackType35_1 = "evscoutcpuinsane_vsr"
+targetType36 = "VIRTUAL_CLASS_SCAVENGER"
+attackType36_1 = "evtankcpuinsane_vsr"
+targetType37 = "VIRTUAL_CLASS_SCAVENGER"
+attackType37_1 = "evmislucpuinsane_vsr"
+
+targetType38 = "extract"
+attackType38_1 = "evmislcpuinsane_vsr"
+targetType39 = "extract"
+attackType39_1 = "evtankcpuinsane_vsr"
+targetType40 = "extract"
+attackType40_1 = "evmortcpuinsane_vsr"
+targetType41 = "extract"
+attackType41_1 = "evscoutcpuinsane_vsr"
+
+targetType42 = "extract"
+attackType42_1 = "evmislcpuinsane_vsr"
+targetType43 = "extract"
+attackType43_1 = "evtankcpuinsane_vsr"
+targetType44 = "extract"
+attackType44_1 = "evmortcpuinsane_vsr"
+targetType45 = "extract"
+attackType45_1 = "evscoutcpuinsane_vsr"
+
+targetType46 = "VIRTUAL_CLASS_CONSTRUCTIONRIG"
+attackType46_1 = "evmislcpuinsane_vsr"
+targetType47 = "VIRTUAL_CLASS_CONSTRUCTIONRIG"
+attackType47_1 = "evtankcpuinsane_vsr"
+targetType48 = "VIRTUAL_CLASS_CONSTRUCTIONRIG"
+attackType48_1 = "evmortcpuinsane_vsr"
+targetType49 = "VIRTUAL_CLASS_CONSTRUCTIONRIG"
+attackType49_1 = "evscoutcpuinsane_vsr"
+
+targetType50 = "VIRTUAL_CLASS_GUNTOWER"
+attackType50_1 = "evatanku"
+attackType50_2 = "evatanku"
+targetType51 = "VIRTUAL_CLASS_GUNTOWER"
+attackType51_1 = "evmislucpuinsane_vsr"
+attackType51_2 = "evmislucpuinsane_vsr"
+targetType52 = "VIRTUAL_CLASS_GUNTOWER"
+attackType52_1 = "evtankucpuinsane_vsr"
+attackType52_2 = "evtankucpuinsane_vsr"
+attackType52_3 = "evtankucpuinsane_vsr"
+
+[Plan1]
+planType = "Service"
+planPriority = 490
+planCondition = "Exists"
+planConditionClass = "evserv_vsr"
+planConditionCount = 2
+planCompare = ">="
+serviceUnit = "evserv_vsr"
+minWreckAmmo = 0.8
+minWreckHealth = 0.8
+maxWreckAmmo = 1.0
+maxWreckHealth = 1.0
+maxWreckDist = 300.0
+repairTime = 60.0
+unitType1 = "ebrecy_vsr"
+unitType2 = "ebfactcpuinsane_vsr"
+unitType3 = "ebpgen_vsr"
+unitType4 = "ebgt4g_vsr"
+unitType5 = "ebgt2g_vsr"
+unitType6 = "ebcbun_vsr"
+unitType7 = "ebsbay_vsr"
+unitType8 = "ebarmo_vsr"
+unitType9 = "ebtrain_vsr"
+unitType10 = "ebtcen_vsr"
+unitType11 = "ebscup_vsr"
+unitType12 = "defender"
+unitType13 = "evserv_vsr"
+
+[Plan2]
+planType = "DefendArea"
+planPriority = 489
+targetType = "ebrecy_vsr"
+maxCurScrap = 40
+ContinueEvenIfFail = true
+
+[Plan3]
+planType = "DefendArea"
+planPriority = 488
+targetType = "ebscup_vsr"
+maxCurScrap = 40
+ContinueEvenIfFail = true
+
+[Plan4]
+planType = "DefendArea"
+planPriority = 487
+targetType = "ebpgen_vsr"
+maxCurScrap = 40
+ContinueEvenIfFail = true
+
+[Plan5]
+planType = "DefendArea"
+planPriority = 486
+targetType = "ebfactcpuinsane_vsr"
+maxCurScrap = 40
+ContinueEvenIfFail = true
+
+[Plan6]
+planType = "DefendArea"
+planPriority = 485
+targetType = "ebgt4g_vsr"
+maxCurScrap = 40
+ContinueEvenIfFail = true
+
+[Plan7]
+planType = "DefendArea"
+planPriority = 484
+targetType = "extract"
+maxCurScrap = 40
+ContinueEvenIfFail = true
+
+[Plan8]
+planType = "DefendArea"
+planPriority = 483
+targetType = "defender"
+maxCurScrap = 40
+ContinueEvenIfFail = true
+
+[Plan9]
+planType = "DefendArea"
+planPriority = 482
+targetType = "base"
+maxCurScrap = 40
+ContinueEvenIfFail = true
+
+[Plan10]
+planType = "DefendArea"
+planPriority = 481
+targetType = "evturrcpuinsane_vsr"
+maxCurScrap = 40
+ContinueEvenIfFail = true
+
+[Plan11]
+planType = "DefendArea"
+planPriority = 480
+targetType = "evconscpuinsane_vsr"
+maxCurScrap = 40
+ContinueEvenIfFail = true
+
+[Plan12]
+planType = "Attacker"
+planPriority = 479
+planCondition = "Exists"
+planConditionClass = "evartl2cpuinsane_vsr"
+planConditionCount = 1
+planCompare = ">="
+planCondition2 = "HisExists"
+planConditionClass2 = "flier"
+planConditionCount2 = 1
+planConditionClassProvided2 = true
+planCondition3 = "HisExists"
+planConditionClass3 = "VIRTUAL_CLASS_ROCKETTANK"
+planConditionCount3 = 3
+planConditionClassProvided3 = true
+planCompare3 = "<="
+minTtlScrap = 100
+minCurScrap = 40
+targetType = "VIRTUAL_CLASS_BOMBERBAY"
+attackType1 = "evkamicpuinsane_vsr"
+attackType2 = "evartlcpuinsane_vsr"
+attackType3 = "evkamicpuinsane_vsr"
+attackType4 = "evkamicpuinsane_vsr"
+attackType5 = "evartlcpuinsane_vsr"
+attackType6 = "evscout12smartvsr"
+attackType7 = "evscout12smartvsr"
+useScrapCost1 = false
+useScrapCost2 = false
+useScrapCost3 = false
+useScrapCost4 = false
+useScrapCost5 = false
+buildIfNoIdle = 1
+maxAttacks = 0
+ContinueEvenIfFail = true
+
+[Plan13]
+planType = "CollectPool"
+planPriority = 478
+buildIfNoIdle = 1
+
+[Plan14]
+planType = "BuildMinimums"
+planPriority = 477
+buildType1 = "evscavcpuinsane_vsr"
+buildCount1 = 3
+
+[Plan15]
+planType = "CollectPool"
+planPriority = 475
+maxCurScrap = 20
+
+[Plan16]
+planType = "CollectPool"
+planPriority = 473
+minCurScrap = 20
+maxCurScrap = 40
+
+[Plan17]
+planType = "CollectPool"
+planPriority = 470
+minCurScrap = 40
+maxCurScrap = 60
+
+[Plan18]
+planType = "CollectPool"
+planPriority = 460
+maxCurScrap = 60
+minTtlScrap = 60
+maxTtlScrap = 80
+
+[Plan19]
+planType = "CollectPool"
+planPriority = 450
+maxCurScrap = 60
+minTtlScrap = 80
+maxTtlScrap = 100
+
+[Plan20]
+planType = "CollectPool"
+planPriority = 440
+maxCurScrap = 60
+minTtlScrap = 100
+
+[Plan21]
+planType = "CollectPool"
+planPriority = 430
+planCondition = "Exists"
+planConditionClass = "evscavcpuinsane_vsr"
+planConditionCount = 2
+planConditionClassProvided = true
+maxCurScrap = 60
+
+[Plan22]
+planType = "CollectPool"
+planPriority = 420
+planCondition = "Exists"
+planConditionClass = "evscavcpuinsane_vsr"
+planConditionCount = 3
+planConditionClassProvided = true
+maxCurScrap = 60
+
+[Plan23]
+planType = "BuildMinimums"
+planPriority = 410
+planCondition = "NotExists"
+planConditionClass = "ebfactcpuinsane_vsr"
+planConditionCount = 1
+planCondition2 = "NotExists"
+planConditionClass2 = "ebcbun_vsr"
+planConditionCount2 = 1
+planCondition3 = "NotExists"
+planConditionClass3 = "ebarmo_vsr"
+planConditionCount3 = 1
+planCondition4 = "NotExists"
+planConditionClass4 = "ebsbay_vsr"
+planConditionCount4 = 1
+planCondition5 = "NotExists"
+planConditionClass5 = "ebtrain_vsr"
+planConditionCount5 = 1
+planCondition6 = "NotExists"
+planConditionClass6 = "ebgt2g_vsr"
+planConditionCount6 = 1
+planCompare6 = ">="
+buildType1 = "evscoutcpuinsane_vsr"
+buildCount1 = 5
+
+[Plan24]
+planType = "BuildMinimums"
+planPriority = 400
+planCondition = "NotExists"
+planConditionClass = "ebfact2cpuinsane_vsr"
+planConditionCount = 1
+planConditionOr = true
+planCondition2 = "NotExists"
+planConditionClass2 = "ebcbun_vsr"
+planConditionCount2 = 1
+planConditionOr2 = true
+planCondition3 = "NotExists"
+planConditionClass3 = "ebarmo_vsr"
+planConditionCount3 = 1
+buildType1 = "evscout12smartvsr"
+buildCount1 = 5
+
+[Plan25]
+planType = "BuildMinimums"
+planPriority = 390
+buildType1 = "evconscpuinsane_vsr"
+buildCount1 = 2
+
+[Plan26]
+planType = "BaseBuildMinimums"
+planPriority = 380
+MaxCurPower = 3
+buildType1 = "ebpgen_vsr"
+buildCount1 = 12
+
+[Plan27]
+planType = "BaseBuildMinimums"
+planPriority = 370
+buildHeading = 0
+buildType1 = "ebfactcpuinsane_vsr"
+buildCount1 = 1
+buildType2 = "ebcbun_vsr"
+buildCount2 = 1
+buildType3 = "ebarmo_vsr"
+buildCount3 = 1
+buildType4 = "ebsbay_vsr"
+buildCount4 = 1
+
+[Plan28]
+planType = "Upgrade"
+planPriority = 360
+planCondition = "NotExists"
+planConditionClass = "ebscup_vsr"
+planConditionCount = 1
+planCompare = ">="
+unitType = "ebscav_vsr"
+
+[Plan29]
+planType = "Upgrade"
+planPriority = 350
+planCondition = "NotExists"
+planConditionClass = "ebfact2cpuinsane_vsr"
+planConditionCount = 1
+unitType = "ebfactcpuinsane_vsr"
+
+[Plan30]
+planType = "Attacker"
+planPriority = 340
+planCondition = "Exists"
+planConditionClass = "evscoutcpuinsane_vsr"
+planConditionCount = 3
+planCompare = ">="
+targetType = "VIRTUAL_CLASS_CONSTRUCTIONRIG"
+attackType1 = "evscoutcpuinsane_vsr"
+attackType2 = "evscoutcpuinsane_vsr"
+attackType3 = "evscoutcpuinsane_vsr"
+attackType4 = "evscoutcpuinsane_vsr"
+attackType5 = "evscout12smartvsr"
+attackType6 = "evscout12smartvsr"
+maxAttacks = 10
+buildIfNoIdle = 1
+ContinueEvenIfFail = true
+
+[Plan31]
+planType = "BuildMinimums"
+planPriority = 330
+planCondition = "NotExists"
+planConditionClass = "ebsbay_vsr"
+planConditionCount = 1
+planCondition2 = "NotExists"
+planConditionClass2 = "ebtrain_vsr"
+planConditionCount2 = 1
+planCondition3 = "NotExists"
+planConditionClass3 = "ebgt2g_vsr"
+planConditionCount3 = 1
+planCompare3 = ">="
+buildType1 = "evtankcpuinsane_vsr"
+buildCount1 = 4
+
+[Plan32]
+planType = "BuildMinimums"
+planPriority = 320
+planCondition = "NotExists"
+planConditionClass = "ebsbay_vsr"
+planConditionCount = 1
+planConditionOr = true
+planCondition2 = "NotExists"
+planConditionClass2 = "ebtrain_vsr"
+planConditionCount2 = 1
+planConditionOr2 = true
+planCondition3 = "Exists"
+planConditionClass3 = "ebgt2g_vsr"
+planConditionCount3 = 1
+planCompare3 = "<="
+buildType1 = "evtanklink_vsr"
+buildCount1 = 4
+
+[Plan33]
+planType = "Attacker"
+planPriority = 310
+maxTtlScrap = 80
+targetType = "extract"
+targetType1 = "defender"
+targetType2 = "VIRTUAL_CLASS_GUNTOWER
+attackType1 = "evatanklink_vsr"
+attackType2 = "evatanklink_vsr"
+attackType3 = "evmislcpuinsane_vsr"
+attackType4 = "evmislcpuinsane_vsr"
+attackType5 = "evtankcpuinsane_vsr"
+attackType6 = "evtankcpuinsane_vsr"
+attackType7 = "evtankcpuinsane_vsr"
+attackType8 = "evkamicpuinsane_vsr"
+attackType9 = "evartlcpuinsane_vsr"
+attackType10 = "evartlcpuinsane_vsr"
+maxAttacks = 0
+buildIfNoIdle = 1
+ContinueEvenIfFail = true
+
+[Plan34]
+planType = "BaseBuildMinimums"
+planPriority = 300
+buildType1 = "ebgt2g_vsr"
+buildCount1 = 3
+buildType2 = "ebtrain_vsr"
+buildCount2 = 1
+buildType3 = "ebtcen_vsr"
+buildCount3 = 1
+buildType4 = "ebgt4g_vsr"
+buildCount4 = 1
+
+[Plan35]
+planType = "BuildMinimums"
+planPriority = 290
+planCondition = "HisExists"
+planConditionClass = "defender"
+planConditionCount = 1
+planConditionClassProvided = true
+planCompare = ">="
+buildType1 = "evatanklink_vsr"
+buildCount1 = 5
+buildType2 = "evserv_vsr"
+buildCount2 = 2
+buildType3 = "evmortcpuinsane_vsr"
+buildCount3 = 4
+buildType4 = "evkamicpuinsane_vsr"
+buildCount4 = 5
+ContinueEvenIfFail = true
+
+[Plan36]
+planType = "BuildMinimums"
+planPriority = 280
+planCondition = "HisExists"
+planConditionClass = "VIRTUAL_CLASS_SCOUT"
+planConditionCount = 1
+planConditionClassProvided = true
+planCompare = ">="
+buildType1 = "evscoutucpuinsane_vsr"
+buildCount1 = 4
+buildType2 = "evtanklink_vsr"
+buildCount2 = 5
+ContinueEvenIfFail = true
+
+[Plan37]
+planType = "Attacker"
+planPriority = 270
+planCondition = "HisExists"
+planConditionClass = "VIRTUAL_CLASS_GUNTOWER"
+planConditionCount = 1
+targetType = "VIRTUAL_CLASS_GUNTOWER"
+attackType1 = "evtankucpuinsane_vsr"
+attackType2 = "evmislucpuinsane_vsr"
+attackType3 = "evmislucpuinsane_vsr"
+attackType4 = "evatanklink_vsr"
+attackType5 = "evatanklink_vsr"
+attackType6 = "evmortcpuinsane_vsr"
+attackType7 = "evkamicpuinsane_vsr"
+attackType8 = "evkamicpuinsane_vsr"
+attackType9 = "evkamicpuinsane_vsr"
+attackType10 = "evtankucpuinsane_vsr"
+maxAttacks=0
+buildIfNoIdle = 1
+ContinueEvenIfFail = true
+
+[Plan38]
+planType = "BuildMinimums"
+planPriority = 260
+planCondition = "HisExists"
+planConditionClass = "VIRTUAL_CLASS_TANK"
+planConditionCount = 1
+planConditionClassProvided = true
+planCompare = ">="
+buildType1 = "evtankfcpuinsane_vsr"
+buildCount1 = 4
+buildType2 = "evmislucpuinsane_vsr"
+buildCount2 = 4
+buildType3 = "evscout12smartvsr"
+buildCount3 = 4
+buildType4 = "evkamicpuinsane_vsr"
+buildCount4 = 5
+ContinueEvenIfFail = true
+
+[Plan39]
+planType = "BaseBuildMinimums"
+planPriority = 250
+buildType1 = "ebgt2g_vsr"
+buildCount1 = 4
+ContinueEvenIfFail = true
+
+[Plan40]
+planType = "BuildMinimums"
+planPriority = 240
+planCondition = "HisExists"
+planConditionClass = "flier"
+planConditionCount = 1
+planConditionClassProvided = true
+planCompare = ">="
+buildType1 = "evartl2cpuinsane_vsr"
+buildCount1 = 4
+buildType2 = "evkamicpuinsane_vsr"
+buildCount2 = 4
+buildType3 = "evmislucpuinsane_vsr"
+buildCount3 = 5
+buildType4 = "evatanklink_vsr"
+buildCount4 = 5
+buildType5 = "evartlcpuinsane_vsr"
+buildCount5 = 4
+ContinueEvenIfFail = true
+
+[Plan41]
+planType = "Attacker"
+planPriority = 230
+planCondition = "HisExists"
+planConditionClass = "VIRTUAL_CLASS_FACTORY"
+planConditionCount = 1
+targetType = "base"
+attackType1 = "evmislwcpuinsane_vsr"
+attackType2 = "evtankscpuinsane_vsr"
+attackType3 = "evtankscpuinsane_vsr"
+attackType4 = "evtankscpuinsane_vsr"
+attackType5 = "evatankscpuinsane_vsr"
+attackType6 = "evatankscpuinsane_vsr"
+attackType7 = "evmortcpuinsane_vsr"
+attackType8 = "evmortcpuinsane_vsr"
+attackType9 = "evmortcpuinsane_vsr"
+maxAttacks=0
+buildIfNoIdle = 1
+ContinueEvenIfFail = true
+
+[Plan42]
+planType = "Attacker"
+planPriority = 220
+planCondition = "HisExists"
+planConditionClass = "VIRTUAL_CLASS_GUNTOWER"
+planConditionCount = 1
+targetType = "VIRTUAL_CLASS_GUNTOWER"
+attackType1 = "evkamicpuinsane_vsr"
+attackType2 = "evkamicpuinsane_vsr"
+attackType3 = "evkamicpuinsane_vsr"
+attackType4 = "evkamicpuinsane_vsr"
+attackType5 = "evkamicpuinsane_vsr"
+attackType6 = "evkamicpuinsane_vsr"
+attackType7 = "evkamicpuinsane_vsr"
+maxAttacks=0
+buildIfNoIdle = 1
+ContinueEvenIfFail = true
+
+[Plan43]
+planType = "BuildMinimums"
+planPriority = 210
+planCondition = "HisExists"
+planConditionClass = "VIRTUAL_CLASS_TANK"
+planConditionCount = 1
+planConditionClassProvided = true
+planCompare = ">="
+buildType1 = "evscout12smartvsr"
+buildCount1 = 5
+buildType2 = "evartl2cpuinsane_vsr"
+buildCount2 = 5
+buildType3 = "evartlcpuinsane_vsr"
+buildCount3 = 4
+ContinueEvenIfFail = true
+
+[Plan44]
+planType = "BuildMinimums"
+planPriority = 200
+planCondition = "HisExists"
+planConditionClass = "VIRTUAL_CLASS_WALKER"
+planConditionCount = 1
+planConditionClassProvided = true
+planCompare = ">="
+buildType1 = "evkamicpuinsane_vsr"
+buildCount1 = 5
+buildType2 = "evtanklink_vsr"
+buildCount2 = 5
+buildType3 = "evscoutucpuinsane_vsr"
+buildCount3 = 5
+buildType4 = "evatanklink_vsr"
+buildCount4 = 5
+
+[Plan45]
+planType = "Attacker"
+planPriority = 190
+targetType = "base"
+attackType1 = "evartlcpuinsane_vsr"
+attackType2 = "evartlcpuinsane_vsr"
+attackType3 = "evartlcpuinsane_vsr"
+attackType4 = "evkamicpuinsane_vsr"
+attackType5 = "evkamicpuinsane_vsr"
+attackType6 = "evkamicpuinsane_vsr"
+attackType7 = "evatankucpuinsane_vsr"
+attackType8 = "evatankucpuinsane_vsr"
+maxAttacks=0
+buildIfNoIdle = 1
+ContinueEvenIfFail = true
+
+[Plan46]
+planType = "Attacker"
+planPriority = 180
+planCondition = "HisExists"
+planConditionClass = "VIRTUAL_CLASS_ARMORY"
+planConditionCount = 1
+targetType = "base"
+attackType1 = "evkamicpuinsane_vsr"
+attackType2 = "evkamicpuinsane_vsr"
+attackType3 = "evkamicpuinsane_vsr"
+attackType4 = "evkamicpuinsane_vsr"
+attackType5 = "evtankscpuinsane_vsr"
+attackType6 = "evtankscpuinsane_vsr"
+attackType7 = "evmislwcpuinsane_vsr"
+attackType8 = "evmislucpuinsane_vsr"
+maxAttacks=0
+buildIfNoIdle = 1
+ContinueEvenIfFail = true
+
+[Plan47]
+planType = "CollectField"
+planPriority = 170
+buildIfNoIdle = 1
+ContinueEvenIfFail = true
+
+[Plan48]
+planType = "CollectPool"
+planPriority = 160
+buildIfNoIdle = 1
+ContinueEvenIfFail = true
+
+[Plan49]
+planType = "BaseBuildMinimums"
+planPriority = 150
+buildType1 = "ebgt4g_vsr"
+buildCount1 = 2
+ContinueEvenIfFail = true
+
+[Plan50]
+planType = "BuildMinimums"
+planPriority = 140
+planCondition = "HisExists"
+planConditionClass = "VIRTUAL_CLASS_TANK"
+planConditionCount = 1
+planConditionClassProvided = true
+planCompare = ">="
+buildType1 = "evtankfcpuinsane_vsr"
+buildCount1 = 4
+buildType2 = "evscoutucpuinsane_vsr"
+buildCount2 = 5
+buildType3 = "evwalkcpuinsane_vsr"
+buildCount3 = 4
+buildType4 = "evatanklink_vsr"
+buildCount4 = 5
+ContinueEvenIfFail = true
+
+[Plan51]
+planType = "BaseBuildMinimums"
+planPriority = 130
+buildType1 = "ebgt4g_vsr"
+buildCount1 = 3
+ContinueEvenIfFail = true
+
+[Plan52]
+planType = "Attacker"
+planPriority = 120
+planCondition = "HisExists"
+planConditionClass = "base"
+planConditionCount = 1
+targetType = "base"
+attackType1 = "evmislucpuinsane_vsr"
+attackType2 = "evmislucpuinsane_vsr"
+attackType3 = "evmislwcpuinsane_vsr"
+attackType4 = "evmislwcpuinsane_vsr"
+attackType5 = "evatankscpuinsane_vsr"
+attackType6 = "evatankscpuinsane_vsr"
+attackType7 = "evatankucpuinsane_vsr"
+attackType8 = "evtankfcpuinsane_vsr"
+attackType9 = "evtankfcpuinsane_vsr"
+maxAttacks = 0
+buildIfNoIdle = 1
+ContinueEvenIfFail = true
+
+[Plan53]
+planType = "Attacker"
+planPriority = 110
+planCondition = "HisExists"
+planConditionClass = "VIRTUAL_CLASS_TANK"
+planConditionCount = 1
+targetType = "VIRTUAL_CLASS_TANK"
+attackType1 = "evtanklink_vsr"
+attackType2 = "evtankfcpuinsane_vsr"
+attackType3 = "evtankfcpuinsane_vsr"
+attackType4 = "evtanklink_vsr"
+attackType5 = "evmortcpuinsane_vsr"
+attackType6 = "evmortcpuinsane_vsr"
+attackType7 = "evmortcpuinsane_vsr"
+maxAttacks = 0
+attackAnything = false
+buildIfNoIdle = 1
+ContinueEvenIfFail = true
+
+[Plan54]
+planType = "Attacker"
+planPriority = 100
+planCondition = "HisExists"
+planConditionClass = "VIRTUAL_CLASS_RECYCLER"
+planConditionCount = 1
+targetType = "VIRTUAL_CLASS_RECYCLER"
+attackType1 = "evatankucpuinsane_vsr"
+attackType2 = "evatankscpuinsane_vsr"
+attackType3 = "evtankfcpuinsane_vsr"
+attackType4 = "evtankscpuinsane_vsr"
+attackType5 = "evtankscpuinsane_vsr"
+attackType6 = "evartlcpuinsane_vsr"
+attackType7 = "evartlcpuinsane_vsr"
+attackType8 = "evkamicpuinsane_vsr"
+attackType9 = "evkamicpuinsane_vsr"
+maxAttacks = 0
+buildIfNoIdle = 1
+ContinueEvenIfFail = true
+
+[Plan55]
+planType = "Attacker"
+planPriority = 90
+targetType = "base"
+attackType1 = "evwalkcpuinsane_vsr"
+attackType2 = "evwalkcpuinsane_vsr"
+attackType3 = "evmislwcpuinsane_vsr"
+attackType4 = "evtankscpuinsane_vsr"
+attackType5 = "evtankscpuinsane_vsr"
+attackType6 = "evkamicpuinsane_vsr"
+attackType7 = "evkamicpuinsane_vsr"
+attackType8 = "evkamicpuinsane_vsr"
+attackType9 = "evkamicpuinsane_vsr"
+maxAttacks = 0
+buildIfNoIdle = 1
+ContinueEvenIfFail = true
+
+[Plan56]
+planType = "Attacker"
+planPriority = 80
+targetType = "base"
+attackType1 = "evartlcpuinsane_vsr"
+attackType2 = "evartlcpuinsane_vsr"
+attackType3 = "evartlcpuinsane_vsr"
+attackType4 = "evartlcpuinsane_vsr"
+attackType5 = "evartlcpuinsane_vsr"
+attackType6 = "evkamicpuinsane_vsr"
+attackType7 = "evkamicpuinsane_vsr"
+attackType8 = "evkamicpuinsane_vsr"
+attackType9 = "evkamicpuinsane_vsr"
+attackType10 = "evkamicpuinsane_vsr"
+maxAttacks = 0
+buildIfNoIdle = 1
+ContinueEvenIfFail = true
+
+[Plan57]
+planType = "BaseBuildMinimums"
+planPriority = 70
+buildType1 = "ebgt4g_vsr"
+buildCount1 = 5
+ContinueEvenIfFail = true

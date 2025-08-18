@@ -1,0 +1,37 @@
+[GameObjectClass]
+classLabel = "evatank_vsr"
+scrapCost = 20
+buildTime = 3.0
+unitName = "Hedoux LS"
+
+provideCount = 5
+provideName5 = "evatank_vsr"
+
+mass = 34316.1 // ISDF ass. tank {VSR-012}
+
+requireCount = 1
+requireName1 = "ebsbay"
+requireText1 = "Build Repair Vat"
+
+weaponName1 = "gcphlaser"
+weaponName2 = "gcphcg_a"
+weaponName3 = "gcphcg_a"
+
+[CraftClass]
+
+damageEffect1 = "dmgvhcl_e1"
+damageEffect2 = "dmgvhcl_e2"
+damageEffect3 = "dmgvhcl_e3"
+damageEffect4 = "dmgvhcl_e4"
+
+engageRange = 210
+
+[TrackedVehicleClass]
+omegaTurn = 0.5
+alphaSteer = 4.0 //2.0
+
+COLLISION_RAISE= -0.5
+SUSPENSION_MIN=-0.2
+SUSPENSION_MAX=0.3
+SPRING_FACTOR=2.0 // minimum value: 0.01
+DAMPING_FACTOR=2.0	// 2.0=critical damped, minimum value: 0.01

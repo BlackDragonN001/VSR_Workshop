@@ -1,0 +1,61 @@
+[GameObjectClass]
+clearBuildZone = 0 // {VSR-005}
+baseName = "evscoutu"
+classLabel = "evscout_vsr"
+
+buildTime = 3.0
+scrapValue = 25
+scrapCost = 15
+customCost = 50
+maxHealth = 2200 //1800
+maxAmmo = 1700
+
+unitName = "Xypos SX"
+armorClass = L
+
+unitStatus = "wire_evscoutu.tga"
+
+mass = 4314.09 // Stock ISDF Scout Mass {VSR-012}
+
+provideCount = 3
+provideName3 = "evscout_vsr"
+
+requireCount = 1
+requireName1 = "ebarmo"
+requireText1 = "Build Arsenal" // weapons vat Reference removed - HM
+
+weaponName1 = "gslicer_c"
+weaponName2 = "gslicer_c"
+weaponName3 = "gmflamemin"
+
+[CraftClass]
+
+damageEffect1 = "dmgvhcl_e1"
+damageEffect2 = "dmgvhcl_e2"
+damageEffect3 = "dmgvhcl_e3"
+damageEffect4 = "dmgvhcl_e4"
+
+// VSR Physics {VSR-000}
+MIN_BOUNCE_VEL = 1.8
+OBJECT_ELASTICITY = 0.025
+GROUND_ELASTICITY = -0.2
+DAMAGE_SCALE = 0.02
+
+[HoverCraftClass]
+omegaSpin = 5.0  // *4.2
+omegaTurn = 3.0  // *4.0
+alphaSteer = 7.5 // *7.0
+
+// VSR Physics {VSR-000}
+omegaTurnAttenuation = 8.5
+MoreLike12Physics = true
+OverWaterVelocFrontMult = 1.0
+OverWaterVelocSideMult = 1.0
+OverWaterThrottleMult = 0.8
+airborneVelocFrontMult = 1.01
+airborneVelocSideMult = 1.05
+airborneThrottleMult = 1.2
+airborneMinHeightRatio = 1.6
+airborneMaxHeightRatio = 4.0
+LIFT_SPRING = 16.0
+LIFT_DAMP = 2.0
