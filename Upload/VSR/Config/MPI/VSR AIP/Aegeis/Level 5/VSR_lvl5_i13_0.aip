@@ -1,9 +1,11 @@
 // AIP for BZCC VSR MPI
 // Written by wug
 // Updates by Aegeis
-// Version 4.2
+// Version 4.2.a
 
 [Start]
+Difficulty = 4 // 1=Easy, 2=Medium, 3=Hard, 4=Extreme
+UnitsService = true // If units can get service.
 scrapCount = 40
 consClass = "ivconscpuinsane_vsr"
 scavClass = "ivscavcpuinsane_vsr"
@@ -15,6 +17,10 @@ moneyAmount = 10
 moneyDelay = 1
 
 [IdleDispatcher]
+DoDLLDispatch = true
+MaxPatrolUnits = 4 // Max number of Patrol ships
+MaxHuntUnits = 5 // Max number of Hunt ships.
+MaxEscortUnits = 0 // Max number of Escorts (not currently implemented, scav escorts)
 ScavIdleSeconds = 5
 UnitIdleSeconds = 10
 MinAttackForce = 4
@@ -434,7 +440,7 @@ planConditionOr2 = true
 planCondition3 = "NotExists"
 planConditionClass3 = "ibarmo_12xvsr"
 planConditionCount3 = 1
-buildType1 = "ivscoutcpuinsane_vsr"
+buildType1 = "ivscout12smartvsr"
 buildCount1 = 4
 
 [Plan27]
@@ -543,7 +549,7 @@ attackType2 = "ivtankcpuinsane_vsr"
 attackType3 = "ivtankcpuinsane_vsr"
 attackType4 = "ivmisl_12svsr"
 maxAttacks = 0
-attackAnything = true
+attackAnything = false
 buildIfNoIdle = 1
 
 [Plan36]
@@ -596,7 +602,7 @@ attackType3 = "ivmbikecpuinsane_vsr"
 attackType4 = "ivmbikecpuinsane_vsr"
 attackType5 = "ivtankcpuinsane_vsr"
 maxAttacks = 0
-attackAnything = true
+attackAnything = false
 buildIfNoIdle = 1
 
 [Plan40]
@@ -688,7 +694,7 @@ attackType3 = "ivapccpuinsane_vsr"
 attackType4 = "ivmislcpuinsane_vsr"
 attackType5 = "ivmislcpuinsane_vsr"
 maxAttacks = 0
-attackAnything = true
+attackAnything = false
 buildIfNoIdle = 1
 
 [Plan46]
@@ -800,7 +806,7 @@ attackType3 = "ivtank1cpuinsane_vsr"
 attackType4 = "ivtankcpuinsane_vsr"
 attackType5 = "ivmislcpuinsane_vsr"
 maxAttacks = 0
-attackAnything = true
+attackAnything = false
 buildIfNoIdle = 1
 
 [Plan55]
@@ -844,7 +850,7 @@ attackType3 = "ivtankcpuinsane_vsr"
 attackType4 = "ivtankcpuinsane_vsr"
 attackType5 = "ivmislcpuinsane_vsr"
 maxAttacks = 0
-attackAnything = true
+attackAnything = false
 buildIfNoIdle = 1
 
 [Plan58]
@@ -933,7 +939,8 @@ attackType1 = "ivwalkcpuinsane_vsr"
 attackType2 = "ivmislcpuinsane_vsr"
 attackType3 = "ivtankcpuinsane_vsr"
 attackType4 = "ivtankcpuinsane_vsr"
-attackType5 = "ivtankcpuinsane_vsr"
+attackType5 = "ivtank_vsr"
+attackType6 = "ivrcktcpuinsane_vsr"
 maxAttacks = 0
 attackAnything = true
 buildIfNoIdle = 1
@@ -952,9 +959,11 @@ planType = "BuildMinimums"
 planPriority = 40
 minTtlScrap = 100
 buildType1 = "ivatankcpuinsane_vsr"
-buildCount1 = 2
+buildCount1 = 4
 buildType2 = "ivwalkcpuinsane_vsr"
-buildCount2 = 2
+buildCount2 = 4
+buildType3 = "ivrcktcpuinsane_vsr"
+buildCount3 = 4
 
 [Plan66]
 planType = "Attacker"
@@ -980,9 +989,11 @@ buildCount1 = 4
 buildType2 = "ivatankcpuinsane_vsr"
 buildCount2 = 3
 buildType3 = "ivatankcpuinsane_vsr"
-buildCount3 = 2
+buildCount3 = 3
 buildType4 = "ivapccpuinsane_vsr"
 buildCount4 = 7
+buildType5 = "ivrcktcpuinsane_vsr"
+buildCount5 = 3
 ContinueEvenIfFail = true
 
 [Plan68]
@@ -995,9 +1006,9 @@ targetType2 = "VIRTUAL_CLASS_RECYCLERBUILDING"
 attackType1 = "ivwalkcpuinsane_vsr"
 attackType2 = "ivatankcpuinsane_vsr"
 attackType3 = "ivmislcpuinsane_vsr"
-attackType3 = "ivtankcpuinsane_vsr"
-attackType4 = "ivtankcpuinsane_vsr"
+attackType4 = "ivatankcpuinsane_vsr"
 attackType5 = "ivtankcpuinsane_vsr"
+attackType6 = "ivtankcpuinsane_vsr"
 maxAttacks = 0
 attackAnything = true
 buildIfNoIdle = 1
