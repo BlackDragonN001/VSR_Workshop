@@ -12,5 +12,6 @@ xplBlast="xseekvsrxpl" // *"xseekxpl" {VSR-211}
 [SeekerClass]
 searchRange=70.0 // *50 {VSR-209}
 floatVeloc=30.0 // *10 {VSR-210}
+TargetHidden = 0
 
 //This file was modified to inherit the stock seeker model in BZCC rather than the seekerfix model from 1.3, I can't find seekerfix :(
