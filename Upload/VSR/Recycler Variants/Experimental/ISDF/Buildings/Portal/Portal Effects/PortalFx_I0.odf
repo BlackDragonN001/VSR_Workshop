@@ -10,10 +10,10 @@ effectName1 = "PortalFx_I0End.render"
 
 [Render]
 renderBase = "draw_multi"
-renderCount = 3
+renderCount = 2
 renderName1 = "PortalFx_I0.light"
-renderName2 = "PortalFx_I0.smoke"
-renderName3 = "PortalFx_I0.shock"
+renderName2 = "PortalFx_I0.shock"
+//renderName3 = "PortalFx_I0.smoke"
 
 [Light]
 simulateBase = "sim_null"
