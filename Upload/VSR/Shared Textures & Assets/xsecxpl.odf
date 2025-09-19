@@ -13,11 +13,11 @@ particleVeloc1 = "0.0 0.0 0.0"
 explSound = NULL
 damageRadius = 3.0
 damageValue(N) = 20
-damageValue(L) = 15
-damageValue(H) = 10
-damageValue(S) = 15
+damageValue(L) = 20
+damageValue(H) = 20
+damageValue(S) = 20
 damageValue(D) = 20
-damageValue(A) = 10
+damageValue(A) = 20
 
 [Core]
 simulateBase = "sim_null"
