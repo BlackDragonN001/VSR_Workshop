@@ -1227,3 +1227,12 @@ September 14th 2025
 - Fixed FX bug in ISDF Portal Effect.
 - Added New BETA ODF parameter to Mines to make them not triggered by CameraPods.
 - Updated DLLs, added logging to track down a crash in MPI.
+
+==Release 122==
+November 14th 2025
+(Release by General BlackDragon)
+
+- Restored Shipbits damage to it's 1.2 values (20 dmg vs all)
+- Fixed Proxmine having negative omegaKick.
+- Cleaned up some unused bindata items.
+- Made Hadean Pilot weapons inherit from FE:R's for: Bazooka, Grenade. Added powerup for Hadean pilot Laser gun, eplase_vsr. Not hooked up yet.
