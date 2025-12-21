@@ -1238,3 +1238,16 @@ November 10th 2025
 - Made Hadean Pilot weapons inherit from FE:R's for: Bazooka, Grenade. Added powerup for Hadean pilot Laser gun, eplase_vsr. Not hooked up yet.
 - Fixed missing CameraPod texture.
 - Fixed some plant leaves not being alpha-cutout compatible (fixes them not casting shadows)
+
+
+==Release 123==
+December 21th 2025
+(Release by General BlackDragon)
+
+- Fixed AI Pilots not ejecting in Strat.
+- Fixed Experimental recy not using correct minigun in Factory panel and Armory. Removed unused/unneeded "improved VFX" minigun and isdf pulse rifle left over from BZ2 era VSR Experimental.
+- Reduced CPU lvl 5 Cerberi Demon Repair range by half and amount by 3/4th.
+- Updated DLLs to all support running a LuaMission script along side the normal code. Note: The LuaMission script runs before the mission code.
+- Added New map INF var setting for Strategy maps tied to ivar121: MorphTankAutoDeployType. 0 = NONE, 1 = CMD_MORPH_SETDEPLOYED,  2 = CMD_MORPH_SETUNDEPLOYED, 3 = CMD_MORPH_UNLOCK. This controls the command given to MorphTanks as soon as they're built from a Factory. Added it to Extra Options page 2 with the Starting Vehicles selection.
+- Changed the Map missing TRN settings error to no longer spam chat, only console, and to more accurately describe that the out of bounds area of the map isn't calibrated.
+- Added LuaMission Bindings for int DoesPathExist(pathName) and bool ReplaceWeapons(Handle h, table [NewWeapons], table [PrevLocalAmmo], string PrevODF = nil) functions.
