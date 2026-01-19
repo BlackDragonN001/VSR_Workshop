@@ -1251,3 +1251,11 @@ December 21th 2025
 - Added New map INF var setting for Strategy maps tied to ivar121: MorphTankAutoDeployType. 0 = NONE, 1 = CMD_MORPH_SETDEPLOYED,  2 = CMD_MORPH_SETUNDEPLOYED, 3 = CMD_MORPH_UNLOCK. This controls the command given to MorphTanks as soon as they're built from a Factory. Added it to Extra Options page 2 with the Starting Vehicles selection.
 - Changed the Map missing TRN settings error to no longer spam chat, only console, and to more accurately describe that the out of bounds area of the map isn't calibrated.
 - Added LuaMission Bindings for int DoesPathExist(pathName) and bool ReplaceWeapons(Handle h, table [NewWeapons], table [PrevLocalAmmo], string PrevODF = nil) functions.
+
+==Release 124==
+Janurary 19th 2026
+(Release by General BlackDragon)
+
+- Changed text for new MorphTank deploy auto deploy buttons to say Morph instead of Deploy.
+- Several bug fixes for LuaMission, copied from latest BZCC beta version.
+- Added new DM map "Ad Memorium", a memorial map for the fallen Vets from the BZ2 community. Features aircraft class based flying smart scouts.
