@@ -1,5 +1,6 @@
 local MAX_ANIMALS = 8
 
+local _SaveLoad = require("_SaveLoad")
 local _DLLUtils = require("_DLLUtils")
 
 AnimalController = {
@@ -10,50 +11,49 @@ AnimalController = {
     m_AnimalHandles = {},
 }
 
-function AnimalController:New()
-    local newObj = {}
+-- Register Save/Load for saveload system
+_SaveLoad.RegisterSave("_AnimalController", function()
+    return AnimalController
+end)
 
-    newObj.m_NumAnimals = 0
-    newObj.m_MaxAnimals = 0
-    newObj.m_AnimalConfig = nil
+_SaveLoad.RegisterLoad("_AnimalController", function(AnimalControllerData)
+    if (AnimalControllerData ~= nil) then
+        for k, v in pairs(AnimalControllerData) do
+            AnimalController[k] = v
+        end
+    else
+        print("WARNING: _AnimalController Load called with nil data")
+    end
+end)
 
-    newObj.m_AnimalHandles = {}
+function AnimalController.Setup()
+    AnimalController.m_NumAnimals = 0
+    AnimalController.m_MaxAnimals = GetVarItemInt("network.session.ivar27")
 
-    setmetatable(newObj, self)
-    self.__index = self
-
-    return newObj
-end
-
-function AnimalController:Setup()
-    self.m_NumAnimals = 0
-    self.m_MaxAnimals = GetVarItemInt("network.session.ivar27")
-
-    if (self.m_MaxAnimals >= MAX_ANIMALS) then
-        self.m_MaxAnimals = MAX_ANIMALS
+    if (AnimalController.m_MaxAnimals >= MAX_ANIMALS) then
+        AnimalController.m_MaxAnimals = MAX_ANIMALS
     end
 
-    if (self.m_MaxAnimals > 0) then
-        self.m_AnimalConfig = _DLLUtils:GetCheckedNetworkSvar(12, NETLIST_Animals)
-
-        if (self.m_AnimalConfig == nil or string.len(self.m_AnimalConfig) < 2) then
-            self.m_AnimalConfig = "mcjak01"
+    if (AnimalController.m_MaxAnimals > 0) then
+        AnimalController.m_AnimalConfig = _DLLUtils.GetCheckedNetworkSvar(12, NETLIST_Animals)
+        if (AnimalController.m_AnimalConfig == nil or string.len(AnimalController.m_AnimalConfig) < 2) then
+            AnimalController.m_AnimalConfig = "mcjak01"
         end
     end
 end
 
-function AnimalController:Update(ElapsedGameTime, GameTPS)
-    if (self.m_MaxAnimals <= 0) then
+function AnimalController.Update(ElapsedGameTime, GameTPS)
+    if (AnimalController.m_MaxAnimals <= 0) then
         return
     end
 
     -- Have to manually check on animals  they won't trigger a call to
     -- DeadObject(). If any died, note that.
-    for i = 0, self.m_NumAnimals - 1 do
-        if (self.m_AnimalHandles[i] ~= nil) then
-            local h = self.m_AnimalHandles[i]
+    for i = 0, AnimalController.m_NumAnimals - 1 do
+        if (AnimalController.m_AnimalHandles[i] ~= nil) then
+            local h = AnimalController.m_AnimalHandles[i]
             if (not IsAlive(h)) then
-                self.m_AnimalHandles[i] = nil
+                AnimalController.m_AnimalHandles[i] = nil
             end
         end
     end
@@ -62,14 +62,14 @@ function AnimalController:Update(ElapsedGameTime, GameTPS)
     local InitialSpawnInFrequency = 4 * GameTPS -- GameTPS ticks per second
 
     if (ElapsedGameTime % InitialSpawnInFrequency == 0) then
-        if (self.m_NumAnimals < self.m_MaxAnimals) then
-            self:SetupAnimal(self.m_NumAnimals)
-            self.m_NumAnimals = self.m_NumAnimals + 1
+        if (AnimalController.m_NumAnimals < AnimalController.m_MaxAnimals) then
+            AnimalController.SetupAnimal(AnimalController.m_NumAnimals)
+            AnimalController.m_NumAnimals = AnimalController.m_NumAnimals + 1
         else
             -- 'Full' set of animals. Do respawns as needed.
-            for i = 0, self.m_NumAnimals - 1 do
-                if (self.m_AnimalHandles[i] == nil) then
-                    self:SetupAnimal(i)
+            for i = 0, AnimalController.m_NumAnimals - 1 do
+                if (AnimalController.m_AnimalHandles[i] == nil) then
+                    AnimalController.SetupAnimal(i)
                     break
                 end
             end
@@ -78,7 +78,7 @@ function AnimalController:Update(ElapsedGameTime, GameTPS)
 end
 
 -- Sets up the specified Animal unit, first time or later.
-function AnimalController:SetupAnimal(index)
+function AnimalController.SetupAnimal(index)
     local AnimalTeam = 8 + math.floor(GetRandomFloat(6))
 
     local Where = GetRandomSpawnpoint()
@@ -87,10 +87,10 @@ function AnimalController:SetupAnimal(index)
     -- Bounce them up in the air a little
     Where.y = Where.y + 2 + GetRandomFloat(4)
 
-    local AnimalODF = self.m_AnimalConfig
-    self.m_AnimalHandles[index] = BuildObject(AnimalODF, AnimalTeam, Where)
-    SetRandomHeadingAngle(self.m_AnimalHandles[index])
-    SetNoScrapFlagByHandle(self.m_AnimalHandles[index])
+    local AnimalODF = AnimalController.m_AnimalConfig
+    AnimalController.m_AnimalHandles[index] = BuildObject(AnimalODF, AnimalTeam, Where)
+    SetRandomHeadingAngle(AnimalController.m_AnimalHandles[index])
+    SetNoScrapFlagByHandle(AnimalController.m_AnimalHandles[index])
 end
 
 return AnimalController

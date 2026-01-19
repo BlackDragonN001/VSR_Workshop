@@ -18,6 +18,7 @@ assert(load(assert(LoadFile("_requirefix.lua")), "_requirefix.lua"))()
 require("_GlobalVariables")
 
 local _PUPMgr = require("_PUPMgr")
+local _SaveLoad = require("_SaveLoad")
 
 -- Custom modules for this mode.
 local _Zoner = require("_Zoner")
@@ -70,18 +71,6 @@ local Mission = {
     m_EmptyVehicles = {},         -- Index is 0 based.
     m_LastPlayerCraftHandle = {}, -- for ShipOnly mode
 
-    m_Memorials = {
-        "TimeVirus",
-        "MrJuggs",
-        "Slaor",
-        "Judge_Mental"
-    },
-
-    m_Zoners = {},
-
-    m_AnimalController = nil,
-    m_AIController = nil,
-
     m_GameWon = false,
     m_RespawnAtLowAltitude = false,
     m_bIsFriendlyFireOn = false,
@@ -119,11 +108,9 @@ function Start()
     Mission.m_bIsFriendlyFireOn = (GetVarItemInt("network.session.ivar32") ~= 0)
     Mission.m_MaxSpawnKillTime = m_GameTPS * GetVarItemInt("network.session.ivar13") -- convert seconds to 1/10 ticks
 
-    Mission.m_AIController = _AIController:New()
-    Mission.m_AnimalController = _AnimalController:New()
-
-    Mission.m_AIController:Setup()
-    Mission.m_AnimalController:Setup()
+    _AIController.Setup()
+    _AnimalController.Setup()
+    _Zoner.Spawn()
 
     if (Mission.m_MaxSpawnKillTime < 0) then
         Mission.m_MaxSpawnKillTime = 0 -- sanity check
@@ -133,11 +120,6 @@ function Start()
     -- commandline, and therefore, ivars are not at the defaults expected.
     -- Switch to some sane defaults.
     if (not IsNetworkOn()) then
-        if (Mission.m_AIController ~= nil) then
-            Mission.m_AIController.m_AIUnitSkill = 3
-            Mission.m_AIController.m_MaxAIUnits = 0
-        end
-
         Mission.m_Gravity = 25 -- default
         SetGravity(Mission.m_Gravity * 0.5)
     end
@@ -159,11 +141,6 @@ function Start()
     -- Throw up Objectives.
     CreateObjectives()
 
-    -- Create objects for zoners.
-    for i = 1, #Mission.m_Memorials do
-        Mission.m_Zoners[#Mission.m_Zoners + 1] = _Zoner:New(Mission.m_Memorials[i], 10 + i)
-    end
-
     _PUPMgr:Start()
 end
 
@@ -178,22 +155,9 @@ function Update()
     UpdateGameTime()
 
     -- For non-important bots, do this.
-    if (Mission.m_AIController ~= nil) then
-        Mission.m_AIController:Update(Mission.m_ElapsedGameTime)
-    end
-
-    if (Mission.m_AnimalController ~= nil) then
-        Mission.m_AnimalController:Update(Mission.m_ElapsedGameTime, m_GameTPS)
-    end
-
-    local zonerCount = #Mission.m_Zoners
-
-    if (zonerCount > 0) then
-        for i = 1, zonerCount do
-            local zoner = Mission.m_Zoners[i]
-            zoner:RunLogic()
-        end
-    end
+    _AIController.Update(Mission.m_ElapsedGameTime)
+    _AnimalController.Update(Mission.m_ElapsedGameTime, m_GameTPS)
+    _Zoner.RunLogic()
 
     -- Keep powerups going, etc
     _PUPMgr:Update()
@@ -239,11 +203,10 @@ function AddPlayer(id, Team, IsNewPlayer)
 end
 
 function Save()
-    _PUPMgr:Save()
-    return Mission
+    return _SaveLoad.Save(), _PUPMgr:Save(), Mission
 end
 
-function Load(MissionData)
+function Load(ModuleData, PUPMgrData, MissionData)
     m_GameTPS = GetTPS()
 
     SetAutoGroupUnits(false)
@@ -255,16 +218,22 @@ function Load(MissionData)
     WantBotKillMessages()
 
     -- Load mission data.
-    if MissionData then
+    if (MissionData) then
         for k, v in pairs(MissionData) do
             Mission[k] = v
         end
     end
 
+    if (ModuleData) then
+		_SaveLoad.Load(ModuleData)
+	else
+		print("WARNING: No ModuleData provided to _SaveLoad.Load()")
+	end
+
     CreateObjectives()
     SetGravity(Mission.m_Gravity * 0.5)
 
-    _PUPMgr:Load()
+    _PUPMgr.Load()
 end
 
 function PlayerEjected(DeadObjectHandle)
@@ -783,7 +752,7 @@ function DeadObject(DeadObjectHandle, KillersHandle, WasDeadPerson, WasDeadAI)
             end
 
             if (KillerIsAI) then
-                Mission.m_AIController:HandleHumanKilled()
+               _AIController.HandleHumanKilled()
             end
         end
 
@@ -796,7 +765,7 @@ function DeadObject(DeadObjectHandle, KillersHandle, WasDeadPerson, WasDeadAI)
     end
 
     if (WasDeadAI) then
-        Mission.m_AIController:HandleDeadObject(DeadObjectHandle)
+        _AIController.HandleDeadObject(DeadObjectHandle)
         return DLLHandled
     else
         if (WasDeadPerson) then

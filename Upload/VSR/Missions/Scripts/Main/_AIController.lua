@@ -1,3 +1,5 @@
+local _SaveLoad = require("_SaveLoad")
+
 local BotMinRadiusAway = 30.0
 local BotMaxRadiusAway = 100.0
 
@@ -18,79 +20,75 @@ AIController = {
     m_PowerupGotoTime = {},      -- How much time has elapsed on their quest for a powerup
 }
 
-function AIController:New()
-    local newObj = {}
+-- Register Save/Load for saveload system
+_SaveLoad.RegisterSave("_AIController", function()
+    return AIController
+end)
 
-    newObj.m_AIUnitSkill = 0
-    newObj.m_NumAIUnits = 0
-    newObj.m_MaxAIUnits = 0
+_SaveLoad.RegisterLoad("_AIController", function(AIControllerData)
+    if (AIControllerData ~= nil) then
+        for k, v in pairs(AIControllerData) do
+            AIController[k] = v
+        end
+    else
+        print("WARNING: _AIController Load called with nil data")
+    end
+end)
 
-    newObj.m_AICraftHandles = {}
-    newObj.m_AITargetHandles = {}
-    newObj.m_AILastWentForPowerup = {}
+function AIController.Setup()
+    AIController.m_NumAIUnits = 0
+    AIController.m_MaxAIUnits = GetVarItemInt("network.session.ivar9")
+    AIController.m_AIUnitSkill = GetVarItemInt("network.session.ivar22")
 
-    newObj.m_PowerupGotoTime = {}
-
-    setmetatable(newObj, self)
-    self.__index = self
-
-    return newObj
-end
-
-function AIController:Setup()
-    self.m_NumAIUnits = 0
-    self.m_MaxAIUnits = GetVarItemInt("network.session.ivar9")
-    self.m_AIUnitSkill = GetVarItemInt("network.session.ivar22")
-
-    if (self.m_MaxAIUnits >= MAX_AI_UNITS) then
-        self.m_MaxAIUnits = MAX_AI_UNITS
+    if (AIController.m_MaxAIUnits >= MAX_AI_UNITS) then
+        AIController.m_MaxAIUnits = MAX_AI_UNITS
     end
 
-    if (self.m_AIUnitSkill < 0 or self.m_AIUnitSkill > 4) then
-        self.m_AIUnitSkill = 3
+    if (AIController.m_AIUnitSkill < 0 or AIController.m_AIUnitSkill > 4) then
+        AIController.m_AIUnitSkill = 3
     end
 end
 
-function AIController:Update(ElapsedGameTime)
-    if (self.m_MaxAIUnits <= 0) then
+function AIController.Update(ElapsedGameTime)
+    if (AIController.m_MaxAIUnits <= 0) then
         return
     end
 
     local InitialSpawnInFrequency = 5
 
     if (ElapsedGameTime % InitialSpawnInFrequency == 0) then
-        if (self.m_NumAIUnits < self.m_MaxAIUnits) then
-            self:BuildBotCraft(self.m_NumAIUnits)
-            self.m_NumAIUnits = self.m_NumAIUnits + 1
+        if (AIController.m_NumAIUnits < AIController.m_MaxAIUnits) then
+            AIController.BuildBotCraft(AIController.m_NumAIUnits)
+            AIController.m_NumAIUnits = AIController.m_NumAIUnits + 1
         else
-            for i = 0, self.m_NumAIUnits - 1 do
-                if (not IsNotDeadAndPilot(self.m_AICraftHandles[i])) then
-                    SetLifespan(self.m_AICraftHandles[i], SNIPED_AI_LIFESPAN)
-                    self.m_AICraftHandles[i] = nil
+            for i = 0, AIController.m_NumAIUnits - 1 do
+                if (not IsNotDeadAndPilot(AIController.m_AICraftHandles[i])) then
+                    SetLifespan(AIController.m_AICraftHandles[i], SNIPED_AI_LIFESPAN)
+                    AIController.m_AICraftHandles[i] = nil
                 end
 
-                if (self.m_AICraftHandles[i] == nil) then
-                    self:BuildBotCraft(i)
+                if (AIController.m_AICraftHandles[i] == nil) then
+                    AIController.BuildBotCraft(i)
                     break
                 end
             end
         end
     end
 
-    for i = 0, self.m_NumAIUnits - 1 do
+    for i = 0, AIController.m_NumAIUnits - 1 do
         if (bit32.band((ElapsedGameTime + i), 0x1F) == 0) then
-            if (self.m_AILastWentForPowerup[i]) then
-                local Target = self.m_AITargetHandles[i]
-                self.m_PowerupGotoTime[i] = self.m_PowerupGotoTime[i] + 1
-                if (not IsAlive(Target) or self.m_PowerupGotoTime[i] > 150 or GetDistance(self.m_AICraftHandles[i], self.m_AITargetHandles[i]) < 2.0) then
-                    self:FindGoodAITarget(i)
+            if (AIController.m_AILastWentForPowerup[i]) then
+                local Target = AIController.m_AITargetHandles[i]
+                AIController.m_PowerupGotoTime[i] = AIController.m_PowerupGotoTime[i] + 1
+                if (not IsAlive(Target) or AIController.m_PowerupGotoTime[i] > 150 or GetDistance(AIController.m_AICraftHandles[i], AIController.m_AITargetHandles[i]) < 2.0) then
+                    AIController.FindGoodAITarget(i)
                 end
             end
         end
     end
 end
 
-function AIController:BuildBotCraft(index)
+function AIController.BuildBotCraft(index)
     local NUM_AI_TEAMS = LAST_AI_TEAM - FIRST_AI_TEAM + 1
     local theirTeam = FIRST_AI_TEAM + (index % NUM_AI_TEAMS)
     local APlayerTeam = 1
@@ -105,21 +103,21 @@ function AIController:BuildBotCraft(index)
     Where = GetPositionNear(Where, BotMinRadiusAway, BotMaxRadiusAway)
     Where.y = Where.y + 2.0 + GetRandomFloat(4)
 
-    self.m_AICraftHandles[index] = BuildObject(GetPlayerODF(APlayerTeam, Randomize_Any), theirTeam, Where)
-    SetRandomHeadingAngle(self.m_AICraftHandles[index])
-    SetNoScrapFlagByHandle(self.m_AICraftHandles[index])
-    AddPilotByHandle(self.m_AICraftHandles[index])
+    AIController.m_AICraftHandles[index] = BuildObject(GetPlayerODF(APlayerTeam, Randomize_Any), theirTeam, Where)
+    SetRandomHeadingAngle(AIController.m_AICraftHandles[index])
+    SetNoScrapFlagByHandle(AIController.m_AICraftHandles[index])
+    AddPilotByHandle(AIController.m_AICraftHandles[index])
 
-    self:FindGoodAITarget(index)
+    AIController.FindGoodAITarget(index)
 end
 
-function AIController:FindGoodAITarget(index)
-    if (not IsAliveAndPilot(self.m_AICraftHandles[index])) then
-        self.m_AICraftHandles[index] = nil
+function AIController.FindGoodAITarget(index)
+    if (not IsAliveAndPilot(AIController.m_AICraftHandles[index])) then
+        AIController.m_AICraftHandles[index] = nil
         return
     end
 
-    local nearestEnemy = GetNearestEnemy(self.m_AICraftHandles[index])
+    local nearestEnemy = GetNearestEnemy(AIController.m_AICraftHandles[index])
     for i = 1, MAX_TEAMS - 1 do
         local PlayerH = GetPlayerHandle(i)
         -- Ignore any close-by pilots.
@@ -128,31 +126,31 @@ function AIController:FindGoodAITarget(index)
         end
     end
 
-    if (nearestEnemy ~= nil and not self.m_AILastWentForPowerup[index]) then
-        local nearestPerson = GetNearestPerson(self.m_AICraftHandles[index], true, 100.0)
-        local distToEnemy = GetDistance(self.m_AICraftHandles[index], nearestEnemy)
+    if (nearestEnemy ~= nil and not AIController.m_AILastWentForPowerup[index]) then
+        local nearestPerson = GetNearestPerson(AIController.m_AICraftHandles[index], true, 100.0)
+        local distToEnemy = GetDistance(AIController.m_AICraftHandles[index], nearestEnemy)
 
         if (nearestPerson ~= nil) then
-            local distToPerson = GetDistance(self.m_AICraftHandles[index], nearestPerson)
+            local distToPerson = GetDistance(AIController.m_AICraftHandles[index], nearestPerson)
 
             if (distToPerson < (distToEnemy * 1.2)) then
-                Goto(self.m_AICraftHandles[index], nearestPerson)
-                self.m_AILastWentForPowerup[index] = true
-                self.m_PowerupGotoTime[index] = 0
-                self.m_AITargetHandles[index] = nearestPerson
+                Goto(AIController.m_AICraftHandles[index], nearestPerson)
+                AIController.m_AILastWentForPowerup[index] = true
+                AIController.m_PowerupGotoTime[index] = 0
+                AIController.m_AITargetHandles[index] = nearestPerson
                 return
             end
         end
 
-        local nearestPowerup = GetNearestPowerup(self.m_AICraftHandles[index], true, 100.0)
+        local nearestPowerup = GetNearestPowerup(AIController.m_AICraftHandles[index], true, 100.0)
         if (nearestPowerup ~= nil) then
-            local distToPowerup = GetDistance(self.m_AICraftHandles[index], nearestPowerup)
+            local distToPowerup = GetDistance(AIController.m_AICraftHandles[index], nearestPowerup)
 
             if (distToPowerup < (distToEnemy * 1.2)) then
-                Goto(self.m_AICraftHandles[index], nearestPowerup)
-                self.m_AILastWentForPowerup[index] = true
-                self.m_PowerupGotoTime[index] = 0
-                self.m_AITargetHandles[index] = nearestPowerup
+                Goto(AIController.m_AICraftHandles[index], nearestPowerup)
+                AIController.m_AILastWentForPowerup[index] = true
+                AIController.m_PowerupGotoTime[index] = 0
+                AIController.m_AITargetHandles[index] = nearestPowerup
                 return
             end
         end
@@ -162,31 +160,30 @@ function AIController:FindGoodAITarget(index)
         local BestDist = MAX_FLOAT
         local BestHandle = nil
 
-        for i = 0, self.m_NumAIUnits - 1 do
+        for i = 0, AIController.m_NumAIUnits - 1 do
             if (i == index) then
                 break
             end
 
-            if (not self.m_AICraftHandles[index]) then
+            if (not AIController.m_AICraftHandles[index]) then
                 break
             end
 
-            local ThisBotH = self.m_AICraftHandles[i]
-
+            local ThisBotH = AIController.m_AICraftHandles[i]
             if (not IsAlive(ThisBotH)) then
                 break
             end
 
-            if (IsAlly(self.m_AICraftHandles[index], self.m_AICraftHandles[i])) then
+            if (IsAlly(AIController.m_AICraftHandles[index], AIController.m_AICraftHandles[i])) then
                 break
             end
 
-            local MyH = self.m_AICraftHandles[index]
+            local MyH = AIController.m_AICraftHandles[index]
             local ThisDist = GetDistance(MyH, ThisBotH)
 
             if (ThisDist > 0.01 and ThisDist < BestDist) then
                 BestDist = ThisDist
-                BestHandle = self.m_AICraftHandles[i]
+                BestHandle = AIController.m_AICraftHandles[i]
             end
         end
 
@@ -201,7 +198,7 @@ function AIController:FindGoodAITarget(index)
                 break
             end
 
-            local MyH = self.m_AICraftHandles[index]
+            local MyH = AIController.m_AICraftHandles[index]
             local ThisDist = GetDistance(MyH, PlayerH)
 
             if (ThisDist > 0.01 and ThisDist < BestDist) then
@@ -215,28 +212,28 @@ function AIController:FindGoodAITarget(index)
         end
     end
 
-    self.m_AITargetHandles[index] = nearestEnemy
+    AIController.m_AITargetHandles[index] = nearestEnemy
 
     if (nearestEnemy ~= nil) then
-        Attack(self.m_AICraftHandles[index], self.m_AITargetHandles[index])
+        Attack(AIController.m_AICraftHandles[index], AIController.m_AITargetHandles[index])
     end
 
-    self.m_AILastWentForPowerup[index] = false
+    AIController.m_AILastWentForPowerup[index] = false
 end
 
-function AIController:HandleHumanKilled()
-    if (self.m_MaxAIUnits <= 0) then
+function AIController.HandleHumanKilled()
+    if (AIController.m_MaxAIUnits <= 0) then
         return
     end
 
     DoTaunt(TAUNTS_HumanShipDestroyed)
 end
 
-function AIController:HandleDeadObject(DeadObjectHandle)
-    for i = 0, self.m_NumAIUnits - 1 do
-        if (DeadObjectHandle == self.m_AICraftHandles[i]) then
-            self.m_AICraftHandles[i] = nil
-            self:BuildBotCraft(i)
+function AIController.HandleDeadObject(DeadObjectHandle)
+    for i = 0, AIController.m_NumAIUnits - 1 do
+        if (DeadObjectHandle == AIController.m_AICraftHandles[i]) then
+            AIController.m_AICraftHandles[i] = nil
+            AIController.BuildBotCraft(i)
             break
         end
     end
