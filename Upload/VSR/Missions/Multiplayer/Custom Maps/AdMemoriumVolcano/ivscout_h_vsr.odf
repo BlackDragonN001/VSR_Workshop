@@ -1,0 +1,183 @@
+[GameObjectClass]
+baseName = "ivscout"
+geometryName = "ivscout00.fbx"
+cockpitName= "ivscout_cockpit.fbx"
+animCount = 3
+animName1 = "forward"
+animFile1 = "ivscoutsf.fbx"
+animName2 = "neutral"
+animFile2 = "ivscoutsn.fbx"
+animName3 = "reverse"
+animFile3 = "ivscoutsr.fbx"
+classLabel = "aircraft"
+scrapValue = 15
+scrapCost = 50
+customCost = 50
+buildTime = 15.0
+customTime = 15.0
+maxHealth = 1800
+maxAmmo = 1500
+addAmmo = 1
+unitName = "Scout"
+
+aiName = "AirCraftFriend"
+aiName2 = "AirCraftEnemy"
+aiAddAmmo = 40
+
+heatSignature = 0.5
+imageSignature = 3.0
+radarSignature = 0.3
+
+isAssault = 0
+armorClass = N
+
+/////// REQUIREMENTS ///////////////
+requireCount = 0
+////////////////////////////////////
+
+/////// PROVIDES ///////////////////
+provideCount = 3
+provideName1 = "ivscout"
+provideName2 = "VIRTUAL_CLASS_SCOUT"
+provideName3 = "DefendUnit"
+////////////////////////////////////
+
+/////// weapons ////////////////////
+weaponMask = 00111
+weaponHard1 = "HP_GUN_1"
+weaponName1 = "gminigun_c"
+weaponAssault1 = 0
+weaponHard2 = "HP_GUN_2"
+weaponName2 = "gminigun_c"
+weaponAssault2 = 0
+weaponHard3 = "HP_ROCKET_1"
+weaponName3 = "gfafmsl_c"
+weaponAssault3 = 0
+weaponHard4 = "HP_SPECIAL_1"
+weaponName4 = ""
+weaponAssault4 = 0
+////////////////////////////////////
+
+/////////LIGHTS & EFFECTS///////////
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue2"
+lightHard2 = "hp_light_2"
+lightName2 = ""
+LightsOnlyWhenPiloted = true
+
+effectHard1 = "hp_dust_1"
+effectName1 = "dusttrail"
+effectMinAltitude1 = 0.0
+effectMaxAltitude1 = 5.0
+effectFlags1 = 2147483135
+////////////////////////////////////
+
+[CraftClass]
+rangeScan = 1000.0f
+periodScan = 2.0f
+velocJam = 10.0f
+
+/////// AI SETTINGS ////////////////
+UseSelectWeapon = 0 // If > 0, use traditional behavior, else use weaponMask
+canHunt = 1
+craftTeamIsPilotTeam = true // Allow AI to attack stolen ships immediately or bots to attack player right away instead of waiting for him to fire.
+engageRange = 1000 // 175
+blastDist = 40  // Gets in close
+
+attackTask = "ArcherAttack"
+subAttackTask = "ArcherSubAttack"
+waitTask = "CircleTask"
+subAttackClass = "ADN"
+
+ClosestEnemyGoodEyes = true
+AircraftAttackMustDeploy = false
+
+RetargetOnStrafe = true //*false -- change target if under fire
+UseAssaultSpecials = true
+
+brAccelFactor = 0.45f; // 0.85f; // Determines velocity of strafe (enemy) before AI begins counter strafing maneuvers
+strafeFactor = 1.4f; // 0.9f; // length of time that unit will strafe in a given direction
+steerFactor = 1.05f;  // How much steer to use when trying to acquire targets
+omegaFactor = 0.5f; // Affects size of firing cone relative to target
+velFactor = 0.3f; // Thruster burst length [in % of desired velocity]
+
+alphaScale = 0.6 // Overcompensate left/right aim (0.3 is default?)
+omegaScale = 0.8  // Accuracy for opponent strafing in single direction (~0.75 is perfect?). 
+
+steerScatter = 0.3 // Allowed steer inaccuracy
+pitchScatter = 0.1 // Allowed pitch inaccuracy
+
+TopSpeed = 50 // Set this over actual top speed for more aggressive forward AI movement
+avoidSpeed = 32
+
+selectWaitMsg = "ivscout04.wav"
+selectAttackMsg = "ivscout01.wav"
+selectFollowMsg = "ivscout03.wav"
+selectGoMsg = "ivscout02.wav"
+selectOtherMsg = "ivscout04.wav"
+
+goMsg = "ivscout05.wav"
+attackMsg = "ivscout06.wav"
+followMeMsg = "ivscout03.wav"
+followMsg = "ivscout08.wav"
+repairMsg = "ivscout09.wav"
+reloadMsg = "ivscout09.wav"
+rescueMsg = "ivscout10.wav"
+recycleMsg = "ivscout11.wav"
+otherMsg = "ivscout10.wav" 
+holdMsg = "ivscout12.wav"
+user1Msg = ""  
+killedMsg = "ivscout07.wav"
+diedMsg = ""
+
+[AirCraftClass]
+velocSet(L) = 10.0 // minimum velocity -20.0
+velocSet(M) = 0.0 // cruising velocity 0.0
+velocSet(H) = 40.0 // maximum velocity 50.0
+
+accelThrust = 25.0 // thrust acceleration
+accelBrake = 10.0 // brake acceleration
+accelDrag = 16.0
+
+omegaSteer(L) = 3.5 // steer turn rate at minimum
+omegaSteer(M) = 3.5 // steer turn rate at cruising
+omegaSteer(H) = 3.5 // steer turn rate at maximum
+
+omegaStrafe(L) = 2.0 // airbrake turn rate at minimum
+omegaStrafe(M) = 3.0 // airbrake turn rate at cruising
+omegaStrafe(H) = 4.0 // airbrake turn rate at maximum
+
+alphaSteer = 5.5
+alphaStrafe = 0.0
+alphaLevel = 10.0
+alphaDamp = 8.0
+
+minAltitude = 0.05
+maxAltitude = 90.0
+
+pitchPitch = 1.5 //  maximum pitch angle
+pitchThrust = 0.2
+
+rollSteer = 0.0 // maximum roll angle from steering
+rollStrafe = 0.0
+
+OverWaterLanded = false
+overWaterFlying = true
+
+aiAltitude = 1.25
+aiLiftSpring = 0.5
+
+liftSpring = 9.0
+maxTakeoffSpeed = 2.5
+
+alwaysDeployed = true
+altitudeLookahead = 2.0
+
+animSteer = "steer"
+timeDeploy = 0.1
+timeUndeploy = 0.1
+
+soundThrust = "ieng01b.wav"
+soundBrake = ""
+soundDeploy = ""
+soundUndeploy = ""
