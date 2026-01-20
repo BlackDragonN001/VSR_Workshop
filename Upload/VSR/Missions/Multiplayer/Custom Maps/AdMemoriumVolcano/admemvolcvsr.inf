@@ -38,8 +38,9 @@ ivar27 = 0   // DM: Number of animals in the map. Default 0. Max is 8.
 // Svar0 (.bzn filename, used to look for an .inf file like this)
 // *not* read in, as that would cause an infinite loop
 
-svar4 = "MPVehicles.odf"
+svar4 = "mpvehiclesdmvsr.odf"	//Available units will be all VSR units
 
 svar7 = "addm" // Custom shell page to pull up [actually bzshell_multi_####.cfg]
 svar8 = "admemcheck.odf"
+
 svar11 = "Vets" // Team name for a craft on team "group" 3 (teams 11..15)
