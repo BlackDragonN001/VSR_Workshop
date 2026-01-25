@@ -102,6 +102,9 @@ function Start()
     Mission.m_TotalGameTime = GetVarItemInt("network.session.ivar1")
     Mission.m_Gravity = GetVarItemInt("network.session.ivar31")
 
+    local MissionTypePrefs = GetVarItemInt("network.session.ivar7")
+    Mission.m_RespawnType = bit32.band(bit32.rshift(MissionTypePrefs, 8), 0xFF)
+
     -- Set this for the server now. Clients get this set from Load().
     SetGravity(Mission.m_Gravity * 0.5)
 

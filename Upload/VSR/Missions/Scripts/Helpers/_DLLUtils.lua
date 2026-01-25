@@ -2,7 +2,7 @@ local DLLUtils = {}
 
 -- Returns true if h is a recycler or recycler vehicle, false
 -- if h is invalid, or not a recycler
-function DLLUtils:IsRecycler(h)
+function DLLUtils.IsRecycler(h)
     local ObjClass = GetClassLabel(h)
     if (ObjClass == nil) then
         return false
@@ -15,7 +15,7 @@ end
 -- Sanity wrapper for GetVarItemStr. Reads the specified svar, and
 -- verifies it's present in the specified list. If not found in
 -- there, returns NULL.
-function DLLUtils:GetCheckedNetworkSvar(svar, listType)
+function DLLUtils.GetCheckedNetworkSvar(svar, listType)
     local svarStr = "network.session.svar" .. svar
     local pContents = GetVarItemStr(svarStr)
 
