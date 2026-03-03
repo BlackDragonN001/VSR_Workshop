@@ -1,7 +1,7 @@
 local MAX_ANIMALS = 8
 
 local _SaveLoad = require("_SaveLoad")
-local _DLLUtils = require("_DLLUtils")
+require("")
 
 AnimalController = {
     m_NumAnimals = 0,     -- Current count of AIs spawned in
@@ -35,7 +35,7 @@ function AnimalController.Setup()
     end
 
     if (AnimalController.m_MaxAnimals > 0) then
-        AnimalController.m_AnimalConfig = _DLLUtils.GetCheckedNetworkSvar(12, NETLIST_Animals)
+        AnimalController.m_AnimalConfig = GetCheckedNetworkSvar(12, NETLIST_Animals)
         if (AnimalController.m_AnimalConfig == nil or string.len(AnimalController.m_AnimalConfig) < 2) then
             AnimalController.m_AnimalConfig = "mcjak01"
         end
