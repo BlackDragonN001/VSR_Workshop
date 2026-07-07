@@ -145,10 +145,10 @@ NextAIP="difficultffl.aip"
 planType="Service"
 planPriority=620
 planCondition="Exists"
-planConditionClass="fvservcpu"
+planConditionClass="fvservcpu_vsr"
 planConditionCount=2
 planCompare=">="
-serviceUnit="fvservcpu"
+serviceUnit="fvservcpu_vsr"
 minWreckAmmo=0.8
 minWreckHealth=0.8
 maxWreckAmmo=1.0
@@ -167,7 +167,7 @@ unitType9="fbjamm"
 unitType10="fbscup_vsr"
 unitType11="fblung_vsr"
 unitType12="defender"
-unitType13="fvservcpu"
+unitType13="fvservcpu_vsr"
 
 [Plan3]
 planType="DefendArea"
@@ -538,7 +538,7 @@ buildCount4=1
 [Plan42]
 planType="BuildMinimums"
 planPriority=220
-buildType1="fvservcpu"
+buildType1="fvservcpu_vsr"
 buildCount1=2
 doNextOnFail=1
 
@@ -577,7 +577,7 @@ planConditionClass="fvartl_vsr"
 planConditionCount=1
 planConditionClassProvided=true
 planCompare=">="
-buildType1="fvservcpu"
+buildType1="fvservcpu_vsr"
 buildCount1=4
 doNextOnFail=1
 

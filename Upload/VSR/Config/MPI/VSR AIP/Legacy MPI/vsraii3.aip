@@ -195,10 +195,10 @@ NextAIP="difficultiil.aip"
 planType="Service"
 planPriority=640
 planCondition="Exists"
-planConditionClass="ivservcpu"
+planConditionClass="ivservcpu_vsr"
 planConditionCount=2
 planCompare=">="
-serviceUnit="ivservcpu"
+serviceUnit="ivservcpu_vsr"
 minWreckAmmo=0.8
 minWreckHealth=0.8
 maxWreckAmmo=1.0
@@ -217,7 +217,7 @@ unitType9="ibtcen"
 unitType10="ibtrain_vsr"
 unitType11="ibscup_vsr"
 unitType12="defender"
-unitType13="ivservcpu"
+unitType13="ivservcpu_vsr"
 
 [Plan3]
 planType="DefendArea"
@@ -630,7 +630,7 @@ buildCount7=2
 [Plan41]
 planType="BuildMinimums"
 planPriority=250
-buildType1="ivservcpu"
+buildType1="ivservcpu_vsr"
 buildCount1=2
 doNextOnFail=1
 
@@ -732,7 +732,7 @@ planConditionClass="ivbomb_vsr"
 planConditionCount=1
 planConditionClassProvided=true
 planCompare=">="
-buildType1="ivservcpu"
+buildType1="ivservcpu_vsr"
 buildCount1=4
 doNextOnFail=1
 
@@ -744,7 +744,7 @@ planConditionClass="ivapc"
 planConditionCount=1
 planConditionClassProvided=true
 planCompare=">="
-buildType1="ivservcpu"
+buildType1="ivservcpu_vsr"
 buildCount1=4
 doNextOnFail=1
 
