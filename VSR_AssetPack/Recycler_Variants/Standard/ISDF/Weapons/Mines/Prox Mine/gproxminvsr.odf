@@ -3,4 +3,6 @@ classLabel="gproxmin"
 
 [DispenserClass]
 shotDelay=3.0 // *4.0 {VSR-153}
-objectClass="proxminevsr"
+objectClass="proxminvsra" //"proxminevsr"
+
+inheritVelocity = true

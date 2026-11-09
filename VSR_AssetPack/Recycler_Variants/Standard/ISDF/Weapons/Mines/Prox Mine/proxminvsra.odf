@@ -1,0 +1,42 @@
+[GameObjectClass]
+baseName = "proxmine"
+geometryName = "igprox00.fbx"
+classLabel = "daywrecker"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 150
+maxAmmo = 200
+unitName = "Prox Mine"
+aiName = "PowerUpProcess"
+
+requireCount = 0
+ClearBuildZone = 0
+
+[PowerUpClass]
+SlowFall = false
+FallSpeed = 60
+
+alphaDamp = 0.0
+alphaTrack = 0.0
+rollStrafe = 0.0
+pitchThrust = 0.0
+omegaSpin = 0.0
+omegaTurn = 0.0
+alphaSteer = 0.0
+accelThrust = 0.0
+velocForward = 0.0
+velocReverse = 0.0
+velocStrafe = 0.0
+
+StationaryAlphaDampX = 0
+StationaryAlphaDampY = 0
+StationaryAlphaDampZ = 0
+StationaryAlphaTrackX = 0
+StationaryAlphaTrackY = 0
+StationaryAlphaTrackZ = 0
+StationaryVelocDampX = 0
+StationaryVelocDampY = 0
+StationaryVelocDampZ = 0
+
+[DayWreckerClass]
+xplBlast = "xproxminvsra"
